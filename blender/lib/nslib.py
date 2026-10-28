@@ -331,7 +331,7 @@ def bbox_world(objs) -> tuple[Vector, Vector]:
 def export_asset(asset: str, batch: str, *, group: str, pivot: tuple | None = None,
                  objects=None, fbx: bool = True, meta: dict | None = None,
                  rig: "bpy.types.Object | None" = None, vertex_colors: bool = False,
-                 merge_parts: str | None = None) -> dict:
+                 merge_parts: str | None = None, sockets: dict | None = None) -> dict:
     """Export every tagged object in the scene as one Roblox asset.
 
     asset   e.g. "Food_Tomato" (Category_Name). Used for file names and the Studio Model name.
@@ -343,6 +343,10 @@ def export_asset(asset: str, batch: str, *, group: str, pivot: tuple | None = No
     vertex_colors  Also write per-vertex colours ("c") — used by the pipeline-gate test.
     merge_parts    If set, merge every tagged object into ONE part with this name
                    (only meaningful with vertex_colors=True).
+    sockets        Named gameplay points, {name: (x, y, z)} or {name: ((x, y, z), yaw_deg)} in
+                   Blender world space (yaw about Blender Z, which equals Roblox yaw about Y).
+                   Exported relative to the pivot; Studio stores each as a CFrame attribute
+                   "Socket_<name>" on the Model (world = model:GetPivot() * socket).
     """
     if rig is not None:
         rig.data.pose_position = "REST"
@@ -460,6 +464,15 @@ def export_asset(asset: str, batch: str, *, group: str, pivot: tuple | None = No
     }
     if rig_info is not None:
         doc["rig"] = rig_info
+    if sockets:
+        out = {}
+        for sname, spec in sockets.items():
+            if len(spec) == 2 and not isinstance(spec[0], (int, float)):
+                loc, yaw = spec
+            else:
+                loc, yaw = spec, 0.0
+            out[sname] = {"p": [_r3(c) for c in to_roblox(Vector(loc) - pv)], "yaw": _r3(float(yaw))}
+        doc["sockets"] = dict(sorted(out.items()))
     mdir = os.path.join(REPO, "meshes", batch)
     os.makedirs(mdir, exist_ok=True)
     with open(os.path.join(mdir, f"{asset}.json"), "w") as f:
@@ -507,6 +520,8 @@ def _update_manifest(batch: str, doc: dict) -> None:
     }
     if "rig" in doc:
         man[doc["asset"]]["rig"] = doc["rig"]
+    if "sockets" in doc:
+        man[doc["asset"]]["sockets"] = doc["sockets"]
     with open(path, "w") as f:
         json.dump(dict(sorted(man.items())), f, indent=1)
 
@@ -1084,3 +1099,25 @@ def tube(points, radii, sides=8, resolution=4, name="Tube"):
     ob.select_set(True)
     bpy.ops.object.convert(target="MESH")
     return bpy.context.active_object
+
+
+def contact_sheet(batch: str, cols: int = 3, thumb: int = 360) -> str:
+    """Tile every <asset>_preview.png of a batch into one labelled review sheet."""
+    from PIL import Image, ImageDraw
+
+    pdir = os.path.join(REPO, "..", "previews", batch)
+    files = sorted(f for f in os.listdir(pdir) if f.endswith("_preview.png"))
+    assert files, f"no previews in {pdir}"
+    tw, th = thumb * 2, thumb + 28
+    rows = (len(files) + cols - 1) // cols
+    sheet = Image.new("RGB", (tw * cols, th * rows), (24, 26, 30))
+    draw = ImageDraw.Draw(sheet)
+    for i, f in enumerate(files):
+        im = Image.open(os.path.join(pdir, f)).convert("RGB")
+        im = im.resize((tw, int(im.height * tw / im.width)))
+        x, y = (i % cols) * tw, (i // cols) * th
+        sheet.paste(im, (x, y + 28))
+        draw.text((x + 8, y + 6), f.replace("_preview.png", ""), fill=(235, 235, 235))
+    out = os.path.join(pdir, "_contact.png")
+    sheet.save(out)
+    return out
