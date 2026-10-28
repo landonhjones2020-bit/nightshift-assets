@@ -649,7 +649,48 @@ def render_icon(name: str, group: str, yaw=-35.0, pitch=28.0, res=512, samples=4
     for b, r, sp in saved:
         b.inputs["Roughness"].default_value = r
         b.inputs["Specular IOR Level"].default_value = sp
+    export_icon(out, name, group)
     return out
+
+
+def write_nsz(png_path: str, nsz_path: str | None = None, size: int | None = None) -> tuple[str, str, int, int]:
+    """Encode a PNG as NSZ1 (base64 of "NSZ1" + u16le w + u16le h + zlib(RGBA)).
+
+    This is the payload the Studio importer plugin decodes into an EditableImage and
+    publishes with CreateAssetAsync. Returns (path, sha1-of-pixels, width, height).
+    """
+    import base64
+    import struct
+    import zlib
+    from PIL import Image
+
+    im = Image.open(png_path).convert("RGBA")
+    if size and im.size != (size, size):
+        im = im.resize((size, size), Image.LANCZOS)
+    w, h = im.size
+    pixels = im.tobytes()
+    raw = b"NSZ1" + struct.pack("<HH", w, h) + zlib.compress(pixels, 9)
+    nsz_path = nsz_path or os.path.splitext(png_path)[0] + ".nsz"
+    with open(nsz_path, "w") as f:
+        f.write(base64.b64encode(raw).decode("ascii"))
+    return nsz_path, hashlib.sha1(pixels).hexdigest()[:16], w, h
+
+
+def export_icon(png_path: str, name: str, group: str) -> dict:
+    """Write the .nsz payload next to an icon PNG and register it in manifests/icons.json."""
+    nsz, digest, w, h = write_nsz(png_path)
+    rel = os.path.relpath(nsz, REPO).replace(os.sep, "/")
+    entry = {"group": group, "size": [w, h], "hash": digest, "url": f"{RAW_BASE}/{rel}"}
+    path = os.path.join(REPO, "manifests", "icons.json")
+    man = {}
+    if os.path.exists(path):
+        with open(path) as f:
+            man = json.load(f)
+    man[name] = entry
+    os.makedirs(os.path.dirname(path), exist_ok=True)
+    with open(path, "w") as f:
+        json.dump(dict(sorted(man.items())), f, indent=1)
+    return entry
 
 
 # --------------------------------------------------------------------------------------

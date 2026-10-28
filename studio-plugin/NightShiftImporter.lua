@@ -176,6 +176,7 @@ end
 -- Images: base64 -> "NSZ1" header -> zlib inflate -> RGBA -> EditableImage -> asset
 -- ----------------------------------------------------------------------------------
 
+-- BEGIN NSZ (generated from lib/NSZ.lua by build.py; edit the library, not this block)
 local B64 = {}
 do
 	local alphabet = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/"
@@ -374,6 +375,7 @@ local function inflate(src: buffer, start: number, outSize: number): buffer
 	end
 	return out
 end
+-- END NSZ
 
 local function decodeImage(text: string): (EditableImage, number, number)
 	local raw = base64Decode(text)

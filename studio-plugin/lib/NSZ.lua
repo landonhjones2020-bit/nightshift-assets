@@ -1,6 +1,6 @@
 --!nocheck
 -- NSZ — base64 + zlib(DEFLATE) decoder for Night Shift icon payloads.
--- Shared by NightShiftImporter.lua (inlined by build.py) and tests.
+-- Source of truth for the decoder: build.py inlines it into NightShiftImporter.lua.
 local B64 = {}
 do
 	local alphabet = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/"
