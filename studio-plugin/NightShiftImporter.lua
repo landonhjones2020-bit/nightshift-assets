@@ -226,7 +226,7 @@ local function buildHuff(lengths: { number }, n: number): Huff
 	counts[1] = 0
 	local offs = table.create(16, 0)
 	for len = 1, 15 do
-		offs[len + 1] = offs[len] + counts[len]
+		offs[len + 1] = offs[len] + counts[len + 1]
 	end
 	local symbols = table.create(n, 0)
 	for i = 0, n - 1 do
