@@ -1,0 +1,638 @@
+{
+ "Creature_Nibbler": {
+  "group": "Creatures",
+  "size": [
+   0.58,
+   0.884,
+   1.981
+  ],
+  "tris": 2584,
+  "meta": {
+   "root": {
+    "center": [
+     0,
+     0.36,
+     0.0
+    ],
+    "size": [
+     0.6,
+     0.5,
+     0.84
+    ]
+   },
+   "walkSpeed": 8,
+   "clipSpeedRef": {
+    "Scurry": 8
+   }
+  },
+  "url": "https://raw.githubusercontent.com/landonhjones2020-bit/nightshift-assets/main/meshes/gate/Creature_Nibbler.json",
+  "parts": [
+   {
+    "name": "Body",
+    "color": "#6E6673",
+    "material": "SmoothPlastic",
+    "transparency": 0.0,
+    "castShadow": true,
+    "canCollide": false,
+    "role": null,
+    "bone": "Body",
+    "offset": [
+     0.0,
+     0.36,
+     0.0
+    ],
+    "size": [
+     0.58,
+     0.52,
+     0.84
+    ],
+    "hash": "bd481a9527bac31d",
+    "tris": 324
+   },
+   {
+    "name": "Body_Belly",
+    "color": "#A99DAB",
+    "material": "SmoothPlastic",
+    "transparency": 0.0,
+    "castShadow": true,
+    "canCollide": false,
+    "role": null,
+    "bone": "Body",
+    "offset": [
+     0.0,
+     0.0,
+     -0.05
+    ],
+    "size": [
+     0.37,
+     0.34,
+     0.4
+    ],
+    "hash": "be7eb7ef0f2f1bab",
+    "tris": 196
+   },
+   {
+    "name": "Head",
+    "color": "#6E6673",
+    "material": "SmoothPlastic",
+    "transparency": 0.0,
+    "castShadow": true,
+    "canCollide": false,
+    "role": null,
+    "bone": "Head",
+    "offset": [
+     0.0,
+     0.477,
+     -0.502
+    ],
+    "size": [
+     0.525,
+     0.474,
+     0.536
+    ],
+    "hash": "235eafda802606d1",
+    "tris": 628
+   },
+   {
+    "name": "Head_Pink",
+    "color": "#E890A6",
+    "material": "SmoothPlastic",
+    "transparency": 0.0,
+    "castShadow": true,
+    "canCollide": false,
+    "role": null,
+    "bone": "Head",
+    "offset": [
+     0.0,
+     0.51,
+     -0.612
+    ],
+    "size": [
+     0.446,
+     0.32,
+     0.426
+    ],
+    "hash": "5b4abd53859d84a3",
+    "tris": 188
+   },
+   {
+    "name": "Head_Eyes",
+    "color": "#D4FF3A",
+    "material": "Neon",
+    "transparency": 0.0,
+    "castShadow": false,
+    "canCollide": false,
+    "role": null,
+    "bone": "Head",
+    "offset": [
+     0.0,
+     0.5,
+     -0.605
+    ],
+    "size": [
+     0.32,
+     0.116,
+     0.116
+    ],
+    "hash": "43cc187d92534902",
+    "tris": 200
+   },
+   {
+    "name": "Head_Teeth",
+    "color": "#F4F1EA",
+    "material": "SmoothPlastic",
+    "transparency": 0.0,
+    "castShadow": true,
+    "canCollide": false,
+    "role": null,
+    "bone": "Head",
+    "offset": [
+     0.0,
+     0.325,
+     -0.71
+    ],
+    "size": [
+     0.072,
+     0.06,
+     0.02
+    ],
+    "hash": "62aa586dd1d29cc7",
+    "tris": 88
+   },
+   {
+    "name": "Tail",
+    "color": "#E890A6",
+    "material": "SmoothPlastic",
+    "transparency": 0.0,
+    "castShadow": true,
+    "canCollide": false,
+    "role": null,
+    "bone": "Tail",
+    "offset": [
+     -0.064,
+     0.221,
+     0.742
+    ],
+    "size": [
+     0.238,
+     0.263,
+     0.827
+    ],
+    "hash": "0b9128a39098da44",
+    "tris": 152
+   },
+   {
+    "name": "LegFL",
+    "color": "#6E6673",
+    "material": "SmoothPlastic",
+    "transparency": 0.0,
+    "castShadow": true,
+    "canCollide": false,
+    "role": null,
+    "bone": "LegFL",
+    "offset": [
+     -0.17,
+     0.11,
+     -0.29
+    ],
+    "size": [
+     0.133,
+     0.22,
+     0.16
+    ],
+    "hash": "16f6063ab067b70b",
+    "tris": 100
+   },
+   {
+    "name": "LegFL_Paw",
+    "color": "#E890A6",
+    "material": "SmoothPlastic",
+    "transparency": 0.0,
+    "castShadow": true,
+    "canCollide": false,
+    "role": null,
+    "bone": "LegFL",
+    "offset": [
+     -0.17,
+     0.026,
+     -0.325
+    ],
+    "size": [
+     0.127,
+     0.056,
+     0.162
+    ],
+    "hash": "6c877ee310c1a8a9",
+    "tris": 80
+   },
+   {
+    "name": "LegFR",
+    "color": "#6E6673",
+    "material": "SmoothPlastic",
+    "transparency": 0.0,
+    "castShadow": true,
+    "canCollide": false,
+    "role": null,
+    "bone": "LegFR",
+    "offset": [
+     0.17,
+     0.11,
+     -0.29
+    ],
+    "size": [
+     0.133,
+     0.22,
+     0.16
+    ],
+    "hash": "9f4dce5f92367655",
+    "tris": 100
+   },
+   {
+    "name": "LegFR_Paw",
+    "color": "#E890A6",
+    "material": "SmoothPlastic",
+    "transparency": 0.0,
+    "castShadow": true,
+    "canCollide": false,
+    "role": null,
+    "bone": "LegFR",
+    "offset": [
+     0.17,
+     0.026,
+     -0.325
+    ],
+    "size": [
+     0.127,
+     0.056,
+     0.162
+    ],
+    "hash": "942c1e0eb67e39b0",
+    "tris": 80
+   },
+   {
+    "name": "LegBL",
+    "color": "#6E6673",
+    "material": "SmoothPlastic",
+    "transparency": 0.0,
+    "castShadow": true,
+    "canCollide": false,
+    "role": null,
+    "bone": "LegBL",
+    "offset": [
+     -0.19,
+     0.15,
+     0.2
+    ],
+    "size": [
+     0.195,
+     0.26,
+     0.292
+    ],
+    "hash": "b780527af8b1df9f",
+    "tris": 144
+   },
+   {
+    "name": "LegBL_Paw",
+    "color": "#E890A6",
+    "material": "SmoothPlastic",
+    "transparency": 0.0,
+    "castShadow": true,
+    "canCollide": false,
+    "role": null,
+    "bone": "LegBL",
+    "offset": [
+     -0.19,
+     0.028,
+     0.17
+    ],
+    "size": [
+     0.136,
+     0.06,
+     0.228
+    ],
+    "hash": "03f5a687d611dc01",
+    "tris": 80
+   },
+   {
+    "name": "LegBR",
+    "color": "#6E6673",
+    "material": "SmoothPlastic",
+    "transparency": 0.0,
+    "castShadow": true,
+    "canCollide": false,
+    "role": null,
+    "bone": "LegBR",
+    "offset": [
+     0.19,
+     0.15,
+     0.2
+    ],
+    "size": [
+     0.195,
+     0.26,
+     0.292
+    ],
+    "hash": "b63e7bea142190c2",
+    "tris": 144
+   },
+   {
+    "name": "LegBR_Paw",
+    "color": "#E890A6",
+    "material": "SmoothPlastic",
+    "transparency": 0.0,
+    "castShadow": true,
+    "canCollide": false,
+    "role": null,
+    "bone": "LegBR",
+    "offset": [
+     0.19,
+     0.028,
+     0.17
+    ],
+    "size": [
+     0.136,
+     0.06,
+     0.228
+    ],
+    "hash": "c2dc265dae88a521",
+    "tris": 80
+   }
+  ],
+  "rig": {
+   "bones": [
+    {
+     "name": "Body",
+     "parent": null,
+     "joint": [
+      0.0,
+      0.36,
+      0.0
+     ]
+    },
+    {
+     "name": "Head",
+     "parent": "Body",
+     "joint": [
+      0.0,
+      0.42,
+      -0.35
+     ]
+    },
+    {
+     "name": "Tail",
+     "parent": "Body",
+     "joint": [
+      0.0,
+      0.3,
+      0.37
+     ]
+    },
+    {
+     "name": "LegFL",
+     "parent": "Body",
+     "joint": [
+      -0.17,
+      0.2,
+      -0.27
+     ]
+    },
+    {
+     "name": "LegFR",
+     "parent": "Body",
+     "joint": [
+      0.17,
+      0.2,
+      -0.27
+     ]
+    },
+    {
+     "name": "LegBL",
+     "parent": "Body",
+     "joint": [
+      -0.19,
+      0.22,
+      0.2
+     ]
+    },
+    {
+     "name": "LegBR",
+     "parent": "Body",
+     "joint": [
+      0.19,
+      0.22,
+      0.2
+     ]
+    }
+   ]
+  }
+ },
+ "Food_Tomato": {
+  "group": "Food",
+  "size": [
+   0.84,
+   0.12,
+   0.84
+  ],
+  "tris": 796,
+  "meta": {
+   "ingredient": "tomato",
+   "layer_count": 3,
+   "layer_spacing": 0.62
+  },
+  "url": "https://raw.githubusercontent.com/landonhjones2020-bit/nightshift-assets/main/meshes/gate/Food_Tomato.json",
+  "parts": [
+   {
+    "name": "Flesh",
+    "color": "#D92E24",
+    "material": "SmoothPlastic",
+    "transparency": 0.0,
+    "castShadow": true,
+    "canCollide": false,
+    "role": null,
+    "bone": null,
+    "offset": [
+     0.0,
+     0.054,
+     0.0
+    ],
+    "size": [
+     0.84,
+     0.1,
+     0.84
+    ],
+    "hash": "6dc4c0b1f71311f7",
+    "tris": 284
+   },
+   {
+    "name": "Core",
+    "color": "#FF8A63",
+    "material": "SmoothPlastic",
+    "transparency": 0.0,
+    "castShadow": true,
+    "canCollide": false,
+    "role": null,
+    "bone": null,
+    "offset": [
+     0.0,
+     0.054,
+     -0.002
+    ],
+    "size": [
+     0.581,
+     0.108,
+     0.56
+    ],
+    "hash": "59b06eda75abce41",
+    "tris": 272
+   },
+   {
+    "name": "Seeds",
+    "color": "#FFE27A",
+    "material": "SmoothPlastic",
+    "transparency": 0.0,
+    "castShadow": true,
+    "canCollide": false,
+    "role": null,
+    "bone": null,
+    "offset": [
+     0.001,
+     0.108,
+     -0.001
+    ],
+    "size": [
+     0.465,
+     0.024,
+     0.453
+    ],
+    "hash": "4ae6f8fd783b3360",
+    "tris": 240
+   }
+  ]
+ },
+ "Kitchen_Crate": {
+  "group": "Kitchen",
+  "size": [
+   2.06,
+   1.03,
+   1.46
+  ],
+  "tris": 1848,
+  "meta": {
+   "surface_label": {
+    "part": "Label",
+    "face": "Front"
+   },
+   "carry_offset": [
+    0,
+    0.9,
+    -1.3
+   ]
+  },
+  "url": "https://raw.githubusercontent.com/landonhjones2020-bit/nightshift-assets/main/meshes/gate/Kitchen_Crate.json",
+  "parts": [
+   {
+    "name": "Body",
+    "color": "#4FA04A",
+    "material": "SmoothPlastic",
+    "transparency": 0.0,
+    "castShadow": true,
+    "canCollide": false,
+    "role": "crate_body",
+    "bone": null,
+    "offset": [
+     0.0,
+     0.5,
+     0.0
+    ],
+    "size": [
+     2.0,
+     1.0,
+     1.4
+    ],
+    "hash": "0327f62cfb033a4d",
+    "tris": 1148
+   },
+   {
+    "name": "Trim",
+    "color": "#3B7D37",
+    "material": "SmoothPlastic",
+    "transparency": 0.0,
+    "castShadow": true,
+    "canCollide": false,
+    "role": "crate_trim",
+    "bone": null,
+    "offset": [
+     0.0,
+     0.515,
+     0.0
+    ],
+    "size": [
+     2.06,
+     1.03,
+     1.46
+    ],
+    "hash": "aba9a2b03aa95a6d",
+    "tris": 656
+   },
+   {
+    "name": "Label",
+    "color": "#F3EEE2",
+    "material": "SmoothPlastic",
+    "transparency": 0.0,
+    "castShadow": true,
+    "canCollide": false,
+    "role": "crate_label",
+    "bone": null,
+    "offset": [
+     0.0,
+     0.7,
+     -0.712
+    ],
+    "size": [
+     0.95,
+     0.26,
+     0.03
+    ],
+    "hash": "bc1cf7d65a6aae7d",
+    "tris": 44
+   }
+  ]
+ },
+ "Test_TomatoVertexColor": {
+  "group": "Food",
+  "size": [
+   0.84,
+   0.12,
+   0.84
+  ],
+  "tris": 796,
+  "meta": {
+   "test": "vertex_colors"
+  },
+  "url": "https://raw.githubusercontent.com/landonhjones2020-bit/nightshift-assets/main/meshes/gate/Test_TomatoVertexColor.json",
+  "parts": [
+   {
+    "name": "Merged",
+    "color": "#D92E24",
+    "material": "SmoothPlastic",
+    "transparency": 0.0,
+    "castShadow": true,
+    "canCollide": false,
+    "role": null,
+    "bone": null,
+    "offset": [
+     0.0,
+     0.06,
+     0.0
+    ],
+    "size": [
+     0.84,
+     0.12,
+     0.84
+    ],
+    "hash": "9aeb3e7392d9fa26",
+    "tris": 796
+   }
+  ]
+ }
+}

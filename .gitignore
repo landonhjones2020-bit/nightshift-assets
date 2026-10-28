@@ -1,0 +1,4 @@
+_local/
+__pycache__/
+*.pyc
+*.blend1
