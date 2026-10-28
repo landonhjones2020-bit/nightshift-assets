@@ -66,3 +66,9 @@ if __name__ == "__main__":
         doc = ns.export_asset("Test_TomatoVertexColor", "gate", group="Food", vertex_colors=True,
                               merge_parts="Merged", fbx=False, meta={"test": "vertex_colors"})
         print(f"[Test_TomatoVertexColor] exported: {doc['tris']} tris")
+
+    # Icon (pipeline gate): shared icon rig, 3/4 view, transparent background, 512 px
+    if os.environ.get("NS_ICON") == "1":
+        ns.reset()
+        build()
+        print("[Food_Tomato] icon:", ns.render_icon("Food_Tomato", "food", pitch=38.0))

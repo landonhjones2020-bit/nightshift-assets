@@ -625,17 +625,30 @@ def render_icon(name: str, group: str, yaw=-35.0, pitch=28.0, res=512, samples=4
     objs = objects or _tagged_objects()
     lo, hi = bbox_world(objs)
     _setup_render(res, samples, transparent=True)
+    bg = bpy.context.scene.world.node_tree.nodes.get("Background")
+    bg.inputs[1].default_value = 0.45
+    # Icons: soft, low-specular materials so colours read saturated (no grey sky reflections)
+    saved = []
+    for m in bpy.data.materials:
+        b = m.node_tree.nodes.get("Principled BSDF") if m.use_nodes else None
+        if b:
+            saved.append((b, b.inputs["Roughness"].default_value, b.inputs["Specular IOR Level"].default_value))
+            b.inputs["Roughness"].default_value = max(0.62, b.inputs["Roughness"].default_value)
+            b.inputs["Specular IOR Level"].default_value = 0.25
     cam, ctr, dist = _camera_fit(lo, hi, yaw, pitch, fov_deg=fov, margin=margin)
     k = math.radians(yaw)
-    _light("Key", "AREA", ctr + Vector((math.sin(k - 0.7), -math.cos(k - 0.7), 1.0)) * dist, 70 * dist ** 2 / 9, size=dist * 0.5, target=ctr)
-    _light("Fill", "AREA", ctr + Vector((math.sin(k + 1.3), -math.cos(k + 1.3), 0.2)) * dist, 25 * dist ** 2 / 9, size=dist * 0.9, target=ctr)
-    _light("Rim", "AREA", ctr + Vector((-math.sin(k), math.cos(k), 0.9)) * dist, 60 * dist ** 2 / 9, size=dist * 0.4, target=ctr)
+    _light("Key", "AREA", ctr + Vector((math.sin(k - 0.7), -math.cos(k - 0.7), 1.0)) * dist, 62 * dist ** 2 / 9, size=dist * 0.6, target=ctr)
+    _light("Fill", "AREA", ctr + Vector((math.sin(k + 1.3), -math.cos(k + 1.3), 0.2)) * dist, 18 * dist ** 2 / 9, size=dist * 0.9, target=ctr)
+    _light("Rim", "AREA", ctr + Vector((-math.sin(k), math.cos(k), 0.9)) * dist, 50 * dist ** 2 / 9, size=dist * 0.4, target=ctr)
     out_dir = os.path.join(REPO, "icons", group)
     os.makedirs(out_dir, exist_ok=True)
     out = os.path.join(out_dir, f"{name}.png")
     bpy.context.scene.render.filepath = out
     bpy.ops.render.render(write_still=True)
     _clear_rig()
+    for b, r, sp in saved:
+        b.inputs["Roughness"].default_value = r
+        b.inputs["Specular IOR Level"].default_value = sp
     return out
 
 
