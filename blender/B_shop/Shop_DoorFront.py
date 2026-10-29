@@ -37,7 +37,7 @@ def build():
         ns.boolean(bead, ns.box((gx1 - gx0, 1, gz1 - gz0), loc=((gx0 + gx1) / 2, 0, (gz0 + gz1) / 2), bevel=0.0))
         ns.bevel(bead, width=0.015, segments=1)
         beads.append(bead)
-    C.part([frame] + beads, "Frame", ALU, "Metal", recolor="door_frame", can_collide=True, smooth_angle=40)
+    C.part([frame] + beads, "Frame", ALU, "Metal", can_collide=True, smooth_angle=40)
 
     # kick plates (stainless, both faces) with two raised ribs
     kick = []

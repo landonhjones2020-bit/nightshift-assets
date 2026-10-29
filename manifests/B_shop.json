@@ -1,0 +1,5640 @@
+{
+ "Shop_BasementStairs": {
+  "group": "Shop",
+  "size": [
+   5.64,
+   15.092,
+   18.5
+  ],
+  "tris": 2584,
+  "meta": {
+   "pivot": "top landing edge: width centre, upper floor level, where the first riser drops",
+   "descends": "+Y (away from LookVector)",
+   "drop": 12.0,
+   "risers": 16,
+   "rise": 0.75,
+   "run": 1.0,
+   "treads": 15,
+   "clear_width": 5.0,
+   "footprint": {
+    "x": [
+     -2.98,
+     2.98
+    ],
+    "y": [
+     -1.3,
+     17.4
+    ]
+   },
+   "floor_opening": {
+    "x": [
+     -2.9,
+     2.9
+    ],
+    "y": [
+     0,
+     15
+    ]
+   },
+   "bottom_floor": {
+    "y_from": 15.0,
+    "z": -12.0
+   }
+  },
+  "url": "https://raw.githubusercontent.com/landonhjones2020-bit/nightshift-assets/main/meshes/B_shop/Shop_BasementStairs.json",
+  "parts": [
+   {
+    "name": "Treads",
+    "color": "#8A5A3B",
+    "material": "WoodPlanks",
+    "transparency": 0.0,
+    "castShadow": true,
+    "canCollide": true,
+    "role": null,
+    "bone": null,
+    "offset": [
+     0.0,
+     -6.1,
+     7.55
+    ],
+    "size": [
+     5.0,
+     10.7,
+     15.1
+    ],
+    "hash": "c09c0f6422c2c9c8",
+    "tris": 660
+   },
+   {
+    "name": "Hazard",
+    "color": "#F2B33D",
+    "material": "SmoothPlastic",
+    "transparency": 0.0,
+    "castShadow": true,
+    "canCollide": false,
+    "role": null,
+    "bone": null,
+    "offset": [
+     0.0,
+     -5.615,
+     7.575
+    ],
+    "size": [
+     5.0,
+     11.27,
+     15.15
+    ],
+    "hash": "dbadee55f1ae876a",
+    "tris": 24
+   },
+   {
+    "name": "Stringers",
+    "color": "#3A3D42",
+    "material": "Metal",
+    "transparency": 0.0,
+    "castShadow": true,
+    "canCollide": true,
+    "role": null,
+    "bone": null,
+    "offset": [
+     0.0,
+     -5.737,
+     8.151
+    ],
+    "size": [
+     5.64,
+     12.526,
+     16.701
+    ],
+    "hash": "2231b64c772f52f7",
+    "tris": 212
+   },
+   {
+    "name": "Handrail",
+    "color": "#C9962F",
+    "material": "Metal",
+    "transparency": 0.0,
+    "castShadow": true,
+    "canCollide": false,
+    "role": null,
+    "bone": null,
+    "offset": [
+     0.0,
+     -4.454,
+     8.05
+    ],
+    "size": [
+     5.625,
+     15.092,
+     18.5
+    ],
+    "hash": "3b9be1c108150b3c",
+    "tris": 1688
+   }
+  ],
+  "sockets": {
+   "Bottom": {
+    "p": [
+     0.0,
+     -12.0,
+     15.8
+    ],
+    "yaw": 180.0
+   },
+   "LightsOutSpawn": {
+    "p": [
+     0.0,
+     -12.0,
+     16.5
+    ],
+    "yaw": 0.0
+   },
+   "Top": {
+    "p": [
+     0.0,
+     0.0,
+     -0.5
+    ],
+    "yaw": 180.0
+   }
+  }
+ },
+ "Shop_Booth": {
+  "group": "Shop",
+  "size": [
+   7.96,
+   4.57,
+   5.307
+  ],
+  "tris": 2712,
+  "meta": {
+   "seat_height": 1.6,
+   "table_height": 2.8,
+   "wall_end": "+Y (back)",
+   "aisle_end": "front (-Y)",
+   "fits": "one 8-stud window module",
+   "variants": {
+    "Teal": {
+     "booth_vinyl": "#2F8A88",
+     "booth_shell": "#B8323C"
+    }
+   }
+  },
+  "url": "https://raw.githubusercontent.com/landonhjones2020-bit/nightshift-assets/main/meshes/B_shop/Shop_Booth.json",
+  "parts": [
+   {
+    "name": "ShellA",
+    "color": "#2F8A88",
+    "material": "SmoothPlastic",
+    "transparency": 0.0,
+    "castShadow": true,
+    "canCollide": true,
+    "role": "booth_shell",
+    "bone": null,
+    "offset": [
+     2.7,
+     2.4,
+     0.0
+    ],
+    "size": [
+     2.5,
+     4.2,
+     5.2
+    ],
+    "hash": "c75041380c4417cd",
+    "tris": 192
+   },
+   {
+    "name": "Metal",
+    "color": "#FFFFFF",
+    "material": "Metal",
+    "transparency": 0.0,
+    "castShadow": true,
+    "canCollide": false,
+    "role": null,
+    "bone": null,
+    "offset": [
+     0.0,
+     2.285,
+     0.0
+    ],
+    "size": [
+     7.96,
+     4.57,
+     5.307
+    ],
+    "hash": "eb22d92a8b414452",
+    "tris": 836
+   },
+   {
+    "name": "SmoothPlastic",
+    "color": "#FFFFFF",
+    "material": "SmoothPlastic",
+    "transparency": 0.0,
+    "castShadow": true,
+    "canCollide": false,
+    "role": null,
+    "bone": null,
+    "offset": [
+     0.0,
+     1.74,
+     0.0
+    ],
+    "size": [
+     7.7,
+     3.48,
+     4.8
+    ],
+    "hash": "2500582526c208a6",
+    "tris": 288
+   },
+   {
+    "name": "VinylA",
+    "color": "#B8323C",
+    "material": "SmoothPlastic",
+    "transparency": 0.0,
+    "castShadow": true,
+    "canCollide": true,
+    "role": "booth_vinyl",
+    "bone": null,
+    "offset": [
+     2.477,
+     2.711,
+     0.0
+    ],
+    "size": [
+     2.094,
+     3.022,
+     4.94
+    ],
+    "hash": "adc7287dd5e291f8",
+    "tris": 540
+   },
+   {
+    "name": "ShellB",
+    "color": "#2F8A88",
+    "material": "SmoothPlastic",
+    "transparency": 0.0,
+    "castShadow": true,
+    "canCollide": true,
+    "role": "booth_shell",
+    "bone": null,
+    "offset": [
+     -2.7,
+     2.4,
+     0.0
+    ],
+    "size": [
+     2.5,
+     4.2,
+     5.2
+    ],
+    "hash": "f56f7e07b8002398",
+    "tris": 192
+   },
+   {
+    "name": "VinylB",
+    "color": "#B8323C",
+    "material": "SmoothPlastic",
+    "transparency": 0.0,
+    "castShadow": true,
+    "canCollide": true,
+    "role": "booth_vinyl",
+    "bone": null,
+    "offset": [
+     -2.477,
+     2.711,
+     0.0
+    ],
+    "size": [
+     2.094,
+     3.022,
+     4.94
+    ],
+    "hash": "40b545ceca92a69a",
+    "tris": 540
+   },
+   {
+    "name": "TableTop",
+    "color": "#E9E2D3",
+    "material": "SmoothPlastic",
+    "transparency": 0.0,
+    "castShadow": true,
+    "canCollide": true,
+    "role": null,
+    "bone": null,
+    "offset": [
+     0.0,
+     2.74,
+     0.2
+    ],
+    "size": [
+     2.5,
+     0.12,
+     4.4
+    ],
+    "hash": "d786a9ecf8819fc3",
+    "tris": 124
+   }
+  ],
+  "sockets": {
+   "Napkin": {
+    "p": [
+     -0.35,
+     2.8,
+     1.5
+    ],
+    "yaw": 0.0
+   },
+   "Seat1": {
+    "p": [
+     2.35,
+     1.6,
+     -1.2
+    ],
+    "yaw": 90.0
+   },
+   "Seat2": {
+    "p": [
+     2.35,
+     1.6,
+     1.2
+    ],
+    "yaw": 90.0
+   },
+   "Seat3": {
+    "p": [
+     -2.35,
+     1.6,
+     -1.2
+    ],
+    "yaw": -90.0
+   },
+   "Seat4": {
+    "p": [
+     -2.35,
+     1.6,
+     1.2
+    ],
+    "yaw": -90.0
+   },
+   "Table": {
+    "p": [
+     0.0,
+     2.8,
+     0.2
+    ],
+    "yaw": 0.0
+   }
+  }
+ },
+ "Shop_BrickWall": {
+  "group": "Shop",
+  "size": [
+   8.0,
+   12.0,
+   1.4
+  ],
+  "tris": 2332,
+  "meta": {
+   "module": "wall_exterior",
+   "grid": 8,
+   "size": [
+    8,
+    12,
+    1
+   ],
+   "outside": "front (-Y / LookVector)",
+   "placement": "pivot on the wall centre line, bottom; ends on 8-stud grid nodes",
+   "recolor_presets": {
+    "Brick": {
+     "brick": "#7A3A2F",
+     "brick_band": "#5C2A24"
+    },
+    "Painted": {
+     "brick": "#4A5568",
+     "brick_band": "#2F3646"
+    }
+   }
+  },
+  "url": "https://raw.githubusercontent.com/landonhjones2020-bit/nightshift-assets/main/meshes/B_shop/Shop_BrickWall.json",
+  "parts": [
+   {
+    "name": "Brick",
+    "color": "#7A3A2F",
+    "material": "SmoothPlastic",
+    "transparency": 0.0,
+    "castShadow": true,
+    "canCollide": true,
+    "role": "brick",
+    "bone": null,
+    "offset": [
+     0.0,
+     6.0,
+     0.0
+    ],
+    "size": [
+     8.0,
+     12.0,
+     1.0
+    ],
+    "hash": "dd84f71136383b27",
+    "tris": 12
+   },
+   {
+    "name": "Mortar",
+    "color": "#A79C8F",
+    "material": "SmoothPlastic",
+    "transparency": 0.0,
+    "castShadow": true,
+    "canCollide": false,
+    "role": null,
+    "bone": null,
+    "offset": [
+     0.0,
+     6.25,
+     0.0
+    ],
+    "size": [
+     8.0,
+     10.56,
+     1.2
+    ],
+    "hash": "a36bb9082fc9c7af",
+    "tris": 2208
+   },
+   {
+    "name": "BrickBand",
+    "color": "#5C2A24",
+    "material": "SmoothPlastic",
+    "transparency": 0.0,
+    "castShadow": true,
+    "canCollide": false,
+    "role": "brick_band",
+    "bone": null,
+    "offset": [
+     0.0,
+     5.3,
+     0.0
+    ],
+    "size": [
+     8.0,
+     8.6,
+     1.16
+    ],
+    "hash": "6094a028224c4d16",
+    "tris": 48
+   },
+   {
+    "name": "Concrete",
+    "color": "#8E8C86",
+    "material": "Concrete",
+    "transparency": 0.0,
+    "castShadow": true,
+    "canCollide": false,
+    "role": null,
+    "bone": null,
+    "offset": [
+     0.0,
+     5.996,
+     0.0
+    ],
+    "size": [
+     8.0,
+     11.993,
+     1.4
+    ],
+    "hash": "5857ff78c6d4b115",
+    "tris": 64
+   }
+  ]
+ },
+ "Shop_CCTVMonitor": {
+  "group": "Shop",
+  "size": [
+   3.98,
+   3.16,
+   2.744
+  ],
+  "tris": 1804,
+  "meta": {
+   "screens": [
+    "Screen1",
+    "Screen2",
+    "Screen3",
+    "Screen4"
+   ],
+   "screen_layout": "1 TL, 2 TR, 3 BL, 4 BR",
+   "camera_feeds": {
+    "Screen1": "parking lot",
+    "Screen2": "freezer",
+    "Screen3": "basement",
+    "Screen4": "dining room"
+   },
+   "surfaces": [
+    {
+     "part": "Screen1",
+     "face": "Front"
+    },
+    {
+     "part": "Screen2",
+     "face": "Front"
+    },
+    {
+     "part": "Screen3",
+     "face": "Front"
+    },
+    {
+     "part": "Screen4",
+     "face": "Front"
+    }
+   ],
+   "pivot": "bottom-centre of the rack (console extends 1.45 in front)",
+   "sits_on": "Shop_OfficeDesk Socket_Monitor"
+  },
+  "url": "https://raw.githubusercontent.com/landonhjones2020-bit/nightshift-assets/main/meshes/B_shop/Shop_CCTVMonitor.json",
+  "parts": [
+   {
+    "name": "SmoothPlastic",
+    "color": "#FFFFFF",
+    "material": "SmoothPlastic",
+    "transparency": 0.0,
+    "castShadow": true,
+    "canCollide": false,
+    "role": null,
+    "bone": null,
+    "offset": [
+     0.0,
+     1.497,
+     -0.026
+    ],
+    "size": [
+     3.662,
+     2.976,
+     2.64
+    ],
+    "hash": "0902ab2b4f21fc51",
+    "tris": 1212
+   },
+   {
+    "name": "Screen1",
+    "color": "#1C2B26",
+    "material": "Glass",
+    "transparency": 0.0,
+    "castShadow": false,
+    "canCollide": false,
+    "role": "screen",
+    "bone": null,
+    "offset": [
+     0.95,
+     2.46,
+     -0.695
+    ],
+    "size": [
+     1.3,
+     0.78,
+     0.05
+    ],
+    "hash": "1fc580f1d250644c",
+    "tris": 28
+   },
+   {
+    "name": "Led1",
+    "color": "#45FF6A",
+    "material": "Neon",
+    "transparency": 0.0,
+    "castShadow": false,
+    "canCollide": false,
+    "role": "led",
+    "bone": null,
+    "offset": [
+     1.55,
+     1.77,
+     -0.77
+    ],
+    "size": [
+     0.061,
+     0.07,
+     0.07
+    ],
+    "hash": "ffdabddc107a21b4",
+    "tris": 36
+   },
+   {
+    "name": "Screen2",
+    "color": "#1C2B26",
+    "material": "Glass",
+    "transparency": 0.0,
+    "castShadow": false,
+    "canCollide": false,
+    "role": "screen",
+    "bone": null,
+    "offset": [
+     -0.95,
+     2.46,
+     -0.695
+    ],
+    "size": [
+     1.3,
+     0.78,
+     0.05
+    ],
+    "hash": "83ba3d0002137b7b",
+    "tris": 28
+   },
+   {
+    "name": "Led2",
+    "color": "#45FF6A",
+    "material": "Neon",
+    "transparency": 0.0,
+    "castShadow": false,
+    "canCollide": false,
+    "role": "led",
+    "bone": null,
+    "offset": [
+     -0.35,
+     1.77,
+     -0.77
+    ],
+    "size": [
+     0.061,
+     0.07,
+     0.07
+    ],
+    "hash": "7be223a19013308d",
+    "tris": 36
+   },
+   {
+    "name": "Screen3",
+    "color": "#1C2B26",
+    "material": "Glass",
+    "transparency": 0.0,
+    "castShadow": false,
+    "canCollide": false,
+    "role": "screen",
+    "bone": null,
+    "offset": [
+     0.95,
+     0.96,
+     -0.695
+    ],
+    "size": [
+     1.3,
+     0.78,
+     0.05
+    ],
+    "hash": "5973df37ea95fb86",
+    "tris": 28
+   },
+   {
+    "name": "Led3",
+    "color": "#45FF6A",
+    "material": "Neon",
+    "transparency": 0.0,
+    "castShadow": false,
+    "canCollide": false,
+    "role": "led",
+    "bone": null,
+    "offset": [
+     1.55,
+     0.27,
+     -0.77
+    ],
+    "size": [
+     0.061,
+     0.07,
+     0.07
+    ],
+    "hash": "41b7f83cbe008cfb",
+    "tris": 36
+   },
+   {
+    "name": "Screen4",
+    "color": "#1C2B26",
+    "material": "Glass",
+    "transparency": 0.0,
+    "castShadow": false,
+    "canCollide": false,
+    "role": "screen",
+    "bone": null,
+    "offset": [
+     -0.95,
+     0.96,
+     -0.695
+    ],
+    "size": [
+     1.3,
+     0.78,
+     0.05
+    ],
+    "hash": "8e3762d6383598cf",
+    "tris": 28
+   },
+   {
+    "name": "Led4",
+    "color": "#45FF6A",
+    "material": "Neon",
+    "transparency": 0.0,
+    "castShadow": false,
+    "canCollide": false,
+    "role": "led",
+    "bone": null,
+    "offset": [
+     -0.35,
+     0.27,
+     -0.77
+    ],
+    "size": [
+     0.061,
+     0.07,
+     0.07
+    ],
+    "hash": "94a03ef44067b0a4",
+    "tris": 36
+   },
+   {
+    "name": "Rack",
+    "color": "#1E2024",
+    "material": "Metal",
+    "transparency": 0.0,
+    "castShadow": true,
+    "canCollide": false,
+    "role": null,
+    "bone": null,
+    "offset": [
+     0.0,
+     1.58,
+     -0.35
+    ],
+    "size": [
+     3.98,
+     3.16,
+     2.2
+    ],
+    "hash": "2c6b43daa3de519f",
+    "tris": 336
+   }
+  ],
+  "sockets": {
+   "Prompt": {
+    "p": [
+     0.0,
+     0.4,
+     -1.15
+    ],
+    "yaw": 0.0
+   }
+  }
+ },
+ "Shop_CeilingLight": {
+  "group": "Shop",
+  "size": [
+   4.0,
+   0.4,
+   1.2
+  ],
+  "tris": 452,
+  "meta": {
+   "pivot": "TOP centre (ceiling plane)",
+   "size": [
+    4.0,
+    0.4,
+    1.2
+   ],
+   "mount_height": 12,
+   "light_hint": {
+    "type": "SurfaceLight",
+    "face": "Bottom",
+    "color": "#FFF4DC",
+    "range": 16,
+    "brightness": 1.6
+   }
+  },
+  "url": "https://raw.githubusercontent.com/landonhjones2020-bit/nightshift-assets/main/meshes/B_shop/Shop_CeilingLight.json",
+  "parts": [
+   {
+    "name": "Housing",
+    "color": "#E9E6DE",
+    "material": "SmoothPlastic",
+    "transparency": 0.0,
+    "castShadow": true,
+    "canCollide": false,
+    "role": null,
+    "bone": null,
+    "offset": [
+     0.0,
+     -0.15,
+     0.0
+    ],
+    "size": [
+     4.0,
+     0.3,
+     1.2
+    ],
+    "hash": "a7744a6cf82f9804",
+    "tris": 204
+   },
+   {
+    "name": "Trim",
+    "color": "#B9C0C6",
+    "material": "Metal",
+    "transparency": 0.0,
+    "castShadow": true,
+    "canCollide": false,
+    "role": null,
+    "bone": null,
+    "offset": [
+     0.0,
+     -0.34,
+     0.0
+    ],
+    "size": [
+     3.88,
+     0.1,
+     1.08
+    ],
+    "hash": "e91674fc5012d2e0",
+    "tris": 184
+   },
+   {
+    "name": "Diffuser",
+    "color": "#FFF4DC",
+    "material": "Neon",
+    "transparency": 0.0,
+    "castShadow": false,
+    "canCollide": false,
+    "role": "lamp",
+    "bone": null,
+    "offset": [
+     0.0,
+     -0.355,
+     0.0
+    ],
+    "size": [
+     3.62,
+     0.09,
+     0.82
+    ],
+    "hash": "2e006245d30d5020",
+    "tris": 64
+   }
+  ],
+  "sockets": {
+   "Light": {
+    "p": [
+     0.0,
+     -0.4,
+     0.0
+    ],
+    "yaw": 0.0
+   }
+  }
+ },
+ "Shop_ChainFence": {
+  "group": "Shop",
+  "size": [
+   8.44,
+   6.708,
+   0.44
+  ],
+  "tris": 1276,
+  "meta": {
+   "module": "fence",
+   "grid": 8,
+   "size": [
+    8.3,
+    6.75,
+    0.4
+   ],
+   "collision": "none (map adds)",
+   "placement": "pivot bottom-centre on the fence line; posts at x = +-4 coincide with neighbours"
+  },
+  "url": "https://raw.githubusercontent.com/landonhjones2020-bit/nightshift-assets/main/meshes/B_shop/Shop_ChainFence.json",
+  "parts": [
+   {
+    "name": "Metal",
+    "color": "#FFFFFF",
+    "material": "Metal",
+    "transparency": 0.0,
+    "castShadow": true,
+    "canCollide": false,
+    "role": null,
+    "bone": null,
+    "offset": [
+     0.0,
+     3.354,
+     0.0
+    ],
+    "size": [
+     8.44,
+     6.708,
+     0.44
+    ],
+    "hash": "af3a9aeff8e3fd62",
+    "tris": 1276
+   }
+  ]
+ },
+ "Shop_Chair": {
+  "group": "Shop",
+  "size": [
+   1.72,
+   3.271,
+   1.857
+  ],
+  "tris": 856,
+  "meta": {
+   "seat_height": 1.6,
+   "front": "-Y (sit facing LookVector)"
+  },
+  "url": "https://raw.githubusercontent.com/landonhjones2020-bit/nightshift-assets/main/meshes/B_shop/Shop_Chair.json",
+  "parts": [
+   {
+    "name": "Frame",
+    "color": "#D3D8DC",
+    "material": "Metal",
+    "transparency": 0.0,
+    "castShadow": true,
+    "canCollide": false,
+    "role": null,
+    "bone": null,
+    "offset": [
+     0.0,
+     1.65,
+     -0.043
+    ],
+    "size": [
+     1.68,
+     3.21,
+     1.731
+    ],
+    "hash": "8771a7679d2c1549",
+    "tris": 484
+   },
+   {
+    "name": "Vinyl",
+    "color": "#B8323C",
+    "material": "SmoothPlastic",
+    "transparency": 0.0,
+    "castShadow": true,
+    "canCollide": false,
+    "role": "chair_vinyl",
+    "bone": null,
+    "offset": [
+     0.0,
+     2.286,
+     0.025
+    ],
+    "size": [
+     1.62,
+     1.971,
+     1.807
+    ],
+    "hash": "53d8400b54c47a2f",
+    "tris": 216
+   },
+   {
+    "name": "Piping",
+    "color": "#2B2D33",
+    "material": "SmoothPlastic",
+    "transparency": 0.0,
+    "castShadow": true,
+    "canCollide": false,
+    "role": null,
+    "bone": null,
+    "offset": [
+     0.0,
+     0.705,
+     -0.073
+    ],
+    "size": [
+     1.72,
+     1.41,
+     1.71
+    ],
+    "hash": "30190b8089d8e682",
+    "tris": 156
+   }
+  ],
+  "sockets": {
+   "Seat": {
+    "p": [
+     0.0,
+     1.6,
+     -0.148
+    ],
+    "yaw": 0.0
+   }
+  }
+ },
+ "Shop_Counter": {
+  "group": "Shop",
+  "size": [
+   16.12,
+   3.0,
+   3.02
+  ],
+  "tris": 2972,
+  "meta": {
+   "top": 3.0,
+   "size": [
+    16.0,
+    3.0,
+    3.0
+   ],
+   "customer_side": "front (-Y / LookVector)",
+   "staff_side": "+Y",
+   "hide_spots": [
+    "HideA",
+    "HideB"
+   ],
+   "socket_yaw": "0 = facing the counter front direction (LookVector)",
+   "collider": "Top, FrontPanel, EndL/EndR, CabL/CabMid/CabR (cubbies stay free)"
+  },
+  "url": "https://raw.githubusercontent.com/landonhjones2020-bit/nightshift-assets/main/meshes/B_shop/Shop_Counter.json",
+  "parts": [
+   {
+    "name": "Metal",
+    "color": "#FFFFFF",
+    "material": "Metal",
+    "transparency": 0.0,
+    "castShadow": true,
+    "canCollide": false,
+    "role": null,
+    "bone": null,
+    "offset": [
+     0.0,
+     1.597,
+     -0.01
+    ],
+    "size": [
+     16.12,
+     2.775,
+     3.0
+    ],
+    "hash": "0f487c67d19a1985",
+    "tris": 1552
+   },
+   {
+    "name": "Top",
+    "color": "#E9E2D3",
+    "material": "SmoothPlastic",
+    "transparency": 0.0,
+    "castShadow": true,
+    "canCollide": true,
+    "role": null,
+    "bone": null,
+    "offset": [
+     0.0,
+     2.93,
+     0.02
+    ],
+    "size": [
+     15.88,
+     0.14,
+     2.94
+    ],
+    "hash": "90721c162706d60c",
+    "tris": 100
+   },
+   {
+    "name": "FrontPanel",
+    "color": "#B53A2E",
+    "material": "SmoothPlastic",
+    "transparency": 0.0,
+    "castShadow": true,
+    "canCollide": true,
+    "role": "counter_front",
+    "bone": null,
+    "offset": [
+     0.0,
+     1.42,
+     -1.11
+    ],
+    "size": [
+     15.8,
+     1.84,
+     0.2
+    ],
+    "hash": "b082da33a7f53c8e",
+    "tris": 12
+   },
+   {
+    "name": "EndL",
+    "color": "#B53A2E",
+    "material": "SmoothPlastic",
+    "transparency": 0.0,
+    "castShadow": true,
+    "canCollide": true,
+    "role": "counter_front",
+    "bone": null,
+    "offset": [
+     7.9,
+     1.55,
+     0.08
+    ],
+    "size": [
+     0.2,
+     2.3,
+     2.6
+    ],
+    "hash": "73044591301a822a",
+    "tris": 108
+   },
+   {
+    "name": "EndR",
+    "color": "#B53A2E",
+    "material": "SmoothPlastic",
+    "transparency": 0.0,
+    "castShadow": true,
+    "canCollide": true,
+    "role": "counter_front",
+    "bone": null,
+    "offset": [
+     -7.9,
+     1.55,
+     0.08
+    ],
+    "size": [
+     0.2,
+     2.3,
+     2.6
+    ],
+    "hash": "4108022d04ff8cfe",
+    "tris": 108
+   },
+   {
+    "name": "SmoothPlastic",
+    "color": "#FFFFFF",
+    "material": "SmoothPlastic",
+    "transparency": 0.0,
+    "castShadow": true,
+    "canCollide": false,
+    "role": null,
+    "bone": null,
+    "offset": [
+     0.0,
+     1.39,
+     0.103
+    ],
+    "size": [
+     15.8,
+     2.78,
+     2.815
+    ],
+    "hash": "015e12cabd3e6b1f",
+    "tris": 1056
+   },
+   {
+    "name": "Metal_",
+    "color": "#FFFFFF",
+    "material": "Metal",
+    "transparency": 0.0,
+    "castShadow": true,
+    "canCollide": true,
+    "role": null,
+    "bone": null,
+    "offset": [
+     0.0,
+     1.5,
+     0.18
+    ],
+    "size": [
+     15.6,
+     2.3,
+     2.38
+    ],
+    "hash": "9a9e7303015556c6",
+    "tris": 36
+   }
+  ],
+  "sockets": {
+   "Bell": {
+    "p": [
+     3.6,
+     3.0,
+     -0.86
+    ],
+    "yaw": 0.0
+   },
+   "HideA": {
+    "p": [
+     3.9,
+     1.39,
+     0.23
+    ],
+    "yaw": 180.0
+   },
+   "HideB": {
+    "p": [
+     -3.9,
+     1.39,
+     0.23
+    ],
+    "yaw": 180.0
+   },
+   "Plate1": {
+    "p": [
+     6.0,
+     3.0,
+     -0.76
+    ],
+    "yaw": 180.0
+   },
+   "Plate2": {
+    "p": [
+     2.0,
+     3.0,
+     -0.76
+    ],
+    "yaw": 180.0
+   },
+   "Plate3": {
+    "p": [
+     -2.0,
+     3.0,
+     -0.76
+    ],
+    "yaw": 180.0
+   },
+   "Plate4": {
+    "p": [
+     -6.0,
+     3.0,
+     -0.76
+    ],
+    "yaw": 180.0
+   },
+   "Register": {
+    "p": [
+     6.0,
+     3.0,
+     0.54
+    ],
+    "yaw": 180.0
+   },
+   "ServeSpot1": {
+    "p": [
+     6.0,
+     0.0,
+     -3.31
+    ],
+    "yaw": 180.0
+   },
+   "ServeSpot2": {
+    "p": [
+     2.0,
+     0.0,
+     -3.31
+    ],
+    "yaw": 180.0
+   },
+   "ServeSpot3": {
+    "p": [
+     -2.0,
+     0.0,
+     -3.31
+    ],
+    "yaw": 180.0
+   },
+   "ServeSpot4": {
+    "p": [
+     -6.0,
+     0.0,
+     -3.31
+    ],
+    "yaw": 180.0
+   },
+   "TicketPrinter": {
+    "p": [
+     -6.0,
+     3.0,
+     0.69
+    ],
+    "yaw": 180.0
+   }
+  }
+ },
+ "Shop_DoorFront": {
+  "group": "Shop",
+  "size": [
+   4.92,
+   7.92,
+   1.222
+  ],
+  "tris": 1840,
+  "meta": {
+   "leaf": true,
+   "leaf_size": [
+    4.9,
+    7.92,
+    0.22
+   ],
+   "hinge": "pivot (x=0 edge, bottom, leaf centre plane)",
+   "fits": "Shop_WallDoorway Socket_DoorHinge",
+   "open_axis": "pivot Y (yaw)",
+   "surfaces": [
+    {
+     "part": "Sticker",
+     "face": "Front"
+    }
+   ]
+  },
+  "url": "https://raw.githubusercontent.com/landonhjones2020-bit/nightshift-assets/main/meshes/B_shop/Shop_DoorFront.json",
+  "parts": [
+   {
+    "name": "Frame",
+    "color": "#A9B1B8",
+    "material": "Metal",
+    "transparency": 0.0,
+    "castShadow": true,
+    "canCollide": true,
+    "role": null,
+    "bone": null,
+    "offset": [
+     -2.5,
+     3.99,
+     0.0
+    ],
+    "size": [
+     4.9,
+     7.92,
+     0.3
+    ],
+    "hash": "39083436f9a8545a",
+    "tris": 416
+   },
+   {
+    "name": "Metal",
+    "color": "#FFFFFF",
+    "material": "Metal",
+    "transparency": 0.0,
+    "castShadow": true,
+    "canCollide": false,
+    "role": null,
+    "bone": null,
+    "offset": [
+     -2.415,
+     3.99,
+     0.0
+    ],
+    "size": [
+     4.77,
+     7.84,
+     1.074
+    ],
+    "hash": "ef5b85bba166eba7",
+    "tris": 1080
+   },
+   {
+    "name": "Glass",
+    "color": "#A9D3E0",
+    "material": "Glass",
+    "transparency": 0.6,
+    "castShadow": false,
+    "canCollide": true,
+    "role": "glass",
+    "bone": null,
+    "offset": [
+     -2.5,
+     4.365,
+     0.0
+    ],
+    "size": [
+     4.1,
+     6.21,
+     0.06
+    ],
+    "hash": "4124158f8bf44767",
+    "tris": 12
+   },
+   {
+    "name": "Chime",
+    "color": "#C9A045",
+    "material": "Metal",
+    "transparency": 0.0,
+    "castShadow": true,
+    "canCollide": false,
+    "role": "chime",
+    "bone": null,
+    "offset": [
+     -4.2,
+     7.316,
+     -0.395
+    ],
+    "size": [
+     0.4,
+     0.892,
+     0.579
+    ],
+    "hash": "fa3db1050b04ce5d",
+    "tris": 320
+   },
+   {
+    "name": "Sticker",
+    "color": "#F3EEE2",
+    "material": "SmoothPlastic",
+    "transparency": 0.0,
+    "castShadow": true,
+    "canCollide": false,
+    "role": "sign_panel",
+    "bone": null,
+    "offset": [
+     -3.68,
+     5.6,
+     -0.04
+    ],
+    "size": [
+     1.3,
+     0.75,
+     0.015
+    ],
+    "hash": "b18550d9fafdf0ed",
+    "tris": 12
+   }
+  ],
+  "sockets": {
+   "Chime": {
+    "p": [
+     -4.2,
+     7.05,
+     -0.49
+    ],
+    "yaw": 0.0
+   },
+   "Handle": {
+    "p": [
+     -4.05,
+     3.6,
+     0.0
+    ],
+    "yaw": 0.0
+   }
+  }
+ },
+ "Shop_DoorInterior": {
+  "group": "Shop",
+  "size": [
+   5.016,
+   7.92,
+   0.42
+  ],
+  "tris": 2544,
+  "meta": {
+   "leaf": true,
+   "leaf_size": [
+    4.9,
+    7.92,
+    0.26
+   ],
+   "hinge": "pivot (x=0 edge, bottom, leaf centre plane)",
+   "fits": "Shop_WallDoorway Socket_DoorHinge",
+   "open_axis": "pivot Y (yaw)",
+   "surfaces": [
+    {
+     "part": "SignFront",
+     "face": "Front"
+    },
+    {
+     "part": "SignBack",
+     "face": "Back"
+    }
+   ],
+   "variants": {
+    "Steel": {
+     "door_leaf": "#8E969D"
+    }
+   }
+  },
+  "url": "https://raw.githubusercontent.com/landonhjones2020-bit/nightshift-assets/main/meshes/B_shop/Shop_DoorInterior.json",
+  "parts": [
+   {
+    "name": "Leaf",
+    "color": "#7A4A30",
+    "material": "Wood",
+    "transparency": 0.0,
+    "castShadow": true,
+    "canCollide": true,
+    "role": "door_leaf",
+    "bone": null,
+    "offset": [
+     -2.5,
+     3.99,
+     0.0
+    ],
+    "size": [
+     4.9,
+     7.92,
+     0.36
+    ],
+    "hash": "7b2e009810fe4a06",
+    "tris": 616
+   },
+   {
+    "name": "Hardware",
+    "color": "#B9C0C6",
+    "material": "Metal",
+    "transparency": 0.0,
+    "castShadow": true,
+    "canCollide": false,
+    "role": null,
+    "bone": null,
+    "offset": [
+     -2.392,
+     3.663,
+     0.0
+    ],
+    "size": [
+     4.916,
+     7.225,
+     0.42
+    ],
+    "hash": "a5118e09cb1568d9",
+    "tris": 1748
+   },
+   {
+    "name": "Glass",
+    "color": "#A9D3E0",
+    "material": "Glass",
+    "transparency": 0.5,
+    "castShadow": false,
+    "canCollide": true,
+    "role": "glass",
+    "bone": null,
+    "offset": [
+     -2.5,
+     5.55,
+     0.0
+    ],
+    "size": [
+     1.18,
+     1.18,
+     0.05
+    ],
+    "hash": "d8dfefca32d089ac",
+    "tris": 92
+   },
+   {
+    "name": "SignFront",
+    "color": "#22283A",
+    "material": "SmoothPlastic",
+    "transparency": 0.0,
+    "castShadow": true,
+    "canCollide": false,
+    "role": "sign_panel",
+    "bone": null,
+    "offset": [
+     -2.5,
+     4.35,
+     -0.16
+    ],
+    "size": [
+     1.7,
+     0.5,
+     0.04
+    ],
+    "hash": "f0029799597fe936",
+    "tris": 44
+   },
+   {
+    "name": "SignBack",
+    "color": "#22283A",
+    "material": "SmoothPlastic",
+    "transparency": 0.0,
+    "castShadow": true,
+    "canCollide": false,
+    "role": "sign_panel",
+    "bone": null,
+    "offset": [
+     -2.5,
+     4.35,
+     0.16
+    ],
+    "size": [
+     1.7,
+     0.5,
+     0.04
+    ],
+    "hash": "2a697080fb2b2325",
+    "tris": 44
+   }
+  ],
+  "sockets": {
+   "Handle": {
+    "p": [
+     -4.4,
+     4.0,
+     0.0
+    ],
+    "yaw": 0.0
+   }
+  }
+ },
+ "Shop_Drain": {
+  "group": "Shop",
+  "size": [
+   4.633,
+   0.16,
+   4.515
+  ],
+  "tris": 692,
+  "meta": {
+   "size": [
+    5.0,
+    0.16,
+    4.8
+   ],
+   "sits_on": "alley floor top",
+   "spawn": "Socket_Emerge"
+  },
+  "url": "https://raw.githubusercontent.com/landonhjones2020-bit/nightshift-assets/main/meshes/B_shop/Shop_Drain.json",
+  "parts": [
+   {
+    "name": "Grate",
+    "color": "#34373B",
+    "material": "Metal",
+    "transparency": 0.0,
+    "castShadow": true,
+    "canCollide": false,
+    "role": null,
+    "bone": null,
+    "offset": [
+     0.0,
+     0.08,
+     0.0
+    ],
+    "size": [
+     3.0,
+     0.16,
+     3.0
+    ],
+    "hash": "10c299c28260121b",
+    "tris": 620
+   },
+   {
+    "name": "Void",
+    "color": "#050506",
+    "material": "SmoothPlastic",
+    "transparency": 0.0,
+    "castShadow": false,
+    "canCollide": false,
+    "role": null,
+    "bone": null,
+    "offset": [
+     0.0,
+     0.012,
+     0.0
+    ],
+    "size": [
+     2.5,
+     0.02,
+     2.5
+    ],
+    "hash": "4affc60f18ec55b7",
+    "tris": 12
+   },
+   {
+    "name": "Stain",
+    "color": "#1E2124",
+    "material": "Slate",
+    "transparency": 0.0,
+    "castShadow": false,
+    "canCollide": false,
+    "role": null,
+    "bone": null,
+    "offset": [
+     -0.1,
+     0.005,
+     -0.061
+    ],
+    "size": [
+     4.633,
+     0.01,
+     4.515
+    ],
+    "hash": "7a308a3f5b95f49c",
+    "tris": 60
+   }
+  ],
+  "sockets": {
+   "Emerge": {
+    "p": [
+     0.0,
+     0.16,
+     0.0
+    ],
+    "yaw": 0.0
+   }
+  }
+ },
+ "Shop_Dumpster": {
+  "group": "Shop",
+  "size": [
+   7.5,
+   7.868,
+   7.732
+  ],
+  "tris": 1384,
+  "meta": {
+   "size": [
+    7.5,
+    6.0,
+    4.4
+   ],
+   "clue_spot": true,
+   "lids": [
+    "LidL",
+    "LidR"
+   ],
+   "variants": {
+    "Blue": {
+     "dumpster_paint": "#2C4A6E"
+    }
+   }
+  },
+  "url": "https://raw.githubusercontent.com/landonhjones2020-bit/nightshift-assets/main/meshes/B_shop/Shop_Dumpster.json",
+  "parts": [
+   {
+    "name": "Body",
+    "color": "#2F5B40",
+    "material": "Metal",
+    "transparency": 0.0,
+    "castShadow": true,
+    "canCollide": true,
+    "role": "dumpster_paint",
+    "bone": null,
+    "offset": [
+     0.0,
+     2.4,
+     -0.191
+    ],
+    "size": [
+     7.5,
+     3.6,
+     4.19
+    ],
+    "hash": "a36e840c2dfbfbd7",
+    "tris": 336
+   },
+   {
+    "name": "LidL",
+    "color": "#1C1D20",
+    "material": "SmoothPlastic",
+    "transparency": 0.0,
+    "castShadow": true,
+    "canCollide": false,
+    "role": "dumpster_lid",
+    "bone": null,
+    "offset": [
+     1.75,
+     4.29,
+     -0.191
+    ],
+    "size": [
+     3.4,
+     0.317,
+     4.05
+    ],
+    "hash": "fdf655e2de5665e6",
+    "tris": 44
+   },
+   {
+    "name": "LidR",
+    "color": "#1C1D20",
+    "material": "SmoothPlastic",
+    "transparency": 0.0,
+    "castShadow": true,
+    "canCollide": false,
+    "role": "dumpster_lid",
+    "bone": null,
+    "offset": [
+     -1.75,
+     6.066,
+     2.864
+    ],
+    "size": [
+     3.4,
+     3.604,
+     2.004
+    ],
+    "hash": "071c30c6c0c98afc",
+    "tris": 44
+   },
+   {
+    "name": "Bags",
+    "color": "#151619",
+    "material": "Plastic",
+    "transparency": 0.0,
+    "castShadow": true,
+    "canCollide": false,
+    "role": null,
+    "bone": null,
+    "offset": [
+     -0.16,
+     2.463,
+     -1.141
+    ],
+    "size": [
+     5.936,
+     4.925,
+     5.45
+    ],
+    "hash": "8ff60cd2cc289be6",
+    "tris": 480
+   },
+   {
+    "name": "Casters",
+    "color": "#2A2B2F",
+    "material": "SmoothPlastic",
+    "transparency": 0.0,
+    "castShadow": true,
+    "canCollide": false,
+    "role": null,
+    "bone": null,
+    "offset": [
+     0.0,
+     0.317,
+     0.059
+    ],
+    "size": [
+     6.2,
+     0.606,
+     3.21
+    ],
+    "hash": "9c73ebaf45cda98e",
+    "tris": 480
+   }
+  ],
+  "sockets": {
+   "Clue": {
+    "p": [
+     -1.8,
+     4.7,
+     0.084
+    ],
+    "yaw": 0.0
+   }
+  }
+ },
+ "Shop_MenuBoard": {
+  "group": "Shop",
+  "size": [
+   9.0,
+   5.37,
+   0.666
+  ],
+  "tris": 1528,
+  "meta": {
+   "mount": "wall",
+   "pivot": "bottom-centre of the back face (touches the wall)",
+   "surfaces": [
+    {
+     "part": "Panel",
+     "face": "Front"
+    }
+   ],
+   "panel_size": [
+    8.5,
+    3.6
+   ]
+  },
+  "url": "https://raw.githubusercontent.com/landonhjones2020-bit/nightshift-assets/main/meshes/B_shop/Shop_MenuBoard.json",
+  "parts": [
+   {
+    "name": "SmoothPlastic",
+    "color": "#FFFFFF",
+    "material": "SmoothPlastic",
+    "transparency": 0.0,
+    "castShadow": true,
+    "canCollide": false,
+    "role": null,
+    "bone": null,
+    "offset": [
+     0.0,
+     2.685,
+     -0.333
+    ],
+    "size": [
+     9.0,
+     5.37,
+     0.666
+    ],
+    "hash": "d5e10cf6364cd210",
+    "tris": 364
+   },
+   {
+    "name": "Frame",
+    "color": "#D3D8DC",
+    "material": "Metal",
+    "transparency": 0.0,
+    "castShadow": true,
+    "canCollide": false,
+    "role": null,
+    "bone": null,
+    "offset": [
+     0.0,
+     2.685,
+     -0.49
+    ],
+    "size": [
+     8.9,
+     5.27,
+     0.12
+    ],
+    "hash": "e7411418ccdf2cf8",
+    "tris": 320
+   },
+   {
+    "name": "Panel",
+    "color": "#EFE3C4",
+    "material": "SmoothPlastic",
+    "transparency": 0.0,
+    "castShadow": true,
+    "canCollide": false,
+    "role": "sign_panel",
+    "bone": null,
+    "offset": [
+     0.0,
+     2.0,
+     -0.47
+    ],
+    "size": [
+     8.5,
+     3.6,
+     0.04
+    ],
+    "hash": "37cbfeb921e47c4e",
+    "tris": 12
+   },
+   {
+    "name": "Bulbs",
+    "color": "#FFE7A8",
+    "material": "Neon",
+    "transparency": 0.0,
+    "castShadow": false,
+    "canCollide": false,
+    "role": "neon",
+    "bone": null,
+    "offset": [
+     0.0,
+     5.25,
+     -0.54
+    ],
+    "size": [
+     8.29,
+     0.2,
+     0.19
+    ],
+    "hash": "f4b844170bea8c8f",
+    "tris": 832
+   }
+  ]
+ },
+ "Shop_Mirror": {
+  "group": "Shop",
+  "size": [
+   3.0,
+   4.3,
+   0.42
+  ],
+  "tris": 864,
+  "meta": {
+   "mount": "wall",
+   "pivot": "bottom-centre of the back face (touches the wall)",
+   "hang_height": 4.6,
+   "surfaces": [
+    {
+     "part": "Glass",
+     "face": "Front"
+    }
+   ]
+  },
+  "url": "https://raw.githubusercontent.com/landonhjones2020-bit/nightshift-assets/main/meshes/B_shop/Shop_Mirror.json",
+  "parts": [
+   {
+    "name": "Frame",
+    "color": "#D3D8DC",
+    "material": "Metal",
+    "transparency": 0.0,
+    "castShadow": true,
+    "canCollide": false,
+    "role": null,
+    "bone": null,
+    "offset": [
+     0.0,
+     2.2,
+     -0.21
+    ],
+    "size": [
+     3.0,
+     4.3,
+     0.42
+    ],
+    "hash": "be8027d1fecd0fac",
+    "tris": 708
+   },
+   {
+    "name": "Glass",
+    "color": "#C6D3D8",
+    "material": "Glass",
+    "transparency": 0.0,
+    "castShadow": false,
+    "canCollide": false,
+    "role": "mirror",
+    "bone": null,
+    "offset": [
+     0.0,
+     2.4,
+     -0.07
+    ],
+    "size": [
+     2.7,
+     3.6,
+     0.04
+    ],
+    "hash": "0de17485adf434b7",
+    "tris": 76
+   },
+   {
+    "name": "Soap",
+    "color": "#E58FB4",
+    "material": "SmoothPlastic",
+    "transparency": 0.0,
+    "castShadow": true,
+    "canCollide": false,
+    "role": null,
+    "bone": null,
+    "offset": [
+     -0.75,
+     0.57,
+     -0.21
+    ],
+    "size": [
+     0.3,
+     0.42,
+     0.285
+    ],
+    "hash": "b39ebbc01184bcf4",
+    "tris": 80
+   }
+  ],
+  "sockets": {
+   "Clue": {
+    "p": [
+     0.0,
+     2.4,
+     -0.09
+    ],
+    "yaw": 0.0
+   }
+  }
+ },
+ "Shop_NeonSign": {
+  "group": "Shop",
+  "size": [
+   15.3,
+   3.9,
+   0.886
+  ],
+  "tris": 2032,
+  "meta": {
+   "mount": "wall",
+   "pivot": "bottom-centre of the back face (touches the wall)",
+   "size": [
+    15.0,
+    3.6,
+    0.75
+   ],
+   "neon_parts": [
+    "Letters",
+    "Border",
+    "IconBun",
+    "IconFill",
+    "IconLeaf"
+   ],
+   "light_hint": {
+    "color": "#FF4FA3",
+    "range": 18,
+    "brightness": 2
+   }
+  },
+  "url": "https://raw.githubusercontent.com/landonhjones2020-bit/nightshift-assets/main/meshes/B_shop/Shop_NeonSign.json",
+  "parts": [
+   {
+    "name": "Board",
+    "color": "#141C2E",
+    "material": "SmoothPlastic",
+    "transparency": 0.0,
+    "castShadow": true,
+    "canCollide": false,
+    "role": null,
+    "bone": null,
+    "offset": [
+     0.0,
+     1.95,
+     -0.55
+    ],
+    "size": [
+     15.0,
+     3.6,
+     0.3
+    ],
+    "hash": "8142aa6cf9eb0ba9",
+    "tris": 156
+   },
+   {
+    "name": "Frame",
+    "color": "#D3D8DC",
+    "material": "Metal",
+    "transparency": 0.0,
+    "castShadow": true,
+    "canCollide": false,
+    "role": null,
+    "bone": null,
+    "offset": [
+     0.0,
+     1.95,
+     -0.277
+    ],
+    "size": [
+     15.3,
+     3.9,
+     0.605
+    ],
+    "hash": "9c3cfeb131afe264",
+    "tris": 332
+   },
+   {
+    "name": "Letters",
+    "color": "#FF4FA3",
+    "material": "Neon",
+    "transparency": 0.0,
+    "castShadow": false,
+    "canCollide": false,
+    "role": "neon",
+    "bone": null,
+    "offset": [
+     -1.15,
+     1.95,
+     -0.77
+    ],
+    "size": [
+     11.2,
+     1.151,
+     0.183
+    ],
+    "hash": "f95df938d3257605",
+    "tris": 1072
+   },
+   {
+    "name": "Border",
+    "color": "#38E1FF",
+    "material": "Neon",
+    "transparency": 0.0,
+    "castShadow": false,
+    "canCollide": false,
+    "role": "neon",
+    "bone": null,
+    "offset": [
+     0.0,
+     1.95,
+     -0.76
+    ],
+    "size": [
+     14.62,
+     3.22,
+     0.104
+    ],
+    "hash": "b23d096c12e025e9",
+    "tris": 192
+   },
+   {
+    "name": "IconBun",
+    "color": "#F2B33D",
+    "material": "Neon",
+    "transparency": 0.0,
+    "castShadow": false,
+    "canCollide": false,
+    "role": "neon",
+    "bone": null,
+    "offset": [
+     5.85,
+     2.02,
+     -0.77
+    ],
+    "size": [
+     2.0,
+     2.06,
+     0.1
+    ],
+    "hash": "559a26378ded8689",
+    "tris": 84
+   },
+   {
+    "name": "IconFill",
+    "color": "#FF4FA3",
+    "material": "Neon",
+    "transparency": 0.0,
+    "castShadow": false,
+    "canCollide": false,
+    "role": "neon",
+    "bone": null,
+    "offset": [
+     5.85,
+     1.67,
+     -0.765
+    ],
+    "size": [
+     2.1,
+     0.32,
+     0.09
+    ],
+    "hash": "3721e1355fc3a527",
+    "tris": 44
+   },
+   {
+    "name": "IconLeaf",
+    "color": "#38E1FF",
+    "material": "Neon",
+    "transparency": 0.0,
+    "castShadow": false,
+    "canCollide": false,
+    "role": "neon",
+    "bone": null,
+    "offset": [
+     5.85,
+     2.07,
+     -0.78
+    ],
+    "size": [
+     2.164,
+     0.337,
+     0.121
+    ],
+    "hash": "59276335333f2648",
+    "tris": 152
+   }
+  ],
+  "sockets": {
+   "Glow": {
+    "p": [
+     0.0,
+     1.95,
+     -1.6
+    ],
+    "yaw": 0.0
+   }
+  }
+ },
+ "Shop_OfficeDesk": {
+  "group": "Shop",
+  "size": [
+   6.6,
+   4.52,
+   3.09
+  ],
+  "tris": 1528,
+  "meta": {
+   "top": 2.8,
+   "size": [
+    6.6,
+    2.8,
+    3.0
+   ],
+   "user_side": "front (-Y)",
+   "knee_space": {
+    "x": [
+     -1.4,
+     1.75
+    ],
+    "z": [
+     0,
+     2.5799999999999996
+    ]
+   },
+   "hide_spots": [
+    "Hide"
+   ],
+   "light_hint": {
+    "part": "Bulb",
+    "color": "#FFD9A0",
+    "range": 12,
+    "brightness": 1.2
+   }
+  },
+  "url": "https://raw.githubusercontent.com/landonhjones2020-bit/nightshift-assets/main/meshes/B_shop/Shop_OfficeDesk.json",
+  "parts": [
+   {
+    "name": "Wood",
+    "color": "#5A3926",
+    "material": "Wood",
+    "transparency": 0.0,
+    "castShadow": true,
+    "canCollide": true,
+    "role": null,
+    "bone": null,
+    "offset": [
+     0.0,
+     1.525,
+     0.045
+    ],
+    "size": [
+     6.6,
+     2.55,
+     3.0
+    ],
+    "hash": "86bc0fa90cff08d8",
+    "tris": 468
+   },
+   {
+    "name": "Drawer",
+    "color": "#5A3926",
+    "material": "Wood",
+    "transparency": 0.0,
+    "castShadow": true,
+    "canCollide": false,
+    "role": "drawer",
+    "bone": null,
+    "offset": [
+     2.29,
+     2.237,
+     -1.345
+    ],
+    "size": [
+     1.5,
+     0.667,
+     0.1
+    ],
+    "hash": "4a7f26efad2bd635",
+    "tris": 44
+   },
+   {
+    "name": "SmoothPlastic",
+    "color": "#FFFFFF",
+    "material": "SmoothPlastic",
+    "transparency": 0.0,
+    "castShadow": true,
+    "canCollide": false,
+    "role": null,
+    "bone": null,
+    "offset": [
+     0.0,
+     1.58,
+     -0.012
+    ],
+    "size": [
+     6.26,
+     3.16,
+     2.864
+    ],
+    "hash": "7e544c5bac5151e3",
+    "tris": 424
+   },
+   {
+    "name": "Brass",
+    "color": "#C9A045",
+    "material": "Metal",
+    "transparency": 0.0,
+    "castShadow": true,
+    "canCollide": false,
+    "role": null,
+    "bone": null,
+    "offset": [
+     0.519,
+     2.464,
+     -0.165
+    ],
+    "size": [
+     5.262,
+     3.392,
+     2.76
+    ],
+    "hash": "0a0c310b86f6968c",
+    "tris": 452
+   },
+   {
+    "name": "Shade",
+    "color": "#2E8B57",
+    "material": "Glass",
+    "transparency": 0.0,
+    "castShadow": true,
+    "canCollide": false,
+    "role": null,
+    "bone": null,
+    "offset": [
+     2.7,
+     4.37,
+     0.795
+    ],
+    "size": [
+     1.1,
+     0.3,
+     0.6
+    ],
+    "hash": "fbb1ff6e220af47c",
+    "tris": 68
+   },
+   {
+    "name": "Bulb",
+    "color": "#FFE2A0",
+    "material": "Neon",
+    "transparency": 0.0,
+    "castShadow": false,
+    "canCollide": false,
+    "role": "lamp",
+    "bone": null,
+    "offset": [
+     2.7,
+     4.16,
+     0.795
+    ],
+    "size": [
+     0.75,
+     0.16,
+     0.16
+    ],
+    "hash": "6fa6a840287b1773",
+    "tris": 28
+   },
+   {
+    "name": "Blotter",
+    "color": "#2F5B45",
+    "material": "Fabric",
+    "transparency": 0.0,
+    "castShadow": true,
+    "canCollide": false,
+    "role": null,
+    "bone": null,
+    "offset": [
+     0.2,
+     2.82,
+     -1.055
+    ],
+    "size": [
+     2.6,
+     0.04,
+     0.62
+    ],
+    "hash": "04b234551ebe1982",
+    "tris": 44
+   }
+  ],
+  "sockets": {
+   "Chair": {
+    "p": [
+     -0.15,
+     0.0,
+     -2.755
+    ],
+    "yaw": 180.0
+   },
+   "Drawer": {
+    "p": [
+     2.29,
+     2.217,
+     -1.405
+    ],
+    "yaw": 0.0
+   },
+   "Hide": {
+    "p": [
+     -0.175,
+     1.2,
+     0.045
+    ],
+    "yaw": 0.0
+   },
+   "LampLight": {
+    "p": [
+     2.7,
+     4.1,
+     0.795
+    ],
+    "yaw": 0.0
+   },
+   "Monitor": {
+    "p": [
+     -0.15,
+     2.8,
+     0.745
+    ],
+    "yaw": 0.0
+   }
+  }
+ },
+ "Shop_OpenSign": {
+  "group": "Shop",
+  "size": [
+   2.97,
+   2.365,
+   0.303
+  ],
+  "tris": 1092,
+  "meta": {
+   "size": [
+    3.0,
+    2.6,
+    0.3
+   ],
+   "neon_parts": [
+    "Letters",
+    "Oval"
+   ],
+   "hang": "Socket_Hang (top bar)",
+   "light_hint": {
+    "color": "#FF3B4E",
+    "range": 8,
+    "brightness": 1.5
+   }
+  },
+  "url": "https://raw.githubusercontent.com/landonhjones2020-bit/nightshift-assets/main/meshes/B_shop/Shop_OpenSign.json",
+  "parts": [
+   {
+    "name": "Letters",
+    "color": "#FF3B4E",
+    "material": "Neon",
+    "transparency": 0.0,
+    "castShadow": false,
+    "canCollide": false,
+    "role": "neon",
+    "bone": null,
+    "offset": [
+     0.0,
+     0.73,
+     -0.089
+    ],
+    "size": [
+     2.0,
+     0.501,
+     0.126
+    ],
+    "hash": "2eb6b13bee28cb6b",
+    "tris": 368
+   },
+   {
+    "name": "Oval",
+    "color": "#38E1FF",
+    "material": "Neon",
+    "transparency": 0.0,
+    "castShadow": false,
+    "canCollide": false,
+    "role": "neon",
+    "bone": null,
+    "offset": [
+     0.0,
+     0.73,
+     -0.089
+    ],
+    "size": [
+     2.863,
+     1.42,
+     0.087
+    ],
+    "hash": "29ef0b03984ff1c5",
+    "tris": 336
+   },
+   {
+    "name": "Frame",
+    "color": "#18191D",
+    "material": "SmoothPlastic",
+    "transparency": 0.0,
+    "castShadow": true,
+    "canCollide": false,
+    "role": null,
+    "bone": null,
+    "offset": [
+     0.0,
+     0.615,
+     0.021
+    ],
+    "size": [
+     2.97,
+     1.23,
+     0.26
+    ],
+    "hash": "5e408031e9f000f0",
+    "tris": 256
+   },
+   {
+    "name": "Wire",
+    "color": "#D3D8DC",
+    "material": "Metal",
+    "transparency": 0.0,
+    "castShadow": true,
+    "canCollide": false,
+    "role": null,
+    "bone": null,
+    "offset": [
+     0.0,
+     1.783,
+     0.011
+    ],
+    "size": [
+     2.8,
+     1.165,
+     0.1
+    ],
+    "hash": "fae5cb07e272ed7c",
+    "tris": 132
+   }
+  ],
+  "sockets": {
+   "Hang": {
+    "p": [
+     0.0,
+     2.36,
+     0.011
+    ],
+    "yaw": 0.0
+   }
+  }
+ },
+ "Shop_PantryCloset": {
+  "group": "Shop",
+  "size": [
+   4.6,
+   8.6,
+   3.32
+  ],
+  "tris": 1568,
+  "meta": {
+   "size": [
+    4.2,
+    8.6,
+    3.0
+   ],
+   "hide_spots": [
+    "Hide"
+   ],
+   "doors": [
+    "DoorL",
+    "DoorR"
+   ],
+   "hide_floor": 0.2
+  },
+  "url": "https://raw.githubusercontent.com/landonhjones2020-bit/nightshift-assets/main/meshes/B_shop/Shop_PantryCloset.json",
+  "parts": [
+   {
+    "name": "Carcass",
+    "color": "#5A3926",
+    "material": "Wood",
+    "transparency": 0.0,
+    "castShadow": true,
+    "canCollide": true,
+    "role": null,
+    "bone": null,
+    "offset": [
+     0.0,
+     4.3,
+     0.0
+    ],
+    "size": [
+     4.6,
+     8.6,
+     3.32
+    ],
+    "hash": "14dd8ff322793306",
+    "tris": 244
+   },
+   {
+    "name": "Gloom",
+    "color": "#121317",
+    "material": "SmoothPlastic",
+    "transparency": 0.0,
+    "castShadow": true,
+    "canCollide": false,
+    "role": null,
+    "bone": null,
+    "offset": [
+     0.0,
+     4.2,
+     0.202
+    ],
+    "size": [
+     3.76,
+     8.0,
+     2.625
+    ],
+    "hash": "52a14bd6059b4356",
+    "tris": 36
+   },
+   {
+    "name": "DoorL",
+    "color": "#C2A57A",
+    "material": "Wood",
+    "transparency": 0.0,
+    "castShadow": true,
+    "canCollide": true,
+    "role": "closet_door",
+    "bone": null,
+    "offset": [
+     0.933,
+     4.075,
+     -1.28
+    ],
+    "size": [
+     1.835,
+     7.65,
+     0.202
+    ],
+    "hash": "2c2ebd0fd096a8de",
+    "tris": 544
+   },
+   {
+    "name": "Knobs",
+    "color": "#C9A045",
+    "material": "Metal",
+    "transparency": 0.0,
+    "castShadow": true,
+    "canCollide": false,
+    "role": null,
+    "bone": null,
+    "offset": [
+     0.0,
+     3.6,
+     -1.39
+    ],
+    "size": [
+     0.85,
+     0.18,
+     0.22
+    ],
+    "hash": "6874252311f23ac0",
+    "tris": 200
+   },
+   {
+    "name": "DoorR",
+    "color": "#C2A57A",
+    "material": "Wood",
+    "transparency": 0.0,
+    "castShadow": true,
+    "canCollide": true,
+    "role": "closet_door",
+    "bone": null,
+    "offset": [
+     -0.933,
+     4.075,
+     -1.28
+    ],
+    "size": [
+     1.835,
+     7.65,
+     0.202
+    ],
+    "hash": "e785ad9790233d4a",
+    "tris": 544
+   }
+  ],
+  "sockets": {
+   "DoorHingeL": {
+    "p": [
+     1.88,
+     0.25,
+     -1.28
+    ],
+    "yaw": 0.0
+   },
+   "DoorHingeR": {
+    "p": [
+     -1.88,
+     0.25,
+     -1.28
+    ],
+    "yaw": 0.0
+   },
+   "Hide": {
+    "p": [
+     0.0,
+     2.5,
+     0.34
+    ],
+    "yaw": 0.0
+   },
+   "HideFloor": {
+    "p": [
+     0.0,
+     0.2,
+     0.34
+    ],
+    "yaw": 0.0
+   }
+  }
+ },
+ "Shop_PantryShelf": {
+  "group": "Shop",
+  "size": [
+   6.0,
+   8.42,
+   2.0
+  ],
+  "tris": 1896,
+  "meta": {
+   "size": [
+    6.0,
+    8.0,
+    2.0
+   ],
+   "back": "+Y against the wall"
+  },
+  "url": "https://raw.githubusercontent.com/landonhjones2020-bit/nightshift-assets/main/meshes/B_shop/Shop_PantryShelf.json",
+  "parts": [
+   {
+    "name": "Wood",
+    "color": "#8A5A3B",
+    "material": "Wood",
+    "transparency": 0.0,
+    "castShadow": true,
+    "canCollide": true,
+    "role": null,
+    "bone": null,
+    "offset": [
+     0.0,
+     4.0,
+     0.0
+    ],
+    "size": [
+     6.0,
+     8.0,
+     2.0
+    ],
+    "hash": "ddc263e996ad6453",
+    "tris": 468
+   },
+   {
+    "name": "Sacks",
+    "color": "#E9E1CF",
+    "material": "Fabric",
+    "transparency": 0.0,
+    "castShadow": true,
+    "canCollide": false,
+    "role": null,
+    "bone": null,
+    "offset": [
+     1.443,
+     1.14,
+     0.0
+    ],
+    "size": [
+     2.545,
+     1.35,
+     1.169
+    ],
+    "hash": "9c1908e90f63bf74",
+    "tris": 88
+   },
+   {
+    "name": "SmoothPlastic",
+    "color": "#FFFFFF",
+    "material": "SmoothPlastic",
+    "transparency": 0.0,
+    "castShadow": true,
+    "canCollide": false,
+    "role": null,
+    "bone": null,
+    "offset": [
+     -0.044,
+     4.47,
+     -0.05
+    ],
+    "size": [
+     5.831,
+     7.9,
+     1.608
+    ],
+    "hash": "1d496c37b5a5c537",
+    "tris": 892
+   },
+   {
+    "name": "Metal",
+    "color": "#FFFFFF",
+    "material": "Metal",
+    "transparency": 0.0,
+    "castShadow": true,
+    "canCollide": false,
+    "role": null,
+    "bone": null,
+    "offset": [
+     -0.105,
+     4.61,
+     -0.363
+    ],
+    "size": [
+     5.68,
+     4.46,
+     0.545
+    ],
+    "hash": "433ae5a79b648b3c",
+    "tris": 448
+   }
+  ],
+  "sockets": {
+   "Clue": {
+    "p": [
+     0.0,
+     4.22,
+     -0.3
+    ],
+    "yaw": 0.0
+   }
+  }
+ },
+ "Shop_ParkedCar": {
+  "group": "Shop",
+  "size": [
+   6.85,
+   5.5,
+   16.75
+  ],
+  "tris": 1996,
+  "meta": {
+   "size": [
+    6.6,
+    5.5,
+    16.6
+   ],
+   "front": "-Y (LookVector)",
+   "paint_variants": [
+    "#6E343A",
+    "#3C6670",
+    "#B9AE8F",
+    "#2F3A55"
+   ],
+   "surfaces": [
+    {
+     "part": "Plate",
+     "face": "Back"
+    }
+   ],
+   "light_hint": {
+    "type": "SpotLight",
+    "color": "#FFF1C4",
+    "range": 30,
+    "angle": 60
+   }
+  },
+  "url": "https://raw.githubusercontent.com/landonhjones2020-bit/nightshift-assets/main/meshes/B_shop/Shop_ParkedCar.json",
+  "parts": [
+   {
+    "name": "Body",
+    "color": "#6E343A",
+    "material": "SmoothPlastic",
+    "transparency": 0.0,
+    "castShadow": true,
+    "canCollide": true,
+    "role": "car_paint",
+    "bone": null,
+    "offset": [
+     0.0,
+     3.1,
+     0.0
+    ],
+    "size": [
+     6.3,
+     4.8,
+     16.0
+    ],
+    "hash": "a7ed9f0409da819e",
+    "tris": 608
+   },
+   {
+    "name": "Windows",
+    "color": "#1E262E",
+    "material": "Glass",
+    "transparency": 0.0,
+    "castShadow": true,
+    "canCollide": false,
+    "role": null,
+    "bone": null,
+    "offset": [
+     0.0,
+     4.275,
+     0.555
+    ],
+    "size": [
+     5.86,
+     1.95,
+     6.974
+    ],
+    "hash": "1a968cf33b131440",
+    "tris": 44
+   },
+   {
+    "name": "Chrome",
+    "color": "#D3D8DC",
+    "material": "Metal",
+    "transparency": 0.0,
+    "castShadow": true,
+    "canCollide": false,
+    "role": null,
+    "bone": null,
+    "offset": [
+     0.0,
+     2.208,
+     0.0
+    ],
+    "size": [
+     6.85,
+     3.285,
+     16.75
+    ],
+    "hash": "4b85750d19b1a1be",
+    "tris": 472
+   },
+   {
+    "name": "Rubber",
+    "color": "#1D1E22",
+    "material": "SmoothPlastic",
+    "transparency": 0.0,
+    "castShadow": true,
+    "canCollide": false,
+    "role": null,
+    "bone": null,
+    "offset": [
+     0.0,
+     1.325,
+     -0.52
+    ],
+    "size": [
+     6.44,
+     2.65,
+     15.04
+    ],
+    "hash": "a026002fb4519dc8",
+    "tris": 596
+   },
+   {
+    "name": "Headlights",
+    "color": "#F4EDCC",
+    "material": "SmoothPlastic",
+    "transparency": 0.0,
+    "castShadow": false,
+    "canCollide": false,
+    "role": "headlight",
+    "bone": null,
+    "offset": [
+     0.0,
+     2.3,
+     -8.02
+    ],
+    "size": [
+     5.46,
+     0.52,
+     0.1
+    ],
+    "hash": "f30c87f1e0e2f651",
+    "tris": 176
+   },
+   {
+    "name": "Taillights",
+    "color": "#B3221E",
+    "material": "SmoothPlastic",
+    "transparency": 0.0,
+    "castShadow": false,
+    "canCollide": false,
+    "role": "taillight",
+    "bone": null,
+    "offset": [
+     0.0,
+     2.4,
+     8.02
+    ],
+    "size": [
+     5.8,
+     0.5,
+     0.1
+    ],
+    "hash": "a4ab3ab05dc9064f",
+    "tris": 88
+   },
+   {
+    "name": "Plate",
+    "color": "#F3EEE2",
+    "material": "SmoothPlastic",
+    "transparency": 0.0,
+    "castShadow": true,
+    "canCollide": false,
+    "role": "sign_panel",
+    "bone": null,
+    "offset": [
+     0.0,
+     1.95,
+     8.03
+    ],
+    "size": [
+     1.4,
+     0.7,
+     0.05
+    ],
+    "hash": "0566ddb6a7419d77",
+    "tris": 12
+   }
+  ],
+  "sockets": {
+   "DriverDoor": {
+    "p": [
+     4.75,
+     0.0,
+     -0.6
+    ],
+    "yaw": 90.0
+   },
+   "HeadlightL": {
+    "p": [
+     2.16,
+     2.3,
+     -8.1
+    ],
+    "yaw": 0.0
+   },
+   "HeadlightR": {
+    "p": [
+     -2.16,
+     2.3,
+     -8.1
+    ],
+    "yaw": 0.0
+   }
+  }
+ },
+ "Shop_PendantLamp": {
+  "group": "Shop",
+  "size": [
+   1.77,
+   3.313,
+   1.77
+  ],
+  "tris": 1356,
+  "meta": {
+   "pivot": "top of the cord (ceiling canopy top)",
+   "drop": 3.15,
+   "light_hint": {
+    "type": "SpotLight",
+    "face": "Bottom",
+    "color": "#FFD9A0",
+    "range": 14,
+    "angle": 80
+   }
+  },
+  "url": "https://raw.githubusercontent.com/landonhjones2020-bit/nightshift-assets/main/meshes/B_shop/Shop_PendantLamp.json",
+  "parts": [
+   {
+    "name": "Chrome",
+    "color": "#D3D8DC",
+    "material": "Metal",
+    "transparency": 0.0,
+    "castShadow": true,
+    "canCollide": false,
+    "role": null,
+    "bone": null,
+    "offset": [
+     0.0,
+     -1.656,
+     0.0
+    ],
+    "size": [
+     1.77,
+     3.313,
+     1.77
+    ],
+    "hash": "73cde36457116b5c",
+    "tris": 424
+   },
+   {
+    "name": "Cord",
+    "color": "#1C1C1F",
+    "material": "Fabric",
+    "transparency": 0.0,
+    "castShadow": true,
+    "canCollide": false,
+    "role": null,
+    "bone": null,
+    "offset": [
+     0.0,
+     -1.145,
+     0.0
+    ],
+    "size": [
+     0.07,
+     2.05,
+     0.061
+    ],
+    "hash": "a6c36e5f641083a1",
+    "tris": 20
+   },
+   {
+    "name": "Shade",
+    "color": "#E8502A",
+    "material": "SmoothPlastic",
+    "transparency": 0.0,
+    "castShadow": true,
+    "canCollide": false,
+    "role": "shade",
+    "bone": null,
+    "offset": [
+     0.0,
+     -2.86,
+     0.0
+    ],
+    "size": [
+     1.72,
+     0.86,
+     1.72
+    ],
+    "hash": "94049e464e4f204a",
+    "tris": 396
+   },
+   {
+    "name": "ShadeInner",
+    "color": "#F4F0E6",
+    "material": "SmoothPlastic",
+    "transparency": 0.0,
+    "castShadow": true,
+    "canCollide": false,
+    "role": null,
+    "bone": null,
+    "offset": [
+     0.0,
+     -2.897,
+     0.0
+    ],
+    "size": [
+     1.58,
+     0.783,
+     1.58
+    ],
+    "hash": "c6093d6f2785cfdf",
+    "tris": 396
+   },
+   {
+    "name": "Bulb",
+    "color": "#FFE3A8",
+    "material": "Neon",
+    "transparency": 0.0,
+    "castShadow": false,
+    "canCollide": false,
+    "role": "lamp",
+    "bone": null,
+    "offset": [
+     0.0,
+     -2.87,
+     0.0
+    ],
+    "size": [
+     0.371,
+     0.46,
+     0.39
+    ],
+    "hash": "b0a03b9a4a2271a1",
+    "tris": 120
+   }
+  ],
+  "sockets": {
+   "Light": {
+    "p": [
+     0.0,
+     -2.87,
+     0.0
+    ],
+    "yaw": 0.0
+   }
+  }
+ },
+ "Shop_PhotoBoard": {
+  "group": "Shop",
+  "size": [
+   6.6,
+   4.6,
+   0.321
+  ],
+  "tris": 1232,
+  "meta": {
+   "mount": "wall",
+   "pivot": "bottom-centre of the back face (touches the wall)",
+   "surfaces": [
+    {
+     "part": "Photo1",
+     "face": "Front"
+    },
+    {
+     "part": "Photo2",
+     "face": "Front"
+    },
+    {
+     "part": "Photo3",
+     "face": "Front"
+    },
+    {
+     "part": "Photo4",
+     "face": "Front"
+    },
+    {
+     "part": "Note1",
+     "face": "Front"
+    },
+    {
+     "part": "Note2",
+     "face": "Front"
+    },
+    {
+     "part": "Note3",
+     "face": "Front"
+    },
+    {
+     "part": "Note4",
+     "face": "Front"
+    },
+    {
+     "part": "Label",
+     "face": "Front"
+    }
+   ],
+   "regular_order": [
+    "Gus",
+    "Mina",
+    "Walt",
+    "Jo"
+   ]
+  },
+  "url": "https://raw.githubusercontent.com/landonhjones2020-bit/nightshift-assets/main/meshes/B_shop/Shop_PhotoBoard.json",
+  "parts": [
+   {
+    "name": "Frame",
+    "color": "#8A5A3B",
+    "material": "Wood",
+    "transparency": 0.0,
+    "castShadow": true,
+    "canCollide": false,
+    "role": null,
+    "bone": null,
+    "offset": [
+     0.0,
+     2.3,
+     -0.08
+    ],
+    "size": [
+     6.6,
+     4.6,
+     0.16
+    ],
+    "hash": "43fb1e192c10029c",
+    "tris": 160
+   },
+   {
+    "name": "Cork",
+    "color": "#B9895A",
+    "material": "Fabric",
+    "transparency": 0.0,
+    "castShadow": true,
+    "canCollide": false,
+    "role": null,
+    "bone": null,
+    "offset": [
+     0.0,
+     2.3,
+     -0.08
+    ],
+    "size": [
+     6.12,
+     4.12,
+     0.08
+    ],
+    "hash": "49bd64ed2919684b",
+    "tris": 12
+   },
+   {
+    "name": "Label",
+    "color": "#F3EEE2",
+    "material": "SmoothPlastic",
+    "transparency": 0.0,
+    "castShadow": true,
+    "canCollide": false,
+    "role": "sign_panel",
+    "bone": null,
+    "offset": [
+     0.0,
+     3.98,
+     -0.132
+    ],
+    "size": [
+     2.6,
+     0.48,
+     0.02
+    ],
+    "hash": "a3ba9b7b1aecd383",
+    "tris": 12
+   },
+   {
+    "name": "SmoothPlastic",
+    "color": "#FFFFFF",
+    "material": "SmoothPlastic",
+    "transparency": 0.0,
+    "castShadow": true,
+    "canCollide": false,
+    "role": null,
+    "bone": null,
+    "offset": [
+     -0.003,
+     2.852,
+     -0.222
+    ],
+    "size": [
+     6.182,
+     3.014,
+     0.199
+    ],
+    "hash": "306942331b7c1705",
+    "tris": 952
+   },
+   {
+    "name": "Photo1",
+    "color": "#3B4252",
+    "material": "SmoothPlastic",
+    "transparency": 0.0,
+    "castShadow": true,
+    "canCollide": false,
+    "role": "photo",
+    "bone": null,
+    "offset": [
+     2.4,
+     2.67,
+     -0.16
+    ],
+    "size": [
+     1.1,
+     1.1,
+     0.012
+    ],
+    "hash": "a5addbd6ced81fa8",
+    "tris": 12
+   },
+   {
+    "name": "Note1",
+    "color": "#F4D85A",
+    "material": "SmoothPlastic",
+    "transparency": 0.0,
+    "castShadow": true,
+    "canCollide": false,
+    "role": "sign_panel",
+    "bone": null,
+    "offset": [
+     2.32,
+     1.05,
+     -0.135
+    ],
+    "size": [
+     1.05,
+     0.9,
+     0.02
+    ],
+    "hash": "d3c58889235d4c73",
+    "tris": 12
+   },
+   {
+    "name": "Photo2",
+    "color": "#3B4252",
+    "material": "SmoothPlastic",
+    "transparency": 0.0,
+    "castShadow": true,
+    "canCollide": false,
+    "role": "photo",
+    "bone": null,
+    "offset": [
+     0.8,
+     2.79,
+     -0.16
+    ],
+    "size": [
+     1.1,
+     1.1,
+     0.012
+    ],
+    "hash": "594820ce73abb709",
+    "tris": 12
+   },
+   {
+    "name": "Note2",
+    "color": "#F4D85A",
+    "material": "SmoothPlastic",
+    "transparency": 0.0,
+    "castShadow": true,
+    "canCollide": false,
+    "role": "sign_panel",
+    "bone": null,
+    "offset": [
+     0.88,
+     1.05,
+     -0.135
+    ],
+    "size": [
+     1.05,
+     0.9,
+     0.02
+    ],
+    "hash": "7a273f078a9166b8",
+    "tris": 12
+   },
+   {
+    "name": "Photo3",
+    "color": "#3B4252",
+    "material": "SmoothPlastic",
+    "transparency": 0.0,
+    "castShadow": true,
+    "canCollide": false,
+    "role": "photo",
+    "bone": null,
+    "offset": [
+     -0.8,
+     2.67,
+     -0.16
+    ],
+    "size": [
+     1.1,
+     1.1,
+     0.012
+    ],
+    "hash": "9ebf0803f5fccb7d",
+    "tris": 12
+   },
+   {
+    "name": "Note3",
+    "color": "#F4D85A",
+    "material": "SmoothPlastic",
+    "transparency": 0.0,
+    "castShadow": true,
+    "canCollide": false,
+    "role": "sign_panel",
+    "bone": null,
+    "offset": [
+     -0.88,
+     1.05,
+     -0.135
+    ],
+    "size": [
+     1.05,
+     0.9,
+     0.02
+    ],
+    "hash": "753d8b293215b8c6",
+    "tris": 12
+   },
+   {
+    "name": "Photo4",
+    "color": "#3B4252",
+    "material": "SmoothPlastic",
+    "transparency": 0.0,
+    "castShadow": true,
+    "canCollide": false,
+    "role": "photo",
+    "bone": null,
+    "offset": [
+     -2.4,
+     2.79,
+     -0.16
+    ],
+    "size": [
+     1.1,
+     1.1,
+     0.012
+    ],
+    "hash": "762e009eeb0f167f",
+    "tris": 12
+   },
+   {
+    "name": "Note4",
+    "color": "#F4D85A",
+    "material": "SmoothPlastic",
+    "transparency": 0.0,
+    "castShadow": true,
+    "canCollide": false,
+    "role": "sign_panel",
+    "bone": null,
+    "offset": [
+     -2.32,
+     1.05,
+     -0.135
+    ],
+    "size": [
+     1.05,
+     0.9,
+     0.02
+    ],
+    "hash": "f41c78020a781640",
+    "tris": 12
+   }
+  ],
+  "sockets": {
+   "Read": {
+    "p": [
+     0.0,
+     0.0,
+     -3.0
+    ],
+    "yaw": 180.0
+   }
+  }
+ },
+ "Shop_RestroomStall": {
+  "group": "Shop",
+  "size": [
+   3.9,
+   6.965,
+   5.6
+  ],
+  "tris": 1472,
+  "meta": {
+   "size": [
+    3.6,
+    7.0,
+    5.4
+   ],
+   "back": "+Y = room wall (no back panel)",
+   "hide_floor": 0.0,
+   "door": {
+    "part": "Door",
+    "hinge_socket": "DoorHinge",
+    "opens": "inward (+Y) up to 100 deg"
+   },
+   "latch": {
+    "part": "Latch",
+    "occupied": "#D93B3B",
+    "vacant": "#3FBF5A"
+   }
+  },
+  "url": "https://raw.githubusercontent.com/landonhjones2020-bit/nightshift-assets/main/meshes/B_shop/Shop_RestroomStall.json",
+  "parts": [
+   {
+    "name": "Partitions",
+    "color": "#86AE9E",
+    "material": "SmoothPlastic",
+    "transparency": 0.0,
+    "castShadow": true,
+    "canCollide": true,
+    "role": null,
+    "bone": null,
+    "offset": [
+     0.0,
+     3.485,
+     0.005
+    ],
+    "size": [
+     3.74,
+     6.73,
+     5.49
+    ],
+    "hash": "7070402c37131da4",
+    "tris": 176
+   },
+   {
+    "name": "Door",
+    "color": "#86AE9E",
+    "material": "SmoothPlastic",
+    "transparency": 0.0,
+    "castShadow": true,
+    "canCollide": true,
+    "role": "stall_door",
+    "bone": null,
+    "offset": [
+     0.0,
+     3.655,
+     -2.65
+    ],
+    "size": [
+     2.26,
+     5.85,
+     0.14
+    ],
+    "hash": "9e475d91119e9456",
+    "tris": 44
+   },
+   {
+    "name": "Latch",
+    "color": "#D93B3B",
+    "material": "SmoothPlastic",
+    "transparency": 0.0,
+    "castShadow": true,
+    "canCollide": false,
+    "role": "stall_latch",
+    "bone": null,
+    "offset": [
+     -0.8,
+     3.6,
+     -2.755
+    ],
+    "size": [
+     0.32,
+     0.16,
+     0.05
+    ],
+    "hash": "db1e30f78efd35e3",
+    "tris": 44
+   },
+   {
+    "name": "Metal",
+    "color": "#FFFFFF",
+    "material": "Metal",
+    "transparency": 0.0,
+    "castShadow": true,
+    "canCollide": false,
+    "role": null,
+    "bone": null,
+    "offset": [
+     0.0,
+     3.482,
+     0.0
+    ],
+    "size": [
+     3.9,
+     6.965,
+     5.6
+    ],
+    "hash": "d320c702e74d3015",
+    "tris": 536
+   },
+   {
+    "name": "SmoothPlastic",
+    "color": "#FFFFFF",
+    "material": "SmoothPlastic",
+    "transparency": 0.0,
+    "castShadow": true,
+    "canCollide": false,
+    "role": null,
+    "bone": null,
+    "offset": [
+     -0.44,
+     1.46,
+     1.62
+    ],
+    "size": [
+     2.48,
+     2.92,
+     2.16
+    ],
+    "hash": "d2155eecb698f4bc",
+    "tris": 672
+   }
+  ],
+  "sockets": {
+   "DoorHinge": {
+    "p": [
+     1.15,
+     0.63,
+     -2.65
+    ],
+    "yaw": 0.0
+   },
+   "Hide": {
+    "p": [
+     0.0,
+     2.5,
+     -0.35
+    ],
+    "yaw": 0.0
+   },
+   "HideFloor": {
+    "p": [
+     0.0,
+     0.0,
+     -0.35
+    ],
+    "yaw": 0.0
+   }
+  }
+ },
+ "Shop_RulesBoard": {
+  "group": "Shop",
+  "size": [
+   2.98,
+   3.95,
+   0.356
+  ],
+  "tris": 466,
+  "meta": {
+   "mount": "wall",
+   "pivot": "bottom-centre of the back face (touches the wall)",
+   "surfaces": [
+    {
+     "part": "Sheet",
+     "face": "Front"
+    }
+   ],
+   "sheet_size": [
+    2.4,
+    3.15
+   ],
+   "font_hint": "PermanentMarker"
+  },
+  "url": "https://raw.githubusercontent.com/landonhjones2020-bit/nightshift-assets/main/meshes/B_shop/Shop_RulesBoard.json",
+  "parts": [
+   {
+    "name": "Board",
+    "color": "#8B5E3C",
+    "material": "Wood",
+    "transparency": 0.0,
+    "castShadow": true,
+    "canCollide": false,
+    "role": null,
+    "bone": null,
+    "offset": [
+     0.0,
+     1.95,
+     -0.05
+    ],
+    "size": [
+     2.8,
+     3.9,
+     0.1
+    ],
+    "hash": "3446b3fbb7baf8ae",
+    "tris": 124
+   },
+   {
+    "name": "SmoothPlastic",
+    "color": "#FFFFFF",
+    "material": "SmoothPlastic",
+    "transparency": 0.0,
+    "castShadow": true,
+    "canCollide": false,
+    "role": null,
+    "bone": null,
+    "offset": [
+     -0.097,
+     1.742,
+     -0.149
+    ],
+    "size": [
+     2.965,
+     3.524,
+     0.093
+    ],
+    "hash": "024cd433a2b05a6e",
+    "tris": 74
+   },
+   {
+    "name": "Sheet",
+    "color": "#F3EEE2",
+    "material": "SmoothPlastic",
+    "transparency": 0.0,
+    "castShadow": true,
+    "canCollide": false,
+    "role": "sign_panel",
+    "bone": null,
+    "offset": [
+     0.0,
+     1.75,
+     -0.122
+    ],
+    "size": [
+     2.4,
+     3.15,
+     0.012
+    ],
+    "hash": "c5b19cea98ec4fc2",
+    "tris": 12
+   },
+   {
+    "name": "Clip",
+    "color": "#D3D8DC",
+    "material": "Metal",
+    "transparency": 0.0,
+    "castShadow": true,
+    "canCollide": false,
+    "role": null,
+    "bone": null,
+    "offset": [
+     0.0,
+     3.63,
+     -0.218
+    ],
+    "size": [
+     1.3,
+     0.6,
+     0.276
+    ],
+    "hash": "76ef0b3d130bdd56",
+    "tris": 256
+   }
+  ],
+  "sockets": {
+   "Read": {
+    "p": [
+     0.0,
+     0.0,
+     -2.5
+    ],
+    "yaw": 180.0
+   }
+  }
+ },
+ "Shop_Sink": {
+  "group": "Shop",
+  "size": [
+   2.6,
+   3.805,
+   1.9
+  ],
+  "tris": 1222,
+  "meta": {
+   "rim_height": 3.0,
+   "back": "+Y against the wall",
+   "depth": 1.9
+  },
+  "url": "https://raw.githubusercontent.com/landonhjones2020-bit/nightshift-assets/main/meshes/B_shop/Shop_Sink.json",
+  "parts": [
+   {
+    "name": "SmoothPlastic",
+    "color": "#FFFFFF",
+    "material": "SmoothPlastic",
+    "transparency": 0.0,
+    "castShadow": true,
+    "canCollide": false,
+    "role": null,
+    "bone": null,
+    "offset": [
+     0.0,
+     1.773,
+     0.0
+    ],
+    "size": [
+     2.6,
+     3.545,
+     1.9
+    ],
+    "hash": "0bbf41b37d3678ed",
+    "tris": 722
+   },
+   {
+    "name": "Chrome",
+    "color": "#D3D8DC",
+    "material": "Metal",
+    "transparency": 0.0,
+    "castShadow": true,
+    "canCollide": false,
+    "role": null,
+    "bone": null,
+    "offset": [
+     0.0,
+     3.205,
+     0.26
+    ],
+    "size": [
+     1.6,
+     1.2,
+     1.02
+    ],
+    "hash": "2db9e6d47a1e77c7",
+    "tris": 500
+   }
+  ],
+  "sockets": {
+   "Tap": {
+    "p": [
+     0.0,
+     3.5,
+     0.09
+    ],
+    "yaw": 0.0
+   }
+  }
+ },
+ "Shop_Stool": {
+  "group": "Shop",
+  "size": [
+   1.54,
+   2.1,
+   1.54
+  ],
+  "tris": 920,
+  "meta": {
+   "seat_height": 2.1,
+   "counter_height": 3.0
+  },
+  "url": "https://raw.githubusercontent.com/landonhjones2020-bit/nightshift-assets/main/meshes/B_shop/Shop_Stool.json",
+  "parts": [
+   {
+    "name": "Cushion",
+    "color": "#B8323C",
+    "material": "SmoothPlastic",
+    "transparency": 0.0,
+    "castShadow": true,
+    "canCollide": false,
+    "role": "stool_vinyl",
+    "bone": null,
+    "offset": [
+     0.0,
+     1.92,
+     0.0
+    ],
+    "size": [
+     1.52,
+     0.36,
+     1.52
+    ],
+    "hash": "37565288f2286b7a",
+    "tris": 200
+   },
+   {
+    "name": "Frame",
+    "color": "#D3D8DC",
+    "material": "Metal",
+    "transparency": 0.0,
+    "castShadow": true,
+    "canCollide": false,
+    "role": null,
+    "bone": null,
+    "offset": [
+     0.0,
+     0.92,
+     0.0
+    ],
+    "size": [
+     1.54,
+     1.84,
+     1.54
+    ],
+    "hash": "64e6dd12c3385707",
+    "tris": 652
+   },
+   {
+    "name": "Glide",
+    "color": "#1D1E22",
+    "material": "SmoothPlastic",
+    "transparency": 0.0,
+    "castShadow": true,
+    "canCollide": false,
+    "role": null,
+    "bone": null,
+    "offset": [
+     0.0,
+     0.015,
+     0.0
+    ],
+    "size": [
+     1.261,
+     0.03,
+     1.28
+    ],
+    "hash": "3bdb38c41126effe",
+    "tris": 68
+   }
+  ],
+  "sockets": {
+   "Seat": {
+    "p": [
+     0.0,
+     2.1,
+     0.0
+    ],
+    "yaw": 0.0
+   }
+  }
+ },
+ "Shop_StreetLamp": {
+  "group": "Shop",
+  "size": [
+   1.521,
+   19.05,
+   7.545
+  ],
+  "tris": 902,
+  "meta": {
+   "height": 19.0,
+   "reach": 4.6,
+   "light_hint": {
+    "type": "SpotLight",
+    "face": "Bottom",
+    "color": "#FFB55E",
+    "range": 40,
+    "angle": 110,
+    "brightness": 2
+   }
+  },
+  "url": "https://raw.githubusercontent.com/landonhjones2020-bit/nightshift-assets/main/meshes/B_shop/Shop_StreetLamp.json",
+  "parts": [
+   {
+    "name": "Footing",
+    "color": "#8E8D88",
+    "material": "Concrete",
+    "transparency": 0.0,
+    "castShadow": true,
+    "canCollide": true,
+    "role": null,
+    "bone": null,
+    "offset": [
+     0.0,
+     0.5,
+     3.027
+    ],
+    "size": [
+     1.49,
+     1.0,
+     1.49
+    ],
+    "hash": "89dedca79d863c8b",
+    "tris": 92
+   },
+   {
+    "name": "Pole",
+    "color": "#3B4046",
+    "material": "Metal",
+    "transparency": 0.0,
+    "castShadow": true,
+    "canCollide": true,
+    "role": null,
+    "bone": null,
+    "offset": [
+     0.0,
+     10.015,
+     -0.083
+    ],
+    "size": [
+     1.521,
+     18.07,
+     7.38
+    ],
+    "hash": "c65611c7144189b3",
+    "tris": 678
+   },
+   {
+    "name": "Lens",
+    "color": "#FFB55E",
+    "material": "Neon",
+    "transparency": 0.0,
+    "castShadow": false,
+    "canCollide": false,
+    "role": "lamp",
+    "bone": null,
+    "offset": [
+     0.0,
+     18.44,
+     -2.073
+    ],
+    "size": [
+     1.2,
+     0.12,
+     2.766
+    ],
+    "hash": "27be425574eef70c",
+    "tris": 132
+   }
+  ],
+  "sockets": {
+   "Light": {
+    "p": [
+     0.0,
+     18.36,
+     -2.073
+    ],
+    "yaw": 0.0
+   }
+  }
+ },
+ "Shop_Table": {
+  "group": "Shop",
+  "size": [
+   3.0,
+   2.8,
+   3.0
+  ],
+  "tris": 632,
+  "meta": {
+   "table_height": 2.8,
+   "size": [
+    3.0,
+    2.8,
+    3.0
+   ],
+   "push_together": true
+  },
+  "url": "https://raw.githubusercontent.com/landonhjones2020-bit/nightshift-assets/main/meshes/B_shop/Shop_Table.json",
+  "parts": [
+   {
+    "name": "Top",
+    "color": "#E9E2D3",
+    "material": "SmoothPlastic",
+    "transparency": 0.0,
+    "castShadow": true,
+    "canCollide": true,
+    "role": null,
+    "bone": null,
+    "offset": [
+     0.0,
+     2.74,
+     0.0
+    ],
+    "size": [
+     2.94,
+     0.12,
+     2.94
+    ],
+    "hash": "974c34b0b4f8f1d4",
+    "tris": 124
+   },
+   {
+    "name": "Frame",
+    "color": "#D3D8DC",
+    "material": "Metal",
+    "transparency": 0.0,
+    "castShadow": true,
+    "canCollide": false,
+    "role": null,
+    "bone": null,
+    "offset": [
+     0.0,
+     1.395,
+     0.0
+    ],
+    "size": [
+     3.0,
+     2.79,
+     3.0
+    ],
+    "hash": "4e6262f64e5e4b96",
+    "tris": 440
+   },
+   {
+    "name": "Glide",
+    "color": "#1D1E22",
+    "material": "SmoothPlastic",
+    "transparency": 0.0,
+    "castShadow": true,
+    "canCollide": false,
+    "role": null,
+    "bone": null,
+    "offset": [
+     0.0,
+     0.015,
+     0.0
+    ],
+    "size": [
+     1.93,
+     0.03,
+     1.96
+    ],
+    "hash": "150c065d26ecab2c",
+    "tris": 68
+   }
+  ],
+  "sockets": {
+   "ChairA": {
+    "p": [
+     0.0,
+     0.0,
+     -2.3
+    ],
+    "yaw": 180.0
+   },
+   "ChairB": {
+    "p": [
+     0.0,
+     0.0,
+     2.3
+    ],
+    "yaw": 0.0
+   },
+   "Top": {
+    "p": [
+     0.0,
+     2.8,
+     0.0
+    ],
+    "yaw": 0.0
+   }
+  }
+ },
+ "Shop_TrashCan": {
+  "group": "Shop",
+  "size": [
+   2.65,
+   3.96,
+   2.361
+  ],
+  "tris": 1076,
+  "meta": {
+   "size": [
+    2.4,
+    3.6,
+    2.2
+   ],
+   "clue_spot": true
+  },
+  "url": "https://raw.githubusercontent.com/landonhjones2020-bit/nightshift-assets/main/meshes/B_shop/Shop_TrashCan.json",
+  "parts": [
+   {
+    "name": "Metal",
+    "color": "#FFFFFF",
+    "material": "Metal",
+    "transparency": 0.0,
+    "castShadow": true,
+    "canCollide": false,
+    "role": null,
+    "bone": null,
+    "offset": [
+     0.016,
+     1.55,
+     0.078
+    ],
+    "size": [
+     2.618,
+     3.1,
+     2.206
+    ],
+    "hash": "b3014339c389fb3e",
+    "tris": 784
+   },
+   {
+    "name": "Lid",
+    "color": "#B3BABF",
+    "material": "Metal",
+    "transparency": 0.0,
+    "castShadow": true,
+    "canCollide": false,
+    "role": "trash_lid",
+    "bone": null,
+    "offset": [
+     -0.164,
+     3.496,
+     -0.042
+    ],
+    "size": [
+     2.323,
+     0.928,
+     2.276
+    ],
+    "hash": "2c166a715a18ac63",
+    "tris": 248
+   },
+   {
+    "name": "Bag",
+    "color": "#B48A5C",
+    "material": "SmoothPlastic",
+    "transparency": 0.0,
+    "castShadow": true,
+    "canCollide": false,
+    "role": null,
+    "bone": null,
+    "offset": [
+     0.466,
+     3.05,
+     0.428
+    ],
+    "size": [
+     0.957,
+     0.823,
+     0.896
+    ],
+    "hash": "140deb66552328e7",
+    "tris": 44
+   }
+  ],
+  "sockets": {
+   "Clue": {
+    "p": [
+     0.016,
+     2.7,
+     0.078
+    ],
+    "yaw": 0.0
+   }
+  }
+ },
+ "Shop_Wall": {
+  "group": "Shop",
+  "size": [
+   8.0,
+   12.0,
+   1.45
+  ],
+  "tris": 1424,
+  "meta": {
+   "recolor_presets": {
+    "Kitchen": {
+     "wall_upper": "#EFE6D2",
+     "wall_tile": "#6E9E97",
+     "wall_grout": "#DCD0B8",
+     "wall_base": "#2B2D33",
+     "wall_stripe": "#E8502A"
+    },
+    "Dining": {
+     "wall_upper": "#1E2A44",
+     "wall_tile": "#2C5560",
+     "wall_grout": "#141C2E",
+     "wall_base": "#101521",
+     "wall_stripe": "#FF4FA3"
+    },
+    "Freezer": {
+     "wall_upper": "#CFE7F0",
+     "wall_tile": "#9FD3E8",
+     "wall_grout": "#B4CBD4",
+     "wall_base": "#5B6E78",
+     "wall_stripe": "#5B8FA8"
+    },
+    "Basement": {
+     "wall_upper": "#3A3D42",
+     "wall_tile": "#4A4E55",
+     "wall_grout": "#2A2C30",
+     "wall_base": "#1E1F22",
+     "wall_stripe": "#6B3A2E"
+    },
+    "Restroom": {
+     "wall_upper": "#D8E2DA",
+     "wall_tile": "#9DB8A8",
+     "wall_grout": "#C2CCC4",
+     "wall_base": "#2B2D33",
+     "wall_stripe": "#4F7F6C"
+    }
+   },
+   "default_preset": "Kitchen",
+   "back_presets": {
+    "Interior": {
+     "wall_back": "#DCD0B8",
+     "wall_back_base": "#2B2D33",
+     "wall_back_band": "#2B2D33"
+    },
+    "Exterior": {
+     "wall_back": "#E4D8BF",
+     "wall_back_base": "#3A3D42",
+     "wall_back_band": "#E8502A"
+    },
+    "ExteriorNight": {
+     "wall_back": "#C9BCA2",
+     "wall_back_base": "#2A2C30",
+     "wall_back_band": "#B8432A"
+    }
+   },
+   "default_back_preset": "Interior",
+   "exterior_side": "BACK (+Y Blender = Roblox +Z, opposite LookVector)",
+   "module": "wall",
+   "grid": 8,
+   "size": [
+    8,
+    12,
+    1
+   ],
+   "collider": "Core",
+   "placement": "pivot on the wall centre line, bottom; ends on 8-stud grid nodes; room side = LookVector"
+  },
+  "url": "https://raw.githubusercontent.com/landonhjones2020-bit/nightshift-assets/main/meshes/B_shop/Shop_Wall.json",
+  "parts": [
+   {
+    "name": "Core",
+    "color": "#DCD0B8",
+    "material": "SmoothPlastic",
+    "transparency": 0.0,
+    "castShadow": true,
+    "canCollide": true,
+    "role": "wall_back",
+    "bone": null,
+    "offset": [
+     0.0,
+     6.0,
+     0.0
+    ],
+    "size": [
+     8.0,
+     12.0,
+     1.0
+    ],
+    "hash": "dd84f71136383b27",
+    "tris": 12
+   },
+   {
+    "name": "Grout",
+    "color": "#DCD0B8",
+    "material": "SmoothPlastic",
+    "transparency": 0.0,
+    "castShadow": true,
+    "canCollide": false,
+    "role": "wall_grout",
+    "bone": null,
+    "offset": [
+     0.0,
+     1.86,
+     -0.515
+    ],
+    "size": [
+     8.0,
+     2.72,
+     0.03
+    ],
+    "hash": "f73b94ec9adf25d6",
+    "tris": 12
+   },
+   {
+    "name": "Tiles",
+    "color": "#6E9E97",
+    "material": "SmoothPlastic",
+    "transparency": 0.0,
+    "castShadow": true,
+    "canCollide": false,
+    "role": "wall_tile",
+    "bone": null,
+    "offset": [
+     0.0,
+     1.61,
+     -0.555
+    ],
+    "size": [
+     7.95,
+     2.17,
+     0.05
+    ],
+    "hash": "fc085625b3934976",
+    "tris": 800
+   },
+   {
+    "name": "SmoothPlastic",
+    "color": "#FFFFFF",
+    "material": "SmoothPlastic",
+    "transparency": 0.0,
+    "castShadow": true,
+    "canCollide": false,
+    "role": null,
+    "bone": null,
+    "offset": [
+     0.0,
+     2.97,
+     -0.563
+    ],
+    "size": [
+     8.0,
+     0.5,
+     0.065
+    ],
+    "hash": "6550ba5a215e06d6",
+    "tris": 332
+   },
+   {
+    "name": "Baseboard",
+    "color": "#2B2D33",
+    "material": "SmoothPlastic",
+    "transparency": 0.0,
+    "castShadow": true,
+    "canCollide": false,
+    "role": "wall_base",
+    "bone": null,
+    "offset": [
+     0.0,
+     0.25,
+     -0.565
+    ],
+    "size": [
+     8.0,
+     0.5,
+     0.13
+    ],
+    "hash": "105698bb5c242a62",
+    "tris": 44
+   },
+   {
+    "name": "ChairRail",
+    "color": "#D3D8DC",
+    "material": "Metal",
+    "transparency": 0.0,
+    "castShadow": true,
+    "canCollide": false,
+    "role": null,
+    "bone": null,
+    "offset": [
+     0.0,
+     3.36,
+     -0.626
+    ],
+    "size": [
+     8.0,
+     0.28,
+     0.192
+    ],
+    "hash": "fc9e5708b9bea472",
+    "tris": 52
+   },
+   {
+    "name": "Upper",
+    "color": "#EFE6D2",
+    "material": "SmoothPlastic",
+    "transparency": 0.0,
+    "castShadow": true,
+    "canCollide": false,
+    "role": "wall_upper",
+    "bone": null,
+    "offset": [
+     0.0,
+     7.61,
+     -0.675
+    ],
+    "size": [
+     8.0,
+     8.78,
+     0.35
+    ],
+    "hash": "0ba6a21014775b29",
+    "tris": 80
+   },
+   {
+    "name": "Stripe",
+    "color": "#E8502A",
+    "material": "SmoothPlastic",
+    "transparency": 0.0,
+    "castShadow": true,
+    "canCollide": false,
+    "role": "wall_stripe",
+    "bone": null,
+    "offset": [
+     0.0,
+     9.725,
+     -0.55
+    ],
+    "size": [
+     8.0,
+     0.34,
+     0.04
+    ],
+    "hash": "48ac0525705ab523",
+    "tris": 40
+   },
+   {
+    "name": "BackBase",
+    "color": "#2B2D33",
+    "material": "SmoothPlastic",
+    "transparency": 0.0,
+    "castShadow": true,
+    "canCollide": false,
+    "role": "wall_back_base",
+    "bone": null,
+    "offset": [
+     0.0,
+     0.25,
+     0.55
+    ],
+    "size": [
+     8.0,
+     0.5,
+     0.1
+    ],
+    "hash": "bf77bf6cbd9e4470",
+    "tris": 32
+   },
+   {
+    "name": "BackBand",
+    "color": "#2B2D33",
+    "material": "SmoothPlastic",
+    "transparency": 0.0,
+    "castShadow": true,
+    "canCollide": false,
+    "role": "wall_back_band",
+    "bone": null,
+    "offset": [
+     0.0,
+     3.36,
+     0.54
+    ],
+    "size": [
+     8.0,
+     0.24,
+     0.08
+    ],
+    "hash": "a00d60cd84ce1a99",
+    "tris": 20
+   }
+  ]
+ },
+ "Shop_WallCorner": {
+  "group": "Shop",
+  "size": [
+   2.2,
+   12.0,
+   2.2
+  ],
+  "tris": 1604,
+  "meta": {
+   "recolor_presets": {
+    "Kitchen": {
+     "wall_upper": "#EFE6D2",
+     "wall_tile": "#6E9E97",
+     "wall_grout": "#DCD0B8",
+     "wall_base": "#2B2D33",
+     "wall_stripe": "#E8502A"
+    },
+    "Dining": {
+     "wall_upper": "#1E2A44",
+     "wall_tile": "#2C5560",
+     "wall_grout": "#141C2E",
+     "wall_base": "#101521",
+     "wall_stripe": "#FF4FA3"
+    },
+    "Freezer": {
+     "wall_upper": "#CFE7F0",
+     "wall_tile": "#9FD3E8",
+     "wall_grout": "#B4CBD4",
+     "wall_base": "#5B6E78",
+     "wall_stripe": "#5B8FA8"
+    },
+    "Basement": {
+     "wall_upper": "#3A3D42",
+     "wall_tile": "#4A4E55",
+     "wall_grout": "#2A2C30",
+     "wall_base": "#1E1F22",
+     "wall_stripe": "#6B3A2E"
+    },
+    "Restroom": {
+     "wall_upper": "#D8E2DA",
+     "wall_tile": "#9DB8A8",
+     "wall_grout": "#C2CCC4",
+     "wall_base": "#2B2D33",
+     "wall_stripe": "#4F7F6C"
+    }
+   },
+   "default_preset": "Kitchen",
+   "back_presets": {
+    "Interior": {
+     "wall_back": "#DCD0B8",
+     "wall_back_base": "#2B2D33",
+     "wall_back_band": "#2B2D33"
+    },
+    "Exterior": {
+     "wall_back": "#E4D8BF",
+     "wall_back_base": "#3A3D42",
+     "wall_back_band": "#E8502A"
+    },
+    "ExteriorNight": {
+     "wall_back": "#C9BCA2",
+     "wall_back_base": "#2A2C30",
+     "wall_back_band": "#B8432A"
+    }
+   },
+   "default_back_preset": "Interior",
+   "exterior_side": "BACK (+Y Blender = Roblox +Z, opposite LookVector)",
+   "module": "wall_corner",
+   "grid": 8,
+   "size": [
+    1.5,
+    12,
+    1.5
+   ],
+   "collider": "Core",
+   "placement": "pivot on an 8-stud grid node (wall line intersection), bottom"
+  },
+  "url": "https://raw.githubusercontent.com/landonhjones2020-bit/nightshift-assets/main/meshes/B_shop/Shop_WallCorner.json",
+  "parts": [
+   {
+    "name": "Core",
+    "color": "#DCD0B8",
+    "material": "SmoothPlastic",
+    "transparency": 0.0,
+    "castShadow": true,
+    "canCollide": true,
+    "role": "wall_back",
+    "bone": null,
+    "offset": [
+     0.0,
+     6.0,
+     0.0
+    ],
+    "size": [
+     1.5,
+     12.0,
+     1.5
+    ],
+    "hash": "15a9601415905695",
+    "tris": 12
+   },
+   {
+    "name": "Tiles",
+    "color": "#6E9E97",
+    "material": "SmoothPlastic",
+    "transparency": 0.0,
+    "castShadow": true,
+    "canCollide": false,
+    "role": "wall_tile",
+    "bone": null,
+    "offset": [
+     0.0,
+     1.61,
+     0.0
+    ],
+    "size": [
+     1.66,
+     2.17,
+     1.66
+    ],
+    "hash": "37558bad481bdc53",
+    "tris": 600
+   },
+   {
+    "name": "SmoothPlastic",
+    "color": "#FFFFFF",
+    "material": "SmoothPlastic",
+    "transparency": 0.0,
+    "castShadow": true,
+    "canCollide": false,
+    "role": null,
+    "bone": null,
+    "offset": [
+     0.0,
+     2.97,
+     0.0
+    ],
+    "size": [
+     1.69,
+     0.5,
+     1.69
+    ],
+    "hash": "6a1a114f600076d6",
+    "tris": 288
+   },
+   {
+    "name": "Grout",
+    "color": "#DCD0B8",
+    "material": "SmoothPlastic",
+    "transparency": 0.0,
+    "castShadow": true,
+    "canCollide": false,
+    "role": "wall_grout",
+    "bone": null,
+    "offset": [
+     0.0,
+     1.86,
+     0.0
+    ],
+    "size": [
+     1.56,
+     2.72,
+     1.56
+    ],
+    "hash": "d975ca02a33484a7",
+    "tris": 48
+   },
+   {
+    "name": "Upper",
+    "color": "#EFE6D2",
+    "material": "SmoothPlastic",
+    "transparency": 0.0,
+    "castShadow": true,
+    "canCollide": false,
+    "role": "wall_upper",
+    "bone": null,
+    "offset": [
+     0.0,
+     7.61,
+     0.0
+    ],
+    "size": [
+     2.2,
+     8.78,
+     2.2
+    ],
+    "hash": "0c7b04ca47ad555e",
+    "tris": 192
+   },
+   {
+    "name": "Baseboard",
+    "color": "#2B2D33",
+    "material": "SmoothPlastic",
+    "transparency": 0.0,
+    "castShadow": true,
+    "canCollide": false,
+    "role": "wall_base",
+    "bone": null,
+    "offset": [
+     0.0,
+     0.25,
+     0.0
+    ],
+    "size": [
+     1.76,
+     0.5,
+     1.76
+    ],
+    "hash": "448bbab0ceeed3b2",
+    "tris": 96
+   },
+   {
+    "name": "Metal",
+    "color": "#FFFFFF",
+    "material": "Metal",
+    "transparency": 0.0,
+    "castShadow": true,
+    "canCollide": false,
+    "role": null,
+    "bone": null,
+    "offset": [
+     0.0,
+     2.0,
+     0.0
+    ],
+    "size": [
+     1.945,
+     3.0,
+     1.945
+    ],
+    "hash": "d4bd5281bbe5e66b",
+    "tris": 272
+   },
+   {
+    "name": "Stripe",
+    "color": "#E8502A",
+    "material": "SmoothPlastic",
+    "transparency": 0.0,
+    "castShadow": true,
+    "canCollide": false,
+    "role": "wall_stripe",
+    "bone": null,
+    "offset": [
+     0.0,
+     9.725,
+     0.0
+    ],
+    "size": [
+     1.64,
+     0.34,
+     1.64
+    ],
+    "hash": "f881cc5d14141f12",
+    "tris": 96
+   }
+  ]
+ },
+ "Shop_WallDoorway": {
+  "group": "Shop",
+  "size": [
+   8.0,
+   12.0,
+   1.67
+  ],
+  "tris": 2320,
+  "meta": {
+   "recolor_presets": {
+    "Kitchen": {
+     "wall_upper": "#EFE6D2",
+     "wall_tile": "#6E9E97",
+     "wall_grout": "#DCD0B8",
+     "wall_base": "#2B2D33",
+     "wall_stripe": "#E8502A"
+    },
+    "Dining": {
+     "wall_upper": "#1E2A44",
+     "wall_tile": "#2C5560",
+     "wall_grout": "#141C2E",
+     "wall_base": "#101521",
+     "wall_stripe": "#FF4FA3"
+    },
+    "Freezer": {
+     "wall_upper": "#CFE7F0",
+     "wall_tile": "#9FD3E8",
+     "wall_grout": "#B4CBD4",
+     "wall_base": "#5B6E78",
+     "wall_stripe": "#5B8FA8"
+    },
+    "Basement": {
+     "wall_upper": "#3A3D42",
+     "wall_tile": "#4A4E55",
+     "wall_grout": "#2A2C30",
+     "wall_base": "#1E1F22",
+     "wall_stripe": "#6B3A2E"
+    },
+    "Restroom": {
+     "wall_upper": "#D8E2DA",
+     "wall_tile": "#9DB8A8",
+     "wall_grout": "#C2CCC4",
+     "wall_base": "#2B2D33",
+     "wall_stripe": "#4F7F6C"
+    }
+   },
+   "default_preset": "Kitchen",
+   "back_presets": {
+    "Interior": {
+     "wall_back": "#DCD0B8",
+     "wall_back_base": "#2B2D33",
+     "wall_back_band": "#2B2D33"
+    },
+    "Exterior": {
+     "wall_back": "#E4D8BF",
+     "wall_back_base": "#3A3D42",
+     "wall_back_band": "#E8502A"
+    },
+    "ExteriorNight": {
+     "wall_back": "#C9BCA2",
+     "wall_back_base": "#2A2C30",
+     "wall_back_band": "#B8432A"
+    }
+   },
+   "default_back_preset": "Interior",
+   "exterior_side": "BACK (+Y Blender = Roblox +Z, opposite LookVector)",
+   "module": "wall_doorway",
+   "grid": 8,
+   "size": [
+    8,
+    12,
+    1
+   ],
+   "collider": "Core (jambs + header)",
+   "opening": {
+    "x": [
+     -2.5,
+     2.5
+    ],
+    "z": [
+     0,
+     8.0
+    ],
+    "clear": [
+     5,
+     8
+    ]
+   },
+   "door_leaves": [
+    "Shop_DoorFront",
+    "Shop_DoorInterior"
+   ],
+   "placement": "pivot on the wall centre line, bottom; leaf pivot -> Socket_DoorHinge"
+  },
+  "url": "https://raw.githubusercontent.com/landonhjones2020-bit/nightshift-assets/main/meshes/B_shop/Shop_WallDoorway.json",
+  "parts": [
+   {
+    "name": "Core",
+    "color": "#DCD0B8",
+    "material": "SmoothPlastic",
+    "transparency": 0.0,
+    "castShadow": true,
+    "canCollide": true,
+    "role": "wall_back",
+    "bone": null,
+    "offset": [
+     0.0,
+     6.0,
+     0.0
+    ],
+    "size": [
+     8.0,
+     12.0,
+     1.0
+    ],
+    "hash": "c4c8f0c3f5433b09",
+    "tris": 36
+   },
+   {
+    "name": "Grout",
+    "color": "#DCD0B8",
+    "material": "SmoothPlastic",
+    "transparency": 0.0,
+    "castShadow": true,
+    "canCollide": false,
+    "role": "wall_grout",
+    "bone": null,
+    "offset": [
+     0.0,
+     1.86,
+     -0.515
+    ],
+    "size": [
+     8.0,
+     2.72,
+     0.03
+    ],
+    "hash": "e0c22bf43e436c09",
+    "tris": 24
+   },
+   {
+    "name": "Tiles",
+    "color": "#6E9E97",
+    "material": "SmoothPlastic",
+    "transparency": 0.0,
+    "castShadow": true,
+    "canCollide": false,
+    "role": "wall_tile",
+    "bone": null,
+    "offset": [
+     0.0,
+     1.61,
+     -0.555
+    ],
+    "size": [
+     7.95,
+     2.17,
+     0.05
+    ],
+    "hash": "4f54af42258ea39b",
+    "tris": 300
+   },
+   {
+    "name": "SmoothPlastic",
+    "color": "#FFFFFF",
+    "material": "SmoothPlastic",
+    "transparency": 0.0,
+    "castShadow": true,
+    "canCollide": false,
+    "role": null,
+    "bone": null,
+    "offset": [
+     0.0,
+     2.97,
+     -0.563
+    ],
+    "size": [
+     8.0,
+     0.5,
+     0.065
+    ],
+    "hash": "48c8d86e457a1d80",
+    "tris": 144
+   },
+   {
+    "name": "Baseboard",
+    "color": "#2B2D33",
+    "material": "SmoothPlastic",
+    "transparency": 0.0,
+    "castShadow": true,
+    "canCollide": false,
+    "role": "wall_base",
+    "bone": null,
+    "offset": [
+     0.0,
+     0.25,
+     -0.565
+    ],
+    "size": [
+     8.0,
+     0.5,
+     0.13
+    ],
+    "hash": "8a1cc186cd1eac41",
+    "tris": 88
+   },
+   {
+    "name": "Metal",
+    "color": "#FFFFFF",
+    "material": "Metal",
+    "transparency": 0.0,
+    "castShadow": true,
+    "canCollide": false,
+    "role": null,
+    "bone": null,
+    "offset": [
+     0.0,
+     4.28,
+     0.0
+    ],
+    "size": [
+     8.0,
+     8.56,
+     1.64
+    ],
+    "hash": "09c0b8172bb9edc7",
+    "tris": 1436
+   },
+   {
+    "name": "Upper",
+    "color": "#EFE6D2",
+    "material": "SmoothPlastic",
+    "transparency": 0.0,
+    "castShadow": true,
+    "canCollide": false,
+    "role": "wall_upper",
+    "bone": null,
+    "offset": [
+     0.0,
+     7.61,
+     -0.675
+    ],
+    "size": [
+     8.0,
+     8.78,
+     0.35
+    ],
+    "hash": "d168d4a0af6bbd3a",
+    "tris": 104
+   },
+   {
+    "name": "Stripe",
+    "color": "#E8502A",
+    "material": "SmoothPlastic",
+    "transparency": 0.0,
+    "castShadow": true,
+    "canCollide": false,
+    "role": "wall_stripe",
+    "bone": null,
+    "offset": [
+     0.0,
+     9.725,
+     -0.55
+    ],
+    "size": [
+     8.0,
+     0.34,
+     0.04
+    ],
+    "hash": "48ac0525705ab523",
+    "tris": 40
+   },
+   {
+    "name": "BackBase",
+    "color": "#2B2D33",
+    "material": "SmoothPlastic",
+    "transparency": 0.0,
+    "castShadow": true,
+    "canCollide": false,
+    "role": "wall_back_base",
+    "bone": null,
+    "offset": [
+     0.0,
+     0.25,
+     0.55
+    ],
+    "size": [
+     8.0,
+     0.5,
+     0.1
+    ],
+    "hash": "fafdfb035ef562f4",
+    "tris": 64
+   },
+   {
+    "name": "BackBand",
+    "color": "#2B2D33",
+    "material": "SmoothPlastic",
+    "transparency": 0.0,
+    "castShadow": true,
+    "canCollide": false,
+    "role": "wall_back_band",
+    "bone": null,
+    "offset": [
+     0.0,
+     3.36,
+     0.54
+    ],
+    "size": [
+     8.0,
+     0.24,
+     0.08
+    ],
+    "hash": "22cdba328ca969d3",
+    "tris": 40
+   },
+   {
+    "name": "Threshold",
+    "color": "#B9C0C6",
+    "material": "DiamondPlate",
+    "transparency": 0.0,
+    "castShadow": true,
+    "canCollide": false,
+    "role": null,
+    "bone": null,
+    "offset": [
+     0.0,
+     0.03,
+     0.0
+    ],
+    "size": [
+     5.0,
+     0.06,
+     1.1
+    ],
+    "hash": "418cee14253f4f53",
+    "tris": 44
+   }
+  ],
+  "sockets": {
+   "DoorHinge": {
+    "p": [
+     2.5,
+     0.0,
+     0.0
+    ],
+    "yaw": 0.0
+   }
+  }
+ },
+ "Shop_WallWindow": {
+  "group": "Shop",
+  "size": [
+   8.0,
+   12.0,
+   1.922
+  ],
+  "tris": 2660,
+  "meta": {
+   "recolor_presets": {
+    "Kitchen": {
+     "wall_upper": "#EFE6D2",
+     "wall_tile": "#6E9E97",
+     "wall_grout": "#DCD0B8",
+     "wall_base": "#2B2D33",
+     "wall_stripe": "#E8502A"
+    },
+    "Dining": {
+     "wall_upper": "#1E2A44",
+     "wall_tile": "#2C5560",
+     "wall_grout": "#141C2E",
+     "wall_base": "#101521",
+     "wall_stripe": "#FF4FA3"
+    },
+    "Freezer": {
+     "wall_upper": "#CFE7F0",
+     "wall_tile": "#9FD3E8",
+     "wall_grout": "#B4CBD4",
+     "wall_base": "#5B6E78",
+     "wall_stripe": "#5B8FA8"
+    },
+    "Basement": {
+     "wall_upper": "#3A3D42",
+     "wall_tile": "#4A4E55",
+     "wall_grout": "#2A2C30",
+     "wall_base": "#1E1F22",
+     "wall_stripe": "#6B3A2E"
+    },
+    "Restroom": {
+     "wall_upper": "#D8E2DA",
+     "wall_tile": "#9DB8A8",
+     "wall_grout": "#C2CCC4",
+     "wall_base": "#2B2D33",
+     "wall_stripe": "#4F7F6C"
+    }
+   },
+   "default_preset": "Kitchen",
+   "back_presets": {
+    "Interior": {
+     "wall_back": "#DCD0B8",
+     "wall_back_base": "#2B2D33",
+     "wall_back_band": "#2B2D33"
+    },
+    "Exterior": {
+     "wall_back": "#E4D8BF",
+     "wall_back_base": "#3A3D42",
+     "wall_back_band": "#E8502A"
+    },
+    "ExteriorNight": {
+     "wall_back": "#C9BCA2",
+     "wall_back_base": "#2A2C30",
+     "wall_back_band": "#B8432A"
+    }
+   },
+   "default_back_preset": "Interior",
+   "exterior_side": "BACK (+Y Blender = Roblox +Z, opposite LookVector)",
+   "module": "wall_window",
+   "grid": 8,
+   "size": [
+    8,
+    12,
+    1
+   ],
+   "collider": "Core+Glass",
+   "opening": {
+    "x": [
+     -3.2,
+     3.2
+    ],
+    "z": [
+     3.5,
+     9.0
+    ]
+   },
+   "sill": 3.5,
+   "head": 9.0,
+   "placement": "pivot on the wall centre line, bottom; room side = LookVector; back = exterior"
+  },
+  "url": "https://raw.githubusercontent.com/landonhjones2020-bit/nightshift-assets/main/meshes/B_shop/Shop_WallWindow.json",
+  "parts": [
+   {
+    "name": "Core",
+    "color": "#DCD0B8",
+    "material": "SmoothPlastic",
+    "transparency": 0.0,
+    "castShadow": true,
+    "canCollide": true,
+    "role": "wall_back",
+    "bone": null,
+    "offset": [
+     0.0,
+     6.0,
+     0.0
+    ],
+    "size": [
+     8.0,
+     12.0,
+     1.0
+    ],
+    "hash": "74864c013f3ce826",
+    "tris": 48
+   },
+   {
+    "name": "Grout",
+    "color": "#DCD0B8",
+    "material": "SmoothPlastic",
+    "transparency": 0.0,
+    "castShadow": true,
+    "canCollide": false,
+    "role": "wall_grout",
+    "bone": null,
+    "offset": [
+     0.0,
+     1.86,
+     -0.515
+    ],
+    "size": [
+     8.0,
+     2.72,
+     0.03
+    ],
+    "hash": "f73b94ec9adf25d6",
+    "tris": 12
+   },
+   {
+    "name": "Tiles",
+    "color": "#6E9E97",
+    "material": "SmoothPlastic",
+    "transparency": 0.0,
+    "castShadow": true,
+    "canCollide": false,
+    "role": "wall_tile",
+    "bone": null,
+    "offset": [
+     0.0,
+     1.61,
+     -0.555
+    ],
+    "size": [
+     7.95,
+     2.17,
+     0.05
+    ],
+    "hash": "fc085625b3934976",
+    "tris": 800
+   },
+   {
+    "name": "SmoothPlastic",
+    "color": "#FFFFFF",
+    "material": "SmoothPlastic",
+    "transparency": 0.0,
+    "castShadow": true,
+    "canCollide": false,
+    "role": null,
+    "bone": null,
+    "offset": [
+     0.0,
+     3.11,
+     -0.531
+    ],
+    "size": [
+     8.0,
+     0.78,
+     1.062
+    ],
+    "hash": "002788339a710846",
+    "tris": 508
+   },
+   {
+    "name": "Baseboard",
+    "color": "#2B2D33",
+    "material": "SmoothPlastic",
+    "transparency": 0.0,
+    "castShadow": true,
+    "canCollide": false,
+    "role": "wall_base",
+    "bone": null,
+    "offset": [
+     0.0,
+     0.25,
+     -0.565
+    ],
+    "size": [
+     8.0,
+     0.5,
+     0.13
+    ],
+    "hash": "105698bb5c242a62",
+    "tris": 44
+   },
+   {
+    "name": "Metal",
+    "color": "#FFFFFF",
+    "material": "Metal",
+    "transparency": 0.0,
+    "castShadow": true,
+    "canCollide": false,
+    "role": null,
+    "bone": null,
+    "offset": [
+     0.0,
+     6.266,
+     0.069
+    ],
+    "size": [
+     8.0,
+     6.108,
+     1.582
+    ],
+    "hash": "ad2ead45d64d0b07",
+    "tris": 1040
+   },
+   {
+    "name": "Upper",
+    "color": "#EFE6D2",
+    "material": "SmoothPlastic",
+    "transparency": 0.0,
+    "castShadow": true,
+    "canCollide": false,
+    "role": "wall_upper",
+    "bone": null,
+    "offset": [
+     0.0,
+     7.61,
+     -0.675
+    ],
+    "size": [
+     8.0,
+     8.78,
+     0.35
+    ],
+    "hash": "bf3662a75afde26a",
+    "tris": 104
+   },
+   {
+    "name": "Stripe",
+    "color": "#E8502A",
+    "material": "SmoothPlastic",
+    "transparency": 0.0,
+    "castShadow": true,
+    "canCollide": false,
+    "role": "wall_stripe",
+    "bone": null,
+    "offset": [
+     0.0,
+     9.725,
+     -0.55
+    ],
+    "size": [
+     8.0,
+     0.34,
+     0.04
+    ],
+    "hash": "48ac0525705ab523",
+    "tris": 40
+   },
+   {
+    "name": "BackBase",
+    "color": "#2B2D33",
+    "material": "SmoothPlastic",
+    "transparency": 0.0,
+    "castShadow": true,
+    "canCollide": false,
+    "role": "wall_back_base",
+    "bone": null,
+    "offset": [
+     0.0,
+     0.25,
+     0.55
+    ],
+    "size": [
+     8.0,
+     0.5,
+     0.1
+    ],
+    "hash": "bf77bf6cbd9e4470",
+    "tris": 32
+   },
+   {
+    "name": "BackBand",
+    "color": "#2B2D33",
+    "material": "SmoothPlastic",
+    "transparency": 0.0,
+    "castShadow": true,
+    "canCollide": false,
+    "role": "wall_back_band",
+    "bone": null,
+    "offset": [
+     0.0,
+     3.36,
+     0.54
+    ],
+    "size": [
+     8.0,
+     0.24,
+     0.08
+    ],
+    "hash": "a00d60cd84ce1a99",
+    "tris": 20
+   },
+   {
+    "name": "Glass",
+    "color": "#A9D3E0",
+    "material": "Glass",
+    "transparency": 0.6,
+    "castShadow": false,
+    "canCollide": true,
+    "role": "glass",
+    "bone": null,
+    "offset": [
+     0.0,
+     6.25,
+     0.0
+    ],
+    "size": [
+     6.38,
+     5.48,
+     0.06
+    ],
+    "hash": "3311914ec4b8a8cb",
+    "tris": 12
+   }
+  ]
+ }
+}

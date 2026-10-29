@@ -2,8 +2,7 @@
 
 Stainless jamb lining + chunky casing on both faces, plinth blocks where the baseboard meets
 the casing, a diamond-plate threshold, and the standard wainscot/trim either side.
-Every part that sits beside the opening is split Left/Right so no bounding box crosses the
-opening (Box collision and raycasts pass through the doorway cleanly).
+The map adds its own invisible collision Parts; Core marks the solid wall volume.
 Socket DoorHinge = hinge line of the leaf (left jamb, floor, wall centre); Shop_DoorFront /
 Shop_DoorInterior pivots go there (leaf.PivotTo(doorway:GetPivot() * Socket_DoorHinge)).
 """
@@ -43,36 +42,33 @@ def casing_head(face_y, out_dir):
 
 
 def build():
-    # structural core, split so nothing spans the opening
-    ns.tag(ns.box((4 - OX, 1, OH), loc=(-(4 + OX) / 2, 0, OH / 2), bevel=0.0), "CoreL", C.CREAM_SHADE,
-           recolor="wall_back", can_collide=True)
-    ns.tag(ns.box((4 - OX, 1, OH), loc=((4 + OX) / 2, 0, OH / 2), bevel=0.0), "CoreR", C.CREAM_SHADE,
-           recolor="wall_back", can_collide=True)
-    ns.tag(ns.box((8, 1, 12 - OH), loc=(0, 0, (12 + OH) / 2), bevel=0.0), "CoreHead", C.CREAM_SHADE,
-           recolor="wall_back", can_collide=True)
+    core = [ns.box((4 - OX, 1, OH), loc=(-(4 + OX) / 2, 0, OH / 2), bevel=0.0),
+            ns.box((4 - OX, 1, OH), loc=((4 + OX) / 2, 0, OH / 2), bevel=0.0),
+            ns.box((8, 1, 12 - OH), loc=(0, 0, (12 + OH) / 2), bevel=0.0)]
+    C.part(core, "Core", C.CREAM_SHADE, recolor="wall_back", can_collide=True)
 
-    for sx, sfx, xr in ((-1, "L", (X0, -OX)), (1, "R", (OX, X1))):
-        d = C.wainscot([xr])
-        d["upper"] = [C.skin(xr[0], xr[1], C.CHECK_TOP, OH)]
-        d["back"] = C.back_trim([xr])
-        C.tag_wall_set(d, suffix=sfx)
-        # jamb lining through the wall + casing on both faces
-        jamb = ns.box((0.08, 1.02, OH), loc=(sx * (OX + 0.03), 0, OH / 2), bevel=0.0)
-        objs = [jamb] + casing_side(sx, -0.5, -1) + casing_side(sx, 0.5, 1)
-        C.part(objs, "Frame" + sfx, STEEL, "Metal", recolor="door_frame", smooth_angle=40)
-        # door stop strip on the jamb
-    head = {"upper": [C.skin(X0, X1, OH, C.CROWN_Z + 0.05)], "crown": [C.crown(X0, X1)],
-            "stripe": C.stripes(X0, X1)}
-    C.tag_wall_set(head)
-    lin = ns.box((2 * OX + 0.16, 1.02, 0.08), loc=(0, 0, OH + 0.03), bevel=0.0)
-    C.part([lin] + casing_head(-0.5, -1) + casing_head(0.5, 1), "FrameHead", STEEL, "Metal",
-           recolor="door_frame", smooth_angle=40)
+    sides = ((X0, -OX), (OX, X1))
+    d = C.wainscot(list(sides))
+    d["upper"] = [C.skin(x0, x1, C.CHECK_TOP, OH) for x0, x1 in sides] + [C.skin(X0, X1, OH, C.CROWN_Z + 0.05)]
+    d["crown"] = [C.crown(X0, X1)]
+    d["stripe"] = C.stripes(X0, X1)
+    d["back"] = C.back_trim(list(sides))
+    C.tag_wall_set(d)
+
+    # stainless jamb lining through the wall + chunky casing (with plinth blocks) on both faces
+    frame = []
+    for sx in (-1, 1):
+        frame.append(ns.box((0.08, 1.02, OH), loc=(sx * (OX + 0.03), 0, OH / 2), bevel=0.0))
+        frame += casing_side(sx, -0.5, -1) + casing_side(sx, 0.5, 1)
+    frame.append(ns.box((2 * OX + 0.16, 1.02, 0.08), loc=(0, 0, OH + 0.03), bevel=0.0))
+    frame += casing_head(-0.5, -1) + casing_head(0.5, 1)
+    C.part(frame, "Frame", STEEL, "Metal", smooth_angle=40)
     thr = ns.box((2 * OX, 1.1, 0.06), loc=(0, 0, 0.03), bevel=0.025, segments=1)
     ns.tag(thr, "Threshold", C.STAINLESS, "DiamondPlate")
 
 
 META = dict(C.wall_presets_meta(), module="wall_doorway", grid=8, size=[8, 12, 1],
-            collider="CoreL+CoreR+CoreHead", opening={"x": [-OX, OX], "z": [0, OH], "clear": [5, 8]},
+            collider="Core (jambs + header)", opening={"x": [-OX, OX], "z": [0, OH], "clear": [5, 8]},
             door_leaves=["Shop_DoorFront", "Shop_DoorInterior"],
             placement="pivot on the wall centre line, bottom; leaf pivot -> Socket_DoorHinge")
 

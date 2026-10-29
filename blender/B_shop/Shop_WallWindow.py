@@ -51,7 +51,7 @@ def build():
                         [0, 0.04, 0.05, 0.03, 0], 2)
     sill = C.prism(sill_pts, "x", -OX - 0.42, OX + 0.42)
     ns.bevel(sill, width=0.03, segments=2)
-    C.part([sill], "Sill", C.LAMINATE, recolor="window_sill", smooth_angle=40)
+    C.part([sill], "Sill", C.LAMINATE, smooth_angle=40)
 
     # chrome frame: room casing, exterior casing, opening lining, mullion, transom, drip sill
     t = 0.2
@@ -65,7 +65,7 @@ def build():
                             [0, 0.03, 0.03, 0], 1), "x", -OX - 0.3, OX + 0.3)
     ns.bevel(drip, width=0.02, segments=1)
     frame = [casing(-0.53, -1), casing(0.5, 1, w=0.26, proud=0.1)] + lining + mull + [drip]
-    C.part(frame, "Frame", C.CHROME, "Metal", recolor="window_frame", smooth_angle=40)
+    C.part(frame, "Frame", C.CHROME, "Metal", smooth_angle=40)
 
     glass = ns.box((2 * OX - 0.02, 0.06, Z1 - Z0 - 0.02), loc=(0, 0, (Z0 + Z1) / 2), bevel=0.0)
     ns.tag(glass, "Glass", C.GLASS, "Glass", transparency=0.6, recolor="glass", can_collide=True,

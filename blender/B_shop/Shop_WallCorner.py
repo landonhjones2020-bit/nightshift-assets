@@ -67,7 +67,7 @@ def build():
             pts = [(sx * (HW + 0.085) - sx * x, sy * (HW + 0.085) - sy * y) for x, y in C.fillet(pts, [0, 0.02, 0.02, 0.02, 0.02, 0.02], 1)]
             g = C.prism(pts, "z", 0.5, C.CHECK_TOP)
             guards.append(g)
-    C.part(guards, "CornerGuard", C.STAINLESS, "Metal", recolor="wall_trim", smooth_angle=40)
+    C.part(guards, "CornerGuard", C.STAINLESS, "Metal", smooth_angle=40)
 
 
 META = dict(C.wall_presets_meta(), module="wall_corner", grid=8, size=[1.5, 12, 1.5], collider="Core",

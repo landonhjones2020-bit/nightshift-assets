@@ -12,9 +12,11 @@ Conventions used by every B_shop asset
   * Building modules sit on an 8-stud grid: walls are 8 wide x 12 tall x 1 thick, centred on
     the wall line (pivot = bottom of the wall centre line). Ends land on grid nodes, where
     Shop_WallCorner columns go.
-  * Collision is designed for CollisionFidelity = Box: every part that collides has a
-    bounding box that is itself a sensible collider (openings, knee spaces and hiding spots
-    are never inside the bounding box of any part).
+  * The map adds invisible collision Parts; can_collide only marks the structural parts.
+  * nslib merges role-less parts per material at export (vertex colours), so only parts that
+    code must find (glass, neon, screens, sign panels, lamps, recolour presets...) carry a
+    `recolor` role. Part names must not start with Key/Fill/Rim/Floor/RefCube/PreviewCam
+    (nslib's preview deletes objects with those prefixes).
   * Wall-mounted props (signs, boards, mirror) pivot at the bottom-centre of their BACK
     face (the face that touches the wall, +Y), so they place flush on a wall face.
 """
@@ -71,18 +73,19 @@ PORCELAIN = "#F1F0EA"
 DARK_VOID = "#121317"      # interiors of openings / cubbies
 
 # Recolour presets for the wall modules (roles -> colour). Exported in meta so the map
-# builder can dress the same modules for each zone.
+# builder can dress the same modules for each zone. Only these roles stay separate parts
+# at export; every role-less part is merged per material by nslib (vertex colours).
 WALL_PRESETS = {
     "Kitchen": {"wall_upper": CREAM, "wall_tile": TEAL_TILE, "wall_grout": CREAM_SHADE,
-                "wall_base": BASE_DARK, "wall_back": CREAM_SHADE},
+                "wall_base": BASE_DARK, "wall_stripe": BRAND},
     "Dining": {"wall_upper": NAVY, "wall_tile": "#2C5560", "wall_grout": NAVY_DEEP,
-               "wall_base": "#101521", "wall_back": CREAM_SHADE},
+               "wall_base": "#101521", "wall_stripe": PINK},
     "Freezer": {"wall_upper": "#CFE7F0", "wall_tile": ICE, "wall_grout": "#B4CBD4",
-                "wall_base": "#5B6E78", "wall_back": CREAM_SHADE},
+                "wall_base": "#5B6E78", "wall_stripe": "#5B8FA8"},
     "Basement": {"wall_upper": CHARCOAL, "wall_tile": "#4A4E55", "wall_grout": "#2A2C30",
-                 "wall_base": "#1E1F22", "wall_back": "#2F3236"},
+                 "wall_base": "#1E1F22", "wall_stripe": "#6B3A2E"},
     "Restroom": {"wall_upper": "#D8E2DA", "wall_tile": "#9DB8A8", "wall_grout": "#C2CCC4",
-                 "wall_base": BASE_DARK, "wall_back": CREAM_SHADE},
+                 "wall_base": BASE_DARK, "wall_stripe": "#4F7F6C"},
 }
 
 # Wall layout (front face of a wall module, heights in studs)
@@ -471,12 +474,25 @@ def back_trim(x_ranges, face_y=-FACE_Y, rail=True):
         if rail:
             pts = [(face_y, RAIL_Z - 0.12), (face_y + 0.08, RAIL_Z - 0.12), (face_y + 0.08, RAIL_Z + 0.12),
                    (face_y, RAIL_Z + 0.12)]
-            objs.append(prism(fillet(pts, [0, 0.03, 0.03, 0], 1), "x", x0, x1))
+            band = prism(fillet(pts, [0, 0.03, 0.03, 0], 1), "x", x0, x1)
+            band["ns_back_band"] = True
+            objs.append(band)
     return objs
 
 
+# Back-face (+Y) presets. On exterior runs the map turns the module front toward the inside
+# of the building, so the BACK face is the facade the parking lot sees.
+BACK_PRESETS = {
+    "Interior": {"wall_back": CREAM_SHADE, "wall_back_base": BASE_DARK, "wall_back_band": BASE_DARK},
+    "Exterior": {"wall_back": "#E4D8BF", "wall_back_base": "#3A3D42", "wall_back_band": BRAND},
+    "ExteriorNight": {"wall_back": "#C9BCA2", "wall_back_base": "#2A2C30", "wall_back_band": "#B8432A"},
+}
+
+
 def wall_presets_meta():
-    return {"recolor_presets": WALL_PRESETS, "default_preset": "Kitchen"}
+    return {"recolor_presets": WALL_PRESETS, "default_preset": "Kitchen",
+            "back_presets": BACK_PRESETS, "default_back_preset": "Interior",
+            "exterior_side": "BACK (+Y Blender = Roblox +Z, opposite LookVector)"}
 
 
 # ---------------------------------------------------------------------------------------
@@ -557,14 +573,19 @@ def tag_wall_set(d, suffix="", collide=False):
     out = []
     spec = [("grout", "Grout", "wall_grout", CREAM_SHADE, "SmoothPlastic"),
             ("tile", "Tiles", "wall_tile", TEAL_TILE, "SmoothPlastic"),
-            ("check_light", "CheckerLight", "wall_check_light", CHECK_LIGHT, "SmoothPlastic"),
-            ("check_dark", "CheckerDark", "wall_check_dark", CHECK_DARK, "SmoothPlastic"),
+            ("check_light", "CheckerLight", None, CHECK_LIGHT, "SmoothPlastic"),
+            ("check_dark", "CheckerDark", None, CHECK_DARK, "SmoothPlastic"),
             ("base", "Baseboard", "wall_base", BASE_DARK, "SmoothPlastic"),
-            ("rail", "ChairRail", "wall_trim", CHROME, "Metal"),
+            ("rail", "ChairRail", None, CHROME, "Metal"),
             ("upper", "Upper", "wall_upper", CREAM, "SmoothPlastic"),
-            ("crown", "Crown", "wall_upper", CREAM, "SmoothPlastic"),
             ("stripe", "Stripe", "wall_stripe", BRAND, "SmoothPlastic"),
-            ("back", "BackTrim", "wall_back_trim", BASE_DARK, "SmoothPlastic")]
+            ("back", "BackBase", "wall_back_base", BASE_DARK, "SmoothPlastic"),
+            ("back_band", "BackBand", "wall_back_band", BASE_DARK, "SmoothPlastic")]
+    d = dict(d)
+    backs = list(d.get("back", []))
+    d["back"] = [o for o in backs if not o.get("ns_back_band")]
+    d["back_band"] = [o for o in backs if o.get("ns_back_band")]
+    d["upper"] = list(d.get("upper", [])) + list(d.get("crown", []))   # crown shares the upper colour
     for key, name, role, col, mat in spec:
         objs = [o for o in d.get(key, []) if o is not None]
         if not objs:
@@ -590,3 +611,52 @@ def square_ring(profile_yz, hw, name="Ring"):
             bm.faces.new([a[k], a[kk], b[kk], b[k]])
     bmesh.ops.recalc_face_normals(bm, faces=bm.faces[:])
     return ns.from_bmesh(bm, name)
+
+
+def ring_slab(outer, inner, axis, a0, a1, name="RingSlab"):
+    """Flat frame (a slab with a hole) from two closed 2D outlines with the same number of
+    points (e.g. two rrect() calls with equal segs). No booleans: 4 quads per point."""
+    assert len(outer) == len(inner)
+    bm = bmesh.new()
+    o0 = [bm.verts.new(_to3(axis, u, v, a0)) for u, v in outer]
+    o1 = [bm.verts.new(_to3(axis, u, v, a1)) for u, v in outer]
+    i0 = [bm.verts.new(_to3(axis, u, v, a0)) for u, v in inner]
+    i1 = [bm.verts.new(_to3(axis, u, v, a1)) for u, v in inner]
+    n = len(outer)
+    for k in range(n):
+        j = (k + 1) % n
+        bm.faces.new([o0[k], o0[j], o1[j], o1[k]])
+        bm.faces.new([i0[j], i0[k], i1[k], i1[j]])
+        bm.faces.new([o0[j], o0[k], i0[k], i0[j]])
+        bm.faces.new([o1[k], o1[j], i1[j], i1[k]])
+    bmesh.ops.recalc_face_normals(bm, faces=bm.faces[:])
+    return ns.from_bmesh(bm, name)
+
+
+def band(r, h, loc=(0, 0, 0), verts=8, name="Band"):
+    """Open cylindrical band (no caps) around Z — e.g. a can label over a metal can body."""
+    bm = bmesh.new()
+    x, y, z = loc
+    lo = [bm.verts.new((x + r * math.cos(2 * math.pi * i / verts), y + r * math.sin(2 * math.pi * i / verts), z - h / 2))
+          for i in range(verts)]
+    hi = [bm.verts.new((x + r * math.cos(2 * math.pi * i / verts), y + r * math.sin(2 * math.pi * i / verts), z + h / 2))
+          for i in range(verts)]
+    for i in range(verts):
+        j = (i + 1) % verts
+        bm.faces.new([lo[i], lo[j], hi[j], hi[i]])
+    return ns.from_bmesh(bm, name)
+
+
+def run_hanging(build, asset, **kw):
+    """Like run(), then replaces the standard (top-down) preview with two views from BELOW,
+    so ceiling-hung fittings show their lit side in the review sheet."""
+    out = run(build, asset, **kw)
+    objs = ns._tagged_objects()
+    lo, hi = ns.bbox_world(objs)
+    ctr = (lo + hi) / 2
+    d = max((hi - lo).length, 1.0)
+    path = os.path.join(ns.REPO, "..", "previews", BATCH, f"{asset}_preview.png")
+    render_views(path, [(ctr + Vector((-0.55 * d, -1.25 * d, -0.75 * d)), ctr, 50),
+                        (ctr + Vector((1.0 * d, -0.9 * d, -0.35 * d)), ctr, 50)],
+                 res=(512, 512), samples=24, floor=False)
+    return out
