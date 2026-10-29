@@ -1,0 +1,4101 @@
+{
+ "Char_Face_Bags": {
+  "group": "Characters",
+  "size": [
+   0.704,
+   0.114,
+   0.11
+  ],
+  "tris": 368,
+  "meta": {
+   "socket": "FaceSocket",
+   "bone": "Head",
+   "attach": "pivot = socket; weld to the bone part",
+   "transparency": 0.35,
+   "note": "semi-transparent so it darkens any skin tone"
+  },
+  "url": "https://raw.githubusercontent.com/landonhjones2020-bit/nightshift-assets/main/meshes/D_characters/Char_Face_Bags.json",
+  "parts": [
+   {
+    "name": "Bags",
+    "color": "#4E3359",
+    "material": "SmoothPlastic",
+    "transparency": 0.25,
+    "castShadow": false,
+    "canCollide": false,
+    "role": null,
+    "bone": null,
+    "offset": [
+     0.0,
+     -0.141,
+     0.055
+    ],
+    "size": [
+     0.704,
+     0.114,
+     0.11
+    ],
+    "hash": "ce0b64c5f95d5dc3",
+    "tris": 368
+   }
+  ]
+ },
+ "Char_Face_Beard": {
+  "group": "Characters",
+  "size": [
+   1.349,
+   0.825,
+   0.699
+  ],
+  "tris": 518,
+  "meta": {
+   "socket": "FaceSocket",
+   "bone": "Head",
+   "attach": "pivot = socket; weld to the bone part"
+  },
+  "url": "https://raw.githubusercontent.com/landonhjones2020-bit/nightshift-assets/main/meshes/D_characters/Char_Face_Beard.json",
+  "parts": [
+   {
+    "name": "Beard",
+    "color": "#3D2A1E",
+    "material": "SmoothPlastic",
+    "transparency": 0.0,
+    "castShadow": true,
+    "canCollide": false,
+    "role": "hair",
+    "bone": null,
+    "offset": [
+     0.0,
+     -0.323,
+     0.392
+    ],
+    "size": [
+     1.349,
+     0.825,
+     0.699
+    ],
+    "hash": "dc10a8cbe4bc2a4f",
+    "tris": 518
+   }
+  ]
+ },
+ "Char_Face_Glasses": {
+  "group": "Characters",
+  "size": [
+   1.423,
+   0.305,
+   0.87
+  ],
+  "tris": 704,
+  "meta": {
+   "socket": "FaceSocket",
+   "bone": "Head",
+   "attach": "pivot = socket; weld to the bone part",
+   "lensTransparency": 0.6
+  },
+  "url": "https://raw.githubusercontent.com/landonhjones2020-bit/nightshift-assets/main/meshes/D_characters/Char_Face_Glasses.json",
+  "parts": [
+   {
+    "name": "Frame",
+    "color": "#24211F",
+    "material": "SmoothPlastic",
+    "transparency": 0.0,
+    "castShadow": true,
+    "canCollide": false,
+    "role": null,
+    "bone": null,
+    "offset": [
+     0.0,
+     0.0,
+     0.31
+    ],
+    "size": [
+     1.423,
+     0.305,
+     0.87
+    ],
+    "hash": "c6c8acd686eb2fb0",
+    "tris": 584
+   },
+   {
+    "name": "Lens",
+    "color": "#BFE3F2",
+    "material": "Glass",
+    "transparency": 0.6,
+    "castShadow": false,
+    "canCollide": false,
+    "role": null,
+    "bone": null,
+    "offset": [
+     0.0,
+     0.0,
+     -0.071
+    ],
+    "size": [
+     0.798,
+     0.243,
+     0.069
+    ],
+    "hash": "420d0ce351670d20",
+    "tris": 120
+   }
+  ]
+ },
+ "Char_Face_Mustache": {
+  "group": "Characters",
+  "size": [
+   0.577,
+   0.195,
+   0.225
+  ],
+  "tris": 400,
+  "meta": {
+   "socket": "FaceSocket",
+   "bone": "Head",
+   "attach": "pivot = socket; weld to the bone part"
+  },
+  "url": "https://raw.githubusercontent.com/landonhjones2020-bit/nightshift-assets/main/meshes/D_characters/Char_Face_Mustache.json",
+  "parts": [
+   {
+    "name": "Mustache",
+    "color": "#3D2A1E",
+    "material": "SmoothPlastic",
+    "transparency": 0.0,
+    "castShadow": true,
+    "canCollide": false,
+    "role": "hair",
+    "bone": null,
+    "offset": [
+     0.0,
+     -0.352,
+     0.071
+    ],
+    "size": [
+     0.577,
+     0.195,
+     0.225
+    ],
+    "hash": "5456c111a76d896e",
+    "tris": 400
+   }
+  ]
+ },
+ "Char_Hair_Bun": {
+  "group": "Characters",
+  "size": [
+   1.313,
+   1.219,
+   1.259
+  ],
+  "tris": 962,
+  "meta": {
+   "socket": "HairSocket",
+   "bone": "Head",
+   "attach": "pivot = socket; weld to the bone part",
+   "fitsHats": []
+  },
+  "url": "https://raw.githubusercontent.com/landonhjones2020-bit/nightshift-assets/main/meshes/D_characters/Char_Hair_Bun.json",
+  "parts": [
+   {
+    "name": "Hair",
+    "color": "#211B18",
+    "material": "SmoothPlastic",
+    "transparency": 0.0,
+    "castShadow": true,
+    "canCollide": false,
+    "role": "hair",
+    "bone": null,
+    "offset": [
+     0.0,
+     -0.336,
+     0.153
+    ],
+    "size": [
+     1.313,
+     1.219,
+     1.259
+    ],
+    "hash": "ab93d714d7c7615f",
+    "tris": 866
+   },
+   {
+    "name": "Tie",
+    "color": "#3B3F59",
+    "material": "SmoothPlastic",
+    "transparency": 0.0,
+    "castShadow": true,
+    "canCollide": false,
+    "role": null,
+    "bone": null,
+    "offset": [
+     0.0,
+     -0.138,
+     0.461
+    ],
+    "size": [
+     0.49,
+     0.364,
+     0.335
+    ],
+    "hash": "ec4e5508b9457063",
+    "tris": 96
+   }
+  ]
+ },
+ "Char_Hair_Curly": {
+  "group": "Characters",
+  "size": [
+   1.579,
+   1.129,
+   1.433
+  ],
+  "tris": 1176,
+  "meta": {
+   "socket": "HairSocket",
+   "bone": "Head",
+   "attach": "pivot = socket; weld to the bone part",
+   "fitsHats": []
+  },
+  "url": "https://raw.githubusercontent.com/landonhjones2020-bit/nightshift-assets/main/meshes/D_characters/Char_Hair_Curly.json",
+  "parts": [
+   {
+    "name": "Hair",
+    "color": "#211B18",
+    "material": "SmoothPlastic",
+    "transparency": 0.0,
+    "castShadow": true,
+    "canCollide": false,
+    "role": "hair",
+    "bone": null,
+    "offset": [
+     -0.029,
+     -0.351,
+     0.099
+    ],
+    "size": [
+     1.579,
+     1.129,
+     1.433
+    ],
+    "hash": "fe63d2b4c4f52ee4",
+    "tris": 1176
+   }
+  ]
+ },
+ "Char_Hair_Long": {
+  "group": "Characters",
+  "size": [
+   1.622,
+   1.528,
+   1.333
+  ],
+  "tris": 1014,
+  "meta": {
+   "socket": "HairSocket",
+   "bone": "Head",
+   "attach": "pivot = socket; weld to the bone part",
+   "fitsHats": [
+    "CopCap"
+   ]
+  },
+  "url": "https://raw.githubusercontent.com/landonhjones2020-bit/nightshift-assets/main/meshes/D_characters/Char_Hair_Long.json",
+  "parts": [
+   {
+    "name": "Hair",
+    "color": "#D8B46A",
+    "material": "SmoothPlastic",
+    "transparency": 0.0,
+    "castShadow": true,
+    "canCollide": false,
+    "role": "hair",
+    "bone": null,
+    "offset": [
+     0.0,
+     -0.677,
+     0.105
+    ],
+    "size": [
+     1.622,
+     1.528,
+     1.333
+    ],
+    "hash": "7e1fc8544be0ed97",
+    "tris": 1014
+   }
+  ]
+ },
+ "Char_Hair_Messy": {
+  "group": "Characters",
+  "size": [
+   1.427,
+   1.265,
+   1.324
+  ],
+  "tris": 1008,
+  "meta": {
+   "socket": "HairSocket",
+   "bone": "Head",
+   "attach": "pivot = socket; weld to the bone part",
+   "fitsHats": []
+  },
+  "url": "https://raw.githubusercontent.com/landonhjones2020-bit/nightshift-assets/main/meshes/D_characters/Char_Hair_Messy.json",
+  "parts": [
+   {
+    "name": "Hair",
+    "color": "#3D2A1E",
+    "material": "SmoothPlastic",
+    "transparency": 0.0,
+    "castShadow": true,
+    "canCollide": false,
+    "role": "hair",
+    "bone": null,
+    "offset": [
+     -0.016,
+     -0.387,
+     0.033
+    ],
+    "size": [
+     1.427,
+     1.265,
+     1.324
+    ],
+    "hash": "693e6d2bf918d579",
+    "tris": 1008
+   }
+  ]
+ },
+ "Char_Hair_Mullet": {
+  "group": "Characters",
+  "size": [
+   1.329,
+   1.43,
+   1.238
+  ],
+  "tris": 1188,
+  "meta": {
+   "socket": "HairSocket",
+   "bone": "Head",
+   "attach": "pivot = socket; weld to the bone part",
+   "fitsHats": [
+    "TruckerCap",
+    "Beanie",
+    "CopCap"
+   ]
+  },
+  "url": "https://raw.githubusercontent.com/landonhjones2020-bit/nightshift-assets/main/meshes/D_characters/Char_Hair_Mullet.json",
+  "parts": [
+   {
+    "name": "Hair",
+    "color": "#8C4A2A",
+    "material": "SmoothPlastic",
+    "transparency": 0.0,
+    "castShadow": true,
+    "canCollide": false,
+    "role": "hair",
+    "bone": null,
+    "offset": [
+     0.0,
+     -0.633,
+     0.089
+    ],
+    "size": [
+     1.329,
+     1.43,
+     1.238
+    ],
+    "hash": "d5754fcf7c898a17",
+    "tris": 1188
+   }
+  ]
+ },
+ "Char_Hair_Ponytail": {
+  "group": "Characters",
+  "size": [
+   1.313,
+   1.445,
+   1.51
+  ],
+  "tris": 850,
+  "meta": {
+   "socket": "HairSocket",
+   "bone": "Head",
+   "attach": "pivot = socket; weld to the bone part",
+   "fitsHats": []
+  },
+  "url": "https://raw.githubusercontent.com/landonhjones2020-bit/nightshift-assets/main/meshes/D_characters/Char_Hair_Ponytail.json",
+  "parts": [
+   {
+    "name": "Hair",
+    "color": "#6B4A2E",
+    "material": "SmoothPlastic",
+    "transparency": 0.0,
+    "castShadow": true,
+    "canCollide": false,
+    "role": "hair",
+    "bone": null,
+    "offset": [
+     0.0,
+     -0.66,
+     0.271
+    ],
+    "size": [
+     1.313,
+     1.445,
+     1.51
+    ],
+    "hash": "956eb21630fc147b",
+    "tris": 730
+   },
+   {
+    "name": "Tie",
+    "color": "#C2405A",
+    "material": "SmoothPlastic",
+    "transparency": 0.0,
+    "castShadow": true,
+    "canCollide": false,
+    "role": null,
+    "bone": null,
+    "offset": [
+     0.0,
+     -0.557,
+     0.703
+    ],
+    "size": [
+     0.31,
+     0.294,
+     0.16
+    ],
+    "hash": "9e5b4f83c986a436",
+    "tris": 120
+   }
+  ]
+ },
+ "Char_Hair_Short": {
+  "group": "Characters",
+  "size": [
+   1.32,
+   1.052,
+   1.195
+  ],
+  "tris": 836,
+  "meta": {
+   "socket": "HairSocket",
+   "bone": "Head",
+   "attach": "pivot = socket; weld to the bone part",
+   "fitsHats": [
+    "TruckerCap",
+    "Beanie",
+    "CopCap"
+   ]
+  },
+  "url": "https://raw.githubusercontent.com/landonhjones2020-bit/nightshift-assets/main/meshes/D_characters/Char_Hair_Short.json",
+  "parts": [
+   {
+    "name": "Hair",
+    "color": "#6B4A2E",
+    "material": "SmoothPlastic",
+    "transparency": 0.0,
+    "castShadow": true,
+    "canCollide": false,
+    "role": "hair",
+    "bone": null,
+    "offset": [
+     0.0,
+     -0.431,
+     0.062
+    ],
+    "size": [
+     1.32,
+     1.052,
+     1.195
+    ],
+    "hash": "6f7bbbc151fcfef0",
+    "tris": 836
+   }
+  ]
+ },
+ "Char_Hat_Beanie": {
+  "group": "Characters",
+  "size": [
+   1.643,
+   0.933,
+   1.544
+  ],
+  "tris": 974,
+  "meta": {
+   "socket": "HatSocket",
+   "bone": "Head",
+   "attach": "pivot = socket; weld to the bone part",
+   "fitsHair": [
+    "Short",
+    "Mullet"
+   ],
+   "hairNote": "other hair styles clip through this hat \u2014 hide hair or pick a listed one"
+  },
+  "url": "https://raw.githubusercontent.com/landonhjones2020-bit/nightshift-assets/main/meshes/D_characters/Char_Hat_Beanie.json",
+  "parts": [
+   {
+    "name": "Beanie",
+    "color": "#C8523A",
+    "material": "Fabric",
+    "transparency": 0.0,
+    "castShadow": true,
+    "canCollide": false,
+    "role": "hat",
+    "bone": null,
+    "offset": [
+     0.0,
+     -0.362,
+     0.02
+    ],
+    "size": [
+     1.643,
+     0.933,
+     1.544
+    ],
+    "hash": "04ca4d05e3825048",
+    "tris": 930
+   },
+   {
+    "name": "Tag",
+    "color": "#6B4430",
+    "material": "SmoothPlastic",
+    "transparency": 0.0,
+    "castShadow": true,
+    "canCollide": false,
+    "role": null,
+    "bone": null,
+    "offset": [
+     0.373,
+     -0.313,
+     -0.589
+    ],
+    "size": [
+     0.113,
+     0.1,
+     0.079
+    ],
+    "hash": "c837606ddf132879",
+    "tris": 44
+   }
+  ]
+ },
+ "Char_Hat_CopCap": {
+  "group": "Characters",
+  "size": [
+   1.799,
+   0.975,
+   1.998
+  ],
+  "tris": 1142,
+  "meta": {
+   "socket": "HatSocket",
+   "bone": "Head",
+   "attach": "pivot = socket; weld to the bone part",
+   "fitsHair": [
+    "Short",
+    "Mullet",
+    "Long"
+   ],
+   "hairNote": "other hair styles clip through this hat \u2014 hide hair or pick a listed one"
+  },
+  "url": "https://raw.githubusercontent.com/landonhjones2020-bit/nightshift-assets/main/meshes/D_characters/Char_Hat_CopCap.json",
+  "parts": [
+   {
+    "name": "Crown",
+    "color": "#1F2A44",
+    "material": "Fabric",
+    "transparency": 0.0,
+    "castShadow": true,
+    "canCollide": false,
+    "role": null,
+    "bone": null,
+    "offset": [
+     0.0,
+     -0.242,
+     0.062
+    ],
+    "size": [
+     1.799,
+     0.935,
+     1.697
+    ],
+    "hash": "be62e2960293c1c9",
+    "tris": 442
+   },
+   {
+    "name": "Band",
+    "color": "#141518",
+    "material": "SmoothPlastic",
+    "transparency": 0.0,
+    "castShadow": true,
+    "canCollide": false,
+    "role": null,
+    "bone": null,
+    "offset": [
+     0.0,
+     -0.494,
+     -0.162
+    ],
+    "size": [
+     1.56,
+     0.512,
+     1.851
+    ],
+    "hash": "fe60c7b1871fad6d",
+    "tris": 396
+   },
+   {
+    "name": "Badge",
+    "color": "#E2B64A",
+    "material": "Metal",
+    "transparency": 0.0,
+    "castShadow": true,
+    "canCollide": false,
+    "role": null,
+    "bone": null,
+    "offset": [
+     0.0,
+     -0.221,
+     -0.558
+    ],
+    "size": [
+     1.401,
+     0.491,
+     0.426
+    ],
+    "hash": "33a548d9421ac660",
+    "tris": 304
+   }
+  ]
+ },
+ "Char_Hat_TruckerCap": {
+  "group": "Characters",
+  "size": [
+   1.551,
+   0.916,
+   2.058
+  ],
+  "tris": 1126,
+  "meta": {
+   "socket": "HatSocket",
+   "bone": "Head",
+   "attach": "pivot = socket; weld to the bone part",
+   "fitsHair": [
+    "Short",
+    "Mullet"
+   ],
+   "hairNote": "other hair styles clip through this hat \u2014 hide hair or pick a listed one"
+  },
+  "url": "https://raw.githubusercontent.com/landonhjones2020-bit/nightshift-assets/main/meshes/D_characters/Char_Hat_TruckerCap.json",
+  "parts": [
+   {
+    "name": "Crown",
+    "color": "#2F4A7A",
+    "material": "SmoothPlastic",
+    "transparency": 0.0,
+    "castShadow": true,
+    "canCollide": false,
+    "role": "hat",
+    "bone": null,
+    "offset": [
+     0.0,
+     -0.31,
+     -0.607
+    ],
+    "size": [
+     1.444,
+     0.859,
+     1.313
+    ],
+    "hash": "8085fb1d762fed5a",
+    "tris": 482
+   },
+   {
+    "name": "Mesh",
+    "color": "#EDEBE4",
+    "material": "Fabric",
+    "transparency": 0.0,
+    "castShadow": true,
+    "canCollide": false,
+    "role": null,
+    "bone": null,
+    "offset": [
+     0.0,
+     -0.359,
+     0.284
+    ],
+    "size": [
+     1.551,
+     0.875,
+     1.021
+    ],
+    "hash": "153305287195996f",
+    "tris": 600
+   },
+   {
+    "name": "Patch",
+    "color": "#F2B33D",
+    "material": "SmoothPlastic",
+    "transparency": 0.0,
+    "castShadow": true,
+    "canCollide": false,
+    "role": null,
+    "bone": null,
+    "offset": [
+     0.0,
+     -0.053,
+     -0.514
+    ],
+    "size": [
+     0.3,
+     0.15,
+     0.092
+    ],
+    "hash": "ab3f345cd9863f7e",
+    "tris": 44
+   }
+  ]
+ },
+ "Char_Top_Backpack": {
+  "group": "Characters",
+  "size": [
+   1.214,
+   1.301,
+   1.605
+  ],
+  "tris": 928,
+  "meta": {
+   "socket": "TorsoSocket",
+   "bone": "Torso",
+   "attach": "pivot = socket; weld to the bone part"
+  },
+  "url": "https://raw.githubusercontent.com/landonhjones2020-bit/nightshift-assets/main/meshes/D_characters/Char_Top_Backpack.json",
+  "parts": [
+   {
+    "name": "Backpack",
+    "color": "#C8523A",
+    "material": "Fabric",
+    "transparency": 0.0,
+    "castShadow": true,
+    "canCollide": false,
+    "role": "top",
+    "bone": null,
+    "offset": [
+     0.0,
+     -0.02,
+     1.19
+    ],
+    "size": [
+     0.98,
+     1.08,
+     0.44
+    ],
+    "hash": "eb1aa72bc870447d",
+    "tris": 188
+   },
+   {
+    "name": "Pocket",
+    "color": "#3A3D42",
+    "material": "Fabric",
+    "transparency": 0.0,
+    "castShadow": true,
+    "canCollide": false,
+    "role": null,
+    "bone": null,
+    "offset": [
+     0.0,
+     -0.28,
+     1.44
+    ],
+    "size": [
+     0.72,
+     0.5,
+     0.18
+    ],
+    "hash": "fec019c5077186e8",
+    "tris": 108
+   },
+   {
+    "name": "Straps",
+    "color": "#2B2D31",
+    "material": "SmoothPlastic",
+    "transparency": 0.0,
+    "castShadow": true,
+    "canCollide": false,
+    "role": null,
+    "bone": null,
+    "offset": [
+     0.0,
+     0.291,
+     0.752
+    ],
+    "size": [
+     1.214,
+     0.901,
+     1.605
+    ],
+    "hash": "22f18b8bfd2661a4",
+    "tris": 632
+   }
+  ]
+ },
+ "Char_Top_Badge": {
+  "group": "Characters",
+  "size": [
+   1.13,
+   0.34,
+   0.218
+  ],
+  "tris": 252,
+  "meta": {
+   "socket": "TorsoSocket",
+   "bone": "Torso",
+   "attach": "pivot = socket; weld to the bone part"
+  },
+  "url": "https://raw.githubusercontent.com/landonhjones2020-bit/nightshift-assets/main/meshes/D_characters/Char_Top_Badge.json",
+  "parts": [
+   {
+    "name": "Pocket",
+    "color": "#4F7C9E",
+    "material": "Fabric",
+    "transparency": 0.0,
+    "castShadow": true,
+    "canCollide": false,
+    "role": "top",
+    "bone": null,
+    "offset": [
+     -0.452,
+     0.437,
+     0.066
+    ],
+    "size": [
+     0.294,
+     0.34,
+     0.188
+    ],
+    "hash": "c05f236c898f0e7f",
+    "tris": 136
+   },
+   {
+    "name": "Badge",
+    "color": "#E2B64A",
+    "material": "Metal",
+    "transparency": 0.0,
+    "castShadow": true,
+    "canCollide": false,
+    "role": null,
+    "bone": null,
+    "offset": [
+     -0.479,
+     0.448,
+     0.021
+    ],
+    "size": [
+     0.232,
+     0.303,
+     0.14
+    ],
+    "hash": "0e5e373524715f4b",
+    "tris": 72
+   },
+   {
+    "name": "NameBar",
+    "color": "#1E1F22",
+    "material": "SmoothPlastic",
+    "transparency": 0.0,
+    "castShadow": true,
+    "canCollide": false,
+    "role": null,
+    "bone": null,
+    "offset": [
+     0.412,
+     0.511,
+     0.1
+    ],
+    "size": [
+     0.238,
+     0.066,
+     0.138
+    ],
+    "hash": "526d8674285b07b1",
+    "tris": 44
+   }
+  ]
+ },
+ "Char_Top_Flannel": {
+  "group": "Characters",
+  "size": [
+   1.797,
+   1.567,
+   1.075
+  ],
+  "tris": 1162,
+  "meta": {
+   "socket": "TorsoSocket",
+   "bone": "Torso",
+   "attach": "pivot = socket; weld to the bone part"
+  },
+  "url": "https://raw.githubusercontent.com/landonhjones2020-bit/nightshift-assets/main/meshes/D_characters/Char_Top_Flannel.json",
+  "parts": [
+   {
+    "name": "Flannel",
+    "color": "#B23A33",
+    "material": "Fabric",
+    "transparency": 0.0,
+    "castShadow": true,
+    "canCollide": false,
+    "role": "top",
+    "bone": null,
+    "offset": [
+     0.0,
+     -0.135,
+     0.479
+    ],
+    "size": [
+     1.785,
+     1.567,
+     1.054
+    ],
+    "hash": "04c14e0ce4b1a898",
+    "tris": 862
+   },
+   {
+    "name": "Fabric",
+    "color": "#FFFFFF",
+    "material": "Fabric",
+    "transparency": 0.0,
+    "castShadow": true,
+    "canCollide": false,
+    "role": null,
+    "bone": null,
+    "offset": [
+     0.0,
+     -0.145,
+     0.481
+    ],
+    "size": [
+     1.797,
+     1.534,
+     1.075
+    ],
+    "hash": "250dec54f717a851",
+    "tris": 300
+   }
+  ]
+ },
+ "Char_Top_Hoodie": {
+  "group": "Characters",
+  "size": [
+   1.793,
+   1.873,
+   1.162
+  ],
+  "tris": 1144,
+  "meta": {
+   "socket": "TorsoSocket",
+   "bone": "Torso",
+   "attach": "pivot = socket; weld to the bone part"
+  },
+  "url": "https://raw.githubusercontent.com/landonhjones2020-bit/nightshift-assets/main/meshes/D_characters/Char_Top_Hoodie.json",
+  "parts": [
+   {
+    "name": "Hoodie",
+    "color": "#6B6F7A",
+    "material": "Fabric",
+    "transparency": 0.0,
+    "castShadow": true,
+    "canCollide": false,
+    "role": "top",
+    "bone": null,
+    "offset": [
+     0.0,
+     -0.042,
+     0.487
+    ],
+    "size": [
+     1.793,
+     1.873,
+     1.162
+    ],
+    "hash": "bf381382c0dc2e55",
+    "tris": 928
+   },
+   {
+    "name": "Strings",
+    "color": "#EEEAE0",
+    "material": "SmoothPlastic",
+    "transparency": 0.0,
+    "castShadow": true,
+    "canCollide": false,
+    "role": null,
+    "bone": null,
+    "offset": [
+     0.0,
+     0.34,
+     0.105
+    ],
+    "size": [
+     0.352,
+     0.49,
+     0.162
+    ],
+    "hash": "813d7800a82628e6",
+    "tris": 216
+   }
+  ]
+ },
+ "Char_Top_Overalls": {
+  "group": "Characters",
+  "size": [
+   1.562,
+   1.691,
+   1.132
+  ],
+  "tris": 994,
+  "meta": {
+   "socket": "TorsoSocket",
+   "bone": "Torso",
+   "attach": "pivot = socket; weld to the bone part"
+  },
+  "url": "https://raw.githubusercontent.com/landonhjones2020-bit/nightshift-assets/main/meshes/D_characters/Char_Top_Overalls.json",
+  "parts": [
+   {
+    "name": "Overalls",
+    "color": "#41618C",
+    "material": "Fabric",
+    "transparency": 0.0,
+    "castShadow": true,
+    "canCollide": false,
+    "role": "top",
+    "bone": null,
+    "offset": [
+     0.0,
+     -0.123,
+     0.462
+    ],
+    "size": [
+     1.509,
+     1.691,
+     1.132
+    ],
+    "hash": "27c2c5f9c96fcf79",
+    "tris": 834
+   },
+   {
+    "name": "Buckles",
+    "color": "#E2B64A",
+    "material": "Metal",
+    "transparency": 0.0,
+    "castShadow": true,
+    "canCollide": false,
+    "role": null,
+    "bone": null,
+    "offset": [
+     0.0,
+     -0.007,
+     0.247
+    ],
+    "size": [
+     1.562,
+     1.179,
+     0.388
+    ],
+    "hash": "1c7376bcfb1ba4df",
+    "tris": 160
+   }
+  ]
+ },
+ "Char_Top_Robe": {
+  "group": "Characters",
+  "size": [
+   1.83,
+   2.238,
+   1.628
+  ],
+  "tris": 1172,
+  "meta": {
+   "socket": "TorsoSocket",
+   "bone": "Torso",
+   "attach": "pivot = socket; weld to the bone part",
+   "note": "hip-length; flares over the hips so the walk's leg swing stays inside"
+  },
+  "url": "https://raw.githubusercontent.com/landonhjones2020-bit/nightshift-assets/main/meshes/D_characters/Char_Top_Robe.json",
+  "parts": [
+   {
+    "name": "Robe",
+    "color": "#8F6FA8",
+    "material": "Fabric",
+    "transparency": 0.0,
+    "castShadow": true,
+    "canCollide": false,
+    "role": "top",
+    "bone": null,
+    "offset": [
+     0.0,
+     -0.289,
+     0.516
+    ],
+    "size": [
+     1.83,
+     2.238,
+     1.628
+    ],
+    "hash": "3703774ec78899d5",
+    "tris": 1084
+   },
+   {
+    "name": "Pajama",
+    "color": "#D9D4C8",
+    "material": "Fabric",
+    "transparency": 0.0,
+    "castShadow": true,
+    "canCollide": false,
+    "role": null,
+    "bone": null,
+    "offset": [
+     0.0,
+     0.06,
+     0.121
+    ],
+    "size": [
+     1.103,
+     1.125,
+     0.281
+    ],
+    "hash": "cf9c991b55521cba",
+    "tris": 88
+   }
+  ]
+ },
+ "Char_Top_Scrubs": {
+  "group": "Characters",
+  "size": [
+   1.759,
+   1.655,
+   1.074
+  ],
+  "tris": 1100,
+  "meta": {
+   "socket": "TorsoSocket",
+   "bone": "Torso",
+   "attach": "pivot = socket; weld to the bone part",
+   "skinRole": "the V-neck insert has role skin"
+  },
+  "url": "https://raw.githubusercontent.com/landonhjones2020-bit/nightshift-assets/main/meshes/D_characters/Char_Top_Scrubs.json",
+  "parts": [
+   {
+    "name": "Scrubs",
+    "color": "#5B9BD5",
+    "material": "Fabric",
+    "transparency": 0.0,
+    "castShadow": true,
+    "canCollide": false,
+    "role": "top",
+    "bone": null,
+    "offset": [
+     0.0,
+     -0.153,
+     0.471
+    ],
+    "size": [
+     1.759,
+     1.651,
+     1.074
+    ],
+    "hash": "12cdccd4b0a0863f",
+    "tris": 908
+   },
+   {
+    "name": "Neck",
+    "color": "#E3AC85",
+    "material": "SmoothPlastic",
+    "transparency": 0.0,
+    "castShadow": true,
+    "canCollide": false,
+    "role": "skin",
+    "bone": null,
+    "offset": [
+     0.0,
+     0.386,
+     0.119
+    ],
+    "size": [
+     0.968,
+     0.473,
+     0.262
+    ],
+    "hash": "62f913f457717463",
+    "tris": 136
+   },
+   {
+    "name": "Pen",
+    "color": "#EDEAE2",
+    "material": "SmoothPlastic",
+    "transparency": 0.0,
+    "castShadow": true,
+    "canCollide": false,
+    "role": null,
+    "bone": null,
+    "offset": [
+     -0.423,
+     0.542,
+     0.036
+    ],
+    "size": [
+     0.052,
+     0.27,
+     0.052
+    ],
+    "hash": "b727af003c7218a5",
+    "tris": 56
+   }
+  ]
+ },
+ "Char_Top_Vest": {
+  "group": "Characters",
+  "size": [
+   1.843,
+   1.728,
+   1.173
+  ],
+  "tris": 972,
+  "meta": {
+   "socket": "TorsoSocket",
+   "bone": "Torso",
+   "attach": "pivot = socket; weld to the bone part"
+  },
+  "url": "https://raw.githubusercontent.com/landonhjones2020-bit/nightshift-assets/main/meshes/D_characters/Char_Top_Vest.json",
+  "parts": [
+   {
+    "name": "Vest",
+    "color": "#3E6B4E",
+    "material": "Fabric",
+    "transparency": 0.0,
+    "castShadow": true,
+    "canCollide": false,
+    "role": "top",
+    "bone": null,
+    "offset": [
+     0.0,
+     -0.074,
+     0.473
+    ],
+    "size": [
+     1.843,
+     1.728,
+     1.17
+    ],
+    "hash": "0b74275bb1471a84",
+    "tris": 800
+   },
+   {
+    "name": "Zip",
+    "color": "#2B2D31",
+    "material": "Metal",
+    "transparency": 0.0,
+    "castShadow": true,
+    "canCollide": false,
+    "role": null,
+    "bone": null,
+    "offset": [
+     0.0,
+     0.017,
+     0.071
+    ],
+    "size": [
+     0.05,
+     1.525,
+     0.373
+    ],
+    "hash": "8f05d2110000ec2d",
+    "tris": 172
+   }
+  ]
+ },
+ "Character_Human": {
+  "group": "Characters",
+  "size": [
+   2.533,
+   5.05,
+   1.28
+  ],
+  "tris": 4932,
+  "meta": {
+   "root": {
+    "center": [
+     0,
+     2.95,
+     0
+    ],
+    "size": [
+     2.0,
+     2.0,
+     1.0
+    ]
+   },
+   "walkSpeed": 9.0,
+   "clipSpeedRef": {
+    "Walk": 9.0,
+    "ChaseRun": 20.0
+   },
+   "animRig": "Human",
+   "socketBones": {
+    "HatSocket": "Head",
+    "HairSocket": "Head",
+    "FaceSocket": "Head",
+    "TorsoSocket": "Torso"
+   },
+   "sit": {
+    "seatHeight": 1.6,
+    "pivotFromSeatSocket": [
+     0,
+     -1.6,
+     0
+    ],
+    "note": "Sit/Eat: put the model pivot on the floor right under the seat socket, facing the socket yaw"
+   },
+   "eyelids": "role eyelid parts export Transparency 1 (eyes open); set 0 for ~0.12 s to blink"
+  },
+  "url": "https://raw.githubusercontent.com/landonhjones2020-bit/nightshift-assets/main/meshes/D_characters/Character_Human.json",
+  "parts": [
+   {
+    "name": "Hips",
+    "color": "#3A3E4A",
+    "material": "SmoothPlastic",
+    "transparency": 0.0,
+    "castShadow": true,
+    "canCollide": false,
+    "role": "pants",
+    "bone": "Hips",
+    "offset": [
+     0.0,
+     2.06,
+     0.007
+    ],
+    "size": [
+     1.27,
+     0.8,
+     0.885
+    ],
+    "hash": "7c14b3d032424ad8",
+    "tris": 280
+   },
+   {
+    "name": "Torso",
+    "color": "#4F7C9E",
+    "material": "SmoothPlastic",
+    "transparency": 0.0,
+    "castShadow": true,
+    "canCollide": false,
+    "role": "top",
+    "bone": "Torso",
+    "offset": [
+     0.0,
+     2.909,
+     -0.016
+    ],
+    "size": [
+     1.66,
+     1.478,
+     0.953
+    ],
+    "hash": "720f33d1b0e7c3f6",
+    "tris": 560
+   },
+   {
+    "name": "Head",
+    "color": "#E3AC85",
+    "material": "SmoothPlastic",
+    "transparency": 0.0,
+    "castShadow": true,
+    "canCollide": false,
+    "role": "skin",
+    "bone": "Head",
+    "offset": [
+     0.0,
+     4.23,
+     -0.08
+    ],
+    "size": [
+     1.377,
+     1.64,
+     1.28
+    ],
+    "hash": "7f99cb3cd6c8d347",
+    "tris": 916
+   },
+   {
+    "name": "EyeL",
+    "color": "#F7F4EE",
+    "material": "SmoothPlastic",
+    "transparency": 0.0,
+    "castShadow": true,
+    "canCollide": false,
+    "role": "eye",
+    "bone": "Head",
+    "offset": [
+     -0.225,
+     4.42,
+     -0.553
+    ],
+    "size": [
+     0.208,
+     0.27,
+     0.124
+    ],
+    "hash": "5795b94dc154ceb6",
+    "tris": 144
+   },
+   {
+    "name": "Head_SmoothPlastic",
+    "color": "#FFFFFF",
+    "material": "SmoothPlastic",
+    "transparency": 0.0,
+    "castShadow": true,
+    "canCollide": false,
+    "role": null,
+    "bone": "Head",
+    "offset": [
+     0.0,
+     4.251,
+     -0.574
+    ],
+    "size": [
+     0.532,
+     0.486,
+     0.142
+    ],
+    "hash": "7cdc7f7980d1831d",
+    "tris": 384
+   },
+   {
+    "name": "EyelidL",
+    "color": "#E3AC85",
+    "material": "SmoothPlastic",
+    "transparency": 1.0,
+    "castShadow": false,
+    "canCollide": false,
+    "role": "eyelid",
+    "bone": "Head",
+    "offset": [
+     -0.222,
+     4.42,
+     -0.576
+    ],
+    "size": [
+     0.233,
+     0.302,
+     0.111
+    ],
+    "hash": "c19fa27b5e582107",
+    "tris": 112
+   },
+   {
+    "name": "Brows",
+    "color": "#4A3326",
+    "material": "SmoothPlastic",
+    "transparency": 0.0,
+    "castShadow": true,
+    "canCollide": false,
+    "role": "brow",
+    "bone": "Head",
+    "offset": [
+     0.0,
+     4.615,
+     -0.536
+    ],
+    "size": [
+     0.636,
+     0.072,
+     0.089
+    ],
+    "hash": "a12fb2220bc56cd6",
+    "tris": 88
+   },
+   {
+    "name": "EyeR",
+    "color": "#F7F4EE",
+    "material": "SmoothPlastic",
+    "transparency": 0.0,
+    "castShadow": true,
+    "canCollide": false,
+    "role": "eye",
+    "bone": "Head",
+    "offset": [
+     0.225,
+     4.42,
+     -0.555
+    ],
+    "size": [
+     0.208,
+     0.27,
+     0.124
+    ],
+    "hash": "44e9c779a9b24c0d",
+    "tris": 144
+   },
+   {
+    "name": "EyelidR",
+    "color": "#E3AC85",
+    "material": "SmoothPlastic",
+    "transparency": 1.0,
+    "castShadow": false,
+    "canCollide": false,
+    "role": "eyelid",
+    "bone": "Head",
+    "offset": [
+     0.222,
+     4.42,
+     -0.577
+    ],
+    "size": [
+     0.233,
+     0.302,
+     0.111
+    ],
+    "hash": "cd3e5f0f40c18c2d",
+    "tris": 112
+   },
+   {
+    "name": "ArmL",
+    "color": "#4F7C9E",
+    "material": "SmoothPlastic",
+    "transparency": 0.0,
+    "castShadow": true,
+    "canCollide": false,
+    "role": "top",
+    "bone": "ArmL",
+    "offset": [
+     -0.958,
+     2.754,
+     0.0
+    ],
+    "size": [
+     0.616,
+     1.55,
+     0.504
+    ],
+    "hash": "3e4444cfe35b160c",
+    "tris": 280
+   },
+   {
+    "name": "HandL",
+    "color": "#E3AC85",
+    "material": "SmoothPlastic",
+    "transparency": 0.0,
+    "castShadow": true,
+    "canCollide": false,
+    "role": "skin",
+    "bone": "HandL",
+    "offset": [
+     -1.043,
+     1.816,
+     -0.033
+    ],
+    "size": [
+     0.274,
+     0.566,
+     0.437
+    ],
+    "hash": "07217b5330803186",
+    "tris": 240
+   },
+   {
+    "name": "ArmR",
+    "color": "#4F7C9E",
+    "material": "SmoothPlastic",
+    "transparency": 0.0,
+    "castShadow": true,
+    "canCollide": false,
+    "role": "top",
+    "bone": "ArmR",
+    "offset": [
+     0.958,
+     2.754,
+     0.0
+    ],
+    "size": [
+     0.616,
+     1.55,
+     0.504
+    ],
+    "hash": "5276ee3885e9c1d8",
+    "tris": 280
+   },
+   {
+    "name": "HandR",
+    "color": "#E3AC85",
+    "material": "SmoothPlastic",
+    "transparency": 0.0,
+    "castShadow": true,
+    "canCollide": false,
+    "role": "skin",
+    "bone": "HandR",
+    "offset": [
+     1.043,
+     1.816,
+     -0.033
+    ],
+    "size": [
+     0.274,
+     0.566,
+     0.437
+    ],
+    "hash": "c1f3147bae3867fd",
+    "tris": 240
+   },
+   {
+    "name": "LegL",
+    "color": "#3A3E4A",
+    "material": "SmoothPlastic",
+    "transparency": 0.0,
+    "castShadow": true,
+    "canCollide": false,
+    "role": "pants",
+    "bone": "LegL",
+    "offset": [
+     -0.34,
+     1.27,
+     0.0
+    ],
+    "size": [
+     0.634,
+     1.94,
+     0.65
+    ],
+    "hash": "93d55de880a3d5f6",
+    "tris": 252
+   },
+   {
+    "name": "LegL_Shoe",
+    "color": "#6B4430",
+    "material": "SmoothPlastic",
+    "transparency": 0.0,
+    "castShadow": true,
+    "canCollide": false,
+    "role": "shoes",
+    "bone": "LegL",
+    "offset": [
+     -0.37,
+     0.241,
+     -0.13
+    ],
+    "size": [
+     0.51,
+     0.338,
+     0.92
+    ],
+    "hash": "ac94f7d71e374aa4",
+    "tris": 168
+   },
+   {
+    "name": "LegL_Sole",
+    "color": "#EDE6D8",
+    "material": "SmoothPlastic",
+    "transparency": 0.0,
+    "castShadow": true,
+    "canCollide": false,
+    "role": null,
+    "bone": "LegL",
+    "offset": [
+     -0.37,
+     0.186,
+     -0.138
+    ],
+    "size": [
+     0.54,
+     0.372,
+     0.985
+    ],
+    "hash": "1541b946051def9f",
+    "tris": 156
+   },
+   {
+    "name": "LegR",
+    "color": "#3A3E4A",
+    "material": "SmoothPlastic",
+    "transparency": 0.0,
+    "castShadow": true,
+    "canCollide": false,
+    "role": "pants",
+    "bone": "LegR",
+    "offset": [
+     0.34,
+     1.27,
+     0.0
+    ],
+    "size": [
+     0.634,
+     1.94,
+     0.65
+    ],
+    "hash": "e2db30ead419ff25",
+    "tris": 252
+   },
+   {
+    "name": "LegR_Shoe",
+    "color": "#6B4430",
+    "material": "SmoothPlastic",
+    "transparency": 0.0,
+    "castShadow": true,
+    "canCollide": false,
+    "role": "shoes",
+    "bone": "LegR",
+    "offset": [
+     0.37,
+     0.241,
+     -0.13
+    ],
+    "size": [
+     0.51,
+     0.338,
+     0.92
+    ],
+    "hash": "0f76b15c8ee2efde",
+    "tris": 168
+   },
+   {
+    "name": "LegR_Sole",
+    "color": "#EDE6D8",
+    "material": "SmoothPlastic",
+    "transparency": 0.0,
+    "castShadow": true,
+    "canCollide": false,
+    "role": null,
+    "bone": "LegR",
+    "offset": [
+     0.37,
+     0.186,
+     -0.138
+    ],
+    "size": [
+     0.54,
+     0.372,
+     0.985
+    ],
+    "hash": "f86039aeda5fffc6",
+    "tris": 156
+   }
+  ],
+  "rig": {
+   "bones": [
+    {
+     "name": "Hips",
+     "parent": null,
+     "joint": [
+      0.0,
+      2.05,
+      0.0
+     ]
+    },
+    {
+     "name": "Torso",
+     "parent": "Hips",
+     "joint": [
+      0.0,
+      2.38,
+      0.0
+     ]
+    },
+    {
+     "name": "Head",
+     "parent": "Torso",
+     "joint": [
+      0.0,
+      3.62,
+      0.0
+     ]
+    },
+    {
+     "name": "ArmL",
+     "parent": "Torso",
+     "joint": [
+      -0.9,
+      3.32,
+      0.0
+     ]
+    },
+    {
+     "name": "HandL",
+     "parent": "ArmL",
+     "joint": [
+      -1.038,
+      2.007,
+      0.0
+     ]
+    },
+    {
+     "name": "ArmR",
+     "parent": "Torso",
+     "joint": [
+      0.9,
+      3.32,
+      0.0
+     ]
+    },
+    {
+     "name": "HandR",
+     "parent": "ArmR",
+     "joint": [
+      1.038,
+      2.007,
+      0.0
+     ]
+    },
+    {
+     "name": "LegL",
+     "parent": "Hips",
+     "joint": [
+      -0.34,
+      1.95,
+      0.0
+     ]
+    },
+    {
+     "name": "LegR",
+     "parent": "Hips",
+     "joint": [
+      0.34,
+      1.95,
+      0.0
+     ]
+    }
+   ]
+  },
+  "sockets": {
+   "FaceSocket": {
+    "p": [
+     0.0,
+     4.42,
+     -0.615
+    ],
+    "yaw": 0.0
+   },
+   "HairSocket": {
+    "p": [
+     0.0,
+     5.05,
+     -0.03
+    ],
+    "yaw": 0.0
+   },
+   "HatSocket": {
+    "p": [
+     0.0,
+     5.13,
+     -0.03
+    ],
+    "yaw": 0.0
+   },
+   "TorsoSocket": {
+    "p": [
+     0.0,
+     3.0,
+     -0.49
+    ],
+    "yaw": 0.0
+   }
+  }
+ },
+ "Character_Regular_gus": {
+  "group": "Characters",
+  "size": [
+   2.533,
+   5.25,
+   1.99
+  ],
+  "tris": 7554,
+  "meta": {
+   "root": {
+    "center": [
+     0,
+     2.95,
+     0
+    ],
+    "size": [
+     2.0,
+     2.0,
+     1.0
+    ]
+   },
+   "walkSpeed": 9.0,
+   "clipSpeedRef": {
+    "Walk": 9.0,
+    "ChaseRun": 20.0
+   },
+   "animRig": "Human",
+   "socketBones": {
+    "HatSocket": "Head",
+    "HairSocket": "Head",
+    "FaceSocket": "Head",
+    "TorsoSocket": "Torso"
+   },
+   "sit": {
+    "seatHeight": 1.6,
+    "pivotFromSeatSocket": [
+     0,
+     -1.6,
+     0
+    ],
+    "note": "Sit/Eat: put the model pivot on the floor right under the seat socket, facing the socket yaw"
+   },
+   "eyelids": "role eyelid parts export Transparency 1 (eyes open); set 0 for ~0.12 s to blink",
+   "regular": "gus",
+   "tells": {
+    "tell_cap": "rotate 180 deg about HatSocket's vertical axis = forward cap",
+    "tell_mustache": "hide = missing",
+    "tell_flannel": "recolour = wrong colour"
+   },
+   "favorite": "M4"
+  },
+  "url": "https://raw.githubusercontent.com/landonhjones2020-bit/nightshift-assets/main/meshes/D_characters/Character_Regular_gus.json",
+  "parts": [
+   {
+    "name": "Hips",
+    "color": "#3F5F8C",
+    "material": "SmoothPlastic",
+    "transparency": 0.0,
+    "castShadow": true,
+    "canCollide": false,
+    "role": null,
+    "bone": "Hips",
+    "offset": [
+     0.0,
+     2.06,
+     0.007
+    ],
+    "size": [
+     1.27,
+     0.8,
+     0.885
+    ],
+    "hash": "7c14b3d032424ad8",
+    "tris": 280
+   },
+   {
+    "name": "Torso",
+    "color": "#C7372F",
+    "material": "SmoothPlastic",
+    "transparency": 0.0,
+    "castShadow": true,
+    "canCollide": false,
+    "role": "tell_flannel",
+    "bone": "Torso",
+    "offset": [
+     0.0,
+     2.909,
+     -0.09
+    ],
+    "size": [
+     1.68,
+     1.478,
+     1.252
+    ],
+    "hash": "1a4680e2d58c20a4",
+    "tris": 684
+   },
+   {
+    "name": "Head",
+    "color": "#FFFFFF",
+    "material": "SmoothPlastic",
+    "transparency": 0.0,
+    "castShadow": true,
+    "canCollide": false,
+    "role": null,
+    "bone": "Head",
+    "offset": [
+     0.0,
+     4.258,
+     -0.055
+    ],
+    "size": [
+     1.377,
+     1.697,
+     1.33
+    ],
+    "hash": "85502860f2970e39",
+    "tris": 1752
+   },
+   {
+    "name": "EyeL",
+    "color": "#F7F4EE",
+    "material": "SmoothPlastic",
+    "transparency": 0.0,
+    "castShadow": true,
+    "canCollide": false,
+    "role": "eye",
+    "bone": "Head",
+    "offset": [
+     -0.225,
+     4.42,
+     -0.553
+    ],
+    "size": [
+     0.208,
+     0.27,
+     0.124
+    ],
+    "hash": "5cb3e1a8d35bec5b",
+    "tris": 144
+   },
+   {
+    "name": "EyelidL",
+    "color": "#E0A27C",
+    "material": "SmoothPlastic",
+    "transparency": 1.0,
+    "castShadow": false,
+    "canCollide": false,
+    "role": "eyelid",
+    "bone": "Head",
+    "offset": [
+     -0.222,
+     4.42,
+     -0.576
+    ],
+    "size": [
+     0.233,
+     0.302,
+     0.111
+    ],
+    "hash": "1e3460f1b59bc4c0",
+    "tris": 112
+   },
+   {
+    "name": "EyeR",
+    "color": "#F7F4EE",
+    "material": "SmoothPlastic",
+    "transparency": 0.0,
+    "castShadow": true,
+    "canCollide": false,
+    "role": "eye",
+    "bone": "Head",
+    "offset": [
+     0.225,
+     4.42,
+     -0.555
+    ],
+    "size": [
+     0.208,
+     0.27,
+     0.124
+    ],
+    "hash": "44e9c779a9b24c0d",
+    "tris": 144
+   },
+   {
+    "name": "EyelidR",
+    "color": "#E0A27C",
+    "material": "SmoothPlastic",
+    "transparency": 1.0,
+    "castShadow": false,
+    "canCollide": false,
+    "role": "eyelid",
+    "bone": "Head",
+    "offset": [
+     0.222,
+     4.42,
+     -0.577
+    ],
+    "size": [
+     0.233,
+     0.302,
+     0.111
+    ],
+    "hash": "524454773238c876",
+    "tris": 112
+   },
+   {
+    "name": "ArmL",
+    "color": "#C7372F",
+    "material": "SmoothPlastic",
+    "transparency": 0.0,
+    "castShadow": true,
+    "canCollide": false,
+    "role": "tell_flannel",
+    "bone": "ArmL",
+    "offset": [
+     -0.958,
+     2.754,
+     0.0
+    ],
+    "size": [
+     0.616,
+     1.55,
+     0.504
+    ],
+    "hash": "3e4444cfe35b160c",
+    "tris": 280
+   },
+   {
+    "name": "HandL",
+    "color": "#E0A27C",
+    "material": "SmoothPlastic",
+    "transparency": 0.0,
+    "castShadow": true,
+    "canCollide": false,
+    "role": null,
+    "bone": "HandL",
+    "offset": [
+     -1.043,
+     1.816,
+     -0.033
+    ],
+    "size": [
+     0.274,
+     0.566,
+     0.437
+    ],
+    "hash": "086765f7b98c314b",
+    "tris": 240
+   },
+   {
+    "name": "ArmR",
+    "color": "#C7372F",
+    "material": "SmoothPlastic",
+    "transparency": 0.0,
+    "castShadow": true,
+    "canCollide": false,
+    "role": "tell_flannel",
+    "bone": "ArmR",
+    "offset": [
+     0.958,
+     2.754,
+     0.0
+    ],
+    "size": [
+     0.616,
+     1.55,
+     0.504
+    ],
+    "hash": "5276ee3885e9c1d8",
+    "tris": 280
+   },
+   {
+    "name": "HandR",
+    "color": "#E0A27C",
+    "material": "SmoothPlastic",
+    "transparency": 0.0,
+    "castShadow": true,
+    "canCollide": false,
+    "role": null,
+    "bone": "HandR",
+    "offset": [
+     1.043,
+     1.816,
+     -0.033
+    ],
+    "size": [
+     0.274,
+     0.566,
+     0.437
+    ],
+    "hash": "46953ed3ed909e45",
+    "tris": 240
+   },
+   {
+    "name": "LegL",
+    "color": "#FFFFFF",
+    "material": "SmoothPlastic",
+    "transparency": 0.0,
+    "castShadow": true,
+    "canCollide": false,
+    "role": null,
+    "bone": "LegL",
+    "offset": [
+     -0.34,
+     1.12,
+     -0.138
+    ],
+    "size": [
+     0.634,
+     2.24,
+     0.985
+    ],
+    "hash": "4e60f58c5952eab8",
+    "tris": 576
+   },
+   {
+    "name": "LegR",
+    "color": "#FFFFFF",
+    "material": "SmoothPlastic",
+    "transparency": 0.0,
+    "castShadow": true,
+    "canCollide": false,
+    "role": null,
+    "bone": "LegR",
+    "offset": [
+     0.34,
+     1.12,
+     -0.138
+    ],
+    "size": [
+     0.634,
+     2.24,
+     0.985
+    ],
+    "hash": "007f24dc402c5b00",
+    "tris": 576
+   },
+   {
+    "name": "Torso_Check",
+    "color": "#241D1D",
+    "material": "Fabric",
+    "transparency": 0.0,
+    "castShadow": true,
+    "canCollide": false,
+    "role": null,
+    "bone": "Torso",
+    "offset": [
+     0.0,
+     2.812,
+     -0.1
+    ],
+    "size": [
+     1.705,
+     1.229,
+     1.206
+    ],
+    "hash": "1d602ac281dee85f",
+    "tris": 276
+   },
+   {
+    "name": "Torso_Buttons",
+    "color": "#EDE6D8",
+    "material": "SmoothPlastic",
+    "transparency": 0.0,
+    "castShadow": true,
+    "canCollide": false,
+    "role": null,
+    "bone": "Torso",
+    "offset": [
+     0.0,
+     2.799,
+     -0.638
+    ],
+    "size": [
+     0.056,
+     0.764,
+     0.189
+    ],
+    "hash": "623da034780a4245",
+    "tris": 144
+   },
+   {
+    "name": "ArmL_Check",
+    "color": "#241D1D",
+    "material": "Fabric",
+    "transparency": 0.0,
+    "castShadow": true,
+    "canCollide": false,
+    "role": null,
+    "bone": "ArmL",
+    "offset": [
+     -0.942,
+     2.789,
+     0.008
+    ],
+    "size": [
+     0.594,
+     1.213,
+     0.517
+    ],
+    "hash": "19f1c24949799571",
+    "tris": 94
+   },
+   {
+    "name": "ArmR_Check",
+    "color": "#241D1D",
+    "material": "Fabric",
+    "transparency": 0.0,
+    "castShadow": true,
+    "canCollide": false,
+    "role": null,
+    "bone": "ArmR",
+    "offset": [
+     0.942,
+     2.789,
+     0.008
+    ],
+    "size": [
+     0.594,
+     1.213,
+     0.517
+    ],
+    "hash": "86cca797f1428519",
+    "tris": 94
+   },
+   {
+    "name": "Mustache",
+    "color": "#6A5646",
+    "material": "SmoothPlastic",
+    "transparency": 0.0,
+    "castShadow": true,
+    "canCollide": false,
+    "role": "tell_mustache",
+    "bone": "Head",
+    "offset": [
+     0.0,
+     4.039,
+     -0.462
+    ],
+    "size": [
+     0.723,
+     0.283,
+     0.417
+    ],
+    "hash": "4f696b8e492563ea",
+    "tris": 400
+   },
+   {
+    "name": "Cap",
+    "color": "#2E5AA8",
+    "material": "SmoothPlastic",
+    "transparency": 0.0,
+    "castShadow": true,
+    "canCollide": false,
+    "role": "tell_cap",
+    "bone": "Head",
+    "offset": [
+     0.0,
+     4.794,
+     0.273
+    ],
+    "size": [
+     1.534,
+     0.911,
+     1.969
+    ],
+    "hash": "4c9872f66c3bcdd1",
+    "tris": 1126
+   }
+  ],
+  "rig": {
+   "bones": [
+    {
+     "name": "Hips",
+     "parent": null,
+     "joint": [
+      0.0,
+      2.05,
+      0.0
+     ]
+    },
+    {
+     "name": "Torso",
+     "parent": "Hips",
+     "joint": [
+      0.0,
+      2.38,
+      0.0
+     ]
+    },
+    {
+     "name": "Head",
+     "parent": "Torso",
+     "joint": [
+      0.0,
+      3.62,
+      0.0
+     ]
+    },
+    {
+     "name": "ArmL",
+     "parent": "Torso",
+     "joint": [
+      -0.9,
+      3.32,
+      0.0
+     ]
+    },
+    {
+     "name": "HandL",
+     "parent": "ArmL",
+     "joint": [
+      -1.038,
+      2.007,
+      0.0
+     ]
+    },
+    {
+     "name": "ArmR",
+     "parent": "Torso",
+     "joint": [
+      0.9,
+      3.32,
+      0.0
+     ]
+    },
+    {
+     "name": "HandR",
+     "parent": "ArmR",
+     "joint": [
+      1.038,
+      2.007,
+      0.0
+     ]
+    },
+    {
+     "name": "LegL",
+     "parent": "Hips",
+     "joint": [
+      -0.34,
+      1.95,
+      0.0
+     ]
+    },
+    {
+     "name": "LegR",
+     "parent": "Hips",
+     "joint": [
+      0.34,
+      1.95,
+      0.0
+     ]
+    }
+   ]
+  },
+  "sockets": {
+   "FaceSocket": {
+    "p": [
+     0.0,
+     4.42,
+     -0.615
+    ],
+    "yaw": 0.0
+   },
+   "HairSocket": {
+    "p": [
+     0.0,
+     5.05,
+     -0.03
+    ],
+    "yaw": 0.0
+   },
+   "HatSocket": {
+    "p": [
+     0.0,
+     5.13,
+     -0.03
+    ],
+    "yaw": 0.0
+   },
+   "TorsoSocket": {
+    "p": [
+     0.0,
+     3.0,
+     -0.49
+    ],
+    "yaw": 0.0
+   }
+  }
+ },
+ "Character_Regular_jo": {
+  "group": "Characters",
+  "size": [
+   2.533,
+   5.243,
+   1.482
+  ],
+  "tris": 7244,
+  "meta": {
+   "root": {
+    "center": [
+     0,
+     2.95,
+     0
+    ],
+    "size": [
+     2.0,
+     2.0,
+     1.0
+    ]
+   },
+   "walkSpeed": 9.0,
+   "clipSpeedRef": {
+    "Walk": 9.0,
+    "ChaseRun": 20.0
+   },
+   "animRig": "Human",
+   "socketBones": {
+    "HatSocket": "Head",
+    "HairSocket": "Head",
+    "FaceSocket": "Head",
+    "TorsoSocket": "Torso"
+   },
+   "sit": {
+    "seatHeight": 1.6,
+    "pivotFromSeatSocket": [
+     0,
+     -1.6,
+     0
+    ],
+    "note": "Sit/Eat: put the model pivot on the floor right under the seat socket, facing the socket yaw"
+   },
+   "eyelids": "role eyelid parts export Transparency 1 (eyes open); set 0 for ~0.12 s to blink",
+   "regular": "jo",
+   "tells": {
+    "tell_sticker": "hide = sticker missing"
+   },
+   "favorite": "M5"
+  },
+  "url": "https://raw.githubusercontent.com/landonhjones2020-bit/nightshift-assets/main/meshes/D_characters/Character_Regular_jo.json",
+  "parts": [
+   {
+    "name": "Hips",
+    "color": "#4A4F57",
+    "material": "SmoothPlastic",
+    "transparency": 0.0,
+    "castShadow": true,
+    "canCollide": false,
+    "role": null,
+    "bone": "Hips",
+    "offset": [
+     0.0,
+     2.06,
+     0.007
+    ],
+    "size": [
+     1.27,
+     0.8,
+     0.885
+    ],
+    "hash": "7c14b3d032424ad8",
+    "tris": 280
+   },
+   {
+    "name": "Torso",
+    "color": "#FFFFFF",
+    "material": "SmoothPlastic",
+    "transparency": 0.0,
+    "castShadow": true,
+    "canCollide": false,
+    "role": null,
+    "bone": "Torso",
+    "offset": [
+     0.0,
+     2.91,
+     -0.01
+    ],
+    "size": [
+     1.66,
+     1.42,
+     0.936
+    ],
+    "hash": "a2751c15acbfa0ca",
+    "tris": 360
+   },
+   {
+    "name": "Head",
+    "color": "#FFFFFF",
+    "material": "SmoothPlastic",
+    "transparency": 0.0,
+    "castShadow": true,
+    "canCollide": false,
+    "role": null,
+    "bone": "Head",
+    "offset": [
+     0.0,
+     4.325,
+     0.021
+    ],
+    "size": [
+     1.675,
+     1.83,
+     1.482
+    ],
+    "hash": "98535f6ec2bb8fc7",
+    "tris": 2864
+   },
+   {
+    "name": "EyeL",
+    "color": "#F7F4EE",
+    "material": "SmoothPlastic",
+    "transparency": 0.0,
+    "castShadow": true,
+    "canCollide": false,
+    "role": "eye",
+    "bone": "Head",
+    "offset": [
+     -0.225,
+     4.42,
+     -0.553
+    ],
+    "size": [
+     0.208,
+     0.27,
+     0.124
+    ],
+    "hash": "e257777b401ce17a",
+    "tris": 144
+   },
+   {
+    "name": "EyelidL",
+    "color": "#8A5A3C",
+    "material": "SmoothPlastic",
+    "transparency": 1.0,
+    "castShadow": false,
+    "canCollide": false,
+    "role": "eyelid",
+    "bone": "Head",
+    "offset": [
+     -0.222,
+     4.42,
+     -0.576
+    ],
+    "size": [
+     0.233,
+     0.302,
+     0.111
+    ],
+    "hash": "b001de87ef4a4137",
+    "tris": 112
+   },
+   {
+    "name": "EyeR",
+    "color": "#F7F4EE",
+    "material": "SmoothPlastic",
+    "transparency": 0.0,
+    "castShadow": true,
+    "canCollide": false,
+    "role": "eye",
+    "bone": "Head",
+    "offset": [
+     0.225,
+     4.42,
+     -0.555
+    ],
+    "size": [
+     0.208,
+     0.27,
+     0.124
+    ],
+    "hash": "44e9c779a9b24c0d",
+    "tris": 144
+   },
+   {
+    "name": "EyelidR",
+    "color": "#8A5A3C",
+    "material": "SmoothPlastic",
+    "transparency": 1.0,
+    "castShadow": false,
+    "canCollide": false,
+    "role": "eyelid",
+    "bone": "Head",
+    "offset": [
+     0.222,
+     4.42,
+     -0.577
+    ],
+    "size": [
+     0.233,
+     0.302,
+     0.111
+    ],
+    "hash": "7d4d14fc47685187",
+    "tris": 112
+   },
+   {
+    "name": "ArmL",
+    "color": "#3E9B4F",
+    "material": "SmoothPlastic",
+    "transparency": 0.0,
+    "castShadow": true,
+    "canCollide": false,
+    "role": null,
+    "bone": "ArmL",
+    "offset": [
+     -0.958,
+     2.754,
+     0.0
+    ],
+    "size": [
+     0.616,
+     1.55,
+     0.504
+    ],
+    "hash": "3e4444cfe35b160c",
+    "tris": 280
+   },
+   {
+    "name": "HandL",
+    "color": "#8A5A3C",
+    "material": "SmoothPlastic",
+    "transparency": 0.0,
+    "castShadow": true,
+    "canCollide": false,
+    "role": null,
+    "bone": "HandL",
+    "offset": [
+     -1.043,
+     1.816,
+     -0.033
+    ],
+    "size": [
+     0.274,
+     0.566,
+     0.437
+    ],
+    "hash": "5cbbe5f7995c24df",
+    "tris": 240
+   },
+   {
+    "name": "ArmR",
+    "color": "#3E9B4F",
+    "material": "SmoothPlastic",
+    "transparency": 0.0,
+    "castShadow": true,
+    "canCollide": false,
+    "role": null,
+    "bone": "ArmR",
+    "offset": [
+     0.958,
+     2.754,
+     0.0
+    ],
+    "size": [
+     0.616,
+     1.55,
+     0.504
+    ],
+    "hash": "5276ee3885e9c1d8",
+    "tris": 280
+   },
+   {
+    "name": "HandR",
+    "color": "#8A5A3C",
+    "material": "SmoothPlastic",
+    "transparency": 0.0,
+    "castShadow": true,
+    "canCollide": false,
+    "role": null,
+    "bone": "HandR",
+    "offset": [
+     1.043,
+     1.816,
+     -0.033
+    ],
+    "size": [
+     0.274,
+     0.566,
+     0.437
+    ],
+    "hash": "a9d1f5a75fbd842d",
+    "tris": 240
+   },
+   {
+    "name": "LegL",
+    "color": "#FFFFFF",
+    "material": "SmoothPlastic",
+    "transparency": 0.0,
+    "castShadow": true,
+    "canCollide": false,
+    "role": null,
+    "bone": "LegL",
+    "offset": [
+     -0.34,
+     1.12,
+     -0.138
+    ],
+    "size": [
+     0.634,
+     2.24,
+     0.985
+    ],
+    "hash": "d1657ae806941549",
+    "tris": 620
+   },
+   {
+    "name": "LegR",
+    "color": "#FFFFFF",
+    "material": "SmoothPlastic",
+    "transparency": 0.0,
+    "castShadow": true,
+    "canCollide": false,
+    "role": null,
+    "bone": "LegR",
+    "offset": [
+     0.34,
+     1.12,
+     -0.138
+    ],
+    "size": [
+     0.634,
+     2.24,
+     0.985
+    ],
+    "hash": "727450c8d322333c",
+    "tris": 620
+   },
+   {
+    "name": "Hoodie",
+    "color": "#3E9B4F",
+    "material": "Fabric",
+    "transparency": 0.0,
+    "castShadow": true,
+    "canCollide": false,
+    "role": null,
+    "bone": "Torso",
+    "offset": [
+     0.0,
+     2.958,
+     -0.003
+    ],
+    "size": [
+     1.793,
+     1.873,
+     1.162
+    ],
+    "hash": "b2e4e8708841577a",
+    "tris": 928
+   },
+   {
+    "name": "Sticker",
+    "color": "#FFD23F",
+    "material": "SmoothPlastic",
+    "transparency": 0.0,
+    "castShadow": true,
+    "canCollide": false,
+    "role": "tell_sticker",
+    "bone": "Head",
+    "offset": [
+     -0.148,
+     5.052,
+     -0.418
+    ],
+    "size": [
+     0.256,
+     0.383,
+     0.553
+    ],
+    "hash": "c78f1e9f77492844",
+    "tris": 20
+   }
+  ],
+  "rig": {
+   "bones": [
+    {
+     "name": "Hips",
+     "parent": null,
+     "joint": [
+      0.0,
+      2.05,
+      0.0
+     ]
+    },
+    {
+     "name": "Torso",
+     "parent": "Hips",
+     "joint": [
+      0.0,
+      2.38,
+      0.0
+     ]
+    },
+    {
+     "name": "Head",
+     "parent": "Torso",
+     "joint": [
+      0.0,
+      3.62,
+      0.0
+     ]
+    },
+    {
+     "name": "ArmL",
+     "parent": "Torso",
+     "joint": [
+      -0.9,
+      3.32,
+      0.0
+     ]
+    },
+    {
+     "name": "HandL",
+     "parent": "ArmL",
+     "joint": [
+      -1.038,
+      2.007,
+      0.0
+     ]
+    },
+    {
+     "name": "ArmR",
+     "parent": "Torso",
+     "joint": [
+      0.9,
+      3.32,
+      0.0
+     ]
+    },
+    {
+     "name": "HandR",
+     "parent": "ArmR",
+     "joint": [
+      1.038,
+      2.007,
+      0.0
+     ]
+    },
+    {
+     "name": "LegL",
+     "parent": "Hips",
+     "joint": [
+      -0.34,
+      1.95,
+      0.0
+     ]
+    },
+    {
+     "name": "LegR",
+     "parent": "Hips",
+     "joint": [
+      0.34,
+      1.95,
+      0.0
+     ]
+    }
+   ]
+  },
+  "sockets": {
+   "FaceSocket": {
+    "p": [
+     0.0,
+     4.42,
+     -0.615
+    ],
+    "yaw": 0.0
+   },
+   "HairSocket": {
+    "p": [
+     0.0,
+     5.05,
+     -0.03
+    ],
+    "yaw": 0.0
+   },
+   "HatSocket": {
+    "p": [
+     0.0,
+     5.13,
+     -0.03
+    ],
+    "yaw": 0.0
+   },
+   "TorsoSocket": {
+    "p": [
+     0.0,
+     3.0,
+     -0.49
+    ],
+    "yaw": 0.0
+   }
+  }
+ },
+ "Character_Regular_mina": {
+  "group": "Characters",
+  "size": [
+   2.438,
+   5.112,
+   1.852
+  ],
+  "tris": 7658,
+  "meta": {
+   "root": {
+    "center": [
+     0,
+     2.95,
+     0
+    ],
+    "size": [
+     2.0,
+     2.0,
+     1.0
+    ]
+   },
+   "walkSpeed": 9.0,
+   "clipSpeedRef": {
+    "Walk": 9.0,
+    "ChaseRun": 20.0
+   },
+   "animRig": "Human",
+   "socketBones": {
+    "HatSocket": "Head",
+    "HairSocket": "Head",
+    "FaceSocket": "Head",
+    "TorsoSocket": "Torso"
+   },
+   "sit": {
+    "seatHeight": 1.6,
+    "pivotFromSeatSocket": [
+     0,
+     -1.6,
+     0
+    ],
+    "note": "Sit/Eat: put the model pivot on the floor right under the seat socket, facing the socket yaw"
+   },
+   "eyelids": "role eyelid parts export Transparency 1 (eyes open); set 0 for ~0.12 s to blink",
+   "regular": "mina",
+   "tells": {
+    "badge": "Studio adds the text MINA on the Front face; the Copy shows MNIA"
+   },
+   "badge": {
+    "text": "MINA",
+    "face": "Front",
+    "sizeStuds": [
+     0.5,
+     0.29
+    ]
+   },
+   "favorite": "M2"
+  },
+  "url": "https://raw.githubusercontent.com/landonhjones2020-bit/nightshift-assets/main/meshes/D_characters/Character_Regular_mina.json",
+  "parts": [
+   {
+    "name": "Hips",
+    "color": "#4785CC",
+    "material": "SmoothPlastic",
+    "transparency": 0.0,
+    "castShadow": true,
+    "canCollide": false,
+    "role": null,
+    "bone": "Hips",
+    "offset": [
+     0.0,
+     2.06,
+     0.007
+    ],
+    "size": [
+     1.27,
+     0.8,
+     0.885
+    ],
+    "hash": "7c14b3d032424ad8",
+    "tris": 280
+   },
+   {
+    "name": "Torso",
+    "color": "#FFFFFF",
+    "material": "SmoothPlastic",
+    "transparency": 0.0,
+    "castShadow": true,
+    "canCollide": false,
+    "role": null,
+    "bone": "Torso",
+    "offset": [
+     0.0,
+     2.958,
+     -0.048
+    ],
+    "size": [
+     1.66,
+     1.516,
+     1.012
+    ],
+    "hash": "2b4f5b0d61178034",
+    "tris": 616
+   },
+   {
+    "name": "Head",
+    "color": "#FFFFFF",
+    "material": "SmoothPlastic",
+    "transparency": 0.0,
+    "castShadow": true,
+    "canCollide": false,
+    "role": null,
+    "bone": "Head",
+    "offset": [
+     0.0,
+     4.261,
+     0.206
+    ],
+    "size": [
+     1.377,
+     1.702,
+     1.852
+    ],
+    "hash": "33350a608c1ce7c5",
+    "tris": 2246
+   },
+   {
+    "name": "EyeL",
+    "color": "#F7F4EE",
+    "material": "SmoothPlastic",
+    "transparency": 0.0,
+    "castShadow": true,
+    "canCollide": false,
+    "role": "eye",
+    "bone": "Head",
+    "offset": [
+     -0.225,
+     4.42,
+     -0.553
+    ],
+    "size": [
+     0.208,
+     0.27,
+     0.124
+    ],
+    "hash": "5c5a9c388ae56549",
+    "tris": 144
+   },
+   {
+    "name": "EyelidL",
+    "color": "#B9774F",
+    "material": "SmoothPlastic",
+    "transparency": 1.0,
+    "castShadow": false,
+    "canCollide": false,
+    "role": "eyelid",
+    "bone": "Head",
+    "offset": [
+     -0.222,
+     4.42,
+     -0.576
+    ],
+    "size": [
+     0.233,
+     0.302,
+     0.111
+    ],
+    "hash": "6e972806bd625536",
+    "tris": 112
+   },
+   {
+    "name": "EyeR",
+    "color": "#F7F4EE",
+    "material": "SmoothPlastic",
+    "transparency": 0.0,
+    "castShadow": true,
+    "canCollide": false,
+    "role": "eye",
+    "bone": "Head",
+    "offset": [
+     0.225,
+     4.42,
+     -0.555
+    ],
+    "size": [
+     0.208,
+     0.27,
+     0.124
+    ],
+    "hash": "8a1ca2b7ce88ce84",
+    "tris": 144
+   },
+   {
+    "name": "EyelidR",
+    "color": "#B9774F",
+    "material": "SmoothPlastic",
+    "transparency": 1.0,
+    "castShadow": false,
+    "canCollide": false,
+    "role": "eyelid",
+    "bone": "Head",
+    "offset": [
+     0.222,
+     4.42,
+     -0.577
+    ],
+    "size": [
+     0.233,
+     0.302,
+     0.111
+    ],
+    "hash": "a2fbb05a977513b1",
+    "tris": 112
+   },
+   {
+    "name": "ArmL",
+    "color": "#FFFFFF",
+    "material": "SmoothPlastic",
+    "transparency": 0.0,
+    "castShadow": true,
+    "canCollide": false,
+    "role": null,
+    "bone": "ArmL",
+    "offset": [
+     -0.931,
+     2.745,
+     0.0
+    ],
+    "size": [
+     0.575,
+     1.568,
+     0.516
+    ],
+    "hash": "3b69d9dd416e35fb",
+    "tris": 364
+   },
+   {
+    "name": "HandL",
+    "color": "#B9774F",
+    "material": "SmoothPlastic",
+    "transparency": 0.0,
+    "castShadow": true,
+    "canCollide": false,
+    "role": null,
+    "bone": "HandL",
+    "offset": [
+     -1.043,
+     1.816,
+     -0.033
+    ],
+    "size": [
+     0.274,
+     0.566,
+     0.437
+    ],
+    "hash": "d081abac3f603560",
+    "tris": 240
+   },
+   {
+    "name": "ArmR",
+    "color": "#FFFFFF",
+    "material": "SmoothPlastic",
+    "transparency": 0.0,
+    "castShadow": true,
+    "canCollide": false,
+    "role": null,
+    "bone": "ArmR",
+    "offset": [
+     0.931,
+     2.745,
+     0.0
+    ],
+    "size": [
+     0.575,
+     1.568,
+     0.516
+    ],
+    "hash": "9a0218aa18c69699",
+    "tris": 364
+   },
+   {
+    "name": "HandR",
+    "color": "#B9774F",
+    "material": "SmoothPlastic",
+    "transparency": 0.0,
+    "castShadow": true,
+    "canCollide": false,
+    "role": null,
+    "bone": "HandR",
+    "offset": [
+     1.043,
+     1.816,
+     -0.033
+    ],
+    "size": [
+     0.274,
+     0.566,
+     0.437
+    ],
+    "hash": "7f39fdc52952c79d",
+    "tris": 240
+   },
+   {
+    "name": "LegL",
+    "color": "#FFFFFF",
+    "material": "SmoothPlastic",
+    "transparency": 0.0,
+    "castShadow": true,
+    "canCollide": false,
+    "role": null,
+    "bone": "LegL",
+    "offset": [
+     -0.34,
+     1.12,
+     -0.138
+    ],
+    "size": [
+     0.634,
+     2.24,
+     0.985
+    ],
+    "hash": "39d6c370caf0115c",
+    "tris": 576
+   },
+   {
+    "name": "LegR",
+    "color": "#FFFFFF",
+    "material": "SmoothPlastic",
+    "transparency": 0.0,
+    "castShadow": true,
+    "canCollide": false,
+    "role": null,
+    "bone": "LegR",
+    "offset": [
+     0.34,
+     1.12,
+     -0.138
+    ],
+    "size": [
+     0.634,
+     2.24,
+     0.985
+    ],
+    "hash": "51448d51aafc7cd6",
+    "tris": 576
+   },
+   {
+    "name": "Scrubs",
+    "color": "#4F8FD6",
+    "material": "Fabric",
+    "transparency": 0.0,
+    "castShadow": true,
+    "canCollide": false,
+    "role": null,
+    "bone": "Torso",
+    "offset": [
+     0.0,
+     2.847,
+     -0.019
+    ],
+    "size": [
+     1.759,
+     1.651,
+     1.074
+    ],
+    "hash": "43c0090715e77dda",
+    "tris": 908
+   },
+   {
+    "name": "Bags",
+    "color": "#4A2E3A",
+    "material": "SmoothPlastic",
+    "transparency": 0.25,
+    "castShadow": false,
+    "canCollide": false,
+    "role": null,
+    "bone": "Head",
+    "offset": [
+     0.0,
+     4.279,
+     -0.56
+    ],
+    "size": [
+     0.704,
+     0.114,
+     0.11
+    ],
+    "hash": "817738d7175c8380",
+    "tris": 368
+   },
+   {
+    "name": "Badge",
+    "color": "#F7F5EF",
+    "material": "SmoothPlastic",
+    "transparency": 0.0,
+    "castShadow": true,
+    "canCollide": false,
+    "role": "badge",
+    "bone": "Torso",
+    "offset": [
+     -0.28,
+     2.86,
+     -0.564
+    ],
+    "size": [
+     0.6,
+     0.34,
+     0.03
+    ],
+    "hash": "4d1be98ee1fb8d4c",
+    "tris": 44
+   },
+   {
+    "name": "Steel",
+    "color": "#C9CED3",
+    "material": "Metal",
+    "transparency": 0.0,
+    "castShadow": true,
+    "canCollide": false,
+    "role": null,
+    "bone": "Torso",
+    "offset": [
+     -0.005,
+     3.351,
+     -0.439
+    ],
+    "size": [
+     1.292,
+     0.642,
+     0.222
+    ],
+    "hash": "2b5bea45438bf545",
+    "tris": 324
+   }
+  ],
+  "rig": {
+   "bones": [
+    {
+     "name": "Hips",
+     "parent": null,
+     "joint": [
+      0.0,
+      2.05,
+      0.0
+     ]
+    },
+    {
+     "name": "Torso",
+     "parent": "Hips",
+     "joint": [
+      0.0,
+      2.38,
+      0.0
+     ]
+    },
+    {
+     "name": "Head",
+     "parent": "Torso",
+     "joint": [
+      0.0,
+      3.62,
+      0.0
+     ]
+    },
+    {
+     "name": "ArmL",
+     "parent": "Torso",
+     "joint": [
+      -0.9,
+      3.32,
+      0.0
+     ]
+    },
+    {
+     "name": "HandL",
+     "parent": "ArmL",
+     "joint": [
+      -1.038,
+      2.007,
+      0.0
+     ]
+    },
+    {
+     "name": "ArmR",
+     "parent": "Torso",
+     "joint": [
+      0.9,
+      3.32,
+      0.0
+     ]
+    },
+    {
+     "name": "HandR",
+     "parent": "ArmR",
+     "joint": [
+      1.038,
+      2.007,
+      0.0
+     ]
+    },
+    {
+     "name": "LegL",
+     "parent": "Hips",
+     "joint": [
+      -0.34,
+      1.95,
+      0.0
+     ]
+    },
+    {
+     "name": "LegR",
+     "parent": "Hips",
+     "joint": [
+      0.34,
+      1.95,
+      0.0
+     ]
+    }
+   ]
+  },
+  "sockets": {
+   "FaceSocket": {
+    "p": [
+     0.0,
+     4.42,
+     -0.615
+    ],
+    "yaw": 0.0
+   },
+   "HairSocket": {
+    "p": [
+     0.0,
+     5.05,
+     -0.03
+    ],
+    "yaw": 0.0
+   },
+   "HatSocket": {
+    "p": [
+     0.0,
+     5.13,
+     -0.03
+    ],
+    "yaw": 0.0
+   },
+   "TorsoSocket": {
+    "p": [
+     0.0,
+     3.0,
+     -0.49
+    ],
+    "yaw": 0.0
+   }
+  }
+ },
+ "Character_Regular_walt": {
+  "group": "Characters",
+  "size": [
+   2.533,
+   5.05,
+   1.398
+  ],
+  "tris": 7832,
+  "meta": {
+   "root": {
+    "center": [
+     0,
+     2.95,
+     0
+    ],
+    "size": [
+     2.0,
+     2.0,
+     1.0
+    ]
+   },
+   "walkSpeed": 9.0,
+   "clipSpeedRef": {
+    "Walk": 9.0,
+    "ChaseRun": 20.0
+   },
+   "animRig": "Human",
+   "socketBones": {
+    "HatSocket": "Head",
+    "HairSocket": "Head",
+    "FaceSocket": "Head",
+    "TorsoSocket": "Torso"
+   },
+   "sit": {
+    "seatHeight": 1.6,
+    "pivotFromSeatSocket": [
+     0,
+     -1.6,
+     0
+    ],
+    "note": "Sit/Eat: put the model pivot on the floor right under the seat socket, facing the socket yaw"
+   },
+   "eyelids": "role eyelid parts export Transparency 1 (eyes open); set 0 for ~0.12 s to blink",
+   "regular": "walt",
+   "tells": {
+    "tell_glasses": "hide frame + lenses = glasses missing"
+   },
+   "cane": {
+    "role": "cane",
+    "bone": "HandL",
+    "hideWhileSeated": true,
+    "note": "rides the left hand; hide it during Sit/Eat (it would swing over the table)"
+   },
+   "favorite": "M1"
+  },
+  "url": "https://raw.githubusercontent.com/landonhjones2020-bit/nightshift-assets/main/meshes/D_characters/Character_Regular_walt.json",
+  "parts": [
+   {
+    "name": "Hips",
+    "color": "#6E6A64",
+    "material": "SmoothPlastic",
+    "transparency": 0.0,
+    "castShadow": true,
+    "canCollide": false,
+    "role": null,
+    "bone": "Hips",
+    "offset": [
+     0.0,
+     2.06,
+     0.007
+    ],
+    "size": [
+     1.27,
+     0.8,
+     0.885
+    ],
+    "hash": "7c14b3d032424ad8",
+    "tris": 280
+   },
+   {
+    "name": "Torso",
+    "color": "#FFFFFF",
+    "material": "SmoothPlastic",
+    "transparency": 0.0,
+    "castShadow": true,
+    "canCollide": false,
+    "role": null,
+    "bone": "Torso",
+    "offset": [
+     0.0,
+     2.913,
+     -0.075
+    ],
+    "size": [
+     1.66,
+     1.486,
+     1.072
+    ],
+    "hash": "44bd27f7b2d8f0bf",
+    "tris": 768
+   },
+   {
+    "name": "Head",
+    "color": "#FFFFFF",
+    "material": "SmoothPlastic",
+    "transparency": 0.0,
+    "castShadow": true,
+    "canCollide": false,
+    "role": null,
+    "bone": "Head",
+    "offset": [
+     0.0,
+     4.23,
+     -0.032
+    ],
+    "size": [
+     1.377,
+     1.64,
+     1.376
+    ],
+    "hash": "17afd6029d3a00dd",
+    "tris": 2000
+   },
+   {
+    "name": "EyeL",
+    "color": "#F7F4EE",
+    "material": "SmoothPlastic",
+    "transparency": 0.0,
+    "castShadow": true,
+    "canCollide": false,
+    "role": "eye",
+    "bone": "Head",
+    "offset": [
+     -0.225,
+     4.42,
+     -0.553
+    ],
+    "size": [
+     0.208,
+     0.27,
+     0.124
+    ],
+    "hash": "f468ef2b9e9bf0c8",
+    "tris": 144
+   },
+   {
+    "name": "EyelidL",
+    "color": "#EBC2A2",
+    "material": "SmoothPlastic",
+    "transparency": 1.0,
+    "castShadow": false,
+    "canCollide": false,
+    "role": "eyelid",
+    "bone": "Head",
+    "offset": [
+     -0.222,
+     4.42,
+     -0.576
+    ],
+    "size": [
+     0.233,
+     0.302,
+     0.111
+    ],
+    "hash": "2544ded4ba2a4b6d",
+    "tris": 112
+   },
+   {
+    "name": "EyeR",
+    "color": "#F7F4EE",
+    "material": "SmoothPlastic",
+    "transparency": 0.0,
+    "castShadow": true,
+    "canCollide": false,
+    "role": "eye",
+    "bone": "Head",
+    "offset": [
+     0.225,
+     4.42,
+     -0.555
+    ],
+    "size": [
+     0.208,
+     0.27,
+     0.124
+    ],
+    "hash": "581a910c4ea48acf",
+    "tris": 144
+   },
+   {
+    "name": "EyelidR",
+    "color": "#EBC2A2",
+    "material": "SmoothPlastic",
+    "transparency": 1.0,
+    "castShadow": false,
+    "canCollide": false,
+    "role": "eyelid",
+    "bone": "Head",
+    "offset": [
+     0.222,
+     4.42,
+     -0.577
+    ],
+    "size": [
+     0.233,
+     0.302,
+     0.111
+    ],
+    "hash": "cd3e5f0f40c18c2d",
+    "tris": 112
+   },
+   {
+    "name": "ArmL",
+    "color": "#B07A3A",
+    "material": "Fabric",
+    "transparency": 0.0,
+    "castShadow": true,
+    "canCollide": false,
+    "role": null,
+    "bone": "ArmL",
+    "offset": [
+     -0.958,
+     2.754,
+     0.0
+    ],
+    "size": [
+     0.616,
+     1.55,
+     0.504
+    ],
+    "hash": "3e4444cfe35b160c",
+    "tris": 280
+   },
+   {
+    "name": "HandL",
+    "color": "#FFFFFF",
+    "material": "SmoothPlastic",
+    "transparency": 0.0,
+    "castShadow": true,
+    "canCollide": false,
+    "role": null,
+    "bone": "HandL",
+    "offset": [
+     -1.043,
+     1.05,
+     -0.033
+    ],
+    "size": [
+     0.274,
+     2.1,
+     0.437
+    ],
+    "hash": "fdd6088872152231",
+    "tris": 356
+   },
+   {
+    "name": "ArmR",
+    "color": "#B07A3A",
+    "material": "Fabric",
+    "transparency": 0.0,
+    "castShadow": true,
+    "canCollide": false,
+    "role": null,
+    "bone": "ArmR",
+    "offset": [
+     0.958,
+     2.754,
+     0.0
+    ],
+    "size": [
+     0.616,
+     1.55,
+     0.504
+    ],
+    "hash": "5276ee3885e9c1d8",
+    "tris": 280
+   },
+   {
+    "name": "HandR",
+    "color": "#EBC2A2",
+    "material": "SmoothPlastic",
+    "transparency": 0.0,
+    "castShadow": true,
+    "canCollide": false,
+    "role": null,
+    "bone": "HandR",
+    "offset": [
+     1.043,
+     1.816,
+     -0.033
+    ],
+    "size": [
+     0.274,
+     0.566,
+     0.437
+    ],
+    "hash": "3f90328c11a10876",
+    "tris": 240
+   },
+   {
+    "name": "LegL",
+    "color": "#FFFFFF",
+    "material": "SmoothPlastic",
+    "transparency": 0.0,
+    "castShadow": true,
+    "canCollide": false,
+    "role": null,
+    "bone": "LegL",
+    "offset": [
+     -0.34,
+     1.12,
+     -0.138
+    ],
+    "size": [
+     0.634,
+     2.24,
+     0.985
+    ],
+    "hash": "0babc08ac35a329b",
+    "tris": 576
+   },
+   {
+    "name": "LegR",
+    "color": "#FFFFFF",
+    "material": "SmoothPlastic",
+    "transparency": 0.0,
+    "castShadow": true,
+    "canCollide": false,
+    "role": null,
+    "bone": "LegR",
+    "offset": [
+     0.34,
+     1.12,
+     -0.138
+    ],
+    "size": [
+     0.634,
+     2.24,
+     0.985
+    ],
+    "hash": "5c5fbef74f4cce91",
+    "tris": 576
+   },
+   {
+    "name": "Cardigan",
+    "color": "#B07A3A",
+    "material": "Fabric",
+    "transparency": 0.0,
+    "castShadow": true,
+    "canCollide": false,
+    "role": null,
+    "bone": "Torso",
+    "offset": [
+     0.0,
+     2.84,
+     -0.007
+    ],
+    "size": [
+     1.792,
+     1.638,
+     1.108
+    ],
+    "hash": "c1d383baac5f3cdd",
+    "tris": 1012
+   },
+   {
+    "name": "Frame",
+    "color": "#A8823A",
+    "material": "SmoothPlastic",
+    "transparency": 0.0,
+    "castShadow": true,
+    "canCollide": false,
+    "role": "tell_glasses",
+    "bone": "Head",
+    "offset": [
+     0.0,
+     4.42,
+     -0.306
+    ],
+    "size": [
+     1.423,
+     0.361,
+     0.873
+    ],
+    "hash": "1ce2c5329aa473cc",
+    "tris": 584
+   },
+   {
+    "name": "Lens",
+    "color": "#CFE6F2",
+    "material": "Glass",
+    "transparency": 0.6,
+    "castShadow": false,
+    "canCollide": false,
+    "role": "tell_glasses",
+    "bone": "Head",
+    "offset": [
+     0.0,
+     4.42,
+     -0.691
+    ],
+    "size": [
+     0.789,
+     0.301,
+     0.068
+    ],
+    "hash": "f52869d1e229d7ec",
+    "tris": 120
+   },
+   {
+    "name": "Cane",
+    "color": "#7A4E2C",
+    "material": "Wood",
+    "transparency": 0.0,
+    "castShadow": true,
+    "canCollide": false,
+    "role": "cane",
+    "bone": "HandL",
+    "offset": [
+     -1.086,
+     1.114,
+     -0.104
+    ],
+    "size": [
+     0.15,
+     1.912,
+     0.344
+    ],
+    "hash": "d20660367755d285",
+    "tris": 248
+   }
+  ],
+  "rig": {
+   "bones": [
+    {
+     "name": "Hips",
+     "parent": null,
+     "joint": [
+      0.0,
+      2.05,
+      0.0
+     ]
+    },
+    {
+     "name": "Torso",
+     "parent": "Hips",
+     "joint": [
+      0.0,
+      2.38,
+      0.0
+     ]
+    },
+    {
+     "name": "Head",
+     "parent": "Torso",
+     "joint": [
+      0.0,
+      3.62,
+      0.0
+     ]
+    },
+    {
+     "name": "ArmL",
+     "parent": "Torso",
+     "joint": [
+      -0.9,
+      3.32,
+      0.0
+     ]
+    },
+    {
+     "name": "HandL",
+     "parent": "ArmL",
+     "joint": [
+      -1.038,
+      2.007,
+      0.0
+     ]
+    },
+    {
+     "name": "ArmR",
+     "parent": "Torso",
+     "joint": [
+      0.9,
+      3.32,
+      0.0
+     ]
+    },
+    {
+     "name": "HandR",
+     "parent": "ArmR",
+     "joint": [
+      1.038,
+      2.007,
+      0.0
+     ]
+    },
+    {
+     "name": "LegL",
+     "parent": "Hips",
+     "joint": [
+      -0.34,
+      1.95,
+      0.0
+     ]
+    },
+    {
+     "name": "LegR",
+     "parent": "Hips",
+     "joint": [
+      0.34,
+      1.95,
+      0.0
+     ]
+    }
+   ]
+  },
+  "sockets": {
+   "FaceSocket": {
+    "p": [
+     0.0,
+     4.42,
+     -0.615
+    ],
+    "yaw": 0.0
+   },
+   "HairSocket": {
+    "p": [
+     0.0,
+     5.05,
+     -0.03
+    ],
+    "yaw": 0.0
+   },
+   "HatSocket": {
+    "p": [
+     0.0,
+     5.13,
+     -0.03
+    ],
+    "yaw": 0.0
+   },
+   "TorsoSocket": {
+    "p": [
+     0.0,
+     3.0,
+     -0.49
+    ],
+    "yaw": 0.0
+   }
+  }
+ }
+}
