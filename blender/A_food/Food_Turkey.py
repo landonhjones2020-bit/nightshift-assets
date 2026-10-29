@@ -12,7 +12,7 @@ sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 import _common as C  # noqa: E402
 
 MEAT, EDGE = "#F0D5A8", "#CF9C5E"
-KW = dict(seed=3, amp=0.04, wavelength=0.44)
+KW = dict(seed=3, amp=0.042, wavelength=0.46, N=26, pleat=0.6, cup=0.006, wob_k=4)
 
 
 def build():
@@ -22,9 +22,9 @@ def build():
 
 def icon():
     C.polar_slices(MEAT, EDGE, xs=(-0.3, 0.3), yaws=(-14, 18), tilt=(-6, 8), droop=False, seed=3, amp=0.04,
-                   wavelength=0.44, zstep=0.03)
+                   wavelength=0.44, zstep=0.03, cup=0.02)
 
 
 if __name__ == "__main__":
-    C.run(build, "Food_Turkey", C.meta("turkey", 0.07),
+    C.run(build, "Food_Turkey", C.meta("turkey", 0.10),
           icon=("Ingredient_turkey", icon, {"pitch": 40.0}))

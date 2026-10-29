@@ -1,7 +1,7 @@
 """Food_WhiteSub_Top — top half of the white_sub sub roll (A_food batch).
 
 Contract (STYLE.md section 4): roll 2.2 long (X) x 0.85 wide, bottom 0.30 tall / top 0.42 tall,
-bottom at Z=0. Parts: Crust (recolor "toast"; the client darkens it with doneness), Crumb.
+bottom at Z=0. Parts: Crust (recolor "toast"; the client darkens it with doneness), Crumb, Split.
 Bread look and colours live in _common.BREADS / build_bread.
 Run:  bpyenv/bin/python blender/A_food/Food_WhiteSub_Top.py   (NS_EXPORT=1 export)
 """

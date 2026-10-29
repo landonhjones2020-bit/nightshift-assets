@@ -1,0 +1,1638 @@
+{
+ "Food_Bacon": {
+  "group": "Food",
+  "size": [
+   2.252,
+   0.108,
+   0.882
+  ],
+  "tris": 660,
+  "meta": {
+   "ingredient": "bacon",
+   "layer_height": 0.09,
+   "layer_count": 1,
+   "layer_spacing": 0.0
+  },
+  "url": "https://raw.githubusercontent.com/landonhjones2020-bit/nightshift-assets/main/meshes/A_food/Food_Bacon.json",
+  "parts": [
+   {
+    "name": "SmoothPlastic",
+    "color": "#FFFFFF",
+    "material": "SmoothPlastic",
+    "transparency": 0.0,
+    "castShadow": true,
+    "canCollide": false,
+    "role": null,
+    "bone": null,
+    "offset": [
+     -0.009,
+     0.058,
+     0.002
+    ],
+    "size": [
+     2.252,
+     0.108,
+     0.882
+    ],
+    "hash": "1bf24d86f21491b4",
+    "tris": 660
+   }
+  ]
+ },
+ "Food_BeetSlices": {
+  "group": "Food",
+  "size": [
+   0.72,
+   0.084,
+   0.699
+  ],
+  "tris": 392,
+  "meta": {
+   "ingredient": "beet_slices",
+   "layer_height": 0.08,
+   "layer_count": 3,
+   "layer_spacing": 0.74
+  },
+  "url": "https://raw.githubusercontent.com/landonhjones2020-bit/nightshift-assets/main/meshes/A_food/Food_BeetSlices.json",
+  "parts": [
+   {
+    "name": "SmoothPlastic",
+    "color": "#FFFFFF",
+    "material": "SmoothPlastic",
+    "transparency": 0.0,
+    "castShadow": true,
+    "canCollide": false,
+    "role": null,
+    "bone": null,
+    "offset": [
+     0.0,
+     0.042,
+     0.004
+    ],
+    "size": [
+     0.72,
+     0.084,
+     0.699
+    ],
+    "hash": "0ba089a987df82fc",
+    "tris": 392
+   }
+  ]
+ },
+ "Food_BlackBread_Bottom": {
+  "group": "Food",
+  "size": [
+   2.2,
+   0.305,
+   0.85
+  ],
+  "tris": 756,
+  "meta": {
+   "ingredient": "black_bread",
+   "layer_height": 0.3,
+   "layer_count": 1,
+   "layer_spacing": 0.0
+  },
+  "url": "https://raw.githubusercontent.com/landonhjones2020-bit/nightshift-assets/main/meshes/A_food/Food_BlackBread_Bottom.json",
+  "parts": [
+   {
+    "name": "Crust",
+    "color": "#2A2230",
+    "material": "SmoothPlastic",
+    "transparency": 0.0,
+    "castShadow": true,
+    "canCollide": false,
+    "role": "toast",
+    "bone": null,
+    "offset": [
+     0.0,
+     0.132,
+     0.0
+    ],
+    "size": [
+     2.2,
+     0.263,
+     0.85
+    ],
+    "hash": "6a64921503e28c02",
+    "tris": 334
+   },
+   {
+    "name": "SmoothPlastic",
+    "color": "#FFFFFF",
+    "material": "SmoothPlastic",
+    "transparency": 0.0,
+    "castShadow": true,
+    "canCollide": false,
+    "role": null,
+    "bone": null,
+    "offset": [
+     0.0,
+     0.26,
+     0.0
+    ],
+    "size": [
+     2.148,
+     0.09,
+     0.798
+    ],
+    "hash": "ed50e0bf90ddfe3d",
+    "tris": 422
+   }
+  ]
+ },
+ "Food_BlackBread_Top": {
+  "group": "Food",
+  "size": [
+   2.2,
+   0.437,
+   0.85
+  ],
+  "tris": 780,
+  "meta": {
+   "ingredient": "black_bread",
+   "layer_height": 0.42,
+   "layer_count": 1,
+   "layer_spacing": 0.0
+  },
+  "url": "https://raw.githubusercontent.com/landonhjones2020-bit/nightshift-assets/main/meshes/A_food/Food_BlackBread_Top.json",
+  "parts": [
+   {
+    "name": "Crust",
+    "color": "#2A2230",
+    "material": "SmoothPlastic",
+    "transparency": 0.0,
+    "castShadow": true,
+    "canCollide": false,
+    "role": "toast",
+    "bone": null,
+    "offset": [
+     0.0,
+     0.244,
+     0.0
+    ],
+    "size": [
+     2.2,
+     0.383,
+     0.85
+    ],
+    "hash": "c1b5c4f962ac9974",
+    "tris": 390
+   },
+   {
+    "name": "SmoothPlastic",
+    "color": "#FFFFFF",
+    "material": "SmoothPlastic",
+    "transparency": 0.0,
+    "castShadow": true,
+    "canCollide": false,
+    "role": null,
+    "bone": null,
+    "offset": [
+     0.0,
+     0.218,
+     0.0
+    ],
+    "size": [
+     2.156,
+     0.437,
+     0.806
+    ],
+    "hash": "b89c4d62f659f6bc",
+    "tris": 390
+   }
+  ]
+ },
+ "Food_Cheddar": {
+  "group": "Food",
+  "size": [
+   2.276,
+   0.132,
+   0.922
+  ],
+  "tris": 720,
+  "meta": {
+   "ingredient": "cheddar",
+   "layer_height": 0.06,
+   "layer_count": 1,
+   "layer_spacing": 0.0
+  },
+  "url": "https://raw.githubusercontent.com/landonhjones2020-bit/nightshift-assets/main/meshes/A_food/Food_Cheddar.json",
+  "parts": [
+   {
+    "name": "SmoothPlastic",
+    "color": "#FFFFFF",
+    "material": "SmoothPlastic",
+    "transparency": 0.0,
+    "castShadow": true,
+    "canCollide": false,
+    "role": null,
+    "bone": null,
+    "offset": [
+     -0.006,
+     0.01,
+     0.005
+    ],
+    "size": [
+     2.276,
+     0.132,
+     0.922
+    ],
+    "hash": "55681ef150f679ac",
+    "tris": 720
+   }
+  ]
+ },
+ "Food_Cheddar_Melted": {
+  "group": "Food",
+  "size": [
+   2.282,
+   0.227,
+   0.978
+  ],
+  "tris": 618,
+  "meta": {
+   "ingredient": "cheddar",
+   "layer_height": 0.04,
+   "layer_count": 1,
+   "layer_spacing": 0.0,
+   "melted": true
+  },
+  "url": "https://raw.githubusercontent.com/landonhjones2020-bit/nightshift-assets/main/meshes/A_food/Food_Cheddar_Melted.json",
+  "parts": [
+   {
+    "name": "Cheese",
+    "color": "#F99B12",
+    "material": "SmoothPlastic",
+    "transparency": 0.0,
+    "castShadow": true,
+    "canCollide": false,
+    "role": null,
+    "bone": null,
+    "offset": [
+     -0.01,
+     -0.066,
+     0.002
+    ],
+    "size": [
+     2.282,
+     0.227,
+     0.978
+    ],
+    "hash": "f281549355bc0822",
+    "tris": 618
+   }
+  ]
+ },
+ "Food_Chipotle_Ribbon": {
+  "group": "Food",
+  "size": [
+   2.035,
+   0.069,
+   0.648
+  ],
+  "tris": 528,
+  "meta": {
+   "ingredient": "chipotle",
+   "layer_height": 0.05,
+   "layer_count": 1,
+   "layer_spacing": 0.0
+  },
+  "url": "https://raw.githubusercontent.com/landonhjones2020-bit/nightshift-assets/main/meshes/A_food/Food_Chipotle_Ribbon.json",
+  "parts": [
+   {
+    "name": "Sauce",
+    "color": "#DE5F27",
+    "material": "SmoothPlastic",
+    "transparency": 0.0,
+    "castShadow": true,
+    "canCollide": false,
+    "role": null,
+    "bone": null,
+    "offset": [
+     0.002,
+     0.031,
+     -0.003
+    ],
+    "size": [
+     2.035,
+     0.069,
+     0.648
+    ],
+    "hash": "8a1de9be0d556270",
+    "tris": 528
+   }
+  ]
+ },
+ "Food_GhostPepper": {
+  "group": "Food",
+  "size": [
+   2.086,
+   0.125,
+   0.726
+  ],
+  "tris": 780,
+  "meta": {
+   "ingredient": "ghost_pepper",
+   "layer_height": 0.08,
+   "layer_count": 1,
+   "layer_spacing": 0.0
+  },
+  "url": "https://raw.githubusercontent.com/landonhjones2020-bit/nightshift-assets/main/meshes/A_food/Food_GhostPepper.json",
+  "parts": [
+   {
+    "name": "SmoothPlastic",
+    "color": "#FFFFFF",
+    "material": "SmoothPlastic",
+    "transparency": 0.0,
+    "castShadow": true,
+    "canCollide": false,
+    "role": null,
+    "bone": null,
+    "offset": [
+     0.007,
+     0.048,
+     -0.007
+    ],
+    "size": [
+     2.086,
+     0.125,
+     0.726
+    ],
+    "hash": "df6a81cf71b3c6d4",
+    "tris": 780
+   }
+  ]
+ },
+ "Food_GlowSauce_Ribbon": {
+  "group": "Food",
+  "size": [
+   2.035,
+   0.069,
+   0.648
+  ],
+  "tris": 528,
+  "meta": {
+   "ingredient": "glow_sauce",
+   "layer_height": 0.05,
+   "layer_count": 1,
+   "layer_spacing": 0.0
+  },
+  "url": "https://raw.githubusercontent.com/landonhjones2020-bit/nightshift-assets/main/meshes/A_food/Food_GlowSauce_Ribbon.json",
+  "parts": [
+   {
+    "name": "Sauce",
+    "color": "#62FF3B",
+    "material": "Neon",
+    "transparency": 0.0,
+    "castShadow": true,
+    "canCollide": false,
+    "role": null,
+    "bone": null,
+    "offset": [
+     0.002,
+     0.031,
+     -0.003
+    ],
+    "size": [
+     2.035,
+     0.069,
+     0.648
+    ],
+    "hash": "8a1de9be0d556270",
+    "tris": 528
+   }
+  ]
+ },
+ "Food_Ham": {
+  "group": "Food",
+  "size": [
+   2.247,
+   0.163,
+   0.945
+  ],
+  "tris": 780,
+  "meta": {
+   "ingredient": "ham",
+   "layer_height": 0.1,
+   "layer_count": 1,
+   "layer_spacing": 0.0
+  },
+  "url": "https://raw.githubusercontent.com/landonhjones2020-bit/nightshift-assets/main/meshes/A_food/Food_Ham.json",
+  "parts": [
+   {
+    "name": "SmoothPlastic",
+    "color": "#FFFFFF",
+    "material": "SmoothPlastic",
+    "transparency": 0.0,
+    "castShadow": true,
+    "canCollide": false,
+    "role": null,
+    "bone": null,
+    "offset": [
+     0.006,
+     0.046,
+     0.003
+    ],
+    "size": [
+     2.247,
+     0.163,
+     0.945
+    ],
+    "hash": "c37151f83c7419a7",
+    "tris": 780
+   }
+  ]
+ },
+ "Food_Lettuce": {
+  "group": "Food",
+  "size": [
+   2.228,
+   0.148,
+   0.936
+  ],
+  "tris": 784,
+  "meta": {
+   "ingredient": "lettuce",
+   "layer_height": 0.09,
+   "layer_count": 1,
+   "layer_spacing": 0.0
+  },
+  "url": "https://raw.githubusercontent.com/landonhjones2020-bit/nightshift-assets/main/meshes/A_food/Food_Lettuce.json",
+  "parts": [
+   {
+    "name": "SmoothPlastic",
+    "color": "#FFFFFF",
+    "material": "SmoothPlastic",
+    "transparency": 0.0,
+    "castShadow": true,
+    "canCollide": false,
+    "role": null,
+    "bone": null,
+    "offset": [
+     -0.011,
+     0.052,
+     -0.009
+    ],
+    "size": [
+     2.228,
+     0.148,
+     0.936
+    ],
+    "hash": "4a6646c04ec60e2f",
+    "tris": 784
+   }
+  ]
+ },
+ "Food_Mayo_Ribbon": {
+  "group": "Food",
+  "size": [
+   2.035,
+   0.069,
+   0.648
+  ],
+  "tris": 528,
+  "meta": {
+   "ingredient": "mayo",
+   "layer_height": 0.05,
+   "layer_count": 1,
+   "layer_spacing": 0.0
+  },
+  "url": "https://raw.githubusercontent.com/landonhjones2020-bit/nightshift-assets/main/meshes/A_food/Food_Mayo_Ribbon.json",
+  "parts": [
+   {
+    "name": "Sauce",
+    "color": "#FFF5D6",
+    "material": "SmoothPlastic",
+    "transparency": 0.0,
+    "castShadow": true,
+    "canCollide": false,
+    "role": null,
+    "bone": null,
+    "offset": [
+     0.002,
+     0.031,
+     -0.003
+    ],
+    "size": [
+     2.035,
+     0.069,
+     0.648
+    ],
+    "hash": "8a1de9be0d556270",
+    "tris": 528
+   }
+  ]
+ },
+ "Food_Mustard_Ribbon": {
+  "group": "Food",
+  "size": [
+   2.035,
+   0.069,
+   0.648
+  ],
+  "tris": 528,
+  "meta": {
+   "ingredient": "mustard",
+   "layer_height": 0.05,
+   "layer_count": 1,
+   "layer_spacing": 0.0
+  },
+  "url": "https://raw.githubusercontent.com/landonhjones2020-bit/nightshift-assets/main/meshes/A_food/Food_Mustard_Ribbon.json",
+  "parts": [
+   {
+    "name": "Sauce",
+    "color": "#F7C21A",
+    "material": "SmoothPlastic",
+    "transparency": 0.0,
+    "castShadow": true,
+    "canCollide": false,
+    "role": null,
+    "bone": null,
+    "offset": [
+     0.002,
+     0.031,
+     -0.003
+    ],
+    "size": [
+     2.035,
+     0.069,
+     0.648
+    ],
+    "hash": "8a1de9be0d556270",
+    "tris": 528
+   }
+  ]
+ },
+ "Food_MysteryMeat": {
+  "group": "Food",
+  "size": [
+   2.288,
+   0.139,
+   0.87
+  ],
+  "tris": 744,
+  "meta": {
+   "ingredient": "mystery_meat",
+   "layer_height": 0.1,
+   "layer_count": 1,
+   "layer_spacing": 0.0
+  },
+  "url": "https://raw.githubusercontent.com/landonhjones2020-bit/nightshift-assets/main/meshes/A_food/Food_MysteryMeat.json",
+  "parts": [
+   {
+    "name": "SmoothPlastic",
+    "color": "#FFFFFF",
+    "material": "SmoothPlastic",
+    "transparency": 0.0,
+    "castShadow": true,
+    "canCollide": false,
+    "role": null,
+    "bone": null,
+    "offset": [
+     0.0,
+     0.06,
+     0.0
+    ],
+    "size": [
+     2.288,
+     0.139,
+     0.87
+    ],
+    "hash": "6916918947dd1619",
+    "tris": 600
+   },
+   {
+    "name": "Flecks",
+    "color": "#7DFF4F",
+    "material": "Neon",
+    "transparency": 0.0,
+    "castShadow": true,
+    "canCollide": false,
+    "role": null,
+    "bone": null,
+    "offset": [
+     -0.005,
+     0.08,
+     0.035
+    ],
+    "size": [
+     1.703,
+     0.054,
+     0.533
+    ],
+    "hash": "f78670ed545dae43",
+    "tris": 144
+   }
+  ]
+ },
+ "Food_Onion": {
+  "group": "Food",
+  "size": [
+   0.674,
+   0.052,
+   0.668
+  ],
+  "tris": 756,
+  "meta": {
+   "ingredient": "onion",
+   "layer_height": 0.06,
+   "layer_count": 3,
+   "layer_spacing": 0.72
+  },
+  "url": "https://raw.githubusercontent.com/landonhjones2020-bit/nightshift-assets/main/meshes/A_food/Food_Onion.json",
+  "parts": [
+   {
+    "name": "SmoothPlastic",
+    "color": "#FFFFFF",
+    "material": "SmoothPlastic",
+    "transparency": 0.0,
+    "castShadow": true,
+    "canCollide": false,
+    "role": null,
+    "bone": null,
+    "offset": [
+     0.0,
+     0.026,
+     -0.005
+    ],
+    "size": [
+     0.674,
+     0.052,
+     0.668
+    ],
+    "hash": "16ccb2beff68d743",
+    "tris": 756
+   }
+  ]
+ },
+ "Food_PatronChunk": {
+  "group": "Food",
+  "size": [
+   6.677,
+   4.725,
+   3.013
+  ],
+  "tris": 1954,
+  "meta": {
+   "patron_chunk": true,
+   "scale": 2.727
+  },
+  "url": "https://raw.githubusercontent.com/landonhjones2020-bit/nightshift-assets/main/meshes/A_food/Food_PatronChunk.json",
+  "parts": [
+   {
+    "name": "CrustBottom",
+    "color": "#E9A957",
+    "material": "SmoothPlastic",
+    "transparency": 0.0,
+    "castShadow": true,
+    "canCollide": false,
+    "role": "toast",
+    "bone": null,
+    "offset": [
+     0.023,
+     0.343,
+     -0.029
+    ],
+    "size": [
+     6.0,
+     0.686,
+     2.318
+    ],
+    "hash": "506cb2a7336affb9",
+    "tris": 238
+   },
+   {
+    "name": "SmoothPlastic",
+    "color": "#FFFFFF",
+    "material": "SmoothPlastic",
+    "transparency": 0.0,
+    "castShadow": true,
+    "canCollide": false,
+    "role": null,
+    "bone": null,
+    "offset": [
+     0.0,
+     2.653,
+     0.0
+    ],
+    "size": [
+     6.677,
+     4.145,
+     3.013
+    ],
+    "hash": "e14d179793f01d36",
+    "tris": 1458
+   },
+   {
+    "name": "CrustTop",
+    "color": "#E9A957",
+    "material": "SmoothPlastic",
+    "transparency": 0.0,
+    "castShadow": true,
+    "canCollide": false,
+    "role": "toast",
+    "bone": null,
+    "offset": [
+     0.023,
+     2.815,
+     -0.029
+    ],
+    "size": [
+     6.0,
+     1.254,
+     2.318
+    ],
+    "hash": "26147dd24464751a",
+    "tris": 238
+   },
+   {
+    "name": "Pick",
+    "color": "#D9B27A",
+    "material": "Wood",
+    "transparency": 0.0,
+    "castShadow": true,
+    "canCollide": false,
+    "role": null,
+    "bone": null,
+    "offset": [
+     -0.659,
+     3.692,
+     -0.165
+    ],
+    "size": [
+     0.26,
+     1.503,
+     0.224
+    ],
+    "hash": "3093b2937f8c4432",
+    "tris": 20
+   }
+  ]
+ },
+ "Food_PepperJack": {
+  "group": "Food",
+  "size": [
+   2.271,
+   0.134,
+   0.923
+  ],
+  "tris": 792,
+  "meta": {
+   "ingredient": "pepper_jack",
+   "layer_height": 0.06,
+   "layer_count": 1,
+   "layer_spacing": 0.0
+  },
+  "url": "https://raw.githubusercontent.com/landonhjones2020-bit/nightshift-assets/main/meshes/A_food/Food_PepperJack.json",
+  "parts": [
+   {
+    "name": "SmoothPlastic",
+    "color": "#FFFFFF",
+    "material": "SmoothPlastic",
+    "transparency": 0.0,
+    "castShadow": true,
+    "canCollide": false,
+    "role": null,
+    "bone": null,
+    "offset": [
+     -0.01,
+     0.016,
+     -0.004
+    ],
+    "size": [
+     2.271,
+     0.134,
+     0.923
+    ],
+    "hash": "bbd2b706b0adaae8",
+    "tris": 792
+   }
+  ]
+ },
+ "Food_PepperJack_Melted": {
+  "group": "Food",
+  "size": [
+   2.275,
+   0.23,
+   0.984
+  ],
+  "tris": 714,
+  "meta": {
+   "ingredient": "pepper_jack",
+   "layer_height": 0.04,
+   "layer_count": 1,
+   "layer_spacing": 0.0,
+   "melted": true
+  },
+  "url": "https://raw.githubusercontent.com/landonhjones2020-bit/nightshift-assets/main/meshes/A_food/Food_PepperJack_Melted.json",
+  "parts": [
+   {
+    "name": "SmoothPlastic",
+    "color": "#FFFFFF",
+    "material": "SmoothPlastic",
+    "transparency": 0.0,
+    "castShadow": true,
+    "canCollide": false,
+    "role": null,
+    "bone": null,
+    "offset": [
+     -0.027,
+     -0.064,
+     -0.002
+    ],
+    "size": [
+     2.275,
+     0.23,
+     0.984
+    ],
+    "hash": "601baead50b19bad",
+    "tris": 714
+   }
+  ]
+ },
+ "Food_Pickles": {
+  "group": "Food",
+  "size": [
+   2.042,
+   0.104,
+   0.733
+  ],
+  "tris": 784,
+  "meta": {
+   "ingredient": "pickles",
+   "layer_height": 0.07,
+   "layer_count": 1,
+   "layer_spacing": 0.0
+  },
+  "url": "https://raw.githubusercontent.com/landonhjones2020-bit/nightshift-assets/main/meshes/A_food/Food_Pickles.json",
+  "parts": [
+   {
+    "name": "SmoothPlastic",
+    "color": "#FFFFFF",
+    "material": "SmoothPlastic",
+    "transparency": 0.0,
+    "castShadow": true,
+    "canCollide": false,
+    "role": null,
+    "bone": null,
+    "offset": [
+     -0.003,
+     0.042,
+     -0.002
+    ],
+    "size": [
+     2.042,
+     0.104,
+     0.733
+    ],
+    "hash": "dc7132ece11b9b7e",
+    "tris": 784
+   }
+  ]
+ },
+ "Food_RoastBeef": {
+  "group": "Food",
+  "size": [
+   2.28,
+   0.164,
+   0.936
+  ],
+  "tris": 792,
+  "meta": {
+   "ingredient": "roast_beef",
+   "layer_height": 0.09,
+   "layer_count": 1,
+   "layer_spacing": 0.0
+  },
+  "url": "https://raw.githubusercontent.com/landonhjones2020-bit/nightshift-assets/main/meshes/A_food/Food_RoastBeef.json",
+  "parts": [
+   {
+    "name": "SmoothPlastic",
+    "color": "#FFFFFF",
+    "material": "SmoothPlastic",
+    "transparency": 0.0,
+    "castShadow": true,
+    "canCollide": false,
+    "role": null,
+    "bone": null,
+    "offset": [
+     -0.005,
+     0.036,
+     -0.012
+    ],
+    "size": [
+     2.28,
+     0.164,
+     0.936
+    ],
+    "hash": "c47d87eb083f7c82",
+    "tris": 792
+   }
+  ]
+ },
+ "Food_Sourdough_Bottom": {
+  "group": "Food",
+  "size": [
+   2.2,
+   0.305,
+   0.85
+  ],
+  "tris": 756,
+  "meta": {
+   "ingredient": "sourdough",
+   "layer_height": 0.3,
+   "layer_count": 1,
+   "layer_spacing": 0.0
+  },
+  "url": "https://raw.githubusercontent.com/landonhjones2020-bit/nightshift-assets/main/meshes/A_food/Food_Sourdough_Bottom.json",
+  "parts": [
+   {
+    "name": "Crust",
+    "color": "#C98B48",
+    "material": "SmoothPlastic",
+    "transparency": 0.0,
+    "castShadow": true,
+    "canCollide": false,
+    "role": "toast",
+    "bone": null,
+    "offset": [
+     0.0,
+     0.128,
+     0.0
+    ],
+    "size": [
+     2.2,
+     0.256,
+     0.85
+    ],
+    "hash": "a92a38cbb357bbcc",
+    "tris": 334
+   },
+   {
+    "name": "SmoothPlastic",
+    "color": "#FFFFFF",
+    "material": "SmoothPlastic",
+    "transparency": 0.0,
+    "castShadow": true,
+    "canCollide": false,
+    "role": null,
+    "bone": null,
+    "offset": [
+     0.0,
+     0.26,
+     0.0
+    ],
+    "size": [
+     2.148,
+     0.09,
+     0.798
+    ],
+    "hash": "69c3a81d81401dde",
+    "tris": 422
+   }
+  ]
+ },
+ "Food_Sourdough_Top": {
+  "group": "Food",
+  "size": [
+   2.2,
+   0.453,
+   0.85
+  ],
+  "tris": 724,
+  "meta": {
+   "ingredient": "sourdough",
+   "layer_height": 0.42,
+   "layer_count": 1,
+   "layer_spacing": 0.0
+  },
+  "url": "https://raw.githubusercontent.com/landonhjones2020-bit/nightshift-assets/main/meshes/A_food/Food_Sourdough_Top.json",
+  "parts": [
+   {
+    "name": "Crust",
+    "color": "#C98B48",
+    "material": "SmoothPlastic",
+    "transparency": 0.0,
+    "castShadow": true,
+    "canCollide": false,
+    "role": "toast",
+    "bone": null,
+    "offset": [
+     0.0,
+     0.243,
+     0.0
+    ],
+    "size": [
+     2.2,
+     0.381,
+     0.85
+    ],
+    "hash": "01f405f3a39d698c",
+    "tris": 390
+   },
+   {
+    "name": "SmoothPlastic",
+    "color": "#FFFFFF",
+    "material": "SmoothPlastic",
+    "transparency": 0.0,
+    "castShadow": true,
+    "canCollide": false,
+    "role": null,
+    "bone": null,
+    "offset": [
+     0.0,
+     0.227,
+     0.0
+    ],
+    "size": [
+     2.156,
+     0.453,
+     0.806
+    ],
+    "hash": "fc2b3326f346aee4",
+    "tris": 334
+   }
+  ]
+ },
+ "Food_Swiss": {
+  "group": "Food",
+  "size": [
+   2.278,
+   0.143,
+   0.923
+  ],
+  "tris": 708,
+  "meta": {
+   "ingredient": "swiss",
+   "layer_height": 0.06,
+   "layer_count": 1,
+   "layer_spacing": 0.0
+  },
+  "url": "https://raw.githubusercontent.com/landonhjones2020-bit/nightshift-assets/main/meshes/A_food/Food_Swiss.json",
+  "parts": [
+   {
+    "name": "Cheese",
+    "color": "#F7E6A2",
+    "material": "SmoothPlastic",
+    "transparency": 0.0,
+    "castShadow": true,
+    "canCollide": false,
+    "role": null,
+    "bone": null,
+    "offset": [
+     -0.006,
+     0.008,
+     0.005
+    ],
+    "size": [
+     2.278,
+     0.143,
+     0.923
+    ],
+    "hash": "d4064ef49dd95ee4",
+    "tris": 708
+   }
+  ]
+ },
+ "Food_Swiss_Melted": {
+  "group": "Food",
+  "size": [
+   2.282,
+   0.225,
+   0.953
+  ],
+  "tris": 792,
+  "meta": {
+   "ingredient": "swiss",
+   "layer_height": 0.04,
+   "layer_count": 1,
+   "layer_spacing": 0.0,
+   "melted": true
+  },
+  "url": "https://raw.githubusercontent.com/landonhjones2020-bit/nightshift-assets/main/meshes/A_food/Food_Swiss_Melted.json",
+  "parts": [
+   {
+    "name": "Cheese",
+    "color": "#F9E28C",
+    "material": "SmoothPlastic",
+    "transparency": 0.0,
+    "castShadow": true,
+    "canCollide": false,
+    "role": null,
+    "bone": null,
+    "offset": [
+     -0.023,
+     -0.059,
+     -0.017
+    ],
+    "size": [
+     2.282,
+     0.225,
+     0.953
+    ],
+    "hash": "039601c6c1f8eb67",
+    "tris": 792
+   }
+  ]
+ },
+ "Food_Tomato": {
+  "group": "Food",
+  "size": [
+   0.84,
+   0.147,
+   0.84
+  ],
+  "tris": 796,
+  "meta": {
+   "ingredient": "tomato",
+   "layer_height": 0.12,
+   "layer_count": 3,
+   "layer_spacing": 0.62
+  },
+  "url": "https://raw.githubusercontent.com/landonhjones2020-bit/nightshift-assets/main/meshes/A_food/Food_Tomato.json",
+  "parts": [
+   {
+    "name": "SmoothPlastic",
+    "color": "#FFFFFF",
+    "material": "SmoothPlastic",
+    "transparency": 0.0,
+    "castShadow": true,
+    "canCollide": false,
+    "role": null,
+    "bone": null,
+    "offset": [
+     0.003,
+     0.075,
+     0.0
+    ],
+    "size": [
+     0.84,
+     0.147,
+     0.84
+    ],
+    "hash": "890d2d2b86ac94ce",
+    "tris": 796
+   }
+  ]
+ },
+ "Food_Turkey": {
+  "group": "Food",
+  "size": [
+   2.218,
+   0.149,
+   0.927
+  ],
+  "tris": 780,
+  "meta": {
+   "ingredient": "turkey",
+   "layer_height": 0.1,
+   "layer_count": 1,
+   "layer_spacing": 0.0
+  },
+  "url": "https://raw.githubusercontent.com/landonhjones2020-bit/nightshift-assets/main/meshes/A_food/Food_Turkey.json",
+  "parts": [
+   {
+    "name": "SmoothPlastic",
+    "color": "#FFFFFF",
+    "material": "SmoothPlastic",
+    "transparency": 0.0,
+    "castShadow": true,
+    "canCollide": false,
+    "role": null,
+    "bone": null,
+    "offset": [
+     0.007,
+     0.051,
+     -0.004
+    ],
+    "size": [
+     2.218,
+     0.149,
+     0.927
+    ],
+    "hash": "18b7014da0f448ab",
+    "tris": 780
+   }
+  ]
+ },
+ "Food_WheatSub_Bottom": {
+  "group": "Food",
+  "size": [
+   2.2,
+   0.305,
+   0.85
+  ],
+  "tris": 756,
+  "meta": {
+   "ingredient": "wheat_sub",
+   "layer_height": 0.3,
+   "layer_count": 1,
+   "layer_spacing": 0.0
+  },
+  "url": "https://raw.githubusercontent.com/landonhjones2020-bit/nightshift-assets/main/meshes/A_food/Food_WheatSub_Bottom.json",
+  "parts": [
+   {
+    "name": "Crust",
+    "color": "#8C5A33",
+    "material": "SmoothPlastic",
+    "transparency": 0.0,
+    "castShadow": true,
+    "canCollide": false,
+    "role": "toast",
+    "bone": null,
+    "offset": [
+     0.0,
+     0.126,
+     0.0
+    ],
+    "size": [
+     2.2,
+     0.252,
+     0.85
+    ],
+    "hash": "a62c76b0197b80b5",
+    "tris": 334
+   },
+   {
+    "name": "SmoothPlastic",
+    "color": "#FFFFFF",
+    "material": "SmoothPlastic",
+    "transparency": 0.0,
+    "castShadow": true,
+    "canCollide": false,
+    "role": null,
+    "bone": null,
+    "offset": [
+     0.0,
+     0.26,
+     0.0
+    ],
+    "size": [
+     2.148,
+     0.09,
+     0.798
+    ],
+    "hash": "196a4b8d28e43505",
+    "tris": 422
+   }
+  ]
+ },
+ "Food_WheatSub_Top": {
+  "group": "Food",
+  "size": [
+   2.2,
+   0.429,
+   0.85
+  ],
+  "tris": 756,
+  "meta": {
+   "ingredient": "wheat_sub",
+   "layer_height": 0.42,
+   "layer_count": 1,
+   "layer_spacing": 0.0
+  },
+  "url": "https://raw.githubusercontent.com/landonhjones2020-bit/nightshift-assets/main/meshes/A_food/Food_WheatSub_Top.json",
+  "parts": [
+   {
+    "name": "Crust",
+    "color": "#8C5A33",
+    "material": "SmoothPlastic",
+    "transparency": 0.0,
+    "castShadow": true,
+    "canCollide": false,
+    "role": "toast",
+    "bone": null,
+    "offset": [
+     0.0,
+     0.238,
+     0.0
+    ],
+    "size": [
+     2.2,
+     0.372,
+     0.85
+    ],
+    "hash": "5621e2cf571730eb",
+    "tris": 390
+   },
+   {
+    "name": "SmoothPlastic",
+    "color": "#FFFFFF",
+    "material": "SmoothPlastic",
+    "transparency": 0.0,
+    "castShadow": true,
+    "canCollide": false,
+    "role": null,
+    "bone": null,
+    "offset": [
+     0.0,
+     0.214,
+     0.0
+    ],
+    "size": [
+     2.156,
+     0.429,
+     0.806
+    ],
+    "hash": "f88f7078d99e6ac9",
+    "tris": 366
+   }
+  ]
+ },
+ "Food_WhiteSub_Bottom": {
+  "group": "Food",
+  "size": [
+   2.2,
+   0.305,
+   0.85
+  ],
+  "tris": 756,
+  "meta": {
+   "ingredient": "white_sub",
+   "layer_height": 0.3,
+   "layer_count": 1,
+   "layer_spacing": 0.0
+  },
+  "url": "https://raw.githubusercontent.com/landonhjones2020-bit/nightshift-assets/main/meshes/A_food/Food_WhiteSub_Bottom.json",
+  "parts": [
+   {
+    "name": "Crust",
+    "color": "#E9A957",
+    "material": "SmoothPlastic",
+    "transparency": 0.0,
+    "castShadow": true,
+    "canCollide": false,
+    "role": "toast",
+    "bone": null,
+    "offset": [
+     0.0,
+     0.125,
+     0.0
+    ],
+    "size": [
+     2.2,
+     0.25,
+     0.85
+    ],
+    "hash": "4c4fadeb77058315",
+    "tris": 334
+   },
+   {
+    "name": "SmoothPlastic",
+    "color": "#FFFFFF",
+    "material": "SmoothPlastic",
+    "transparency": 0.0,
+    "castShadow": true,
+    "canCollide": false,
+    "role": null,
+    "bone": null,
+    "offset": [
+     0.0,
+     0.26,
+     0.0
+    ],
+    "size": [
+     2.148,
+     0.09,
+     0.798
+    ],
+    "hash": "4a0e049119eacb1c",
+    "tris": 422
+   }
+  ]
+ },
+ "Food_WhiteSub_Top": {
+  "group": "Food",
+  "size": [
+   2.2,
+   0.438,
+   0.85
+  ],
+  "tris": 648,
+  "meta": {
+   "ingredient": "white_sub",
+   "layer_height": 0.42,
+   "layer_count": 1,
+   "layer_spacing": 0.0
+  },
+  "url": "https://raw.githubusercontent.com/landonhjones2020-bit/nightshift-assets/main/meshes/A_food/Food_WhiteSub_Top.json",
+  "parts": [
+   {
+    "name": "Crust",
+    "color": "#E9A957",
+    "material": "SmoothPlastic",
+    "transparency": 0.0,
+    "castShadow": true,
+    "canCollide": false,
+    "role": "toast",
+    "bone": null,
+    "offset": [
+     0.0,
+     0.242,
+     0.0
+    ],
+    "size": [
+     2.2,
+     0.377,
+     0.85
+    ],
+    "hash": "e5bf20df3876425d",
+    "tris": 390
+   },
+   {
+    "name": "SmoothPlastic",
+    "color": "#FFFFFF",
+    "material": "SmoothPlastic",
+    "transparency": 0.0,
+    "castShadow": true,
+    "canCollide": false,
+    "role": null,
+    "bone": null,
+    "offset": [
+     0.0,
+     0.219,
+     0.0
+    ],
+    "size": [
+     2.156,
+     0.438,
+     0.806
+    ],
+    "hash": "af3e4c9a6aae37fb",
+    "tris": 258
+   }
+  ]
+ },
+ "Food_WrapPaper": {
+  "group": "Food",
+  "size": [
+   2.6,
+   0.258,
+   1.549
+  ],
+  "tris": 444,
+  "meta": {},
+  "url": "https://raw.githubusercontent.com/landonhjones2020-bit/nightshift-assets/main/meshes/A_food/Food_WrapPaper.json",
+  "parts": [
+   {
+    "name": "SmoothPlastic",
+    "color": "#FFFFFF",
+    "material": "SmoothPlastic",
+    "transparency": 0.0,
+    "castShadow": true,
+    "canCollide": false,
+    "role": null,
+    "bone": null,
+    "offset": [
+     0.0,
+     0.129,
+     0.0
+    ],
+    "size": [
+     2.6,
+     0.258,
+     1.549
+    ],
+    "hash": "1f362298f15beacb",
+    "tris": 444
+   }
+  ]
+ },
+ "Food_WrappedSandwich": {
+  "group": "Food",
+  "size": [
+   2.282,
+   0.977,
+   1.102
+  ],
+  "tris": 800,
+  "meta": {},
+  "url": "https://raw.githubusercontent.com/landonhjones2020-bit/nightshift-assets/main/meshes/A_food/Food_WrappedSandwich.json",
+  "parts": [
+   {
+    "name": "SmoothPlastic",
+    "color": "#FFFFFF",
+    "material": "SmoothPlastic",
+    "transparency": 0.0,
+    "castShadow": true,
+    "canCollide": false,
+    "role": null,
+    "bone": null,
+    "offset": [
+     0.0,
+     0.489,
+     0.0
+    ],
+    "size": [
+     2.282,
+     0.977,
+     1.102
+    ],
+    "hash": "39f6e833a0ae7316",
+    "tris": 660
+   },
+   {
+    "name": "Crust",
+    "color": "#E9A957",
+    "material": "SmoothPlastic",
+    "transparency": 0.0,
+    "castShadow": true,
+    "canCollide": false,
+    "role": "toast",
+    "bone": null,
+    "offset": [
+     0.901,
+     0.452,
+     0.0
+    ],
+    "size": [
+     0.42,
+     0.765,
+     0.808
+    ],
+    "hash": "1cf5e6f6a8dd1ed1",
+    "tris": 140
+   }
+  ]
+ },
+ "Kitchen_SauceBottle": {
+  "group": "Kitchen",
+  "size": [
+   0.358,
+   1.1,
+   0.358
+  ],
+  "tris": 794,
+  "meta": {},
+  "url": "https://raw.githubusercontent.com/landonhjones2020-bit/nightshift-assets/main/meshes/A_food/Kitchen_SauceBottle.json",
+  "parts": [
+   {
+    "name": "Body",
+    "color": "#F7C21A",
+    "material": "SmoothPlastic",
+    "transparency": 0.0,
+    "castShadow": true,
+    "canCollide": false,
+    "role": "sauce_body",
+    "bone": null,
+    "offset": [
+     0.0,
+     0.4,
+     0.0
+    ],
+    "size": [
+     0.35,
+     0.8,
+     0.35
+    ],
+    "hash": "b2b64bda5ca3a3ef",
+    "tris": 318
+   },
+   {
+    "name": "Cap",
+    "color": "#E8502A",
+    "material": "SmoothPlastic",
+    "transparency": 0.0,
+    "castShadow": true,
+    "canCollide": false,
+    "role": "sauce_cap",
+    "bone": null,
+    "offset": [
+     0.0,
+     0.938,
+     0.0
+    ],
+    "size": [
+     0.216,
+     0.325,
+     0.216
+    ],
+    "hash": "92c9b0761cef6de8",
+    "tris": 320
+   },
+   {
+    "name": "Label",
+    "color": "#F3EBD8",
+    "material": "SmoothPlastic",
+    "transparency": 0.0,
+    "castShadow": true,
+    "canCollide": false,
+    "role": null,
+    "bone": null,
+    "offset": [
+     0.0,
+     0.377,
+     0.0
+    ],
+    "size": [
+     0.358,
+     0.255,
+     0.358
+    ],
+    "hash": "440b53c04de91e58",
+    "tris": 156
+   }
+  ]
+ }
+}

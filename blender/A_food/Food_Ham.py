@@ -11,7 +11,7 @@ sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 import _common as C  # noqa: E402
 
 MEAT, EDGE = "#F58EA3", "#D9637D"
-KW = dict(seed=5, amp=0.034, wavelength=0.52, wob_amp=0.025, yaws=(5, -3, -8))
+KW = dict(seed=5, amp=0.042, wavelength=0.5, wob_amp=0.02, wob_k=3, yaws=(5, -3, -8), N=26, pleat=0.6, cup=0.006)
 
 
 def build():
@@ -25,5 +25,5 @@ def icon():
 
 
 if __name__ == "__main__":
-    C.run(build, "Food_Ham", C.meta("ham", 0.07),
+    C.run(build, "Food_Ham", C.meta("ham", 0.10),
           icon=("Ingredient_ham", icon, {"pitch": 40.0}))

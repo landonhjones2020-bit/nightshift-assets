@@ -17,9 +17,9 @@ def build():
 
 
 def icon():
-    C.bacon_strips(ys=(-0.17, 0.17), length=1.6, seed=4, amp=0.045)
+    C.bacon_strips(ys=(-0.17, 0.17), length=1.3, seed=4, amp=0.045)
 
 
 if __name__ == "__main__":
-    C.run(build, "Food_Bacon", C.meta("bacon", 0.08),
-          icon=("Ingredient_bacon", icon, {"pitch": 34.0}))
+    C.run(build, "Food_Bacon", C.meta("bacon", 0.09),
+          icon=("Ingredient_bacon", icon, {"pitch": 34.0, "yaw": -52.0}))

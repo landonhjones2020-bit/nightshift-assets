@@ -7,5 +7,203 @@
   ],
   "hash": "9c10af3bc5d90051",
   "url": "https://raw.githubusercontent.com/landonhjones2020-bit/nightshift-assets/main/icons/food/Food_Tomato.nsz"
+ },
+ "Ingredient_bacon": {
+  "group": "ingredients",
+  "size": [
+   512,
+   512
+  ],
+  "hash": "084a9cbef01bf4b1",
+  "url": "https://raw.githubusercontent.com/landonhjones2020-bit/nightshift-assets/main/icons/ingredients/Ingredient_bacon.nsz"
+ },
+ "Ingredient_beet_slices": {
+  "group": "ingredients",
+  "size": [
+   512,
+   512
+  ],
+  "hash": "7b93decc5b408288",
+  "url": "https://raw.githubusercontent.com/landonhjones2020-bit/nightshift-assets/main/icons/ingredients/Ingredient_beet_slices.nsz"
+ },
+ "Ingredient_black_bread": {
+  "group": "ingredients",
+  "size": [
+   512,
+   512
+  ],
+  "hash": "7f4bf78f94fc4dc5",
+  "url": "https://raw.githubusercontent.com/landonhjones2020-bit/nightshift-assets/main/icons/ingredients/Ingredient_black_bread.nsz"
+ },
+ "Ingredient_cheddar": {
+  "group": "ingredients",
+  "size": [
+   512,
+   512
+  ],
+  "hash": "82d673c02cf6cc7d",
+  "url": "https://raw.githubusercontent.com/landonhjones2020-bit/nightshift-assets/main/icons/ingredients/Ingredient_cheddar.nsz"
+ },
+ "Ingredient_chipotle": {
+  "group": "ingredients",
+  "size": [
+   512,
+   512
+  ],
+  "hash": "3853edbc3225fe6d",
+  "url": "https://raw.githubusercontent.com/landonhjones2020-bit/nightshift-assets/main/icons/ingredients/Ingredient_chipotle.nsz"
+ },
+ "Ingredient_ghost_pepper": {
+  "group": "ingredients",
+  "size": [
+   512,
+   512
+  ],
+  "hash": "63c563b16213cbd0",
+  "url": "https://raw.githubusercontent.com/landonhjones2020-bit/nightshift-assets/main/icons/ingredients/Ingredient_ghost_pepper.nsz"
+ },
+ "Ingredient_glow_sauce": {
+  "group": "ingredients",
+  "size": [
+   512,
+   512
+  ],
+  "hash": "f18ace96c1431269",
+  "url": "https://raw.githubusercontent.com/landonhjones2020-bit/nightshift-assets/main/icons/ingredients/Ingredient_glow_sauce.nsz"
+ },
+ "Ingredient_ham": {
+  "group": "ingredients",
+  "size": [
+   512,
+   512
+  ],
+  "hash": "8219438a1318b8fa",
+  "url": "https://raw.githubusercontent.com/landonhjones2020-bit/nightshift-assets/main/icons/ingredients/Ingredient_ham.nsz"
+ },
+ "Ingredient_lettuce": {
+  "group": "ingredients",
+  "size": [
+   512,
+   512
+  ],
+  "hash": "9e1604dc1efd899b",
+  "url": "https://raw.githubusercontent.com/landonhjones2020-bit/nightshift-assets/main/icons/ingredients/Ingredient_lettuce.nsz"
+ },
+ "Ingredient_mayo": {
+  "group": "ingredients",
+  "size": [
+   512,
+   512
+  ],
+  "hash": "45ab04723e95a47e",
+  "url": "https://raw.githubusercontent.com/landonhjones2020-bit/nightshift-assets/main/icons/ingredients/Ingredient_mayo.nsz"
+ },
+ "Ingredient_mustard": {
+  "group": "ingredients",
+  "size": [
+   512,
+   512
+  ],
+  "hash": "c7a79da13e9b627d",
+  "url": "https://raw.githubusercontent.com/landonhjones2020-bit/nightshift-assets/main/icons/ingredients/Ingredient_mustard.nsz"
+ },
+ "Ingredient_mystery_meat": {
+  "group": "ingredients",
+  "size": [
+   512,
+   512
+  ],
+  "hash": "68ac2487d50bfd85",
+  "url": "https://raw.githubusercontent.com/landonhjones2020-bit/nightshift-assets/main/icons/ingredients/Ingredient_mystery_meat.nsz"
+ },
+ "Ingredient_onion": {
+  "group": "ingredients",
+  "size": [
+   512,
+   512
+  ],
+  "hash": "139299344452ea13",
+  "url": "https://raw.githubusercontent.com/landonhjones2020-bit/nightshift-assets/main/icons/ingredients/Ingredient_onion.nsz"
+ },
+ "Ingredient_pepper_jack": {
+  "group": "ingredients",
+  "size": [
+   512,
+   512
+  ],
+  "hash": "6868bb70e269a107",
+  "url": "https://raw.githubusercontent.com/landonhjones2020-bit/nightshift-assets/main/icons/ingredients/Ingredient_pepper_jack.nsz"
+ },
+ "Ingredient_pickles": {
+  "group": "ingredients",
+  "size": [
+   512,
+   512
+  ],
+  "hash": "3c6f32e73f4e3b17",
+  "url": "https://raw.githubusercontent.com/landonhjones2020-bit/nightshift-assets/main/icons/ingredients/Ingredient_pickles.nsz"
+ },
+ "Ingredient_roast_beef": {
+  "group": "ingredients",
+  "size": [
+   512,
+   512
+  ],
+  "hash": "25dd29b5d9408448",
+  "url": "https://raw.githubusercontent.com/landonhjones2020-bit/nightshift-assets/main/icons/ingredients/Ingredient_roast_beef.nsz"
+ },
+ "Ingredient_sourdough": {
+  "group": "ingredients",
+  "size": [
+   512,
+   512
+  ],
+  "hash": "08e0b81d6593474e",
+  "url": "https://raw.githubusercontent.com/landonhjones2020-bit/nightshift-assets/main/icons/ingredients/Ingredient_sourdough.nsz"
+ },
+ "Ingredient_swiss": {
+  "group": "ingredients",
+  "size": [
+   512,
+   512
+  ],
+  "hash": "3832af00007ad18a",
+  "url": "https://raw.githubusercontent.com/landonhjones2020-bit/nightshift-assets/main/icons/ingredients/Ingredient_swiss.nsz"
+ },
+ "Ingredient_tomato": {
+  "group": "ingredients",
+  "size": [
+   512,
+   512
+  ],
+  "hash": "782487407515e3c5",
+  "url": "https://raw.githubusercontent.com/landonhjones2020-bit/nightshift-assets/main/icons/ingredients/Ingredient_tomato.nsz"
+ },
+ "Ingredient_turkey": {
+  "group": "ingredients",
+  "size": [
+   512,
+   512
+  ],
+  "hash": "67fdc0ab7629c4ac",
+  "url": "https://raw.githubusercontent.com/landonhjones2020-bit/nightshift-assets/main/icons/ingredients/Ingredient_turkey.nsz"
+ },
+ "Ingredient_wheat_sub": {
+  "group": "ingredients",
+  "size": [
+   512,
+   512
+  ],
+  "hash": "52fa12377f2f8628",
+  "url": "https://raw.githubusercontent.com/landonhjones2020-bit/nightshift-assets/main/icons/ingredients/Ingredient_wheat_sub.nsz"
+ },
+ "Ingredient_white_sub": {
+  "group": "ingredients",
+  "size": [
+   512,
+   512
+  ],
+  "hash": "e9881cda22ebc33f",
+  "url": "https://raw.githubusercontent.com/landonhjones2020-bit/nightshift-assets/main/icons/ingredients/Ingredient_white_sub.nsz"
  }
 }
