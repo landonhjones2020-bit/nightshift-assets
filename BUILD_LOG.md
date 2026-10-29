@@ -8,20 +8,20 @@ Mirror of `ServerStorage.Documentation.BUILD_LOG` in the place. Newest first wit
 | 0 Recon & setup | ✅ done | Verified: bpy 5.2.3 cube→FBX→Cycles PNG in workspace; repo attached with push; Studio reachable; HttpService GET of raw.githubusercontent.com works; DataStore read/write works in a real playtest |
 | 1 Pipeline gate | ✅ done | Verified (edit-mode harness + playtest): local plugin NightShiftImporter v1.1 publishes meshes/icons with CreateAssetAsync (Studio beta "CreateAssetAsync Luau API" on); tomato/crate/Nibbler imported at correct scale, orientation, pivot and vertex colours; Nibbler Scurry plays in a playtest; NSZ icon decodes and displays |
 | 2 Architecture & config | ✅ done | Config + validator + logic modules: Verified (playtest) — unit tests pass; ConfigValidator passes on every boot. ARCHITECTURE doc + map contract (ServerStorage.Documentation.ARCHITECTURE) |
-| 3 Blender assets | 🔶 in progress | Imported into Studio (Path A): A_kitchen 17/17 (a7b57bc), A_food 33/33 + 22 ingredient icons (16835c6), B_shop 33/33 (968373e), C_lobby 20/20 (05c93b2), E_creatures 5/5 rigs + AnimData (6e01ca8), D_characters 27/27 (human rig, 22 accessories, 4 Regulars) + Human AnimData (71fd9de), G1 38 Menu/Secret icons (e37d4ee), D EatStand clip (7de27cc), F_cosmetics 21 meshes + 37 icons (940c01c), H player R15 poses 7 clips (4d37a83), G2 109 UI icons (6515fa3: 31 HUD glyphs, 5 crates, 19 ingredient tags, 28 currencies/products/passes, 21 supplies/upgrades/uniforms/abilities, 4 Regular portraits, key art) — each reviewed from contact sheets / line-ups before import and in play-mode screenshots after. Verified (playtest): gingham apron, chef toque, candy flashlight (left hand) and wooden spatula (right hand) on a bundle avatar. Verified (playtest, overlay on a bundle avatar, screenshots + motor checks): CarryCrate with the crate in both hands, FlashlightAim (left hand), Crouch, Downed, HidePeek, and Whack (upper arm 160° at the wind-up, 67° at the hit, back at 0.7 s). Verified (playtest): G2 icons on the Shift HUD (tool rail, vitals, carry pill), the Shop (tabs, featured, product cards), the Locker (uniforms), the office photo board (all four portraits) and the loading screen art. Name tags have no icons yet. In progress: the Patron's hand refit |
+| 3 Blender assets | 🔶 in progress | Imported into Studio (Path A): A_kitchen 17/17 (a7b57bc), A_food 33/33 + 22 ingredient icons (16835c6), B_shop 33/33 (968373e), C_lobby 20/20 (05c93b2), E_creatures 5/5 rigs + AnimData (6e01ca8), D_characters 27/27 (human rig, 22 accessories, 4 Regulars) + Human AnimData (71fd9de), G1 38 Menu/Secret icons (e37d4ee), D EatStand clip (7de27cc), F_cosmetics 21 meshes + 37 icons (940c01c), H player R15 poses 7 clips (4d37a83), G2 109 UI icons (6515fa3: 31 HUD glyphs, 5 crates, 19 ingredient tags, 28 currencies/products/passes, 21 supplies/upgrades/uniforms/abilities, 4 Regular portraits, key art) — each reviewed from contact sheets / line-ups before import and in play-mode screenshots after. Verified (playtest): gingham apron, chef toque, candy flashlight (left hand) and wooden spatula (right hand) on a bundle avatar. Verified (playtest, overlay on a bundle avatar, screenshots + motor checks): CarryCrate with the crate in both hands, FlashlightAim (left hand), Crouch, Downed, HidePeek, and Whack (upper arm 160° at the wind-up, 67° at the hit, back at 0.7 s). Verified (playtest): G2 icons on the Shift HUD (tool rail, vitals, carry pill), the Shop (tabs, featured, product cards), the Locker (uniforms), the office photo board (all four portraits) and the loading screen art. Name tags are drawn in UI, not icons (Bible §11.12; see Decisions). E2 Patron refit imported (a091c70): HandSlam reaches through M3 and lands THE BIG ONE on the counter, HandGrabLift reaches through M8 and lifts the tower off the Plate; sleeves are 24-stud tapered capsules |
 | 4 Maps | 🔶 built with real assets | Both maps rebuilt on the imported assets: Shop 0 placeholders / 1,912 parts, Lobby 0 placeholders / 1,250 parts, nav graphs fully connected (builder check). Verified (playtest, Shift): all prompts created (22 restock, 5 crates, 5 hides, 2 cook, CCTV, bell, breaker, 5 slam), customers walk lot → front door (chime) → serve spots; kitchen, dining and office reviewed in screenshots. Verified (playtest, Lobby): HQ facade with bay names, vans, kiosk, leaderboards, EOTM wall (live headshot), VIP lounge. In-world boards (menu boards, rules sheets, Regulars photo board, perk board) render from config. Creatures and customers are the real rigs: dressed customers (hat/hair fit rules), Regulars with name badges, Mr. Usual seated in his booth, the Shiver in the freezer, the Patron at the windows |
 | 5 Core systems (server) | 🔶 server written | Verified (playtest): full run loop N1 cleared → Break Room → N2 quota miss → fired; rewards; receipts/gifts. Verified (playtest, on the generated map): station prompt → Cook View → bread, fillings by step, toaster Perfect, sauce, wrap → carry → customer's Serve prompt → graded Perfect, +26 tips |
-| 6 Entities / Director (server) | 🔶 real rigs in | Verified (playtest): Director scripted events fire on time. Verified (playtest, real rigs, screenshots + motor checks): Paperface window → counter → receipt (prop shown only during PlaceReceipt) → vault over the counter (lands 5.15 studs on, staff side); Mr. Usual slides the receipt, sits in his booth and stares at the counter (head turn), gets up and stalks when provoked; Lights-Out patrols the basement and shrieks/sinks/despawns when the power returns; the Shiver hangs in the freezer; the Patron's face fills the windows and blinks; customers sit and eat in booths; the Shiver's rampage routes along the ceiling path and drops on its target; a Copy stands up from its meal (EatStand), reveals, shrieks and chases; the Patron finale end to end (see Phase 10). Pending: the Patron's HandSlam / HandGrabLift are being refitted in Blender so the hands reach the counter and the tower through the windows (today they reach 3.5 studs short) |
-| 7 UI | 🔶 phone pass done | 30 screens; UIAudit 0 problems (edit-mode harness). Verified (playtest, Device Simulator, Galaxy A06 — 705 × 280 px safe area, the smallest target): Lobby HUD, Shift HUD, touch controls, Shop, Cook View, Locker, Quests, Secret Book, Settings, Supply Locker, Clock-in / Break Room, Results, Clue Board, Downed, Ghost HUD + Offer card, CCTV, hiding, Serve picker, quick-chat wheel and the van panel — every touch target ≥ 44 px, nothing under the thumbstick, jump button or topbar. iPhone 16 Pro (Shift HUD) and iPad checked. Xbox 1080p (Device Simulator): TV-safe margins and text boost apply (screenshots of HUD and Secret Book). Not tested: gamepad navigation with the Controller Emulator (needs a person at the controller); taps themselves (the simulator was driven by script, so buttons were checked by layout and wiring, not pressed) |
+| 6 Entities / Director (server) | 🔶 real rigs in | Verified (playtest): Director scripted events fire on time. Verified (playtest, real rigs, screenshots + motor checks): Paperface window → counter → receipt (prop shown only during PlaceReceipt) → vault over the counter (lands 5.15 studs on, staff side); Mr. Usual slides the receipt, sits in his booth and stares at the counter (head turn), gets up and stalks when provoked; Lights-Out patrols the basement and shrieks/sinks/despawns when the power returns; the Shiver hangs in the freezer; the Patron's face fills the windows and blinks; customers sit and eat in booths; the Shiver's rampage routes along the ceiling path and drops on its target; a Copy stands up from its meal (EatStand), reveals, shrieks and chases; the Patron finale end to end (see Phase 10). Verified (playtest, sampled every 0.15 s + screenshots): the Patron arrives mid-HandSlam, the right hand comes in through M3 (its pane hides while the arm crosses), slams at (−4.5, 4.4, −8.9) on the counter at 0.93 s, leaves THE BIG ONE lying there and goes back out to rest; on the last chunk the left hand comes in through M8, takes the tower at 1.07 s and lifts it; the tower vanishes at the `chomp` event with the camera cut |
+| 7 UI | 🔶 phone pass done | 30 screens; UIAudit 0 problems (edit-mode harness; re-run after the name tags — 2 hit areas were missing their `HitArea` tag, fixed). Name tags Verified (playtest): all four styles over a chef's toque, the level title, the golden VIP name, chat bubbles above the tag, hidden while hiding / as a Ghost / in the finale; the Locker's Tags tab (cards and preview) on desktop and on the Galaxy A06. Verified (playtest, Device Simulator, Galaxy A06 — 705 × 280 px safe area, the smallest target): Lobby HUD, Shift HUD, touch controls, Shop, Cook View, Locker, Quests, Secret Book, Settings, Supply Locker, Clock-in / Break Room, Results, Clue Board, Downed, Ghost HUD + Offer card, CCTV, hiding, Serve picker, quick-chat wheel and the van panel — every touch target ≥ 44 px, nothing under the thumbstick, jump button or topbar. iPhone 16 Pro (Shift HUD) and iPad checked. Xbox 1080p (Device Simulator): TV-safe margins and text boost apply (screenshots of HUD and Secret Book). Not tested: gamepad navigation with the Controller Emulator (needs a person at the controller); taps themselves (the simulator was driven by script, so buttons were checked by layout and wiring, not pressed) |
 | 8 Progression & monetization | 🔶 server + UI written | Verified (playtest harness, `/fakebuy` runs the real grant code): all 22 non-gift SKUs grant exactly (6 Coin packs, 5 Token packs, Starter Pack bundle = 3,000 Coins + 40 Tokens + 2 revives + First Night apron, Coin Boost = 3 shifts, 9 passes → entitlements); a gift (DP_GIFT_COINS_1) lands through the recipient inbox; the same PurchaseId twice grants once; revive receipts revive a Downed player and bank a free revive when there is no valid target; the Starter Pack can no longer be prompted once owned (fixed). Manager's Keys: with ProgressionOff set, /tokens /coins /fakebuy /discover /resetdata /god are all refused. Not tested: real Robux prompts (IDs are 0), MessagingService gift nudge across servers, the Manager's Keys panel itself in a private server |
 | 9 Audio, lighting, VFX | 🔶 in progress | Lighting tuned (unified lighting). Director tension per night, from the solo run (0–100, sampled each half hour 12 AM → 6 AM): N1 10 10 0 0 5 0 40 0 5 5 5 5 5 · N2 10 10 10 0 0 5 18 5 8 5 5 5 5 · N3 10 10 10 10 0 60 72 64 70 69 60 67 72 · N4 10 0 0 0 5 71 72 46 50 50 65 50 50. The bot never resets the breaker or answers riddles, so N3–N4 stay high once the first blackout lands — that plateau is the bot, not the Director; tuning waits for human playtests. Audio: 42 of 44 keys in Config.Audio now have licensed IDs (ProSoundEffects SFX, APM Music), each with its source recorded; all 42 load in a playtest (ContentProvider preload). Chosen from catalogue descriptions — not auditioned. smoke_alarm and usual_footsteps have no licensed match yet (they stay silent). Tension curve tuning not done |
-| 10 QA | 🔶 started | Verified (playtest): catch → Downed → revive with Paperface (vault, chase, catch in 2.1 s, free revive), catch → Downed → Ghost → wipe → Results with Lights-Out in a blackout (Ghost after 10.2 s), the Shiver look meter (Downed after 1.4 s of staring) and its rampage drop-catch; data: rejoin keeps the profile, simulated teleport (save + release lock, reacquire) keeps it, a failed save returns NotProcessedYet and rolls the grant back (Studio-only `_testFailWrites` hook), same PurchaseId twice grants once; 54/54 unit tests pass; Mr. Usual's clues add up to his order in 300/300 generated sets (60 Usuals × 5 nights); Manager's Keys cheat refusals (see Phase 8). Studio perf, Night 4 with 9 animated creatures/NPCs and a blackout: client 60 fps (frame 16.7 ms avg, 19.1 ms worst), server heartbeat 16.7 ms avg; Studio's memory total (2.9 GB) includes the editor, so per-tag numbers were recorded instead (Instances 121 MB, Gui 115, textures 105, mesh parts 21, parts 47). Copy catch (2.3 s after the reveal) and Mr. Usual's lunge (1.0 s). Patron finale (playtest, real client path): chunk tickets read "Chunk n of 3" and leave the rail when delivered; the Plate prompt → serve picker → DeliverChunk; a wrong chunk is refused ("NOT THIS", discarded, count unchanged); accepted chunks stack on the plate; the last one plays the finale (letterboxed two-shot camera, stage cleared, chomp, burp with lamps swinging, sunrise lifts the blackout) and 9.4 s later Results: victory card, then the panel with a Promotion row and the offer docked beside Discoveries — no overlaps, no console errors. **Full solo run, Verified (playtest):** a client-side QA bot played a whole run through the real prompts and remotes (cook at the station, crates from the freezer/pantry to the bins, serve at the counter, chunks to the Patron's Plate), God mode on and no help from time skips except N3–N4 at ×1.3: N1 13 served, $340 / $150 · N2 14, $395 / $210 · N3 15, $349 / $260 · N4 17, $424 / $300 · N5 8 served, then all 3 chunks → Patron fed → **Won** (29 min). Zero failed serves or restocks once two prompt problems it found were fixed (see Decisions: prompt priority), and one runtime error it hit (the Copy's name badge used a FontWeight that doesn't exist, which aborted Mina's spawn — fixed; a static scan of all 99 Enum items in the code now finds none invalid). Not yet: Controller Emulator pass, a 2-player test |
-| 11 Delivery report | not started | — |
+| 10 QA | 🔶 started | Verified (playtest): catch → Downed → revive with Paperface (vault, chase, catch in 2.1 s, free revive), catch → Downed → Ghost → wipe → Results with Lights-Out in a blackout (Ghost after 10.2 s), the Shiver look meter (Downed after 1.4 s of staring) and its rampage drop-catch; data: rejoin keeps the profile, simulated teleport (save + release lock, reacquire) keeps it, a failed save returns NotProcessedYet and rolls the grant back (Studio-only `_testFailWrites` hook), same PurchaseId twice grants once; 54/54 unit tests pass; Mr. Usual's clues add up to his order in 300/300 generated sets (60 Usuals × 5 nights); Manager's Keys cheat refusals (see Phase 8). Studio perf, Night 4 with 9 animated creatures/NPCs and a blackout: client 60 fps (frame 16.7 ms avg, 19.1 ms worst), server heartbeat 16.7 ms avg; Studio's memory total (2.9 GB) includes the editor, so per-tag numbers were recorded instead (Instances 121 MB, Gui 115, textures 105, mesh parts 21, parts 47). Copy catch (2.3 s after the reveal) and Mr. Usual's lunge (1.0 s). Patron finale (playtest, real client path): chunk tickets read "Chunk n of 3" and leave the rail when delivered; the Plate prompt → serve picker → DeliverChunk; a wrong chunk is refused ("NOT THIS", discarded, count unchanged); accepted chunks stack on the plate; the last one plays the finale (letterboxed two-shot camera, stage cleared, chomp, burp with lamps swinging, sunrise lifts the blackout) and 9.4 s later Results: victory card, then the panel with a Promotion row and the offer docked beside Discoveries — no overlaps, no console errors. **Full solo run, Verified (playtest):** a client-side QA bot played a whole run through the real prompts and remotes (cook at the station, crates from the freezer/pantry to the bins, serve at the counter, chunks to the Patron's Plate), God mode on and no help from time skips except N3–N4 at ×1.3: N1 13 served, $340 / $150 · N2 14, $395 / $210 · N3 15, $349 / $260 · N4 17, $424 / $300 · N5 8 served, then all 3 chunks → Patron fed → **Won** (29 min). Zero failed serves or restocks once two prompt problems it found were fixed (see Decisions: prompt priority), and one runtime error it hit (the Copy's name badge used a FontWeight that doesn't exist, which aborted Mina's spawn — fixed; a static scan of all 99 Enum items in the code now finds none invalid). Patron refit (playtest, `/feed`, three runs with RenderStepped event logs): the first shot starts the frame PatronFed arrives, the cut lands 0.03–0.05 s before the carried tower vanishes, customers fade and stay silent, no console errors. **Test Kitchen, Verified (playtest):** station prompt → Cook View in the Lobby → wheat sub, turkey ×2, mustard, wrap → The Insomniac discovered (ServerFirst toast, SECRET DISCOVERED banner, +25 Coins, 1 / 30); the Lobby rail, PLAY and Supplies step aside while cooking and come back on exit. Not yet: Controller Emulator pass, a 2-player test |
+| 11 Delivery report | ✅ done | See "Delivery report" at the end of this log (2026-10-29) |
 
 ## Next step
-1. Import the refitted Patron (hands through the windows to the counter and the tower) and watch the slam and grab in play.
-2. Phase 11 delivery report.
-3. With Landon: console pass with the Controller Emulator, a 2-player test, audition the licensed audio, and human playtests for tension tuning.
+1. Landon: publish the place, create the passes / products / badges and paste their IDs (see the delivery report below).
+2. With Landon: console pass with the Controller Emulator, a 2-player test (name tags, chat bubbles, the finale on two clients), audition the licensed audio, human playtests for tension tuning.
+3. Next build prompt (suggestions at the end of the delivery report).
 
 ## Decisions
 - **Lighting uses Roblox's unified lighting**, not `Technology`: the place carries `RBX_LightingTechnologyUnifiedMigration`, so the old "set Technology = Future" step no longer applies. Set `Lighting.LightingStyle = Realistic` and `PrioritizeLightingQuality = true` (scriptable in edit mode). With real assets the first pass was blown out (cream walls + stainless + overlapping lamps + Neon diffusers), so lamp brightness dropped ~40% (kitchen 0.5, counter 0.7, dining pendants 0.5, neon washes 0.9) and the Shift grade moved to exposure −0.25, bloom 0.4 / threshold 2.0. Verified (playtest screenshots): kitchen readable, dining moody with neon spill, office dim (desk lamp).
@@ -30,6 +30,16 @@ Mirror of `ServerStorage.Documentation.BUILD_LOG` in the place. Newest first wit
 - **The carry pill shows only while carrying.** The hide/CCTV rule set it visible whenever you weren't hiding, so "MEAT CRATE" sat on the HUD from the first frame of a shift; one rule now decides it (carrying, and not at the CCTV or hiding).
 - **Photo board names are paper white** (they sit on the photo's dark border) and the photos take less of the office light (LightInfluence 0.2) so the faces read.
 - **Prompt priority on the client.** Every prompt shares E / X / tap (Bible input map) and Roblox shows one prompt per key, so the hiding spots under the counter beat the customers standing at it — pressing E to serve hid you instead. Found by the solo-run bot. `Interaction` now suppresses (locally, activation distance 0) the Hide prompts within 9 studs of a customer you can act on (you carry a wrapped sandwich, or the customer can be refused), and shows Restock prompts only for bins of the crate type you carry that aren't full (the sauce bottles stand 0.8 studs apart).
+- **The Patron's hands come in through windows M3 and M8** (E2 refit, a091c70): HandSlam through M3 to the counter, HandGrabLift through M8 to the Plate, each sleeve a 24-stud tapered capsule that clears the opening (Blender fit report: ≥ 0.11 studs at the worst frame). The pane an arm crosses hides on the client while it does.
+- **The tower can't reach the Patron's mouth in this map** (it stops ~7.5 studs short at `chomp`: the booths under the windows, the 12-stud ceiling and the forearm through M8 keep it about 4 studs inside the wall). The finale cuts to the second shot on `chomp`, so the tower is never seen vanishing; the cut is timed from the clip's server start (`PatronFed.at`), not from when the client got the event.
+- **Name tags are UI** (Bible §11.12): one shared renderer (`UIKit.NameTag`) draws the four styles — EMPLOYEE (paper badge, red edge), NIGHT SHIFT (cyan neon), R.I.P. (headstone, typewriter), GLITCH (chromatic split, glyph swaps and flicker on one shared 15 Hz loop; static under Reduced Motion) — for the overhead tag, the Locker cards and the Locker preview. The words come from `Config.Cosmetics` (`look.label`).
+- **The overhead tag** (`Controllers.NameTags`, `WorldUI.NameTag`): display name, the level title when there is one (amber), and the tag pill; sized in studs plus a pixel floor so it reads far away without filling the screen up close; lifted over the tallest headwear; hidden while hiding, Downed, a Ghost, and for everyone during the Patron finale. Roblox's own overhead name/health is turned off locally. Your own tag isn't drawn (Roblox convention); Studio QA can draw it with `workspace.QAShowOwnTag = true`.
+- **VIP golden name and chat tag** (GP_VIP): the overhead name gets a gold gradient; chat messages from a VIP get a gold `[VIP]` before a gold name (TextChatService.OnIncomingMessage, owned by NameTags).
+- **Chat bubbles hang above the name tag:** BubbleChatConfiguration.AdorneeName = `ChatAnchor`, a local invisible part welded over each tag (just over the headwear for your own character), so a bubble never covers a tag.
+- **Locker preview frames the whole outfit** (fits the avatar's bounding box with the top of the frame left for the tag) — the chef's toque used to run into it. The info strip reads "NAME TAGS", "HATS"… instead of the slot ids.
+- **The Test Kitchen's Cook View owns the Lobby screen while cooking:** the rail, PLAY and Supplies step aside (currencies stay); they used to sit behind the Cook View panels.
+- **`/feed [n]` cheat (Studio only):** lands the Patron's next n chunks (all by default) as Perfect through the same code a delivery uses (`Patron._accept`), so the finale can be checked without cooking three chunks.
+- **Orphan SurfaceSelection adornments** (7, no Adornee, Studio editing leftovers) removed from Workspace.
 - **Player poses come from Blender (batch H) as an overlay** on Roblox's own walk/idle: the R15 thigh is deeper than the LowerTorso is tall, so the deep poses (Crouch, HidePeek, Downed) fold the legs into the hips by 0.16–0.56 studs — unavoidable on block R15 and hidden by clothing on most avatars. HidePeek is a seated tuck (no squat that deep keeps the shins above the floor).
 - **A carried crate shows in the hands:** a local Kitchen_Crate in the type's pile colours, held at the clip's `rightHandToPivot` every frame; the spatula and flashlight cosmetics hide while both hands are on it.
 - **The Downed card shows who caught you:** the catcher's Blender model, red-lit, fills the card's left side (the ViewportFrame was built but never filled).
@@ -99,7 +109,7 @@ Mirror of `ServerStorage.Documentation.BUILD_LOG` in the place. Newest first wit
 - Riddle constraints authored per Secret (Config.Riddles); `toast = nil` accepts any state except Burnt.
 - Order modifications (Night 3+): 35% chance per human order, one "no X"/"extra X" (bible gives no rate).
 - Daily quests drawn deterministically from the UTC day number (same three for everyone).
-- `HttpService.HttpEnabled` set true for development (asset/anim fetches). Runtime game code does not use HTTP; turn it off before launch.
+- `HttpService.HttpEnabled` was on for development (asset, animation and doc fetches) and is **off since the delivery (2026-10-29)**. Runtime game code never uses HTTP. Turn it on only for an asset import or SyncDocs (Game Settings → Security → Allow HTTP Requests), then off again.
 - Studio-only `ServerStorage.DevProbe` BindableFunction (created by Bootstrap only in Studio) lets the build session inspect live service state.
 
 ## Open bugs
@@ -111,10 +121,18 @@ Mirror of `ServerStorage.Documentation.BUILD_LOG` in the place. Newest first wit
 - Fixed: pressing E behind the counter hid you under it instead of serving the customer (prompt priority).
 - Fixed: a Copy of Mina failed to spawn (invalid FontWeight on her name badge).
 - Fixed: the carry pill showed "MEAT CRATE" while carrying nothing.
+- Fixed: after HandSlam the Patron's right hand stayed nailed to the counter for the rest of the night — the receipt copy kept its WeldConstraint to the palm (WeldConstraint is neither a JointInstance nor a Constraint) and, anchored, pinned the whole arm.
+- Fixed: THE BIG ONE never landed on the arrival slam — the Patron is parented already playing HandSlam and EntityVisuals only reacted to OneShot *changes*; a one-shot present when a model is tracked now gets its clip props too.
+- Fixed: the finale's first shot started 1.1 s late and cut after the tower had vanished in mid-air — RunFlow treated `CookStation = 0` (not cooking) as cooking and waited for an ExitCook that never came.
+- Fixed: customers stayed in the finale's shot and could talk over it (they live in Shift.Customers, which the fade skipped; their speech bubbles appeared after the fade).
+- Fixed: the Locker never showed EQUIPPED for cosmetics and offered Default cosmetics as "SHOP" (it read `equipped.Apron` where the profile stores `equipped.apron`, and ignored that Default items are always owned).
+- Fixed: the Test Kitchen's Cook View drew over the Lobby rail, PLAY and Supplies.
 - Not reproduced: once, right after Mr. Usual got up to stalk, his pivot seemed to cover ~12 studs in 0.65 s. A 10 Hz trace of the same sequence shows a smooth 0.5 s slide to the aisle and then 9 studs/s walking; watch for it in the full playtests.
 - Open (minor): on phones the quick-chat wheel's labels range 10–13 px (TextScaled per pill); the longest preset was shortened to "Help at the counter!".
 - Fixed (pipeline): nslib mesh export is now deterministic (canonical vertex/triangle order before hashing, 85f3250).
 - Open (TV): small labels (Secret Book slot names, HUD sublabels) reach ~15 px on a 1080p TV after the 1.2× text boost — readable but small at 10 feet. Review in the console pass.
+- Open (minor): the last "Chunk 3 of 3" toast is still on screen for the first second of the finale (inside the letterboxed picture).
+- Open (minor): the finale's first shot sits on the counter line, so it takes the kitchen's bright look rather than the dining room's neon (Lighting picks the room the camera is in). Readable, but not the mood of the second shot.
 
 ## Asset IDs
 - none yet (see ASSET_MANIFEST after the gate)
@@ -124,3 +142,120 @@ Mirror of `ServerStorage.Documentation.BUILD_LOG` in the place. Newest first wit
 - **Audio with no licensed match:** smoke_alarm and usual_footsteps (Config.Audio) are silent. Pick two Roblox-licensed sounds you like, or tell me to look again with other words.
 - **Results offer:** Bible §11.9 says Starter Pack after the first Night cleared, otherwise Coin Boost; the code offers the Starter Pack on any Results until it's bought (the first-Night rule only blocks offers before a player has ever cleared Night 1). Confirm that reading.
 - Prep → manager's office is ≈ 27 studs walking, not 35 (§4), because the hallway door had to move clear of the bin rails. Tell me if the office should be farther.
+
+## Delivery report (Phase 11) — 2026-10-29
+
+### 1. Overview
+Night Shift at STACKHOUSE plays end to end, solo, in Studio: Lobby (HQ, Test Kitchen, Locker, Shop, Supply Locker, Quests and daily rewards, leaderboards, vans) → a five-night Shift run (cooking, serving, quota, Break Room upgrades, 7 entities plus Regulars and human customers, the Patron finale) → Results → back to HQ. Everything in Bible §18.1 is built, with every pass, product and badge on placeholder IDs (0). A QA bot won a full five-night run through the real prompts and remotes; purchases, gifts, revives, receipts and data safety were checked through the real grant code. All assets and animations are Blender-made in this workspace (no Creator Store models, no AI generation); audio is Roblox-licensed only. Phones (Galaxy A06, the smallest target) and console layout (Xbox in the Device Simulator) were checked; a real controller, two or more players, real Robux and live servers were not.
+
+### 2. Phase results
+| Phase | Result |
+|---|---|
+| 0 Recon & setup | Verified (playtest) |
+| 1 Pipeline gate | Verified (edit-mode harness + playtest) |
+| 2 Architecture & config | Verified (playtest; 54/54 unit tests; ConfigValidator on every boot) |
+| 3 Blender assets | Verified (playtest screenshots + motor checks): batches A–H, G1, G2 and the E2 Patron refit imported |
+| 4 Maps | Verified (playtest) both maps; nav graph reachability Verified (edit-mode harness) |
+| 5 Core systems | Verified (playtest): run loop, cooking, toasting, wrapping, serving and grading, quota, Break Room, firing |
+| 6 Entities / Director | Verified (playtest): all 7 entities incl. the Copy and the Patron finale; Director schedules |
+| 7 UI | Verified (playtest, Device Simulator: Galaxy A06, iPhone 16 Pro, iPad, Xbox 1080p); UIAudit 0 problems (edit-mode harness). Not tested: controller navigation (Controller Emulator) |
+| 8 Progression & monetization | Verified (playtest harness, `/fakebuy` → real grant code) for all 22 non-gift SKUs, gifts, replayed receipts, revives, Manager's Keys refusals. Not tested: real Robux prompts, the cross-server gift nudge, the Manager's Keys panel in a private server |
+| 9 Audio, lighting, VFX | Lighting Verified (playtest). Audio: 42/44 licensed keys load (playtest) — not auditioned. Tension curves tuned against the bot only |
+| 10 QA | Verified (playtest): full solo run won, catches/Downed/Ghost/revive, data and receipts, performance (Night 4: 60 fps client, 16.7 ms server heartbeat), Patron finale timing, Test Kitchen discovery. Not tested: 2-player, controller |
+| 11 Delivery | this report |
+
+### 3. Instance tree (top two levels)
+```
+Workspace              Camera, Terrain (the Lobby or Shop map is generated at start from ServerStorage.Maps by mode)
+ReplicatedFirst        Loader [LocalScript], LoadingScreen
+ReplicatedStorage      AnimData (8 rigs), Assets (Food, Kitchen, Creatures, Shop, Lobby, Characters, Cosmetics),
+                       Client (UIKit, WorldUI, …), Shared (Config, Logic, Util, Net, Types, Generated, …)
+ServerScriptService    Bootstrap [Script], Services (39 services + RemoteGuard + Entities/*), DevTools (Studio only), UnitTestRunner [Script]
+ServerStorage          BuildTools (edit time), Documentation (BUILD_LOG, ARCHITECTURE, ASSET_MANIFEST, CONVERSION_CONSTANTS),
+                       Maps (LobbyMap, ShopMap), NS_Pipeline, UnitTest
+StarterGui             29 ScreenGuis (+ the loading screen = 30 screens, all AutoScale Lite)
+StarterPlayer          StarterPlayerScripts: ClientBootstrap [LocalScript], Controllers (27)
+Lighting / TextChatService   Atmosphere, Bloom, DepthOfField, Sky, SunRays / chat + bubble configuration
+```
+Scripts: **151** — 2 Script, 2 LocalScript, 147 ModuleScript; all compile clean.
+
+### 4. Asset counts (Path A = Blender → repo → importer plugin; Path B = imported by hand)
+| Group | Bible target | Path A | Path B | Shortfall |
+|---|---|---|---|---|
+| Food | 22 + extras | 33 (+ gate tomato) | 0 | — |
+| Kitchen | ~16 | 19 | 0 | — |
+| Shop building | ~24 | 33 | 0 | — |
+| Lobby | ~14 | 20 | 0 | — |
+| Characters | 1 rig + ~20 | 1 rig + 27 parts | 0 | — |
+| Creatures | 6 rigs | 6 | 0 | — |
+| Cosmetics | ~20 | 21 meshes + 4 name tags in UI | 0 | — |
+| Icons | ~80 | 207 | 0 | — |
+| Animations | ~50 clips | 53 clips on 8 rigs | 0 | Nibbler has 2 clips (Idle, Scurry) vs 4–8 per creature; prop motion (doors, toaster) is code, not clips |
+| Audio | Bible §15 list | 42 of 44 licensed | — | smoke_alarm, usual_footsteps (no licensed match yet) |
+
+### 5. Design notes
+**Decisions** — ~95 are logged under Decisions above. This session: the Patron's hands come in through M3/M8 and the finale cuts on `chomp` (the tower can't reach the mouth in this map); name tags drawn in UI with four styles, golden VIP name and `[VIP]` chat tag; chat bubbles hang above tags; the Locker shows what is really equipped and frames the whole outfit; the Test Kitchen's Cook View clears the Lobby HUD; `/feed` cheat; HttpEnabled off.
+
+**Design risks**
+1. Tension is tuned against a bot that never resets the breaker or reads riddles; real players may find Nights 3–4 harsher or calmer than intended.
+2. The Patron needs 3 chunks of 5 items solo at 3 AM while the night keeps going — watch how many solo players reach the finale.
+3. Night 5 Copies show a single tell; on a phone screen that may be too subtle.
+4. Horror intensity for a young audience: the Reduced jumpscare option exists; answer the experience questionnaire honestly.
+5. The finale relies on a cut to hide that the tower never meets the mouth.
+
+**Scope risks**
+1. Multiplayer (parties, shared tickets and stock, teammate revives, ghosts, same-server gifts, other players' name tags) has not run with two clients.
+2. Monetization has not run with real Robux or live product IDs.
+3. Console navigation has not been driven with a controller.
+4. One place for Lobby and Shift: a bad publish breaks both.
+
+**Bible Questions** — 4 open, listed under Bible Questions above (weekly Employee of the Month, two missing sounds, the Results offer rule, office distance). Also confirm: the level title (e.g. GRAVEYARD REGULAR) shows above the name on the overhead tag.
+
+**Recommended improvements**
+1. A Patron "lean-in" clip (or the Plate moved under a centre window) so the tower meets the mouth on screen; shoot the finale's first shot in the dining room's light.
+2. Nibbler clips: squeak, flee, whacked.
+3. Weekly Employee of the Month (per-week counter + weekly OrderedDataStore).
+4. A guided first Night 1, measured with the analytics funnel.
+5. Hide toasts during cinematics.
+
+**Technical risks**
+1. Asset imports depend on the local importer plugin and Studio's CreateAssetAsync beta.
+2. StreamingEnabled is off; memory on low-end phones hasn't been measured in a live server.
+3. The Shiver's look meter trusts the client's camera direction (PvE only).
+4. NameTags owns `TextChatService.OnIncomingMessage` (one callback per client) — any future chat feature must extend it there.
+5. Chat bubbles hang from a client-made `ChatAnchor`; a character without one falls back to Roblox's default placement.
+
+### 6. Known bugs (ranked)
+1. Untested: anything that needs two or more clients (see Scope risks).
+2. Minor: the last "Chunk 3 of 3" toast shows during the finale's first second.
+3. Minor: the finale's first shot takes the kitchen's bright look (camera on the counter line).
+4. Not reproduced: Mr. Usual's pivot once seemed to jump ~12 studs as he got up to stalk.
+5. Phones: quick-chat wheel labels are 10–13 px.
+6. TV: small labels reach ~15 px at 1080p — readable but small at 10 feet.
+7. Content: smoke_alarm and usual_footsteps are silent.
+
+### 7. What Landon needs to do next
+1. **Publish the place** (File → Publish to Roblox): today's work lives in the open Studio session.
+2. **Create the products on the Creator Dashboard** (names are each row's `displayName` in Config.Monetization; prices are `priceRef`):
+   - 9 passes: GP_VIP 499 · GP_2X_COINS 399 · GP_SECOND_SHIFT 599 · GP_POLTERGEIST 199 · GP_FLASHLIGHT_PRO 149 · GP_BIG_POCKETS 149 · GP_MANAGER_KEYS 499 · GP_PACK_NEON 299 · GP_PACK_GRAVEYARD 249.
+   - 17 developer products: DP_COINS_1…6 (49 / 99 / 199 / 399 / 799 / 1799) · DP_TOKENS_1…5 (99 / 249 / 499 / 999 / 1999) · DP_REVIVE 45 · DP_REVIVE_AGAIN 95 · DP_REVIVE_FRIEND 95 · DP_REVIVE_CREW 180 · DP_STARTER 149 · DP_BOOST_3 79.
+   - 21 gift products (same price as the original): DP_GIFT_COINS_1…6, DP_GIFT_TOKENS_1…5, DP_GIFT_STARTER, DP_GIFT_VIP, DP_GIFT_2X_COINS, DP_GIFT_SECOND_SHIFT, DP_GIFT_POLTERGEIST, DP_GIFT_FLASHLIGHT_PRO, DP_GIFT_BIG_POCKETS, DP_GIFT_MANAGER_KEYS, DP_GIFT_PACK_NEON, DP_GIFT_PACK_GRAVEYARD.
+   - 11 badges: clock_in, first_night, made_it_to_dawn, regulars_favorite, good_call, breaker_hero, secret_finder_10/20/30, burnt_offering, perfect_shift.
+   - Private servers on, 99 Robux (`privateServerPriceRef`).
+3. **Where the IDs go:** `ReplicatedStorage.Shared.Config.Monetization` — add `id = <number>` to the options table at the end of that SKU's `P(...)` line (e.g. `P("DP_REVIVE", "Product", "Revive", 45, {…}, { id = 1234567890 })`; add `{ id = … }` if the line has none). Badges: `ReplicatedStorage.Shared.Config.Progression` → `badges`, set `id` on each key. Badges earned before an ID exists are awarded once it does.
+4. **HttpEnabled is off.** Turn it on only to import assets or sync docs, then off.
+5. **Test with me:** a 2-player session (Test → Clients and Servers, 2 players), a Controller Emulator pass, an audio audition (and pick the two missing sounds), and human playtests for tension.
+6. **Answer the Bible Questions** above.
+
+### 8. How to playtest
+- Set the Workspace attribute `ForceMode` to `Shift` (now) or `Lobby`, then Play.
+- Dev commands — type in chat; Studio only, place owner only, refused in Manager's Keys servers:
+  `/night n` · `/time h.mm` (e.g. `/time 2.59`) · `/speed x` · `/ready` · `/god` · `/tips n` · `/coins n` · `/tokens n` · `/level n` · `/spawn <entity> [copy|real]` · `/provoke <entity>` · `/blackout` · `/revive` · `/discover <secretId|all>` · `/fakebuy <sku>` · `/cosmetic <id|all>` · `/feed [n]` · `/tension` · `/resetdata`.
+- Patron finale in a minute: `/god` → `/night 5` → `/ready` → `/time 2.59` → wait for the hand to slam THE BIG ONE → `/feed`.
+- Name tag styles solo: set Workspace attribute `QAShowOwnTag` = true, then `/cosmetic tag_glitch` (or tag_night_shift, tag_rip, tag_employee).
+- Manager's Keys (live private servers, owner with the pass): exactly five commands — night, time, speed, spawn, blackout.
+
+### 9. Suggested next prompt (the three highest-value improvements)
+1. **Multiplayer and live-readiness pass:** 2–4 clients in Studio plus a private live test — van → reserved Shift server, shared tickets and stock, teammate revives and ghosts, same-server gifts, name tags and chat, data across teleports, the Manager's Keys private-server flow — and fix what it finds.
+2. **First-session and tuning pass from real data:** the analytics funnel (Clock In → first serve → Night 1 cleared → run won), a guided first Night 1, tension tuning from human playtests, Results and offer pacing.
+3. **Finale and content polish:** the Patron lean-in so the tower meets the mouth on screen (and the first shot in dining light), Nibbler's missing clips, the two missing sounds, and the weekly Employee of the Month board.
