@@ -20,8 +20,8 @@ Mirror of `ServerStorage.Documentation.BUILD_LOG` in the place. Newest first wit
 
 ## Next step
 1. Import the refitted Patron (hands through the windows to the counter and the tower) and watch the slam and grab in play.
-2. Full solo run N1→N5 at normal speed, including the Patron's hand slam and feeding; tension-curve tuning.
-3. Phase 11 delivery report. Console pass with the Controller Emulator and a 2-player test need Landon.
+2. Phase 11 delivery report.
+3. With Landon: console pass with the Controller Emulator, a 2-player test, audition the licensed audio, and human playtests for tension tuning.
 
 ## Decisions
 - **Lighting uses Roblox's unified lighting**, not `Technology`: the place carries `RBX_LightingTechnologyUnifiedMigration`, so the old "set Technology = Future" step no longer applies. Set `Lighting.LightingStyle = Realistic` and `PrioritizeLightingQuality = true` (scriptable in edit mode). With real assets the first pass was blown out (cream walls + stainless + overlapping lamps + Neon diffusers), so lamp brightness dropped ~40% (kitchen 0.5, counter 0.7, dining pendants 0.5, neon washes 0.9) and the Shift grade moved to exposure −0.25, bloom 0.4 / threshold 2.0. Verified (playtest screenshots): kitchen readable, dining moody with neon spill, office dim (desk lamp).
@@ -106,10 +106,14 @@ Mirror of `ServerStorage.Documentation.BUILD_LOG` in the place. Newest first wit
 - Fixed: Cook View ticket footer ignored recipes whose toast rule is "Toasted" (the HUD tickets already handled it).
 - Fixed: the map read pink/blown-out in play mode (placeholders, then over-bright lamps) — real assets imported and lighting re-tuned.
 - Fixed: shop exterior walls showed the interior-colour back faces — the perimeter runs now apply the walls' `Exterior` back preset (`MapKit.backPreset`, cream / dark base / red band); checked from the parking lot.
-- Open: HUD/rail/currency icons and Regular portraits show initials placeholders until G2 lands.
+- Fixed: HUD/rail/currency icons and Regular portraits showed initials placeholders — G2 imported, screens re-resolve icons at runtime.
+- Fixed: the Patron finale couldn't be won by a real player (nothing on the client sent DeliverChunk) — the Plate prompt and serve picker now do.
+- Fixed: pressing E behind the counter hid you under it instead of serving the customer (prompt priority).
+- Fixed: a Copy of Mina failed to spawn (invalid FontWeight on her name badge).
+- Fixed: the carry pill showed "MEAT CRATE" while carrying nothing.
 - Not reproduced: once, right after Mr. Usual got up to stalk, his pivot seemed to cover ~12 studs in 0.65 s. A 10 Hz trace of the same sequence shows a smooth 0.5 s slide to the aisle and then 9 studs/s walking; watch for it in the full playtests.
 - Open (minor): on phones the quick-chat wheel's labels range 10–13 px (TextScaled per pill); the longest preset was shortened to "Help at the counter!".
-- Open (pipeline): nslib mesh export is not deterministic (same geometry, different vertex/triangle order per process), so a re-export republishes unchanged meshes. Fix: canonical vertex/triangle order before hashing.
+- Fixed (pipeline): nslib mesh export is now deterministic (canonical vertex/triangle order before hashing, 85f3250).
 - Open (TV): small labels (Secret Book slot names, HUD sublabels) reach ~15 px on a 1080p TV after the 1.2× text boost — readable but small at 10 feet. Review in the console pass.
 
 ## Asset IDs
@@ -117,4 +121,6 @@ Mirror of `ServerStorage.Documentation.BUILD_LOG` in the place. Newest first wit
 
 ## Bible Questions
 - **Employee of the Month = "weekly top players"** (§3.2) but the leaderboards are all-time. The wall currently shows the top 3 of Nights Survived (all-time). A weekly board needs a per-week counter in the profile and a weekly OrderedDataStore — confirm you want that.
+- **Audio with no licensed match:** smoke_alarm and usual_footsteps (Config.Audio) are silent. Pick two Roblox-licensed sounds you like, or tell me to look again with other words.
+- **Results offer:** Bible §11.9 says Starter Pack after the first Night cleared, otherwise Coin Boost; the code offers the Starter Pack on any Results until it's bought (the first-Night rule only blocks offers before a player has ever cleared Night 1). Confirm that reading.
 - Prep → manager's office is ≈ 27 studs walking, not 35 (§4), because the hallway door had to move clear of the bin rails. Tell me if the office should be farther.
