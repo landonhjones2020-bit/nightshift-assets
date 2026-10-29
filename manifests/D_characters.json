@@ -1355,7 +1355,12 @@
     ],
     "note": "Sit/Eat: put the model pivot on the floor right under the seat socket, facing the socket yaw"
    },
-   "eyelids": "role eyelid parts export Transparency 1 (eyes open); set 0 for ~0.12 s to blink"
+   "eyelids": "role eyelid parts export Transparency 1 (eyes open); set 0 for ~0.12 s to blink",
+   "events": {
+    "EatStand": {
+     "bite": 1.0
+    }
+   }
   },
   "url": "https://raw.githubusercontent.com/landonhjones2020-bit/nightshift-assets/main/meshes/D_characters/Character_Human.json",
   "parts": [
@@ -1422,7 +1427,7 @@
      1.64,
      1.28
     ],
-    "hash": "7f99cb3cd6c8d347",
+    "hash": "d3ee358f46c5a047",
     "tris": 916
    },
    {
@@ -1444,7 +1449,7 @@
      0.27,
      0.124
     ],
-    "hash": "5795b94dc154ceb6",
+    "hash": "5cb3e1a8d35bec5b",
     "tris": 144
    },
    {
@@ -1466,7 +1471,7 @@
      0.486,
      0.142
     ],
-    "hash": "7cdc7f7980d1831d",
+    "hash": "fc52b3618dd0c833",
     "tris": 384
    },
    {
@@ -1488,7 +1493,7 @@
      0.302,
      0.111
     ],
-    "hash": "c19fa27b5e582107",
+    "hash": "610e791deca76887",
     "tris": 112
    },
    {
@@ -1532,7 +1537,7 @@
      0.27,
      0.124
     ],
-    "hash": "44e9c779a9b24c0d",
+    "hash": "f988d8cd46347415",
     "tris": 144
    },
    {
@@ -1554,7 +1559,7 @@
      0.302,
      0.111
     ],
-    "hash": "cd3e5f0f40c18c2d",
+    "hash": "9fb10624f3d54b7a",
     "tris": 112
    },
    {
@@ -1598,7 +1603,7 @@
      0.566,
      0.437
     ],
-    "hash": "07217b5330803186",
+    "hash": "aaa3a10c48853335",
     "tris": 240
    },
    {
@@ -1642,7 +1647,7 @@
      0.566,
      0.437
     ],
-    "hash": "c1f3147bae3867fd",
+    "hash": "3f90328c11a10876",
     "tris": 240
    },
    {
@@ -1941,6 +1946,11 @@
     "note": "Sit/Eat: put the model pivot on the floor right under the seat socket, facing the socket yaw"
    },
    "eyelids": "role eyelid parts export Transparency 1 (eyes open); set 0 for ~0.12 s to blink",
+   "events": {
+    "EatStand": {
+     "bite": 1.0
+    }
+   },
    "regular": "gus",
    "tells": {
     "tell_cap": "rotate 180 deg about HatSocket's vertical axis = forward cap",
@@ -2014,7 +2024,7 @@
      1.697,
      1.33
     ],
-    "hash": "85502860f2970e39",
+    "hash": "ef0465845b752550",
     "tris": 1752
    },
    {
@@ -2036,7 +2046,7 @@
      0.27,
      0.124
     ],
-    "hash": "5cb3e1a8d35bec5b",
+    "hash": "4bfbc3f54a726650",
     "tris": 144
    },
    {
@@ -2058,7 +2068,7 @@
      0.302,
      0.111
     ],
-    "hash": "1e3460f1b59bc4c0",
+    "hash": "bf70006d5666edc7",
     "tris": 112
    },
    {
@@ -2080,7 +2090,7 @@
      0.27,
      0.124
     ],
-    "hash": "44e9c779a9b24c0d",
+    "hash": "c4c2843d35f15f18",
     "tris": 144
    },
    {
@@ -2102,7 +2112,7 @@
      0.302,
      0.111
     ],
-    "hash": "524454773238c876",
+    "hash": "c520e6f1995fae0c",
     "tris": 112
    },
    {
@@ -2146,7 +2156,7 @@
      0.566,
      0.437
     ],
-    "hash": "086765f7b98c314b",
+    "hash": "9cb4960041ef2e3a",
     "tris": 240
    },
    {
@@ -2190,7 +2200,7 @@
      0.566,
      0.437
     ],
-    "hash": "46953ed3ed909e45",
+    "hash": "a46307a5f81cf3a8",
     "tris": 240
    },
    {
@@ -2278,7 +2288,7 @@
      0.764,
      0.189
     ],
-    "hash": "623da034780a4245",
+    "hash": "6d4577551c0bbf71",
     "tris": 144
    },
    {
@@ -2366,7 +2376,7 @@
      0.911,
      1.969
     ],
-    "hash": "4c9872f66c3bcdd1",
+    "hash": "ad7809319e5e86ea",
     "tris": 1126
    }
   ],
@@ -2533,6 +2543,11 @@
     "note": "Sit/Eat: put the model pivot on the floor right under the seat socket, facing the socket yaw"
    },
    "eyelids": "role eyelid parts export Transparency 1 (eyes open); set 0 for ~0.12 s to blink",
+   "events": {
+    "EatStand": {
+     "bite": 1.0
+    }
+   },
    "regular": "jo",
    "tells": {
     "tell_sticker": "hide = sticker missing"
@@ -2604,7 +2619,7 @@
      1.83,
      1.482
     ],
-    "hash": "98535f6ec2bb8fc7",
+    "hash": "12b910cadec1bf79",
     "tris": 2864
    },
    {
@@ -2626,7 +2641,7 @@
      0.27,
      0.124
     ],
-    "hash": "e257777b401ce17a",
+    "hash": "91926adde4e7b76a",
     "tris": 144
    },
    {
@@ -2648,7 +2663,7 @@
      0.302,
      0.111
     ],
-    "hash": "b001de87ef4a4137",
+    "hash": "b72f3fc5b41fae90",
     "tris": 112
    },
    {
@@ -2670,7 +2685,7 @@
      0.27,
      0.124
     ],
-    "hash": "44e9c779a9b24c0d",
+    "hash": "80a0d076fb3154fa",
     "tris": 144
    },
    {
@@ -2692,7 +2707,7 @@
      0.302,
      0.111
     ],
-    "hash": "7d4d14fc47685187",
+    "hash": "81b6dec778c89546",
     "tris": 112
    },
    {
@@ -2736,7 +2751,7 @@
      0.566,
      0.437
     ],
-    "hash": "5cbbe5f7995c24df",
+    "hash": "7df7d537ef9b71d4",
     "tris": 240
    },
    {
@@ -2780,7 +2795,7 @@
      0.566,
      0.437
     ],
-    "hash": "a9d1f5a75fbd842d",
+    "hash": "4a237537acc8bb01",
     "tris": 240
    },
    {
@@ -3035,6 +3050,11 @@
     "note": "Sit/Eat: put the model pivot on the floor right under the seat socket, facing the socket yaw"
    },
    "eyelids": "role eyelid parts export Transparency 1 (eyes open); set 0 for ~0.12 s to blink",
+   "events": {
+    "EatStand": {
+     "bite": 1.0
+    }
+   },
    "regular": "mina",
    "tells": {
     "badge": "Studio adds the text MINA on the Front face; the Copy shows MNIA"
@@ -3114,7 +3134,7 @@
      1.702,
      1.852
     ],
-    "hash": "33350a608c1ce7c5",
+    "hash": "3c62d261c0978f0f",
     "tris": 2246
    },
    {
@@ -3136,7 +3156,7 @@
      0.27,
      0.124
     ],
-    "hash": "5c5a9c388ae56549",
+    "hash": "5d02f5fd8b87d22f",
     "tris": 144
    },
    {
@@ -3158,7 +3178,7 @@
      0.302,
      0.111
     ],
-    "hash": "6e972806bd625536",
+    "hash": "87b4ed261245862a",
     "tris": 112
    },
    {
@@ -3180,7 +3200,7 @@
      0.27,
      0.124
     ],
-    "hash": "8a1ca2b7ce88ce84",
+    "hash": "c4c2843d35f15f18",
     "tris": 144
    },
    {
@@ -3202,7 +3222,7 @@
      0.302,
      0.111
     ],
-    "hash": "a2fbb05a977513b1",
+    "hash": "9fb10624f3d54b7a",
     "tris": 112
    },
    {
@@ -3246,7 +3266,7 @@
      0.566,
      0.437
     ],
-    "hash": "d081abac3f603560",
+    "hash": "41ee846de93f57e9",
     "tris": 240
    },
    {
@@ -3290,7 +3310,7 @@
      0.566,
      0.437
     ],
-    "hash": "7f39fdc52952c79d",
+    "hash": "ebee6571e5d9ee26",
     "tris": 240
    },
    {
@@ -3422,7 +3442,7 @@
      0.642,
      0.222
     ],
-    "hash": "2b5bea45438bf545",
+    "hash": "6cf7c4ce8bfac821",
     "tris": 324
    }
   ],
@@ -3589,6 +3609,11 @@
     "note": "Sit/Eat: put the model pivot on the floor right under the seat socket, facing the socket yaw"
    },
    "eyelids": "role eyelid parts export Transparency 1 (eyes open); set 0 for ~0.12 s to blink",
+   "events": {
+    "EatStand": {
+     "bite": 1.0
+    }
+   },
    "regular": "walt",
    "tells": {
     "tell_glasses": "hide frame + lenses = glasses missing"
@@ -3644,7 +3669,7 @@
      1.486,
      1.072
     ],
-    "hash": "44bd27f7b2d8f0bf",
+    "hash": "5128dbe7540eff04",
     "tris": 768
    },
    {
@@ -3666,7 +3691,7 @@
      1.64,
      1.376
     ],
-    "hash": "17afd6029d3a00dd",
+    "hash": "975374306852b5bc",
     "tris": 2000
    },
    {
@@ -3688,7 +3713,7 @@
      0.27,
      0.124
     ],
-    "hash": "f468ef2b9e9bf0c8",
+    "hash": "4bfbc3f54a726650",
     "tris": 144
    },
    {
@@ -3710,7 +3735,7 @@
      0.302,
      0.111
     ],
-    "hash": "2544ded4ba2a4b6d",
+    "hash": "bf70006d5666edc7",
     "tris": 112
    },
    {
@@ -3732,7 +3757,7 @@
      0.27,
      0.124
     ],
-    "hash": "581a910c4ea48acf",
+    "hash": "6f33cd2104f0b622",
     "tris": 144
    },
    {
@@ -3754,7 +3779,7 @@
      0.302,
      0.111
     ],
-    "hash": "cd3e5f0f40c18c2d",
+    "hash": "9fb10624f3d54b7a",
     "tris": 112
    },
    {
@@ -3798,7 +3823,7 @@
      2.1,
      0.437
     ],
-    "hash": "fdd6088872152231",
+    "hash": "ba0f455efb52f29e",
     "tris": 356
    },
    {
@@ -3842,7 +3867,7 @@
      0.566,
      0.437
     ],
-    "hash": "3f90328c11a10876",
+    "hash": "f70302f999554b3f",
     "tris": 240
    },
    {
@@ -3952,7 +3977,7 @@
      0.301,
      0.068
     ],
-    "hash": "f52869d1e229d7ec",
+    "hash": "0718aa60bedfb32d",
     "tris": 120
    },
    {

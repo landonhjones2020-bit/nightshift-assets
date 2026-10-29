@@ -137,7 +137,8 @@ def base_meta(extra: dict | None = None) -> dict:
          "socketBones": dict(SOCKET_BONE),
          "sit": {"seatHeight": SEAT_H, "pivotFromSeatSocket": [0, -SEAT_H, 0],
                  "note": "Sit/Eat: put the model pivot on the floor right under the seat socket, facing the socket yaw"},
-         "eyelids": "role eyelid parts export Transparency 1 (eyes open); set 0 for ~0.12 s to blink"}
+         "eyelids": "role eyelid parts export Transparency 1 (eyes open); set 0 for ~0.12 s to blink",
+         "events": {"EatStand": {"bite": EATSTAND_BITE / 30.0}}}
     if extra:
         m.update(extra)
     return m
@@ -1447,11 +1448,46 @@ def clip_eat(arm):
     return c.finish()
 
 
+EATSTAND_BITE = 30          # frame of the big bite (30 fps -> 1.0 s); exported as meta.events.EatStand.bite
+
+
+def clip_eat_stand(arm):
+    """The Copy eats its sandwich standing at the counter: both hands bring it up, one big
+    bite at 1.0 s, chew with small head bobs, then settle back to Idle's first pose so it
+    crossfades cleanly. Feet stay planted (Hips/legs at rest)."""
+    c = Clip(arm, "EatStand", 66, loop=False, fps=30)
+    _static(c, ["Hips", "LegL", "LegR"])
+    B = EATSTAND_BITE
+    torso = {0: (0, 0, 0), 12: (3, 0, 0), 24: (5, 0, 0), B: (9, 0, 0), B + 6: (5, 0, 0), 52: (3, 0, 0),
+             58: (1, 0, 0), 66: (0, 0, 0)}
+    head = {0: (0, 0, 0), 12: (9, 0, 0), 24: (7, 0, 0), B: (17, 0, 0), B + 6: (4, 0, 0), 40: (7, 1.5, 0),
+            44: (2, 1.5, 0), 48: (7, -1, 0), 52: (2, -1, 0), 58: (2, 0, 0), 66: (0, 0, 0)}
+    for f, r in torso.items():
+        c.k("Torso", f, r, None, "QUAD" if f == B else "SINE", "EASE_IN" if f == B else "EASE_IN_OUT")
+    for f, r in head.items():
+        c.k("Head", f, r, None, "QUAD" if f == B else "SINE", "EASE_IN" if f == B else "EASE_IN_OUT")
+    c.commit(["Hips", "LegL", "LegR", "Torso", "Head"])
+    hands = {12: (0.37, -1.0, 3.12), 24: (0.31, -1.3, 3.66), B: (0.31, -1.27, 3.6), B + 6: (0.33, -1.22, 3.5),
+             44: (0.36, -1.05, 3.2), 52: (0.37, -1.02, 3.16)}
+    for side, s in SIDES:
+        c.k("Arm" + side, 0)
+        for f, (x, y, z) in hands.items():
+            c.k("Arm" + side, f, c.aim_arm(side, f, point=Vector((s * x, y, z))))
+        c.k("Arm" + side, 66)
+    c.commit(["ArmL", "ArmR"])
+    for side, s in SIDES:
+        c.k("Hand" + side, 0, (-4, 0, 0))                      # = Idle frame 0
+        for f in hands:
+            c.k("Hand" + side, f, c.orient_hand(side, f, Vector((-s * 0.3, -0.9, 0.3)), Vector((-s, 0.1, 0))))
+        c.k("Hand" + side, 66, (-4, 0, 0))
+    return c.finish()
+
+
 def build_actions(arm):
     """Author all nine clips on `arm` (parts must already be bound). Returns [actions]."""
     feet = rest_points(arm, ("LegL", "LegR"), ("Shoe", "Sole"))
     acts = [clip_idle(arm), clip_walk(arm, feet), clip_wave(arm), clip_happy(arm), clip_upset(arm),
-            clip_sit(arm), clip_eat(arm), clip_shriek(arm), clip_chase(arm, feet)]
+            clip_sit(arm), clip_eat(arm), clip_eat_stand(arm), clip_shriek(arm), clip_chase(arm, feet)]
     arm.animation_data.action = None          # leave the rig in its true rest pose (preview/FBX)
     for pb in arm.pose.bones:
         pb.rotation_quaternion = (1, 0, 0, 0)

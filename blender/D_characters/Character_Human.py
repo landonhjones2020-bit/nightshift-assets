@@ -8,7 +8,8 @@ eye (eye whites, scale them for the Copy's "too wide" tell), eyelid (closed-lid 
 export Transparency 1; show them to blink), brow (may be tinted to the hair colour).
 Sockets (rest pose, CFrame attributes on the Model): HatSocket, HairSocket, FaceSocket
 (-> weld to Head) and TorsoSocket (-> weld to Torso); see meta.socketBones.
-Clips (anim/Human.lua): Idle, Walk, Wave, Happy, Upset, Sit, Eat, Shriek, ChaseRun.
+Clips (anim/Human.lua): Idle, Walk, Wave, Happy, Upset, Sit, Eat, EatStand, Shriek, ChaseRun.
+EatStand (the Copy eating at the counter) fires meta.events.EatStand.bite at 1.0 s.
 
 NS_STRIPS=all|none|Walk,Sit,...  selects which pose strips to render (default all).
 """
@@ -20,7 +21,7 @@ import _common as C  # noqa: E402
 
 ns = C.ns
 
-VIEWS = {"Wave": (-20, -95), "Shriek": (-25, 90)}     # default (-60, 90): 3/4 front + left side
+VIEWS = {"Wave": (-20, -95), "Shriek": (-25, 90), "EatStand": (-35, 90)}     # default (-60, 90): 3/4 front + left side
 STRIPS = {
     "Idle": ([0, 18, 40, 64, 90, 108], 0.0, False),
     "Walk": ([0, 4, 7, 10, 14, 18, 21, 24], C.WALK_SPEED, False),
@@ -29,6 +30,7 @@ STRIPS = {
     "Upset": ([0, 7, 12, 18, 24, 30, 42, 54], 0.0, False),
     "Sit": ([0, 24, 62, 84], 0.0, True),
     "Eat": ([0, 10, 16, 22, 28, 40, 60], 0.0, True),
+    "EatStand": ([0, 12, 24, 30, 36, 44, 52, 66], 0.0, False),
     "Shriek": ([0, 4, 6, 12, 20, 30, 32, 40, 50], 0.0, False),
     "ChaseRun": ([0, 3, 5, 7, 9, 10, 13, 15, 17], C.CHASE_SPEED, False),
 }
