@@ -331,7 +331,8 @@ def bbox_world(objs) -> tuple[Vector, Vector]:
 def export_asset(asset: str, batch: str, *, group: str, pivot: tuple | None = None,
                  objects=None, fbx: bool = True, meta: dict | None = None,
                  rig: "bpy.types.Object | None" = None, vertex_colors: bool = False,
-                 merge_parts: str | None = None, sockets: dict | None = None) -> dict:
+                 merge_parts: str | None = None, sockets: dict | None = None,
+                 merge: str | None = "material") -> dict:
     """Export every tagged object in the scene as one Roblox asset.
 
     asset   e.g. "Food_Tomato" (Category_Name). Used for file names and the Studio Model name.
@@ -343,6 +344,11 @@ def export_asset(asset: str, batch: str, *, group: str, pivot: tuple | None = No
     vertex_colors  Also write per-vertex colours ("c") — used by the pipeline-gate test.
     merge_parts    If set, merge every tagged object into ONE part with this name
                    (only meaningful with vertex_colors=True).
+    merge          "material" (default): parts that share material, transparency, shadow,
+                   collision and bone, and have no runtime role, are merged into ONE
+                   vertex-coloured mesh per group (fewer MeshParts; colours survive publishing
+                   and the MeshPart colour is white). Parts with a `recolor` role always stay
+                   separate so code can find them. None = one MeshPart per tagged object.
     sockets        Named gameplay points, {name: (x, y, z)} or {name: ((x, y, z), yaw_deg)} in
                    Blender world space (yaw about Blender Z, which equals Roblox yaw about Y).
                    Exported relative to the pivot; Studio stores each as a CFrame attribute
@@ -364,12 +370,31 @@ def export_asset(asset: str, batch: str, *, group: str, pivot: tuple | None = No
 
     parts = []
     total_tris = 0
-    groups = [[o] for o in objs] if not merge_parts else [objs]
+    if merge_parts:
+        groups = [objs]
+    elif merge == "material":
+        keyed: dict[tuple, list] = {}
+        order: list[tuple] = []
+        for o in objs:
+            if o.get("ns_role"):
+                k = ("__solo__", o["ns_part"])
+            else:
+                k = (o["ns_material"], round(o["ns_transparency"], 3), o["ns_cast_shadow"],
+                     o["ns_can_collide"], o.get("ns_bone"))
+            if k not in keyed:
+                keyed[k] = []
+                order.append(k)
+            keyed[k].append(o)
+        groups = [keyed[k] for k in order]
+    else:
+        groups = [[o] for o in objs]
     for grp in groups:
         o = grp[0]
-        me = _merged_evaluated(grp) if merge_parts else _evaluated_mesh(o)
+        merged = bool(merge_parts) or len(grp) > 1
+        me = _merged_evaluated(grp) if merged else _evaluated_mesh(o)
+        use_vc = vertex_colors or merged
         colmap = None
-        if vertex_colors:
+        if use_vc:
             colmap = me.attributes.get("ns_col")
         me.calc_loop_triangles()
         cn = me.corner_normals  # per-corner normals honouring sharp edges / flat faces
@@ -415,14 +440,27 @@ def export_asset(asset: str, batch: str, *, group: str, pivot: tuple | None = No
             a, b = {0: (2, 1), 1: (0, 2), 2: (0, 1)}[ax]
             uv_flat.extend((_r3(p[a] / UV_STUDS_PER_TILE), _r3(-p[b] / UV_STUDS_PER_TILE)))
         c_flat = None
-        if vertex_colors:
+        if use_vc and colmap is not None:
             c_flat = []
             for c in cols:
                 c_flat.extend((_r3(c[0]), _r3(c[1]), _r3(c[2])))
         geo_hash = hashlib.sha1(json.dumps([v_flat, n_flat, tris, uv_flat, c_flat]).encode()).hexdigest()[:16]
+        if merge_parts:
+            pname = merge_parts
+        elif merged:
+            bone = o.get("ns_bone")
+            taken = {p["name"] for p in parts} | {x["ns_part"] for x in objs if x not in grp}
+            if bone and bone not in taken:
+                pname = bone  # rigs: the bone's main part must carry the bone's name
+            else:
+                pname = (bone + "_" if bone else "") + o["ns_material"]
+            while pname in taken:
+                pname += "_"
+        else:
+            pname = o["ns_part"]
         part = {
-            "name": merge_parts or o["ns_part"],
-            "color": o["ns_color"],
+            "name": pname,
+            "color": "#FFFFFF" if c_flat is not None else o["ns_color"],
             "material": o["ns_material"],
             "transparency": o["ns_transparency"],
             "castShadow": o["ns_cast_shadow"],
@@ -735,13 +773,17 @@ def _merged_evaluated(objs) -> bpy.types.Mesh:
                 nf.smooth = f.smooth
             except ValueError:
                 pass
+        # keep each part's own hard edges (its smooth_angle), not one global angle
+        for e in tmp.edges:
+            if not e.smooth:
+                ne = bm.edges.get([vmap[e.verts[0].index], vmap[e.verts[1].index]])
+                if ne is not None:
+                    ne.smooth = False
         tmp.free()
         bpy.data.meshes.remove(me)
     out = bpy.data.meshes.new("Merged")
     bm.to_mesh(out)
     bm.free()
-    # Sharp edges: keep faceted look per original parts (flat where angle > 35°)
-    _set_sharp_by_angle(out, 35.0)
     return out
 
 

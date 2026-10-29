@@ -29,7 +29,7 @@
   "parts": [
    {
     "name": "Body",
-    "color": "#6E6673",
+    "color": "#FFFFFF",
     "material": "SmoothPlastic",
     "transparency": 0.0,
     "castShadow": true,
@@ -39,41 +39,19 @@
     "offset": [
      0.0,
      0.36,
-     0.0
+     -0.015
     ],
     "size": [
      0.58,
      0.52,
-     0.84
+     0.87
     ],
-    "hash": "368915c4059f6cbd",
-    "tris": 324
-   },
-   {
-    "name": "Body_Belly",
-    "color": "#A99DAB",
-    "material": "SmoothPlastic",
-    "transparency": 0.0,
-    "castShadow": true,
-    "canCollide": false,
-    "role": null,
-    "bone": "Body",
-    "offset": [
-     0.0,
-     0.31,
-     -0.25
-    ],
-    "size": [
-     0.37,
-     0.34,
-     0.4
-    ],
-    "hash": "1313e06aa4ef6d0e",
-    "tris": 196
+    "hash": "ebda1e3776c69a36",
+    "tris": 520
    },
    {
     "name": "Head",
-    "color": "#6E6673",
+    "color": "#FFFFFF",
     "material": "SmoothPlastic",
     "transparency": 0.0,
     "castShadow": true,
@@ -83,37 +61,15 @@
     "offset": [
      0.0,
      0.477,
-     -0.502
+     -0.529
     ],
     "size": [
      0.525,
      0.474,
-     0.536
+     0.591
     ],
-    "hash": "6af10e9aeac0fc47",
-    "tris": 628
-   },
-   {
-    "name": "Head_Pink",
-    "color": "#E890A6",
-    "material": "SmoothPlastic",
-    "transparency": 0.0,
-    "castShadow": true,
-    "canCollide": false,
-    "role": null,
-    "bone": "Head",
-    "offset": [
-     0.0,
-     0.51,
-     -0.612
-    ],
-    "size": [
-     0.446,
-     0.32,
-     0.426
-    ],
-    "hash": "b9a4e0de93cc44bf",
-    "tris": 188
+    "hash": "11a35007f5523ae6",
+    "tris": 904
    },
    {
     "name": "Head_Eyes",
@@ -136,28 +92,6 @@
     ],
     "hash": "b7ebc8fcc2dc5bb9",
     "tris": 200
-   },
-   {
-    "name": "Head_Teeth",
-    "color": "#F4F1EA",
-    "material": "SmoothPlastic",
-    "transparency": 0.0,
-    "castShadow": true,
-    "canCollide": false,
-    "role": null,
-    "bone": "Head",
-    "offset": [
-     0.0,
-     0.325,
-     -0.71
-    ],
-    "size": [
-     0.072,
-     0.06,
-     0.02
-    ],
-    "hash": "62aa586dd1d29cc7",
-    "tris": 88
    },
    {
     "name": "Tail",
@@ -183,7 +117,7 @@
    },
    {
     "name": "LegFL",
-    "color": "#6E6673",
+    "color": "#FFFFFF",
     "material": "SmoothPlastic",
     "transparency": 0.0,
     "castShadow": true,
@@ -192,42 +126,20 @@
     "bone": "LegFL",
     "offset": [
      -0.17,
-     0.11,
-     -0.29
+     0.109,
+     -0.308
     ],
     "size": [
      0.133,
-     0.22,
-     0.16
+     0.222,
+     0.196
     ],
-    "hash": "76c24277557a48b8",
-    "tris": 100
-   },
-   {
-    "name": "LegFL_Paw",
-    "color": "#E890A6",
-    "material": "SmoothPlastic",
-    "transparency": 0.0,
-    "castShadow": true,
-    "canCollide": false,
-    "role": null,
-    "bone": "LegFL",
-    "offset": [
-     -0.17,
-     0.026,
-     -0.325
-    ],
-    "size": [
-     0.127,
-     0.056,
-     0.162
-    ],
-    "hash": "d75b3ecb2e9f0598",
-    "tris": 80
+    "hash": "15c2fe6dbc84cc13",
+    "tris": 180
    },
    {
     "name": "LegFR",
-    "color": "#6E6673",
+    "color": "#FFFFFF",
     "material": "SmoothPlastic",
     "transparency": 0.0,
     "castShadow": true,
@@ -236,42 +148,20 @@
     "bone": "LegFR",
     "offset": [
      0.17,
-     0.11,
-     -0.29
+     0.109,
+     -0.308
     ],
     "size": [
      0.133,
-     0.22,
-     0.16
+     0.222,
+     0.196
     ],
-    "hash": "4b193943460d5d0f",
-    "tris": 100
-   },
-   {
-    "name": "LegFR_Paw",
-    "color": "#E890A6",
-    "material": "SmoothPlastic",
-    "transparency": 0.0,
-    "castShadow": true,
-    "canCollide": false,
-    "role": null,
-    "bone": "LegFR",
-    "offset": [
-     0.17,
-     0.026,
-     -0.325
-    ],
-    "size": [
-     0.127,
-     0.056,
-     0.162
-    ],
-    "hash": "55d29b975c1c9f56",
-    "tris": 80
+    "hash": "220d04b4a3980bb5",
+    "tris": 180
    },
    {
     "name": "LegBL",
-    "color": "#6E6673",
+    "color": "#FFFFFF",
     "material": "SmoothPlastic",
     "transparency": 0.0,
     "castShadow": true,
@@ -280,42 +170,20 @@
     "bone": "LegBL",
     "offset": [
      -0.19,
-     0.15,
+     0.139,
      0.2
     ],
     "size": [
      0.195,
-     0.26,
+     0.282,
      0.292
     ],
-    "hash": "18ac652a5f9fb1f0",
-    "tris": 144
-   },
-   {
-    "name": "LegBL_Paw",
-    "color": "#E890A6",
-    "material": "SmoothPlastic",
-    "transparency": 0.0,
-    "castShadow": true,
-    "canCollide": false,
-    "role": null,
-    "bone": "LegBL",
-    "offset": [
-     -0.19,
-     0.028,
-     0.17
-    ],
-    "size": [
-     0.136,
-     0.06,
-     0.228
-    ],
-    "hash": "b7cdcae46dddca7d",
-    "tris": 80
+    "hash": "b16bf75454e7a842",
+    "tris": 224
    },
    {
     "name": "LegBR",
-    "color": "#6E6673",
+    "color": "#FFFFFF",
     "material": "SmoothPlastic",
     "transparency": 0.0,
     "castShadow": true,
@@ -324,38 +192,16 @@
     "bone": "LegBR",
     "offset": [
      0.19,
-     0.15,
+     0.139,
      0.2
     ],
     "size": [
      0.195,
-     0.26,
+     0.282,
      0.292
     ],
-    "hash": "4634f4b5a622192f",
-    "tris": 144
-   },
-   {
-    "name": "LegBR_Paw",
-    "color": "#E890A6",
-    "material": "SmoothPlastic",
-    "transparency": 0.0,
-    "castShadow": true,
-    "canCollide": false,
-    "role": null,
-    "bone": "LegBR",
-    "offset": [
-     0.19,
-     0.028,
-     0.17
-    ],
-    "size": [
-     0.136,
-     0.06,
-     0.228
-    ],
-    "hash": "c2dc265dae88a521",
-    "tris": 80
+    "hash": "971a0361cddb74cc",
+    "tris": 224
    }
   ],
   "rig": {
