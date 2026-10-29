@@ -328,6 +328,43 @@ def bbox_world(objs) -> tuple[Vector, Vector]:
     return lo, hi
 
 
+def _canonical_order(pos: list, nor: list, cols: list, tris: list) -> tuple:
+    """Puts a part's triangles and vertices in a canonical order.
+
+    Some Blender primitives (the UV sphere in bpy 5.2) list their faces in a different
+    order on each run, which changed the exported geometry hash although nothing moved —
+    and the Studio importer re-published every such mesh. Triangles are sorted (each one
+    rotated to its smallest rotation, so winding is kept) and vertices are numbered
+    by first use, so identical geometry always exports identically.
+    """
+    def vkey(i: int) -> tuple:
+        p, n, c = pos[i], nor[i], cols[i]
+        k = (round(p[0], 4), round(p[1], 4), round(p[2], 4), round(n[0], 3), round(n[1], 3), round(n[2], 3))
+        return k + (tuple(round(x, 3) for x in c) if c else ())
+
+    keys = [vkey(i) for i in range(len(pos))]
+    first: dict = {}
+    for i, k in enumerate(keys):
+        first.setdefault(k, i)
+    tri_keys = []
+    for t in range(0, len(tris), 3):
+        ks = [keys[tris[t]], keys[tris[t + 1]], keys[tris[t + 2]]]
+        tri_keys.append(min(tuple(ks[r:] + ks[:r]) for r in range(3)))
+    tri_keys.sort()
+    index: dict = {}
+    npos, nnor, ncol, ntris = [], [], [], []
+    for tk in tri_keys:
+        for k in tk:
+            if k not in index:
+                index[k] = len(npos)
+                src = first[k]
+                npos.append(pos[src])
+                nnor.append(nor[src])
+                ncol.append(cols[src])
+            ntris.append(index[k])
+    return npos, nnor, ncol, ntris
+
+
 def export_asset(asset: str, batch: str, *, group: str, pivot: tuple | None = None,
                  objects=None, fbx: bool = True, meta: dict | None = None,
                  rig: "bpy.types.Object | None" = None, vertex_colors: bool = False,
@@ -422,6 +459,7 @@ def export_asset(asset: str, batch: str, *, group: str, pivot: tuple | None = No
         bpy.data.meshes.remove(me)
         if not tris:
             continue
+        pos, nor, cols, tris = _canonical_order(pos, nor, cols, tris)
         # Part-local coordinates: centred on the part's own bounding box (MeshParts are
         # always centred on their bounds in Roblox), with `offset` placing it in the asset.
         mn = [min(p[i] for p in pos) for i in range(3)]
