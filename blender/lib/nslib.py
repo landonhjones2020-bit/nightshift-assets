@@ -776,6 +776,7 @@ def make_armature(name: str, bones: list[tuple]) -> bpy.types.Object:
 def bind(obj: bpy.types.Object, arm: bpy.types.Object, bone: str) -> bpy.types.Object:
     """Rigidly attach a tagged part to a bone (no skinning), keeping its world transform."""
     obj["ns_bone"] = bone
+    bpy.context.view_layer.update()  # matrix_world is stale right after creation/transform
     mw = obj.matrix_world.copy()
     obj.parent = arm
     obj.parent_type = "BONE"
