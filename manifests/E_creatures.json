@@ -2520,11 +2520,11 @@
  "Creature_Patron": {
   "group": "Creatures",
   "size": [
-   38.2,
+   51.137,
    26.15,
-   25.874
+   33.671
   ],
-  "tris": 8932,
+  "tris": 9044,
   "meta": {
    "root": {
     "center": [
@@ -2542,18 +2542,18 @@
    "placement": {
     "floor": 0.0,
     "eyeLine": 6.25,
-    "windowWallZ": -10.6,
-    "note": "pivot on the ground outside, 10.6 studs behind the dining-room window wall (Roblox +Z); eyes at the window centre, hands on the sills (3.5)"
+    "windowWallZ": -14.1,
+    "note": "pivot on the ground outside, 14.1 studs behind the dining-room window wall's centre plane (Roblox +Z; 3.5 farther out than first authored); eyes at the window centre, hands on the wall between the windows"
    },
    "slamPoint": [
-    6.0,
-    3.0,
-    -22.0
+    3.952,
+    3.151,
+    -30.19
    ],
    "grabPoint": [
-    -6.0,
-    2.8,
-    -20.0
+    -14.0,
+    6.5,
+    -24.1
    ],
    "props": {
     "receipt": "HandR_Receipt (THE BIG ONE): show during HandSlam until events.HandSlam.slam, then hide and spawn the real receipt at slamPoint"
@@ -2563,11 +2563,11 @@
      "closed": 0.13
     },
     "HandSlam": {
-     "slam": 0.9
+     "slam": 0.933
     },
     "HandGrabLift": {
-     "grab": 1.07,
-     "chomp": 1.93
+     "grab": 1.067,
+     "chomp": 2.0
     },
     "Burp": {
      "burp": 0.73
@@ -2595,7 +2595,7 @@
      26.15,
      22.535
     ],
-    "hash": "4d65035753039486",
+    "hash": "813598b8bdd54378",
     "tris": 3020
    },
    {
@@ -2617,7 +2617,7 @@
      6.497,
      6.6
     ],
-    "hash": "629cef6c7f14c365",
+    "hash": "28661b4a47c1d658",
     "tris": 1004
    },
    {
@@ -2639,7 +2639,7 @@
      5.9,
      6.02
     ],
-    "hash": "eacd12ffcae88eb3",
+    "hash": "65b8feb1b1823c82",
     "tris": 540
    },
    {
@@ -2661,7 +2661,7 @@
      1.151,
      4.483
     ],
-    "hash": "e280de502490674d",
+    "hash": "4d524a33ea0d152c",
     "tris": 240
    },
    {
@@ -2683,7 +2683,7 @@
      4.2,
      2.73
     ],
-    "hash": "f5201d0a543d9b9e",
+    "hash": "da71dcafcf042c5a",
     "tris": 144
    },
    {
@@ -2705,7 +2705,7 @@
      5.9,
      6.02
     ],
-    "hash": "0b6c93f2ef07399d",
+    "hash": "38aa25840564198c",
     "tris": 540
    },
    {
@@ -2727,7 +2727,7 @@
      1.151,
      4.483
     ],
-    "hash": "72aa802721f8deea",
+    "hash": "85264033d9595c81",
     "tris": 240
    },
    {
@@ -2749,7 +2749,7 @@
      4.2,
      2.73
     ],
-    "hash": "2191ace2db0e8db9",
+    "hash": "27e24fb16756ed04",
     "tris": 144
    },
    {
@@ -2771,7 +2771,7 @@
      5.065,
      7.522
     ],
-    "hash": "74f61a9edb2f63e1",
+    "hash": "0a48f9cf73443b5e",
     "tris": 556
    },
    {
@@ -2784,17 +2784,17 @@
     "role": null,
     "bone": "HandL",
     "offset": [
-     -16.5,
-     6.714,
-     -1.185
+     -19.93,
+     5.978,
+     5.703
     ],
     "size": [
-     5.2,
-     7.703,
-     12.162
+     11.277,
+     6.574,
+     24.121
     ],
-    "hash": "9c62ab1bf096b5fa",
-    "tris": 112
+    "hash": "ca93ee30fd59abf5",
+    "tris": 168
    },
    {
     "name": "IndexL",
@@ -2815,7 +2815,7 @@
      1.24,
      3.79
     ],
-    "hash": "98f9fb8dfda237a9",
+    "hash": "98603eb72911db60",
     "tris": 64
    },
    {
@@ -2837,7 +2837,7 @@
      2.77,
      2.255
     ],
-    "hash": "c0ef0cc0105f1719",
+    "hash": "02b30766b6e11b48",
     "tris": 112
    },
    {
@@ -2859,7 +2859,7 @@
      1.24,
      4.14
     ],
-    "hash": "26a241479e8002bd",
+    "hash": "7c371f42d26b0b8f",
     "tris": 192
    },
    {
@@ -2881,7 +2881,7 @@
      2.934,
      2.369
     ],
-    "hash": "cc5f23ffb218a6b9",
+    "hash": "aaa120d274137870",
     "tris": 336
    },
    {
@@ -2903,7 +2903,7 @@
      1.577,
      3.312
     ],
-    "hash": "e5b8dfe7f326d695",
+    "hash": "113db52b2aacd455",
     "tris": 64
    },
    {
@@ -2925,7 +2925,7 @@
      1.929,
      3.096
     ],
-    "hash": "b0cc5a766a314523",
+    "hash": "e2000db9e2de3ba9",
     "tris": 64
    },
    {
@@ -2947,7 +2947,7 @@
      5.065,
      7.522
     ],
-    "hash": "0f83c0d838225b0d",
+    "hash": "11f077b2e932a778",
     "tris": 556
    },
    {
@@ -2960,17 +2960,17 @@
     "role": null,
     "bone": "HandR",
     "offset": [
-     16.5,
-     6.714,
-     -1.185
+     19.93,
+     5.978,
+     5.703
     ],
     "size": [
-     5.2,
-     7.703,
-     12.162
+     11.277,
+     6.574,
+     24.121
     ],
-    "hash": "fcb4425ade974023",
-    "tris": 112
+    "hash": "e10d7fd86ad21510",
+    "tris": 168
    },
    {
     "name": "HandR_Receipt",
@@ -2991,7 +2991,7 @@
      0.08,
      3.6
     ],
-    "hash": "94e8d8e1fe1370ce",
+    "hash": "324a2f4fb6d64b66",
     "tris": 60
    },
    {
@@ -3013,7 +3013,7 @@
      1.24,
      3.79
     ],
-    "hash": "39f59efe3b10daa7",
+    "hash": "5e8caa7e31c15830",
     "tris": 64
    },
    {
@@ -3035,7 +3035,7 @@
      2.77,
      2.255
     ],
-    "hash": "09e13423b70de713",
+    "hash": "4295affa6ffd6781",
     "tris": 112
    },
    {
@@ -3057,7 +3057,7 @@
      1.24,
      4.14
     ],
-    "hash": "4d8f9a86410cd32e",
+    "hash": "8f2684b65c0dcec9",
     "tris": 192
    },
    {
@@ -3079,7 +3079,7 @@
      2.934,
      2.369
     ],
-    "hash": "e60d540da5ef43d8",
+    "hash": "d0b733fcf3156e54",
     "tris": 336
    },
    {
@@ -3101,7 +3101,7 @@
      1.577,
      3.312
     ],
-    "hash": "1ebfbd474914432f",
+    "hash": "f887561ddf1882fc",
     "tris": 64
    },
    {
@@ -3123,7 +3123,7 @@
      1.929,
      3.096
     ],
-    "hash": "d9ebf2805f12a6d9",
+    "hash": "99ad09084cf133d1",
     "tris": 64
    }
   ],
