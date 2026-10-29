@@ -194,7 +194,7 @@ Scripts: **151** — 2 Script, 2 LocalScript, 147 ModuleScript; all compile clea
 | Audio | Bible §15 list | 42 of 44 licensed | — | smoke_alarm, usual_footsteps (no licensed match yet) |
 
 ### 5. Design notes
-**Decisions** — ~95 are logged under Decisions above. This session: the Patron's hands come in through M3/M8 and the finale cuts on `chomp` (the tower can't reach the mouth in this map); name tags drawn in UI with four styles, golden VIP name and `[VIP]` chat tag; chat bubbles hang above tags; the Locker shows what is really equipped and frames the whole outfit; the Test Kitchen's Cook View clears the Lobby HUD; `/feed` cheat; HttpEnabled off.
+**Decisions** — 87 are logged under Decisions above. This session: the Patron's hands come in through M3/M8 and the finale cuts on `chomp` (the tower can't reach the mouth in this map); name tags drawn in UI with four styles, golden VIP name and `[VIP]` chat tag; chat bubbles hang above tags; the Locker shows what is really equipped and frames the whole outfit; the Test Kitchen's Cook View clears the Lobby HUD; `/feed` cheat; HttpEnabled off.
 
 **Design risks**
 1. Tension is tuned against a bot that never resets the breaker or reads riddles; real players may find Nights 3–4 harsher or calmer than intended.
