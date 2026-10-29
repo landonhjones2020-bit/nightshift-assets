@@ -1,4 +1,31 @@
 {
+ "Ability_ChefsKiss": {
+  "group": "meta",
+  "size": [
+   512,
+   512
+  ],
+  "hash": "990610df2637b622",
+  "url": "https://raw.githubusercontent.com/landonhjones2020-bit/nightshift-assets/main/icons/meta/Ability_ChefsKiss.nsz"
+ },
+ "Ability_ClosingTime": {
+  "group": "meta",
+  "size": [
+   512,
+   512
+  ],
+  "hash": "048bf9f098e02a14",
+  "url": "https://raw.githubusercontent.com/landonhjones2020-bit/nightshift-assets/main/icons/meta/Ability_ClosingTime.nsz"
+ },
+ "Art_KeyArt": {
+  "group": "art",
+  "size": [
+   1024,
+   576
+  ],
+  "hash": "50ebe72d485eb15b",
+  "url": "https://raw.githubusercontent.com/landonhjones2020-bit/nightshift-assets/main/icons/art/Art_KeyArt.nsz"
+ },
  "Cosmetic_apron_butcher": {
   "group": "cosmetics",
   "size": [
@@ -332,6 +359,24 @@
   "hash": "4677573f58f8e0a3",
   "url": "https://raw.githubusercontent.com/landonhjones2020-bit/nightshift-assets/main/icons/cosmetics/Cosmetic_sp_wooden.nsz"
  },
+ "Currency_Coins": {
+  "group": "shop",
+  "size": [
+   512,
+   512
+  ],
+  "hash": "656c405c376b44c6",
+  "url": "https://raw.githubusercontent.com/landonhjones2020-bit/nightshift-assets/main/icons/shop/Currency_Coins.nsz"
+ },
+ "Currency_Tokens": {
+  "group": "shop",
+  "size": [
+   512,
+   512
+  ],
+  "hash": "cdf42fe940b06a03",
+  "url": "https://raw.githubusercontent.com/landonhjones2020-bit/nightshift-assets/main/icons/shop/Currency_Tokens.nsz"
+ },
  "Food_Tomato": {
   "group": "food",
   "size": [
@@ -340,6 +385,330 @@
   ],
   "hash": "9c10af3bc5d90051",
   "url": "https://raw.githubusercontent.com/landonhjones2020-bit/nightshift-assets/main/icons/food/Food_Tomato.nsz"
+ },
+ "HUD_Book": {
+  "group": "hud",
+  "size": [
+   512,
+   512
+  ],
+  "hash": "6a2e3b81aa5366b3",
+  "url": "https://raw.githubusercontent.com/landonhjones2020-bit/nightshift-assets/main/icons/hud/HUD_Book.nsz"
+ },
+ "HUD_Check": {
+  "group": "hud",
+  "size": [
+   512,
+   512
+  ],
+  "hash": "2d0a87f3055c66e2",
+  "url": "https://raw.githubusercontent.com/landonhjones2020-bit/nightshift-assets/main/icons/hud/HUD_Check.nsz"
+ },
+ "HUD_Clues": {
+  "group": "hud",
+  "size": [
+   512,
+   512
+  ],
+  "hash": "100cc2c548359f65",
+  "url": "https://raw.githubusercontent.com/landonhjones2020-bit/nightshift-assets/main/icons/hud/HUD_Clues.nsz"
+ },
+ "HUD_Cosmetics": {
+  "group": "hud",
+  "size": [
+   512,
+   512
+  ],
+  "hash": "b868b974bc9e836d",
+  "url": "https://raw.githubusercontent.com/landonhjones2020-bit/nightshift-assets/main/icons/hud/HUD_Cosmetics.nsz"
+ },
+ "HUD_Crate_Bread": {
+  "group": "hud",
+  "size": [
+   512,
+   512
+  ],
+  "hash": "c9109501227b3d24",
+  "url": "https://raw.githubusercontent.com/landonhjones2020-bit/nightshift-assets/main/icons/hud/HUD_Crate_Bread.nsz"
+ },
+ "HUD_Crate_Cheese": {
+  "group": "hud",
+  "size": [
+   512,
+   512
+  ],
+  "hash": "dbd74cb5d5fbeda2",
+  "url": "https://raw.githubusercontent.com/landonhjones2020-bit/nightshift-assets/main/icons/hud/HUD_Crate_Cheese.nsz"
+ },
+ "HUD_Crate_Meat": {
+  "group": "hud",
+  "size": [
+   512,
+   512
+  ],
+  "hash": "f542c441798bea63",
+  "url": "https://raw.githubusercontent.com/landonhjones2020-bit/nightshift-assets/main/icons/hud/HUD_Crate_Meat.nsz"
+ },
+ "HUD_Crate_Sauce": {
+  "group": "hud",
+  "size": [
+   512,
+   512
+  ],
+  "hash": "5f322f43eb4517d3",
+  "url": "https://raw.githubusercontent.com/landonhjones2020-bit/nightshift-assets/main/icons/hud/HUD_Crate_Sauce.nsz"
+ },
+ "HUD_Crate_Veg": {
+  "group": "hud",
+  "size": [
+   512,
+   512
+  ],
+  "hash": "1cf1416e3bb18d8b",
+  "url": "https://raw.githubusercontent.com/landonhjones2020-bit/nightshift-assets/main/icons/hud/HUD_Crate_Veg.nsz"
+ },
+ "HUD_Crouch": {
+  "group": "hud",
+  "size": [
+   512,
+   512
+  ],
+  "hash": "3fcf48b4f64a55c3",
+  "url": "https://raw.githubusercontent.com/landonhjones2020-bit/nightshift-assets/main/icons/hud/HUD_Crouch.nsz"
+ },
+ "HUD_Daily": {
+  "group": "hud",
+  "size": [
+   512,
+   512
+  ],
+  "hash": "da7795f6a39c3289",
+  "url": "https://raw.githubusercontent.com/landonhjones2020-bit/nightshift-assets/main/icons/hud/HUD_Daily.nsz"
+ },
+ "HUD_Deals": {
+  "group": "hud",
+  "size": [
+   512,
+   512
+  ],
+  "hash": "636a810f8952efb6",
+  "url": "https://raw.githubusercontent.com/landonhjones2020-bit/nightshift-assets/main/icons/hud/HUD_Deals.nsz"
+ },
+ "HUD_Dev": {
+  "group": "hud",
+  "size": [
+   512,
+   512
+  ],
+  "hash": "5e5e695ee6ff13fa",
+  "url": "https://raw.githubusercontent.com/landonhjones2020-bit/nightshift-assets/main/icons/hud/HUD_Dev.nsz"
+ },
+ "HUD_Featured": {
+  "group": "hud",
+  "size": [
+   512,
+   512
+  ],
+  "hash": "a3fb030b6f0e2c98",
+  "url": "https://raw.githubusercontent.com/landonhjones2020-bit/nightshift-assets/main/icons/hud/HUD_Featured.nsz"
+ },
+ "HUD_Flashlight": {
+  "group": "hud",
+  "size": [
+   512,
+   512
+  ],
+  "hash": "15d0b53e22c9e79b",
+  "url": "https://raw.githubusercontent.com/landonhjones2020-bit/nightshift-assets/main/icons/hud/HUD_Flashlight.nsz"
+ },
+ "HUD_Gift": {
+  "group": "hud",
+  "size": [
+   512,
+   512
+  ],
+  "hash": "9edc6c669cd1ef2a",
+  "url": "https://raw.githubusercontent.com/landonhjones2020-bit/nightshift-assets/main/icons/hud/HUD_Gift.nsz"
+ },
+ "HUD_Info": {
+  "group": "hud",
+  "size": [
+   512,
+   512
+  ],
+  "hash": "f98e54be29a95b17",
+  "url": "https://raw.githubusercontent.com/landonhjones2020-bit/nightshift-assets/main/icons/hud/HUD_Info.nsz"
+ },
+ "HUD_Interact": {
+  "group": "hud",
+  "size": [
+   512,
+   512
+  ],
+  "hash": "cec0f4c697cb934d",
+  "url": "https://raw.githubusercontent.com/landonhjones2020-bit/nightshift-assets/main/icons/hud/HUD_Interact.nsz"
+ },
+ "HUD_Keys": {
+  "group": "hud",
+  "size": [
+   512,
+   512
+  ],
+  "hash": "04077886523a842d",
+  "url": "https://raw.githubusercontent.com/landonhjones2020-bit/nightshift-assets/main/icons/hud/HUD_Keys.nsz"
+ },
+ "HUD_Left": {
+  "group": "hud",
+  "size": [
+   512,
+   512
+  ],
+  "hash": "fa8f4d2715129768",
+  "url": "https://raw.githubusercontent.com/landonhjones2020-bit/nightshift-assets/main/icons/hud/HUD_Left.nsz"
+ },
+ "HUD_Level": {
+  "group": "hud",
+  "size": [
+   512,
+   512
+  ],
+  "hash": "a1229e354186479d",
+  "url": "https://raw.githubusercontent.com/landonhjones2020-bit/nightshift-assets/main/icons/hud/HUD_Level.nsz"
+ },
+ "HUD_Passes": {
+  "group": "hud",
+  "size": [
+   512,
+   512
+  ],
+  "hash": "39b055bc5af43bff",
+  "url": "https://raw.githubusercontent.com/landonhjones2020-bit/nightshift-assets/main/icons/hud/HUD_Passes.nsz"
+ },
+ "HUD_Ping": {
+  "group": "hud",
+  "size": [
+   512,
+   512
+  ],
+  "hash": "9abf724a556060d8",
+  "url": "https://raw.githubusercontent.com/landonhjones2020-bit/nightshift-assets/main/icons/hud/HUD_Ping.nsz"
+ },
+ "HUD_Quests": {
+  "group": "hud",
+  "size": [
+   512,
+   512
+  ],
+  "hash": "dc6d89f681143f4c",
+  "url": "https://raw.githubusercontent.com/landonhjones2020-bit/nightshift-assets/main/icons/hud/HUD_Quests.nsz"
+ },
+ "HUD_Rattle": {
+  "group": "hud",
+  "size": [
+   512,
+   512
+  ],
+  "hash": "f301a9eb6dbb7c0e",
+  "url": "https://raw.githubusercontent.com/landonhjones2020-bit/nightshift-assets/main/icons/hud/HUD_Rattle.nsz"
+ },
+ "HUD_Revive": {
+  "group": "hud",
+  "size": [
+   512,
+   512
+  ],
+  "hash": "3c1483fca518e3e3",
+  "url": "https://raw.githubusercontent.com/landonhjones2020-bit/nightshift-assets/main/icons/hud/HUD_Revive.nsz"
+ },
+ "HUD_Right": {
+  "group": "hud",
+  "size": [
+   512,
+   512
+  ],
+  "hash": "9554c9ffb9fdd0b4",
+  "url": "https://raw.githubusercontent.com/landonhjones2020-bit/nightshift-assets/main/icons/hud/HUD_Right.nsz"
+ },
+ "HUD_Settings": {
+  "group": "hud",
+  "size": [
+   512,
+   512
+  ],
+  "hash": "43ce098c9bb42349",
+  "url": "https://raw.githubusercontent.com/landonhjones2020-bit/nightshift-assets/main/icons/hud/HUD_Settings.nsz"
+ },
+ "HUD_Shop": {
+  "group": "hud",
+  "size": [
+   512,
+   512
+  ],
+  "hash": "f4ce5c0909d9f9db",
+  "url": "https://raw.githubusercontent.com/landonhjones2020-bit/nightshift-assets/main/icons/hud/HUD_Shop.nsz"
+ },
+ "HUD_Spook": {
+  "group": "hud",
+  "size": [
+   512,
+   512
+  ],
+  "hash": "9a5e47dee5ecf277",
+  "url": "https://raw.githubusercontent.com/landonhjones2020-bit/nightshift-assets/main/icons/hud/HUD_Spook.nsz"
+ },
+ "HUD_Sprint": {
+  "group": "hud",
+  "size": [
+   512,
+   512
+  ],
+  "hash": "ab2d0bf3d6450a36",
+  "url": "https://raw.githubusercontent.com/landonhjones2020-bit/nightshift-assets/main/icons/hud/HUD_Sprint.nsz"
+ },
+ "HUD_Stamina": {
+  "group": "hud",
+  "size": [
+   512,
+   512
+  ],
+  "hash": "403521cf7c4554d8",
+  "url": "https://raw.githubusercontent.com/landonhjones2020-bit/nightshift-assets/main/icons/hud/HUD_Stamina.nsz"
+ },
+ "HUD_Toaster": {
+  "group": "hud",
+  "size": [
+   512,
+   512
+  ],
+  "hash": "b6f13f26ae241194",
+  "url": "https://raw.githubusercontent.com/landonhjones2020-bit/nightshift-assets/main/icons/hud/HUD_Toaster.nsz"
+ },
+ "HUD_Uniforms": {
+  "group": "hud",
+  "size": [
+   512,
+   512
+  ],
+  "hash": "6df7de11e0cf8612",
+  "url": "https://raw.githubusercontent.com/landonhjones2020-bit/nightshift-assets/main/icons/hud/HUD_Uniforms.nsz"
+ },
+ "HUD_Warn": {
+  "group": "hud",
+  "size": [
+   512,
+   512
+  ],
+  "hash": "7845f741dcb27677",
+  "url": "https://raw.githubusercontent.com/landonhjones2020-bit/nightshift-assets/main/icons/hud/HUD_Warn.nsz"
+ },
+ "HUD_Wrapped": {
+  "group": "hud",
+  "size": [
+   512,
+   512
+  ],
+  "hash": "72ce8628dbfae656",
+  "url": "https://raw.githubusercontent.com/landonhjones2020-bit/nightshift-assets/main/icons/hud/HUD_Wrapped.nsz"
  },
  "Ingredient_bacon": {
   "group": "ingredients",
@@ -611,6 +980,276 @@
   "hash": "782211ef216d2707",
   "url": "https://raw.githubusercontent.com/landonhjones2020-bit/nightshift-assets/main/icons/menu/Menu_M8.nsz"
  },
+ "Pass_GP_2X_COINS": {
+  "group": "shop",
+  "size": [
+   512,
+   512
+  ],
+  "hash": "a203262815c3e0ad",
+  "url": "https://raw.githubusercontent.com/landonhjones2020-bit/nightshift-assets/main/icons/shop/Pass_GP_2X_COINS.nsz"
+ },
+ "Pass_GP_BIG_POCKETS": {
+  "group": "shop",
+  "size": [
+   512,
+   512
+  ],
+  "hash": "46606e83ba599462",
+  "url": "https://raw.githubusercontent.com/landonhjones2020-bit/nightshift-assets/main/icons/shop/Pass_GP_BIG_POCKETS.nsz"
+ },
+ "Pass_GP_FLASHLIGHT_PRO": {
+  "group": "shop",
+  "size": [
+   512,
+   512
+  ],
+  "hash": "01e81256215f1769",
+  "url": "https://raw.githubusercontent.com/landonhjones2020-bit/nightshift-assets/main/icons/shop/Pass_GP_FLASHLIGHT_PRO.nsz"
+ },
+ "Pass_GP_MANAGER_KEYS": {
+  "group": "shop",
+  "size": [
+   512,
+   512
+  ],
+  "hash": "5d45ab073d664daf",
+  "url": "https://raw.githubusercontent.com/landonhjones2020-bit/nightshift-assets/main/icons/shop/Pass_GP_MANAGER_KEYS.nsz"
+ },
+ "Pass_GP_PACK_GRAVEYARD": {
+  "group": "shop",
+  "size": [
+   512,
+   512
+  ],
+  "hash": "28c1516e6d9214a9",
+  "url": "https://raw.githubusercontent.com/landonhjones2020-bit/nightshift-assets/main/icons/shop/Pass_GP_PACK_GRAVEYARD.nsz"
+ },
+ "Pass_GP_PACK_NEON": {
+  "group": "shop",
+  "size": [
+   512,
+   512
+  ],
+  "hash": "2494248d591f9cd5",
+  "url": "https://raw.githubusercontent.com/landonhjones2020-bit/nightshift-assets/main/icons/shop/Pass_GP_PACK_NEON.nsz"
+ },
+ "Pass_GP_POLTERGEIST": {
+  "group": "shop",
+  "size": [
+   512,
+   512
+  ],
+  "hash": "34b200d7db787d6d",
+  "url": "https://raw.githubusercontent.com/landonhjones2020-bit/nightshift-assets/main/icons/shop/Pass_GP_POLTERGEIST.nsz"
+ },
+ "Pass_GP_SECOND_SHIFT": {
+  "group": "shop",
+  "size": [
+   512,
+   512
+  ],
+  "hash": "33e4bc09e753b5c9",
+  "url": "https://raw.githubusercontent.com/landonhjones2020-bit/nightshift-assets/main/icons/shop/Pass_GP_SECOND_SHIFT.nsz"
+ },
+ "Pass_GP_VIP": {
+  "group": "shop",
+  "size": [
+   512,
+   512
+  ],
+  "hash": "a2417516aaf7eb00",
+  "url": "https://raw.githubusercontent.com/landonhjones2020-bit/nightshift-assets/main/icons/shop/Pass_GP_VIP.nsz"
+ },
+ "Portrait_gus": {
+  "group": "portraits",
+  "size": [
+   512,
+   512
+  ],
+  "hash": "824c05f95115cb2f",
+  "url": "https://raw.githubusercontent.com/landonhjones2020-bit/nightshift-assets/main/icons/portraits/Portrait_gus.nsz"
+ },
+ "Portrait_jo": {
+  "group": "portraits",
+  "size": [
+   512,
+   512
+  ],
+  "hash": "49a92ed9b307b46c",
+  "url": "https://raw.githubusercontent.com/landonhjones2020-bit/nightshift-assets/main/icons/portraits/Portrait_jo.nsz"
+ },
+ "Portrait_mina": {
+  "group": "portraits",
+  "size": [
+   512,
+   512
+  ],
+  "hash": "96626fc71e711c36",
+  "url": "https://raw.githubusercontent.com/landonhjones2020-bit/nightshift-assets/main/icons/portraits/Portrait_mina.nsz"
+ },
+ "Portrait_walt": {
+  "group": "portraits",
+  "size": [
+   512,
+   512
+  ],
+  "hash": "8c29a0e244b4f7e6",
+  "url": "https://raw.githubusercontent.com/landonhjones2020-bit/nightshift-assets/main/icons/portraits/Portrait_walt.nsz"
+ },
+ "Product_DP_BOOST_3": {
+  "group": "shop",
+  "size": [
+   512,
+   512
+  ],
+  "hash": "564af8dc628105e9",
+  "url": "https://raw.githubusercontent.com/landonhjones2020-bit/nightshift-assets/main/icons/shop/Product_DP_BOOST_3.nsz"
+ },
+ "Product_DP_COINS_1": {
+  "group": "shop",
+  "size": [
+   512,
+   512
+  ],
+  "hash": "f9c251cb2912ee25",
+  "url": "https://raw.githubusercontent.com/landonhjones2020-bit/nightshift-assets/main/icons/shop/Product_DP_COINS_1.nsz"
+ },
+ "Product_DP_COINS_2": {
+  "group": "shop",
+  "size": [
+   512,
+   512
+  ],
+  "hash": "0ccd16452164a68e",
+  "url": "https://raw.githubusercontent.com/landonhjones2020-bit/nightshift-assets/main/icons/shop/Product_DP_COINS_2.nsz"
+ },
+ "Product_DP_COINS_3": {
+  "group": "shop",
+  "size": [
+   512,
+   512
+  ],
+  "hash": "229d8bf49610c093",
+  "url": "https://raw.githubusercontent.com/landonhjones2020-bit/nightshift-assets/main/icons/shop/Product_DP_COINS_3.nsz"
+ },
+ "Product_DP_COINS_4": {
+  "group": "shop",
+  "size": [
+   512,
+   512
+  ],
+  "hash": "836da735498b08b1",
+  "url": "https://raw.githubusercontent.com/landonhjones2020-bit/nightshift-assets/main/icons/shop/Product_DP_COINS_4.nsz"
+ },
+ "Product_DP_COINS_5": {
+  "group": "shop",
+  "size": [
+   512,
+   512
+  ],
+  "hash": "5bb4eeccb5ba957b",
+  "url": "https://raw.githubusercontent.com/landonhjones2020-bit/nightshift-assets/main/icons/shop/Product_DP_COINS_5.nsz"
+ },
+ "Product_DP_COINS_6": {
+  "group": "shop",
+  "size": [
+   512,
+   512
+  ],
+  "hash": "c421b72501cb3bea",
+  "url": "https://raw.githubusercontent.com/landonhjones2020-bit/nightshift-assets/main/icons/shop/Product_DP_COINS_6.nsz"
+ },
+ "Product_DP_REVIVE": {
+  "group": "shop",
+  "size": [
+   512,
+   512
+  ],
+  "hash": "20ae8af18c92d0d8",
+  "url": "https://raw.githubusercontent.com/landonhjones2020-bit/nightshift-assets/main/icons/shop/Product_DP_REVIVE.nsz"
+ },
+ "Product_DP_REVIVE_AGAIN": {
+  "group": "shop",
+  "size": [
+   512,
+   512
+  ],
+  "hash": "68426487560b519d",
+  "url": "https://raw.githubusercontent.com/landonhjones2020-bit/nightshift-assets/main/icons/shop/Product_DP_REVIVE_AGAIN.nsz"
+ },
+ "Product_DP_REVIVE_CREW": {
+  "group": "shop",
+  "size": [
+   512,
+   512
+  ],
+  "hash": "61f752a44b5fb48c",
+  "url": "https://raw.githubusercontent.com/landonhjones2020-bit/nightshift-assets/main/icons/shop/Product_DP_REVIVE_CREW.nsz"
+ },
+ "Product_DP_REVIVE_FRIEND": {
+  "group": "shop",
+  "size": [
+   512,
+   512
+  ],
+  "hash": "fb95c3d21da2026f",
+  "url": "https://raw.githubusercontent.com/landonhjones2020-bit/nightshift-assets/main/icons/shop/Product_DP_REVIVE_FRIEND.nsz"
+ },
+ "Product_DP_STARTER": {
+  "group": "shop",
+  "size": [
+   512,
+   512
+  ],
+  "hash": "7ed78b9229982cef",
+  "url": "https://raw.githubusercontent.com/landonhjones2020-bit/nightshift-assets/main/icons/shop/Product_DP_STARTER.nsz"
+ },
+ "Product_DP_TOKENS_1": {
+  "group": "shop",
+  "size": [
+   512,
+   512
+  ],
+  "hash": "fba4b627f177e463",
+  "url": "https://raw.githubusercontent.com/landonhjones2020-bit/nightshift-assets/main/icons/shop/Product_DP_TOKENS_1.nsz"
+ },
+ "Product_DP_TOKENS_2": {
+  "group": "shop",
+  "size": [
+   512,
+   512
+  ],
+  "hash": "7fba7128845dfefb",
+  "url": "https://raw.githubusercontent.com/landonhjones2020-bit/nightshift-assets/main/icons/shop/Product_DP_TOKENS_2.nsz"
+ },
+ "Product_DP_TOKENS_3": {
+  "group": "shop",
+  "size": [
+   512,
+   512
+  ],
+  "hash": "4ea1a464cc332f26",
+  "url": "https://raw.githubusercontent.com/landonhjones2020-bit/nightshift-assets/main/icons/shop/Product_DP_TOKENS_3.nsz"
+ },
+ "Product_DP_TOKENS_4": {
+  "group": "shop",
+  "size": [
+   512,
+   512
+  ],
+  "hash": "8e1add6e9a27d580",
+  "url": "https://raw.githubusercontent.com/landonhjones2020-bit/nightshift-assets/main/icons/shop/Product_DP_TOKENS_4.nsz"
+ },
+ "Product_DP_TOKENS_5": {
+  "group": "shop",
+  "size": [
+   512,
+   512
+  ],
+  "hash": "2b421900f4da2b49",
+  "url": "https://raw.githubusercontent.com/landonhjones2020-bit/nightshift-assets/main/icons/shop/Product_DP_TOKENS_5.nsz"
+ },
  "Secret_S01": {
   "group": "secrets",
   "size": [
@@ -880,5 +1519,347 @@
   ],
   "hash": "d5269a83829e2b52",
   "url": "https://raw.githubusercontent.com/landonhjones2020-bit/nightshift-assets/main/icons/secrets/Secret_S30.nsz"
+ },
+ "Supply_energy_drink": {
+  "group": "meta",
+  "size": [
+   512,
+   512
+  ],
+  "hash": "ae3e38d7ff9fc888",
+  "url": "https://raw.githubusercontent.com/landonhjones2020-bit/nightshift-assets/main/icons/meta/Supply_energy_drink.nsz"
+ },
+ "Supply_lucky_clue": {
+  "group": "meta",
+  "size": [
+   512,
+   512
+  ],
+  "hash": "301b5ccaec6d065c",
+  "url": "https://raw.githubusercontent.com/landonhjones2020-bit/nightshift-assets/main/icons/meta/Supply_lucky_clue.nsz"
+ },
+ "Supply_recipe_card": {
+  "group": "meta",
+  "size": [
+   512,
+   512
+  ],
+  "hash": "efa25a904920464a",
+  "url": "https://raw.githubusercontent.com/landonhjones2020-bit/nightshift-assets/main/icons/meta/Supply_recipe_card.nsz"
+ },
+ "Supply_second_shift_ticket": {
+  "group": "meta",
+  "size": [
+   512,
+   512
+  ],
+  "hash": "84cfaa5bac3f231e",
+  "url": "https://raw.githubusercontent.com/landonhjones2020-bit/nightshift-assets/main/icons/meta/Supply_second_shift_ticket.nsz"
+ },
+ "Supply_spare_batteries": {
+  "group": "meta",
+  "size": [
+   512,
+   512
+  ],
+  "hash": "d31cee47934e8512",
+  "url": "https://raw.githubusercontent.com/landonhjones2020-bit/nightshift-assets/main/icons/meta/Supply_spare_batteries.nsz"
+ },
+ "Tag_Bloody": {
+  "group": "hud",
+  "size": [
+   512,
+   512
+  ],
+  "hash": "c16d5316ee5d6379",
+  "url": "https://raw.githubusercontent.com/landonhjones2020-bit/nightshift-assets/main/icons/hud/Tag_Bloody.nsz"
+ },
+ "Tag_Cheesy": {
+  "group": "hud",
+  "size": [
+   512,
+   512
+  ],
+  "hash": "1be64672acd01dba",
+  "url": "https://raw.githubusercontent.com/landonhjones2020-bit/nightshift-assets/main/icons/hud/Tag_Cheesy.nsz"
+ },
+ "Tag_Creamy": {
+  "group": "hud",
+  "size": [
+   512,
+   512
+  ],
+  "hash": "76b462539becb8a4",
+  "url": "https://raw.githubusercontent.com/landonhjones2020-bit/nightshift-assets/main/icons/hud/Tag_Creamy.nsz"
+ },
+ "Tag_Crunchy": {
+  "group": "hud",
+  "size": [
+   512,
+   512
+  ],
+  "hash": "16f9930da9a2bf8d",
+  "url": "https://raw.githubusercontent.com/landonhjones2020-bit/nightshift-assets/main/icons/hud/Tag_Crunchy.nsz"
+ },
+ "Tag_Crusty": {
+  "group": "hud",
+  "size": [
+   512,
+   512
+  ],
+  "hash": "b9108409b8e2cad2",
+  "url": "https://raw.githubusercontent.com/landonhjones2020-bit/nightshift-assets/main/icons/hud/Tag_Crusty.nsz"
+ },
+ "Tag_Cursed": {
+  "group": "hud",
+  "size": [
+   512,
+   512
+  ],
+  "hash": "f4b33d30d6f3d142",
+  "url": "https://raw.githubusercontent.com/landonhjones2020-bit/nightshift-assets/main/icons/hud/Tag_Cursed.nsz"
+ },
+ "Tag_Dark": {
+  "group": "hud",
+  "size": [
+   512,
+   512
+  ],
+  "hash": "178e505ab8ee6d02",
+  "url": "https://raw.githubusercontent.com/landonhjones2020-bit/nightshift-assets/main/icons/hud/Tag_Dark.nsz"
+ },
+ "Tag_Earthy": {
+  "group": "hud",
+  "size": [
+   512,
+   512
+  ],
+  "hash": "980e5d43b2c033b4",
+  "url": "https://raw.githubusercontent.com/landonhjones2020-bit/nightshift-assets/main/icons/hud/Tag_Earthy.nsz"
+ },
+ "Tag_Fresh": {
+  "group": "hud",
+  "size": [
+   512,
+   512
+  ],
+  "hash": "44b4519798f4ec8c",
+  "url": "https://raw.githubusercontent.com/landonhjones2020-bit/nightshift-assets/main/icons/hud/Tag_Fresh.nsz"
+ },
+ "Tag_Glowing": {
+  "group": "hud",
+  "size": [
+   512,
+   512
+  ],
+  "hash": "107a5de4f859b31c",
+  "url": "https://raw.githubusercontent.com/landonhjones2020-bit/nightshift-assets/main/icons/hud/Tag_Glowing.nsz"
+ },
+ "Tag_Hearty": {
+  "group": "hud",
+  "size": [
+   512,
+   512
+  ],
+  "hash": "3e46cdc207efabac",
+  "url": "https://raw.githubusercontent.com/landonhjones2020-bit/nightshift-assets/main/icons/hud/Tag_Hearty.nsz"
+ },
+ "Tag_Holey": {
+  "group": "hud",
+  "size": [
+   512,
+   512
+  ],
+  "hash": "6a57e9db854c569d",
+  "url": "https://raw.githubusercontent.com/landonhjones2020-bit/nightshift-assets/main/icons/hud/Tag_Holey.nsz"
+ },
+ "Tag_Meaty": {
+  "group": "hud",
+  "size": [
+   512,
+   512
+  ],
+  "hash": "e5e3a1f6a200af3a",
+  "url": "https://raw.githubusercontent.com/landonhjones2020-bit/nightshift-assets/main/icons/hud/Tag_Meaty.nsz"
+ },
+ "Tag_Salty": {
+  "group": "hud",
+  "size": [
+   512,
+   512
+  ],
+  "hash": "5b311f536258774b",
+  "url": "https://raw.githubusercontent.com/landonhjones2020-bit/nightshift-assets/main/icons/hud/Tag_Salty.nsz"
+ },
+ "Tag_Sharp": {
+  "group": "hud",
+  "size": [
+   512,
+   512
+  ],
+  "hash": "a095bf7d12ca2a9f",
+  "url": "https://raw.githubusercontent.com/landonhjones2020-bit/nightshift-assets/main/icons/hud/Tag_Sharp.nsz"
+ },
+ "Tag_Smoky": {
+  "group": "hud",
+  "size": [
+   512,
+   512
+  ],
+  "hash": "5f4ef43afd166add",
+  "url": "https://raw.githubusercontent.com/landonhjones2020-bit/nightshift-assets/main/icons/hud/Tag_Smoky.nsz"
+ },
+ "Tag_Soft": {
+  "group": "hud",
+  "size": [
+   512,
+   512
+  ],
+  "hash": "41ecc4626c29912d",
+  "url": "https://raw.githubusercontent.com/landonhjones2020-bit/nightshift-assets/main/icons/hud/Tag_Soft.nsz"
+ },
+ "Tag_Spicy": {
+  "group": "hud",
+  "size": [
+   512,
+   512
+  ],
+  "hash": "fec824c763092ff9",
+  "url": "https://raw.githubusercontent.com/landonhjones2020-bit/nightshift-assets/main/icons/hud/Tag_Spicy.nsz"
+ },
+ "Tag_Tangy": {
+  "group": "hud",
+  "size": [
+   512,
+   512
+  ],
+  "hash": "c226db2040742518",
+  "url": "https://raw.githubusercontent.com/landonhjones2020-bit/nightshift-assets/main/icons/hud/Tag_Tangy.nsz"
+ },
+ "Uniform_head_chef": {
+  "group": "meta",
+  "size": [
+   512,
+   512
+  ],
+  "hash": "b96032f591f77603",
+  "url": "https://raw.githubusercontent.com/landonhjones2020-bit/nightshift-assets/main/icons/meta/Uniform_head_chef.nsz"
+ },
+ "Uniform_line_cook": {
+  "group": "meta",
+  "size": [
+   512,
+   512
+  ],
+  "hash": "7b962bff4efc02ed",
+  "url": "https://raw.githubusercontent.com/landonhjones2020-bit/nightshift-assets/main/icons/meta/Uniform_line_cook.nsz"
+ },
+ "Uniform_night_manager": {
+  "group": "meta",
+  "size": [
+   512,
+   512
+  ],
+  "hash": "aa8ad51bf99fea08",
+  "url": "https://raw.githubusercontent.com/landonhjones2020-bit/nightshift-assets/main/icons/meta/Uniform_night_manager.nsz"
+ },
+ "Uniform_security_guard": {
+  "group": "meta",
+  "size": [
+   512,
+   512
+  ],
+  "hash": "3376f2007e520be1",
+  "url": "https://raw.githubusercontent.com/landonhjones2020-bit/nightshift-assets/main/icons/meta/Uniform_security_guard.nsz"
+ },
+ "Uniform_stock_runner": {
+  "group": "meta",
+  "size": [
+   512,
+   512
+  ],
+  "hash": "c9393efc8ee54b3e",
+  "url": "https://raw.githubusercontent.com/landonhjones2020-bit/nightshift-assets/main/icons/meta/Uniform_stock_runner.nsz"
+ },
+ "Uniform_trainee": {
+  "group": "meta",
+  "size": [
+   512,
+   512
+  ],
+  "hash": "f5f324f84b487c09",
+  "url": "https://raw.githubusercontent.com/landonhjones2020-bit/nightshift-assets/main/icons/meta/Uniform_trainee.nsz"
+ },
+ "Upgrade_batteries": {
+  "group": "meta",
+  "size": [
+   512,
+   512
+  ],
+  "hash": "e612e775ef23a0a3",
+  "url": "https://raw.githubusercontent.com/landonhjones2020-bit/nightshift-assets/main/icons/meta/Upgrade_batteries.nsz"
+ },
+ "Upgrade_fuse_box": {
+  "group": "meta",
+  "size": [
+   512,
+   512
+  ],
+  "hash": "4d651964b728a91b",
+  "url": "https://raw.githubusercontent.com/landonhjones2020-bit/nightshift-assets/main/icons/meta/Upgrade_fuse_box.nsz"
+ },
+ "Upgrade_lucky_napkin": {
+  "group": "meta",
+  "size": [
+   512,
+   512
+  ],
+  "hash": "4eb7b9b2ecbf7606",
+  "url": "https://raw.githubusercontent.com/landonhjones2020-bit/nightshift-assets/main/icons/meta/Upgrade_lucky_napkin.nsz"
+ },
+ "Upgrade_radio_tuner": {
+  "group": "meta",
+  "size": [
+   512,
+   512
+  ],
+  "hash": "14e0aaa81c9845aa",
+  "url": "https://raw.githubusercontent.com/landonhjones2020-bit/nightshift-assets/main/icons/meta/Upgrade_radio_tuner.nsz"
+ },
+ "Upgrade_second_station": {
+  "group": "meta",
+  "size": [
+   512,
+   512
+  ],
+  "hash": "2e141d3592569162",
+  "url": "https://raw.githubusercontent.com/landonhjones2020-bit/nightshift-assets/main/icons/meta/Upgrade_second_station.nsz"
+ },
+ "Upgrade_space_heater": {
+  "group": "meta",
+  "size": [
+   512,
+   512
+  ],
+  "hash": "314aa14b72de3239",
+  "url": "https://raw.githubusercontent.com/landonhjones2020-bit/nightshift-assets/main/icons/meta/Upgrade_space_heater.nsz"
+ },
+ "Upgrade_stock_shelf": {
+  "group": "meta",
+  "size": [
+   512,
+   512
+  ],
+  "hash": "4e0396c21e13b137",
+  "url": "https://raw.githubusercontent.com/landonhjones2020-bit/nightshift-assets/main/icons/meta/Upgrade_stock_shelf.nsz"
+ },
+ "Upgrade_toaster_turbo": {
+  "group": "meta",
+  "size": [
+   512,
+   512
+  ],
+  "hash": "6333e854aa775f0a",
+  "url": "https://raw.githubusercontent.com/landonhjones2020-bit/nightshift-assets/main/icons/meta/Upgrade_toaster_turbo.nsz"
  }
 }
