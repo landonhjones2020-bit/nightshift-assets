@@ -1,0 +1,1951 @@
+{
+ "Cosmetic_Apron": {
+  "group": "Cosmetics",
+  "size": [
+   2.054,
+   3.151,
+   1.335
+  ],
+  "tris": 1486,
+  "meta": {
+   "slot": "Apron",
+   "attach": "BodyFrontAttachment",
+   "ref_size": [
+    1.943,
+    1.698,
+    1.004
+   ]
+  },
+  "url": "https://raw.githubusercontent.com/landonhjones2020-bit/nightshift-assets/main/meshes/F_cosmetics/Cosmetic_Apron.json",
+  "parts": [
+   {
+    "name": "Apron",
+    "color": "#C8402F",
+    "material": "SmoothPlastic",
+    "transparency": 0.0,
+    "castShadow": true,
+    "canCollide": false,
+    "role": "cos_body",
+    "bone": null,
+    "offset": [
+     0.0,
+     -0.525,
+     -0.134
+    ],
+    "size": [
+     1.887,
+     2.84,
+     0.194
+    ],
+    "hash": "532a91cfd15c90bb",
+    "tris": 160
+   },
+   {
+    "name": "Trim",
+    "color": "#F4F1EA",
+    "material": "SmoothPlastic",
+    "transparency": 0.0,
+    "castShadow": true,
+    "canCollide": false,
+    "role": "cos_trim",
+    "bone": null,
+    "offset": [
+     0.0,
+     -0.451,
+     0.428
+    ],
+    "size": [
+     2.054,
+     3.151,
+     1.335
+    ],
+    "hash": "cf0c653729801866",
+    "tris": 1202
+   },
+   {
+    "name": "SmoothPlastic",
+    "color": "#FFFFFF",
+    "material": "SmoothPlastic",
+    "transparency": 0.0,
+    "castShadow": true,
+    "canCollide": false,
+    "role": null,
+    "bone": null,
+    "offset": [
+     -0.117,
+     0.768,
+     -0.127
+    ],
+    "size": [
+     0.088,
+     0.323,
+     0.052
+    ],
+    "hash": "6cdbd466bda1d208",
+    "tris": 60
+   },
+   {
+    "name": "Rivets",
+    "color": "#C9A24A",
+    "material": "Metal",
+    "transparency": 0.0,
+    "castShadow": true,
+    "canCollide": false,
+    "role": null,
+    "bone": null,
+    "offset": [
+     0.0,
+     0.85,
+     -0.126
+    ],
+    "size": [
+     1.08,
+     0.08,
+     0.022
+    ],
+    "hash": "1ea8e4d61915ac40",
+    "tris": 64
+   }
+  ]
+ },
+ "Cosmetic_Apron_Checkered": {
+  "group": "Cosmetics",
+  "size": [
+   2.054,
+   3.151,
+   1.335
+  ],
+  "tris": 1650,
+  "meta": {
+   "slot": "Apron",
+   "attach": "BodyFrontAttachment",
+   "ref_size": [
+    1.943,
+    1.698,
+    1.004
+   ]
+  },
+  "url": "https://raw.githubusercontent.com/landonhjones2020-bit/nightshift-assets/main/meshes/F_cosmetics/Cosmetic_Apron_Checkered.json",
+  "parts": [
+   {
+    "name": "Apron",
+    "color": "#F4F1EA",
+    "material": "SmoothPlastic",
+    "transparency": 0.0,
+    "castShadow": true,
+    "canCollide": false,
+    "role": "cos_body",
+    "bone": null,
+    "offset": [
+     0.0,
+     -0.525,
+     -0.134
+    ],
+    "size": [
+     1.887,
+     2.84,
+     0.194
+    ],
+    "hash": "532a91cfd15c90bb",
+    "tris": 160
+   },
+   {
+    "name": "Trim",
+    "color": "#C8402F",
+    "material": "SmoothPlastic",
+    "transparency": 0.0,
+    "castShadow": true,
+    "canCollide": false,
+    "role": "cos_trim",
+    "bone": null,
+    "offset": [
+     0.0,
+     -0.451,
+     0.428
+    ],
+    "size": [
+     2.054,
+     3.151,
+     1.335
+    ],
+    "hash": "53d4107ed16b9a47",
+    "tris": 1366
+   },
+   {
+    "name": "SmoothPlastic",
+    "color": "#FFFFFF",
+    "material": "SmoothPlastic",
+    "transparency": 0.0,
+    "castShadow": true,
+    "canCollide": false,
+    "role": null,
+    "bone": null,
+    "offset": [
+     -0.117,
+     0.768,
+     -0.127
+    ],
+    "size": [
+     0.088,
+     0.323,
+     0.052
+    ],
+    "hash": "6cdbd466bda1d208",
+    "tris": 60
+   },
+   {
+    "name": "Rivets",
+    "color": "#C9A24A",
+    "material": "Metal",
+    "transparency": 0.0,
+    "castShadow": true,
+    "canCollide": false,
+    "role": null,
+    "bone": null,
+    "offset": [
+     0.0,
+     0.85,
+     -0.126
+    ],
+    "size": [
+     1.08,
+     0.08,
+     0.022
+    ],
+    "hash": "1ea8e4d61915ac40",
+    "tris": 64
+   }
+  ]
+ },
+ "Cosmetic_Apron_Chef": {
+  "group": "Cosmetics",
+  "size": [
+   2.064,
+   2.512,
+   0.948
+  ],
+  "tris": 1274,
+  "meta": {
+   "slot": "Apron",
+   "attach": "BodyFrontAttachment",
+   "ref_size": [
+    1.943,
+    1.698,
+    1.004
+   ]
+  },
+  "url": "https://raw.githubusercontent.com/landonhjones2020-bit/nightshift-assets/main/meshes/F_cosmetics/Cosmetic_Apron_Chef.json",
+  "parts": [
+   {
+    "name": "Jacket",
+    "color": "#FFFFFF",
+    "material": "SmoothPlastic",
+    "transparency": 0.0,
+    "castShadow": true,
+    "canCollide": false,
+    "role": "cos_body",
+    "bone": null,
+    "offset": [
+     0.0,
+     0.012,
+     0.275
+    ],
+    "size": [
+     1.98,
+     2.445,
+     0.91
+    ],
+    "hash": "48a3363be6729bae",
+    "tris": 356
+   },
+   {
+    "name": "Trim",
+    "color": "#E8E4DA",
+    "material": "SmoothPlastic",
+    "transparency": 0.0,
+    "castShadow": true,
+    "canCollide": false,
+    "role": "cos_trim",
+    "bone": null,
+    "offset": [
+     0.0,
+     -0.085,
+     -0.112
+    ],
+    "size": [
+     2.064,
+     2.384,
+     0.154
+    ],
+    "hash": "b1ca03303de98fad",
+    "tris": 762
+   },
+   {
+    "name": "SmoothPlastic",
+    "color": "#FFFFFF",
+    "material": "SmoothPlastic",
+    "transparency": 0.0,
+    "castShadow": true,
+    "canCollide": false,
+    "role": null,
+    "bone": null,
+    "offset": [
+     -0.307,
+     0.817,
+     -0.153
+    ],
+    "size": [
+     0.935,
+     0.537,
+     0.13
+    ],
+    "hash": "b5d3119a75e6912d",
+    "tris": 144
+   },
+   {
+    "name": "PenClip",
+    "color": "#C9CCD6",
+    "material": "Metal",
+    "transparency": 0.0,
+    "castShadow": true,
+    "canCollide": false,
+    "role": null,
+    "bone": null,
+    "offset": [
+     -0.642,
+     0.71,
+     -0.131
+    ],
+    "size": [
+     0.012,
+     0.09,
+     0.012
+    ],
+    "hash": "70c3daf99e7f5fe2",
+    "tris": 12
+   }
+  ]
+ },
+ "Cosmetic_Apron_Patched": {
+  "group": "Cosmetics",
+  "size": [
+   2.054,
+   3.334,
+   1.357
+  ],
+  "tris": 1644,
+  "meta": {
+   "slot": "Apron",
+   "attach": "BodyFrontAttachment",
+   "ref_size": [
+    1.943,
+    1.698,
+    1.004
+   ]
+  },
+  "url": "https://raw.githubusercontent.com/landonhjones2020-bit/nightshift-assets/main/meshes/F_cosmetics/Cosmetic_Apron_Patched.json",
+  "parts": [
+   {
+    "name": "Stitches",
+    "color": "#1C1714",
+    "material": "SmoothPlastic",
+    "transparency": 0.0,
+    "castShadow": true,
+    "canCollide": false,
+    "role": null,
+    "bone": null,
+    "offset": [
+     0.017,
+     -0.453,
+     -0.159
+    ],
+    "size": [
+     1.531,
+     2.453,
+     0.103
+    ],
+    "hash": "0f6f0a3986cc868e",
+    "tris": 172
+   },
+   {
+    "name": "Apron",
+    "color": "#5A4B3A",
+    "material": "SmoothPlastic",
+    "transparency": 0.0,
+    "castShadow": true,
+    "canCollide": false,
+    "role": "cos_body",
+    "bone": null,
+    "offset": [
+     0.0,
+     -0.641,
+     -0.149
+    ],
+    "size": [
+     2.023,
+     3.072,
+     0.225
+    ],
+    "hash": "5cf6426a7694df06",
+    "tris": 306
+   },
+   {
+    "name": "Trim",
+    "color": "#2A2430",
+    "material": "SmoothPlastic",
+    "transparency": 0.0,
+    "castShadow": true,
+    "canCollide": false,
+    "role": "cos_trim",
+    "bone": null,
+    "offset": [
+     0.0,
+     -0.516,
+     0.424
+    ],
+    "size": [
+     2.054,
+     3.281,
+     1.343
+    ],
+    "hash": "1b7cb73879534b9c",
+    "tris": 1066
+   },
+   {
+    "name": "Rivets",
+    "color": "#C9A24A",
+    "material": "Metal",
+    "transparency": 0.0,
+    "castShadow": true,
+    "canCollide": false,
+    "role": null,
+    "bone": null,
+    "offset": [
+     0.0,
+     0.85,
+     -0.126
+    ],
+    "size": [
+     1.08,
+     0.08,
+     0.022
+    ],
+    "hash": "1ea8e4d61915ac40",
+    "tris": 64
+   },
+   {
+    "name": "Threads",
+    "color": "#5A4B3A",
+    "material": "SmoothPlastic",
+    "transparency": 0.0,
+    "castShadow": true,
+    "canCollide": false,
+    "role": "cos_body",
+    "bone": null,
+    "offset": [
+     -0.22,
+     -2.108,
+     -0.218
+    ],
+    "size": [
+     1.255,
+     0.205,
+     0.05
+    ],
+    "hash": "6f9c5bdeacca3c54",
+    "tris": 36
+   }
+  ]
+ },
+ "Cosmetic_Apron_Splash": {
+  "group": "Cosmetics",
+  "size": [
+   2.054,
+   3.151,
+   1.335
+  ],
+  "tris": 1745,
+  "meta": {
+   "slot": "Apron",
+   "attach": "BodyFrontAttachment",
+   "ref_size": [
+    1.943,
+    1.698,
+    1.004
+   ]
+  },
+  "url": "https://raw.githubusercontent.com/landonhjones2020-bit/nightshift-assets/main/meshes/F_cosmetics/Cosmetic_Apron_Splash.json",
+  "parts": [
+   {
+    "name": "Apron",
+    "color": "#F4F1EA",
+    "material": "SmoothPlastic",
+    "transparency": 0.0,
+    "castShadow": true,
+    "canCollide": false,
+    "role": "cos_body",
+    "bone": null,
+    "offset": [
+     0.0,
+     -0.525,
+     -0.134
+    ],
+    "size": [
+     1.887,
+     2.84,
+     0.194
+    ],
+    "hash": "532a91cfd15c90bb",
+    "tris": 160
+   },
+   {
+    "name": "Trim",
+    "color": "#D9302B",
+    "material": "SmoothPlastic",
+    "transparency": 0.0,
+    "castShadow": true,
+    "canCollide": false,
+    "role": "cos_trim",
+    "bone": null,
+    "offset": [
+     0.0,
+     -0.451,
+     0.428
+    ],
+    "size": [
+     2.054,
+     3.151,
+     1.335
+    ],
+    "hash": "d6c8c5fdabc773e2",
+    "tris": 1461
+   },
+   {
+    "name": "SmoothPlastic",
+    "color": "#FFFFFF",
+    "material": "SmoothPlastic",
+    "transparency": 0.0,
+    "castShadow": true,
+    "canCollide": false,
+    "role": null,
+    "bone": null,
+    "offset": [
+     -0.117,
+     0.768,
+     -0.127
+    ],
+    "size": [
+     0.088,
+     0.323,
+     0.052
+    ],
+    "hash": "6cdbd466bda1d208",
+    "tris": 60
+   },
+   {
+    "name": "Rivets",
+    "color": "#C9A24A",
+    "material": "Metal",
+    "transparency": 0.0,
+    "castShadow": true,
+    "canCollide": false,
+    "role": null,
+    "bone": null,
+    "offset": [
+     0.0,
+     0.85,
+     -0.126
+    ],
+    "size": [
+     1.08,
+     0.08,
+     0.022
+    ],
+    "hash": "1ea8e4d61915ac40",
+    "tris": 64
+   }
+  ]
+ },
+ "Cosmetic_Apron_Stripes": {
+  "group": "Cosmetics",
+  "size": [
+   2.054,
+   3.151,
+   1.335
+  ],
+  "tris": 1682,
+  "meta": {
+   "slot": "Apron",
+   "attach": "BodyFrontAttachment",
+   "ref_size": [
+    1.943,
+    1.698,
+    1.004
+   ]
+  },
+  "url": "https://raw.githubusercontent.com/landonhjones2020-bit/nightshift-assets/main/meshes/F_cosmetics/Cosmetic_Apron_Stripes.json",
+  "parts": [
+   {
+    "name": "Apron",
+    "color": "#F4F1EA",
+    "material": "SmoothPlastic",
+    "transparency": 0.0,
+    "castShadow": true,
+    "canCollide": false,
+    "role": "cos_body",
+    "bone": null,
+    "offset": [
+     0.0,
+     -0.525,
+     -0.134
+    ],
+    "size": [
+     1.887,
+     2.84,
+     0.194
+    ],
+    "hash": "532a91cfd15c90bb",
+    "tris": 160
+   },
+   {
+    "name": "Trim",
+    "color": "#2E5FA8",
+    "material": "SmoothPlastic",
+    "transparency": 0.0,
+    "castShadow": true,
+    "canCollide": false,
+    "role": "cos_trim",
+    "bone": null,
+    "offset": [
+     0.0,
+     -0.451,
+     0.428
+    ],
+    "size": [
+     2.054,
+     3.151,
+     1.335
+    ],
+    "hash": "26159aed139a4a1f",
+    "tris": 1398
+   },
+   {
+    "name": "SmoothPlastic",
+    "color": "#FFFFFF",
+    "material": "SmoothPlastic",
+    "transparency": 0.0,
+    "castShadow": true,
+    "canCollide": false,
+    "role": null,
+    "bone": null,
+    "offset": [
+     -0.117,
+     0.768,
+     -0.127
+    ],
+    "size": [
+     0.088,
+     0.323,
+     0.052
+    ],
+    "hash": "6cdbd466bda1d208",
+    "tris": 60
+   },
+   {
+    "name": "Rivets",
+    "color": "#C9A24A",
+    "material": "Metal",
+    "transparency": 0.0,
+    "castShadow": true,
+    "canCollide": false,
+    "role": null,
+    "bone": null,
+    "offset": [
+     0.0,
+     0.85,
+     -0.126
+    ],
+    "size": [
+     1.08,
+     0.08,
+     0.022
+    ],
+    "hash": "1ea8e4d61915ac40",
+    "tris": 64
+   }
+  ]
+ },
+ "Cosmetic_Flashlight": {
+  "group": "Cosmetics",
+  "size": [
+   0.49,
+   0.478,
+   1.444
+  ],
+  "tris": 920,
+  "meta": {
+   "slot": "Flashlight",
+   "attach": "LeftGripAttachment"
+  },
+  "url": "https://raw.githubusercontent.com/landonhjones2020-bit/nightshift-assets/main/meshes/F_cosmetics/Cosmetic_Flashlight.json",
+  "parts": [
+   {
+    "name": "Body",
+    "color": "#2C2C3D",
+    "material": "SmoothPlastic",
+    "transparency": 0.0,
+    "castShadow": true,
+    "canCollide": false,
+    "role": "cos_body",
+    "bone": null,
+    "offset": [
+     0.0,
+     0.0,
+     -0.05
+    ],
+    "size": [
+     0.45,
+     0.439,
+     1.1
+    ],
+    "hash": "aa5b1cc85805d805",
+    "tris": 168
+   },
+   {
+    "name": "Grip",
+    "color": "#A9A6B8",
+    "material": "SmoothPlastic",
+    "transparency": 0.0,
+    "castShadow": true,
+    "canCollide": false,
+    "role": "cos_trim",
+    "bone": null,
+    "offset": [
+     0.0,
+     0.023,
+     0.277
+    ],
+    "size": [
+     0.304,
+     0.343,
+     0.974
+    ],
+    "hash": "815553ce331692b6",
+    "tris": 532
+   },
+   {
+    "name": "Bezel",
+    "color": "#A9A6B8",
+    "material": "Metal",
+    "transparency": 0.0,
+    "castShadow": true,
+    "canCollide": false,
+    "role": "cos_trim",
+    "bone": null,
+    "offset": [
+     0.0,
+     0.0,
+     -0.63
+    ],
+    "size": [
+     0.49,
+     0.478,
+     0.1
+    ],
+    "hash": "bff910f799bbcef3",
+    "tris": 164
+   },
+   {
+    "name": "Lens",
+    "color": "#FFF1C4",
+    "material": "Neon",
+    "transparency": 0.0,
+    "castShadow": false,
+    "canCollide": false,
+    "role": "cos_beam",
+    "bone": null,
+    "offset": [
+     0.0,
+     0.0,
+     -0.632
+    ],
+    "size": [
+     0.39,
+     0.38,
+     0.065
+    ],
+    "hash": "30def9e0e34274df",
+    "tris": 56
+   }
+  ],
+  "sockets": {
+   "Beam": {
+    "p": [
+     0.0,
+     0.0,
+     -0.665
+    ],
+    "yaw": 0.0
+   }
+  }
+ },
+ "Cosmetic_Flashlight_Lantern": {
+  "group": "Cosmetics",
+  "size": [
+   0.47,
+   0.949,
+   0.47
+  ],
+  "tris": 972,
+  "meta": {
+   "slot": "Flashlight",
+   "attach": "LeftGripAttachment"
+  },
+  "url": "https://raw.githubusercontent.com/landonhjones2020-bit/nightshift-assets/main/meshes/F_cosmetics/Cosmetic_Flashlight_Lantern.json",
+  "parts": [
+   {
+    "name": "Cage",
+    "color": "#3A3A40",
+    "material": "SmoothPlastic",
+    "transparency": 0.0,
+    "castShadow": true,
+    "canCollide": false,
+    "role": "cos_body",
+    "bone": null,
+    "offset": [
+     0.0,
+     -0.41,
+     0.0
+    ],
+    "size": [
+     0.392,
+     0.819,
+     0.392
+    ],
+    "hash": "597597ccd9e0df5e",
+    "tris": 416
+   },
+   {
+    "name": "Trim",
+    "color": "#FFB020",
+    "material": "SmoothPlastic",
+    "transparency": 0.0,
+    "castShadow": true,
+    "canCollide": false,
+    "role": "cos_trim",
+    "bone": null,
+    "offset": [
+     0.0,
+     -0.493,
+     0.0
+    ],
+    "size": [
+     0.47,
+     0.914,
+     0.47
+    ],
+    "hash": "52f4ea0bf059b463",
+    "tris": 368
+   },
+   {
+    "name": "Glass",
+    "color": "#FFD27A",
+    "material": "Glass",
+    "transparency": 0.5,
+    "castShadow": false,
+    "canCollide": false,
+    "role": "cos_beam",
+    "bone": null,
+    "offset": [
+     0.0,
+     -0.585,
+     0.0
+    ],
+    "size": [
+     0.342,
+     0.4,
+     0.342
+    ],
+    "hash": "c143c054aca87b39",
+    "tris": 48
+   },
+   {
+    "name": "Candle",
+    "color": "#F3E9D2",
+    "material": "SmoothPlastic",
+    "transparency": 0.0,
+    "castShadow": true,
+    "canCollide": false,
+    "role": null,
+    "bone": null,
+    "offset": [
+     0.0,
+     -0.74,
+     0.0
+    ],
+    "size": [
+     0.101,
+     0.15,
+     0.101
+    ],
+    "hash": "2d9642f99aa8968c",
+    "tris": 92
+   },
+   {
+    "name": "Flame",
+    "color": "#FFD27A",
+    "material": "Neon",
+    "transparency": 0.0,
+    "castShadow": false,
+    "canCollide": false,
+    "role": "cos_beam",
+    "bone": null,
+    "offset": [
+     0.0,
+     -0.557,
+     0.0
+    ],
+    "size": [
+     0.112,
+     0.175,
+     0.112
+    ],
+    "hash": "2afb4edff81bd25d",
+    "tris": 48
+   }
+  ],
+  "sockets": {
+   "Beam": {
+    "p": [
+     0.0,
+     -0.585,
+     0.0
+    ],
+    "yaw": 0.0
+   }
+  }
+ },
+ "Cosmetic_Flashlight_Striped": {
+  "group": "Cosmetics",
+  "size": [
+   0.49,
+   0.478,
+   1.444
+  ],
+  "tris": 872,
+  "meta": {
+   "slot": "Flashlight",
+   "attach": "LeftGripAttachment"
+  },
+  "url": "https://raw.githubusercontent.com/landonhjones2020-bit/nightshift-assets/main/meshes/F_cosmetics/Cosmetic_Flashlight_Striped.json",
+  "parts": [
+   {
+    "name": "Body",
+    "color": "#F4F1EA",
+    "material": "SmoothPlastic",
+    "transparency": 0.0,
+    "castShadow": true,
+    "canCollide": false,
+    "role": "cos_body",
+    "bone": null,
+    "offset": [
+     0.0,
+     0.0,
+     -0.05
+    ],
+    "size": [
+     0.45,
+     0.45,
+     1.1
+    ],
+    "hash": "a6db5c465f39b00e",
+    "tris": 236
+   },
+   {
+    "name": "Stripes",
+    "color": "#FF3D7F",
+    "material": "SmoothPlastic",
+    "transparency": 0.0,
+    "castShadow": true,
+    "canCollide": false,
+    "role": "cos_trim",
+    "bone": null,
+    "offset": [
+     0.0,
+     0.0,
+     -0.05
+    ],
+    "size": [
+     0.45,
+     0.45,
+     1.1
+    ],
+    "hash": "8a96a3c667f22b61",
+    "tris": 208
+   },
+   {
+    "name": "Grip",
+    "color": "#FF3D7F",
+    "material": "SmoothPlastic",
+    "transparency": 0.0,
+    "castShadow": true,
+    "canCollide": false,
+    "role": "cos_trim",
+    "bone": null,
+    "offset": [
+     0.0,
+     0.024,
+     0.277
+    ],
+    "size": [
+     0.3,
+     0.341,
+     0.974
+    ],
+    "hash": "5aea617e6859a86d",
+    "tris": 208
+   },
+   {
+    "name": "Bezel",
+    "color": "#FF3D7F",
+    "material": "Metal",
+    "transparency": 0.0,
+    "castShadow": true,
+    "canCollide": false,
+    "role": "cos_trim",
+    "bone": null,
+    "offset": [
+     0.0,
+     0.0,
+     -0.63
+    ],
+    "size": [
+     0.49,
+     0.478,
+     0.1
+    ],
+    "hash": "bff910f799bbcef3",
+    "tris": 164
+   },
+   {
+    "name": "Lens",
+    "color": "#FFF1C4",
+    "material": "Neon",
+    "transparency": 0.0,
+    "castShadow": false,
+    "canCollide": false,
+    "role": "cos_beam",
+    "bone": null,
+    "offset": [
+     0.0,
+     0.0,
+     -0.632
+    ],
+    "size": [
+     0.39,
+     0.38,
+     0.065
+    ],
+    "hash": "30def9e0e34274df",
+    "tris": 56
+   }
+  ],
+  "sockets": {
+   "Beam": {
+    "p": [
+     0.0,
+     0.0,
+     -0.665
+    ],
+    "yaw": 0.0
+   }
+  }
+ },
+ "Cosmetic_Hat_Hairnet": {
+  "group": "Cosmetics",
+  "size": [
+   1.301,
+   0.702,
+   1.301
+  ],
+  "tris": 1182,
+  "meta": {
+   "slot": "Hat",
+   "attach": "HatAttachment",
+   "ref_size": [
+    1.159,
+    1.182,
+    1.161
+   ]
+  },
+  "url": "https://raw.githubusercontent.com/landonhjones2020-bit/nightshift-assets/main/meshes/F_cosmetics/Cosmetic_Hat_Hairnet.json",
+  "parts": [
+   {
+    "name": "Net",
+    "color": "#D8D4CC",
+    "material": "SmoothPlastic",
+    "transparency": 0.3,
+    "castShadow": true,
+    "canCollide": false,
+    "role": "cos_body",
+    "bone": null,
+    "offset": [
+     0.0,
+     -0.03,
+     0.0
+    ],
+    "size": [
+     1.296,
+     0.62,
+     1.276
+    ],
+    "hash": "0dc89ba78beb3e29",
+    "tris": 270
+   },
+   {
+    "name": "Strands",
+    "color": "#D8D4CC",
+    "material": "SmoothPlastic",
+    "transparency": 0.0,
+    "castShadow": true,
+    "canCollide": false,
+    "role": "cos_body",
+    "bone": null,
+    "offset": [
+     0.0,
+     0.004,
+     0.0
+    ],
+    "size": [
+     1.301,
+     0.626,
+     1.301
+    ],
+    "hash": "31e0af06df5077c4",
+    "tris": 624
+   },
+   {
+    "name": "Band",
+    "color": "#D8D4CC",
+    "material": "SmoothPlastic",
+    "transparency": 0.0,
+    "castShadow": true,
+    "canCollide": false,
+    "role": "cos_body",
+    "bone": null,
+    "offset": [
+     0.0,
+     -0.345,
+     0.0
+    ],
+    "size": [
+     1.278,
+     0.08,
+     1.298
+    ],
+    "hash": "c5cd9fd23f33d0fb",
+    "tris": 288
+   }
+  ]
+ },
+ "Cosmetic_Hat_Lampshade": {
+  "group": "Cosmetics",
+  "size": [
+   1.782,
+   1.301,
+   1.798
+  ],
+  "tris": 1148,
+  "meta": {
+   "slot": "Hat",
+   "attach": "HatAttachment",
+   "ref_size": [
+    1.159,
+    1.182,
+    1.161
+   ]
+  },
+  "url": "https://raw.githubusercontent.com/landonhjones2020-bit/nightshift-assets/main/meshes/F_cosmetics/Cosmetic_Hat_Lampshade.json",
+  "parts": [
+   {
+    "name": "Shade",
+    "color": "#E8DCC0",
+    "material": "SmoothPlastic",
+    "transparency": 0.0,
+    "castShadow": true,
+    "canCollide": false,
+    "role": "cos_body",
+    "bone": null,
+    "offset": [
+     0.066,
+     0.033,
+     -0.033
+    ],
+    "size": [
+     1.714,
+     1.148,
+     1.733
+    ],
+    "hash": "78c81fa3640d42d0",
+    "tris": 384
+   },
+   {
+    "name": "Trim",
+    "color": "#3A2E28",
+    "material": "SmoothPlastic",
+    "transparency": 0.0,
+    "castShadow": true,
+    "canCollide": false,
+    "role": "cos_trim",
+    "bone": null,
+    "offset": [
+     0.064,
+     -0.026,
+     -0.032
+    ],
+    "size": [
+     1.782,
+     1.301,
+     1.798
+    ],
+    "hash": "9c531de1e604fb75",
+    "tris": 644
+   },
+   {
+    "name": "Bulb",
+    "color": "#FFE9A8",
+    "material": "Neon",
+    "transparency": 0.0,
+    "castShadow": false,
+    "canCollide": false,
+    "role": "cos_beam",
+    "bone": null,
+    "offset": [
+     -0.061,
+     0.309,
+     0.03
+    ],
+    "size": [
+     0.221,
+     0.274,
+     0.213
+    ],
+    "hash": "22efa87b598023fc",
+    "tris": 120
+   }
+  ]
+ },
+ "Cosmetic_Hat_PaperBag": {
+  "group": "Cosmetics",
+  "size": [
+   1.396,
+   1.474,
+   1.41
+  ],
+  "tris": 998,
+  "meta": {
+   "slot": "Hat",
+   "attach": "HatAttachment",
+   "ref_size": [
+    1.159,
+    1.182,
+    1.161
+   ]
+  },
+  "url": "https://raw.githubusercontent.com/landonhjones2020-bit/nightshift-assets/main/meshes/F_cosmetics/Cosmetic_Hat_PaperBag.json",
+  "parts": [
+   {
+    "name": "Bag",
+    "color": "#C9A274",
+    "material": "SmoothPlastic",
+    "transparency": 0.0,
+    "castShadow": true,
+    "canCollide": false,
+    "role": "cos_body",
+    "bone": null,
+    "offset": [
+     0.0,
+     -0.569,
+     0.0
+    ],
+    "size": [
+     1.396,
+     1.474,
+     1.41
+    ],
+    "hash": "0daf437a3e8ccd7c",
+    "tris": 946
+   },
+   {
+    "name": "SmoothPlastic",
+    "color": "#FFFFFF",
+    "material": "SmoothPlastic",
+    "transparency": 0.0,
+    "castShadow": true,
+    "canCollide": false,
+    "role": null,
+    "bone": null,
+    "offset": [
+     0.0,
+     -0.621,
+     -0.699
+    ],
+    "size": [
+     0.94,
+     0.536,
+     0.004
+    ],
+    "hash": "8ad4327068bbd69a",
+    "tris": 52
+   }
+  ]
+ },
+ "Cosmetic_Hat_PaperCap": {
+  "group": "Cosmetics",
+  "size": [
+   1.3,
+   0.622,
+   1.75
+  ],
+  "tris": 1008,
+  "meta": {
+   "slot": "Hat",
+   "attach": "HatAttachment",
+   "ref_size": [
+    1.159,
+    1.182,
+    1.161
+   ]
+  },
+  "url": "https://raw.githubusercontent.com/landonhjones2020-bit/nightshift-assets/main/meshes/F_cosmetics/Cosmetic_Hat_PaperCap.json",
+  "parts": [
+   {
+    "name": "Cap",
+    "color": "#F4F1EA",
+    "material": "SmoothPlastic",
+    "transparency": 0.0,
+    "castShadow": true,
+    "canCollide": false,
+    "role": "cos_body",
+    "bone": null,
+    "offset": [
+     0.0,
+     0.009,
+     0.0
+    ],
+    "size": [
+     1.29,
+     0.622,
+     1.75
+    ],
+    "hash": "b73dea3183c6f8c6",
+    "tris": 720
+   },
+   {
+    "name": "Stripe",
+    "color": "#C8402F",
+    "material": "SmoothPlastic",
+    "transparency": 0.0,
+    "castShadow": true,
+    "canCollide": false,
+    "role": "cos_trim",
+    "bone": null,
+    "offset": [
+     0.0,
+     -0.215,
+     0.0
+    ],
+    "size": [
+     1.3,
+     0.068,
+     1.48
+    ],
+    "hash": "0243725f6eaaea21",
+    "tris": 288
+   }
+  ]
+ },
+ "Cosmetic_Hat_RainHood": {
+  "group": "Cosmetics",
+  "size": [
+   1.43,
+   1.435,
+   1.733
+  ],
+  "tris": 1142,
+  "meta": {
+   "slot": "Hat",
+   "attach": "HatAttachment",
+   "ref_size": [
+    1.159,
+    1.182,
+    1.161
+   ]
+  },
+  "url": "https://raw.githubusercontent.com/landonhjones2020-bit/nightshift-assets/main/meshes/F_cosmetics/Cosmetic_Hat_RainHood.json",
+  "parts": [
+   {
+    "name": "Hood",
+    "color": "#F2C230",
+    "material": "SmoothPlastic",
+    "transparency": 0.0,
+    "castShadow": true,
+    "canCollide": false,
+    "role": "cos_body",
+    "bone": null,
+    "offset": [
+     0.0,
+     -0.502,
+     -0.102
+    ],
+    "size": [
+     1.43,
+     1.335,
+     1.733
+    ],
+    "hash": "838f1b1ee67691f4",
+    "tris": 890
+   },
+   {
+    "name": "Eyelets",
+    "color": "#B9C0C6",
+    "material": "Metal",
+    "transparency": 0.0,
+    "castShadow": true,
+    "canCollide": false,
+    "role": null,
+    "bone": null,
+    "offset": [
+     0.0,
+     -0.67,
+     -0.717
+    ],
+    "size": [
+     1.006,
+     0.064,
+     0.014
+    ],
+    "hash": "f7edd3924c3761ad",
+    "tris": 64
+   },
+   {
+    "name": "SmoothPlastic",
+    "color": "#FFFFFF",
+    "material": "SmoothPlastic",
+    "transparency": 0.0,
+    "castShadow": true,
+    "canCollide": false,
+    "role": null,
+    "bone": null,
+    "offset": [
+     0.0,
+     -0.968,
+     -0.74
+    ],
+    "size": [
+     1.038,
+     0.605,
+     0.076
+    ],
+    "hash": "9902cc9d79e0c5cb",
+    "tris": 188
+   }
+  ]
+ },
+ "Cosmetic_Hat_Toque": {
+  "group": "Cosmetics",
+  "size": [
+   1.822,
+   1.785,
+   1.816
+  ],
+  "tris": 1044,
+  "meta": {
+   "slot": "Hat",
+   "attach": "HatAttachment",
+   "ref_size": [
+    1.159,
+    1.182,
+    1.161
+   ]
+  },
+  "url": "https://raw.githubusercontent.com/landonhjones2020-bit/nightshift-assets/main/meshes/F_cosmetics/Cosmetic_Hat_Toque.json",
+  "parts": [
+   {
+    "name": "Band",
+    "color": "#FFFFFF",
+    "material": "SmoothPlastic",
+    "transparency": 0.0,
+    "castShadow": true,
+    "canCollide": false,
+    "role": "cos_body",
+    "bone": null,
+    "offset": [
+     0.0,
+     -0.15,
+     0.0
+    ],
+    "size": [
+     1.276,
+     0.34,
+     1.276
+    ],
+    "hash": "9df5858377731a2c",
+    "tris": 360
+   },
+   {
+    "name": "Puff",
+    "color": "#FFFFFF",
+    "material": "SmoothPlastic",
+    "transparency": 0.0,
+    "castShadow": true,
+    "canCollide": false,
+    "role": "cos_body",
+    "bone": null,
+    "offset": [
+     0.0,
+     0.723,
+     0.0
+    ],
+    "size": [
+     1.822,
+     1.485,
+     1.816
+    ],
+    "hash": "7d0d1a34f37579ef",
+    "tris": 684
+   }
+  ]
+ },
+ "Cosmetic_Hat_Trucker": {
+  "group": "Cosmetics",
+  "size": [
+   1.664,
+   0.912,
+   1.905
+  ],
+  "tris": 1190,
+  "meta": {
+   "slot": "Hat",
+   "attach": "HatAttachment",
+   "ref_size": [
+    1.159,
+    1.182,
+    1.161
+   ]
+  },
+  "url": "https://raw.githubusercontent.com/landonhjones2020-bit/nightshift-assets/main/meshes/F_cosmetics/Cosmetic_Hat_Trucker.json",
+  "parts": [
+   {
+    "name": "Crown",
+    "color": "#C8402F",
+    "material": "SmoothPlastic",
+    "transparency": 0.0,
+    "castShadow": true,
+    "canCollide": false,
+    "role": "cos_body",
+    "bone": null,
+    "offset": [
+     0.0,
+     -0.081,
+     -0.303
+    ],
+    "size": [
+     1.664,
+     0.813,
+     1.862
+    ],
+    "hash": "7a43ff17b3bef091",
+    "tris": 600
+   },
+   {
+    "name": "FrontPanel",
+    "color": "#F4F1EA",
+    "material": "SmoothPlastic",
+    "transparency": 0.0,
+    "castShadow": true,
+    "canCollide": false,
+    "role": "cos_trim",
+    "bone": null,
+    "offset": [
+     0.0,
+     0.057,
+     -0.021
+    ],
+    "size": [
+     1.094,
+     0.734,
+     1.371
+    ],
+    "hash": "3eeb18642574312a",
+    "tris": 268
+   },
+   {
+    "name": "SmoothPlastic",
+    "color": "#FFFFFF",
+    "material": "SmoothPlastic",
+    "transparency": 0.0,
+    "castShadow": true,
+    "canCollide": false,
+    "role": null,
+    "bone": null,
+    "offset": [
+     0.001,
+     -0.077,
+     -0.03
+    ],
+    "size": [
+     1.261,
+     0.465,
+     1.325
+    ],
+    "hash": "1360b24e4e565f8a",
+    "tris": 258
+   },
+   {
+    "name": "Snaps",
+    "color": "#9AA2AA",
+    "material": "Metal",
+    "transparency": 0.0,
+    "castShadow": true,
+    "canCollide": false,
+    "role": null,
+    "bone": null,
+    "offset": [
+     0.0,
+     -0.27,
+     0.665
+    ],
+    "size": [
+     0.154,
+     0.034,
+     0.013
+    ],
+    "hash": "6daf7ee31e165c8f",
+    "tris": 64
+   }
+  ]
+ },
+ "Cosmetic_Spatula": {
+  "group": "Cosmetics",
+  "size": [
+   0.66,
+   0.25,
+   1.94
+  ],
+  "tris": 516,
+  "meta": {
+   "slot": "Spatula",
+   "attach": "RightGripAttachment"
+  },
+  "url": "https://raw.githubusercontent.com/landonhjones2020-bit/nightshift-assets/main/meshes/F_cosmetics/Cosmetic_Spatula.json",
+  "parts": [
+   {
+    "name": "Handle",
+    "color": "#2C2C3D",
+    "material": "SmoothPlastic",
+    "transparency": 0.0,
+    "castShadow": true,
+    "canCollide": false,
+    "role": "cos_trim",
+    "bone": null,
+    "offset": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "size": [
+     0.22,
+     0.151,
+     0.78
+    ],
+    "hash": "2a378d3511a28546",
+    "tris": 120
+   },
+   {
+    "name": "Rivets",
+    "color": "#C9A24A",
+    "material": "Metal",
+    "transparency": 0.0,
+    "castShadow": true,
+    "canCollide": false,
+    "role": null,
+    "bone": null,
+    "offset": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "size": [
+     0.055,
+     0.17,
+     0.424
+    ],
+    "hash": "79b30cd46e569ea7",
+    "tris": 60
+   },
+   {
+    "name": "Blade",
+    "color": "#C9CCD6",
+    "material": "Metal",
+    "transparency": 0.0,
+    "castShadow": true,
+    "canCollide": false,
+    "role": "cos_body",
+    "bone": null,
+    "offset": [
+     0.0,
+     -0.045,
+     -0.96
+    ],
+    "size": [
+     0.66,
+     0.24,
+     1.18
+    ],
+    "hash": "f7ec9d4fc4614bd1",
+    "tris": 336
+   }
+  ]
+ },
+ "Cosmetic_Spatula_Bone": {
+  "group": "Cosmetics",
+  "size": [
+   0.611,
+   0.25,
+   1.946
+  ],
+  "tris": 1064,
+  "meta": {
+   "slot": "Spatula",
+   "attach": "RightGripAttachment"
+  },
+  "url": "https://raw.githubusercontent.com/landonhjones2020-bit/nightshift-assets/main/meshes/F_cosmetics/Cosmetic_Spatula_Bone.json",
+  "parts": [
+   {
+    "name": "Bone",
+    "color": "#EDE6D6",
+    "material": "SmoothPlastic",
+    "transparency": 0.0,
+    "castShadow": true,
+    "canCollide": false,
+    "role": "cos_body",
+    "bone": null,
+    "offset": [
+     0.0,
+     -0.055,
+     -0.472
+    ],
+    "size": [
+     0.611,
+     0.25,
+     1.946
+    ],
+    "hash": "f86e867d01bd201f",
+    "tris": 1064
+   }
+  ]
+ },
+ "Cosmetic_Spatula_Pan": {
+  "group": "Cosmetics",
+  "size": [
+   1.099,
+   0.218,
+   1.942
+  ],
+  "tris": 668,
+  "meta": {
+   "slot": "Spatula",
+   "attach": "RightGripAttachment"
+  },
+  "url": "https://raw.githubusercontent.com/landonhjones2020-bit/nightshift-assets/main/meshes/F_cosmetics/Cosmetic_Spatula_Pan.json",
+  "parts": [
+   {
+    "name": "Pan",
+    "color": "#2C2C3D",
+    "material": "Metal",
+    "transparency": 0.0,
+    "castShadow": true,
+    "canCollide": false,
+    "role": "cos_body",
+    "bone": null,
+    "offset": [
+     0.0,
+     -0.041,
+     -0.549
+    ],
+    "size": [
+     1.099,
+     0.218,
+     1.942
+    ],
+    "hash": "52e84e11c25f7e91",
+    "tris": 576
+   },
+   {
+    "name": "Wrap",
+    "color": "#5A4B3A",
+    "material": "SmoothPlastic",
+    "transparency": 0.0,
+    "castShadow": true,
+    "canCollide": false,
+    "role": "cos_trim",
+    "bone": null,
+    "offset": [
+     0.0,
+     0.001,
+     -0.011
+    ],
+    "size": [
+     0.15,
+     0.133,
+     0.602
+    ],
+    "hash": "21a9d29b00423b8d",
+    "tris": 92
+   }
+  ]
+ },
+ "Cosmetic_Spatula_RollingPin": {
+  "group": "Cosmetics",
+  "size": [
+   0.38,
+   0.374,
+   1.99
+  ],
+  "tris": 576,
+  "meta": {
+   "slot": "Spatula",
+   "attach": "RightGripAttachment"
+  },
+  "url": "https://raw.githubusercontent.com/landonhjones2020-bit/nightshift-assets/main/meshes/F_cosmetics/Cosmetic_Spatula_RollingPin.json",
+  "parts": [
+   {
+    "name": "Pin",
+    "color": "#D9A66B",
+    "material": "Wood",
+    "transparency": 0.0,
+    "castShadow": true,
+    "canCollide": false,
+    "role": "cos_body",
+    "bone": null,
+    "offset": [
+     0.0,
+     0.0,
+     -0.695
+    ],
+    "size": [
+     0.38,
+     0.374,
+     1.99
+    ],
+    "hash": "e5aea117a83c6089",
+    "tris": 496
+   },
+   {
+    "name": "Washers",
+    "color": "#9AA2AA",
+    "material": "Metal",
+    "transparency": 0.0,
+    "castShadow": true,
+    "canCollide": false,
+    "role": null,
+    "bone": null,
+    "offset": [
+     0.0,
+     0.0,
+     -0.695
+    ],
+    "size": [
+     0.17,
+     0.162,
+     0.924
+    ],
+    "hash": "24b3b25ba706b535",
+    "tris": 80
+   }
+  ]
+ },
+ "Cosmetic_Spatula_Wooden": {
+  "group": "Cosmetics",
+  "size": [
+   0.433,
+   0.176,
+   1.889
+  ],
+  "tris": 592,
+  "meta": {
+   "slot": "Spatula",
+   "attach": "RightGripAttachment"
+  },
+  "url": "https://raw.githubusercontent.com/landonhjones2020-bit/nightshift-assets/main/meshes/F_cosmetics/Cosmetic_Spatula_Wooden.json",
+  "parts": [
+   {
+    "name": "Wood",
+    "color": "#B9824A",
+    "material": "Wood",
+    "transparency": 0.0,
+    "castShadow": true,
+    "canCollide": false,
+    "role": "cos_body",
+    "bone": null,
+    "offset": [
+     0.0,
+     0.0,
+     -0.475
+    ],
+    "size": [
+     0.433,
+     0.08,
+     1.85
+    ],
+    "hash": "018af6290488aa53",
+    "tris": 496
+   },
+   {
+    "name": "Loop",
+    "color": "#6B4A35",
+    "material": "SmoothPlastic",
+    "transparency": 0.0,
+    "castShadow": true,
+    "canCollide": false,
+    "role": null,
+    "bone": null,
+    "offset": [
+     0.0,
+     -0.01,
+     0.405
+    ],
+    "size": [
+     0.026,
+     0.176,
+     0.167
+    ],
+    "hash": "2413e536673ad885",
+    "tris": 80
+   },
+   {
+    "name": "Scorch",
+    "color": "#6A4326",
+    "material": "Wood",
+    "transparency": 0.0,
+    "castShadow": true,
+    "canCollide": false,
+    "role": null,
+    "bone": null,
+    "offset": [
+     0.0,
+     0.015,
+     -1.229
+    ],
+    "size": [
+     0.4,
+     0.008,
+     0.246
+    ],
+    "hash": "409f5060cd21a16a",
+    "tris": 16
+   }
+  ]
+ }
+}

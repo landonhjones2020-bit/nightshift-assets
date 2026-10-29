@@ -1,4 +1,337 @@
 {
+ "Cosmetic_apron_butcher": {
+  "group": "cosmetics",
+  "size": [
+   512,
+   512
+  ],
+  "hash": "07b6e13ecdac9f6b",
+  "url": "https://raw.githubusercontent.com/landonhjones2020-bit/nightshift-assets/main/icons/cosmetics/Cosmetic_apron_butcher.nsz"
+ },
+ "Cosmetic_apron_checkered": {
+  "group": "cosmetics",
+  "size": [
+   512,
+   512
+  ],
+  "hash": "f858721f36dcdecd",
+  "url": "https://raw.githubusercontent.com/landonhjones2020-bit/nightshift-assets/main/icons/cosmetics/Cosmetic_apron_checkered.nsz"
+ },
+ "Cosmetic_apron_chef_whites": {
+  "group": "cosmetics",
+  "size": [
+   512,
+   512
+  ],
+  "hash": "0d05a5d6238993cc",
+  "url": "https://raw.githubusercontent.com/landonhjones2020-bit/nightshift-assets/main/icons/cosmetics/Cosmetic_apron_chef_whites.nsz"
+ },
+ "Cosmetic_apron_dawn": {
+  "group": "cosmetics",
+  "size": [
+   512,
+   512
+  ],
+  "hash": "8e0d7c9653395a29",
+  "url": "https://raw.githubusercontent.com/landonhjones2020-bit/nightshift-assets/main/icons/cosmetics/Cosmetic_apron_dawn.nsz"
+ },
+ "Cosmetic_apron_first_night": {
+  "group": "cosmetics",
+  "size": [
+   512,
+   512
+  ],
+  "hash": "69983cc2a448cd54",
+  "url": "https://raw.githubusercontent.com/landonhjones2020-bit/nightshift-assets/main/icons/cosmetics/Cosmetic_apron_first_night.nsz"
+ },
+ "Cosmetic_apron_gravedigger": {
+  "group": "cosmetics",
+  "size": [
+   512,
+   512
+  ],
+  "hash": "a8282c1bb508d838",
+  "url": "https://raw.githubusercontent.com/landonhjones2020-bit/nightshift-assets/main/icons/cosmetics/Cosmetic_apron_gravedigger.nsz"
+ },
+ "Cosmetic_apron_ketchup": {
+  "group": "cosmetics",
+  "size": [
+   512,
+   512
+  ],
+  "hash": "0b5d829e3a548beb",
+  "url": "https://raw.githubusercontent.com/landonhjones2020-bit/nightshift-assets/main/icons/cosmetics/Cosmetic_apron_ketchup.nsz"
+ },
+ "Cosmetic_apron_midnight_velvet": {
+  "group": "cosmetics",
+  "size": [
+   512,
+   512
+  ],
+  "hash": "6a0f18048841ce52",
+  "url": "https://raw.githubusercontent.com/landonhjones2020-bit/nightshift-assets/main/icons/cosmetics/Cosmetic_apron_midnight_velvet.nsz"
+ },
+ "Cosmetic_apron_neon": {
+  "group": "cosmetics",
+  "size": [
+   512,
+   512
+  ],
+  "hash": "f0e5f01334ba505d",
+  "url": "https://raw.githubusercontent.com/landonhjones2020-bit/nightshift-assets/main/icons/cosmetics/Cosmetic_apron_neon.nsz"
+ },
+ "Cosmetic_apron_night_owl": {
+  "group": "cosmetics",
+  "size": [
+   512,
+   512
+  ],
+  "hash": "b1435858c2346f81",
+  "url": "https://raw.githubusercontent.com/landonhjones2020-bit/nightshift-assets/main/icons/cosmetics/Cosmetic_apron_night_owl.nsz"
+ },
+ "Cosmetic_apron_stackhouse": {
+  "group": "cosmetics",
+  "size": [
+   512,
+   512
+  ],
+  "hash": "834bc0280a408801",
+  "url": "https://raw.githubusercontent.com/landonhjones2020-bit/nightshift-assets/main/icons/cosmetics/Cosmetic_apron_stackhouse.nsz"
+ },
+ "Cosmetic_apron_static": {
+  "group": "cosmetics",
+  "size": [
+   512,
+   512
+  ],
+  "hash": "b905aa481e71e3d5",
+  "url": "https://raw.githubusercontent.com/landonhjones2020-bit/nightshift-assets/main/icons/cosmetics/Cosmetic_apron_static.nsz"
+ },
+ "Cosmetic_apron_vip_gold": {
+  "group": "cosmetics",
+  "size": [
+   512,
+   512
+  ],
+  "hash": "213263e8d11610d3",
+  "url": "https://raw.githubusercontent.com/landonhjones2020-bit/nightshift-assets/main/icons/cosmetics/Cosmetic_apron_vip_gold.nsz"
+ },
+ "Cosmetic_fl_candy": {
+  "group": "cosmetics",
+  "size": [
+   512,
+   512
+  ],
+  "hash": "490948a1e625d577",
+  "url": "https://raw.githubusercontent.com/landonhjones2020-bit/nightshift-assets/main/icons/cosmetics/Cosmetic_fl_candy.nsz"
+ },
+ "Cosmetic_fl_chrome": {
+  "group": "cosmetics",
+  "size": [
+   512,
+   512
+  ],
+  "hash": "13c0d55925e6c616",
+  "url": "https://raw.githubusercontent.com/landonhjones2020-bit/nightshift-assets/main/icons/cosmetics/Cosmetic_fl_chrome.nsz"
+ },
+ "Cosmetic_fl_ghost_glow": {
+  "group": "cosmetics",
+  "size": [
+   512,
+   512
+  ],
+  "hash": "c0ffc6e5a5f58df9",
+  "url": "https://raw.githubusercontent.com/landonhjones2020-bit/nightshift-assets/main/icons/cosmetics/Cosmetic_fl_ghost_glow.nsz"
+ },
+ "Cosmetic_fl_lantern": {
+  "group": "cosmetics",
+  "size": [
+   512,
+   512
+  ],
+  "hash": "6526774d6817d19f",
+  "url": "https://raw.githubusercontent.com/landonhjones2020-bit/nightshift-assets/main/icons/cosmetics/Cosmetic_fl_lantern.nsz"
+ },
+ "Cosmetic_fl_midnight": {
+  "group": "cosmetics",
+  "size": [
+   512,
+   512
+  ],
+  "hash": "82d33d00b216ee03",
+  "url": "https://raw.githubusercontent.com/landonhjones2020-bit/nightshift-assets/main/icons/cosmetics/Cosmetic_fl_midnight.nsz"
+ },
+ "Cosmetic_fl_neon": {
+  "group": "cosmetics",
+  "size": [
+   512,
+   512
+  ],
+  "hash": "632a53a9bb983780",
+  "url": "https://raw.githubusercontent.com/landonhjones2020-bit/nightshift-assets/main/icons/cosmetics/Cosmetic_fl_neon.nsz"
+ },
+ "Cosmetic_fl_red": {
+  "group": "cosmetics",
+  "size": [
+   512,
+   512
+  ],
+  "hash": "55b51caf5bf78e1f",
+  "url": "https://raw.githubusercontent.com/landonhjones2020-bit/nightshift-assets/main/icons/cosmetics/Cosmetic_fl_red.nsz"
+ },
+ "Cosmetic_fl_standard": {
+  "group": "cosmetics",
+  "size": [
+   512,
+   512
+  ],
+  "hash": "865b1ca5d77a22bf",
+  "url": "https://raw.githubusercontent.com/landonhjones2020-bit/nightshift-assets/main/icons/cosmetics/Cosmetic_fl_standard.nsz"
+ },
+ "Cosmetic_hat_chef_toque": {
+  "group": "cosmetics",
+  "size": [
+   512,
+   512
+  ],
+  "hash": "6610b3097fc44c86",
+  "url": "https://raw.githubusercontent.com/landonhjones2020-bit/nightshift-assets/main/icons/cosmetics/Cosmetic_hat_chef_toque.nsz"
+ },
+ "Cosmetic_hat_hairnet": {
+  "group": "cosmetics",
+  "size": [
+   512,
+   512
+  ],
+  "hash": "5acc38b81c2c06a5",
+  "url": "https://raw.githubusercontent.com/landonhjones2020-bit/nightshift-assets/main/icons/cosmetics/Cosmetic_hat_hairnet.nsz"
+ },
+ "Cosmetic_hat_lampshade": {
+  "group": "cosmetics",
+  "size": [
+   512,
+   512
+  ],
+  "hash": "b849acbaec6d37dd",
+  "url": "https://raw.githubusercontent.com/landonhjones2020-bit/nightshift-assets/main/icons/cosmetics/Cosmetic_hat_lampshade.nsz"
+ },
+ "Cosmetic_hat_neon": {
+  "group": "cosmetics",
+  "size": [
+   512,
+   512
+  ],
+  "hash": "f674702a183bebae",
+  "url": "https://raw.githubusercontent.com/landonhjones2020-bit/nightshift-assets/main/icons/cosmetics/Cosmetic_hat_neon.nsz"
+ },
+ "Cosmetic_hat_night_owl": {
+  "group": "cosmetics",
+  "size": [
+   512,
+   512
+  ],
+  "hash": "dbd788f69d20a0d8",
+  "url": "https://raw.githubusercontent.com/landonhjones2020-bit/nightshift-assets/main/icons/cosmetics/Cosmetic_hat_night_owl.nsz"
+ },
+ "Cosmetic_hat_paper_bag": {
+  "group": "cosmetics",
+  "size": [
+   512,
+   512
+  ],
+  "hash": "91f6573a35a5d0a3",
+  "url": "https://raw.githubusercontent.com/landonhjones2020-bit/nightshift-assets/main/icons/cosmetics/Cosmetic_hat_paper_bag.nsz"
+ },
+ "Cosmetic_hat_paper_cap": {
+  "group": "cosmetics",
+  "size": [
+   512,
+   512
+  ],
+  "hash": "2034665d407480d9",
+  "url": "https://raw.githubusercontent.com/landonhjones2020-bit/nightshift-assets/main/icons/cosmetics/Cosmetic_hat_paper_cap.nsz"
+ },
+ "Cosmetic_hat_rain_hood": {
+  "group": "cosmetics",
+  "size": [
+   512,
+   512
+  ],
+  "hash": "1f2bdf5b3875a509",
+  "url": "https://raw.githubusercontent.com/landonhjones2020-bit/nightshift-assets/main/icons/cosmetics/Cosmetic_hat_rain_hood.nsz"
+ },
+ "Cosmetic_hat_trucker": {
+  "group": "cosmetics",
+  "size": [
+   512,
+   512
+  ],
+  "hash": "a1757c246c29aafd",
+  "url": "https://raw.githubusercontent.com/landonhjones2020-bit/nightshift-assets/main/icons/cosmetics/Cosmetic_hat_trucker.nsz"
+ },
+ "Cosmetic_sp_bone": {
+  "group": "cosmetics",
+  "size": [
+   512,
+   512
+  ],
+  "hash": "463154a77db38887",
+  "url": "https://raw.githubusercontent.com/landonhjones2020-bit/nightshift-assets/main/icons/cosmetics/Cosmetic_sp_bone.nsz"
+ },
+ "Cosmetic_sp_frying_pan": {
+  "group": "cosmetics",
+  "size": [
+   512,
+   512
+  ],
+  "hash": "594808d40b03c5f0",
+  "url": "https://raw.githubusercontent.com/landonhjones2020-bit/nightshift-assets/main/icons/cosmetics/Cosmetic_sp_frying_pan.nsz"
+ },
+ "Cosmetic_sp_golden": {
+  "group": "cosmetics",
+  "size": [
+   512,
+   512
+  ],
+  "hash": "c7446292b03d4add",
+  "url": "https://raw.githubusercontent.com/landonhjones2020-bit/nightshift-assets/main/icons/cosmetics/Cosmetic_sp_golden.nsz"
+ },
+ "Cosmetic_sp_neon": {
+  "group": "cosmetics",
+  "size": [
+   512,
+   512
+  ],
+  "hash": "f364942fcb326374",
+  "url": "https://raw.githubusercontent.com/landonhjones2020-bit/nightshift-assets/main/icons/cosmetics/Cosmetic_sp_neon.nsz"
+ },
+ "Cosmetic_sp_rolling_pin": {
+  "group": "cosmetics",
+  "size": [
+   512,
+   512
+  ],
+  "hash": "25e6c7ba5da25214",
+  "url": "https://raw.githubusercontent.com/landonhjones2020-bit/nightshift-assets/main/icons/cosmetics/Cosmetic_sp_rolling_pin.nsz"
+ },
+ "Cosmetic_sp_standard": {
+  "group": "cosmetics",
+  "size": [
+   512,
+   512
+  ],
+  "hash": "2d66f8e9d8fe96c0",
+  "url": "https://raw.githubusercontent.com/landonhjones2020-bit/nightshift-assets/main/icons/cosmetics/Cosmetic_sp_standard.nsz"
+ },
+ "Cosmetic_sp_wooden": {
+  "group": "cosmetics",
+  "size": [
+   512,
+   512
+  ],
+  "hash": "4677573f58f8e0a3",
+  "url": "https://raw.githubusercontent.com/landonhjones2020-bit/nightshift-assets/main/icons/cosmetics/Cosmetic_sp_wooden.nsz"
+ },
  "Food_Tomato": {
   "group": "food",
   "size": [
