@@ -80,8 +80,12 @@ def build():
     for sx in (-1, 1):
         frame.append(C.rod((sx * STUB, -T_Y - 0.06, BELT_TOP - 0.09), (sx * STUB, T_Y + 0.06, BELT_TOP - 0.09), 0.1, verts=12))
         for sy in (-1, 1):
-            frame.append(ns.box((0.14, 0.14, BELT_TOP - 0.15), loc=(sx * (STUB - 0.2), sy * (T_Y - 0.05), (BELT_TOP - 0.15) / 2),
+            # stub legs kept inside x = +-1.8 so they stand on a 4-wide Kitchen_Worktop
+            frame.append(ns.box((0.14, 0.14, BELT_TOP - 0.15), loc=(sx * (STUB - 0.45), sy * (T_Y - 0.05), (BELT_TOP - 0.15) / 2),
                                 bevel=0.03, segments=1))
+            # chunky feet under the chamber body itself
+            frame.append(ns.box((0.3, 0.3, Z0 + 0.02), loc=(sx * (HX - 0.25), sy * (HY - 0.25), (Z0 + 0.02) / 2),
+                                bevel=0.05, segments=1))
     # exit end-stop lip so sandwiches don't ride off the end
     frame.append(ns.box((0.08, 2 * T_Y, 0.16), loc=(STUB + 0.12, 0, BELT_TOP + 0.02), bevel=0.03, segments=1))
     C.part(frame, "Frame", C.STEEL_DARK, "Metal", smooth_angle=40)
@@ -129,7 +133,8 @@ def build():
         "tunnel_clearance": round(T_Z1 - BELT_TOP, 3),
         "slat_rows": count,
     }
-    return {"export": {"sockets": sockets, "meta": meta}}
+    # pivot = bottom-centre of the chamber, so it centres on Kitchen_Worktop's Top socket
+    return {"export": {"sockets": sockets, "meta": meta, "pivot": (0, 0, 0)}}
 
 
 if __name__ == "__main__":

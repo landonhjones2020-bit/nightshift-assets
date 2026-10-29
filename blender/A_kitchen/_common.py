@@ -133,6 +133,8 @@ def mirror_x(objs_fn, xs):
 
 def part(objs, name, color, mat="SmoothPlastic", **kw):
     """Join (applying modifiers) and tag in one go. objs may be one object or a list."""
+    # nslib.render_preview deletes scene objects whose names start with these prefixes
+    assert not name.startswith(("PreviewCam", "Key", "Fill", "Rim", "RefCube", "Floor")), name
     if not isinstance(objs, (list, tuple)):
         objs = [objs]
     if len(objs) == 1:
@@ -216,3 +218,48 @@ def open_pan(w, d, h, lip=0.06, lip_t=0.04, taper=0.05, r=0.09, n=2, loc=(0, 0, 
         bm.faces.new([inner[i], inner[j], bottom[j], bottom[i]])          # inner wall (in)
     bm.faces.new(bottom)                                                  # floor (up)
     return ns.from_bmesh(bm, name, loc)
+
+
+def strip_yz(points_yz, thickness, width, x=0.0, name="Strip"):
+    """Thin solid strip (paper, straps) following a polyline in the YZ plane, `width` along X,
+    centred on x. The polyline is offset by `thickness` along its left normal to close it."""
+    pts = [Vector((0, y, z)) for y, z in points_yz]
+    off = []
+    for i, p in enumerate(pts):
+        a = pts[max(i - 1, 0)]
+        b = pts[min(i + 1, len(pts) - 1)]
+        t = (b - a).normalized()
+        n = Vector((0, -t.z, t.y))
+        off.append(p + n * thickness)
+    outline = [(p.y, p.z) for p in pts] + [(p.y, p.z) for p in reversed(off)]
+    return extrude(outline, width, plane="YZ", offset=x - width / 2, name=name)
+
+
+def wall_meta(depth: float | None = None, **extra):
+    """Meta for wall-mounted assets modelled with their back face on Blender y = 0.
+    With the default pivot (bbox bottom-centre) the wall plane is depth/2 behind it (Roblox
+    model +Z). depth=None measures it from the tagged objects (call after building)."""
+    if depth is None:
+        lo, hi = ns.bbox_world(ns._tagged_objects())
+        depth = hi.y - lo.y
+    d = {"mount": "wall", "wall_back_z": round(depth / 2, 3)}
+    d.update(extra)
+    return d
+
+
+def rbx(p, pivot):
+    """Blender world point -> Roblox model-space [x, y, z] relative to the asset pivot
+    (the same convention sockets use), rounded for meta."""
+    v = ns.to_roblox(Vector(p) - Vector(pivot))
+    return [round(c, 3) + 0.0 for c in v]
+
+
+def rbx_dir(d):
+    """Blender direction -> Roblox model-space direction."""
+    return [round(c, 3) + 0.0 for c in ns.to_roblox(Vector(d))]
+
+
+def default_pivot():
+    """Bottom-centre of the bbox of every tagged object (what export_asset uses by default)."""
+    lo, hi = ns.bbox_world(ns._tagged_objects())
+    return Vector(((lo.x + hi.x) / 2, (lo.y + hi.y) / 2, lo.z))

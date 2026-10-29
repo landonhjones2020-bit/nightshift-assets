@@ -1,0 +1,2548 @@
+{
+ "Kitchen_BinRail": {
+  "group": "Kitchen",
+  "size": [
+   7.2,
+   4.7,
+   2.265
+  ],
+  "tris": 1764,
+  "meta": {
+   "rail_top": 3.0,
+   "pan_size": [
+    1.1,
+    0.9,
+    0.45
+   ],
+   "surface_label": {
+    "part": "Labels",
+    "face": "Top",
+    "slots": 6
+   },
+   "footprint": [
+    7.2,
+    2.0
+   ]
+  },
+  "url": "https://raw.githubusercontent.com/landonhjones2020-bit/nightshift-assets/main/meshes/A_kitchen/Kitchen_BinRail.json",
+  "parts": [
+   {
+    "name": "Body",
+    "color": "#B9C0C6",
+    "material": "Metal",
+    "transparency": 0.0,
+    "castShadow": true,
+    "canCollide": true,
+    "role": null,
+    "bone": null,
+    "offset": [
+     0.0,
+     1.635,
+     0.0
+    ],
+    "size": [
+     7.2,
+     2.67,
+     2.0
+    ],
+    "hash": "8958b4a44be16617",
+    "tris": 220
+   },
+   {
+    "name": "Metal",
+    "color": "#FFFFFF",
+    "material": "Metal",
+    "transparency": 0.0,
+    "castShadow": true,
+    "canCollide": false,
+    "role": null,
+    "bone": null,
+    "offset": [
+     0.0,
+     2.35,
+     -0.163
+    ],
+    "size": [
+     7.01,
+     4.7,
+     2.205
+    ],
+    "hash": "1a742a88793dd7e9",
+    "tris": 1232
+   },
+   {
+    "name": "SmoothPlastic",
+    "color": "#FFFFFF",
+    "material": "SmoothPlastic",
+    "transparency": 0.0,
+    "castShadow": true,
+    "canCollide": false,
+    "role": null,
+    "bone": null,
+    "offset": [
+     0.0,
+     1.5,
+     -1.005
+    ],
+    "size": [
+     7.07,
+     2.76,
+     0.11
+    ],
+    "hash": "63e3ff60127e6067",
+    "tris": 216
+   },
+   {
+    "name": "Labels",
+    "color": "#EFE6D2",
+    "material": "SmoothPlastic",
+    "transparency": 0.0,
+    "castShadow": true,
+    "canCollide": false,
+    "role": "bin_labels",
+    "bone": null,
+    "offset": [
+     0.0,
+     2.982,
+     -0.55
+    ],
+    "size": [
+     6.28,
+     0.025,
+     0.2
+    ],
+    "hash": "c5e7ddbf8995649b",
+    "tris": 72
+   },
+   {
+    "name": "Display",
+    "color": "#9FD3E8",
+    "material": "Neon",
+    "transparency": 0.0,
+    "castShadow": true,
+    "canCollide": false,
+    "role": "temp_display",
+    "bone": null,
+    "offset": [
+     -2.9,
+     2.73,
+     -1.06
+    ],
+    "size": [
+     0.46,
+     0.17,
+     0.03
+    ],
+    "hash": "1cbf72604e060014",
+    "tris": 12
+   },
+   {
+    "name": "Glass",
+    "color": "#CFEAF5",
+    "material": "Glass",
+    "transparency": 0.55,
+    "castShadow": false,
+    "canCollide": false,
+    "role": null,
+    "bone": null,
+    "offset": [
+     0.0,
+     4.5,
+     0.275
+    ],
+    "size": [
+     6.55,
+     0.322,
+     1.003
+    ],
+    "hash": "142f548a6565eb8f",
+    "tris": 12
+   }
+  ],
+  "sockets": {
+   "Bin1": {
+    "p": [
+     2.75,
+     2.55,
+     0.1
+    ],
+    "yaw": 0.0
+   },
+   "Bin2": {
+    "p": [
+     1.65,
+     2.55,
+     0.1
+    ],
+    "yaw": 0.0
+   },
+   "Bin3": {
+    "p": [
+     0.55,
+     2.55,
+     0.1
+    ],
+    "yaw": 0.0
+   },
+   "Bin4": {
+    "p": [
+     -0.55,
+     2.55,
+     0.1
+    ],
+    "yaw": 0.0
+   },
+   "Bin5": {
+    "p": [
+     -1.65,
+     2.55,
+     0.1
+    ],
+    "yaw": 0.0
+   },
+   "Bin6": {
+    "p": [
+     -2.75,
+     2.55,
+     0.1
+    ],
+    "yaw": 0.0
+   }
+  }
+ },
+ "Kitchen_BreakerBox": {
+  "group": "Kitchen",
+  "size": [
+   3.443,
+   4.1,
+   2.356
+  ],
+  "tris": 1660,
+  "meta": {
+   "mount": "wall",
+   "wall_back_z": 0.275,
+   "suggested_bottom": 2.4,
+   "lever_hinge": [
+    -1.2,
+    1.55,
+    -0.02
+   ],
+   "lever_axis": [
+    -1.0,
+    0.0,
+    0.0
+   ],
+   "lever_off_deg": 100,
+   "switch_hinges": [
+    [
+     0.55,
+     1.58,
+     -0.015
+    ],
+    [
+     0.0,
+     1.58,
+     -0.015
+    ],
+    [
+     -0.55,
+     1.58,
+     -0.015
+    ]
+   ],
+   "switch_axis": [
+    -1.0,
+    0.0,
+    0.0
+   ],
+   "switch_off_deg": 70,
+   "door_hinge": [
+    1.0,
+    0.0,
+    -0.275
+   ],
+   "door_axis": [
+    0.0,
+    1.0,
+    0.0
+   ],
+   "door_close_deg": 112,
+   "rest_state": "on"
+  },
+  "url": "https://raw.githubusercontent.com/landonhjones2020-bit/nightshift-assets/main/meshes/A_kitchen/Kitchen_BreakerBox.json",
+  "parts": [
+   {
+    "name": "SmoothPlastic",
+    "color": "#FFFFFF",
+    "material": "SmoothPlastic",
+    "transparency": 0.0,
+    "castShadow": true,
+    "canCollide": false,
+    "role": null,
+    "bone": null,
+    "offset": [
+     -0.035,
+     1.45,
+     -0.06
+    ],
+    "size": [
+     2.21,
+     2.9,
+     0.67
+    ],
+    "hash": "66fa108c46b6285b",
+    "tris": 968
+   },
+   {
+    "name": "Switch1",
+    "color": "#E8502A",
+    "material": "SmoothPlastic",
+    "transparency": 0.0,
+    "castShadow": true,
+    "canCollide": false,
+    "role": "switch1",
+    "bone": null,
+    "offset": [
+     0.55,
+     1.731,
+     -0.228
+    ],
+    "size": [
+     0.25,
+     0.401,
+     0.494
+    ],
+    "hash": "a4ef40421b44f14d",
+    "tris": 72
+   },
+   {
+    "name": "Switch2",
+    "color": "#E8502A",
+    "material": "SmoothPlastic",
+    "transparency": 0.0,
+    "castShadow": true,
+    "canCollide": false,
+    "role": "switch2",
+    "bone": null,
+    "offset": [
+     0.0,
+     1.731,
+     -0.228
+    ],
+    "size": [
+     0.25,
+     0.401,
+     0.494
+    ],
+    "hash": "72f117116eec4ba3",
+    "tris": 72
+   },
+   {
+    "name": "Switch3",
+    "color": "#E8502A",
+    "material": "SmoothPlastic",
+    "transparency": 0.0,
+    "castShadow": true,
+    "canCollide": false,
+    "role": "switch3",
+    "bone": null,
+    "offset": [
+     -0.55,
+     1.731,
+     -0.228
+    ],
+    "size": [
+     0.25,
+     0.401,
+     0.494
+    ],
+    "hash": "1ef630d5a490b336",
+    "tris": 72
+   },
+   {
+    "name": "Lever",
+    "color": "#D63A2A",
+    "material": "SmoothPlastic",
+    "transparency": 0.0,
+    "castShadow": true,
+    "canCollide": false,
+    "role": "lever",
+    "bone": null,
+    "offset": [
+     -1.375,
+     1.872,
+     -0.405
+    ],
+    "size": [
+     0.49,
+     0.905,
+     1.029
+    ],
+    "hash": "de8cca86bccd87f8",
+    "tris": 196
+   },
+   {
+    "name": "Door",
+    "color": "#8A9096",
+    "material": "SmoothPlastic",
+    "transparency": 0.0,
+    "castShadow": true,
+    "canCollide": false,
+    "role": "door",
+    "bone": null,
+    "offset": [
+     1.417,
+     1.4,
+     -1.142
+    ],
+    "size": [
+     0.811,
+     2.74,
+     1.879
+    ],
+    "hash": "d0ba44cb62f24cd7",
+    "tris": 168
+   },
+   {
+    "name": "Conduit",
+    "color": "#4A4F56",
+    "material": "Metal",
+    "transparency": 0.0,
+    "castShadow": true,
+    "canCollide": false,
+    "role": null,
+    "bone": null,
+    "offset": [
+     -0.55,
+     3.49,
+     0.055
+    ],
+    "size": [
+     0.304,
+     1.22,
+     0.32
+    ],
+    "hash": "fbdeb26b377035e1",
+    "tris": 112
+   }
+  ],
+  "sockets": {
+   "Lever": {
+    "p": [
+     -1.4,
+     2.225,
+     -0.824
+    ],
+    "yaw": 0.0
+   },
+   "Prompt": {
+    "p": [
+     0.0,
+     1.5,
+     -1.275
+    ],
+    "yaw": 0.0
+   }
+  }
+ },
+ "Kitchen_CounterBell": {
+  "group": "Kitchen",
+  "size": [
+   0.82,
+   0.615,
+   0.82
+  ],
+  "tris": 578,
+  "meta": {
+   "plunger_travel": 0.07,
+   "plunger_dir": [
+    0,
+    -1,
+    0
+   ]
+  },
+  "url": "https://raw.githubusercontent.com/landonhjones2020-bit/nightshift-assets/main/meshes/A_kitchen/Kitchen_CounterBell.json",
+  "parts": [
+   {
+    "name": "SmoothPlastic",
+    "color": "#FFFFFF",
+    "material": "SmoothPlastic",
+    "transparency": 0.0,
+    "castShadow": true,
+    "canCollide": false,
+    "role": null,
+    "bone": null,
+    "offset": [
+     0.0,
+     0.078,
+     0.0
+    ],
+    "size": [
+     0.82,
+     0.155,
+     0.82
+    ],
+    "hash": "42d98e83dcfede2f",
+    "tris": 240
+   },
+   {
+    "name": "Dome",
+    "color": "#D3D9DE",
+    "material": "Metal",
+    "transparency": 0.0,
+    "castShadow": true,
+    "canCollide": false,
+    "role": null,
+    "bone": null,
+    "offset": [
+     0.0,
+     0.297,
+     0.0
+    ],
+    "size": [
+     0.64,
+     0.295,
+     0.64
+    ],
+    "hash": "4726ec7291b9540f",
+    "tris": 238
+   },
+   {
+    "name": "Plunger",
+    "color": "#D3D9DE",
+    "material": "Metal",
+    "transparency": 0.0,
+    "castShadow": true,
+    "canCollide": false,
+    "role": "bell_plunger",
+    "bone": null,
+    "offset": [
+     0.0,
+     0.517,
+     0.0
+    ],
+    "size": [
+     0.17,
+     0.195,
+     0.162
+    ],
+    "hash": "54fde32a9002c326",
+    "tris": 100
+   }
+  ]
+ },
+ "Kitchen_Flashlight": {
+  "group": "Kitchen",
+  "size": [
+   0.49,
+   0.478,
+   1.444
+  ],
+  "tris": 920,
+  "meta": {
+   "grip": {
+    "point": [
+     0,
+     0,
+     0
+    ],
+    "forward": [
+     0,
+     0,
+     -1
+    ],
+    "up": [
+     0,
+     1,
+     0
+    ]
+   },
+   "tool": true
+  },
+  "url": "https://raw.githubusercontent.com/landonhjones2020-bit/nightshift-assets/main/meshes/A_kitchen/Kitchen_Flashlight.json",
+  "parts": [
+   {
+    "name": "Body",
+    "color": "#F2B33D",
+    "material": "SmoothPlastic",
+    "transparency": 0.0,
+    "castShadow": true,
+    "canCollide": false,
+    "role": "flashlight_body",
+    "bone": null,
+    "offset": [
+     0.0,
+     0.0,
+     -0.05
+    ],
+    "size": [
+     0.45,
+     0.439,
+     1.1
+    ],
+    "hash": "60e60d6e26fa5663",
+    "tris": 168
+   },
+   {
+    "name": "Rubber",
+    "color": "#2B2D31",
+    "material": "SmoothPlastic",
+    "transparency": 0.0,
+    "castShadow": true,
+    "canCollide": false,
+    "role": null,
+    "bone": null,
+    "offset": [
+     0.0,
+     0.023,
+     0.277
+    ],
+    "size": [
+     0.304,
+     0.343,
+     0.974
+    ],
+    "hash": "2cc182303c69e481",
+    "tris": 532
+   },
+   {
+    "name": "Bezel",
+    "color": "#B9C0C6",
+    "material": "Metal",
+    "transparency": 0.0,
+    "castShadow": true,
+    "canCollide": false,
+    "role": null,
+    "bone": null,
+    "offset": [
+     0.0,
+     0.0,
+     -0.63
+    ],
+    "size": [
+     0.49,
+     0.478,
+     0.1
+    ],
+    "hash": "368808133e347025",
+    "tris": 164
+   },
+   {
+    "name": "Lens",
+    "color": "#FFF1C4",
+    "material": "Neon",
+    "transparency": 0.0,
+    "castShadow": false,
+    "canCollide": false,
+    "role": "lens",
+    "bone": null,
+    "offset": [
+     0.0,
+     0.0,
+     -0.632
+    ],
+    "size": [
+     0.39,
+     0.38,
+     0.065
+    ],
+    "hash": "22260af44ed6f858",
+    "tris": 56
+   }
+  ],
+  "sockets": {
+   "Beam": {
+    "p": [
+     0.0,
+     0.0,
+     -0.665
+    ],
+    "yaw": 0.0
+   }
+  }
+ },
+ "Kitchen_FreezerDoor": {
+  "group": "Kitchen",
+  "size": [
+   5.164,
+   8.0,
+   1.154
+  ],
+  "tris": 1888,
+  "meta": {
+   "hinge": "left",
+   "open_dir": "positive yaw about the pivot (CFrame.Angles(0, a, 0)) swings the free edge toward +Z (freezer side)",
+   "handle_pivot": [
+    -4.59,
+    3.85,
+    -0.16
+   ],
+   "handle_axis": [
+    0.0,
+    0.0,
+    -1.0
+   ],
+   "handle_throw_deg": 25
+  },
+  "url": "https://raw.githubusercontent.com/landonhjones2020-bit/nightshift-assets/main/meshes/A_kitchen/Kitchen_FreezerDoor.json",
+  "parts": [
+   {
+    "name": "Leaf",
+    "color": "#B9C0C6",
+    "material": "Metal",
+    "transparency": 0.0,
+    "castShadow": true,
+    "canCollide": true,
+    "role": "door_leaf",
+    "bone": null,
+    "offset": [
+     -2.54,
+     4.0,
+     0.37
+    ],
+    "size": [
+     5.0,
+     8.0,
+     0.5
+    ],
+    "hash": "6daa0dbc40b1813a",
+    "tris": 108
+   },
+   {
+    "name": "Metal",
+    "color": "#FFFFFF",
+    "material": "Metal",
+    "transparency": 0.0,
+    "castShadow": true,
+    "canCollide": false,
+    "role": null,
+    "bone": null,
+    "offset": [
+     -2.433,
+     4.0,
+     0.315
+    ],
+    "size": [
+     5.114,
+     7.8,
+     0.89
+    ],
+    "hash": "d9d2ea9a2625741e",
+    "tris": 652
+   },
+   {
+    "name": "KickPlate",
+    "color": "#A8B0B7",
+    "material": "DiamondPlate",
+    "transparency": 0.0,
+    "castShadow": true,
+    "canCollide": false,
+    "role": null,
+    "bone": null,
+    "offset": [
+     -2.54,
+     0.75,
+     0.1
+    ],
+    "size": [
+     4.34,
+     1.3,
+     0.05
+    ],
+    "hash": "1514a03ba6e328a2",
+    "tris": 44
+   },
+   {
+    "name": "SmoothPlastic",
+    "color": "#FFFFFF",
+    "material": "SmoothPlastic",
+    "transparency": 0.0,
+    "castShadow": true,
+    "canCollide": false,
+    "role": null,
+    "bone": null,
+    "offset": [
+     -2.54,
+     4.0,
+     0.33
+    ],
+    "size": [
+     4.98,
+     7.98,
+     0.7
+    ],
+    "hash": "93bd8d6c72ce1fbe",
+    "tris": 564
+   },
+   {
+    "name": "Window",
+    "color": "#BFE3F0",
+    "material": "Ice",
+    "transparency": 0.0,
+    "castShadow": true,
+    "canCollide": false,
+    "role": null,
+    "bone": null,
+    "offset": [
+     -2.89,
+     5.25,
+     0.12
+    ],
+    "size": [
+     1.24,
+     0.99,
+     0.04
+    ],
+    "hash": "330e166d404e6314",
+    "tris": 60
+   },
+   {
+    "name": "Handle",
+    "color": "#D0D6DB",
+    "material": "Metal",
+    "transparency": 0.0,
+    "castShadow": true,
+    "canCollide": false,
+    "role": "handle",
+    "bone": null,
+    "offset": [
+     -3.912,
+     3.706,
+     -0.2
+    ],
+    "size": [
+     1.675,
+     0.608,
+     0.247
+    ],
+    "hash": "bb2f4be4d2b75a4c",
+    "tris": 196
+   },
+   {
+    "name": "Strips",
+    "color": "#BFE3F0",
+    "material": "SmoothPlastic",
+    "transparency": 0.45,
+    "castShadow": false,
+    "canCollide": false,
+    "role": null,
+    "bone": null,
+    "offset": [
+     -2.54,
+     3.87,
+     0.797
+    ],
+    "size": [
+     4.92,
+     7.45,
+     0.065
+    ],
+    "hash": "19d1823a69e8f31e",
+    "tris": 264
+   }
+  ],
+  "sockets": {
+   "Handle": {
+    "p": [
+     -3.34,
+     3.57,
+     -0.2
+    ],
+    "yaw": 0.0
+   }
+  }
+ },
+ "Kitchen_FreezerRack": {
+  "group": "Kitchen",
+  "size": [
+   4.18,
+   5.8,
+   1.98
+  ],
+  "tris": 1764,
+  "meta": {
+   "decor": true
+  },
+  "url": "https://raw.githubusercontent.com/landonhjones2020-bit/nightshift-assets/main/meshes/A_kitchen/Kitchen_FreezerRack.json",
+  "parts": [
+   {
+    "name": "Wire",
+    "color": "#C4CBD1",
+    "material": "Metal",
+    "transparency": 0.0,
+    "castShadow": true,
+    "canCollide": true,
+    "role": null,
+    "bone": null,
+    "offset": [
+     0.0,
+     2.8,
+     0.0
+    ],
+    "size": [
+     4.18,
+     5.6,
+     1.98
+    ],
+    "hash": "5727bd6d793def8c",
+    "tris": 800
+   },
+   {
+    "name": "SmoothPlastic",
+    "color": "#FFFFFF",
+    "material": "SmoothPlastic",
+    "transparency": 0.0,
+    "castShadow": true,
+    "canCollide": false,
+    "role": null,
+    "bone": null,
+    "offset": [
+     0.026,
+     3.145,
+     0.0
+    ],
+    "size": [
+     3.666,
+     5.31,
+     1.37
+    ],
+    "hash": "78664c736bcbb93d",
+    "tris": 864
+   },
+   {
+    "name": "Icicles",
+    "color": "#CFEFFB",
+    "material": "Ice",
+    "transparency": 0.0,
+    "castShadow": true,
+    "canCollide": false,
+    "role": null,
+    "bone": null,
+    "offset": [
+     0.025,
+     3.21,
+     -0.86
+    ],
+    "size": [
+     3.28,
+     3.68,
+     0.15
+    ],
+    "hash": "df51458f9ef1ea42",
+    "tris": 100
+   }
+  ]
+ },
+ "Kitchen_Generator": {
+  "group": "Kitchen",
+  "size": [
+   2.876,
+   2.21,
+   2.26
+  ],
+  "tris": 1896,
+  "meta": {
+   "pull_dir": [
+    0.0,
+    0.0,
+    -1.0
+   ],
+   "pull_travel": 0.9
+  },
+  "url": "https://raw.githubusercontent.com/landonhjones2020-bit/nightshift-assets/main/meshes/A_kitchen/Kitchen_Generator.json",
+  "parts": [
+   {
+    "name": "Metal",
+    "color": "#FFFFFF",
+    "material": "Metal",
+    "transparency": 0.0,
+    "castShadow": true,
+    "canCollide": true,
+    "role": null,
+    "bone": null,
+    "offset": [
+     0.013,
+     1.145,
+     0.0
+    ],
+    "size": [
+     2.85,
+     2.13,
+     1.925
+    ],
+    "hash": "960e5bdf9221d4cd",
+    "tris": 752
+   },
+   {
+    "name": "Tank",
+    "color": "#F2B33D",
+    "material": "SmoothPlastic",
+    "transparency": 0.0,
+    "castShadow": true,
+    "canCollide": true,
+    "role": null,
+    "bone": null,
+    "offset": [
+     0.013,
+     1.73,
+     0.0
+    ],
+    "size": [
+     2.35,
+     0.6,
+     1.35
+    ],
+    "hash": "cbb31df5569e1d09",
+    "tris": 108
+   },
+   {
+    "name": "FuelCap",
+    "color": "#1E1F22",
+    "material": "SmoothPlastic",
+    "transparency": 0.0,
+    "castShadow": true,
+    "canCollide": false,
+    "role": "fuel_cap",
+    "bone": null,
+    "offset": [
+     0.563,
+     2.09,
+     -0.1
+    ],
+    "size": [
+     0.42,
+     0.14,
+     0.42
+    ],
+    "hash": "a8e363c7ee08aa86",
+    "tris": 72
+   },
+   {
+    "name": "SmoothPlastic",
+    "color": "#FFFFFF",
+    "material": "SmoothPlastic",
+    "transparency": 0.0,
+    "castShadow": true,
+    "canCollide": false,
+    "role": null,
+    "bone": null,
+    "offset": [
+     -0.083,
+     1.033,
+     0.0
+    ],
+    "size": [
+     2.711,
+     2.065,
+     2.26
+    ],
+    "hash": "0389104f61ffcd6a",
+    "tris": 704
+   },
+   {
+    "name": "Muffler",
+    "color": "#6B727A",
+    "material": "Metal",
+    "transparency": 0.0,
+    "castShadow": true,
+    "canCollide": false,
+    "role": null,
+    "bone": null,
+    "offset": [
+     -0.607,
+     1.0,
+     0.62
+    ],
+    "size": [
+     0.85,
+     0.5,
+     0.5
+    ],
+    "hash": "c8c4b1f352056559",
+    "tris": 120
+   },
+   {
+    "name": "PullHandle",
+    "color": "#1E1F22",
+    "material": "SmoothPlastic",
+    "transparency": 0.0,
+    "castShadow": true,
+    "canCollide": false,
+    "role": "pull_handle",
+    "bone": null,
+    "offset": [
+     -0.607,
+     0.72,
+     -0.788
+    ],
+    "size": [
+     0.4,
+     0.111,
+     0.255
+    ],
+    "hash": "0f4b169498806666",
+    "tris": 112
+   },
+   {
+    "name": "StatusLight",
+    "color": "#7CFF8A",
+    "material": "SmoothPlastic",
+    "transparency": 0.0,
+    "castShadow": true,
+    "canCollide": false,
+    "role": "status_light",
+    "bone": null,
+    "offset": [
+     0.343,
+     0.94,
+     -0.68
+    ],
+    "size": [
+     0.12,
+     0.12,
+     0.04
+    ],
+    "hash": "000bc0c92d646d1f",
+    "tris": 28
+   }
+  ],
+  "sockets": {
+   "Prompt": {
+    "p": [
+     -0.607,
+     1.0,
+     -1.6
+    ],
+    "yaw": 0.0
+   },
+   "PullHandle": {
+    "p": [
+     -0.607,
+     0.72,
+     -0.86
+    ],
+    "yaw": 0.0
+   }
+  }
+ },
+ "Kitchen_MeatHook": {
+  "group": "Kitchen",
+  "size": [
+   3.32,
+   4.65,
+   1.395
+  ],
+  "tris": 1622,
+  "meta": {
+   "mount": "ceiling",
+   "mount_top": 4.65,
+   "swing_pivot": [
+    0.0,
+    3.75,
+    0.0
+   ],
+   "swing_axis": [
+    -1.0,
+    0.0,
+    0.0
+   ],
+   "swing_parts": [
+    "Hook",
+    "Bundle",
+    "Meat",
+    "Twine"
+   ],
+   "decor": true
+  },
+  "url": "https://raw.githubusercontent.com/landonhjones2020-bit/nightshift-assets/main/meshes/A_kitchen/Kitchen_MeatHook.json",
+  "parts": [
+   {
+    "name": "Metal",
+    "color": "#FFFFFF",
+    "material": "Metal",
+    "transparency": 0.0,
+    "castShadow": true,
+    "canCollide": false,
+    "role": null,
+    "bone": null,
+    "offset": [
+     0.0,
+     4.17,
+     -0.039
+    ],
+    "size": [
+     3.32,
+     0.96,
+     0.44
+    ],
+    "hash": "6363689924fdad45",
+    "tris": 536
+   },
+   {
+    "name": "Hook",
+    "color": "#9AA2AA",
+    "material": "Metal",
+    "transparency": 0.0,
+    "castShadow": true,
+    "canCollide": false,
+    "role": "swing_hook",
+    "bone": null,
+    "offset": [
+     0.0,
+     3.305,
+     0.01
+    ],
+    "size": [
+     0.1,
+     1.192,
+     0.464
+    ],
+    "hash": "9d813a22b39e8c52",
+    "tris": 224
+   },
+   {
+    "name": "Bundle",
+    "color": "#E9E2D3",
+    "material": "SmoothPlastic",
+    "transparency": 0.0,
+    "castShadow": true,
+    "canCollide": false,
+    "role": "swing_bundle",
+    "bone": null,
+    "offset": [
+     -0.076,
+     1.63,
+     -0.004
+    ],
+    "size": [
+     1.506,
+     2.54,
+     1.29
+    ],
+    "hash": "dce1c42f00bd3b59",
+    "tris": 318
+   },
+   {
+    "name": "Meat",
+    "color": "#9E3B43",
+    "material": "SmoothPlastic",
+    "transparency": 0.0,
+    "castShadow": true,
+    "canCollide": false,
+    "role": "swing_meat",
+    "bone": null,
+    "offset": [
+     -0.07,
+     0.33,
+     -0.015
+    ],
+    "size": [
+     1.322,
+     0.66,
+     1.135
+    ],
+    "hash": "9eaba364b7ca4378",
+    "tris": 128
+   },
+   {
+    "name": "Twine",
+    "color": "#B08A5A",
+    "material": "SmoothPlastic",
+    "transparency": 0.0,
+    "castShadow": true,
+    "canCollide": false,
+    "role": "swing_twine",
+    "bone": null,
+    "offset": [
+     -0.083,
+     1.788,
+     0.0
+    ],
+    "size": [
+     1.602,
+     2.015,
+     1.395
+    ],
+    "hash": "0a156178f055adfe",
+    "tris": 416
+   }
+  ]
+ },
+ "Kitchen_PrepStation": {
+  "group": "Kitchen",
+  "size": [
+   7.0,
+   3.57,
+   3.032
+  ],
+  "tris": 1952,
+  "meta": {
+   "worktop_height": 3.0,
+   "slot_surface_height": 2.97,
+   "tray_size": [
+    2.8,
+    1.3
+   ],
+   "cook_camera_pitch": -40.24,
+   "cook_camera_target": "midpoint of Slot1 and Slot2",
+   "footprint": [
+    7.0,
+    3.0
+   ]
+  },
+  "url": "https://raw.githubusercontent.com/landonhjones2020-bit/nightshift-assets/main/meshes/A_kitchen/Kitchen_PrepStation.json",
+  "parts": [
+   {
+    "name": "Metal",
+    "color": "#FFFFFF",
+    "material": "Metal",
+    "transparency": 0.0,
+    "castShadow": true,
+    "canCollide": true,
+    "role": null,
+    "bone": null,
+    "offset": [
+     0.0,
+     1.845,
+     0.0
+    ],
+    "size": [
+     7.0,
+     3.45,
+     3.0
+    ],
+    "hash": "1e767927a31a7d91",
+    "tris": 880
+   },
+   {
+    "name": "Metal_",
+    "color": "#FFFFFF",
+    "material": "Metal",
+    "transparency": 0.0,
+    "castShadow": true,
+    "canCollide": false,
+    "role": null,
+    "bone": null,
+    "offset": [
+     0.0,
+     2.167,
+     -0.38
+    ],
+    "size": [
+     6.1,
+     1.707,
+     1.3
+    ],
+    "hash": "052737691c562599",
+    "tris": 288
+   },
+   {
+    "name": "SmoothPlastic",
+    "color": "#FFFFFF",
+    "material": "SmoothPlastic",
+    "transparency": 0.0,
+    "castShadow": true,
+    "canCollide": false,
+    "role": null,
+    "bone": null,
+    "offset": [
+     0.0,
+     1.485,
+     -0.029
+    ],
+    "size": [
+     6.947,
+     2.97,
+     3.006
+    ],
+    "hash": "69cd486effcbc022",
+    "tris": 568
+   },
+   {
+    "name": "Slot1Lamp",
+    "color": "#F2B33D",
+    "material": "SmoothPlastic",
+    "transparency": 0.0,
+    "castShadow": true,
+    "canCollide": false,
+    "role": "slot1_lamp",
+    "bone": null,
+    "offset": [
+     1.65,
+     3.3,
+     1.28
+    ],
+    "size": [
+     0.5,
+     0.16,
+     0.06
+    ],
+    "hash": "1e9b596f69dfd946",
+    "tris": 108
+   },
+   {
+    "name": "Slot2Lamp",
+    "color": "#F2B33D",
+    "material": "SmoothPlastic",
+    "transparency": 0.0,
+    "castShadow": true,
+    "canCollide": false,
+    "role": "slot2_lamp",
+    "bone": null,
+    "offset": [
+     -1.65,
+     3.3,
+     1.28
+    ],
+    "size": [
+     0.5,
+     0.16,
+     0.06
+    ],
+    "hash": "cf0e0961d98f8181",
+    "tris": 108
+   }
+  ],
+  "sockets": {
+   "CookCamera": {
+    "p": [
+     0.0,
+     5.17,
+     -2.98
+    ],
+    "yaw": 180.0
+   },
+   "Prompt": {
+    "p": [
+     0.0,
+     3.6,
+     -1.3
+    ],
+    "yaw": 0.0
+   },
+   "Slot1": {
+    "p": [
+     1.65,
+     2.97,
+     -0.38
+    ],
+    "yaw": 0.0
+   },
+   "Slot2": {
+    "p": [
+     -1.65,
+     2.97,
+     -0.38
+    ],
+    "yaw": 0.0
+   }
+  }
+ },
+ "Kitchen_Register": {
+  "group": "Kitchen",
+  "size": [
+   2.086,
+   1.685,
+   1.82
+  ],
+  "tris": 1712,
+  "meta": {
+   "drawer_travel": 0.85,
+   "drawer_dir": [
+    0,
+    0,
+    -1
+   ],
+   "drawer_part": "Drawer",
+   "surface_display": {
+    "part": "Display",
+    "faces": [
+     "Front",
+     "Back"
+    ]
+   }
+  },
+  "url": "https://raw.githubusercontent.com/landonhjones2020-bit/nightshift-assets/main/meshes/A_kitchen/Kitchen_Register.json",
+  "parts": [
+   {
+    "name": "Metal",
+    "color": "#FFFFFF",
+    "material": "Metal",
+    "transparency": 0.0,
+    "castShadow": true,
+    "canCollide": false,
+    "role": null,
+    "bone": null,
+    "offset": [
+     0.025,
+     0.545,
+     0.06
+    ],
+    "size": [
+     2.036,
+     1.04,
+     1.7
+    ],
+    "hash": "e3e4f8f060c2d7c1",
+    "tris": 376
+   },
+   {
+    "name": "Drawer",
+    "color": "#9AA2AA",
+    "material": "Metal",
+    "transparency": 0.0,
+    "castShadow": true,
+    "canCollide": false,
+    "role": "drawer",
+    "bone": null,
+    "offset": [
+     0.093,
+     0.285,
+     -0.14
+    ],
+    "size": [
+     1.74,
+     0.38,
+     1.54
+    ],
+    "hash": "863a29b50dcc4cb1",
+    "tris": 388
+   },
+   {
+    "name": "SmoothPlastic",
+    "color": "#FFFFFF",
+    "material": "SmoothPlastic",
+    "transparency": 0.0,
+    "castShadow": true,
+    "canCollide": false,
+    "role": null,
+    "bone": null,
+    "offset": [
+     -0.02,
+     0.843,
+     0.06
+    ],
+    "size": [
+     2.046,
+     1.685,
+     1.58
+    ],
+    "hash": "3706db457548bd98",
+    "tris": 924
+   },
+   {
+    "name": "Display",
+    "color": "#22332B",
+    "material": "SmoothPlastic",
+    "transparency": 0.0,
+    "castShadow": true,
+    "canCollide": false,
+    "role": "display",
+    "bone": null,
+    "offset": [
+     0.093,
+     1.495,
+     0.51
+    ],
+    "size": [
+     0.78,
+     0.24,
+     0.54
+    ],
+    "hash": "69ef9ce250d7af37",
+    "tris": 24
+   }
+  ]
+ },
+ "Kitchen_SauceRail": {
+  "group": "Kitchen",
+  "size": [
+   3.2,
+   0.875,
+   0.921
+  ],
+  "tris": 1224,
+  "meta": {
+   "holder_inner_diameter": 0.58,
+   "holder_height": 0.545,
+   "bottle_pitch": 0.76
+  },
+  "url": "https://raw.githubusercontent.com/landonhjones2020-bit/nightshift-assets/main/meshes/A_kitchen/Kitchen_SauceRail.json",
+  "parts": [
+   {
+    "name": "Caddy",
+    "color": "#B9C0C6",
+    "material": "Metal",
+    "transparency": 0.0,
+    "castShadow": true,
+    "canCollide": false,
+    "role": null,
+    "bone": null,
+    "offset": [
+     0.0,
+     0.28,
+     -0.011
+    ],
+    "size": [
+     3.2,
+     0.56,
+     0.9
+    ],
+    "hash": "21bf6eb49bc3fa92",
+    "tris": 792
+   },
+   {
+    "name": "SmoothPlastic",
+    "color": "#FFFFFF",
+    "material": "SmoothPlastic",
+    "transparency": 0.0,
+    "castShadow": true,
+    "canCollide": false,
+    "role": null,
+    "bone": null,
+    "offset": [
+     0.0,
+     0.438,
+     0.043
+    ],
+    "size": [
+     3.2,
+     0.875,
+     0.836
+    ],
+    "hash": "19dcbd5d8fa8cf24",
+    "tris": 256
+   },
+   {
+    "name": "Tab1",
+    "color": "#F2B33D",
+    "material": "SmoothPlastic",
+    "transparency": 0.0,
+    "castShadow": true,
+    "canCollide": false,
+    "role": "bottle_tab1",
+    "bone": null,
+    "offset": [
+     1.14,
+     0.5,
+     -0.431
+    ],
+    "size": [
+     0.32,
+     0.06,
+     0.03
+    ],
+    "hash": "6727ca5e3a6a6b3b",
+    "tris": 44
+   },
+   {
+    "name": "Tab2",
+    "color": "#F2B33D",
+    "material": "SmoothPlastic",
+    "transparency": 0.0,
+    "castShadow": true,
+    "canCollide": false,
+    "role": "bottle_tab2",
+    "bone": null,
+    "offset": [
+     0.38,
+     0.5,
+     -0.431
+    ],
+    "size": [
+     0.32,
+     0.06,
+     0.03
+    ],
+    "hash": "5e9be629eec348f0",
+    "tris": 44
+   },
+   {
+    "name": "Tab3",
+    "color": "#F2B33D",
+    "material": "SmoothPlastic",
+    "transparency": 0.0,
+    "castShadow": true,
+    "canCollide": false,
+    "role": "bottle_tab3",
+    "bone": null,
+    "offset": [
+     -0.38,
+     0.5,
+     -0.431
+    ],
+    "size": [
+     0.32,
+     0.06,
+     0.03
+    ],
+    "hash": "7753fcf091567799",
+    "tris": 44
+   },
+   {
+    "name": "Tab4",
+    "color": "#F2B33D",
+    "material": "SmoothPlastic",
+    "transparency": 0.0,
+    "castShadow": true,
+    "canCollide": false,
+    "role": "bottle_tab4",
+    "bone": null,
+    "offset": [
+     -1.14,
+     0.5,
+     -0.431
+    ],
+    "size": [
+     0.32,
+     0.06,
+     0.03
+    ],
+    "hash": "b2de8c8d20e1f2b3",
+    "tris": 44
+   }
+  ],
+  "sockets": {
+   "Bottle1": {
+    "p": [
+     1.14,
+     0.15,
+     -0.051
+    ],
+    "yaw": 0.0
+   },
+   "Bottle2": {
+    "p": [
+     0.38,
+     0.15,
+     -0.051
+    ],
+    "yaw": 0.0
+   },
+   "Bottle3": {
+    "p": [
+     -0.38,
+     0.15,
+     -0.051
+    ],
+    "yaw": 0.0
+   },
+   "Bottle4": {
+    "p": [
+     -1.14,
+     0.15,
+     -0.051
+    ],
+    "yaw": 0.0
+   }
+  }
+ },
+ "Kitchen_Spatula": {
+  "group": "Kitchen",
+  "size": [
+   0.66,
+   0.25,
+   1.94
+  ],
+  "tris": 516,
+  "meta": {
+   "grip": {
+    "point": [
+     0,
+     0,
+     0
+    ],
+    "forward": [
+     0,
+     0,
+     -1
+    ],
+    "up": [
+     0,
+     1,
+     0
+    ]
+   },
+   "tool": true
+  },
+  "url": "https://raw.githubusercontent.com/landonhjones2020-bit/nightshift-assets/main/meshes/A_kitchen/Kitchen_Spatula.json",
+  "parts": [
+   {
+    "name": "Handle",
+    "color": "#8A5A3C",
+    "material": "Wood",
+    "transparency": 0.0,
+    "castShadow": true,
+    "canCollide": false,
+    "role": "spatula_handle",
+    "bone": null,
+    "offset": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "size": [
+     0.22,
+     0.151,
+     0.78
+    ],
+    "hash": "08a7589ce2eb0cc5",
+    "tris": 120
+   },
+   {
+    "name": "Metal",
+    "color": "#FFFFFF",
+    "material": "Metal",
+    "transparency": 0.0,
+    "castShadow": true,
+    "canCollide": false,
+    "role": null,
+    "bone": null,
+    "offset": [
+     0.0,
+     -0.04,
+     -0.292
+    ],
+    "size": [
+     0.143,
+     0.25,
+     1.007
+    ],
+    "hash": "9c44f6dfe3a4639f",
+    "tris": 140
+   },
+   {
+    "name": "Blade",
+    "color": "#B9C0C6",
+    "material": "Metal",
+    "transparency": 0.0,
+    "castShadow": true,
+    "canCollide": false,
+    "role": "spatula_blade",
+    "bone": null,
+    "offset": [
+     0.0,
+     -0.142,
+     -1.17
+    ],
+    "size": [
+     0.66,
+     0.035,
+     0.76
+    ],
+    "hash": "ebbc7c8a41f6589b",
+    "tris": 256
+   }
+  ]
+ },
+ "Kitchen_TicketPrinter": {
+  "group": "Kitchen",
+  "size": [
+   1.12,
+   1.175,
+   1.278
+  ],
+  "tris": 672,
+  "meta": {
+   "paper_part": "Paper",
+   "slot_part": "PaperSlot"
+  },
+  "url": "https://raw.githubusercontent.com/landonhjones2020-bit/nightshift-assets/main/meshes/A_kitchen/Kitchen_TicketPrinter.json",
+  "parts": [
+   {
+    "name": "SmoothPlastic",
+    "color": "#FFFFFF",
+    "material": "SmoothPlastic",
+    "transparency": 0.0,
+    "castShadow": true,
+    "canCollide": false,
+    "role": null,
+    "bone": null,
+    "offset": [
+     0.0,
+     0.45,
+     0.01
+    ],
+    "size": [
+     1.12,
+     0.891,
+     1.258
+    ],
+    "hash": "73610b3763553976",
+    "tris": 320
+   },
+   {
+    "name": "PaperSlot",
+    "color": "#1E1F22",
+    "material": "SmoothPlastic",
+    "transparency": 0.0,
+    "castShadow": true,
+    "canCollide": false,
+    "role": "paper_slot",
+    "bone": null,
+    "offset": [
+     0.0,
+     0.645,
+     -0.204
+    ],
+    "size": [
+     0.92,
+     0.08,
+     0.09
+    ],
+    "hash": "3513b70e96d2717d",
+    "tris": 44
+   },
+   {
+    "name": "TearBar",
+    "color": "#9AA2AA",
+    "material": "Metal",
+    "transparency": 0.0,
+    "castShadow": true,
+    "canCollide": false,
+    "role": null,
+    "bone": null,
+    "offset": [
+     0.0,
+     0.35,
+     -0.004
+    ],
+    "size": [
+     0.96,
+     0.7,
+     1.0
+    ],
+    "hash": "d0c74d97eed76d63",
+    "tris": 220
+   },
+   {
+    "name": "Paper",
+    "color": "#F6F1E6",
+    "material": "SmoothPlastic",
+    "transparency": 0.0,
+    "castShadow": true,
+    "canCollide": false,
+    "role": "paper",
+    "bone": null,
+    "offset": [
+     0.0,
+     0.85,
+     -0.422
+    ],
+    "size": [
+     0.64,
+     0.65,
+     0.435
+    ],
+    "hash": "8a7d90407e5e26f6",
+    "tris": 60
+   },
+   {
+    "name": "Led",
+    "color": "#6CFF8A",
+    "material": "Neon",
+    "transparency": 0.0,
+    "castShadow": false,
+    "canCollide": false,
+    "role": "status_led",
+    "bone": null,
+    "offset": [
+     0.38,
+     0.305,
+     -0.584
+    ],
+    "size": [
+     0.08,
+     0.08,
+     0.04
+    ],
+    "hash": "9c24ffca0b6d4c70",
+    "tris": 28
+   }
+  ],
+  "sockets": {
+   "PaperOut": {
+    "p": [
+     0.0,
+     0.695,
+     -0.204
+    ],
+    "yaw": 0.0
+   }
+  }
+ },
+ "Kitchen_TicketRail": {
+  "group": "Kitchen",
+  "size": [
+   4.64,
+   0.8,
+   0.535
+  ],
+  "tris": 1328,
+  "meta": {
+   "mount": "wall",
+   "wall_back_z": 0.267,
+   "ticket_size": [
+    0.8,
+    1.15
+   ],
+   "suggested_bottom": 5.2
+  },
+  "url": "https://raw.githubusercontent.com/landonhjones2020-bit/nightshift-assets/main/meshes/A_kitchen/Kitchen_TicketRail.json",
+  "parts": [
+   {
+    "name": "Metal",
+    "color": "#FFFFFF",
+    "material": "Metal",
+    "transparency": 0.0,
+    "castShadow": true,
+    "canCollide": false,
+    "role": null,
+    "bone": null,
+    "offset": [
+     0.0,
+     0.385,
+     0.042
+    ],
+    "size": [
+     4.5,
+     0.77,
+     0.45
+    ],
+    "hash": "f4a26fab43ae8d1f",
+    "tris": 588
+   },
+   {
+    "name": "SmoothPlastic",
+    "color": "#FFFFFF",
+    "material": "SmoothPlastic",
+    "transparency": 0.0,
+    "castShadow": true,
+    "canCollide": false,
+    "role": null,
+    "bone": null,
+    "offset": [
+     0.0,
+     0.455,
+     -0.013
+    ],
+    "size": [
+     4.64,
+     0.69,
+     0.2
+    ],
+    "hash": "7745c10886313ae7",
+    "tris": 464
+   },
+   {
+    "name": "PinnedClip",
+    "color": "#E8502A",
+    "material": "SmoothPlastic",
+    "transparency": 0.0,
+    "castShadow": true,
+    "canCollide": false,
+    "role": "pinned_clip",
+    "bone": null,
+    "offset": [
+     -1.886,
+     0.382,
+     -0.107
+    ],
+    "size": [
+     0.629,
+     0.647,
+     0.32
+    ],
+    "hash": "17ca563e8d7c8443",
+    "tris": 232
+   },
+   {
+    "name": "PinnedTag",
+    "color": "#F2B33D",
+    "material": "SmoothPlastic",
+    "transparency": 0.0,
+    "castShadow": true,
+    "canCollide": false,
+    "role": "pinned_tag",
+    "bone": null,
+    "offset": [
+     -1.75,
+     0.62,
+     -0.103
+    ],
+    "size": [
+     0.5,
+     0.2,
+     0.03
+    ],
+    "hash": "f6b8f512899ace6e",
+    "tris": 44
+   }
+  ],
+  "sockets": {
+   "Pinned": {
+    "p": [
+     -1.8,
+     0.118,
+     -0.043
+    ],
+    "yaw": 0.0
+   },
+   "Ticket1": {
+    "p": [
+     1.86,
+     0.17,
+     -0.043
+    ],
+    "yaw": 0.0
+   },
+   "Ticket2": {
+    "p": [
+     0.96,
+     0.17,
+     -0.043
+    ],
+    "yaw": 0.0
+   },
+   "Ticket3": {
+    "p": [
+     0.06,
+     0.17,
+     -0.043
+    ],
+    "yaw": 0.0
+   },
+   "Ticket4": {
+    "p": [
+     -0.84,
+     0.17,
+     -0.043
+    ],
+    "yaw": 0.0
+   }
+  }
+ },
+ "Kitchen_Toaster": {
+  "group": "Kitchen",
+  "size": [
+   4.66,
+   2.25,
+   3.2
+  ],
+  "tris": 1812,
+  "meta": {
+   "belt_pitch": 0.2,
+   "belt_part": "Belt",
+   "belt_dir": [
+    -1,
+    0,
+    0
+   ],
+   "belt_top": 0.58,
+   "lanes": {
+    "Lane1": "front (-Z side, nearest the cook)",
+    "Lane2": "back"
+   },
+   "tunnel_clearance": 1.2,
+   "slat_rows": 21
+  },
+  "url": "https://raw.githubusercontent.com/landonhjones2020-bit/nightshift-assets/main/meshes/A_kitchen/Kitchen_Toaster.json",
+  "parts": [
+   {
+    "name": "Metal",
+    "color": "#FFFFFF",
+    "material": "Metal",
+    "transparency": 0.0,
+    "castShadow": true,
+    "canCollide": false,
+    "role": null,
+    "bone": null,
+    "offset": [
+     -0.03,
+     1.125,
+     -0.002
+    ],
+    "size": [
+     4.66,
+     2.25,
+     3.005
+    ],
+    "hash": "5af800931f67cc8a",
+    "tris": 1068
+   },
+   {
+    "name": "SmoothPlastic",
+    "color": "#FFFFFF",
+    "material": "SmoothPlastic",
+    "transparency": 0.0,
+    "castShadow": true,
+    "canCollide": false,
+    "role": null,
+    "bone": null,
+    "offset": [
+     0.0,
+     1.48,
+     -0.015
+    ],
+    "size": [
+     2.74,
+     1.5,
+     3.17
+    ],
+    "hash": "0751663399cbdab7",
+    "tris": 292
+   },
+   {
+    "name": "Heat",
+    "color": "#FF7A1E",
+    "material": "Neon",
+    "transparency": 0.0,
+    "castShadow": false,
+    "canCollide": false,
+    "role": "heat",
+    "bone": null,
+    "offset": [
+     0.0,
+     1.1,
+     -0.07
+    ],
+    "size": [
+     2.36,
+     1.32,
+     2.7
+    ],
+    "hash": "bd0275edf3fcc8b8",
+    "tris": 20
+   },
+   {
+    "name": "Elements",
+    "color": "#FFB25C",
+    "material": "Neon",
+    "transparency": 0.0,
+    "castShadow": false,
+    "canCollide": false,
+    "role": "heat_elements",
+    "bone": null,
+    "offset": [
+     0.0,
+     1.69,
+     0.0
+    ],
+    "size": [
+     1.569,
+     0.08,
+     2.46
+    ],
+    "hash": "909d6e18043005db",
+    "tris": 80
+   },
+   {
+    "name": "Belt",
+    "color": "#A9B1B8",
+    "material": "Metal",
+    "transparency": 0.0,
+    "castShadow": true,
+    "canCollide": false,
+    "role": "belt",
+    "bone": null,
+    "offset": [
+     0.15,
+     0.56,
+     0.0
+    ],
+    "size": [
+     4.08,
+     0.04,
+     2.5
+    ],
+    "hash": "49c3ca2015cf9848",
+    "tris": 252
+   },
+   {
+    "name": "Indicators",
+    "color": "#F2B33D",
+    "material": "SmoothPlastic",
+    "transparency": 0.0,
+    "castShadow": true,
+    "canCollide": false,
+    "role": "ready_lamp",
+    "bone": null,
+    "offset": [
+     -0.993,
+     1.33,
+     -1.565
+    ],
+    "size": [
+     0.387,
+     0.84,
+     0.13
+    ],
+    "hash": "99b525afcdb7b8c9",
+    "tris": 100
+   }
+  ],
+  "sockets": {
+   "Lane1In": {
+    "p": [
+     1.25,
+     0.58,
+     -0.675
+    ],
+    "yaw": 0.0
+   },
+   "Lane1Out": {
+    "p": [
+     -1.25,
+     0.58,
+     -0.675
+    ],
+    "yaw": 0.0
+   },
+   "Lane2In": {
+    "p": [
+     1.25,
+     0.58,
+     0.675
+    ],
+    "yaw": 0.0
+   },
+   "Lane2Out": {
+    "p": [
+     -1.25,
+     0.58,
+     0.675
+    ],
+    "yaw": 0.0
+   },
+   "Prompt": {
+    "p": [
+     0.0,
+     1.2,
+     -1.8
+    ],
+    "yaw": 0.0
+   }
+  }
+ },
+ "Kitchen_Worktop": {
+  "group": "Kitchen",
+  "size": [
+   4.0,
+   3.0,
+   3.12
+  ],
+  "tris": 1204,
+  "meta": {
+   "worktop_height": 3.0,
+   "footprint": [
+    4.0,
+    3.0
+   ]
+  },
+  "url": "https://raw.githubusercontent.com/landonhjones2020-bit/nightshift-assets/main/meshes/A_kitchen/Kitchen_Worktop.json",
+  "parts": [
+   {
+    "name": "Metal",
+    "color": "#FFFFFF",
+    "material": "Metal",
+    "transparency": 0.0,
+    "castShadow": true,
+    "canCollide": true,
+    "role": null,
+    "bone": null,
+    "offset": [
+     0.0,
+     1.56,
+     0.0
+    ],
+    "size": [
+     4.0,
+     2.88,
+     3.0
+    ],
+    "hash": "6b68ffb985600df4",
+    "tris": 548
+   },
+   {
+    "name": "SmoothPlastic",
+    "color": "#FFFFFF",
+    "material": "SmoothPlastic",
+    "transparency": 0.0,
+    "castShadow": true,
+    "canCollide": false,
+    "role": null,
+    "bone": null,
+    "offset": [
+     0.0,
+     1.43,
+     -0.029
+    ],
+    "size": [
+     3.947,
+     2.86,
+     3.006
+    ],
+    "hash": "5d64034a5ea70d3e",
+    "tris": 200
+   },
+   {
+    "name": "Metal_",
+    "color": "#FFFFFF",
+    "material": "Metal",
+    "transparency": 0.0,
+    "castShadow": true,
+    "canCollide": false,
+    "role": null,
+    "bone": null,
+    "offset": [
+     0.0,
+     1.795,
+     -0.347
+    ],
+    "size": [
+     3.74,
+     2.27,
+     2.545
+    ],
+    "hash": "0b7071af4dfe325c",
+    "tris": 456
+   }
+  ],
+  "sockets": {
+   "Top": {
+    "p": [
+     0.0,
+     3.0,
+     0.0
+    ],
+    "yaw": 0.0
+   }
+  }
+ },
+ "Kitchen_WrapStation": {
+  "group": "Kitchen",
+  "size": [
+   3.0,
+   4.092,
+   3.032
+  ],
+  "tris": 1796,
+  "meta": {
+   "worktop_height": 3.0,
+   "wrap_surface_height": 3.022,
+   "footprint": [
+    3.0,
+    3.0
+   ]
+  },
+  "url": "https://raw.githubusercontent.com/landonhjones2020-bit/nightshift-assets/main/meshes/A_kitchen/Kitchen_WrapStation.json",
+  "parts": [
+   {
+    "name": "Metal",
+    "color": "#FFFFFF",
+    "material": "Metal",
+    "transparency": 0.0,
+    "castShadow": true,
+    "canCollide": true,
+    "role": null,
+    "bone": null,
+    "offset": [
+     0.0,
+     1.835,
+     0.0
+    ],
+    "size": [
+     3.0,
+     3.43,
+     3.0
+    ],
+    "hash": "de0f23768a02bc2d",
+    "tris": 524
+   },
+   {
+    "name": "SmoothPlastic",
+    "color": "#FFFFFF",
+    "material": "SmoothPlastic",
+    "transparency": 0.0,
+    "castShadow": true,
+    "canCollide": false,
+    "role": null,
+    "bone": null,
+    "offset": [
+     0.0,
+     2.046,
+     -0.029
+    ],
+    "size": [
+     2.947,
+     4.092,
+     3.006
+    ],
+    "hash": "c15a11d78d938597",
+    "tris": 676
+   },
+   {
+    "name": "Metal_",
+    "color": "#FFFFFF",
+    "material": "Metal",
+    "transparency": 0.0,
+    "castShadow": true,
+    "canCollide": false,
+    "role": null,
+    "bone": null,
+    "offset": [
+     0.0,
+     3.5,
+     0.688
+    ],
+    "size": [
+     2.86,
+     1.0,
+     1.135
+    ],
+    "hash": "e0aa3935d212fc62",
+    "tris": 568
+   },
+   {
+    "name": "Sheet",
+    "color": "#F6F1E6",
+    "material": "SmoothPlastic",
+    "transparency": 0.0,
+    "castShadow": true,
+    "canCollide": false,
+    "role": "wrap_sheet",
+    "bone": null,
+    "offset": [
+     0.0,
+     3.012,
+     -0.485
+    ],
+    "size": [
+     2.1,
+     0.02,
+     1.33
+    ],
+    "hash": "c3086b67132c12ac",
+    "tris": 28
+   }
+  ],
+  "sockets": {
+   "Prompt": {
+    "p": [
+     0.0,
+     3.6,
+     -1.3
+    ],
+    "yaw": 0.0
+   },
+   "Wrap": {
+    "p": [
+     0.0,
+     3.022,
+     -0.485
+    ],
+    "yaw": 0.0
+   }
+  }
+ }
+}

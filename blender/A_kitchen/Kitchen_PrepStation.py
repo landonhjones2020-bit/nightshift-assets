@@ -98,7 +98,9 @@ def build():
         "cook_camera_pitch": round(-math.degrees(math.atan2(cam_up, cam_back)), 2),
         "cook_camera_target": "midpoint of Slot1 and Slot2",
     }
-    return {"export": {"sockets": sockets, "meta": meta}}
+    meta["footprint"] = [W, D]
+    # pivot = bottom-centre of the 7 x 3 footprint (not of the bbox), so modules butt cleanly
+    return {"export": {"sockets": sockets, "meta": meta, "pivot": (0, 0, 0)}}
 
 
 if __name__ == "__main__":

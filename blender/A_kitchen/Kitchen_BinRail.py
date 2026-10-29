@@ -95,7 +95,8 @@ def build():
         "pan_size": [PAN_W, PAN_D, PAN_H],
         "surface_label": {"part": "Labels", "face": "Top", "slots": 6},
     }
-    return {"export": {"sockets": sockets, "meta": meta}}
+    meta["footprint"] = [L, D]
+    return {"export": {"sockets": sockets, "meta": meta, "pivot": (0, 0, 0)}}
 
 
 if __name__ == "__main__":

@@ -87,7 +87,8 @@ def build():
         "Prompt": ((0, -D / 2 + 0.2, TOP + 0.6), 0),
     }
     meta = {"worktop_height": TOP, "wrap_surface_height": round(sheet_top, 3)}
-    return {"export": {"sockets": sockets, "meta": meta}}
+    meta["footprint"] = [W, D]
+    return {"export": {"sockets": sockets, "meta": meta, "pivot": (0, 0, 0)}}
 
 
 if __name__ == "__main__":
