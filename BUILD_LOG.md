@@ -48,6 +48,11 @@ Landon (morning, with 99 Nights in the Forest / The Hollow screenshots): the fiv
 
 **AutoScale Lite** — the spotlight, pointer and ring are Scale-only (hairline edges instead of a fixed-width UIStroke), the notepad's picture-less choices use a template label instead of moving one at runtime. UIAudit: 33 screens, 0 problems. All 165 scripts compile; ConfigValidator passes.
 
+**Evening follow-up (Landon, 17:27: "1. Keep it 2. Yes. I spawned on top of the roof when I tried to test play.")**
+- **Spawning on the roof:** the Shop map had been moved from ServerStorage.Maps into Workspace in Edit mode, so RunStateService found no map to clone and players spawned at the origin, pushed up onto the roof of the copy in Workspace. It is back in ServerStorage.Maps, and ModeService now takes a map left in Workspace (a Model named Shop or Lobby with a Spawns folder) back into ServerStorage.Maps for the session before anything reads it (or drops it if the real one is still there), with a warning in the output. Verified (playtest, with the map deliberately left in Workspace): the warning prints, ShopMap is built and you spawn in the Break Room at (−28.5, 2.7, −3.6) with the Clock-In panel up.
+- **Order taking gets harder on later nights** (Economy.orderTaking.byNight): Nights 1–2 as before; Night 3 the customer's line fades from the notepad after 4.5 s; Nights 4–5 after 3.5 s / 3 s and the cards show words only. Tap the speech bubble (R, gamepad Y) to have the customer say it again (RepeatOrderLine) for 3% of the ticket's patience; a correction after a wrong tap also brings the line back. Verified (playtest): Night 4 — words-only cards, the line faded with "Click here (or press R) to hear it again.", say-again showed it, the customer repeated it, and it faded again after 3.5 s; a right tap moved to line 2 with a fresh timer; Night 1 — the line stays and the cards keep their pictures. UIAudit 33 screens, 0 problems; ConfigValidator passes.
+- **Patron triangles:** kept at 9,852 (Landon).
+
 ## Session 2026-10-29 evening — Landon's map and UI feedback, the tutorial, the audio pass
 Landon (20:00): mesh issues in the map; you feel too big in the store; clean up the Shop; a deep dive on the top Roblox UIs, applied to the whole UI; then the next test and upgrades. (20:03): the starting tutorial like Steal an Egg — a straight line of arrows from the player to where they need to go, not arrows on the ground.
 
@@ -83,7 +88,9 @@ Landon (20:00): mesh issues in the map; you feel too big in the store; clean up 
 - **The world around the maps is scenery**: everything Surroundings places is non-colliding, unqueryable and untouchable (far pieces cast no shadow) except one 2,048-stud ground plane, so it costs no physics and can't catch players or NPCs.
 - **The Patron stands at z −55.5 and reaches through the picture window** (the Plate was already under it); the finale's two shots stand inside the dining room. The OPEN sign moved to M2, clear of both shots and the slam arm (M3).
 - **During a cinematic only creature cues caption** (Entity group); the kitchen and the street stay quiet on screen.
-- **Patron over the creature triangle budget** (9,852 vs STYLE.md's 8,000; it was 9,044): kept for the face's resolution — see Bible Questions.
+- **Patron over the creature triangle budget** (9,852 vs STYLE.md's 8,000; it was 9,044): kept for the face's resolution (Landon, 2026-10-30).
+- **Order taking gets harder by night** (Landon: yes): the line fades from the notepad (Night 3 4.5 s, Night 4 3.5 s, Night 5 3 s) and the cards lose their pictures from Night 4; hearing a faded line again costs 3% of the ticket's patience (a wrong tap costs 5%), so asking is always the cheaper choice than guessing.
+- **A map left in Workspace still plays**: ModeService moves it back into ServerStorage.Maps for the session (it never edits the place), so dragging the Shop or Lobby out to look at it in Edit mode can't break Play again.
 - **WorldAudio plays the world's sounds on each client from replicated state** (sandwich Configurations, ticket folder, State.Power / Tension / Phase / Upgrades, entity attributes, Effect pushes) — no new remotes. Spatial captions show only within earshot (row.hear, default 60 studs), so a footstep across the map doesn't caption.
 - **Earpiece static sources = hostile entities + any Copy + Lights-Out** (Bible §6.3 lists static as the Copy's and Lights-Out's tell even before they turn hostile); Nibblers and the Patron are excluded. Curve: silent beyond 25 studs (35 Radio Tuner), (distance fraction)^1.4 to full at 5.
 - **When the radio distorts** (Bible §14.3 says how, not when): the clean track runs through Distortion + Equalizer as Director tension rises from 45 to 80; radio_distorted (a Radio Tuning recording) is used as the crackle when it slips and when it comes back after a blackout.
@@ -186,6 +193,7 @@ Landon (20:00): mesh issues in the map; you feel too big in the store; clean up 
 - Studio-only `ServerStorage.DevProbe` BindableFunction (created by Bootstrap only in Studio) lets the build session inspect live service state.
 
 ## Open bugs
+- Fixed (2026-10-30 evening): players spawned on the roof — the Shop map sat in Workspace instead of ServerStorage.Maps (moved back; ModeService now adopts a stray map at Play).
 - Open (minor): taking an order flush against the counter, the raised fist and the notepad dip into the counter top (the toolnone hold is at waist height). A dedicated writing pose (forearm up, pad at chest height) would lift it.
 - Open (minor): at the counter the follow camera can be pulled in close in front of the pie case (the occluder push), which cramps the view while the notepad is open.
 - Open (minor): at the slam moment the Patron's arm passes below head height in front of the counter for up to 14 studs along the line from M3 — a player standing there is clipped (booths and seated customers are clear). THE BIG ONE overhangs the 3-deep counter by ~0.5 each side.
@@ -230,8 +238,8 @@ Landon (20:00): mesh issues in the map; you feel too big in the store; clean up 
 
 ## Bible Questions
 - Resolved 2026-10-30: **Employee of the Month is weekly** (per-week counter in the profile + a weekly OrderedDataStore); the Lobby wall and the new dining-room plaque show this week.
-- **Patron triangles:** the refit is 9,852 triangles against the 8,000 creature budget (STYLE.md). Keep it, or lower the face resolution to get under?
-- **Order-taking difficulty:** a wrong tap costs a little patience and the customer corrects you. Should later nights make it harder (customers talk faster, the notepad hides the choice pictures)?
+- Resolved 2026-10-30: **Patron triangles** — keep the refit at 9,852 (Landon).
+- Resolved 2026-10-30: **order taking gets harder on later nights** (Landon: yes) — built (Economy.orderTaking.byNight).
 - **Shop card art:** `Config.CatalogArt` puts the marketplace thumbnails (with their baked-in titles) inside the in-game cards, so names show twice. The top games show clean renders in game and keep store art for the Roblox page. Keep CatalogArt in game, or switch the cards to the Blender renders (already in the icon set)?
 - Resolved 2026-10-29: smoke_alarm and usual_footsteps now have licensed sounds (see Session 2026-10-29 evening) — swap them if you dislike them once you've listened.
 - **Results offer:** Bible §11.9 says Starter Pack after the first Night cleared, otherwise Coin Boost; the code offers the Starter Pack on any Results until it's bought (the first-Night rule only blocks offers before a player has ever cleared Night 1). Confirm that reading.
