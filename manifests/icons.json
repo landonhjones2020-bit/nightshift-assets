@@ -377,6 +377,24 @@
   "hash": "cdf42fe940b06a03",
   "url": "https://raw.githubusercontent.com/landonhjones2020-bit/nightshift-assets/main/icons/shop/Currency_Tokens.nsz"
  },
+ "FX_GuideArrow": {
+  "group": "fx",
+  "size": [
+   512,
+   256
+  ],
+  "hash": "5736cc47c5681c01",
+  "url": "https://raw.githubusercontent.com/landonhjones2020-bit/nightshift-assets/main/icons/fx/FX_GuideArrow.nsz"
+ },
+ "FX_GuideMarker": {
+  "group": "fx",
+  "size": [
+   512,
+   512
+  ],
+  "hash": "017167bf0d01f7b9",
+  "url": "https://raw.githubusercontent.com/landonhjones2020-bit/nightshift-assets/main/icons/fx/FX_GuideMarker.nsz"
+ },
  "Food_Tomato": {
   "group": "food",
   "size": [

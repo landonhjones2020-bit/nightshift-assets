@@ -3,7 +3,7 @@
 Usage:  bpyenv/bin/python blender/G2_ui/_batch.py hud                 # a whole family, finals
         bpyenv/bin/python blender/G2_ui/_batch.py HUD_Book HUD_Gift --draft
         bpyenv/bin/python blender/G2_ui/_batch.py --list
-Families: hud, crates, tags, shop, meta, portraits, art. Finals write icons/<group>/<name>.png
+Families: hud, crates, tags, shop, meta, portraits, art, fx. Finals write icons/<group>/<name>.png
 + .nsz and register them in manifests/icons.json (nslib.export_icon); --draft writes 128 px
 drafts to the scratch dir only.
 """
@@ -15,7 +15,7 @@ import traceback
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 import _common as G  # noqa: E402
 
-FAMILY_MODULES = ("fam_hud", "fam_crates", "fam_tags", "fam_shop", "fam_meta", "fam_portraits", "fam_keyart")
+FAMILY_MODULES = ("fam_hud", "fam_crates", "fam_tags", "fam_shop", "fam_meta", "fam_portraits", "fam_keyart", "fam_fx")
 for _m in FAMILY_MODULES:
     __import__(_m)
 
