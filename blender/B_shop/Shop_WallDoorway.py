@@ -16,12 +16,15 @@ ns = C.ns
 X0, X1 = -C.WALL_W / 2, C.WALL_W / 2
 OX, OH = 2.5, 8.0        # half opening width, opening height
 CW = 0.42                # casing width
+CASE_IN = 0.02           # casing legs/head lap this far over the opening edge, so the wall trims
+                         # ending on the jamb plane are buried in the casing (their end faces were
+                         # coplanar with the casing's inner faces -> z-fighting at the jambs)
 STEEL = C.STAINLESS
 
 
 def casing_side(sx, face_y, out_dir):
     """One vertical casing leg (+ plinth block) on one face. sx = -1 left, +1 right."""
-    xa, xb = sorted((sx * OX, sx * (OX + CW)))
+    xa, xb = sorted((sx * (OX - CASE_IN), sx * (OX + CW)))
     proud = 0.24
     a0, a1 = sorted((face_y, face_y + out_dir * proud))
     leg = ns.box((xb - xa, a1 - a0, OH + CW), loc=((xa + xb) / 2, (a0 + a1) / 2, (OH + CW) / 2), bevel=0.05)
@@ -34,7 +37,7 @@ def casing_side(sx, face_y, out_dir):
 def casing_head(face_y, out_dir):
     proud = 0.24
     a0, a1 = sorted((face_y, face_y + out_dir * proud))
-    head = ns.box((2 * (OX + CW), a1 - a0, CW), loc=(0, (a0 + a1) / 2, OH + CW / 2), bevel=0.05)
+    head = ns.box((2 * (OX + CW), a1 - a0, CW + CASE_IN), loc=(0, (a0 + a1) / 2, OH + (CW - CASE_IN) / 2), bevel=0.05)
     # small cornice cap over the head casing
     c0, c1 = sorted((face_y, face_y + out_dir * (proud + 0.08)))
     cap = ns.box((2 * (OX + CW) + 0.24, c1 - c0, 0.14), loc=(0, (c0 + c1) / 2, OH + CW + 0.07), bevel=0.04)

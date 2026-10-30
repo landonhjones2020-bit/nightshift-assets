@@ -34,6 +34,9 @@ def build():
     for x in (-0.95, 0.0, 0.95):
         frame.append(ns.box((0.08, 0.14, 0.12), loc=(x, 0.03, ZC - 0.45), bevel=0.02, segments=1))
     frame.append(ns.box((0.7, 0.2, 0.22), loc=(0, 0.12, ZC - 0.62), bevel=0.04, segments=1))
+    # cross rod the letter tubes are wired to (touches the letters' backs at y = 0.03, ties into the side rods)
+    for zr in (ZC - 0.17, ZC + 0.17):
+        frame.append(C.pipe([(-1.45, 0.06, zr), (1.45, 0.06, zr)], 0.035, sides=6))
     C.part(frame, "Frame", "#18191D", smooth_angle=60)
 
     # hanging wires up to the top bar (with crimp beads)

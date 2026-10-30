@@ -55,14 +55,17 @@ def build():
 
     def quad(a, b, c, d):
         bm.faces.new([bm.verts.new(a), bm.verts.new(b), bm.verts.new(c), bm.verts.new(d)])
-    # ceiling (faces down), front wall (faces +Y), back wall (faces -Y), floor under belt (faces up)
+    # ceiling (faces down), front wall (faces +Y), back wall (faces -Y), floor under belt (faces up).
+    # Windings set so every quad faces INTO the tunnel (the walls and floor were wound outward, so
+    # Roblox culled them and the tunnel showed bare metal instead of the glow).
     quad((-lx, -ly, lz1), (-lx, ly, lz1), (lx, ly, lz1), (lx, -ly, lz1))
-    quad((-lx, -ly, lz0), (lx, -ly, lz0), (lx, -ly, lz1), (-lx, -ly, lz1))
-    quad((lx, ly, lz0), (-lx, ly, lz0), (-lx, ly, lz1), (lx, ly, lz1))
-    quad((-lx, -ly, lz0), (-lx, ly, lz0), (lx, ly, lz0), (lx, -ly, lz0))
+    quad((-lx, -ly, lz1), (lx, -ly, lz1), (lx, -ly, lz0), (-lx, -ly, lz0))
+    quad((lx, ly, lz1), (-lx, ly, lz1), (-lx, ly, lz0), (lx, ly, lz0))
+    quad((lx, -ly, lz0), (lx, ly, lz0), (-lx, ly, lz0), (-lx, -ly, lz0))
     liner = ns.from_bmesh(bm, "Liner")
     # glowing element rods across the tunnel ceiling
-    rods = [C.rod((x, -ly + 0.05, lz1 - 0.07), (x, ly - 0.05, lz1 - 0.07), 0.04, verts=6) for x in (-0.75, -0.25, 0.25, 0.75)]
+    # rods run wall to wall (they stopped 0.05 short of the liner walls, hanging in the air)
+    rods = [C.rod((x, -ly - 0.01, lz1 - 0.07), (x, ly + 0.01, lz1 - 0.07), 0.04, verts=6) for x in (-0.75, -0.25, 0.25, 0.75)]
     win = ns.box((win_x1 - win_x0 - 0.04, 0.04, win_z1 - win_z0 - 0.04), loc=((win_x0 + win_x1) / 2, -HY + 0.1, (win_z0 + win_z1) / 2), bevel=0.0)
     C.part([liner, win], "Heat", C.HEAT, "Neon", recolor="heat", cast_shadow=False, smooth_angle=None)
 

@@ -50,8 +50,10 @@ def build():
     C.place(plate, (0, fy - 0.04, SC_Z), pitch=90)
     arm = C.pipe([(0, fy - 0.05, SC_Z), (0, fy - 0.5, SC_Z + 0.1), (0, fy - 1.1, SC_Z + 0.55), (0, fy - 1.55, SC_Z + 0.45),
                   (0, fy - 1.7, SC_Z + 0.2)], 0.06, sides=6, corner=0.25, corner_segs=2)
-    C.part(bolts + [plate, arm], "Chrome", C.CHROME, "Metal", smooth_angle=50)
     sx, sy, sz = 0, fy - 1.7, SC_Z + 0.2
+    # lamp socket from the arm end down into the bulb's top (the bulb hung 0.22 under the shade, unattached)
+    socket = ns.cyl(0.07, 0.3, loc=(sx, sy, sz - 0.1), verts=8, radius_top=0.06, bevel=0.0)
+    C.part(bolts + [plate, arm, socket], "Chrome", C.CHROME, "Metal", smooth_angle=50)
     shade = ns.lathe([(0.08, 0.0), (0.16, -0.05), (0.42, -0.28), (0.62, -0.55), (0.6, -0.58), (0.4, -0.31),
                       (0.14, -0.08), (0.06, -0.03)], verts=14, loc=(sx, sy, sz))
     C.part([shade], "Shade", C.BRAND, smooth_angle=60)

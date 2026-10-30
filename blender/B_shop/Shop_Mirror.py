@@ -25,7 +25,7 @@ def build():
     backing = C.prism(C.rrect(W - 0.2, H - 0.2, 0.36, 4, 0, zc), "y", -0.05, 0.0)
     shelf = ns.box((2.4, 0.42, 0.08), loc=(0, -0.21, 0.32), bevel=0.03, segments=1)
     brackets = [ns.box((0.08, 0.36, 0.3), loc=(sx * 0.95, -0.18, 0.2), bevel=0.02, segments=1) for sx in (-1, 1)]
-    pump = ns.cyl(0.035, 0.12, loc=(0.75, -0.21, 0.88), verts=6, bevel=0.0)
+    pump = ns.cyl(0.035, 0.12, loc=(0.75, -0.21, 0.36 + 0.42 + 0.04), verts=6, bevel=0.0)  # seated on the bottle
     C.part([frame, backing, shelf, pump] + brackets, "Frame", C.CHROME, "Metal", smooth_angle=45)
     glass = C.prism(C.rrect(W - 0.3, H - 0.3, 0.32, 4, 0, zc), "y", -0.09, -0.05)
     ns.tag(glass, "Glass", "#C6D3D8", "Glass", recolor="mirror", cast_shadow=False)

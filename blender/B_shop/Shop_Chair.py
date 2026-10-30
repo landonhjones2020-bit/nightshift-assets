@@ -31,7 +31,9 @@ def build():
     C.part(tubes, "Frame", C.CHROME, "Metal", smooth_angle=60)
 
     seat = ns.box((2 * HW + 0.06, 2 * HD + 0.02, 0.3), loc=(0, -0.02, SZ - 0.15), bevel=0.12, segments=2)
-    back = ns.box((2 * HW * 0.86 + 0.1, 0.24, 1.05), loc=(0, HD + 0.1, 2.75), rot=(-8, 0, 0), bevel=0.11, segments=2)
+    # back width = upright spacing, so the chrome uprights run half-embedded along its sides (a back
+    # 0.05 wider put its side faces exactly on the tubes' outer flats -> z-fighting)
+    back = ns.box((2 * HW * 0.86, 0.24, 1.05), loc=(0, HD + 0.1, 2.75), rot=(-8, 0, 0), bevel=0.11, segments=2)
     C.part([seat, back], "Vinyl", C.VINYL_RED, recolor="chair_vinyl", smooth_angle=50)
     # piping band around the seat edge
     band = C.prism(C.rrect(2 * HW + 0.1, 2 * HD + 0.06, 0.16, 2, 0, -0.02), "z", SZ - 0.27, SZ - 0.19)

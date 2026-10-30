@@ -57,7 +57,9 @@ def build():
         pts = [(sx * x, z) for x, z in pts]
         tails.append(C.prism(pts, "y", -T - 0.12, -T - 0.02))
     C.part(tails, "BannerTails", C.BRAND_DARK, smooth_angle=None)
-    letters = C.text("EMPLOYEE OF THE MONTH", 0.56, 0.06, (0, -T - 0.22, BAN_Z), width=8.2, res=1, spacing=1.04,
+    # flat (single-sided) letter decals sit depth/2 in front of loc: 0.01 proud of the band's face (-T - 0.2);
+    # at loc -T - 0.22 they hovered 0.05 in front of it
+    letters = C.text("EMPLOYEE OF THE MONTH", 0.56, 0.06, (0, -T - 0.18, BAN_Z), width=8.2, res=1, spacing=1.04,
                      flat=True)
     C.part([letters], "Letters", C.CREAM, smooth_angle=None)
 

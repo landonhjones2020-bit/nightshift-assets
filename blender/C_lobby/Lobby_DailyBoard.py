@@ -61,7 +61,8 @@ def build():
         top = (x, 0.0, BZ0 + BH - 0.5)
         wood.append(beam(top, (x, -1.35, 0.0)))
         wood.append(beam(top, (x, 1.35, 0.0)))
-        wood.append(beam((x, -1.0, 1.0), (x, 1.0, 1.0), w=0.16, d=0.16))
+        # cross brace runs into both legs (it stopped 0.05 short of them and floated)
+        wood.append(beam((x, -1.1, 1.0), (x, 1.1, 1.0), w=0.16, d=0.16))
     wood.append(ns.box((BW + 0.7, 0.36, 0.26), loc=(0, 0.0, BZ0 + BH + 0.05), bevel=0.06, segments=1))
     # chalk tray
     wood.append(ns.box((BW - 0.2, 0.55, 0.12), loc=(0, -0.3, BZ0 + 0.18), bevel=0.03, segments=1))
@@ -69,6 +70,10 @@ def build():
     C.part(wood, "Wood", C.WOOD, "Wood", can_collide=True, smooth_angle=40)
     knobs = [ns.cyl(0.16, 0.12, loc=(sx * (BW / 2 + 0.3), 0, BZ0 + BH - 0.5), rot=(0, 90, 0), verts=8, bevel=0.0)
              for sx in (-1, 1)]
+    # pivot axles: knob -> through the leg -> into the board frame (the board hung 0.06 clear of both A-frames
+    # with nothing joining them)
+    knobs += [ns.cyl(0.07, 0.45, loc=(sx * (BW / 2 + 0.075), 0, BZ0 + BH - 0.5), rot=(0, 90, 0), verts=8, bevel=0.0)
+              for sx in (-1, 1)]
 
     # chalk drawing: DAILY letters, stars, outline round the screen, a dashed underline
     fy = CHALK_FACE - 0.012
@@ -89,7 +94,7 @@ def build():
         x = -1.92 + i * 0.64
         rot = (0, (-4, 3, -2, 0, 4, -3, 2)[i], 0)
         pg = ns.box((0.52, 0.03, 0.6), loc=(x, CHALK_FACE - 0.065, cz - 0.04), rot=rot, bevel=0.0)
-        hd = ns.box((0.52, 0.035, 0.16), loc=(x, CHALK_FACE - 0.075, cz + 0.2), rot=rot, bevel=0.0)
+        hd = ns.box((0.54, 0.035, 0.16), loc=(x, CHALK_FACE - 0.075, cz + 0.2), rot=rot, bevel=0.0)  # wider than the page
         (today if i == 3 else pages).append(pg)
         heads.append(hd)
         pins.append(ns.sphere(0.06, loc=(x, CHALK_FACE - 0.12, cz + 0.2), segs=6, rings=4))
@@ -122,8 +127,9 @@ def build():
     cols = list(flags)
     for i in range(1, 8):
         p = Vector(string_pts[i])
-        flags[cols[i % 3]].append(C.prism([(p.x - 0.26, p.z), (p.x + 0.26, p.z), (p.x, p.z - 0.42)], "y", p.y - 0.02,
-                                          p.y + 0.02))
+        # thinner than the string, so the string wraps the flag tops (faces overlapped and z-fought before)
+        flags[cols[i % 3]].append(C.prism([(p.x - 0.26, p.z), (p.x + 0.26, p.z), (p.x, p.z - 0.42)], "y", p.y - 0.012,
+                                          p.y + 0.012))
     for col, objs in flags.items():
         C.part(objs, "Flag" + {C.BRAND: "Red", C.MUSTARD: "Mustard", C.CYAN: "Cyan"}[col], col, "Fabric", smooth_angle=None)
 

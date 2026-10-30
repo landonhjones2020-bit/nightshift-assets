@@ -44,7 +44,7 @@ def build():
     slots = {1: (-1, 1), 2: (1, 1), 3: (-1, 0), 4: (1, 0)}
     for idx, (sx, row) in slots.items():
         cx = sx * (CW / 2 + 0.05)
-        cz = 0.1 + CH / 2 + row * (CH + 0.1)
+        cz = 0.1 + CH / 2 + row * (CH + 0.1) - 0.015   # case bottom just into the shelf (it hovered 0.01)
         cases.append(frustum(CW, CH, CW * 0.62, CH * 0.62, RD - 0.1, (cx, 0.0, cz)))
         fy = -(RD - 0.1) / 2
         bz = C.ring_slab(C.rrect(CW - 0.28, CH - 0.4, 0.2, 2, cx, cz + 0.16),
@@ -53,9 +53,9 @@ def build():
         scr = C.prism(C.rrect(CW - 0.5, CH - 0.62, 0.14, 1, cx, cz + 0.16), "y", fy - 0.02, fy + 0.03)
         ns.tag(scr, f"Screen{idx}", C.SCREEN_OFF, "Glass", recolor="screen", cast_shadow=False)
         for kx in (0.45, 0.65):
-            knobs.append(ns.cyl(0.06, 0.08, loc=(cx + kx, fy - 0.08, cz - CH / 2 + 0.17), rot=(90, 0, 0), verts=8,
-                                bevel=0.0))
-        led = ns.sphere(0.035, loc=(cx - CW / 2 + 0.3, fy - 0.07, cz - CH / 2 + 0.17), segs=6, rings=4)
+            knobs.append(ns.cyl(0.06, 0.08, loc=(cx + kx, fy - 0.03, cz - CH / 2 + 0.17), rot=(90, 0, 0), verts=8,
+                                bevel=0.0))   # seated on the case face (they stood 0.04 in front of it)
+        led = ns.sphere(0.035, loc=(cx - CW / 2 + 0.3, fy - 0.02, cz - CH / 2 + 0.17), segs=6, rings=4)  # half-set in the case
         ns.tag(led, f"Led{idx}", "#45FF6A", "Neon", recolor="led", cast_shadow=False)
     C.part(cases, "Cases", CASE, smooth_angle=40)
     C.part(bezels, "Bezels", BEZEL, smooth_angle=40)

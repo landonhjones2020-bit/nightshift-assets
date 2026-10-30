@@ -53,7 +53,8 @@ def build():
     kick = [ns.box((L - 0.3, 0.12, 0.3), loc=(0, -D / 2 + 0.08, 0.27), bevel=0.03, segments=1)]
     louvres = [ns.box((1.6, 0.06, 0.035), loc=(-2.3, -D / 2 + 0.0, 0.17 + 0.065 * k), rot=(-25, 0, 0), bevel=0.0)
                for k in range(4)]
-    feet = [ns.cyl(0.13, 0.14, loc=(sx * (L / 2 - 0.3), sy * (D / 2 - 0.3), 0.07), verts=8, bevel=0.0, radius_top=0.1)
+    # levelling feet reach up into the cabinet bottom (z 0.3); at 0.14 tall they hovered 0.16 below it
+    feet = [ns.cyl(0.13, 0.32, loc=(sx * (L / 2 - 0.3), sy * (D / 2 - 0.3), 0.16), verts=8, bevel=0.0, radius_top=0.1)
             for sx in (-1, 1) for sy in (-1, 1)]
     vent_bg = ns.box((1.7, 0.04, 0.3), loc=(-2.3, -D / 2 + 0.03, 0.27), bevel=0.01, segments=1)
     C.part(kick + feet, "Kick", C.STEEL_DARK, "Metal", smooth_angle=40)

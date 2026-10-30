@@ -67,7 +67,8 @@ def build():
     top = ns.cyl(1.4, 0.16, loc=(0, 0, TABLE_Z - 0.08), verts=24, bevel=0.04, segments=1)
     C.part([top], "TableTop", MARBLE, "Marble", can_collide=True, smooth_angle=40)
     band = ns.cyl(1.45, 0.1, loc=(0, 0, TABLE_Z - 0.2), verts=24, bevel=0.0)
-    post = ns.cyl(0.18, TABLE_Z - 0.4, loc=(0, 0, (TABLE_Z - 0.4) / 2 + 0.12), verts=10, bevel=0.0)
+    # pedestal reaches up into the marble top (it stopped 0.12 below it: the top floated)
+    post = ns.cyl(0.18, TABLE_Z - 0.26, loc=(0, 0, (TABLE_Z - 0.26) / 2 + 0.12), verts=10, bevel=0.0)
     foot = ns.cyl(0.85, 0.14, loc=(0, 0, 0.07), verts=16, radius_top=0.7, bevel=0.0)
     lamp_base = ns.lathe([(0.0, 0.0), (0.22, 0.0), (0.2, 0.06), (0.06, 0.12), (0.05, 0.62), (0.0, 0.66)], verts=8,
                          loc=(0.35, 0.25, TABLE_Z))

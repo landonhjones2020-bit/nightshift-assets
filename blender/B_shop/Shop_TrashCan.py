@@ -33,8 +33,9 @@ def build():
     ns.tag(body, "Body", GALV, "Metal", smooth_angle=50)
     handles = []
     for sx in (-1, 1):
-        handles.append(C.pipe([(sx * (R + 0.02), -0.35, 2.55), (sx * (R + 0.22), -0.3, 2.45), (sx * (R + 0.22), 0.3, 2.45),
-                               (sx * (R + 0.02), 0.35, 2.55)], 0.04, sides=6, corner=0.08, corner_segs=1))
+        # ends start inside the wall (at R + 0.02 they stopped ~0.05 short of the faceted body)
+        handles.append(C.pipe([(sx * (R - 0.1), -0.35, 2.55), (sx * (R + 0.22), -0.3, 2.45), (sx * (R + 0.22), 0.3, 2.45),
+                               (sx * (R - 0.1), 0.35, 2.55)], 0.04, sides=6, corner=0.08, corner_segs=1))
     C.part(handles, "Handles", GALV_DARK, "Metal", smooth_angle=60)
 
     lid = ns.lathe([(0.0, 0.42), (0.35, 0.38), (0.8, 0.22), (R + 0.1, 0.06), (R + 0.12, 0.0), (R + 0.02, -0.06),

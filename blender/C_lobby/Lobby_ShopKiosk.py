@@ -111,7 +111,8 @@ def build():
     ax0, ax1 = -W / 2 - 0.3, W / 2 + 0.3
     n = 8
     sw = (ax1 - ax0) / n
-    y_back, z_back, y_front, z_front = fy - 0.25, ROOF + 0.05, fy - 1.45, ROOF - 0.85
+    # back edge starts inside the fascia (at fy - 0.25 the whole awning hung 0.05 in front of it, unattached)
+    y_back, z_back, y_front, z_front = fy - 0.15, ROOF + 0.05, fy - 1.45, ROOF - 0.85
     stripes = {C.CREAM: [], C.BRAND: []}
     t = 0.07
     for i in range(n):
@@ -128,8 +129,9 @@ def build():
     for sx in (-1, 1):   # side cheeks
         x = sx * (ax1 - 0.02)
         a0, a1 = sorted((x - 0.035, x + 0.035))
-        stripes[C.BRAND].append(C.prism([(y_back, z_back), (y_front, z_front), (y_front, z_front - 0.28), (y_back, z_front - 0.1)],
-                                        "x", a0, a1))
+        # cheek top 0.012 above the canvas (coplanar before: red / cream z-fighting along the +X edge)
+        stripes[C.BRAND].append(C.prism([(y_back, z_back + 0.012), (y_front, z_front + 0.012), (y_front, z_front - 0.28),
+                                         (y_back, z_front - 0.1)], "x", a0, a1))
     C.part(stripes[C.BRAND], "AwningRed", C.BRAND, smooth_angle=None)
     C.part(stripes[C.CREAM], "AwningCream", C.PAPER, smooth_angle=None)
 

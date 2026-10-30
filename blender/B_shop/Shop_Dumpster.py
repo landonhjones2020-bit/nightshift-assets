@@ -65,6 +65,12 @@ def build():
             wheels.append(ns.cyl(0.28, 0.22, loc=(sx * (L / 2 - 0.6), y, 0.28), rot=(0, 90, 0), verts=10, bevel=0.03,
                                  segments=1))
             wheels.append(ns.box((0.4, 0.4, 0.12), loc=(sx * (L / 2 - 0.6), y, 0.56), bevel=0.02, segments=1))
+    # hinge knuckles along the back top edge (two per lid): the open lid's hinge edge sat 0.12 above the lip
+    # with nothing joining them (floating lid); the knuckles span lip top -> lid hinge edge
+    for cxl in (-L / 4, L / 4):
+        for dx in (-1.1, 1.1):
+            wheels.append(ns.cyl(0.1, 0.4, loc=(cxl + dx, YB + 0.06, ZT + 0.1), rot=(0, 90, 0), verts=8, bevel=0.02,
+                                 segments=1))
     C.part(wheels, "Casters", "#2A2B2F", smooth_angle=50)
 
 

@@ -60,9 +60,22 @@ def build():
     for y, d in ((-8.15, 1), (8.15, -1)):     # bumpers
         chrome.append(ns.box((2 * HW + 0.3, 0.45, 0.6), loc=(0, y, 1.45), bevel=0.15, segments=1))
     chrome.append(C.ring_slab(C.rrect(3.0, 0.95, 0.1, 1, 0, 2.3), C.rrect(2.7, 0.7, 0.05, 1, 0, 2.3), "y", -8.08, -7.98))
+    def strip_runs(half_chord, y0=-7.6, y1=7.6):
+        """y ranges of a side strip broken at the wheel arches (it used to run across the openings)."""
+        cuts = sorted((y - half_chord, y + half_chord) for y in WB)
+        runs, a = [], y0
+        for c0, c1 in cuts:
+            runs.append((a, c0))
+            a = c1
+        runs.append((a, y1))
+        return [(a, b) for a, b in runs if b - a > 0.2]
+
     for sx in (-1, 1):
-        chrome.append(ns.box((0.06, 13.0, 0.1), loc=(sx * (HW + 0.03), 0.3, 2.35), bevel=0.02, segments=1))
+        for a, b in strip_runs(1.19):        # arch half-chord at z 2.3..2.4 is 1.07, + 0.12 for the bevel
+            chrome.append(ns.box((0.06, b - a, 0.1), loc=(sx * (HW + 0.03), (a + b) / 2, 2.35), bevel=0.02, segments=1))
         chrome.append(ns.box((0.25, 0.4, 0.3), loc=(sx * (HW + 0.15), -2.7, 3.7), bevel=0.06, segments=1))  # mirrors
+        # mirror arm from the door top (beltline 3.35) to the mirror (it floated 0.2 above the body)
+        chrome.append(C.pipe([(sx * (HW - 0.15), -2.68, 3.25), (sx * (HW + 0.12), -2.7, 3.62)], 0.05, sides=6))
     hubs = []
     tires = []
     for y in WB:
@@ -75,7 +88,8 @@ def build():
     grille = ns.box((2.7, 0.08, 0.7), loc=(0, -8.0, 2.3), bevel=0.0)
     rubber = [grille]
     for sx in (-1, 1):
-        rubber.append(ns.box((0.08, 13.4, 0.28), loc=(sx * (HW + 0.03), 0.3, 1.85), bevel=0.03, segments=1))
+        for a, b in strip_runs(1.55):        # arch half-chord at z 1.71 is 1.43, + 0.12
+            rubber.append(ns.box((0.08, b - a, 0.28), loc=(sx * (HW + 0.03), (a + b) / 2, 1.85), bevel=0.03, segments=1))
     C.part(tires + rubber, "Rubber", C.RUBBER, smooth_angle=45)
 
     heads = []

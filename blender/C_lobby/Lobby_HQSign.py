@@ -62,7 +62,13 @@ def build():
     for z in (1.5, BZ0 - 0.4):
         steel.append(C.rod((-6.5, 0.45, z), (6.5, 0.45, z), 0.08, verts=5))
     for x in (-3.0, 3.0):   # board brackets
-        steel.append(ns.box((0.3, 0.4, H - 0.6), loc=(x, 0.4, ZC), bevel=0.03, segments=1))
+        # brackets reach into the board's back (they stopped ~0.05 behind it: the board floated off the truss)
+        y0 = -FY - 0.05
+        steel.append(ns.box((0.3, 0.6 - y0, H - 0.6), loc=(x, (y0 + 0.6) / 2, ZC), bevel=0.03, segments=1))
+    for x in (-6.5, 6.5):   # clamp blocks: board back -> front posts (the posts stood ~0.06 behind the board,
+        y0 = -FY - 0.05     # so the whole truss was free-standing and the board hung in mid-air)
+        for z in (BZ0 + 0.7, BZ0 + H - 0.9):
+            steel.append(ns.box((0.34, 0.5 - y0, 0.26), loc=(x, (y0 + 0.5) / 2, z), bevel=0.03, segments=1))
     C.part(steel, "Truss", C.STEEL, "Metal", smooth_angle=50)
     C.part([rim], "Chrome", C.CHROME, "Metal", smooth_angle=40)
 

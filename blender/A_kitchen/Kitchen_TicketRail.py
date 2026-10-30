@@ -49,7 +49,8 @@ def build():
         standoffs.append(C.rod((x, RAIL_Y, RAIL_Z), (x, 0.0, RAIL_Z), 0.07, verts=8))
         standoffs.append(ns.cyl(0.17, 0.05, loc=(x, -0.025, RAIL_Z), rot=(90, 0, 0), verts=12, bevel=0.015, segments=1))
     C.part([rail] + standoffs, "Rail", C.STAINLESS, "Metal", smooth_angle=40)
-    caps = [ns.box((0.08, 0.2, RAIL_H + 0.06), loc=(sx * (L / 2 + 0.03), RAIL_Y, RAIL_Z), bevel=0.04, segments=1) for sx in (-1, 1)]
+    # bevel < half the cap thickness: at 0.04 on a 0.08 cap the bevel collapsed (degenerate, see-through ends)
+    caps = [ns.box((0.08, 0.2, RAIL_H + 0.06), loc=(sx * (L / 2 + 0.03), RAIL_Y, RAIL_Z), bevel=0.03, segments=1) for sx in (-1, 1)]
     C.part(stripe, "Stripe", C.BRAND, "SmoothPlastic")
     C.part(caps + [groove], "EndCaps", C.RUBBER, "SmoothPlastic", smooth_angle=40)
 

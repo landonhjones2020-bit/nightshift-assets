@@ -19,7 +19,9 @@ def build():
     canopy = ns.cyl(0.32, 0.14, loc=(0, 0, -0.07), verts=14, radius_top=0.34, bevel=0.03, segments=1)
     cap = ns.cyl(0.13, 0.3, loc=(0, 0, SZ - 0.05), verts=10, bevel=0.03, segments=1)
     rim = ns.torus(0.84, 0.045, loc=(0, 0, SZ - 1.02), major_segs=24, minor_segs=5)
-    C.part([canopy, cap, rim], "Chrome", C.CHROME, "Metal", smooth_angle=50)
+    # lamp socket: from the cap down through the shade's top opening into the bulb's neck
+    socket = ns.cyl(0.085, 0.24, loc=(0, 0, SZ - 0.32), verts=10, radius_top=0.1, bevel=0.0)
+    C.part([canopy, cap, rim, socket], "Chrome", C.CHROME, "Metal", smooth_angle=50)
     cord = C.pipe([(0, 0, -0.12), (0, 0, SZ + 0.08)], 0.035, sides=6)
     ns.tag(cord, "Cord", "#1C1C1F", "Fabric", smooth_angle=60)
     outer = ns.lathe([(0.12, 0.0), (0.3, -0.08), (0.6, -0.32), (0.78, -0.62), (0.86, -0.86), (0.8, -0.86),

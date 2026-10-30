@@ -92,8 +92,10 @@ def badge(cx, cy, cz, facing):
 
 def wheel(x, y, sx):
     tire = ns.cyl(WR, 0.82, loc=(x, y, WR), rot=(0, 90, 0), verts=14, bevel=0.22, segments=1)
-    wall = C.annulus(0.62, 0.88, loc=(x + sx * 0.425, y, WR), verts=16)
-    wall.rotation_euler = (0, math.radians(90 * sx), 0)
+    # whitewall: a thin closed washer half-sunk into the tyre's flat side (the single-sided ring floated
+    # 0.015 off the tyre and read as see-through from low angles)
+    wall = ns.ring(0.62, 0.88, 0.04, loc=(x + sx * 0.41, y, WR), verts=16)
+    wall.rotation_euler = (0, math.radians(90), 0)
     hub = ns.cyl(0.58, 0.14, loc=(x + sx * 0.4, y, WR), rot=(0, 90, 0), verts=10, radius_top=0.48, bevel=0.0)
     if sx < 0:
         hub.rotation_euler = (0, math.radians(-90), 0)
@@ -112,7 +114,10 @@ def build():
     for (z0, z1), lst in ((STRIPE, stripe), (PIN, pin)):
         zc, h = (z0 + z1) / 2, z1 - z0
         lst.append(ns.box((0.05, 2 * HL - 0.3, h), loc=(HW + 0.015, 0.0, zc), bevel=0.0))           # +X side
-        lst.append(ns.box((0.05, DY0 + HL - 0.15, h), loc=(-HW - 0.015, (-HL + 0.15 + DY0) / 2, zc), bevel=0.0))
+        # stops 0.08 before the door opening: ending on the jamb line it overhung the bevelled edge and
+        # its end face lay in the jamb plane (z-fighting)
+        lst.append(ns.box((0.05, DY0 - 0.08 + HL - 0.15, h), loc=(-HW - 0.015, (-HL + 0.15 + DY0 - 0.08) / 2, zc),
+                          bevel=0.0))
         lst.append(ns.box((0.05, DY1 - DY0 - 0.12, h), loc=(-HW - 0.335, DOOR_OPEN_Y, zc), bevel=0.0))  # on door
         lst.append(ns.box((2 * HW - 0.3, 0.05, h), loc=(0, HL + 0.015, zc), bevel=0.0))              # back
     stripe.append(ns.box((2 * HW - 0.5, 0.05, 0.34), loc=(0, -HL - 0.015, 2.86), bevel=0.0))         # front band
@@ -192,8 +197,16 @@ def build():
            smooth_angle=50)
     # rear door seam, wipers, cab door seams
     dark.append(ns.box((0.06, 0.05, 5.3), loc=(0, HL + 0.02, 4.0), bevel=0.0))
+    # wipers rest on the windshield glass (they hovered 0.07-0.15 off the cowl): points along the windshield
+    # line (-7.0, 4.1) -> (-6.5, 6.6) at fraction t, lifted to the glass face (+0.05) plus the rod radius
+    ws_d = (0.5, 2.5)
+    ws_n = (-2.5 / math.hypot(*ws_d), 0.5 / math.hypot(*ws_d))
+
+    def on_glass(t, lift=0.08):
+        return (-7.0 + ws_d[0] * t + ws_n[0] * lift, 4.1 + ws_d[1] * t + ws_n[1] * lift)
     for sx in (-1, 1):
-        dark.append(C.rod((sx * 0.3, -7.08, 4.25), (sx * 2.0, -7.15, 4.32), 0.04, verts=5))
+        (y0w, z0w), (y1w, z1w) = on_glass(0.12), on_glass(0.17)
+        dark.append(C.rod((sx * 0.3, y0w, z0w), (sx * 2.0, y1w, z1w), 0.04, verts=5))
         a0, a1 = sorted((sx * (HW - 0.01), sx * (HW + 0.03)))
         dark.append(ns.box((a1 - a0, 0.05, 3.3), loc=((a0 + a1) / 2, -4.9, 4.55), bevel=0.0))
     # door tracks (chrome) above and below the opening, + entry step + grab bar
@@ -201,7 +214,14 @@ def build():
         chrome.append(ns.box((0.08, y1 - DY0 + 0.3, 0.09), loc=(-HW - 0.05, (DY0 - 0.3 + y1) / 2, z),
                              bevel=0.02, segments=1))
     chrome.append(ns.box((0.75, DY1 - DY0 - 0.4, 0.12), loc=(-HW - 0.3, (DY0 + DY1) / 2, 0.95), bevel=0.04, segments=1))
+    # roller brackets carrying the slid-open door on the tracks (the door hung 0.12 off the body side with
+    # nothing joining them): body side -> door's inner face, track -> into the door edge
+    for yb, z0, z1 in ((DOOR_OPEN_Y - 1.6, DZ1 - 0.15, DZ1 + 0.15), (DOOR_OPEN_Y + 1.6, DZ1 - 0.15, DZ1 + 0.15),
+                       (DOOR_OPEN_Y - 1.75, 1.38, 1.75)):
+        chrome.append(ns.box((0.15, 0.28, z1 - z0), loc=(-HW - 0.065, yb, (z0 + z1) / 2), bevel=0.02, segments=1))
     chrome.append(C.rod((-HW + 0.2, DY0 + 0.2, 2.4), (-HW + 0.2, DY0 + 0.2, 5.6), 0.06, verts=6))
+    for zg in (2.55, 5.45):     # grab-bar standoffs into the front jamb (the bar stood 0.14 clear of everything)
+        chrome.append(ns.box((0.1, 0.27, 0.12), loc=(-HW + 0.2, DY0 + 0.085, zg), bevel=0.02, segments=1))
     chrome.append(handle)
     chrome.append(rim)
     hubs, tires, walls, caps = [], [], [], []
@@ -242,11 +262,14 @@ def build():
     for yc in ROWS:
         for x in SEAT_X:
             vinyl.append(ns.box((2.5, 1.45, 0.42), loc=(x, yc, SEAT_Z - 0.21), bevel=0.16, segments=1))
-            vinyl.append(ns.box((2.5, 0.38, 2.1), loc=(x, yc + 0.82, SEAT_Z + 1.0), rot=(-8, 0, 0), bevel=0.16,
+            # backrest seated into the cushion (its bevelled foot hovered ~0.03 above it)
+            vinyl.append(ns.box((2.5, 0.38, 2.1), loc=(x, yc + 0.82, SEAT_Z + 0.94), rot=(-8, 0, 0), bevel=0.16,
                                 segments=1))
         frames.append(ns.box((5.3, 1.2, SEAT_Z - 0.42 - FLOOR), loc=(0, yc + 0.05, (FLOOR + SEAT_Z - 0.42) / 2 + 0.04),
                              bevel=0.05, segments=1))
         frames.append(C.rod((-2.7, yc + 1.05, SEAT_Z + 2.15), (2.7, yc + 1.05, SEAT_Z + 2.15), 0.07, verts=8))
+        for xr in (-2.3, -0.45, 0.45, 2.3):     # grab-rail posts down into the backrests (the rail floated)
+            frames.append(C.rod((xr, yc + 0.97, SEAT_Z + 1.8), (xr, yc + 1.05, SEAT_Z + 2.15), 0.045, verts=6))
     C.part(vinyl, "Seats", SEAT_RED, smooth_angle=50)
     C.part(frames, "SeatFrames", C.STEEL, "Metal", smooth_angle=40)
     dome = ns.cyl(0.45, 0.12, loc=(0, -0.4, 6.6), verts=10, bevel=0.0)

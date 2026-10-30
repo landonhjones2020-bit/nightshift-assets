@@ -47,7 +47,8 @@ def build():
     pz = GZ0 + 2.9                       # pivot height
     for sx in (-1, 1):
         x = sx * PX
-        wood.append(ns.lathe([(0.16, 0.0), (0.16, 0.25), (0.1, 0.4), (0.12, 2.0), (0.09, pz - 0.2), (0.15, pz),
+        # post starts 0.06 lower so it sits in its foot (its bottom hovered 0.04 above the foot's top)
+        wood.append(ns.lathe([(0.16, -0.06), (0.16, 0.25), (0.1, 0.4), (0.12, 2.0), (0.09, pz - 0.2), (0.15, pz),
                               (0.0, pz + 0.35)], verts=8, loc=(x, 0, 0.35)))
         wood.append(ns.box((0.32, 2.3, 0.22), loc=(x, 0, 0.2), bevel=0.08, segments=1))
     C.part(wood, "Stand", C.WOOD, "Wood", can_collide=True, smooth_angle=50)

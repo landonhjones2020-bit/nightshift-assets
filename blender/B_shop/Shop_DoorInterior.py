@@ -20,6 +20,21 @@ PX, PZ, PR = 2.5, 5.55, 0.62     # porthole centre / radius
 DOOR = "#7A4A30"
 
 
+def harden_flat_faces(obj, min_area=0.5):
+    """Flat-shade the big faces (door faces, panel fronts): mark their edges sharp so the soft bevels no longer
+    tilt their corner normals. With the porthole cut-out the door face is a fan of long triangles, and the
+    tilted corner normals shaded it as a diagonal 'X' (it read as a bent door). The exporter keeps sharp edges."""
+    import bmesh
+    bm = bmesh.new()
+    bm.from_mesh(obj.data)
+    for f in bm.faces:
+        if f.calc_area() >= min_area:
+            for e in f.edges:
+                e.smooth = False
+    bm.to_mesh(obj.data)
+    bm.free()
+
+
 def build():
     w = L1 - L0
     cx = (L0 + L1) / 2
@@ -31,7 +46,8 @@ def build():
     for sy in (-1, 1):
         p = ns.box((3.2, 0.06, 2.3), loc=(cx - 0.25, sy * (T / 2 + 0.02), 2.75), bevel=0.04, segments=2)
         panels.append(p)
-    C.part([leaf] + panels, "Leaf", DOOR, "Wood", recolor="door_leaf", can_collide=True, smooth_angle=40)
+    lf = C.part([leaf] + panels, "Leaf", DOOR, "Wood", recolor="door_leaf", can_collide=True, smooth_angle=40)
+    harden_flat_faces(lf)
 
     hw = []
     for sy in (-1, 1):

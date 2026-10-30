@@ -4,6 +4,7 @@ Ladder-style side frames with cross braces, four stocked shelves + a top shelf.
 Back (+Y) goes against the wall. Pivot = bottom-centre. Socket Clue = an empty slot on the
 middle shelf (for a clue note / item spawn).
 """
+import math
 import os
 import random
 import sys
@@ -41,14 +42,21 @@ def build():
         boxes.append(ns.box((w, d, h), loc=(cx, -0.05, z + h / 2), rot=(0, 0, rz), bevel=0.03 if label else 0.0,
                             segments=1))
         if label:
-            labels.append(ns.box((w * 0.7, 0.02, h * 0.28), loc=(cx, -0.05 - d / 2 - 0.01, z + h * 0.58), bevel=0.0))
+            # the label turns with its box (an unrotated label cut through the slightly turned box face and
+            # z-fought with it); 0.016 proud of the face
+            a = math.radians(rz)
+            dy = -d / 2 - 0.006
+            labels.append(ns.box((w * 0.7, 0.02, h * 0.28), loc=(cx - dy * math.sin(a), -0.05 + dy * math.cos(a), z + h * 0.58),
+                                 rot=(0, 0, rz), bevel=0.0))
 
     def can_row(x0, n, col, z, stack=1):
         for i in range(n):
             for k in range(stack):
                 cx, cz = x0 + i * 0.46, z + 0.25 + k * 0.5
-                cans[col].append(C.band(0.2, 0.36, loc=(cx, -0.45, cz), verts=8))
-                tops.append(ns.cyl(0.185, 0.48, loc=(cx, -0.45, cz), verts=8, bevel=0.0))
+                # closed label sleeve (the open band left see-through slivers) on a 0.5 tall can that stands
+                # on the shelf / on the can below (cans hovered 0.01 / 0.02 before)
+                cans[col].append(ns.cyl(0.2, 0.36, loc=(cx, -0.45, cz), verts=8, bevel=0.0))
+                tops.append(ns.cyl(0.185, 0.5, loc=(cx, -0.45, cz), verts=8, bevel=0.0))
 
     def jar(cx, z):
         jars.append(ns.lathe([(0.27, 0.0), (0.28, 0.55), (0.2, 0.68), (0.0, 0.68)], verts=8, loc=(cx, -0.3, z)))

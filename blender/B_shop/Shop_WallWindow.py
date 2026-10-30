@@ -17,6 +17,7 @@ X0, X1 = -C.WALL_W / 2, C.WALL_W / 2
 OX = 3.2                     # half opening width
 Z0, Z1 = C.SILL_Z, 9.0       # sill / head
 TRANSOM = 7.85
+SILL_PROUD = 0.02            # room-side sill top above the opening sill line / chair rail top
 
 
 def casing(face_y, out_dir, w=0.32, proud=0.12, with_bottom=False):
@@ -46,10 +47,11 @@ def build():
     d["back"] = C.back_trim([(X0, X1)])
     C.tag_wall_set(d)
 
-    # deep room-side sill (top flush with the chair rail top = 3.5), runs into the reveal
+    # deep room-side sill, runs into the reveal. Lifted SILL_PROUD so its top sits above the chair-rail top
+    # and the core's top (both at 3.5): flush (coplanar) tops z-fought across the whole sill.
     sill_pts = C.fillet([(0.0, Z0 - 0.16), (-1.02, Z0 - 0.16), (-1.08, Z0 - 0.06), (-1.02, Z0), (0.0, Z0)],
                         [0, 0.04, 0.05, 0.03, 0], 2)
-    sill = C.prism(sill_pts, "x", -OX - 0.42, OX + 0.42)
+    sill = C.prism(sill_pts, "x", -OX - 0.42, OX + 0.42, loc=(0, 0, SILL_PROUD))
     ns.bevel(sill, width=0.03, segments=2)
     C.part([sill], "Sill", C.LAMINATE, smooth_angle=40)
 

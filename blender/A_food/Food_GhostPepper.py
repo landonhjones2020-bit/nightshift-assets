@@ -46,9 +46,12 @@ def peppers(spots, R=0.18, seed=1):
     B, W = [], []
     for k, (x, y) in enumerate(spots):
         b, w = pepper_ring(f"Pep{k}", R * rnd.uniform(0.9, 1.08), seed + k * 7)
+        # one tilt/spin per ring for BOTH meshes (each used to draw its own, so the red inner wall sat rotated
+        # away from the hole: see-through gaps and membrane poking through the flesh); both draws are kept so
+        # the random stream is unchanged
+        rots = [(rnd.uniform(-6, 6), rnd.uniform(-6, 6), rnd.uniform(0, 360)) for _ in (b, w)]
         for o in (b, w):
-            o.rotation_euler = (math.radians(rnd.uniform(-6, 6)), math.radians(rnd.uniform(-6, 6)),
-                                math.radians(rnd.uniform(0, 360)))
+            o.rotation_euler = tuple(math.radians(a) for a in rots[0])
             o.location = (x, y, 0.014 + 0.008 * (k % 2))
             ns.apply_all(o)
         B.append(b)

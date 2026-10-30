@@ -59,7 +59,9 @@ def build():
     cream = [C.hq_coping(X0, X1)]
     for sx in (-1, 1):
         a0, a1 = sorted((sx * OX, sx * X1))
-        cream.append(ns.box((a1 - a0 + 0.12, C.HQ_T + 0.12, 0.55), loc=((a0 + a1) / 2, 0, hz0 - 0.275), bevel=0.04,
+        # capitals 0.01 deeper per face than the pinstripes (at HQ_T + 0.12 their faces were coplanar with the
+        # stripe under the header -> cream / mustard z-fighting on both piers)
+        cream.append(ns.box((a1 - a0 + 0.12, C.HQ_T + 0.14, 0.55), loc=((a0 + a1) / 2, 0, hz0 - 0.275), bevel=0.04,
                             segments=1))
     frame = C.ring_slab(C.rrect(SIGN[1] - SIGN[0] - 0.12, SIGN[3] - SIGN[2] - 0.12, 0.08, 1, 0, (SIGN[2] + SIGN[3]) / 2),
                         C.rrect(SIGN[1] - SIGN[0] - 0.36, SIGN[3] - SIGN[2] - 0.36, 0.06, 1, 0, (SIGN[2] + SIGN[3]) / 2),

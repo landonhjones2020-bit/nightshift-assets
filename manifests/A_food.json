@@ -328,7 +328,7 @@
   "group": "Food",
   "size": [
    2.086,
-   0.125,
+   0.119,
    0.726
   ],
   "tris": 780,
@@ -351,15 +351,15 @@
     "bone": null,
     "offset": [
      0.007,
-     0.048,
+     0.051,
      -0.007
     ],
     "size": [
      2.086,
-     0.125,
+     0.119,
      0.726
     ],
-    "hash": "df6a81cf71b3c6d4",
+    "hash": "1db69282465f1da0",
     "tris": 780
    }
   ]
@@ -854,11 +854,11 @@
  "Food_Pickles": {
   "group": "Food",
   "size": [
-   2.042,
-   0.104,
+   2.038,
+   0.101,
    0.733
   ],
-  "tris": 784,
+  "tris": 840,
   "meta": {
    "ingredient": "pickles",
    "layer_height": 0.07,
@@ -877,17 +877,17 @@
     "role": null,
     "bone": null,
     "offset": [
-     -0.003,
-     0.042,
+     -0.001,
+     0.043,
      -0.002
     ],
     "size": [
-     2.042,
-     0.104,
+     2.038,
+     0.101,
      0.733
     ],
-    "hash": "dc7132ece11b9b7e",
-    "tris": 784
+    "hash": "0fb945e34081e8e1",
+    "tris": 840
    }
   ]
  },
@@ -1506,7 +1506,7 @@
    0.977,
    1.102
   ],
-  "tris": 800,
+  "tris": 842,
   "meta": {},
   "url": "https://raw.githubusercontent.com/landonhjones2020-bit/nightshift-assets/main/meshes/A_food/Food_WrappedSandwich.json",
   "parts": [
@@ -1529,8 +1529,8 @@
      0.977,
      1.102
     ],
-    "hash": "39f6e833a0ae7316",
-    "tris": 660
+    "hash": "8e0f24eb3414a52e",
+    "tris": 702
    },
    {
     "name": "Crust",
@@ -1551,7 +1551,7 @@
      0.765,
      0.808
     ],
-    "hash": "1cf5e6f6a8dd1ed1",
+    "hash": "546e5409f781773a",
     "tris": 140
    }
   ]

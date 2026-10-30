@@ -22,9 +22,12 @@ def chips(spots, R=0.165, seed=4):
     F, S = [], []
     for k, (x, y) in enumerate(spots):
         f, s = C.ridged_chip(f"Chip{k}", R * rnd.uniform(0.93, 1.05), 0.035)
+        # one tilt/spin per chip for BOTH meshes (each mesh used to draw its own, so the skin ring was rotated
+        # away from the flesh faces and the chips read as hollow / see-through); the two draws are kept so
+        # the random stream (chip sizes, seed spots) is unchanged
+        rots = [(rnd.uniform(-6, 6), rnd.uniform(-6, 6), rnd.uniform(0, 180)) for _ in (f, s)]
         for o in (f, s):
-            o.rotation_euler = (math.radians(rnd.uniform(-6, 6)), math.radians(rnd.uniform(-6, 6)),
-                                math.radians(rnd.uniform(0, 180)))
+            o.rotation_euler = tuple(math.radians(a) for a in rots[0])
             o.location = (x, y, 0.012 + 0.01 * (k % 3))
             ns.apply_all(o)
         F.append(f)

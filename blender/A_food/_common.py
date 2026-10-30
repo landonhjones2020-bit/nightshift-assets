@@ -1309,11 +1309,19 @@ def ridged_chip(name: str, R: float, thick: float, *, ridges: float = 3.0, amp: 
         for lst, y, z in ((top_r, yy, zt(x)), (top_l, -yy, zt(x)), (bot_r, yy, zb(x)), (bot_l, -yy, zb(x))):
             lst.append(len(verts))
             verts.append((x, y, z))
+    def poly(*idx):
+        # the two tip columns collapse to one vertex: drop the repeat so the end quads become triangles
+        # (as quads with a repeated vertex they were rejected, leaving both chip tips open)
+        out = []
+        for v in idx:
+            if v not in out:
+                out.append(v)
+        return tuple(out)
     for i in range(M):
-        faces.append((top_l[i], top_l[i + 1], top_r[i + 1], top_r[i]))
-        faces.append((bot_l[i], bot_r[i], bot_r[i + 1], bot_l[i + 1]))
-        skin.append((top_r[i], top_r[i + 1], bot_r[i + 1], bot_r[i]))
-        skin.append((top_l[i], bot_l[i], bot_l[i + 1], top_l[i + 1]))
+        faces.append(poly(top_l[i], top_l[i + 1], top_r[i + 1], top_r[i]))
+        faces.append(poly(bot_l[i], bot_r[i], bot_r[i + 1], bot_l[i + 1]))
+        skin.append(poly(top_r[i], top_r[i + 1], bot_r[i + 1], bot_r[i]))
+        skin.append(poly(top_l[i], bot_l[i], bot_l[i + 1], top_l[i + 1]))
     flesh = mesh_obj(name, verts, [f for f in faces], recalc=False)
     sk = mesh_obj(name + "Skin", verts, skin, recalc=False)
     # orient: top faces up, skin outward (fix any flipped by checking the first face)

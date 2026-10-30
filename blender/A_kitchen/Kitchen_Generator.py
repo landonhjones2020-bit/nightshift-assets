@@ -28,6 +28,14 @@ def build():
     for y in (-FY, FY):
         frame.append(C.rod((-FX, y, FZ1 - 0.25), (FX, y, FZ1 - 0.25), 0.07, verts=8))
         frame.append(C.rod((-FX - 0.05, y, FZ0), (FX + 0.05, y, FZ0), 0.08, verts=8))
+    # engine/alternator and tank were free-floating inside the frame: cross rails between the skids under
+    # both units (rubber mounts on top, below) and four tank tabs out to the top rails
+    for x in (ENG_X, -0.6):
+        frame.append(C.rod((x, -FY, FZ0 + 0.02), (x, FY, FZ0 + 0.02), 0.07, verts=8))
+    for x in (-0.8, 0.8):
+        for sy in (-1, 1):
+            frame.append(ns.box((0.14, FY - 0.6 + 0.04, 0.1), loc=(x, sy * (0.6 + FY + 0.04) / 2, FZ1 - 0.25), bevel=0.02,
+                                segments=1))
     C.part(frame, "Frame", C.CHARCOAL, "Metal", can_collide=True, smooth_angle=50)
 
     # ---- fuel tank + cap ------------------------------------------------------------
@@ -61,7 +69,9 @@ def build():
     endcap = ns.cyl(0.36, 0.12, loc=(-1.17, 0.05, 0.75), rot=(0, 90, 0), verts=16, bevel=0.04, segments=1)
     C.part([alt, endcap], "Alternator", C.STEEL_DARK, "Metal", can_collide=True, smooth_angle=45)
     panel = ns.box((0.86, 0.14, 0.62), loc=(-0.6, -0.6, 0.78), bevel=0.05, segments=1)
-    C.part(panel, "Panel", C.CHARCOAL, "SmoothPlastic", smooth_angle=40)
+    # stand-offs from the panel back into the alternator (the panel hung 0.08 in front of it)
+    stand = [ns.box((0.12, 0.16, 0.3), loc=(x, -0.475, 0.78), bevel=0.02, segments=1) for x in (-0.85, -0.35)]
+    C.part([panel] + stand, "Panel", C.CHARCOAL, "SmoothPlastic", smooth_angle=40)
     outlets = [ns.box((0.2, 0.04, 0.24), loc=(x, -0.68, 0.7), bevel=0.02, segments=1) for x in (-0.82, -0.56)]
     C.part(outlets, "Outlets", C.CREAM, "SmoothPlastic")
     switch = ns.box((0.1, 0.08, 0.16), loc=(-0.33, -0.7, 0.68), bevel=0.02, segments=1)
@@ -70,6 +80,9 @@ def build():
 
     # ---- wheels at the engine end, rubber feet at the other ----------------------------
     rub = [switch]
+    # rubber mounts: cross rail top (z 0.25) up into the engine block (bottom 0.235) / alternator (bottom 0.25)
+    rub.append(ns.box((0.3, 0.7, 0.1), loc=(ENG_X, 0.0, 0.27), bevel=0.02, segments=1))
+    rub.append(ns.box((0.3, 0.5, 0.1), loc=(-0.6, 0.05, 0.28), bevel=0.02, segments=1))
     for y in (-FY - 0.16, FY + 0.16):
         rub.append(ns.cyl(0.36, 0.22, loc=(FX - 0.25, y, 0.36), rot=(90, 0, 0), verts=14, bevel=0.07, segments=1))
         rub.append(ns.box((0.22, 0.22, 0.12), loc=(-FX + 0.2, y + (0.16 if y < 0 else -0.16), 0.06), bevel=0.03, segments=1))

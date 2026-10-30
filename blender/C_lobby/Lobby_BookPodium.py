@@ -58,7 +58,9 @@ def book():
     """Open book in local space: spine along Y at x = 0, cover bottom at z = 0, front -Y."""
     out = {"leather": [], "page": [], "glow": [], "gold": [], "ink": [], "ribbon": [], "icon": None}
     for sx in (-1, 1):
-        board = C.prism(C.rrect(BW, BD, 0.12, 2, sx * (BW / 2 + 0.02), 0), "z", 0.0, 0.09)
+        # board 0.012 inside the gilded corner caps' outer faces (flush, the caps' side faces z-fought with the
+        # leather edges); the caps keep the book's outer size
+        board = C.prism(C.rrect(BW - 0.012, BD - 0.024, 0.12, 2, sx * (BW / 2 + 0.014), 0), "z", 0.0, 0.09)
         ns.bevel(board, width=0.025, segments=1)
         out["leather"].append(board)
         prof = [(0.05, 0.09), (0.1, 0.27), (0.3, 0.4), (1.0, 0.41), (BW - 0.18, 0.37), (BW - 0.13, 0.31),

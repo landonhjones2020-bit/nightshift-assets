@@ -11,6 +11,7 @@ upper floor must be at least 5.6 wide x 15 long (y = 0 .. 15) plus head room.
 Sockets: Top (on the landing, facing down the run), Bottom (basement floor at the foot,
 facing away from the stairs), LightsOutSpawn (foot of the stairs, facing up the run; 7.6).
 """
+import math
 import os
 import sys
 
@@ -62,15 +63,23 @@ def build():
         x = sx * (HW + 0.16)
         path = [(x, -1.2, RAIL_H), (x, 0.0, RAIL_H), (x, DROP / s + 0.0, -DROP + RAIL_H), (x, DROP / s + 1.3, -DROP + RAIL_H)]
         rail.append(C.pipe(path, 0.1, sides=8, corner=0.4, corner_segs=2))
+        slope_deg = math.degrees(math.atan(s))
         for py in (-1.0, 2.5, 6.0, 9.5, 13.0, 16.2):
             top = -s * max(0.0, min(py, DROP / s)) + RAIL_H
-            base = (-s * py + 0.55) if py <= y_hi_end else -DROP
+            on_stringer = 0.0 <= py <= DROP / s
             if py < 0:
                 base = 0.0
-            if py > DROP / s:
+            elif py > DROP / s:
                 base = -DROP
-            rail.append(ns.cyl(0.07, top - base, loc=(x, py, (top + base) / 2), verts=8, bevel=0.0))
-            rail.append(ns.cyl(0.16, 0.08, loc=(x, py, base + 0.04), verts=8, bevel=0.02, segments=1))
+            else:
+                base = 0.4 - s * py      # stringer top line (it used to stop 0.15 above it)
+            sink = 0.04 if on_stringer else 0.0     # into the sloped stringer; floor/landing posts unchanged
+            rail.append(ns.cyl(0.07, top - base + sink, loc=(x, py, (top + base - sink) / 2), verts=8, bevel=0.0))
+            if on_stringer:          # flange tilted to the stringer slope, seated on it
+                rail.append(ns.cyl(0.16, 0.08, loc=(x, py, base + 0.02), rot=(-slope_deg, 0, 0), verts=8, bevel=0.02,
+                                   segments=1))
+            else:
+                rail.append(ns.cyl(0.16, 0.08, loc=(x, py, base + 0.04), verts=8, bevel=0.02, segments=1))
     C.part(rail, "Handrail", RAIL, "Metal", smooth_angle=55)
 
 

@@ -41,11 +41,24 @@ def paper():
              section(0.92, W - 0.2, H - 0.2, z0=0.05)]
     tip = (X1, 0.0, 0.42)
     body = C.loft("Paper", rings, cap_start=None, cap_end="fan", end_center=tip)
-    lip = C.loft("Lip", [section(X0, W, H, flare=0.05, crinkle=0.04), section(X0 + 0.1, W - 0.07, H - 0.07)],
-                 cap_start=None, cap_end=None)
-    for o in lip.data.polygons:
-        o.flip()
-    p = ns.join([body, lip], "Paper")
+    # inside of the wrap at the open end: the tube is a single outward-facing skin, so from the open end its
+    # inner side was back-face culled (the sub looked unwrapped, the sticker floated). An inward-facing
+    # sleeve one paper-thickness inside runs from the rim back past the sub's end, closed by a bulkhead.
+    t_ = 0.012
+    sleeve = C.loft("Sleeve", [section(X0, W, H, flare=0.05, crinkle=0.04),
+                               section(X0 + 0.06, W - 2 * t_, H - 2 * t_, z0=t_, flare=0.02, crinkle=0.015),
+                               section(-0.45, W - 2 * t_, H - 2 * t_, z0=t_)],
+                    cap_start=None, cap_end="fan", end_center=(-0.45, 0.0, H / 2))
+    for poly in sleeve.data.polygons:
+        c, n_ = poly.center, poly.normal
+        if c.x > -0.46 and abs(n_.x) > 0.9:          # bulkhead: face the opening (-X)
+            want_flip = n_.x > 0
+        else:                                         # sleeve wall: face the tube axis
+            want_flip = n_.y * (0.0 - c.y) + n_.z * (H / 2 - c.z) < 0
+        if want_flip:
+            poly.flip()
+    sleeve.data.update()
+    p = ns.join([body, sleeve], "Paper")
     ns.tag(p, "Paper", PAPER, "SmoothPlastic", smooth_angle=32)
     # folded end: the top flap is a shell over the upper part of the end cap, creased at its edge
     last = rings[-1]

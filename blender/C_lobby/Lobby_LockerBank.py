@@ -39,7 +39,7 @@ def door_geo(i):
     zc = (dz0 + dz1) / 2
     slab = ns.box((dw, 0.09, dz1 - dz0), loc=(xc, FY - 0.05, zc), bevel=0.03, segments=1)
     vents = []
-    for zb in (dz1 - 0.55, dz0 + 0.35):
+    for zb in (dz1 - 0.55, dz0 + 0.55):   # bottom group raised: from dz0 + 0.35 its 4th slat hung below the door
         for k in range(4):
             vents.append(ns.box((dw - 0.5, 0.03, 0.07), loc=(xc, FY - 0.105, zb - k * 0.14), bevel=0.0))
     latch = [ns.box((0.14, 0.08, 0.55), loc=(xc - dw / 2 + 0.22, FY - 0.13, 3.35), bevel=0.03, segments=1),

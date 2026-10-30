@@ -56,8 +56,11 @@ def build():
         y = sy * (T / 2 + 0.34)
         bars.append(C.pipe([(0.75, y, BAR_Z), (L1 - 0.3, y, BAR_Z)], 0.09, sides=12))
         for x in (0.95, L1 - 0.55):
-            bars.append(ns.cyl(0.055, 0.34, loc=(x, sy * (T / 2 + 0.17), BAR_Z), rot=(90, 0, 0), verts=10, bevel=0.0))
-            bars.append(ns.cyl(0.13, 0.04, loc=(x, sy * (T / 2 + 0.02), BAR_Z), rot=(90, 0, 0), verts=12, bevel=0.012,
+            # standoffs are over the glass (y = +-0.03): rosettes sit on the pane, standoffs run to the bar
+            gy = 0.03
+            bars.append(ns.cyl(0.055, T / 2 + 0.34 - gy, loc=(x, sy * (gy + T / 2 + 0.34) / 2, BAR_Z), rot=(90, 0, 0),
+                               verts=10, bevel=0.0))
+            bars.append(ns.cyl(0.13, 0.04, loc=(x, sy * (gy + 0.02), BAR_Z), rot=(90, 0, 0), verts=12, bevel=0.012,
                                segments=1))
     # pivot hinges (top and bottom) on the hinge stile
     for z in (Z0 + 0.12, Z1 - 0.12):

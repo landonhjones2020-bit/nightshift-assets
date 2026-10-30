@@ -27,8 +27,11 @@ RISER_H = 0.8
 
 
 def build():
-    base = ns.box((L, D, BASE_T), loc=(0, 0, BASE_T / 2), bevel=0.045, segments=2)
-    cheeks = [ns.box((0.1, D, COLLAR_Z + 0.06), loc=(sx * (L / 2 - 0.05), 0, (COLLAR_Z + 0.06) / 2), bevel=0.04, segments=1)
+    # base and cheeks stop 0.02 inside the riser's back face (their back faces were coplanar with it -> the
+    # stainless and the red riser z-fought along the back); front faces unchanged
+    base = ns.box((L, D - 0.02, BASE_T), loc=(0, -0.01, BASE_T / 2), bevel=0.045, segments=2)
+    cheeks = [ns.box((0.1, D - 0.02, COLLAR_Z + 0.06), loc=(sx * (L / 2 - 0.05), -0.01, (COLLAR_Z + 0.06) / 2), bevel=0.04,
+                     segments=1)
               for sx in (-1, 1)]
     collar = ns.box((L, D - 0.12, 0.09), loc=(0, Y0 + 0.02, COLLAR_Z), bevel=0.0)
     for x in XS:
