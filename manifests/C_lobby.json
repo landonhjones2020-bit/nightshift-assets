@@ -2367,18 +2367,31 @@
  "Lobby_SignPost": {
   "group": "Lobby",
   "size": [
-   9.177,
+   8.565,
    9.75,
-   1.1
+   9.062
   ],
   "tris": 1444,
   "meta": {
    "arrows": {
-    "TEST KITCHEN": "Roblox +X",
-    "LOCKERS": "Roblox -X",
-    "SHOP": "Roblox +X",
-    "VANS": "Roblox -X"
+    "TEST KITCHEN": [
+     0.232,
+     0.973
+    ],
+    "LOCKERS": [
+     0.87,
+     0.494
+    ],
+    "SHOP": [
+     -0.991,
+     -0.132
+    ],
+    "VANS": [
+     -0.0,
+     -1.0
+    ]
    },
+   "arrows_frame": "Roblox model space (x, z), post unrotated at plaza (-5, 9)",
    "boards": [
     "TEST KITCHEN",
     "LOCKERS",
@@ -2399,16 +2412,16 @@
     "role": null,
     "bone": null,
     "offset": [
-     0.0,
+     0.271,
      0.225,
-     0.0
+     0.058
     ],
     "size": [
      1.1,
      0.45,
      1.1
     ],
-    "hash": "e0dcb6a298b1f114",
+    "hash": "6acec287fb7d8792",
     "tris": 44
    },
    {
@@ -2421,16 +2434,16 @@
     "role": null,
     "bone": null,
     "offset": [
-     0.0,
+     0.271,
      4.825,
-     0.0
+     0.058
     ],
     "size": [
      0.36,
      8.75,
      0.36
     ],
-    "hash": "57a498bf8fb954d9",
+    "hash": "512f4533d11535ab",
     "tris": 44
    },
    {
@@ -2444,15 +2457,15 @@
     "bone": null,
     "offset": [
      0.0,
-     7.088,
+     7.362,
      0.0
     ],
     "size": [
-     9.177,
-     5.325,
-     0.6
+     8.565,
+     4.775,
+     9.062
     ],
-    "hash": "2667db261dc43908",
+    "hash": "b2eb9aa04bb5492c",
     "tris": 1136
    },
    {
@@ -2465,16 +2478,16 @@
     "role": null,
     "bone": null,
     "offset": [
-     0.0,
-     7.015,
-     0.0
+     0.271,
+     7.29,
+     0.058
     ],
     "size": [
      0.5,
-     4.51,
+     3.96,
      0.5
     ],
-    "hash": "ff8d20614c4f4911",
+    "hash": "faf3bdd1600451f4",
     "tris": 220
    }
   ]
