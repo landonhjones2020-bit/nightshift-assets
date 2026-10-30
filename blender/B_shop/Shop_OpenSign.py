@@ -1,6 +1,6 @@
-"""Shop_OpenSign — small hanging "OPEN" neon window sign.
+"""Shop_OpenSign — small hanging "OPEN" neon window sign, double-faced.
 
-Red-pink neon letters inside a cyan oval tube, mounted on a slim black rod frame that
+Red-pink neon letters (one set per face, a dark backer between) inside a cyan oval tube, mounted on a slim black rod frame that
 hangs from two chains (top hook = socket Hang). Lit parts have role "neon"
 (Letters, Oval) so the sign can flicker or switch to "CLOSED" logic in code.
 Pivot = bottom-centre; hang it in a window with Socket_Hang at the window head.
@@ -18,15 +18,35 @@ ZC = 0.9
 RED_NEON = "#FF3B4E"
 
 
+def _open_letters(back=False):
+    t = C.text_mesh("OPEN", 0.95, 0.1, font=C.FONT_BOLD_ITALIC, resolution=2, spacing=1.08, loc=(0, -0.02, ZC))
+    C.fit_text_width(t, 2.0)
+    if back:
+        # turned 180° about the vertical axis so it reads from the room side, then set flush
+        # against the back of the backer plate (front letters span y -0.07..0.03)
+        ys = [v.co.y for v in t.data.vertices]
+        depth = max(ys) - min(ys)
+        for v in t.data.vertices:
+            v.co.x = -v.co.x
+            v.co.y = -(v.co.y + 0.02) + BACKER_Y1 + depth / 2
+    return t
+
+
+BACKER_Y0, BACKER_Y1 = 0.06, 0.10
+
+
 def build():
-    letters = C.text_mesh("OPEN", 0.95, 0.1, font=C.FONT_BOLD_ITALIC, resolution=2, spacing=1.08, loc=(0, -0.02, ZC))
-    C.fit_text_width(letters, 2.0)
+    # Double-faced (2026-10-29): it hangs inside the front window, so the street side reads
+    # OPEN and the room side used to read NEPO. A dark backer plate sits between two letter
+    # sets, each reading correctly from its own side — like a real double-faced neon sign.
+    letters = C.merge([_open_letters(), _open_letters(back=True)], "Letters")
     ns.tag(letters, "Letters", RED_NEON, "Neon", recolor="neon", cast_shadow=False, smooth_angle=30)
     oval = C.pipe([(x, -0.02, z) for x, z in C.ellipse_pts(1.38, 0.66, 28, 0, ZC)], 0.05, sides=6, closed=True)
     ns.tag(oval, "Oval", C.CYAN, "Neon", recolor="neon", cast_shadow=False, smooth_angle=60)
 
-    # black rod frame behind the tubes + tube clips + transformer box
-    frame = []
+    # black rod frame behind the tubes + tube clips + transformer box, and the backer plate
+    # between the two letter sets (part of Frame, so the part list is unchanged)
+    frame = [C.slab(C.ellipse_pts(1.3, 0.6, 32, 0, ZC), BACKER_Y1 - BACKER_Y0, axis="y", at=BACKER_Y0, name="Backer", bevel=0.012, segments=1)]
     for z in (ZC - 0.45, ZC + 0.45):
         frame.append(C.pipe([(-1.45, 0.08, z), (1.45, 0.08, z)], 0.035, sides=6))
     for x in (-1.45, 1.45):
