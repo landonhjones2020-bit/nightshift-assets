@@ -2,15 +2,15 @@
  "Prop_Notepad": {
   "group": "Shop",
   "size": [
-   1.099,
-   1.4,
-   0.13
+   0.754,
+   1.048,
+   0.705
   ],
-  "tris": 300,
+  "tris": 372,
   "meta": {
-   "held": "RightHand",
-   "pivot": "grip point = middle of the left edge as seen from the front (Blender -X / Roblox +X), mid thickness",
-   "front": "-Y (top page)"
+   "attach": "RightGripAttachment",
+   "grip": "pivot = grip point: bottom-centre of the pad 0.06 above its bottom edge, mid-thickness (model:PivotTo(RightGripAttachment.WorldCFrame), as Cosmetic_Spatula)",
+   "face": "writing face looks back up the forearm toward the player (Roblox model axes: +Z), turned 45 deg toward the body midline (model -X) and tipped 15 deg toward the hand's front (model +Y); the pad extends along model +Y (the hand's front / thumb side) from the grip"
   },
   "url": "https://raw.githubusercontent.com/landonhjones2020-bit/nightshift-assets/main/meshes/L_decor/Prop_Notepad.json",
   "parts": [
@@ -24,21 +24,21 @@
     "role": null,
     "bone": null,
     "offset": [
-     -0.549,
-     0.0,
-     -0.003
+     0.111,
+     0.456,
+     -0.087
     ],
     "size": [
-     1.099,
-     1.4,
-     0.105
+     0.754,
+     1.048,
+     0.705
     ],
-    "hash": "2094567c820adef1",
-    "tris": 216
+    "hash": "ea4aaca97e98a8aa",
+    "tris": 356
    },
    {
-    "name": "Metal",
-    "color": "#FFFFFF",
+    "name": "Ferrule",
+    "color": "#D3D8DC",
     "material": "Metal",
     "transparency": 0.0,
     "castShadow": true,
@@ -46,36 +46,32 @@
     "role": null,
     "bone": null,
     "offset": [
-     -0.591,
-     0.375,
-     0.0
+     0.443,
+     0.918,
+     0.095
     ],
     "size": [
-     0.977,
-     0.65,
-     0.13
+     0.08,
+     0.058,
+     0.08
     ],
-    "hash": "09d7d1fd5d0928f6",
-    "tris": 84
+    "hash": "aa48d587fd03f5cd",
+    "tris": 16
    }
   ]
  },
  "Prop_OrderSlip": {
   "group": "Shop",
   "size": [
-   0.9,
-   1.25,
-   0.038
+   0.56,
+   0.874,
+   0.56
   ],
-  "tris": 132,
+  "tris": 238,
   "meta": {
-   "held": "RightHand",
-   "pivot": "grip point = bottom-centre edge; slip stands up out of the fist, printed face -Y",
-   "size": [
-    0.9,
-    1.25,
-    0.03
-   ]
+   "attach": "RightGripAttachment",
+   "grip": "pivot = grip point: middle of the torn bottom edge, mid-thickness (model:PivotTo(RightGripAttachment.WorldCFrame), as Cosmetic_Spatula)",
+   "face": "printed face looks back up the forearm toward the player (Roblox model axes: +Z), turned 45 deg toward the body midline (model -X) and tipped 15 deg toward the hand's front (model +Y); the slip extends along model +Y (the hand's front / thumb side) from the grip"
   },
   "url": "https://raw.githubusercontent.com/landonhjones2020-bit/nightshift-assets/main/meshes/L_decor/Prop_OrderSlip.json",
   "parts": [
@@ -89,17 +85,17 @@
     "role": null,
     "bone": null,
     "offset": [
-     0.0,
-     0.625,
-     -0.004
+     0.082,
+     0.415,
+     -0.082
     ],
     "size": [
-     0.9,
-     1.25,
-     0.038
+     0.56,
+     0.874,
+     0.56
     ],
-    "hash": "5bb692cac339c911",
-    "tris": 132
+    "hash": "4e365fa59fabc541",
+    "tris": 238
    }
   ]
  },

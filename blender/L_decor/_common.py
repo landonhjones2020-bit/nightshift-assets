@@ -22,9 +22,12 @@ Conventions used by every L_decor asset
     box stacks).
   * Part names must not start with Key/Fill/Rim/Floor/RefCube/PreviewCam (nslib's preview
     deletes objects with those prefixes) - `part()` asserts this.
+  * Hand props (Prop_*): pivot (0, 0, 0) = grip point on RightGripAttachment, the
+    Cosmetic_Spatula convention - see to_grip() / hold_check() below.
   * Env: NS_QUICK=1 fast low-res preview into previews/L_decor/_quick, NS_SOCKETS=1 socket
     check render (previews/L_decor/_checks), NS_PARTS=1 prints the part list,
-    NS_NORENDER=1 skips the preview, NS_EXPORT=1 exports.
+    NS_NORENDER=1 skips the preview, NS_EXPORT=1 exports, NS_HOLD=1 (hand props) renders
+    the prop on the R15 reference rig (previews/L_decor/_checks/<asset>_hold.png).
 """
 from __future__ import annotations
 
@@ -425,6 +428,149 @@ def socket_check(asset, sockets, views=((-35, 28),), res=448, samples=8):
     return out
 
 
+# ---------------------------------------------------------------------------------------
+# Hand props (Prop_*): held like the F_cosmetics spatula skins. The game does
+# model:PivotTo(RightGripAttachment.WorldCFrame), so the asset pivot (0, 0, 0) is the grip
+# point and the model axes ARE the attachment's (R15 default: RightHand centre +
+# (0, -0.15, 0), Orientation (-90, 0, 0)):
+#   Blender -Y = Roblox -Z = LookVector  -> down the arm, past the fingertips
+#   Blender +Z = Roblox +Y = UpVector    -> the hand's front (thumb side)
+#   Blender +Y = Roblox +Z               -> back up the forearm, toward the elbow / player
+#   Blender -X = Roblox +X               -> the hand's right
+# hold_check() renders a prop on H_player's R15 reference rig (read-only use of that module).
+# ---------------------------------------------------------------------------------------
+HOLD_SCALE = 0.8          # in-game avatars are R15 at 0.8 scale; the held prop is not scaled
+HOLD_POSES = (            # (label, {bone: (axis, degrees)}) on the R15 reference rig
+    ("arm down (Roblox idle / walk)", {}),
+    ("arm forward (tool hold)", {"RightShoulder": ("x", -90.0)}),
+    ("elbow bent (reading)", {"RightShoulder": ("x", -25.0), "RightElbow": ("x", -75.0)}),
+)
+HOLD_YAW = 45.0           # turn about the pad's long axis toward the player's midline
+HOLD_TILT = 15.0          # face tipped toward the hand's front (top leans away, toward -Y)
+_HP = None
+
+
+def to_grip(grip, objs=None, yaw=HOLD_YAW, tilt=HOLD_TILT):
+    """Turn a prop built facing -Y (readable from the front, up +Z) onto its grip: rotate
+    180 deg about Z (face -> +Y = toward the player, the wordmark still reads correctly for
+    them), move `grip` (front-frame point) to the origin, then turn it about the grip so the
+    face looks at the player's eyes: `yaw` about Z toward Blender +X (= Roblox -X, the hand's
+    left = the body's midline) and `tilt` about X (face normal toward +Z, the hand's front).
+    The R15 eye directions behind HOLD_YAW / HOLD_TILT come from hold_check()'s three poses
+    (face within ~6-28 deg of the eyes; 28-73 deg without the turn). Edits mesh data."""
+    from mathutils import Matrix
+    gx, gy, gz = grip
+    R = Matrix.Rotation(math.radians(-yaw), 3, "Z") @ Matrix.Rotation(math.radians(tilt), 3, "X")
+    for o in objs or ns._tagged_objects():
+        ns.apply_all(o)
+        for v in o.data.vertices:
+            v.co = R @ Vector((-(v.co.x - gx), -(v.co.y - gy), v.co.z - gz))
+        o.data.update()
+
+
+def hold_face(yaw=HOLD_YAW, tilt=HOLD_TILT):
+    """Model-space (Blender) face normal and pad 'up' after to_grip()."""
+    from mathutils import Matrix
+    R = Matrix.Rotation(math.radians(-yaw), 3, "Z") @ Matrix.Rotation(math.radians(tilt), 3, "X")
+    return R @ Vector((0, 1, 0)), R @ Vector((0, 0, 1))
+
+
+def _hplayer():
+    global _HP
+    if _HP is None:
+        _HP = _load("hplayer_common", os.path.join("H_player", "_common.py"))
+    return _HP
+
+
+def hold_check(asset, build, res=300):
+    """Render the prop on the R15 reference rig (0.8 scale) at its RightGripAttachment, the
+    way the game attaches it, in HOLD_POSES. Row 1: over-the-shoulder camera (behind right);
+    row 2: from the player's eyes (head, torso and upper arm hidden, as in Roblox first
+    person). Prints / labels the angle between the
+    prop's face normal (model +Y) and the direction from the prop to the eyes."""
+    from PIL import Image, ImageDraw
+    from mathutils import Matrix
+    H = _hplayer()
+    ns.reset()
+    build()
+    prop = list(ns._tagged_objects())
+    arm = H.make_rig()
+    body = H.build_body(arm)
+    bpy.context.view_layer.update()
+    s = Matrix.Scale(1.0 / HOLD_SCALE, 4)
+    for o in prop:
+        o.matrix_world = s @ o.matrix_world
+    H._place(prop, H.grip_rest_matrix("Right"), arm, "RightWrist")
+    arm.scale = (HOLD_SCALE,) * 3
+    floor = H.floor_plane(size=30.0)
+    H.setup_workbench(res, res)
+    head = [o for o in body if o.name in ("Head", "EyeL", "EyeR", "Mouth", "UpperTorso", "RightUpperArm")]
+    upper = [o for o in body if o.name in ("Head", "UpperTorso", "RightUpperArm", "RightLowerArm", "RightHand")]
+    out_dir = os.path.join(PREVIEWS, "_checks")
+    os.makedirs(out_dir, exist_ok=True)
+    tiles, notes = [], []
+    for label, rots in HOLD_POSES:
+        for pb in arm.pose.bones:
+            pb.rotation_mode = "QUATERNION"
+            pb.rotation_quaternion = (1, 0, 0, 0)
+        for bone, (axis, deg) in rots.items():
+            arm.pose.bones[bone].rotation_quaternion = {"x": H.qx, "y": H.qy, "z": H.qz}[axis](deg)
+        bpy.context.view_layer.update()
+        R = prop[0].matrix_world.to_3x3().normalized()
+        f_loc, u_loc = hold_face()
+        n_face = (R @ f_loc).normalized()
+        up_prop = (R @ u_loc).normalized()
+        plo, phi = ns.bbox_world(prop)
+        ctr = (plo + phi) / 2
+        eyes = [o for o in body if o.name in ("EyeL", "EyeR")]
+        elo, ehi = ns.bbox_world(eyes)
+        eye = (elo + ehi) / 2
+        ang = math.degrees(n_face.angle(eye - ctr))
+        note = (f"{label}: face normal {tuple(round(c, 2) for c in n_face)}, prop up "
+                f"{tuple(round(c, 2) for c in up_prop)}, {ang:.0f} deg off the eye direction")
+        notes.append(note)
+        print(f"[{asset}] hold {note}")
+        # third person: straight behind the head (Roblox's default camera), a little above
+        lo, hi = ns.bbox_world(upper + prop)
+        H.camera(lo, hi, 180.0, 18.0, fov_deg=30.0, margin=1.12)
+        p1 = os.path.join(out_dir, f"_{asset}_h{len(tiles)}.png")
+        bpy.context.scene.render.filepath = p1
+        bpy.ops.render.render(write_still=True)
+        tiles.append((p1, label, f"{ang:.0f} deg"))
+        # from the eyes (head / torso / upper arm hidden), looking at the prop
+        for o in head:
+            o.hide_render = True
+        cd = bpy.data.cameras.new("PreviewCamEye")
+        cd.angle = math.radians(50.0)
+        cd.clip_start = 0.05
+        cam = bpy.data.objects.new("PreviewCamEye", cd)
+        bpy.context.scene.collection.objects.link(cam)
+        look = (ctr - eye).normalized()
+        cam.location = eye - look * 0.1
+        cam.rotation_euler = look.to_track_quat("-Z", "Y").to_euler()
+        bpy.context.scene.camera = cam
+        p2 = os.path.join(out_dir, f"_{asset}_h{len(tiles)}.png")
+        bpy.context.scene.render.filepath = p2
+        bpy.ops.render.render(write_still=True)
+        tiles.append((p2, label + " - eyes", ""))
+        bpy.data.objects.remove(cam, do_unlink=True)
+        for o in head:
+            o.hide_render = False
+    for o in floor:
+        bpy.data.objects.remove(o, do_unlink=True)
+    n = len(HOLD_POSES)
+    sheet = Image.new("RGB", (res * n, (res + 20) * 2), (24, 26, 30))
+    dr = ImageDraw.Draw(sheet)
+    for i, (p, label, extra) in enumerate(tiles):
+        col, row = i // 2, i % 2
+        sheet.paste(Image.open(p).convert("RGB"), (col * res, row * (res + 20) + 20))
+        dr.text((col * res + 6, row * (res + 20) + 4), label + (f"  ({extra})" if extra else ""), fill=(235, 235, 235))
+        os.remove(p)
+    out = os.path.join(out_dir, f"{asset}_hold.png")
+    sheet.save(out)
+    return out, notes
+
+
 def run(build, asset, sockets=None, views=None, backdrop=None, socket_views=((-35, 28),),
         budget=None, mount="floor", **export_kw):
     """Standard L_decor entry: build -> preview (quick with NS_QUICK=1) -> optional socket
@@ -470,4 +616,6 @@ def run(build, asset, sockets=None, views=None, backdrop=None, socket_views=((-3
                   f"tris={p['tris']}")
         if doc.get("sockets"):
             print(f"    sockets {doc['sockets']}")
+    if os.environ.get("NS_HOLD") == "1":      # rebuilds the scene: keep it last
+        print(f"[{asset}] hold check: {hold_check(asset, build)[0]}")
     return extra

@@ -1,10 +1,19 @@
-"""Prop_OrderSlip — a torn order-pad page / guest check, held in a player's RIGHT HAND.
+"""Prop_OrderSlip — the order ticket the player carries after writing it (RIGHT HAND).
 
-Cream paper slip (0.9 x 1.25 x 0.03) with a torn zig-zag top edge, a red header band
-(STACKHOUSE red-orange, matches Prop_Notepad) with little printed marks, printed ruled
-lines, a red price-column rule, and a pencil scribble of handwriting marks (thin dark
-strips) on four lines plus a circled total. Printing is on the front face (-Y).
-PIVOT = GRIP POINT: the bottom-centre edge (the slip stands up out of the fist, face -Y).
+Cream paper (0.55 x 0.9 x 0.02) with a torn zig-zag bottom edge, a STACKHOUSE red-orange
+header band across the top (printed through the paper, so it shows from behind too) with a
+cream ORDER mark, four printed blue lines and three pencil scrawls on the top lines.
+
+Held like the Cosmetic_Spatula skins (blender/F_cosmetics): the game does
+model:PivotTo(RightGripAttachment.WorldCFrame), so the PIVOT (0, 0, 0) is the grip point and
+the model axes are the attachment's (see L_decor/_common.py, "Hand props"):
+  * grip point = the middle of the bottom (torn) edge, at the zig-zag's mid-line, mid-thickness;
+  * the slip extends along Blender +Z = Roblox +Y = the hand's front (thumb side): it stands up
+    out of the fist with the arm held forward, and points forward with the arm down;
+  * the printed face looks back up the forearm, toward the player, turned 45 deg toward the
+    body's midline and tipped 15 deg toward the hand's front about the grip - the same turn
+    as Prop_Notepad (C.HOLD_YAW / HOLD_TILT), so it faces the player's eyes.
+NS_HOLD=1 renders it in hand on the R15 reference rig (previews/L_decor/_checks/).
 """
 import os
 import random
@@ -12,58 +21,61 @@ import sys
 
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 import _common as C  # noqa: E402
+import Prop_Notepad as NP  # noqa: E402  (ribbon / scrawl handwriting + shared colours)
 
 ns = C.ns
-W, H, T = 0.9, 1.25, 0.03
-FY = -T / 2
-LINE = "#A9B9C9"
-PENCIL = "#3A3E48"
+
+# front frame (built facing -Y, up +Z); C.to_grip() turns it onto the grip at the end
+W, H, T = 0.55, 0.9, 0.02
+HEAD_Z = 0.745                 # header band: HEAD_Z .. H
+TEETH, TOOTH = 8, 0.04         # torn zig-zag bottom: 8 teeth, 0.04 deep
+LINES_Z = (0.32, 0.43, 0.54, 0.65)
+GRIP = (0.0, 0.0, TOOTH / 2)   # middle of the torn bottom edge, mid-thickness
+
+
+def torn_outline(rnd):
+    """Body outline (x, z): right side, zig-zag bottom (right to left), left side."""
+    pts = [(W / 2, HEAD_Z)]
+    n = TEETH * 2
+    for k in range(n + 1):
+        x = W / 2 - W * k / n
+        notch = k % 2 == 0
+        z = TOOTH + rnd.uniform(-0.008, 0.006) if notch else rnd.uniform(0.0, 0.012)
+        if 0 < k < n:
+            x += rnd.uniform(-0.006, 0.006)
+        pts.append((x, z))
+    pts.append((-W / 2, HEAD_Z))
+    return pts
 
 
 def build():
-    rnd = random.Random(42)
-    # outline with a torn top edge (right to left), extruded through the thickness
-    top = []
-    n = 13
-    for k in range(n + 1):
-        x = W / 2 - W * k / n + (rnd.uniform(-0.02, 0.02) if 0 < k < n else 0.0)
-        z = H - rnd.choice((0.0, 0.015, 0.03, 0.05, 0.065)) - rnd.uniform(0.0, 0.015)
-        top.append((x, z))
-    outline = [(-W / 2, 0.0), (W / 2, 0.0)] + top
-    slip = C.prism(outline, "y", FY, -FY)
-    C.part([slip], "Paper", C.PAPER, smooth_angle=None)
+    rnd = random.Random(11)
+    body = C.prism(torn_outline(rnd), "y", -T / 2, T / 2)
+    C.part(body, "Paper", C.CREAM, smooth_angle=None)
+    head = C.prism([(-W / 2, HEAD_Z), (W / 2, HEAD_Z), (W / 2, H), (-W / 2, H)], "y", -T / 2, T / 2)
+    C.part(head, "Header", C.BRAND, smooth_angle=None)
+    mark = C.text("ORDER", 0.075, 0.002, (0.0, -T / 2 - 0.0005, (HEAD_Z + H) / 2), width=0.25, res=1, spacing=1.1,
+                  flat=True)
+    C.part(mark, "HeaderPrint", NP.LETTER, smooth_angle=None)
 
-    y1, y2 = FY - 0.004, FY - 0.008
-    header = [C.quad_xz(-W / 2 + 0.05, W / 2 - 0.05, H - 0.27, H - 0.12, y1)]
-    marks = [C.quad_xz(-0.34, 0.02, H - 0.21, H - 0.18, y2), C.quad_xz(0.12, 0.2, H - 0.225, H - 0.165, y2),
-             C.quad_xz(0.26, 0.34, H - 0.225, H - 0.165, y2)]
-    lines = [C.quad_xz(-W / 2 + 0.05, W / 2 - 0.05, z - 0.006, z + 0.006, y1) for z in (0.22, 0.36, 0.5, 0.64, 0.78)]
-    rule = [C.quad_xz(0.2, 0.212, 0.12, H - 0.32, y1)]
-    # handwriting: a few short slanted strokes per line (left of the price rule) + prices + total
+    fy = -T / 2 - 0.0015
+    lines = [C.quad_xz(-W / 2 + 0.04, W / 2 - 0.04, z - 0.005, z + 0.005, fy) for z in LINES_Z]
+    C.part(lines, "Rules", NP.RULE, smooth_angle=None)
     ink = []
-    for z, n_strokes in ((0.43, 4), (0.57, 3), (0.71, 5), (0.29, 2)):
-        x = -0.36
-        for s in range(n_strokes):
-            ln = rnd.uniform(0.06, 0.11)
-            ink.append(C.strip_xz((x, z - 0.015), (x + ln, z + 0.02 + rnd.uniform(-0.01, 0.01)), 0.016, y2))
-            x += ln + 0.03
-        ink.append(C.strip_xz((0.26, z - 0.01), (0.36, z + 0.015), 0.016, y2))
-    # circled total at the bottom right
-    import math
-    ring = []
-    for k in range(8):
-        a0, a1 = 2 * math.pi * k / 8, 2 * math.pi * (k + 1) / 8
-        ring.append(C.strip_xz((0.3 + 0.08 * math.cos(a0), 0.13 + 0.05 * math.sin(a0)),
-                               (0.3 + 0.08 * math.cos(a1), 0.13 + 0.05 * math.sin(a1)), 0.014, y2))
-    C.part(header, "Header", C.BRAND, smooth_angle=None)
-    C.part(marks, "HeaderPrint", "#F6EEDC", smooth_angle=None)
-    C.part(lines, "Lines", LINE, smooth_angle=None)
-    C.part(rule, "Rule", "#D9534A", smooth_angle=None)
-    C.part(ink + ring, "Pencil", PENCIL, smooth_angle=None)
+    for z, words in ((LINES_Z[3], (3, 3)), (LINES_Z[2], (4,)), (LINES_Z[1], (2, 3))):
+        ink += NP.scrawl(-W / 2 + 0.05, words, z + 0.007, rnd, h=0.032, y=fy - 0.0015)
+    C.part(ink, "Writing", NP.INK, smooth_angle=None)
+
+    C.to_grip(GRIP)
 
 
-META = {"held": "RightHand", "pivot": "grip point = bottom-centre edge; slip stands up out of the fist, printed face -Y",
-        "size": [W, H, T]}
+META = {"attach": "RightGripAttachment",
+        "grip": "pivot = grip point: middle of the torn bottom edge, mid-thickness "
+                "(model:PivotTo(RightGripAttachment.WorldCFrame), as Cosmetic_Spatula)",
+        "face": "printed face looks back up the forearm toward the player (Roblox model axes: +Z), turned 45 deg toward the "
+                "body midline (model -X) and tipped 15 deg toward the hand's front (model +Y); the slip "
+                "extends along model +Y (the hand's front / thumb side) from the grip"}
+VIEWS = ((155, 16, False), (110, 8, True))      # the face looks toward +X+Y (yaw 135)
 
 if __name__ == "__main__":
-    C.run(build, "Prop_OrderSlip", views=C.VIEWS_SMALL, pivot=(0, 0, 0), budget=300, meta=META)
+    C.run(build, "Prop_OrderSlip", views=VIEWS, pivot=(0.0, 0.0, 0.0), budget=250, meta=META)
