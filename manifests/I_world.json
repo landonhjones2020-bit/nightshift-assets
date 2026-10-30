@@ -1,0 +1,1304 @@
+{
+ "World_Billboard": {
+  "group": "World",
+  "size": [
+   29.4,
+   24.146,
+   4.199
+  ],
+  "tris": 812,
+  "meta": {
+   "kind": "billboard",
+   "pivot": "ground level under the cabinet centre",
+   "screen_size": [
+    27.9,
+    11.9
+   ],
+   "surfaces": [
+    {
+     "part": "Screen",
+     "face": "Front",
+     "screen_size": [
+      27.9,
+      11.9
+     ]
+    }
+   ],
+   "roles": {
+    "screen": "Screen",
+    "lamp": "LampLenses"
+   },
+   "light_hint": {
+    "type": "SpotLight",
+    "at": "Socket_Lamp1..3",
+    "aim": "down and back at the face",
+    "color": "#FFF1D6",
+    "range": 18,
+    "angle": 70,
+    "brightness": 2
+   }
+  },
+  "url": "https://raw.githubusercontent.com/landonhjones2020-bit/nightshift-assets/main/meshes/I_world/World_Billboard.json",
+  "parts": [
+   {
+    "name": "Metal",
+    "color": "#FFFFFF",
+    "material": "Metal",
+    "transparency": 0.0,
+    "castShadow": true,
+    "canCollide": false,
+    "role": null,
+    "bone": null,
+    "offset": [
+     0.0,
+     12.285,
+     -0.775
+    ],
+    "size": [
+     29.4,
+     23.671,
+     3.849
+    ],
+    "hash": "98ad10f300b14886",
+    "tris": 700
+   },
+   {
+    "name": "Footings",
+    "color": "#8E8C86",
+    "material": "Concrete",
+    "transparency": 0.0,
+    "castShadow": true,
+    "canCollide": false,
+    "role": null,
+    "bone": null,
+    "offset": [
+     0.0,
+     0.25,
+     0.75
+    ],
+    "size": [
+     17.7,
+     0.55,
+     1.5
+    ],
+    "hash": "00bdd715356354fa",
+    "tris": 88
+   },
+   {
+    "name": "LampLenses",
+    "color": "#FFF1D6",
+    "material": "Neon",
+    "transparency": 0.0,
+    "castShadow": false,
+    "canCollide": false,
+    "role": "lamp",
+    "bone": null,
+    "offset": [
+     0.0,
+     23.227,
+     -2.129
+    ],
+    "size": [
+     19.478,
+     0.198,
+     0.622
+    ],
+    "hash": "4075d9517bdf1c1a",
+    "tris": 12
+   },
+   {
+    "name": "Screen",
+    "color": "#121823",
+    "material": "Glass",
+    "transparency": 0.0,
+    "castShadow": false,
+    "canCollide": false,
+    "role": "screen",
+    "bone": null,
+    "offset": [
+     0.0,
+     16.5,
+     -0.4
+    ],
+    "size": [
+     28.2,
+     12.2,
+     0.24
+    ],
+    "hash": "8e46776ba7d1faab",
+    "tris": 12
+   }
+  ],
+  "sockets": {
+   "Lamp1": {
+    "p": [
+     9.44,
+     23.227,
+     -2.129
+    ],
+    "yaw": 180.0
+   },
+   "Lamp2": {
+    "p": [
+     0.0,
+     23.22,
+     -2.127
+    ],
+    "yaw": 180.0
+   },
+   "Lamp3": {
+    "p": [
+     -9.44,
+     23.227,
+     -2.129
+    ],
+    "yaw": 180.0
+   },
+   "Panel": {
+    "p": [
+     0.0,
+     16.5,
+     -0.52
+    ],
+    "yaw": 0.0
+   }
+  }
+ },
+ "World_Bush": {
+  "group": "World",
+  "size": [
+   4.711,
+   2.494,
+   3.013
+  ],
+  "tris": 198,
+  "meta": {
+   "kind": "shrub"
+  },
+  "url": "https://raw.githubusercontent.com/landonhjones2020-bit/nightshift-assets/main/meshes/I_world/World_Bush.json",
+  "parts": [
+   {
+    "name": "SmoothPlastic",
+    "color": "#FFFFFF",
+    "material": "SmoothPlastic",
+    "transparency": 0.0,
+    "castShadow": true,
+    "canCollide": false,
+    "role": null,
+    "bone": null,
+    "offset": [
+     0.015,
+     1.227,
+     0.135
+    ],
+    "size": [
+     4.711,
+     2.494,
+     3.013
+    ],
+    "hash": "b8b09a10dc6f6012",
+    "tris": 198
+   }
+  ]
+ },
+ "World_GasStation": {
+  "group": "World",
+  "size": [
+   40.0,
+   18.25,
+   28.0
+  ],
+  "tris": 2534,
+  "meta": {
+   "kind": "gas_station",
+   "pivot": "ground level, pad centre",
+   "abandoned": true,
+   "roles": {
+    "lamp": "Lamp (the one working canopy light \u2014 flicker / buzz it)"
+   },
+   "light_hint": {
+    "type": "SpotLight",
+    "at": "Socket_Light",
+    "face": "Bottom",
+    "color": "#D6F0DC",
+    "range": 24,
+    "angle": 100,
+    "brightness": 1.2,
+    "flicker": true
+   }
+  },
+  "url": "https://raw.githubusercontent.com/landonhjones2020-bit/nightshift-assets/main/meshes/I_world/World_GasStation.json",
+  "parts": [
+   {
+    "name": "Concrete",
+    "color": "#FFFFFF",
+    "material": "Concrete",
+    "transparency": 0.0,
+    "castShadow": true,
+    "canCollide": false,
+    "role": null,
+    "bone": null,
+    "offset": [
+     0.0,
+     4.05,
+     0.0
+    ],
+    "size": [
+     40.0,
+     8.2,
+     28.0
+    ],
+    "hash": "266c0b1fdfa6d03e",
+    "tris": 332
+   },
+   {
+    "name": "SmoothPlastic",
+    "color": "#FFFFFF",
+    "material": "SmoothPlastic",
+    "transparency": 0.0,
+    "castShadow": true,
+    "canCollide": false,
+    "role": null,
+    "bone": null,
+    "offset": [
+     0.197,
+     8.977,
+     -0.263
+    ],
+    "size": [
+     36.882,
+     17.646,
+     24.748
+    ],
+    "hash": "2ef22c48f313f11c",
+    "tris": 988
+   },
+   {
+    "name": "Metal",
+    "color": "#FFFFFF",
+    "material": "Metal",
+    "transparency": 0.0,
+    "castShadow": true,
+    "canCollide": false,
+    "role": null,
+    "bone": null,
+    "offset": [
+     -1.025,
+     9.145,
+     0.035
+    ],
+    "size": [
+     34.15,
+     18.11,
+     24.43
+    ],
+    "hash": "dd6ea117bc9e815c",
+    "tris": 850
+   },
+   {
+    "name": "Lamp",
+    "color": "#D6F0DC",
+    "material": "Neon",
+    "transparency": 0.0,
+    "castShadow": false,
+    "canCollide": false,
+    "role": "lamp",
+    "bone": null,
+    "offset": [
+     9.5,
+     8.91,
+     -8.4
+    ],
+    "size": [
+     1.7,
+     0.12,
+     1.7
+    ],
+    "hash": "00c1dff2a98a2c0d",
+    "tris": 12
+   },
+   {
+    "name": "WoodPlanks",
+    "color": "#FFFFFF",
+    "material": "WoodPlanks",
+    "transparency": 0.0,
+    "castShadow": true,
+    "canCollide": false,
+    "role": null,
+    "bone": null,
+    "offset": [
+     5.002,
+     3.4,
+     3.83
+    ],
+    "size": [
+     11.612,
+     4.24,
+     0.27
+    ],
+    "hash": "c32d082d52464e16",
+    "tris": 352
+   }
+  ],
+  "sockets": {
+   "Light": {
+    "p": [
+     9.5,
+     8.85,
+     -8.4
+    ],
+    "yaw": 0.0
+   }
+  }
+ },
+ "World_Guardrail": {
+  "group": "World",
+  "size": [
+   8.0,
+   2.4,
+   1.19
+  ],
+  "tris": 188,
+  "meta": {
+   "kind": "guardrail",
+   "chain": "along X every 8 studs (flat beam ends at x = +/-4)",
+   "pivot": "ground level, post line, segment centre",
+   "road_side": "front (-Z in Roblox)"
+  },
+  "url": "https://raw.githubusercontent.com/landonhjones2020-bit/nightshift-assets/main/meshes/I_world/World_Guardrail.json",
+  "parts": [
+   {
+    "name": "Beam",
+    "color": "#A7AEB3",
+    "material": "Metal",
+    "transparency": 0.0,
+    "castShadow": true,
+    "canCollide": false,
+    "role": null,
+    "bone": null,
+    "offset": [
+     0.0,
+     1.82,
+     -0.745
+    ],
+    "size": [
+     8.0,
+     1.0,
+     0.39
+    ],
+    "hash": "2f79bc37326159bd",
+    "tris": 76
+   },
+   {
+    "name": "Posts",
+    "color": "#5E4B3B",
+    "material": "Wood",
+    "transparency": 0.0,
+    "castShadow": true,
+    "canCollide": false,
+    "role": null,
+    "bone": null,
+    "offset": [
+     0.0,
+     1.2,
+     -0.205
+    ],
+    "size": [
+     4.5,
+     2.4,
+     0.91
+    ],
+    "hash": "96c8440eb22d4544",
+    "tris": 112
+   }
+  ]
+ },
+ "World_Hill": {
+  "group": "World",
+  "size": [
+   180.0,
+   25.78,
+   70.0
+  ],
+  "tris": 546,
+  "meta": {
+   "kind": "hill",
+   "pivot": "bottom-centre at ground level (Z=0)",
+   "ground_z": 0.0,
+   "skirt_z": -0.5,
+   "chain": "overlap neighbours ~25 studs along X; ends taper to the ground"
+  },
+  "url": "https://raw.githubusercontent.com/landonhjones2020-bit/nightshift-assets/main/meshes/I_world/World_Hill.json",
+  "parts": [
+   {
+    "name": "SmoothPlastic",
+    "color": "#FFFFFF",
+    "material": "SmoothPlastic",
+    "transparency": 0.0,
+    "castShadow": true,
+    "canCollide": false,
+    "role": null,
+    "bone": null,
+    "offset": [
+     0.0,
+     12.39,
+     0.0
+    ],
+    "size": [
+     180.0,
+     25.78,
+     70.0
+    ],
+    "hash": "1da74cd9eb4433ab",
+    "tris": 546
+   }
+  ]
+ },
+ "World_HillSmall": {
+  "group": "World",
+  "size": [
+   90.0,
+   14.673,
+   40.0
+  ],
+  "tris": 302,
+  "meta": {
+   "kind": "hill",
+   "pivot": "bottom-centre at ground level (Z=0)",
+   "ground_z": 0.0,
+   "skirt_z": -0.5,
+   "chain": "overlap neighbours ~12 studs along X; ends taper to the ground"
+  },
+  "url": "https://raw.githubusercontent.com/landonhjones2020-bit/nightshift-assets/main/meshes/I_world/World_HillSmall.json",
+  "parts": [
+   {
+    "name": "SmoothPlastic",
+    "color": "#FFFFFF",
+    "material": "SmoothPlastic",
+    "transparency": 0.0,
+    "castShadow": true,
+    "canCollide": false,
+    "role": null,
+    "bone": null,
+    "offset": [
+     0.0,
+     6.837,
+     0.0
+    ],
+    "size": [
+     90.0,
+     14.673,
+     40.0
+    ],
+    "hash": "a764a8fa49cb149f",
+    "tris": 302
+   }
+  ]
+ },
+ "World_PineMid": {
+  "group": "World",
+  "size": [
+   6.932,
+   18.991,
+   6.593
+  ],
+  "tris": 276,
+  "meta": {
+   "kind": "tree",
+   "pivot": "trunk base",
+   "trunk_collides": true,
+   "lean": "baked ~1.9 studs toward +X (Blender) at the top"
+  },
+  "url": "https://raw.githubusercontent.com/landonhjones2020-bit/nightshift-assets/main/meshes/I_world/World_PineMid.json",
+  "parts": [
+   {
+    "name": "SmoothPlastic",
+    "color": "#FFFFFF",
+    "material": "SmoothPlastic",
+    "transparency": 0.0,
+    "castShadow": true,
+    "canCollide": false,
+    "role": null,
+    "bone": null,
+    "offset": [
+     -0.165,
+     10.572,
+     0.429
+    ],
+    "size": [
+     6.932,
+     16.838,
+     6.593
+    ],
+    "hash": "fab0046da7ba9769",
+    "tris": 224
+   },
+   {
+    "name": "Trunk",
+    "color": "#5A3926",
+    "material": "Wood",
+    "transparency": 0.0,
+    "castShadow": true,
+    "canCollide": true,
+    "role": null,
+    "bone": null,
+    "offset": [
+     -0.009,
+     3.25,
+     -0.028
+    ],
+    "size": [
+     1.448,
+     6.5,
+     1.43
+    ],
+    "hash": "e0de973ead0209de",
+    "tris": 52
+   }
+  ]
+ },
+ "World_PineSmall": {
+  "group": "World",
+  "size": [
+   4.568,
+   10.998,
+   4.825
+  ],
+  "tris": 196,
+  "meta": {
+   "kind": "tree",
+   "pivot": "trunk base",
+   "trunk_collides": true
+  },
+  "url": "https://raw.githubusercontent.com/landonhjones2020-bit/nightshift-assets/main/meshes/I_world/World_PineSmall.json",
+  "parts": [
+   {
+    "name": "SmoothPlastic",
+    "color": "#FFFFFF",
+    "material": "SmoothPlastic",
+    "transparency": 0.0,
+    "castShadow": true,
+    "canCollide": false,
+    "role": null,
+    "bone": null,
+    "offset": [
+     -0.006,
+     6.185,
+     -0.082
+    ],
+    "size": [
+     4.568,
+     9.626,
+     4.825
+    ],
+    "hash": "082c17fd15c47846",
+    "tris": 144
+   },
+   {
+    "name": "Trunk",
+    "color": "#5A3926",
+    "material": "Wood",
+    "transparency": 0.0,
+    "castShadow": true,
+    "canCollide": true,
+    "role": null,
+    "bone": null,
+    "offset": [
+     0.013,
+     2.0,
+     0.011
+    ],
+    "size": [
+     0.96,
+     4.0,
+     0.962
+    ],
+    "hash": "1d8b0f934038b2c0",
+    "tris": 52
+   }
+  ]
+ },
+ "World_PineTall": {
+  "group": "World",
+  "size": [
+   8.747,
+   27.996,
+   8.902
+  ],
+  "tris": 332,
+  "meta": {
+   "kind": "tree",
+   "pivot": "trunk base",
+   "trunk_collides": true
+  },
+  "url": "https://raw.githubusercontent.com/landonhjones2020-bit/nightshift-assets/main/meshes/I_world/World_PineTall.json",
+  "parts": [
+   {
+    "name": "SmoothPlastic",
+    "color": "#FFFFFF",
+    "material": "SmoothPlastic",
+    "transparency": 0.0,
+    "castShadow": true,
+    "canCollide": false,
+    "role": null,
+    "bone": null,
+    "offset": [
+     -0.333,
+     15.674,
+     -0.218
+    ],
+    "size": [
+     8.747,
+     24.642,
+     8.902
+    ],
+    "hash": "d9cae52b2df6b4fd",
+    "tris": 280
+   },
+   {
+    "name": "Trunk",
+    "color": "#5A3926",
+    "material": "Wood",
+    "transparency": 0.0,
+    "castShadow": true,
+    "canCollide": true,
+    "role": null,
+    "bone": null,
+    "offset": [
+     -0.03,
+     4.5,
+     -0.018
+    ],
+    "size": [
+     1.855,
+     9.0,
+     1.867
+    ],
+    "hash": "2c710b74feea0eeb",
+    "tris": 52
+   }
+  ]
+ },
+ "World_PoleSign": {
+  "group": "World",
+  "size": [
+   16.5,
+   43.3,
+   3.4
+  ],
+  "tris": 2852,
+  "meta": {
+   "kind": "pole_sign",
+   "pivot": "ground level under the poles' centre",
+   "two_sided": true,
+   "roles": {
+    "neon": "NeonPink (border tubes + OPEN 24 HRS), NeonCyan (letter outlines)",
+    "lamp": "Bulbs"
+   },
+   "light_hint": {
+    "type": "PointLight",
+    "at": "Socket_Glow / Socket_GlowBack",
+    "color": "#FF4FA3",
+    "range": 40,
+    "brightness": 1.5
+   }
+  },
+  "url": "https://raw.githubusercontent.com/landonhjones2020-bit/nightshift-assets/main/meshes/I_world/World_PoleSign.json",
+  "parts": [
+   {
+    "name": "Footing",
+    "color": "#8E8C86",
+    "material": "Concrete",
+    "transparency": 0.0,
+    "castShadow": true,
+    "canCollide": false,
+    "role": null,
+    "bone": null,
+    "offset": [
+     0.0,
+     0.6,
+     0.0
+    ],
+    "size": [
+     7.8,
+     1.3,
+     3.4
+    ],
+    "hash": "4b19298c5236eac2",
+    "tris": 44
+   },
+   {
+    "name": "Metal",
+    "color": "#FFFFFF",
+    "material": "Metal",
+    "transparency": 0.0,
+    "castShadow": true,
+    "canCollide": false,
+    "role": null,
+    "bone": null,
+    "offset": [
+     0.0,
+     22.125,
+     0.0
+    ],
+    "size": [
+     16.5,
+     42.25,
+     2.52
+    ],
+    "hash": "4f407de551e14dec",
+    "tris": 352
+   },
+   {
+    "name": "SmoothPlastic",
+    "color": "#FFFFFF",
+    "material": "SmoothPlastic",
+    "transparency": 0.0,
+    "castShadow": true,
+    "canCollide": false,
+    "role": null,
+    "bone": null,
+    "offset": [
+     0.0,
+     33.95,
+     0.0
+    ],
+    "size": [
+     16.0,
+     18.1,
+     3.078
+    ],
+    "hash": "3519d65d052794aa",
+    "tris": 1532
+   },
+   {
+    "name": "NeonCyan",
+    "color": "#38E1FF",
+    "material": "Neon",
+    "transparency": 0.0,
+    "castShadow": false,
+    "canCollide": false,
+    "role": "neon",
+    "bone": null,
+    "offset": [
+     0.0,
+     40.151,
+     0.0
+    ],
+    "size": [
+     13.723,
+     2.592,
+     2.28
+    ],
+    "hash": "1d37061ea53ca357",
+    "tris": 332
+   },
+   {
+    "name": "NeonPink",
+    "color": "#FF4FA3",
+    "material": "Neon",
+    "transparency": 0.0,
+    "castShadow": false,
+    "canCollide": false,
+    "role": "neon",
+    "bone": null,
+    "offset": [
+     0.0,
+     34.283,
+     0.0
+    ],
+    "size": [
+     15.127,
+     16.562,
+     2.487
+    ],
+    "hash": "677a87b09fbf5a34",
+    "tris": 484
+   },
+   {
+    "name": "Bulbs",
+    "color": "#FFD99A",
+    "material": "Neon",
+    "transparency": 0.0,
+    "castShadow": false,
+    "canCollide": false,
+    "role": "lamp",
+    "bone": null,
+    "offset": [
+     0.414,
+     31.644,
+     0.0
+    ],
+    "size": [
+     12.6,
+     6.716,
+     1.24
+    ],
+    "hash": "086ba23a8487a0fb",
+    "tris": 108
+   }
+  ],
+  "sockets": {
+   "ArrowGlow": {
+    "p": [
+     0.171,
+     33.487,
+     0.0
+    ],
+    "yaw": 0.0
+   },
+   "Glow": {
+    "p": [
+     0.0,
+     39.7,
+     -4.1
+    ],
+    "yaw": 0.0
+   },
+   "GlowBack": {
+    "p": [
+     0.0,
+     39.7,
+     4.1
+    ],
+    "yaw": 180.0
+   }
+  }
+ },
+ "World_Rock": {
+  "group": "World",
+  "size": [
+   5.046,
+   2.857,
+   3.845
+  ],
+  "tris": 120,
+  "meta": {
+   "kind": "rock"
+  },
+  "url": "https://raw.githubusercontent.com/landonhjones2020-bit/nightshift-assets/main/meshes/I_world/World_Rock.json",
+  "parts": [
+   {
+    "name": "Slate",
+    "color": "#FFFFFF",
+    "material": "Slate",
+    "transparency": 0.0,
+    "castShadow": true,
+    "canCollide": false,
+    "role": null,
+    "bone": null,
+    "offset": [
+     0.058,
+     1.428,
+     0.059
+    ],
+    "size": [
+     5.046,
+     2.857,
+     3.845
+    ],
+    "hash": "635016931fa4f106",
+    "tris": 120
+   }
+  ]
+ },
+ "World_RockFlat": {
+  "group": "World",
+  "size": [
+   7.427,
+   1.566,
+   6.01
+  ],
+  "tris": 124,
+  "meta": {
+   "kind": "rock"
+  },
+  "url": "https://raw.githubusercontent.com/landonhjones2020-bit/nightshift-assets/main/meshes/I_world/World_RockFlat.json",
+  "parts": [
+   {
+    "name": "Slate",
+    "color": "#FFFFFF",
+    "material": "Slate",
+    "transparency": 0.0,
+    "castShadow": true,
+    "canCollide": false,
+    "role": null,
+    "bone": null,
+    "offset": [
+     -0.033,
+     0.783,
+     0.099
+    ],
+    "size": [
+     7.427,
+     1.566,
+     6.01
+    ],
+    "hash": "216f71ab805e1fcb",
+    "tris": 124
+   }
+  ]
+ },
+ "World_SkylineA": {
+  "group": "World",
+  "size": [
+   109.5,
+   59.97,
+   28.0
+  ],
+  "tris": 1024,
+  "meta": {
+   "kind": "skyline",
+   "pivot": "ground level, footprint centre",
+   "view_distance": "200-600 studs",
+   "roles": {
+    "lamp": "Windows (warm lit windows), AircraftLight (red, blink it)"
+   }
+  },
+  "url": "https://raw.githubusercontent.com/landonhjones2020-bit/nightshift-assets/main/meshes/I_world/World_SkylineA.json",
+  "parts": [
+   {
+    "name": "SmoothPlastic",
+    "color": "#FFFFFF",
+    "material": "SmoothPlastic",
+    "transparency": 0.0,
+    "castShadow": true,
+    "canCollide": false,
+    "role": null,
+    "bone": null,
+    "offset": [
+     -0.5,
+     29.5,
+     1.25
+    ],
+    "size": [
+     109.5,
+     59.0,
+     28.0
+    ],
+    "hash": "f23f86dad1abb531",
+    "tris": 912
+   },
+   {
+    "name": "AircraftLight",
+    "color": "#FF3B30",
+    "material": "Neon",
+    "transparency": 0.0,
+    "castShadow": false,
+    "canCollide": false,
+    "role": "lamp",
+    "bone": null,
+    "offset": [
+     6.0,
+     59.42,
+     7.5
+    ],
+    "size": [
+     0.953,
+     1.1,
+     1.1
+    ],
+    "hash": "cf0acc287869c8cd",
+    "tris": 12
+   },
+   {
+    "name": "Windows",
+    "color": "#FFD99A",
+    "material": "Neon",
+    "transparency": 0.0,
+    "castShadow": false,
+    "canCollide": false,
+    "role": "lamp",
+    "bone": null,
+    "offset": [
+     -0.5,
+     24.7,
+     0.13
+    ],
+    "size": [
+     109.12,
+     43.6,
+     25.44
+    ],
+    "hash": "72d00134dbb40047",
+    "tris": 100
+   }
+  ],
+  "sockets": {
+   "Beacon": {
+    "p": [
+     6.0,
+     59.42,
+     7.5
+    ],
+    "yaw": 0.0
+   }
+  }
+ },
+ "World_SkylineB": {
+  "group": "World",
+  "size": [
+   84.0,
+   45.018,
+   22.15
+  ],
+  "tris": 864,
+  "meta": {
+   "kind": "skyline",
+   "pivot": "ground level, footprint centre",
+   "view_distance": "200-600 studs",
+   "roles": {
+    "lamp": "Windows (warm lit windows + clock face), TowerLight (red, on the water tower)"
+   }
+  },
+  "url": "https://raw.githubusercontent.com/landonhjones2020-bit/nightshift-assets/main/meshes/I_world/World_SkylineB.json",
+  "parts": [
+   {
+    "name": "SmoothPlastic",
+    "color": "#FFFFFF",
+    "material": "SmoothPlastic",
+    "transparency": 0.0,
+    "castShadow": true,
+    "canCollide": false,
+    "role": null,
+    "bone": null,
+    "offset": [
+     2.75,
+     22.491,
+     0.325
+    ],
+    "size": [
+     84.0,
+     45.018,
+     22.15
+    ],
+    "hash": "0b5dfdb59c4273b4",
+    "tris": 810
+   },
+   {
+    "name": "TowerLight",
+    "color": "#FF3B30",
+    "material": "Neon",
+    "transparency": 0.0,
+    "castShadow": false,
+    "canCollide": false,
+    "role": "lamp",
+    "bone": null,
+    "offset": [
+     27.0,
+     33.5,
+     4.0
+    ],
+    "size": [
+     0.693,
+     0.84,
+     0.8
+    ],
+    "hash": "321a96a3325ee848",
+    "tris": 12
+   },
+   {
+    "name": "Windows",
+    "color": "#FFD99A",
+    "material": "Neon",
+    "transparency": 0.0,
+    "castShadow": false,
+    "canCollide": false,
+    "role": "lamp",
+    "bone": null,
+    "offset": [
+     2.75,
+     13.706,
+     -0.505
+    ],
+    "size": [
+     83.62,
+     21.612,
+     20.11
+    ],
+    "hash": "50ac80313cca7923",
+    "tris": 42
+   }
+  ],
+  "sockets": {
+   "Beacon": {
+    "p": [
+     27.0,
+     33.5,
+     4.0
+    ],
+    "yaw": 0.0
+   }
+  }
+ },
+ "World_TreeRound": {
+  "group": "World",
+  "size": [
+   12.097,
+   16.124,
+   11.242
+  ],
+  "tris": 421,
+  "meta": {
+   "kind": "tree",
+   "pivot": "trunk base",
+   "trunk_collides": true
+  },
+  "url": "https://raw.githubusercontent.com/landonhjones2020-bit/nightshift-assets/main/meshes/I_world/World_TreeRound.json",
+  "parts": [
+   {
+    "name": "Trunk",
+    "color": "#5A3926",
+    "material": "Wood",
+    "transparency": 0.0,
+    "castShadow": true,
+    "canCollide": true,
+    "role": null,
+    "bone": null,
+    "offset": [
+     0.05,
+     4.762,
+     0.669
+    ],
+    "size": [
+     5.902,
+     9.524,
+     3.989
+    ],
+    "hash": "985551c51e6d436c",
+    "tris": 120
+   },
+   {
+    "name": "SmoothPlastic",
+    "color": "#FFFFFF",
+    "material": "SmoothPlastic",
+    "transparency": 0.0,
+    "castShadow": true,
+    "canCollide": false,
+    "role": null,
+    "bone": null,
+    "offset": [
+     0.154,
+     11.459,
+     0.076
+    ],
+    "size": [
+     12.097,
+     9.329,
+     11.242
+    ],
+    "hash": "20b6d7bb76c8396b",
+    "tris": 301
+   }
+  ]
+ },
+ "World_UtilityPole": {
+  "group": "World",
+  "size": [
+   2.543,
+   25.975,
+   6.0
+  ],
+  "tris": 378,
+  "meta": {
+   "kind": "utility_pole",
+   "pivot": "pole base",
+   "wires": "Beams run along local X between neighbouring poles: Wire1 = front (-Z in Roblox), Wire2 = centre, Wire3 = back"
+  },
+  "url": "https://raw.githubusercontent.com/landonhjones2020-bit/nightshift-assets/main/meshes/I_world/World_UtilityPole.json",
+  "parts": [
+   {
+    "name": "Wood",
+    "color": "#FFFFFF",
+    "material": "Wood",
+    "transparency": 0.0,
+    "castShadow": true,
+    "canCollide": false,
+    "role": null,
+    "bone": null,
+    "offset": [
+     0.0,
+     12.688,
+     0.0
+    ],
+    "size": [
+     1.146,
+     25.375,
+     6.0
+    ],
+    "hash": "85b18fe915ed3b38",
+    "tris": 88
+   },
+   {
+    "name": "Metal",
+    "color": "#FFFFFF",
+    "material": "Metal",
+    "transparency": 0.0,
+    "castShadow": true,
+    "canCollide": false,
+    "role": null,
+    "bone": null,
+    "offset": [
+     -0.955,
+     15.966,
+     0.0
+    ],
+    "size": [
+     2.03,
+     17.992,
+     3.538
+    ],
+    "hash": "9b4fbaa57c76d794",
+    "tris": 188
+   },
+   {
+    "name": "Insulators",
+    "color": "#5FB0A0",
+    "material": "Glass",
+    "transparency": 0.0,
+    "castShadow": true,
+    "canCollide": false,
+    "role": null,
+    "bone": null,
+    "offset": [
+     0.0,
+     25.665,
+     0.0
+    ],
+    "size": [
+     0.45,
+     0.62,
+     5.62
+    ],
+    "hash": "ea5f87e4e5426633",
+    "tris": 102
+   }
+  ],
+  "sockets": {
+   "Wire1": {
+    "p": [
+     0.0,
+     25.975,
+     -2.55
+    ],
+    "yaw": 0.0
+   },
+   "Wire2": {
+    "p": [
+     0.0,
+     25.975,
+     0.0
+    ],
+    "yaw": 0.0
+   },
+   "Wire3": {
+    "p": [
+     0.0,
+     25.975,
+     2.55
+    ],
+    "yaw": 0.0
+   }
+  }
+ }
+}
