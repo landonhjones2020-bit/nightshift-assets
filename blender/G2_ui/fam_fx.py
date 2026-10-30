@@ -1,10 +1,11 @@
 """fam_fx — the tutorial guide's world FX (group "fx"): the arrow line and the target marker.
 
 FX_GuideArrow  one tile of the guide line (Controllers.Tutorial draws it as camera-facing
-               Beams, Config.Tutorial.guide). 256 x 384, one chevron pointing UP: a Beam maps
-               the image's width across the beam and its height along it (checked in Studio,
-               2026-10-29: a right-pointing tile drew a sideways zigzag), so TextureLength =
-               one arrow and Width0/1 = the tile's width. Fill is pure white and tinted in game by
+               Beams, Config.Tutorial.guide). 256 x 384, one chevron pointing DOWN: a Beam maps
+               the image's width across the beam and its height along it, top at Attachment0
+               (checked in Studio, 2026-10-29: a right-pointing tile drew a sideways zigzag, an
+               up-pointing one pointed back at the player), so TextureLength = one arrow and
+               Width0/1 = the tile's width. Fill is pure white and tinted in game by
                Beam.Color (guide.color); the ink outline stays dark under any tint, which is
                what keeps the line readable on the bright Lobby and the dark Shop alike.
                Rendered face-on and orthographic: a beam tile must have no perspective.
@@ -27,7 +28,7 @@ FAM = "fx"
 GUIDE_YELLOW = "#FFD23F"
 G.FAMILY.setdefault(FAM, dict(G.FAMILY["hud"], fill=0.9))
 
-CHEVRON = [(-0.7, -0.42), (0.0, 0.4), (0.7, -0.42)]   # pointing up (+z), tip at z = 0.4
+CHEVRON = [(-0.68, 0.4), (0.0, -0.38), (0.68, 0.4)]   # pointing down (-z): toward Attachment1
 
 
 def offset(pts, d):
@@ -83,9 +84,9 @@ def _tile_render(name, draft):
 
 @fx("FX_GuideArrow", kind="tile")
 def guide_arrow():
-    fill = G.puffy(G.fillet(G.stroke(CHEVRON, 0.36, cap_round=True), 0.03, 2), 0.3)
+    fill = G.puffy(G.fillet(G.stroke(CHEVRON, 0.46, cap_round=True), 0.03, 2), 0.3)
     G.T(fill, "#FFFFFF", name="Chevron")
-    rim = G.slab(G.stroke(CHEVRON, 0.36 + 0.13, cap_round=True), 0.12, y=0.12)
+    rim = G.slab(G.stroke(CHEVRON, 0.46 + 0.15, cap_round=True), 0.12, y=0.12)
     G.T(rim, G.INK, name="Rim")
     return {"render": lambda draft: _tile_render("FX_GuideArrow", draft)}
 
