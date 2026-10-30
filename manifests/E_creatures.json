@@ -2520,41 +2520,52 @@
  "Creature_Patron": {
   "group": "Creatures",
   "size": [
-   51.137,
-   26.15,
-   33.671
+   62.088,
+   28.765,
+   45.445
   ],
-  "tris": 9044,
+  "tris": 9852,
   "meta": {
    "root": {
     "center": [
      0,
-     4.75,
-     0
+     6.65,
+     0.0
     ],
     "size": [
-     24,
-     26,
-     20
+     26.4,
+     28.6,
+     22.0
     ]
    },
    "clipSpeedRef": {},
    "placement": {
+    "pivot": [
+     0.0,
+     0.0,
+     -55.5
+    ],
+    "yaw": 180,
     "floor": 0.0,
-    "eyeLine": 6.25,
-    "windowWallZ": -14.1,
-    "note": "pivot on the ground outside, 14.1 studs behind the dining-room window wall's centre plane (Roblox +Z; 3.5 farther out than first authored); eyes at the window centre, hands on the wall between the windows"
+    "eyeLine": 8.3,
+    "headScale": 1.1,
+    "windowWallZ": -15.5,
+    "note": "pivot CFrame.new(0, 0, -55.5) * CFrame.Angles(0, math.pi, 0) (faces +Z): the front wall's centre plane is 15.5 studs in front of the pivot; eyes in the picture window's lower pane, palms on the M7 glass and the transom glass over the door"
    },
    "slamPoint": [
-    3.952,
-    3.151,
-    -30.19
+    3.9,
+    3.181,
+    -47.5
    ],
    "grabPoint": [
-    -14.0,
-    6.5,
-    -24.1
+    -0.0,
+    9.3,
+    -18.3
    ],
+   "windows": {
+    "HandSlam": "M3 lower pane",
+    "HandGrabLift": "picture window lower pane (right half)"
+   },
    "props": {
     "receipt": "HandR_Receipt (THE BIG ONE): show during HandSlam until events.HandSlam.slam, then hide and spawn the real receipt at slamPoint"
    },
@@ -2563,11 +2574,11 @@
      "closed": 0.13
     },
     "HandSlam": {
-     "slam": 0.933
+     "slam": 1.133
     },
     "HandGrabLift": {
      "grab": 1.067,
-     "chomp": 2.0
+     "chomp": 2.533
     },
     "Burp": {
      "burp": 0.73
@@ -2587,15 +2598,15 @@
     "bone": "Head",
     "offset": [
      0.0,
-     4.825,
-     -1.302
+     6.732,
+     -1.432
     ],
     "size": [
-     26.13,
-     26.15,
-     22.535
+     28.743,
+     28.765,
+     24.789
     ],
-    "hash": "813598b8bdd54378",
+    "hash": "f424057df1b59b77",
     "tris": 3020
    },
    {
@@ -2609,15 +2620,15 @@
     "bone": "Jaw",
     "offset": [
      0.0,
-     -4.952,
-     -6.0
+     -4.022,
+     -6.6
     ],
     "size": [
-     15.427,
-     6.497,
-     6.6
+     16.969,
+     7.146,
+     7.26
     ],
-    "hash": "28661b4a47c1d658",
+    "hash": "1f48c6562b952ab2",
     "tris": 1004
    },
    {
@@ -2630,16 +2641,16 @@
     "role": null,
     "bone": "EyeL",
     "offset": [
-     -5.3,
-     6.25,
-     -7.16
+     -5.83,
+     8.3,
+     -7.876
     ],
     "size": [
-     5.9,
-     5.9,
-     6.02
+     6.49,
+     6.49,
+     6.622
     ],
-    "hash": "65b8feb1b1823c82",
+    "hash": "8358be4e2d7885a8",
     "tris": 540
    },
    {
@@ -2652,16 +2663,16 @@
     "role": "eyelid",
     "bone": "LidL",
     "offset": [
-     -5.3,
-     8.845,
-     -7.1
+     -5.83,
+     11.154,
+     -7.81
     ],
     "size": [
-     4.483,
-     1.151,
-     4.483
+     4.931,
+     1.266,
+     4.931
     ],
-    "hash": "4d524a33ea0d152c",
+    "hash": "3c1ba1c1ad090235",
     "tris": 240
    },
    {
@@ -2674,16 +2685,16 @@
     "role": null,
     "bone": "CheekL",
     "offset": [
-     -7.4,
-     1.4,
-     -8.0
+     -8.14,
+     2.965,
+     -8.8
     ],
     "size": [
-     4.875,
-     4.2,
-     2.73
+     5.362,
+     4.62,
+     3.003
     ],
-    "hash": "da71dcafcf042c5a",
+    "hash": "bdabe3db83d26cda",
     "tris": 144
    },
    {
@@ -2696,16 +2707,16 @@
     "role": null,
     "bone": "EyeR",
     "offset": [
-     5.3,
-     6.25,
-     -7.16
+     5.83,
+     8.3,
+     -7.876
     ],
     "size": [
-     5.9,
-     5.9,
-     6.02
+     6.49,
+     6.49,
+     6.622
     ],
-    "hash": "38aa25840564198c",
+    "hash": "e84809d0012ad500",
     "tris": 540
    },
    {
@@ -2718,16 +2729,16 @@
     "role": "eyelid",
     "bone": "LidR",
     "offset": [
-     5.3,
-     8.845,
-     -7.1
+     5.83,
+     11.154,
+     -7.81
     ],
     "size": [
-     4.483,
-     1.151,
-     4.483
+     4.931,
+     1.266,
+     4.931
     ],
-    "hash": "85264033d9595c81",
+    "hash": "ef4ca17ea2642447",
     "tris": 240
    },
    {
@@ -2740,21 +2751,21 @@
     "role": null,
     "bone": "CheekR",
     "offset": [
-     7.4,
-     1.4,
-     -8.0
+     8.14,
+     2.965,
+     -8.8
     ],
     "size": [
-     4.875,
-     4.2,
-     2.73
+     5.362,
+     4.62,
+     3.003
     ],
-    "hash": "27e24fb16756ed04",
+    "hash": "13318e25f3ca4933",
     "tris": 144
    },
    {
     "name": "HandL",
-    "color": "#FFFFFF",
+    "color": "#DECBB6",
     "material": "SmoothPlastic",
     "transparency": 0.0,
     "castShadow": true,
@@ -2762,39 +2773,17 @@
     "role": null,
     "bone": "HandL",
     "offset": [
-     -16.5,
-     4.95,
-     -8.089
+     -13.304,
+     12.047,
+     -12.493
     ],
     "size": [
-     4.777,
-     5.065,
-     7.522
+     3.445,
+     6.287,
+     4.755
     ],
-    "hash": "0a48f9cf73443b5e",
-    "tris": 556
-   },
-   {
-    "name": "HandL_Sleeve",
-    "color": "#1E2A44",
-    "material": "Fabric",
-    "transparency": 0.0,
-    "castShadow": true,
-    "canCollide": false,
-    "role": null,
-    "bone": "HandL",
-    "offset": [
-     -19.93,
-     5.978,
-     5.703
-    ],
-    "size": [
-     11.277,
-     6.574,
-     24.121
-    ],
-    "hash": "ca93ee30fd59abf5",
-    "tris": 168
+    "hash": "c4f756cf680faaba",
+    "tris": 672
    },
    {
     "name": "IndexL",
@@ -2806,16 +2795,16 @@
     "role": null,
     "bone": "IndexL",
     "offset": [
-     -14.9,
-     4.6,
-     -12.475
+     -13.443,
+     15.927,
+     -10.864
     ],
     "size": [
-     1.24,
-     1.24,
-     3.79
+     1.635,
+     3.708,
+     1.165
     ],
-    "hash": "98603eb72911db60",
+    "hash": "e082bc3edee7ff14",
     "tris": 64
    },
    {
@@ -2828,16 +2817,16 @@
     "role": null,
     "bone": "IndexL2",
     "offset": [
-     -14.9,
-     3.777,
-     -14.366
+     -13.692,
+     18.233,
+     -10.936
     ],
     "size": [
-     1.141,
-     2.77,
-     2.255
+     1.211,
+     3.158,
+     1.216
     ],
-    "hash": "02b30766b6e11b48",
+    "hash": "acddcee3ecd60554",
     "tris": 112
    },
    {
@@ -2850,16 +2839,16 @@
     "role": null,
     "bone": "FingersL",
     "offset": [
-     -16.965,
-     4.6,
-     -12.6
+     -14.16,
+     15.899,
+     -12.805
     ],
     "size": [
-     3.21,
-     1.24,
-     4.14
+     2.263,
+     4.197,
+     3.016
     ],
-    "hash": "7c371f42d26b0b8f",
+    "hash": "07593019665fd9a2",
     "tris": 192
    },
    {
@@ -2872,16 +2861,16 @@
     "role": null,
     "bone": "FingersL2",
     "offset": [
-     -16.969,
-     3.695,
-     -14.723
+     -14.418,
+     18.512,
+     -12.862
     ],
     "size": [
-     3.119,
-     2.934,
-     2.369
+     1.797,
+     3.433,
+     3.038
     ],
-    "hash": "aaa120d274137870",
+    "hash": "8f385a3d0df2cc45",
     "tris": 336
    },
    {
@@ -2894,16 +2883,16 @@
     "role": null,
     "bone": "ThumbL",
     "offset": [
-     -13.835,
-     4.16,
-     -8.815
+     -11.935,
+     12.519,
+     -10.026
     ],
     "size": [
-     2.813,
-     1.577,
-     3.312
+     1.534,
+     3.366,
+     2.615
     ],
-    "hash": "113db52b2aacd455",
+    "hash": "ca1cb7de831cba3e",
     "tris": 64
    },
    {
@@ -2916,21 +2905,65 @@
     "role": null,
     "bone": "ThumbL2",
     "offset": [
-     -12.848,
-     3.722,
-     -10.703
+     -11.594,
+     14.522,
+     -9.254
     ],
     "size": [
-     1.802,
-     1.929,
-     3.096
+     1.632,
+     3.26,
+     1.48
     ],
-    "hash": "e2000db9e2de3ba9",
+    "hash": "7584b763612147fb",
     "tris": 64
    },
    {
-    "name": "HandR",
+    "name": "ForearmL",
     "color": "#FFFFFF",
+    "material": "SmoothPlastic",
+    "transparency": 0.0,
+    "castShadow": true,
+    "canCollide": false,
+    "role": null,
+    "bone": "ForearmL",
+    "offset": [
+     -13.184,
+     10.307,
+     -11.51
+    ],
+    "size": [
+     4.873,
+     4.874,
+     2.942
+    ],
+    "hash": "5ec0bdc1a38e694e",
+    "tris": 288
+   },
+   {
+    "name": "HandL_Sleeve",
+    "color": "#1E2A44",
+    "material": "Fabric",
+    "transparency": 0.0,
+    "castShadow": true,
+    "canCollide": false,
+    "role": null,
+    "bone": "ForearmL",
+    "offset": [
+     -21.005,
+     11.461,
+     9.042
+    ],
+    "size": [
+     20.078,
+     7.0,
+     43.063
+    ],
+    "hash": "444d70556968d140",
+    "tris": 168
+   },
+   {
+    "name": "HandR",
+    "color": "#DECBB6",
     "material": "SmoothPlastic",
     "transparency": 0.0,
     "castShadow": true,
@@ -2938,39 +2971,17 @@
     "role": null,
     "bone": "HandR",
     "offset": [
-     16.5,
-     4.95,
-     -8.089
+     13.304,
+     12.047,
+     -12.493
     ],
     "size": [
-     4.777,
-     5.065,
-     7.522
+     3.445,
+     6.287,
+     4.755
     ],
-    "hash": "11f077b2e932a778",
-    "tris": 556
-   },
-   {
-    "name": "HandR_Sleeve",
-    "color": "#1E2A44",
-    "material": "Fabric",
-    "transparency": 0.0,
-    "castShadow": true,
-    "canCollide": false,
-    "role": null,
-    "bone": "HandR",
-    "offset": [
-     19.93,
-     5.978,
-     5.703
-    ],
-    "size": [
-     11.277,
-     6.574,
-     24.121
-    ],
-    "hash": "e10d7fd86ad21510",
-    "tris": 168
+    "hash": "fbeab3886cf56152",
+    "tris": 672
    },
    {
     "name": "HandR_Receipt",
@@ -2982,16 +2993,16 @@
     "role": "receipt",
     "bone": "HandR",
     "offset": [
-     16.5,
-     3.6,
-     -9.1
+     12.375,
+     12.708,
+     -12.71
     ],
     "size": [
-     3.2,
-     0.08,
-     3.6
+     1.857,
+     3.747,
+     3.034
     ],
-    "hash": "324a2f4fb6d64b66",
+    "hash": "60880cf52ad4eef3",
     "tris": 60
    },
    {
@@ -3004,16 +3015,16 @@
     "role": null,
     "bone": "IndexR",
     "offset": [
-     14.9,
-     4.6,
-     -12.475
+     13.443,
+     15.927,
+     -10.864
     ],
     "size": [
-     1.24,
-     1.24,
-     3.79
+     1.635,
+     3.708,
+     1.165
     ],
-    "hash": "5e8caa7e31c15830",
+    "hash": "fdf807b99ba5ad52",
     "tris": 64
    },
    {
@@ -3026,16 +3037,16 @@
     "role": null,
     "bone": "IndexR2",
     "offset": [
-     14.9,
-     3.777,
-     -14.366
+     13.692,
+     18.233,
+     -10.936
     ],
     "size": [
-     1.141,
-     2.77,
-     2.255
+     1.211,
+     3.158,
+     1.216
     ],
-    "hash": "4295affa6ffd6781",
+    "hash": "72c283965181070f",
     "tris": 112
    },
    {
@@ -3048,16 +3059,16 @@
     "role": null,
     "bone": "FingersR",
     "offset": [
-     16.965,
-     4.6,
-     -12.6
+     14.16,
+     15.899,
+     -12.805
     ],
     "size": [
-     3.21,
-     1.24,
-     4.14
+     2.263,
+     4.197,
+     3.016
     ],
-    "hash": "8f2684b65c0dcec9",
+    "hash": "a13c64a75269c09d",
     "tris": 192
    },
    {
@@ -3070,16 +3081,16 @@
     "role": null,
     "bone": "FingersR2",
     "offset": [
-     16.969,
-     3.695,
-     -14.723
+     14.418,
+     18.512,
+     -12.862
     ],
     "size": [
-     3.119,
-     2.934,
-     2.369
+     1.797,
+     3.433,
+     3.038
     ],
-    "hash": "d0b733fcf3156e54",
+    "hash": "301aed0d35ffc10c",
     "tris": 336
    },
    {
@@ -3092,16 +3103,16 @@
     "role": null,
     "bone": "ThumbR",
     "offset": [
-     13.835,
-     4.16,
-     -8.815
+     11.935,
+     12.519,
+     -10.026
     ],
     "size": [
-     2.813,
-     1.577,
-     3.312
+     1.534,
+     3.366,
+     2.615
     ],
-    "hash": "f887561ddf1882fc",
+    "hash": "a15ce0a350913f99",
     "tris": 64
    },
    {
@@ -3114,17 +3125,61 @@
     "role": null,
     "bone": "ThumbR2",
     "offset": [
-     12.848,
-     3.722,
-     -10.703
+     11.594,
+     14.522,
+     -9.254
     ],
     "size": [
-     1.802,
-     1.929,
-     3.096
+     1.632,
+     3.26,
+     1.48
     ],
-    "hash": "99ad09084cf133d1",
+    "hash": "d4a61c627d8f20bc",
     "tris": 64
+   },
+   {
+    "name": "ForearmR",
+    "color": "#FFFFFF",
+    "material": "SmoothPlastic",
+    "transparency": 0.0,
+    "castShadow": true,
+    "canCollide": false,
+    "role": null,
+    "bone": "ForearmR",
+    "offset": [
+     13.184,
+     10.307,
+     -11.51
+    ],
+    "size": [
+     4.873,
+     4.874,
+     2.942
+    ],
+    "hash": "2c00dfa6f3eae9db",
+    "tris": 288
+   },
+   {
+    "name": "HandR_Sleeve",
+    "color": "#1E2A44",
+    "material": "Fabric",
+    "transparency": 0.0,
+    "castShadow": true,
+    "canCollide": false,
+    "role": null,
+    "bone": "ForearmR",
+    "offset": [
+     21.005,
+     11.461,
+     9.042
+    ],
+    "size": [
+     20.078,
+     7.0,
+     43.063
+    ],
+    "hash": "8c74521f94e3dd1f",
+    "tris": 168
    }
   ],
   "rig": {
@@ -3143,8 +3198,8 @@
      "parent": "Root",
      "joint": [
       0.0,
-      -6.0,
-      1.0
+      -5.175,
+      1.1
      ]
     },
     {
@@ -3152,188 +3207,206 @@
      "parent": "Head",
      "joint": [
       0.0,
-      0.5,
-      -0.5
+      1.975,
+      -0.55
      ]
     },
     {
      "name": "EyeL",
      "parent": "Head",
      "joint": [
-      -5.3,
-      6.25,
-      -7.1
+      -5.83,
+      8.3,
+      -7.81
      ]
     },
     {
      "name": "EyeR",
      "parent": "Head",
      "joint": [
-      5.3,
-      6.25,
-      -7.1
+      5.83,
+      8.3,
+      -7.81
      ]
     },
     {
      "name": "LidL",
      "parent": "Head",
      "joint": [
-      -5.3,
-      6.25,
-      -7.1
+      -5.83,
+      8.3,
+      -7.81
      ]
     },
     {
      "name": "LidR",
      "parent": "Head",
      "joint": [
-      5.3,
-      6.25,
-      -7.1
+      5.83,
+      8.3,
+      -7.81
      ]
     },
     {
      "name": "CheekL",
      "parent": "Head",
      "joint": [
-      -7.4,
-      1.4,
-      -8.0
+      -8.14,
+      2.965,
+      -8.8
      ]
     },
     {
      "name": "CheekR",
      "parent": "Head",
      "joint": [
-      7.4,
-      1.4,
-      -8.0
+      8.14,
+      2.965,
+      -8.8
      ]
     },
     {
      "name": "HandL",
      "parent": "Root",
      "joint": [
-      -16.5,
-      4.6,
-      -6.5
+      -12.753,
+      9.969,
+      -12.368
      ]
     },
     {
      "name": "ThumbL",
      "parent": "HandL",
      "joint": [
-      -14.5,
-      4.2,
-      -7.9
+      -12.008,
+      11.559,
+      -10.625
      ]
     },
     {
      "name": "ThumbL2",
      "parent": "ThumbL",
      "joint": [
-      -13.1,
-      4.05,
-      -9.8
+      -11.797,
+      13.546,
+      -9.361
      ]
     },
     {
      "name": "IndexL",
      "parent": "HandL",
      "joint": [
-      -14.9,
-      4.6,
-      -11.2
+      -13.195,
+      14.68,
+      -10.864
      ]
     },
     {
      "name": "IndexL2",
      "parent": "IndexL",
      "joint": [
-      -14.9,
-      4.6,
-      -13.8
+      -13.736,
+      17.223,
+      -10.864
      ]
     },
     {
      "name": "FingersL",
      "parent": "HandL",
      "joint": [
-      -17.05,
-      4.6,
-      -11.4
+      -13.956,
+      14.723,
+      -12.885
      ]
     },
     {
      "name": "FingersL2",
      "parent": "FingersL",
      "joint": [
-      -17.05,
-      4.6,
-      -14.1
+      -14.518,
+      17.364,
+      -12.885
      ]
     },
     {
      "name": "HandR",
      "parent": "Root",
      "joint": [
-      16.5,
-      4.6,
-      -6.5
+      12.753,
+      9.969,
+      -12.368
      ]
     },
     {
      "name": "ThumbR",
      "parent": "HandR",
      "joint": [
-      14.5,
-      4.2,
-      -7.9
+      12.008,
+      11.559,
+      -10.625
      ]
     },
     {
      "name": "ThumbR2",
      "parent": "ThumbR",
      "joint": [
-      13.1,
-      4.05,
-      -9.8
+      11.797,
+      13.546,
+      -9.361
      ]
     },
     {
      "name": "IndexR",
      "parent": "HandR",
      "joint": [
-      14.9,
-      4.6,
-      -11.2
+      13.195,
+      14.68,
+      -10.864
      ]
     },
     {
      "name": "IndexR2",
      "parent": "IndexR",
      "joint": [
-      14.9,
-      4.6,
-      -13.8
+      13.736,
+      17.223,
+      -10.864
      ]
     },
     {
      "name": "FingersR",
      "parent": "HandR",
      "joint": [
-      17.05,
-      4.6,
-      -11.4
+      13.956,
+      14.723,
+      -12.885
      ]
     },
     {
      "name": "FingersR2",
      "parent": "FingersR",
      "joint": [
-      17.05,
-      4.6,
-      -14.1
+      14.518,
+      17.364,
+      -12.885
+     ]
+    },
+    {
+     "name": "ForearmL",
+     "parent": "Root",
+     "joint": [
+      -12.753,
+      9.969,
+      -12.368
+     ]
+    },
+    {
+     "name": "ForearmR",
+     "parent": "Root",
+     "joint": [
+      12.753,
+      9.969,
+      -12.368
      ]
     }
    ]
