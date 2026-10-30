@@ -380,10 +380,10 @@
  "FX_GuideArrow": {
   "group": "fx",
   "size": [
-   512,
-   256
+   256,
+   384
   ],
-  "hash": "5736cc47c5681c01",
+  "hash": "a301fd7fd17aa456",
   "url": "https://raw.githubusercontent.com/landonhjones2020-bit/nightshift-assets/main/icons/fx/FX_GuideArrow.nsz"
  },
  "FX_GuideMarker": {

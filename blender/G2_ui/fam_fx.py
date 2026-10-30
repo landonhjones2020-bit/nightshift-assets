@@ -1,8 +1,10 @@
 """fam_fx — the tutorial guide's world FX (group "fx"): the arrow line and the target marker.
 
 FX_GuideArrow  one tile of the guide line (Controllers.Tutorial draws it as camera-facing
-               Beams, Config.Tutorial.guide). 512 x 256, one chevron pointing +U (right), so
-               the beam's TextureLength = one arrow. Fill is pure white and tinted in game by
+               Beams, Config.Tutorial.guide). 256 x 384, one chevron pointing UP: a Beam maps
+               the image's width across the beam and its height along it (checked in Studio,
+               2026-10-29: a right-pointing tile drew a sideways zigzag), so TextureLength =
+               one arrow and Width0/1 = the tile's width. Fill is pure white and tinted in game by
                Beam.Color (guide.color); the ink outline stays dark under any tint, which is
                what keeps the line readable on the bright Lobby and the dark Shop alike.
                Rendered face-on and orthographic: a beam tile must have no perspective.
@@ -25,7 +27,7 @@ FAM = "fx"
 GUIDE_YELLOW = "#FFD23F"
 G.FAMILY.setdefault(FAM, dict(G.FAMILY["hud"], fill=0.9))
 
-CHEVRON = [(-0.34, 0.62), (0.3, 0.0), (-0.34, -0.62)]
+CHEVRON = [(-0.7, -0.42), (0.0, 0.4), (0.7, -0.42)]   # pointing up (+z), tip at z = 0.4
 
 
 def offset(pts, d):
@@ -49,8 +51,8 @@ def fx(name, **opts):
 
 
 def _tile_render(name, draft):
-    """Orthographic, face-on render of x in [-1, 1], z in [-0.5, 0.5] at 2:1."""
-    w, h = (256, 128) if draft else (512, 256)
+    """Orthographic, face-on render of x in [-1, 1], z in [-1.5, 1.5] (2:3, portrait)."""
+    w, h = (128, 192) if draft else (256, 384)
     ns._setup_render(w, 12 if draft else 64, transparent=True)
     sc = bpy.context.scene
     sc.render.resolution_x, sc.render.resolution_y = w, h
@@ -60,7 +62,7 @@ def _tile_render(name, draft):
     G._icon_materials()
     cd = bpy.data.cameras.new("PreviewCam")
     cd.type = "ORTHO"
-    cd.ortho_scale = 2.0
+    cd.ortho_scale = 3.0                 # the larger side (height)
     cd.clip_start, cd.clip_end = 0.1, 40.0
     cam = bpy.data.objects.new("PreviewCam", cd)
     sc.collection.objects.link(cam)
