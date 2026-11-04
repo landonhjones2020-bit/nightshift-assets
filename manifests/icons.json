@@ -728,6 +728,15 @@
   "hash": "72ce8628dbfae656",
   "url": "https://raw.githubusercontent.com/landonhjones2020-bit/nightshift-assets/main/icons/hud/HUD_Wrapped.nsz"
  },
+ "Ingredient_avocado": {
+  "group": "ingredients",
+  "size": [
+   512,
+   512
+  ],
+  "hash": "8cd4880833cf841a",
+  "url": "https://raw.githubusercontent.com/landonhjones2020-bit/nightshift-assets/main/icons/ingredients/Ingredient_avocado.nsz"
+ },
  "Ingredient_bacon": {
   "group": "ingredients",
   "size": [
@@ -736,6 +745,15 @@
   ],
   "hash": "084a9cbef01bf4b1",
   "url": "https://raw.githubusercontent.com/landonhjones2020-bit/nightshift-assets/main/icons/ingredients/Ingredient_bacon.nsz"
+ },
+ "Ingredient_bbq_sauce": {
+  "group": "ingredients",
+  "size": [
+   512,
+   512
+  ],
+  "hash": "60bfdfa9c722e0e5",
+  "url": "https://raw.githubusercontent.com/landonhjones2020-bit/nightshift-assets/main/icons/ingredients/Ingredient_bbq_sauce.nsz"
  },
  "Ingredient_beet_slices": {
   "group": "ingredients",
@@ -800,6 +818,15 @@
   "hash": "8219438a1318b8fa",
   "url": "https://raw.githubusercontent.com/landonhjones2020-bit/nightshift-assets/main/icons/ingredients/Ingredient_ham.nsz"
  },
+ "Ingredient_jalapenos": {
+  "group": "ingredients",
+  "size": [
+   512,
+   512
+  ],
+  "hash": "3b7c95418780bb5d",
+  "url": "https://raw.githubusercontent.com/landonhjones2020-bit/nightshift-assets/main/icons/ingredients/Ingredient_jalapenos.nsz"
+ },
  "Ingredient_lettuce": {
   "group": "ingredients",
   "size": [
@@ -863,6 +890,24 @@
   "hash": "3c6f32e73f4e3b17",
   "url": "https://raw.githubusercontent.com/landonhjones2020-bit/nightshift-assets/main/icons/ingredients/Ingredient_pickles.nsz"
  },
+ "Ingredient_provolone": {
+  "group": "ingredients",
+  "size": [
+   512,
+   512
+  ],
+  "hash": "4a5c9662d1141f1c",
+  "url": "https://raw.githubusercontent.com/landonhjones2020-bit/nightshift-assets/main/icons/ingredients/Ingredient_provolone.nsz"
+ },
+ "Ingredient_ranch": {
+  "group": "ingredients",
+  "size": [
+   512,
+   512
+  ],
+  "hash": "e522218665ea6066",
+  "url": "https://raw.githubusercontent.com/landonhjones2020-bit/nightshift-assets/main/icons/ingredients/Ingredient_ranch.nsz"
+ },
  "Ingredient_roast_beef": {
   "group": "ingredients",
   "size": [
@@ -871,6 +916,15 @@
   ],
   "hash": "25dd29b5d9408448",
   "url": "https://raw.githubusercontent.com/landonhjones2020-bit/nightshift-assets/main/icons/ingredients/Ingredient_roast_beef.nsz"
+ },
+ "Ingredient_salami": {
+  "group": "ingredients",
+  "size": [
+   512,
+   512
+  ],
+  "hash": "752544a6a6a870d7",
+  "url": "https://raw.githubusercontent.com/landonhjones2020-bit/nightshift-assets/main/icons/ingredients/Ingredient_salami.nsz"
  },
  "Ingredient_sourdough": {
   "group": "ingredients",
@@ -935,6 +989,33 @@
   "hash": "be014471ef40258c",
   "url": "https://raw.githubusercontent.com/landonhjones2020-bit/nightshift-assets/main/icons/menu/Menu_M1.nsz"
  },
+ "Menu_M10": {
+  "group": "menu",
+  "size": [
+   512,
+   512
+  ],
+  "hash": "7029dd6b65cf5817",
+  "url": "https://raw.githubusercontent.com/landonhjones2020-bit/nightshift-assets/main/icons/menu/Menu_M10.nsz"
+ },
+ "Menu_M11": {
+  "group": "menu",
+  "size": [
+   512,
+   512
+  ],
+  "hash": "d9e3b7b9b49b20cc",
+  "url": "https://raw.githubusercontent.com/landonhjones2020-bit/nightshift-assets/main/icons/menu/Menu_M11.nsz"
+ },
+ "Menu_M12": {
+  "group": "menu",
+  "size": [
+   512,
+   512
+  ],
+  "hash": "6f38c7ebc7ca96da",
+  "url": "https://raw.githubusercontent.com/landonhjones2020-bit/nightshift-assets/main/icons/menu/Menu_M12.nsz"
+ },
  "Menu_M2": {
   "group": "menu",
   "size": [
@@ -997,6 +1078,15 @@
   ],
   "hash": "782211ef216d2707",
   "url": "https://raw.githubusercontent.com/landonhjones2020-bit/nightshift-assets/main/icons/menu/Menu_M8.nsz"
+ },
+ "Menu_M9": {
+  "group": "menu",
+  "size": [
+   512,
+   512
+  ],
+  "hash": "a67231988330acde",
+  "url": "https://raw.githubusercontent.com/landonhjones2020-bit/nightshift-assets/main/icons/menu/Menu_M9.nsz"
  },
  "Pass_GP_2X_COINS": {
   "group": "shop",
@@ -1537,6 +1627,60 @@
   ],
   "hash": "d5269a83829e2b52",
   "url": "https://raw.githubusercontent.com/landonhjones2020-bit/nightshift-assets/main/icons/secrets/Secret_S30.nsz"
+ },
+ "Secret_S31": {
+  "group": "secrets",
+  "size": [
+   512,
+   512
+  ],
+  "hash": "513cd31050db2c55",
+  "url": "https://raw.githubusercontent.com/landonhjones2020-bit/nightshift-assets/main/icons/secrets/Secret_S31.nsz"
+ },
+ "Secret_S32": {
+  "group": "secrets",
+  "size": [
+   512,
+   512
+  ],
+  "hash": "77da1471d564112e",
+  "url": "https://raw.githubusercontent.com/landonhjones2020-bit/nightshift-assets/main/icons/secrets/Secret_S32.nsz"
+ },
+ "Secret_S33": {
+  "group": "secrets",
+  "size": [
+   512,
+   512
+  ],
+  "hash": "7efa247d1f01c158",
+  "url": "https://raw.githubusercontent.com/landonhjones2020-bit/nightshift-assets/main/icons/secrets/Secret_S33.nsz"
+ },
+ "Secret_S34": {
+  "group": "secrets",
+  "size": [
+   512,
+   512
+  ],
+  "hash": "aeeb379f5031879a",
+  "url": "https://raw.githubusercontent.com/landonhjones2020-bit/nightshift-assets/main/icons/secrets/Secret_S34.nsz"
+ },
+ "Secret_S35": {
+  "group": "secrets",
+  "size": [
+   512,
+   512
+  ],
+  "hash": "d816f2c59295c802",
+  "url": "https://raw.githubusercontent.com/landonhjones2020-bit/nightshift-assets/main/icons/secrets/Secret_S35.nsz"
+ },
+ "Secret_S36": {
+  "group": "secrets",
+  "size": [
+   512,
+   512
+  ],
+  "hash": "89ff72031d5d1d65",
+  "url": "https://raw.githubusercontent.com/landonhjones2020-bit/nightshift-assets/main/icons/secrets/Secret_S36.nsz"
  },
  "Supply_energy_drink": {
   "group": "meta",

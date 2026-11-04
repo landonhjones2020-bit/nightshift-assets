@@ -1,6 +1,6 @@
 """_batch — render several sandwich icons in one Blender session (G_icons batch).
 
-Usage:  bpyenv/bin/python blender/G_icons/_batch.py all            # all 38 final icons, in order
+Usage:  bpyenv/bin/python blender/G_icons/_batch.py all            # every icon the bible lists, in order
         bpyenv/bin/python blender/G_icons/_batch.py M1 S05 --draft # low-res drafts to the scratch dir
         bpyenv/bin/python blender/G_icons/_batch.py --list         # print every parsed recipe stack
 Renders run one after another (never in parallel).

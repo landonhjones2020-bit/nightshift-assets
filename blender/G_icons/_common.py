@@ -1,9 +1,10 @@
 """_common — shared helpers for the G_icons batch: sandwich icons (Night Shift at STACKHOUSE).
 
-Renders the Menu sandwiches (Menu_M1..M8, group "menu") and the Secret Sandwiches
-(Secret_S01..S30, group "secrets") as the assembled sandwich, built from the finished A_food
-ingredient models (their own build() functions, never re-modelled) and shot with nslib's shared
-icon rig (ns.render_icon: 512 px, transparent, 3/4 view, three-point light).
+Renders the Menu sandwiches (Menu_M1..M12, group "menu") and the Secret Sandwiches
+(Secret_S01..S36, group "secrets") as the assembled sandwich, built from the finished A_food and
+M_food ingredient models (their own build() functions, never re-modelled) and shot with nslib's
+shared icon rig (ns.render_icon: 512 px, transparent, 3/4 view, three-point light). M9..M12 and
+S31..S36 exist only when the bible copy in use lists them (ALL_IDS keeps the ids it defines).
 
 Recipes are read at run time from the game bible's tables (Bible §5.6 ingredient catalogue,
 §5.7 Menu, §5.8 Secrets) in the git-ignored _local/ folder, so no recipe text is written into
@@ -44,6 +45,7 @@ sys.dont_write_bytecode = True          # never drop .pyc files into lib/ or A_f
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 A_FOOD = os.path.normpath(os.path.join(HERE, "..", "A_food"))
+M_FOOD = os.path.normpath(os.path.join(HERE, "..", "M_food"))
 sys.path.insert(0, os.path.normpath(os.path.join(HERE, "..", "lib")))
 import nslib as ns  # noqa: E402
 
@@ -58,6 +60,17 @@ sys.modules["a_food_common"] = FC
 _spec.loader.exec_module(FC)
 if A_FOOD not in sys.path:
     sys.path.append(A_FOOD)
+
+# M_food (salami, provolone, jalapenos, avocado, bbq_sauce, ranch) has its own `_common`, which
+# re-uses the A_food module loaded above (same private name): load it as `m_food_common`.
+MC = None
+if os.path.exists(os.path.join(M_FOOD, "_common.py")):
+    _mspec = importlib.util.spec_from_file_location("m_food_common", os.path.join(M_FOOD, "_common.py"))
+    MC = importlib.util.module_from_spec(_mspec)
+    sys.modules["m_food_common"] = MC
+    _mspec.loader.exec_module(MC)
+    if M_FOOD not in sys.path:
+        sys.path.append(M_FOOD)
 
 REPO = ns.REPO
 SCRATCH = os.environ.get("NS_SCRATCH", "/tmp/claude-0/-home-claude/bee54a24-967a-5993-94e6-c9b5acdf45a4/scratchpad/g_icons")
@@ -89,11 +102,13 @@ KEEP_ALIGNED = {"swiss"}   # repeats left aligned: turning would plug Swiss's ho
 # --------------------------------------------------------------------------------------
 
 def food_module(name: str):
-    """Import an A_food generator script (Food_Ham, ...) so its build() can be reused."""
+    """Import an A_food or M_food generator script (Food_Ham, Food_Salami, ...) so its build() can
+    be reused; the script sees its own batch's helper module as `_common` while it is imported."""
     if name in sys.modules:
         return sys.modules[name]
+    in_m = MC is not None and os.path.exists(os.path.join(M_FOOD, name + ".py"))
     saved = sys.modules.get("_common")
-    sys.modules["_common"] = FC
+    sys.modules["_common"] = MC if in_m else FC
     try:
         return importlib.import_module(name)
     finally:
@@ -104,16 +119,23 @@ def food_module(name: str):
 
 
 def _load_food_manifest() -> dict:
-    with open(os.path.join(REPO, "manifests", "A_food.json")) as f:
-        return json.load(f)
+    """manifests/A_food.json + manifests/M_food.json (the KitchenRenderer indexes every model in
+    ReplicatedStorage.Assets.Food the same way, whatever batch it came from)."""
+    man = {}
+    for batch in ("A_food", "M_food"):
+        path = os.path.join(REPO, "manifests", f"{batch}.json")
+        if os.path.exists(path):
+            with open(path) as f:
+                man.update(json.load(f))
+    return man
 
 
 MAN = _load_food_manifest()
 
 
 def _asset_index() -> dict:
-    """ingredient id -> {bottom, top, layer, melted} asset names (from manifests/A_food.json, the
-    same index the KitchenRenderer builds from ReplicatedStorage.Assets.Food)."""
+    """ingredient id -> {bottom, top, layer, melted} asset names (from manifests/A_food.json and
+    M_food.json, the same index the KitchenRenderer builds from ReplicatedStorage.Assets.Food)."""
     idx: dict[str, dict] = {}
     for asset, e in MAN.items():
         ing = (e.get("meta") or {}).get("ingredient")
@@ -480,7 +502,8 @@ def main(rid: str):
     render(rid, draft=os.environ.get("NS_DRAFT") == "1")
 
 
-ALL_IDS = [f"M{i}" for i in range(1, 9)] + [f"S{i:02d}" for i in range(1, 31)]
+# every icon id the bible copy in use defines (M1..M8 + S01..S30; M9..M12 + S31..S36 once listed)
+ALL_IDS = [rid for rid in [f"M{i}" for i in range(1, 13)] + [f"S{i:02d}" for i in range(1, 37)] if rid in RECIPES]
 
 
 # --------------------------------------------------------------------------------------
@@ -488,7 +511,7 @@ ALL_IDS = [f"M{i}" for i in range(1, 9)] + [f"S{i:02d}" for i in range(1, 31)]
 # --------------------------------------------------------------------------------------
 
 def icon_sheet(out: str | None = None, src: str | None = None, cols: int = 4, bg=(44, 47, 56)) -> str:
-    """All 38 icons at full size (512) with a 64 px copy beside each, labelled.
+    """Every icon in ALL_IDS at full size (512) with a 64 px copy beside each, labelled.
     src=None: the published icons in icons/<group>/; src=<dir>: drafts named <icon>.png there."""
     from PIL import Image, ImageDraw
     out = out or os.path.join(SCRATCH, "_icons_sheet.png")

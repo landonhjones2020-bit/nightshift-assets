@@ -1,0 +1,1170 @@
+{
+ "Food_Avocado": {
+  "group": "Food",
+  "size": [
+   1.844,
+   0.129,
+   0.906
+  ],
+  "tris": 612,
+  "meta": {
+   "ingredient": "avocado",
+   "layer_height": 0.1,
+   "layer_count": 1,
+   "layer_spacing": 0.0
+  },
+  "url": "https://raw.githubusercontent.com/landonhjones2020-bit/nightshift-assets/main/meshes/M_food/Food_Avocado.json",
+  "parts": [
+   {
+    "name": "SmoothPlastic",
+    "color": "#FFFFFF",
+    "material": "SmoothPlastic",
+    "transparency": 0.0,
+    "castShadow": true,
+    "canCollide": false,
+    "role": null,
+    "bone": null,
+    "offset": [
+     0.0,
+     0.066,
+     0.0
+    ],
+    "size": [
+     1.844,
+     0.129,
+     0.906
+    ],
+    "hash": "76a20cd914a36d1e",
+    "tris": 612
+   }
+  ]
+ },
+ "Food_BBQSauce_Ribbon": {
+  "group": "Food",
+  "size": [
+   2.035,
+   0.069,
+   0.648
+  ],
+  "tris": 528,
+  "meta": {
+   "ingredient": "bbq_sauce",
+   "layer_height": 0.05,
+   "layer_count": 1,
+   "layer_spacing": 0.0
+  },
+  "url": "https://raw.githubusercontent.com/landonhjones2020-bit/nightshift-assets/main/meshes/M_food/Food_BBQSauce_Ribbon.json",
+  "parts": [
+   {
+    "name": "Sauce",
+    "color": "#5B2614",
+    "material": "SmoothPlastic",
+    "transparency": 0.0,
+    "castShadow": true,
+    "canCollide": false,
+    "role": null,
+    "bone": null,
+    "offset": [
+     0.002,
+     0.031,
+     -0.003
+    ],
+    "size": [
+     2.035,
+     0.069,
+     0.648
+    ],
+    "hash": "db50e0f873a5de17",
+    "tris": 528
+   }
+  ]
+ },
+ "Food_Jalapenos": {
+  "group": "Food",
+  "size": [
+   2.177,
+   0.104,
+   0.693
+  ],
+  "tris": 744,
+  "meta": {
+   "ingredient": "jalapenos",
+   "layer_height": 0.08,
+   "layer_count": 1,
+   "layer_spacing": 0.0
+  },
+  "url": "https://raw.githubusercontent.com/landonhjones2020-bit/nightshift-assets/main/meshes/M_food/Food_Jalapenos.json",
+  "parts": [
+   {
+    "name": "SmoothPlastic",
+    "color": "#FFFFFF",
+    "material": "SmoothPlastic",
+    "transparency": 0.0,
+    "castShadow": true,
+    "canCollide": false,
+    "role": null,
+    "bone": null,
+    "offset": [
+     -0.004,
+     0.047,
+     -0.001
+    ],
+    "size": [
+     2.177,
+     0.104,
+     0.693
+    ],
+    "hash": "ae1cd1fcc3547a47",
+    "tris": 744
+   }
+  ]
+ },
+ "Food_Provolone": {
+  "group": "Food",
+  "size": [
+   1.788,
+   0.098,
+   0.982
+  ],
+  "tris": 520,
+  "meta": {
+   "ingredient": "provolone",
+   "layer_height": 0.06,
+   "layer_count": 1,
+   "layer_spacing": 0.0
+  },
+  "url": "https://raw.githubusercontent.com/landonhjones2020-bit/nightshift-assets/main/meshes/M_food/Food_Provolone.json",
+  "parts": [
+   {
+    "name": "SmoothPlastic",
+    "color": "#FFFFFF",
+    "material": "SmoothPlastic",
+    "transparency": 0.0,
+    "castShadow": true,
+    "canCollide": false,
+    "role": null,
+    "bone": null,
+    "offset": [
+     0.007,
+     0.018,
+     -0.003
+    ],
+    "size": [
+     1.788,
+     0.098,
+     0.982
+    ],
+    "hash": "3ac149c3fe314803",
+    "tris": 520
+   }
+  ]
+ },
+ "Food_Provolone_Melted": {
+  "group": "Food",
+  "size": [
+   2.292,
+   0.224,
+   0.951
+  ],
+  "tris": 524,
+  "meta": {
+   "ingredient": "provolone",
+   "layer_height": 0.04,
+   "layer_count": 1,
+   "layer_spacing": 0.0,
+   "melted": true
+  },
+  "url": "https://raw.githubusercontent.com/landonhjones2020-bit/nightshift-assets/main/meshes/M_food/Food_Provolone_Melted.json",
+  "parts": [
+   {
+    "name": "SmoothPlastic",
+    "color": "#FFFFFF",
+    "material": "SmoothPlastic",
+    "transparency": 0.0,
+    "castShadow": true,
+    "canCollide": false,
+    "role": null,
+    "bone": null,
+    "offset": [
+     -0.003,
+     -0.059,
+     -0.018
+    ],
+    "size": [
+     2.292,
+     0.224,
+     0.951
+    ],
+    "hash": "b00b88add80ed20f",
+    "tris": 524
+   }
+  ]
+ },
+ "Food_Ranch_Ribbon": {
+  "group": "Food",
+  "size": [
+   2.035,
+   0.082,
+   0.648
+  ],
+  "tris": 688,
+  "meta": {
+   "ingredient": "ranch",
+   "layer_height": 0.05,
+   "layer_count": 1,
+   "layer_spacing": 0.0
+  },
+  "url": "https://raw.githubusercontent.com/landonhjones2020-bit/nightshift-assets/main/meshes/M_food/Food_Ranch_Ribbon.json",
+  "parts": [
+   {
+    "name": "SmoothPlastic",
+    "color": "#FFFFFF",
+    "material": "SmoothPlastic",
+    "transparency": 0.0,
+    "castShadow": true,
+    "canCollide": false,
+    "role": null,
+    "bone": null,
+    "offset": [
+     0.002,
+     0.037,
+     -0.003
+    ],
+    "size": [
+     2.035,
+     0.082,
+     0.648
+    ],
+    "hash": "a11c83ed6ee70510",
+    "tris": 688
+   }
+  ]
+ },
+ "Food_Salami": {
+  "group": "Food",
+  "size": [
+   2.253,
+   0.121,
+   0.7
+  ],
+  "tris": 653,
+  "meta": {
+   "ingredient": "salami",
+   "layer_height": 0.1,
+   "layer_count": 1,
+   "layer_spacing": 0.0
+  },
+  "url": "https://raw.githubusercontent.com/landonhjones2020-bit/nightshift-assets/main/meshes/M_food/Food_Salami.json",
+  "parts": [
+   {
+    "name": "SmoothPlastic",
+    "color": "#FFFFFF",
+    "material": "SmoothPlastic",
+    "transparency": 0.0,
+    "castShadow": true,
+    "canCollide": false,
+    "role": null,
+    "bone": null,
+    "offset": [
+     0.009,
+     0.05,
+     -0.006
+    ],
+    "size": [
+     2.253,
+     0.121,
+     0.7
+    ],
+    "hash": "fece5b68db00713d",
+    "tris": 653
+   }
+  ]
+ },
+ "Kitchen_SauceRail6": {
+  "group": "Kitchen",
+  "size": [
+   4.6,
+   0.875,
+   0.921
+  ],
+  "tris": 1596,
+  "meta": {
+   "holder_inner_diameter": 0.58,
+   "holder_height": 0.545,
+   "bottle_pitch": 0.76,
+   "bottle_count": 6
+  },
+  "url": "https://raw.githubusercontent.com/landonhjones2020-bit/nightshift-assets/main/meshes/M_food/Kitchen_SauceRail6.json",
+  "parts": [
+   {
+    "name": "Caddy",
+    "color": "#B9C0C6",
+    "material": "Metal",
+    "transparency": 0.0,
+    "castShadow": true,
+    "canCollide": false,
+    "role": null,
+    "bone": null,
+    "offset": [
+     0.0,
+     0.28,
+     -0.021
+    ],
+    "size": [
+     4.6,
+     0.56,
+     0.88
+    ],
+    "hash": "e5a6f8396f3e2dc8",
+    "tris": 1076
+   },
+   {
+    "name": "SmoothPlastic",
+    "color": "#FFFFFF",
+    "material": "SmoothPlastic",
+    "transparency": 0.0,
+    "castShadow": true,
+    "canCollide": false,
+    "role": null,
+    "bone": null,
+    "offset": [
+     0.0,
+     0.438,
+     0.042
+    ],
+    "size": [
+     4.6,
+     0.875,
+     0.836
+    ],
+    "hash": "6cbe478731e53816",
+    "tris": 256
+   },
+   {
+    "name": "Tab1",
+    "color": "#F2B33D",
+    "material": "SmoothPlastic",
+    "transparency": 0.0,
+    "castShadow": true,
+    "canCollide": false,
+    "role": "bottle_tab1",
+    "bone": null,
+    "offset": [
+     1.9,
+     0.5,
+     -0.431
+    ],
+    "size": [
+     0.32,
+     0.06,
+     0.03
+    ],
+    "hash": "12ad7f6494018a7e",
+    "tris": 44
+   },
+   {
+    "name": "Tab2",
+    "color": "#F2B33D",
+    "material": "SmoothPlastic",
+    "transparency": 0.0,
+    "castShadow": true,
+    "canCollide": false,
+    "role": "bottle_tab2",
+    "bone": null,
+    "offset": [
+     1.14,
+     0.5,
+     -0.431
+    ],
+    "size": [
+     0.32,
+     0.06,
+     0.03
+    ],
+    "hash": "5b9fdbfbadd7cf88",
+    "tris": 44
+   },
+   {
+    "name": "Tab3",
+    "color": "#F2B33D",
+    "material": "SmoothPlastic",
+    "transparency": 0.0,
+    "castShadow": true,
+    "canCollide": false,
+    "role": "bottle_tab3",
+    "bone": null,
+    "offset": [
+     0.38,
+     0.5,
+     -0.431
+    ],
+    "size": [
+     0.32,
+     0.06,
+     0.03
+    ],
+    "hash": "e00d6713ff054c06",
+    "tris": 44
+   },
+   {
+    "name": "Tab4",
+    "color": "#F2B33D",
+    "material": "SmoothPlastic",
+    "transparency": 0.0,
+    "castShadow": true,
+    "canCollide": false,
+    "role": "bottle_tab4",
+    "bone": null,
+    "offset": [
+     -0.38,
+     0.5,
+     -0.431
+    ],
+    "size": [
+     0.32,
+     0.06,
+     0.03
+    ],
+    "hash": "c53352b3f092903c",
+    "tris": 44
+   },
+   {
+    "name": "Tab5",
+    "color": "#F2B33D",
+    "material": "SmoothPlastic",
+    "transparency": 0.0,
+    "castShadow": true,
+    "canCollide": false,
+    "role": "bottle_tab5",
+    "bone": null,
+    "offset": [
+     -1.14,
+     0.5,
+     -0.431
+    ],
+    "size": [
+     0.32,
+     0.06,
+     0.03
+    ],
+    "hash": "eb9078ee0bac87c3",
+    "tris": 44
+   },
+   {
+    "name": "Tab6",
+    "color": "#F2B33D",
+    "material": "SmoothPlastic",
+    "transparency": 0.0,
+    "castShadow": true,
+    "canCollide": false,
+    "role": "bottle_tab6",
+    "bone": null,
+    "offset": [
+     -1.9,
+     0.5,
+     -0.431
+    ],
+    "size": [
+     0.32,
+     0.06,
+     0.03
+    ],
+    "hash": "584a0ad5c049e668",
+    "tris": 44
+   }
+  ],
+  "sockets": {
+   "Bottle1": {
+    "p": [
+     1.9,
+     0.15,
+     -0.051
+    ],
+    "yaw": 0.0
+   },
+   "Bottle2": {
+    "p": [
+     1.14,
+     0.15,
+     -0.051
+    ],
+    "yaw": 0.0
+   },
+   "Bottle3": {
+    "p": [
+     0.38,
+     0.15,
+     -0.051
+    ],
+    "yaw": 0.0
+   },
+   "Bottle4": {
+    "p": [
+     -0.38,
+     0.15,
+     -0.051
+    ],
+    "yaw": 0.0
+   },
+   "Bottle5": {
+    "p": [
+     -1.14,
+     0.15,
+     -0.051
+    ],
+    "yaw": 0.0
+   },
+   "Bottle6": {
+    "p": [
+     -1.9,
+     0.15,
+     -0.051
+    ],
+    "yaw": 0.0
+   }
+  }
+ },
+ "Shop_HangingSign": {
+  "group": "Shop",
+  "size": [
+   6.0,
+   3.2,
+   0.44
+  ],
+  "tris": 1696,
+  "meta": {
+   "mount": "ceiling",
+   "pivot": "ceiling mount (top centre, z = 0); the sign hangs below",
+   "drop": 3.2,
+   "screen_size": [
+    5.4,
+    1.1
+   ],
+   "surfaces": [
+    {
+     "part": "Screen",
+     "face": "Front",
+     "screen_size": [
+      5.4,
+      1.1
+     ]
+    }
+   ],
+   "roles": {
+    "screen": "Screen",
+    "neon": "Neon"
+   },
+   "light_hint": {
+    "type": "SurfaceLight",
+    "part": "Neon",
+    "color": "#F2B33D",
+    "range": 6
+   }
+  },
+  "url": "https://raw.githubusercontent.com/landonhjones2020-bit/nightshift-assets/main/meshes/M_food/Shop_HangingSign.json",
+  "parts": [
+   {
+    "name": "SmoothPlastic",
+    "color": "#FFFFFF",
+    "material": "SmoothPlastic",
+    "transparency": 0.0,
+    "castShadow": true,
+    "canCollide": false,
+    "role": null,
+    "bone": null,
+    "offset": [
+     0.0,
+     -2.4,
+     0.0
+    ],
+    "size": [
+     6.0,
+     1.6,
+     0.35
+    ],
+    "hash": "3905154ade27357c",
+    "tris": 508
+   },
+   {
+    "name": "Screen",
+    "color": "#1E2A44",
+    "material": "SmoothPlastic",
+    "transparency": 0.0,
+    "castShadow": true,
+    "canCollide": false,
+    "role": "screen",
+    "bone": null,
+    "offset": [
+     0.0,
+     -2.4,
+     -0.119
+    ],
+    "size": [
+     5.4,
+     1.1,
+     0.016
+    ],
+    "hash": "52636dd1ed090325",
+    "tris": 44
+   },
+   {
+    "name": "Hardware",
+    "color": "#6B727A",
+    "material": "Metal",
+    "transparency": 0.0,
+    "castShadow": true,
+    "canCollide": false,
+    "role": null,
+    "bone": null,
+    "offset": [
+     0.0,
+     -0.805,
+     0.0
+    ],
+    "size": [
+     4.84,
+     1.61,
+     0.44
+    ],
+    "hash": "8e57f9d97efc856e",
+    "tris": 952
+   },
+   {
+    "name": "Neon",
+    "color": "#F2B33D",
+    "material": "Neon",
+    "transparency": 0.0,
+    "castShadow": false,
+    "canCollide": false,
+    "role": "neon",
+    "bone": null,
+    "offset": [
+     0.0,
+     -2.4,
+     -0.16
+    ],
+    "size": [
+     5.684,
+     1.284,
+     0.055
+    ],
+    "hash": "853735ba3434b344",
+    "tris": 192
+   }
+  ],
+  "sockets": {
+   "Screen": {
+    "p": [
+     0.0,
+     -2.4,
+     -0.147
+    ],
+    "yaw": 0.0
+   }
+  }
+ },
+ "Shop_NowServing": {
+  "group": "Shop",
+  "size": [
+   3.0,
+   1.4,
+   0.419
+  ],
+  "tris": 820,
+  "meta": {
+   "mount": "wall",
+   "pivot": "bottom-centre of the back face (flat on the wall)",
+   "screen_size": [
+    2.6,
+    0.8
+   ],
+   "header_size": [
+    2.6,
+    0.2
+   ],
+   "surfaces": [
+    {
+     "part": "Screen",
+     "face": "Front",
+     "screen_size": [
+      2.6,
+      0.8
+     ]
+    },
+    {
+     "part": "Header",
+     "face": "Front",
+     "screen_size": [
+      2.6,
+      0.2
+     ]
+    }
+   ],
+   "roles": {
+    "screen": "Screen",
+    "header": "Header"
+   }
+  },
+  "url": "https://raw.githubusercontent.com/landonhjones2020-bit/nightshift-assets/main/meshes/M_food/Shop_NowServing.json",
+  "parts": [
+   {
+    "name": "Bezel",
+    "color": "#1C1D21",
+    "material": "SmoothPlastic",
+    "transparency": 0.0,
+    "castShadow": true,
+    "canCollide": false,
+    "role": null,
+    "bone": null,
+    "offset": [
+     0.0,
+     0.7,
+     -0.265
+    ],
+    "size": [
+     3.0,
+     1.4,
+     0.27
+    ],
+    "hash": "4cc019e3eab1aed3",
+    "tris": 444
+   },
+   {
+    "name": "Header",
+    "color": "#E8502A",
+    "material": "SmoothPlastic",
+    "transparency": 0.0,
+    "castShadow": true,
+    "canCollide": false,
+    "role": "header",
+    "bone": null,
+    "offset": [
+     0.0,
+     1.12,
+     -0.358
+    ],
+    "size": [
+     2.6,
+     0.2,
+     0.026
+    ],
+    "hash": "0a9a4f3e200c0150",
+    "tris": 28
+   },
+   {
+    "name": "Screen",
+    "color": "#10161E",
+    "material": "Glass",
+    "transparency": 0.0,
+    "castShadow": false,
+    "canCollide": false,
+    "role": "screen",
+    "bone": null,
+    "offset": [
+     0.0,
+     0.58,
+     -0.357
+    ],
+    "size": [
+     2.6,
+     0.8,
+     0.024
+    ],
+    "hash": "4b12a66b629942c3",
+    "tris": 44
+   },
+   {
+    "name": "StatusLamp",
+    "color": "#FFB23D",
+    "material": "Neon",
+    "transparency": 0.0,
+    "castShadow": false,
+    "canCollide": false,
+    "role": null,
+    "bone": null,
+    "offset": [
+     -1.24,
+     0.07,
+     -0.404
+    ],
+    "size": [
+     0.07,
+     0.07,
+     0.03
+    ],
+    "hash": "476e518576274908",
+    "tris": 28
+   },
+   {
+    "name": "Bracket",
+    "color": "#4A4F56",
+    "material": "Metal",
+    "transparency": 0.0,
+    "castShadow": true,
+    "canCollide": false,
+    "role": null,
+    "bone": null,
+    "offset": [
+     0.0,
+     0.7,
+     -0.07
+    ],
+    "size": [
+     1.5,
+     0.62,
+     0.14
+    ],
+    "hash": "0340c7f2ed067b4f",
+    "tris": 276
+   }
+  ],
+  "sockets": {
+   "Header": {
+    "p": [
+     0.0,
+     1.12,
+     -0.391
+    ],
+    "yaw": 0.0
+   },
+   "Screen": {
+    "p": [
+     0.0,
+     0.58,
+     -0.389
+    ],
+    "yaw": 0.0
+   }
+  }
+ },
+ "Shop_PickupShelf": {
+  "group": "Shop",
+  "size": [
+   7.0,
+   2.6,
+   1.27
+  ],
+  "tris": 1856,
+  "meta": {
+   "mount": "counter top",
+   "pivot": "bottom-centre (feet on the counter top)",
+   "deck_top": 1.0,
+   "slot_count": 4,
+   "slot_pitch": 1.6,
+   "plate_size": [
+    1.36,
+    0.8
+   ],
+   "tag_size": [
+    0.4,
+    0.22
+   ],
+   "surfaces": [
+    {
+     "part": "Tab1",
+     "face": "Front",
+     "screen_size": [
+      0.4,
+      0.22
+     ]
+    },
+    {
+     "part": "Tab2",
+     "face": "Front",
+     "screen_size": [
+      0.4,
+      0.22
+     ]
+    },
+    {
+     "part": "Tab3",
+     "face": "Front",
+     "screen_size": [
+      0.4,
+      0.22
+     ]
+    },
+    {
+     "part": "Tab4",
+     "face": "Front",
+     "screen_size": [
+      0.4,
+      0.22
+     ]
+    }
+   ],
+   "roles": {
+    "lamp": "Lamps",
+    "slot_tab": "Tab1..Tab4"
+   },
+   "light_hint": {
+    "type": "SpotLight",
+    "face": "Bottom",
+    "color": "#FF9A5A",
+    "range": 4,
+    "angle": 70,
+    "sockets": [
+     "Lamp1",
+     "Lamp2",
+     "Lamp3",
+     "Lamp4"
+    ]
+   }
+  },
+  "url": "https://raw.githubusercontent.com/landonhjones2020-bit/nightshift-assets/main/meshes/M_food/Shop_PickupShelf.json",
+  "parts": [
+   {
+    "name": "Frame",
+    "color": "#B9C0C6",
+    "material": "Metal",
+    "transparency": 0.0,
+    "castShadow": true,
+    "canCollide": false,
+    "role": null,
+    "bone": null,
+    "offset": [
+     0.0,
+     1.33,
+     -0.028
+    ],
+    "size": [
+     7.0,
+     2.54,
+     1.255
+    ],
+    "hash": "ea06cda672a9ac1f",
+    "tris": 704
+   },
+   {
+    "name": "SmoothPlastic",
+    "color": "#FFFFFF",
+    "material": "SmoothPlastic",
+    "transparency": 0.0,
+    "castShadow": true,
+    "canCollide": false,
+    "role": null,
+    "bone": null,
+    "offset": [
+     0.0,
+     0.515,
+     0.0
+    ],
+    "size": [
+     6.82,
+     1.03,
+     1.1
+    ],
+    "hash": "d0544ed09910ba3b",
+    "tris": 544
+   },
+   {
+    "name": "Lamps",
+    "color": "#FF6A2A",
+    "material": "Neon",
+    "transparency": 0.0,
+    "castShadow": false,
+    "canCollide": false,
+    "role": "lamp",
+    "bone": null,
+    "offset": [
+     0.0,
+     2.348,
+     0.06
+    ],
+    "size": [
+     6.12,
+     0.105,
+     0.28
+    ],
+    "hash": "6346248d54185b30",
+    "tris": 432
+   },
+   {
+    "name": "Tab1",
+    "color": "#F2B33D",
+    "material": "SmoothPlastic",
+    "transparency": 0.0,
+    "castShadow": true,
+    "canCollide": false,
+    "role": "slot_tab1",
+    "bone": null,
+    "offset": [
+     2.4,
+     0.83,
+     -0.635
+    ],
+    "size": [
+     0.4,
+     0.22,
+     0.07
+    ],
+    "hash": "361d93c4b5f190e4",
+    "tris": 44
+   },
+   {
+    "name": "Tab2",
+    "color": "#F2B33D",
+    "material": "SmoothPlastic",
+    "transparency": 0.0,
+    "castShadow": true,
+    "canCollide": false,
+    "role": "slot_tab2",
+    "bone": null,
+    "offset": [
+     0.8,
+     0.83,
+     -0.635
+    ],
+    "size": [
+     0.4,
+     0.22,
+     0.07
+    ],
+    "hash": "61c07481e70f322e",
+    "tris": 44
+   },
+   {
+    "name": "Tab3",
+    "color": "#F2B33D",
+    "material": "SmoothPlastic",
+    "transparency": 0.0,
+    "castShadow": true,
+    "canCollide": false,
+    "role": "slot_tab3",
+    "bone": null,
+    "offset": [
+     -0.8,
+     0.83,
+     -0.635
+    ],
+    "size": [
+     0.4,
+     0.22,
+     0.07
+    ],
+    "hash": "28cc7c10690980da",
+    "tris": 44
+   },
+   {
+    "name": "Tab4",
+    "color": "#F2B33D",
+    "material": "SmoothPlastic",
+    "transparency": 0.0,
+    "castShadow": true,
+    "canCollide": false,
+    "role": "slot_tab4",
+    "bone": null,
+    "offset": [
+     -2.4,
+     0.83,
+     -0.635
+    ],
+    "size": [
+     0.4,
+     0.22,
+     0.07
+    ],
+    "hash": "56888fad2762cc43",
+    "tris": 44
+   }
+  ],
+  "sockets": {
+   "Lamp1": {
+    "p": [
+     2.4,
+     2.26,
+     0.06
+    ],
+    "yaw": 0.0
+   },
+   "Lamp2": {
+    "p": [
+     0.8,
+     2.26,
+     0.06
+    ],
+    "yaw": 0.0
+   },
+   "Lamp3": {
+    "p": [
+     -0.8,
+     2.26,
+     0.06
+    ],
+    "yaw": 0.0
+   },
+   "Lamp4": {
+    "p": [
+     -2.4,
+     2.26,
+     0.06
+    ],
+    "yaw": 0.0
+   },
+   "Plate1": {
+    "p": [
+     2.4,
+     1.03,
+     -0.06
+    ],
+    "yaw": 0.0
+   },
+   "Plate2": {
+    "p": [
+     0.8,
+     1.03,
+     -0.06
+    ],
+    "yaw": 0.0
+   },
+   "Plate3": {
+    "p": [
+     -0.8,
+     1.03,
+     -0.06
+    ],
+    "yaw": 0.0
+   },
+   "Plate4": {
+    "p": [
+     -2.4,
+     1.03,
+     -0.06
+    ],
+    "yaw": 0.0
+   },
+   "Tag1": {
+    "p": [
+     2.4,
+     0.83,
+     -0.69
+    ],
+    "yaw": 0.0
+   },
+   "Tag2": {
+    "p": [
+     0.8,
+     0.83,
+     -0.69
+    ],
+    "yaw": 0.0
+   },
+   "Tag3": {
+    "p": [
+     -0.8,
+     0.83,
+     -0.69
+    ],
+    "yaw": 0.0
+   },
+   "Tag4": {
+    "p": [
+     -2.4,
+     0.83,
+     -0.69
+    ],
+    "yaw": 0.0
+   }
+  }
+ }
+}

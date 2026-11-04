@@ -1,4 +1,4 @@
-"""_sheet — review sheet of all 38 sandwich icons (G_icons batch).
+"""_sheet — review sheet of every sandwich icon the bible lists (G_icons batch).
 
 Every icon at full size with a 64 px copy beside it, labelled, plus a 64 px-only companion sheet;
 written to the scratch dir (not the repo).
