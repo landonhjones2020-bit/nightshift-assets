@@ -1,0 +1,1864 @@
+{
+ "Basement_Boiler": {
+  "group": "Shop",
+  "size": [
+   4.74,
+   11.0,
+   4.993
+  ],
+  "tris": 1942,
+  "meta": {
+   "size_note": "drum + base 5 x 8 x 5; pipes reach the 11-stud ceiling",
+   "glow_part": "Glow",
+   "light_hint": {
+    "type": "PointLight",
+    "socket": "FireGlow",
+    "color": "#FF7A2A",
+    "range": 10,
+    "brightness": 1.2
+   },
+   "collide": "base, drum, flue"
+  },
+  "url": "https://raw.githubusercontent.com/landonhjones2020-bit/nightshift-assets/main/meshes/N_basement/Basement_Boiler.json",
+  "parts": [
+   {
+    "name": "Drum",
+    "color": "#4E5B4A",
+    "material": "SmoothPlastic",
+    "transparency": 0.0,
+    "castShadow": true,
+    "canCollide": true,
+    "role": null,
+    "bone": null,
+    "offset": [
+     0.0,
+     4.935,
+     0.127
+    ],
+    "size": [
+     4.4,
+     5.77,
+     4.4
+    ],
+    "hash": "acbaaeb8f0e70acb",
+    "tris": 222
+   },
+   {
+    "name": "Metal",
+    "color": "#FFFFFF",
+    "material": "Metal",
+    "transparency": 0.0,
+    "castShadow": true,
+    "canCollide": false,
+    "role": null,
+    "bone": null,
+    "offset": [
+     0.0,
+     5.65,
+     -0.038
+    ],
+    "size": [
+     4.59,
+     10.7,
+     4.918
+    ],
+    "hash": "42f5ed5d15f5527f",
+    "tris": 1136
+   },
+   {
+    "name": "Metal_",
+    "color": "#FFFFFF",
+    "material": "Metal",
+    "transparency": 0.0,
+    "castShadow": true,
+    "canCollide": true,
+    "role": null,
+    "bone": null,
+    "offset": [
+     0.0,
+     5.5,
+     0.127
+    ],
+    "size": [
+     4.74,
+     11.0,
+     4.74
+    ],
+    "hash": "0cb68968bbcb2eed",
+    "tris": 312
+   },
+   {
+    "name": "Glow",
+    "color": "#FF7A2A",
+    "material": "Neon",
+    "transparency": 0.0,
+    "castShadow": false,
+    "canCollide": false,
+    "role": "glow",
+    "bone": null,
+    "offset": [
+     0.0,
+     0.97,
+     -2.239
+    ],
+    "size": [
+     1.3,
+     1.26,
+     0.039
+    ],
+    "hash": "7ba45c6195eec7f7",
+    "tris": 24
+   },
+   {
+    "name": "SmoothPlastic",
+    "color": "#FFFFFF",
+    "material": "SmoothPlastic",
+    "transparency": 0.0,
+    "castShadow": true,
+    "canCollide": false,
+    "role": null,
+    "bone": null,
+    "offset": [
+     0.053,
+     5.244,
+     -0.06
+    ],
+    "size": [
+     4.098,
+     7.928,
+     4.577
+    ],
+    "hash": "70b8a506d1e20e12",
+    "tris": 248
+   }
+  ],
+  "sockets": {
+   "FireGlow": {
+    "p": [
+     0.0,
+     1.36,
+     -2.773
+    ],
+    "yaw": 0.0
+   }
+  }
+ },
+ "Basement_CageLight": {
+  "group": "Shop",
+  "size": [
+   0.6,
+   1.024,
+   0.75
+  ],
+  "tris": 864,
+  "meta": {
+   "mount": "wall",
+   "pivot": "centre of the back face, on the wall plane",
+   "lamp_part": "Bulb",
+   "light_hint": {
+    "type": "PointLight",
+    "socket": "Light",
+    "color": "#FFD9A0",
+    "range": 10,
+    "brightness": 0.8
+   }
+  },
+  "url": "https://raw.githubusercontent.com/landonhjones2020-bit/nightshift-assets/main/meshes/N_basement/Basement_CageLight.json",
+  "parts": [
+   {
+    "name": "Metal",
+    "color": "#FFFFFF",
+    "material": "Metal",
+    "transparency": 0.0,
+    "castShadow": true,
+    "canCollide": false,
+    "role": null,
+    "bone": null,
+    "offset": [
+     0.0,
+     0.0,
+     -0.32
+    ],
+    "size": [
+     0.6,
+     0.6,
+     0.64
+    ],
+    "hash": "3f6839ad35103f9c",
+    "tris": 236
+   },
+   {
+    "name": "Cage",
+    "color": "#C9952F",
+    "material": "SmoothPlastic",
+    "transparency": 0.0,
+    "castShadow": true,
+    "canCollide": false,
+    "role": null,
+    "bone": null,
+    "offset": [
+     0.0,
+     -0.407,
+     -0.45
+    ],
+    "size": [
+     0.6,
+     0.634,
+     0.6
+    ],
+    "hash": "d8fee61c9cad0a43",
+    "tris": 508
+   },
+   {
+    "name": "Bulb",
+    "color": "#FFD9A0",
+    "material": "Neon",
+    "transparency": 0.0,
+    "castShadow": false,
+    "canCollide": false,
+    "role": "lamp",
+    "bone": null,
+    "offset": [
+     0.0,
+     -0.345,
+     -0.45
+    ],
+    "size": [
+     0.36,
+     0.45,
+     0.342
+    ],
+    "hash": "3aea1c23aa79acf6",
+    "tris": 120
+   }
+  ],
+  "sockets": {
+   "Light": {
+    "p": [
+     0.0,
+     -0.38,
+     -0.45
+    ],
+    "yaw": 0.0
+   }
+  }
+ },
+ "Basement_ChestFreezer": {
+  "group": "Shop",
+  "size": [
+   4.04,
+   3.0,
+   2.52
+  ],
+  "tris": 714,
+  "meta": {
+   "hide_spots": [
+    "Hide"
+   ],
+   "hide_exit": "HideExit",
+   "interior_floor": 0.42,
+   "interior_size": [
+    3.68,
+    2.18,
+    1.88
+   ],
+   "lid_part": "Lid",
+   "lid_hinge": [
+    0.0,
+    2.6,
+    1.12
+   ],
+   "lid_axis": [
+    1.0,
+    0.0,
+    0.0
+   ],
+   "lid_open_deg": 75,
+   "collide": "body, plinth and lid (Lid stays its own part)"
+  },
+  "url": "https://raw.githubusercontent.com/landonhjones2020-bit/nightshift-assets/main/meshes/N_basement/Basement_ChestFreezer.json",
+  "parts": [
+   {
+    "name": "SmoothPlastic",
+    "color": "#FFFFFF",
+    "material": "SmoothPlastic",
+    "transparency": 0.0,
+    "castShadow": true,
+    "canCollide": true,
+    "role": null,
+    "bone": null,
+    "offset": [
+     0.0,
+     1.3,
+     0.0
+    ],
+    "size": [
+     4.0,
+     2.6,
+     2.2
+    ],
+    "hash": "86a849d2db0ce325",
+    "tris": 216
+   },
+   {
+    "name": "SmoothPlastic_",
+    "color": "#FFFFFF",
+    "material": "SmoothPlastic",
+    "transparency": 0.0,
+    "castShadow": true,
+    "canCollide": false,
+    "role": null,
+    "bone": null,
+    "offset": [
+     0.0,
+     1.427,
+     -0.046
+    ],
+    "size": [
+     4.02,
+     2.466,
+     2.265
+    ],
+    "hash": "e660c4574b799b51",
+    "tris": 210
+   },
+   {
+    "name": "Lid",
+    "color": "#CFC6B0",
+    "material": "SmoothPlastic",
+    "transparency": 0.0,
+    "castShadow": true,
+    "canCollide": true,
+    "role": "lid",
+    "bone": null,
+    "offset": [
+     0.0,
+     2.83,
+     -0.095
+    ],
+    "size": [
+     4.04,
+     0.34,
+     2.43
+    ],
+    "hash": "84d18cdd64113a63",
+    "tris": 160
+   },
+   {
+    "name": "Chrome",
+    "color": "#B9BEC2",
+    "material": "Metal",
+    "transparency": 0.0,
+    "castShadow": true,
+    "canCollide": false,
+    "role": null,
+    "bone": null,
+    "offset": [
+     0.09,
+     2.495,
+     0.02
+    ],
+    "size": [
+     2.92,
+     0.51,
+     2.38
+    ],
+    "hash": "f6fb62a9a5a4f124",
+    "tris": 128
+   }
+  ],
+  "sockets": {
+   "Hide": {
+    "p": [
+     0.0,
+     1.51,
+     0.0
+    ],
+    "yaw": 0.0
+   },
+   "HideExit": {
+    "p": [
+     0.0,
+     0.0,
+     -3.6
+    ],
+    "yaw": 0.0
+   }
+  }
+ },
+ "Basement_Cobweb": {
+  "group": "Shop",
+  "size": [
+   2.364,
+   2.331,
+   2.361
+  ],
+  "tris": 496,
+  "meta": {
+   "pivot": "the ceiling corner it hangs from (back wall +Z, side wall -X in Roblox model space)",
+   "transparency": 0.3,
+   "collide": "none"
+  },
+  "url": "https://raw.githubusercontent.com/landonhjones2020-bit/nightshift-assets/main/meshes/N_basement/Basement_Cobweb.json",
+  "parts": [
+   {
+    "name": "Web",
+    "color": "#D8D5CC",
+    "material": "SmoothPlastic",
+    "transparency": 0.3,
+    "castShadow": false,
+    "canCollide": false,
+    "role": null,
+    "bone": null,
+    "offset": [
+     1.193,
+     -1.176,
+     -1.194
+    ],
+    "size": [
+     2.364,
+     2.331,
+     2.361
+    ],
+    "hash": "798d28366a5d792a",
+    "tris": 496
+   }
+  ]
+ },
+ "Basement_HangingBulb": {
+  "group": "Shop",
+  "size": [
+   0.6,
+   2.625,
+   0.6
+  ],
+  "tris": 488,
+  "meta": {
+   "pivot": "top of the ceiling cover (hangs below)",
+   "drop": 2.59,
+   "lamp_part": "Bulb",
+   "light_hint": {
+    "type": "PointLight",
+    "socket": "Light",
+    "color": "#FFD9A0",
+    "range": 14,
+    "brightness": 0.8
+   }
+  },
+  "url": "https://raw.githubusercontent.com/landonhjones2020-bit/nightshift-assets/main/meshes/N_basement/Basement_HangingBulb.json",
+  "parts": [
+   {
+    "name": "Metal",
+    "color": "#FFFFFF",
+    "material": "Metal",
+    "transparency": 0.0,
+    "castShadow": true,
+    "canCollide": false,
+    "role": null,
+    "bone": null,
+    "offset": [
+     0.0,
+     -1.312,
+     0.0
+    ],
+    "size": [
+     0.6,
+     2.625,
+     0.6
+    ],
+    "hash": "2fb4a1db4d1c7082",
+    "tris": 162
+   },
+   {
+    "name": "Cord",
+    "color": "#232428",
+    "material": "Fabric",
+    "transparency": 0.0,
+    "castShadow": true,
+    "canCollide": false,
+    "role": null,
+    "bone": null,
+    "offset": [
+     -0.003,
+     -0.88,
+     0.008
+    ],
+    "size": [
+     0.082,
+     1.602,
+     0.064
+    ],
+    "hash": "789dd3f313711750",
+    "tris": 36
+   },
+   {
+    "name": "Holder",
+    "color": "#CFC6B0",
+    "material": "SmoothPlastic",
+    "transparency": 0.0,
+    "castShadow": true,
+    "canCollide": false,
+    "role": null,
+    "bone": null,
+    "offset": [
+     0.0,
+     -1.88,
+     0.0
+    ],
+    "size": [
+     0.352,
+     0.44,
+     0.37
+    ],
+    "hash": "691d5db3937f7bd2",
+    "tris": 170
+   },
+   {
+    "name": "Bulb",
+    "color": "#FFD9A0",
+    "material": "Neon",
+    "transparency": 0.0,
+    "castShadow": false,
+    "canCollide": false,
+    "role": "lamp",
+    "bone": null,
+    "offset": [
+     0.0,
+     -2.38,
+     0.0
+    ],
+    "size": [
+     0.43,
+     0.42,
+     0.409
+    ],
+    "hash": "d37cabdc9f28931b",
+    "tris": 120
+   }
+  ],
+  "sockets": {
+   "Light": {
+    "p": [
+     0.0,
+     -2.36,
+     0.0
+    ],
+    "yaw": 0.0
+   }
+  }
+ },
+ "Basement_MascotHead": {
+  "group": "Shop",
+  "size": [
+   3.209,
+   4.546,
+   1.969
+  ],
+  "tris": 1822,
+  "meta": {
+   "character": "Stacky, the STACKHOUSE sub-sandwich mascot (old costume head)",
+   "collide": "none",
+   "tilt_deg": 5.0
+  },
+  "url": "https://raw.githubusercontent.com/landonhjones2020-bit/nightshift-assets/main/meshes/N_basement/Basement_MascotHead.json",
+  "parts": [
+   {
+    "name": "Fabric",
+    "color": "#FFFFFF",
+    "material": "Fabric",
+    "transparency": 0.0,
+    "castShadow": true,
+    "canCollide": false,
+    "role": null,
+    "bone": null,
+    "offset": [
+     0.0,
+     3.431,
+     0.0
+    ],
+    "size": [
+     3.209,
+     2.079,
+     1.969
+    ],
+    "hash": "4f5558c057dd3c7b",
+    "tris": 854
+   },
+   {
+    "name": "SmoothPlastic",
+    "color": "#FFFFFF",
+    "material": "SmoothPlastic",
+    "transparency": 0.0,
+    "castShadow": true,
+    "canCollide": false,
+    "role": null,
+    "bone": null,
+    "offset": [
+     -0.076,
+     3.81,
+     -0.513
+    ],
+    "size": [
+     2.032,
+     1.473,
+     0.825
+    ],
+    "hash": "88d72256f24a2468",
+    "tris": 788
+   },
+   {
+    "name": "Stand",
+    "color": "#5A4532",
+    "material": "Wood",
+    "transparency": 0.0,
+    "castShadow": true,
+    "canCollide": false,
+    "role": null,
+    "bone": null,
+    "offset": [
+     0.064,
+     1.4,
+     0.0
+    ],
+    "size": [
+     1.439,
+     2.8,
+     1.476
+    ],
+    "hash": "42a88392e4faa2d8",
+    "tris": 180
+   }
+  ]
+ },
+ "Basement_MetalShelf": {
+  "group": "Shop",
+  "size": [
+   6.042,
+   8.0,
+   2.027
+  ],
+  "tris": 1950,
+  "meta": {
+   "size": [
+    6.0,
+    8.0,
+    2.0
+   ],
+   "back": "+Y against the wall",
+   "shelf_tops": [
+    0.42,
+    2.6,
+    4.78,
+    6.96
+   ],
+   "collide": "steel frame only"
+  },
+  "url": "https://raw.githubusercontent.com/landonhjones2020-bit/nightshift-assets/main/meshes/N_basement/Basement_MetalShelf.json",
+  "parts": [
+   {
+    "name": "Steel",
+    "color": "#8A8E93",
+    "material": "Metal",
+    "transparency": 0.0,
+    "castShadow": true,
+    "canCollide": true,
+    "role": null,
+    "bone": null,
+    "offset": [
+     0.0,
+     4.02,
+     0.003
+    ],
+    "size": [
+     6.042,
+     7.96,
+     2.021
+    ],
+    "hash": "dfa3df7696a793cb",
+    "tris": 344
+   },
+   {
+    "name": "Metal",
+    "color": "#FFFFFF",
+    "material": "Metal",
+    "transparency": 0.0,
+    "castShadow": true,
+    "canCollide": false,
+    "role": null,
+    "bone": null,
+    "offset": [
+     0.0,
+     3.69,
+     -0.007
+    ],
+    "size": [
+     6.0,
+     7.38,
+     2.0
+    ],
+    "hash": "a53ba5b5922411d3",
+    "tris": 320
+   },
+   {
+    "name": "SmoothPlastic",
+    "color": "#FFFFFF",
+    "material": "SmoothPlastic",
+    "transparency": 0.0,
+    "castShadow": true,
+    "canCollide": false,
+    "role": null,
+    "bone": null,
+    "offset": [
+     0.0,
+     4.145,
+     -0.057
+    ],
+    "size": [
+     5.8,
+     7.45,
+     1.914
+    ],
+    "hash": "fa69d17e77250604",
+    "tris": 1286
+   }
+  ]
+ },
+ "Basement_MetalShelfSparse": {
+  "group": "Shop",
+  "size": [
+   6.042,
+   8.0,
+   2.076
+  ],
+  "tris": 1230,
+  "meta": {
+   "size": [
+    6.0,
+    8.0,
+    2.0
+   ],
+   "back": "+Y against the wall",
+   "shelf_tops": [
+    0.42,
+    2.6,
+    4.78,
+    6.96
+   ],
+   "collide": "steel frame only",
+   "cobweb": "part Cobweb, Transparency 0.3, no shadow"
+  },
+  "url": "https://raw.githubusercontent.com/landonhjones2020-bit/nightshift-assets/main/meshes/N_basement/Basement_MetalShelfSparse.json",
+  "parts": [
+   {
+    "name": "Steel",
+    "color": "#8A8E93",
+    "material": "Metal",
+    "transparency": 0.0,
+    "castShadow": true,
+    "canCollide": true,
+    "role": null,
+    "bone": null,
+    "offset": [
+     0.0,
+     4.02,
+     0.027
+    ],
+    "size": [
+     6.042,
+     7.96,
+     2.021
+    ],
+    "hash": "616163514865d396",
+    "tris": 344
+   },
+   {
+    "name": "Metal",
+    "color": "#FFFFFF",
+    "material": "Metal",
+    "transparency": 0.0,
+    "castShadow": true,
+    "canCollide": false,
+    "role": null,
+    "bone": null,
+    "offset": [
+     0.0,
+     1.568,
+     0.017
+    ],
+    "size": [
+     6.0,
+     3.136,
+     2.0
+    ],
+    "hash": "aa8b3e3ef6ead309",
+    "tris": 132
+   },
+   {
+    "name": "SmoothPlastic",
+    "color": "#FFFFFF",
+    "material": "SmoothPlastic",
+    "transparency": 0.0,
+    "castShadow": true,
+    "canCollide": false,
+    "role": null,
+    "bone": null,
+    "offset": [
+     0.0,
+     4.001,
+     -0.003
+    ],
+    "size": [
+     5.8,
+     7.178,
+     1.977
+    ],
+    "hash": "83a3442edc9d7795",
+    "tris": 382
+   },
+   {
+    "name": "Inside",
+    "color": "#33271C",
+    "material": "Fabric",
+    "transparency": 0.0,
+    "castShadow": true,
+    "canCollide": false,
+    "role": null,
+    "bone": null,
+    "offset": [
+     1.7,
+     1.025,
+     -0.003
+    ],
+    "size": [
+     1.375,
+     0.02,
+     1.197
+    ],
+    "hash": "e9fa4103a68e756f",
+    "tris": 12
+   },
+   {
+    "name": "Cobweb",
+    "color": "#D8D5CC",
+    "material": "SmoothPlastic",
+    "transparency": 0.3,
+    "castShadow": false,
+    "canCollide": false,
+    "role": null,
+    "bone": null,
+    "offset": [
+     2.167,
+     5.95,
+     -0.988
+    ],
+    "size": [
+     1.201,
+     1.644,
+     0.101
+    ],
+    "hash": "cf98ab5b6f2ace3a",
+    "tris": 360
+   }
+  ]
+ },
+ "Basement_OldArcade": {
+  "group": "Shop",
+  "size": [
+   2.416,
+   6.0,
+   2.603
+  ],
+  "tris": 1357,
+  "meta": {
+   "screen": {
+    "part": "Screen",
+    "face": "Front",
+    "screen_size": [
+     1.7,
+     1.12
+    ]
+   },
+   "screen_tilt_deg": 11.7,
+   "collide": "body + side panels",
+   "story": "cracked screen, bent joystick, missing button, loose K"
+  },
+  "url": "https://raw.githubusercontent.com/landonhjones2020-bit/nightshift-assets/main/meshes/N_basement/Basement_OldArcade.json",
+  "parts": [
+   {
+    "name": "SmoothPlastic",
+    "color": "#FFFFFF",
+    "material": "SmoothPlastic",
+    "transparency": 0.0,
+    "castShadow": true,
+    "canCollide": true,
+    "role": null,
+    "bone": null,
+    "offset": [
+     0.0,
+     3.0,
+     0.002
+    ],
+    "size": [
+     2.4,
+     6.0,
+     2.6
+    ],
+    "hash": "9f74f8d4ae44ca55",
+    "tris": 300
+   },
+   {
+    "name": "SmoothPlastic_",
+    "color": "#FFFFFF",
+    "material": "SmoothPlastic",
+    "transparency": 0.0,
+    "castShadow": true,
+    "canCollide": false,
+    "role": null,
+    "bone": null,
+    "offset": [
+     0.0,
+     2.755,
+     -0.075
+    ],
+    "size": [
+     2.416,
+     5.51,
+     2.453
+    ],
+    "hash": "9d1f47fb72402c86",
+    "tris": 953
+   },
+   {
+    "name": "Screen",
+    "color": "#121823",
+    "material": "Glass",
+    "transparency": 0.0,
+    "castShadow": true,
+    "canCollide": false,
+    "role": "screen",
+    "bone": null,
+    "offset": [
+     0.0,
+     3.897,
+     -0.423
+    ],
+    "size": [
+     1.7,
+     1.101,
+     0.247
+    ],
+    "hash": "88dd657cb5b539b3",
+    "tris": 12
+   },
+   {
+    "name": "Metal",
+    "color": "#FFFFFF",
+    "material": "Metal",
+    "transparency": 0.0,
+    "castShadow": true,
+    "canCollide": false,
+    "role": null,
+    "bone": null,
+    "offset": [
+     0.085,
+     2.188,
+     -1.076
+    ],
+    "size": [
+     1.03,
+     2.396,
+     0.256
+    ],
+    "hash": "8d1b2bfd81752c2f",
+    "tris": 92
+   }
+  ],
+  "sockets": {
+   "Screen": {
+    "p": [
+     0.0,
+     3.899,
+     -0.433
+    ],
+    "yaw": 0.0
+   }
+  }
+ },
+ "Basement_OldSign": {
+  "group": "Shop",
+  "size": [
+   6.0,
+   2.952,
+   0.945
+  ],
+  "tris": 1017,
+  "meta": {
+   "mount": "lean on a wall",
+   "pivot": "floor, on the wall line (bottom-centre of the bbox back face)",
+   "lean_deg": 6.0,
+   "neon_part": "Tubes (dead: dull glass; role neon for a flicker scare)",
+   "collide": "none"
+  },
+  "url": "https://raw.githubusercontent.com/landonhjones2020-bit/nightshift-assets/main/meshes/N_basement/Basement_OldSign.json",
+  "parts": [
+   {
+    "name": "SmoothPlastic",
+    "color": "#FFFFFF",
+    "material": "SmoothPlastic",
+    "transparency": 0.0,
+    "castShadow": true,
+    "canCollide": false,
+    "role": null,
+    "bone": null,
+    "offset": [
+     0.0,
+     1.452,
+     -0.473
+    ],
+    "size": [
+     5.9,
+     2.893,
+     0.945
+    ],
+    "hash": "3f08fc03c50ce07a",
+    "tris": 63
+   },
+   {
+    "name": "SignFrame",
+    "color": "#6A6C70",
+    "material": "Metal",
+    "transparency": 0.0,
+    "castShadow": true,
+    "canCollide": false,
+    "role": null,
+    "bone": null,
+    "offset": [
+     0.0,
+     1.477,
+     -0.249
+    ],
+    "size": [
+     6.0,
+     2.952,
+     0.485
+    ],
+    "hash": "ddd8c118b02a262a",
+    "tris": 128
+   },
+   {
+    "name": "Tubes",
+    "color": "#9AA1A4",
+    "material": "Glass",
+    "transparency": 0.0,
+    "castShadow": false,
+    "canCollide": false,
+    "role": "neon",
+    "bone": null,
+    "offset": [
+     0.042,
+     1.487,
+     -0.332
+    ],
+    "size": [
+     5.501,
+     2.522,
+     0.342
+    ],
+    "hash": "be60cb6f0475c2b3",
+    "tris": 762
+   },
+   {
+    "name": "Broken",
+    "color": "#9AA1A4",
+    "material": "Glass",
+    "transparency": 0.0,
+    "castShadow": false,
+    "canCollide": false,
+    "role": null,
+    "bone": null,
+    "offset": [
+     -1.299,
+     1.517,
+     -0.326
+    ],
+    "size": [
+     2.969,
+     2.464,
+     0.336
+    ],
+    "hash": "3f159b5e7a4c1b45",
+    "tris": 64
+   }
+  ]
+ },
+ "Basement_PaintCans": {
+  "group": "Shop",
+  "size": [
+   1.426,
+   1.014,
+   1.396
+  ],
+  "tris": 1288,
+  "meta": {
+   "collide": "none",
+   "cans": 5
+  },
+  "url": "https://raw.githubusercontent.com/landonhjones2020-bit/nightshift-assets/main/meshes/N_basement/Basement_PaintCans.json",
+  "parts": [
+   {
+    "name": "Steel",
+    "color": "#8A8E93",
+    "material": "Metal",
+    "transparency": 0.0,
+    "castShadow": true,
+    "canCollide": false,
+    "role": null,
+    "bone": null,
+    "offset": [
+     0.012,
+     0.507,
+     0.0
+    ],
+    "size": [
+     1.402,
+     1.014,
+     1.396
+    ],
+    "hash": "e5388860af52b8b5",
+    "tris": 904
+   },
+   {
+    "name": "SmoothPlastic",
+    "color": "#FFFFFF",
+    "material": "SmoothPlastic",
+    "transparency": 0.0,
+    "castShadow": true,
+    "canCollide": false,
+    "role": null,
+    "bone": null,
+    "offset": [
+     -0.005,
+     0.378,
+     -0.014
+    ],
+    "size": [
+     1.416,
+     0.744,
+     1.327
+    ],
+    "hash": "d6e9976decd2b7a3",
+    "tris": 384
+   }
+  ]
+ },
+ "Basement_PipeCorner": {
+  "group": "Shop",
+  "size": [
+   4.5,
+   0.9,
+   4.5
+  ],
+  "tris": 1128,
+  "meta": {
+   "pivot": "corner point where the bundle centre lines meet, on the ceiling plane (hangs below)",
+   "arms": "along -X and -Y, 4 long each",
+   "bend_radius": 0.7,
+   "continue_with": "Basement_PipeRun pivoted at socket RunX / RunY (pipe order matches)",
+   "collide": "none"
+  },
+  "url": "https://raw.githubusercontent.com/landonhjones2020-bit/nightshift-assets/main/meshes/N_basement/Basement_PipeCorner.json",
+  "parts": [
+   {
+    "name": "Metal",
+    "color": "#FFFFFF",
+    "material": "Metal",
+    "transparency": 0.0,
+    "castShadow": true,
+    "canCollide": false,
+    "role": null,
+    "bone": null,
+    "offset": [
+     1.75,
+     -0.45,
+     -1.75
+    ],
+    "size": [
+     4.5,
+     0.9,
+     4.5
+    ],
+    "hash": "9649bc4436897f63",
+    "tris": 1128
+   }
+  ],
+  "sockets": {
+   "RunX": {
+    "p": [
+     8.0,
+     0.0,
+     0.0
+    ],
+    "yaw": 0.0
+   },
+   "RunY": {
+    "p": [
+     0.0,
+     0.0,
+     -8.0
+    ],
+    "yaw": -90.0
+   }
+  }
+ },
+ "Basement_PipeRun": {
+  "group": "Shop",
+  "size": [
+   8.0,
+   0.9,
+   1.025
+  ],
+  "tris": 935,
+  "meta": {
+   "pivot": "top-centre, on the ceiling plane (hangs below)",
+   "tile": "every 8 studs along X",
+   "bundle": [
+    {
+     "lateral": -0.32,
+     "radius": 0.14,
+     "pipe": "PipeGrey"
+    },
+    {
+     "lateral": 0.0,
+     "radius": 0.09,
+     "pipe": "PipeCopper"
+    },
+    {
+     "lateral": 0.32,
+     "radius": 0.14,
+     "pipe": "PipeDark"
+    }
+   ],
+   "hangers_x": [
+    -2.0,
+    2.0
+   ],
+   "collide": "none"
+  },
+  "url": "https://raw.githubusercontent.com/landonhjones2020-bit/nightshift-assets/main/meshes/N_basement/Basement_PipeRun.json",
+  "parts": [
+   {
+    "name": "Metal",
+    "color": "#FFFFFF",
+    "material": "Metal",
+    "transparency": 0.0,
+    "castShadow": true,
+    "canCollide": false,
+    "role": null,
+    "bone": null,
+    "offset": [
+     0.0,
+     -0.45,
+     -0.012
+    ],
+    "size": [
+     8.0,
+     0.9,
+     1.025
+    ],
+    "hash": "84c922894786d1ce",
+    "tris": 904
+   },
+   {
+    "name": "SmoothPlastic",
+    "color": "#FFFFFF",
+    "material": "SmoothPlastic",
+    "transparency": 0.0,
+    "castShadow": true,
+    "canCollide": false,
+    "role": null,
+    "bone": null,
+    "offset": [
+     1.0,
+     -0.64,
+     0.316
+    ],
+    "size": [
+     0.4,
+     0.304,
+     0.312
+    ],
+    "hash": "620bf8e2ab98e016",
+    "tris": 31
+   }
+  ]
+ },
+ "Basement_StorageCage": {
+  "group": "Shop",
+  "size": [
+   8.0,
+   10.0,
+   0.507
+  ],
+  "tris": 1755,
+  "meta": {
+   "gate_part": "Gate",
+   "padlock_part": "Padlock",
+   "gate_hinge": [
+    1.48,
+    0.0,
+    -0.1
+   ],
+   "gate_axis": [
+    0.0,
+    1.0,
+    0.0
+   ],
+   "gate_open_deg": -100,
+   "gate_opening": [
+    2.94,
+    6.98
+   ],
+   "collide": "frame, grid and gate",
+   "tile": "sections butt end to end (end posts at x = +-3.91)"
+  },
+  "url": "https://raw.githubusercontent.com/landonhjones2020-bit/nightshift-assets/main/meshes/N_basement/Basement_StorageCage.json",
+  "parts": [
+   {
+    "name": "Metal",
+    "color": "#FFFFFF",
+    "material": "Metal",
+    "transparency": 0.0,
+    "castShadow": true,
+    "canCollide": true,
+    "role": null,
+    "bone": null,
+    "offset": [
+     0.0,
+     5.0,
+     0.0
+    ],
+    "size": [
+     8.0,
+     10.0,
+     0.42
+    ],
+    "hash": "3b9b24ccd5b6461c",
+    "tris": 948
+   },
+   {
+    "name": "Gate",
+    "color": "#8A8E93",
+    "material": "Metal",
+    "transparency": 0.0,
+    "castShadow": true,
+    "canCollide": true,
+    "role": "gate",
+    "bone": null,
+    "offset": [
+     -0.05,
+     3.6,
+     -0.055
+    ],
+    "size": [
+     3.2,
+     6.88,
+     0.23
+    ],
+    "hash": "fd44b645ee231684",
+    "tris": 512
+   },
+   {
+    "name": "Staple",
+    "color": "#8A8E93",
+    "material": "Metal",
+    "transparency": 0.0,
+    "castShadow": true,
+    "canCollide": false,
+    "role": null,
+    "bone": null,
+    "offset": [
+     -1.56,
+     3.95,
+     -0.159
+    ],
+    "size": [
+     0.035,
+     0.215,
+     0.118
+    ],
+    "hash": "40a5c7560334a07d",
+    "tris": 28
+   },
+   {
+    "name": "Padlock",
+    "color": "#A68A4E",
+    "material": "Metal",
+    "transparency": 0.0,
+    "castShadow": true,
+    "canCollide": false,
+    "role": "padlock",
+    "bone": null,
+    "offset": [
+     -1.56,
+     3.637,
+     -0.2
+    ],
+    "size": [
+     0.374,
+     0.548,
+     0.176
+    ],
+    "hash": "0d8ca6fd1fee221c",
+    "tris": 112
+   },
+   {
+    "name": "SmoothPlastic",
+    "color": "#FFFFFF",
+    "material": "SmoothPlastic",
+    "transparency": 0.0,
+    "castShadow": true,
+    "canCollide": false,
+    "role": null,
+    "bone": null,
+    "offset": [
+     -0.004,
+     2.811,
+     -0.178
+    ],
+    "size": [
+     7.958,
+     5.279,
+     0.237
+    ],
+    "hash": "7e3ffa5bd004b85d",
+    "tris": 155
+   }
+  ]
+ },
+ "Basement_SupportColumn": {
+  "group": "Shop",
+  "size": [
+   1.2,
+   11.0,
+   1.2
+  ],
+  "tris": 360,
+  "meta": {
+   "collide": "footing, beam, plates",
+   "hazard_band": [
+    3.1,
+    4.1
+   ],
+   "top": "top plate on the 11-stud ceiling"
+  },
+  "url": "https://raw.githubusercontent.com/landonhjones2020-bit/nightshift-assets/main/meshes/N_basement/Basement_SupportColumn.json",
+  "parts": [
+   {
+    "name": "Footing",
+    "color": "#6A6C70",
+    "material": "Concrete",
+    "transparency": 0.0,
+    "castShadow": true,
+    "canCollide": true,
+    "role": null,
+    "bone": null,
+    "offset": [
+     0.0,
+     0.11,
+     0.0
+    ],
+    "size": [
+     1.2,
+     0.22,
+     1.2
+    ],
+    "hash": "c8eb30b08fa4b419",
+    "tris": 44
+   },
+   {
+    "name": "SmoothPlastic",
+    "color": "#FFFFFF",
+    "material": "SmoothPlastic",
+    "transparency": 0.0,
+    "castShadow": true,
+    "canCollide": true,
+    "role": null,
+    "bone": null,
+    "offset": [
+     0.0,
+     5.61,
+     0.0
+    ],
+    "size": [
+     1.06,
+     10.78,
+     1.06
+    ],
+    "hash": "728a89cb29e638d0",
+    "tris": 236
+   },
+   {
+    "name": "SmoothPlastic_",
+    "color": "#FFFFFF",
+    "material": "SmoothPlastic",
+    "transparency": 0.0,
+    "castShadow": true,
+    "canCollide": false,
+    "role": null,
+    "bone": null,
+    "offset": [
+     0.0,
+     5.596,
+     0.0
+    ],
+    "size": [
+     1.0,
+     10.648,
+     1.016
+    ],
+    "hash": "3d4561f6ec502fcb",
+    "tris": 80
+   }
+  ]
+ },
+ "Basement_WaterHeater": {
+  "group": "Shop",
+  "size": [
+   2.487,
+   5.942,
+   2.5
+  ],
+  "tris": 1106,
+  "meta": {
+   "collide": "jacket + base ring",
+   "valve_part": "Valve (red hand wheel on the cold pipe)"
+  },
+  "url": "https://raw.githubusercontent.com/landonhjones2020-bit/nightshift-assets/main/meshes/N_basement/Basement_WaterHeater.json",
+  "parts": [
+   {
+    "name": "Jacket",
+    "color": "#CFC6B0",
+    "material": "SmoothPlastic",
+    "transparency": 0.0,
+    "castShadow": true,
+    "canCollide": true,
+    "role": null,
+    "bone": null,
+    "offset": [
+     0.113,
+     2.78,
+     0.05
+    ],
+    "size": [
+     2.2,
+     5.0,
+     2.2
+    ],
+    "hash": "5628d3db358590e6",
+    "tris": 158
+   },
+   {
+    "name": "BaseRing",
+    "color": "#4A4C50",
+    "material": "Metal",
+    "transparency": 0.0,
+    "castShadow": true,
+    "canCollide": true,
+    "role": null,
+    "bone": null,
+    "offset": [
+     0.113,
+     0.16,
+     0.05
+    ],
+    "size": [
+     2.26,
+     0.32,
+     2.26
+    ],
+    "hash": "f7f92d58ecc604aa",
+    "tris": 60
+   },
+   {
+    "name": "Metal",
+    "color": "#FFFFFF",
+    "material": "Metal",
+    "transparency": 0.0,
+    "castShadow": true,
+    "canCollide": false,
+    "role": null,
+    "bone": null,
+    "offset": [
+     -0.194,
+     2.991,
+     0.04
+    ],
+    "size": [
+     2.098,
+     5.902,
+     2.42
+    ],
+    "hash": "9c3d26e150462cff",
+    "tris": 556
+   },
+   {
+    "name": "SmoothPlastic",
+    "color": "#FFFFFF",
+    "material": "SmoothPlastic",
+    "transparency": 0.0,
+    "castShadow": true,
+    "canCollide": false,
+    "role": null,
+    "bone": null,
+    "offset": [
+     0.113,
+     3.043,
+     -0.044
+    ],
+    "size": [
+     2.224,
+     5.206,
+     2.412
+    ],
+    "hash": "d662f60be0c42384",
+    "tris": 332
+   }
+  ]
+ },
+ "Basement_WoodenCrates": {
+  "group": "Shop",
+  "size": [
+   4.151,
+   2.92,
+   2.507
+  ],
+  "tris": 1575,
+  "meta": {
+   "collide": "crates (core, planks, battens)",
+   "stencils": [
+    "FRAGILE",
+    "1987"
+   ]
+  },
+  "url": "https://raw.githubusercontent.com/landonhjones2020-bit/nightshift-assets/main/meshes/N_basement/Basement_WoodenCrates.json",
+  "parts": [
+   {
+    "name": "Core",
+    "color": "#2E241B",
+    "material": "SmoothPlastic",
+    "transparency": 0.0,
+    "castShadow": true,
+    "canCollide": true,
+    "role": null,
+    "bone": null,
+    "offset": [
+     0.001,
+     1.45,
+     0.001
+    ],
+    "size": [
+     4.027,
+     2.9,
+     2.383
+    ],
+    "hash": "a19c9e18bdf9d57e",
+    "tris": 36
+   },
+   {
+    "name": "Wood",
+    "color": "#FFFFFF",
+    "material": "Wood",
+    "transparency": 0.0,
+    "castShadow": true,
+    "canCollide": true,
+    "role": null,
+    "bone": null,
+    "offset": [
+     0.0,
+     1.465,
+     0.0
+    ],
+    "size": [
+     4.151,
+     2.91,
+     2.507
+    ],
+    "hash": "0ce23d1be27fa5ba",
+    "tris": 1056
+   },
+   {
+    "name": "SmoothPlastic",
+    "color": "#FFFFFF",
+    "material": "SmoothPlastic",
+    "transparency": 0.0,
+    "castShadow": true,
+    "canCollide": false,
+    "role": null,
+    "bone": null,
+    "offset": [
+     0.031,
+     1.42,
+     -0.906
+    ],
+    "size": [
+     3.475,
+     1.801,
+     0.608
+    ],
+    "hash": "71edf297b863c4d6",
+    "tris": 483
+   }
+  ]
+ },
+ "Basement_Workbench": {
+  "group": "Shop",
+  "size": [
+   6.0,
+   6.0,
+   2.65
+  ],
+  "tris": 1636,
+  "meta": {
+   "worktop": 3.0,
+   "pegboard_top": 6.0,
+   "collide": "bench + pegboard",
+   "back": "+Y against the wall",
+   "story": "saw, pliers and screwdriver are missing from their painted outlines"
+  },
+  "url": "https://raw.githubusercontent.com/landonhjones2020-bit/nightshift-assets/main/meshes/N_basement/Basement_Workbench.json",
+  "parts": [
+   {
+    "name": "Wood",
+    "color": "#FFFFFF",
+    "material": "Wood",
+    "transparency": 0.0,
+    "castShadow": true,
+    "canCollide": true,
+    "role": null,
+    "bone": null,
+    "offset": [
+     0.0,
+     3.0,
+     0.075
+    ],
+    "size": [
+     6.0,
+     6.0,
+     2.5
+    ],
+    "hash": "56f7adb7dabe5c65",
+    "tris": 404
+   },
+   {
+    "name": "SmoothPlastic",
+    "color": "#FFFFFF",
+    "material": "SmoothPlastic",
+    "transparency": 0.0,
+    "castShadow": true,
+    "canCollide": false,
+    "role": null,
+    "bone": null,
+    "offset": [
+     0.0,
+     3.12,
+     0.219
+    ],
+    "size": [
+     5.84,
+     5.3,
+     1.961
+    ],
+    "hash": "b3dc717c611a18ad",
+    "tris": 452
+   },
+   {
+    "name": "Pegboard",
+    "color": "#CFC6B0",
+    "material": "SmoothPlastic",
+    "transparency": 0.0,
+    "castShadow": true,
+    "canCollide": true,
+    "role": null,
+    "bone": null,
+    "offset": [
+     0.0,
+     4.55,
+     1.245
+    ],
+    "size": [
+     5.6,
+     2.9,
+     0.08
+    ],
+    "hash": "b1da780dab860586",
+    "tris": 12
+   },
+   {
+    "name": "Metal",
+    "color": "#FFFFFF",
+    "material": "Metal",
+    "transparency": 0.0,
+    "castShadow": true,
+    "canCollide": false,
+    "role": null,
+    "bone": null,
+    "offset": [
+     0.173,
+     2.755,
+     -0.05
+    ],
+    "size": [
+     5.098,
+     4.57,
+     2.55
+    ],
+    "hash": "c83781e797ad6484",
+    "tris": 636
+   },
+   {
+    "name": "Wood_",
+    "color": "#FFFFFF",
+    "material": "Wood",
+    "transparency": 0.0,
+    "castShadow": true,
+    "canCollide": false,
+    "role": null,
+    "bone": null,
+    "offset": [
+     -0.028,
+     2.535,
+     0.291
+    ],
+    "size": [
+     4.065,
+     4.13,
+     1.778
+    ],
+    "hash": "5eeebbaf86f7feba",
+    "tris": 84
+   },
+   {
+    "name": "Rag",
+    "color": "#B9AE96",
+    "material": "Fabric",
+    "transparency": 0.0,
+    "castShadow": true,
+    "canCollide": false,
+    "role": null,
+    "bone": null,
+    "offset": [
+     0.098,
+     3.061,
+     0.633
+    ],
+    "size": [
+     0.76,
+     0.175,
+     0.615
+    ],
+    "hash": "0961b9dd988360f8",
+    "tris": 48
+   }
+  ]
+ }
+}
