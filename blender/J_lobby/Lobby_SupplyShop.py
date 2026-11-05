@@ -271,8 +271,8 @@ def build():
                             bevel=0.03, segments=1))
         steel.append(C.rod((x, LET_Y + 1.6, SIGN_BASE - 0.3), (x, LET_Y + 3.8, CORNICE[1]), 0.1, verts=5))
     # ----- tag parts ---------------------------------------------------------------------------------------------
-    C.part(teal, "Facade", TEAL, "CorrugatedMetal", can_collide=True, smooth_angle=40)
-    C.part(ribs, "Ribs", TEAL_RIB, "CorrugatedMetal", smooth_angle=None)
+    C.part(teal, "Facade", TEAL, "Metal", can_collide=True, smooth_angle=40)
+    C.part(ribs, "Ribs", TEAL_RIB, "Metal", smooth_angle=None)
     C.part(band_y, "HazardYellow", HAZARD_Y, smooth_angle=40)
     C.part(band_k + g.pop(HAZARD_K, []), "HazardBlack", HAZARD_K, smooth_angle=40)
     C.part(steel + g.pop(STEEL, []), "Steel", STEEL, "Metal", can_collide=False, smooth_angle=45)
