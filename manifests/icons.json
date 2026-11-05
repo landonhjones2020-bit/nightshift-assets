@@ -395,6 +395,42 @@
   "hash": "017167bf0d01f7b9",
   "url": "https://raw.githubusercontent.com/landonhjones2020-bit/nightshift-assets/main/icons/fx/FX_GuideMarker.nsz"
  },
+ "FX_ScareCracks": {
+  "group": "fx",
+  "size": [
+   1024,
+   1024
+  ],
+  "hash": "2add4b8826b9d634",
+  "url": "https://raw.githubusercontent.com/landonhjones2020-bit/nightshift-assets/main/icons/fx/FX_ScareCracks.nsz"
+ },
+ "FX_ScareFrost": {
+  "group": "fx",
+  "size": [
+   1024,
+   1024
+  ],
+  "hash": "d7f8bfb709379afb",
+  "url": "https://raw.githubusercontent.com/landonhjones2020-bit/nightshift-assets/main/icons/fx/FX_ScareFrost.nsz"
+ },
+ "FX_ScarePaper": {
+  "group": "fx",
+  "size": [
+   1024,
+   1024
+  ],
+  "hash": "b7abe20d25262018",
+  "url": "https://raw.githubusercontent.com/landonhjones2020-bit/nightshift-assets/main/icons/fx/FX_ScarePaper.nsz"
+ },
+ "FX_ScareStatic": {
+  "group": "fx",
+  "size": [
+   512,
+   512
+  ],
+  "hash": "7a0a0ac4d7aa0110",
+  "url": "https://raw.githubusercontent.com/landonhjones2020-bit/nightshift-assets/main/icons/fx/FX_ScareStatic.nsz"
+ },
  "Food_Tomato": {
   "group": "food",
   "size": [
