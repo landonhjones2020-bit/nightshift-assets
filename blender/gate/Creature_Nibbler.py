@@ -8,6 +8,10 @@ Nibble (loop 0.8 s, stealing from a bin), Squeak (one-shot 0.9 s, the tell at th
 events peak / land), Flee (loop 0.36 s, authored for ~14 studs/s), Whacked (one-shot 1.1 s,
 hit by a spatula; events hit / up) and Stunned (loop 1.2 s, after Whacked). Events and the
 Flee speed reference are written into anim/Nibbler.lua as a top-level `meta` table.
+2026-11-04 (Landon: "make a death animation and have them disappear after they are whacked,
+right now I can't tell if I'm just not hitting them"): Death (one-shot 1.133 s: flattened by
+the spatula, bounced up and flipped onto its back, a few kicks, stiff; events hit / flip / land
+/ still) and Dead (loop 2.0 s: on its back, legs up, held until the game puffs it away).
 
 Env: NS_EXPORT=1 exports mesh + animations; NS_ANIM=1 exports ONLY anim/Nibbler.lua (use it
 for clip changes: with today's nslib a mesh re-export rewrites meshes/gate/Creature_Nibbler.json
@@ -139,7 +143,9 @@ LEFT_LEGS = ("LegFL", "LegBL")       # +X side
 RIGHT_LEGS = ("LegFR", "LegBR")
 # events (seconds from clip start) and speed references, written into anim/Nibbler.lua meta
 CLIP_EVENTS = {"Squeak": {"peak": round(10 / 30, 3), "land": round(22 / 30, 3)},
-               "Whacked": {"hit": round(3 / 30, 3), "up": round(25 / 30, 3)}}
+               "Whacked": {"hit": round(3 / 30, 3), "up": round(25 / 30, 3)},
+               "Death": {"hit": round(3 / 30, 3), "flip": round(7 / 30, 3), "land": round(13 / 30, 3),
+                         "still": round(28 / 30, 3)}}
 CLIP_SPEED = {"Flee": 14}
 
 
@@ -412,6 +418,84 @@ def clip_whacked(arm, P):
     return act
 
 
+def _back(P, roll=180.0, pitch=0.0, yaw=0.0, legs=None, head=None, tail=None, lift=0.0, floor=True):
+    """On its back (Body rolled `roll` degrees about the spine) or part-way over: legs keyed in
+    the body frame as (pitch, outward splay) - default a V sticking up - the back dropped onto
+    the floor; with floor=True the head lolls onto a cheek and the tail lies limp, both solved
+    to touch the floor. `lift` raises the whole rat (a hop, a bounce)."""
+    pose = {"Body": ((pitch, roll, yaw), (0.0, 0.0, 0.0))}
+    legs = legs or {}
+    for b, s in (("LegFL", -1), ("LegBL", -1), ("LegFR", 1), ("LegBR", 1)):
+        front = b in ("LegFL", "LegFR")
+        p, splay = legs.get(b, (-18.0 if front else 18.0, 24.0))
+        pose[b] = (round(p, 2), round(s * splay, 2), 0.0)
+    pose["Head"] = head or (0.0, 0.0, 0.0)
+    pose["Tail"] = tail or (0.0, 0.0, 0.0)
+    _drop_to(P, pose, ["Body"], 0.004)
+    if floor:
+        _solve(P, pose, "Head", 1, -60, 60, 35, target=0.004)
+        _solve(P, pose, "Tail", 0, -45, 45, 0, target=0.004)
+    _lift(P, pose)
+    if lift:
+        rot, loc = pose["Body"]
+        pose["Body"] = (rot, (loc[0], loc[1], round(loc[2] + lift, 4)))
+    return pose
+
+
+# legs sticking up, stiff, a little apart: the end of Death and the whole of Dead
+DEAD_LEGS = {"LegFL": (-10.0, 18.0), "LegFR": (-10.0, 18.0), "LegBL": (10.0, 18.0), "LegBR": (10.0, 18.0)}
+
+
+def clip_death(arm, P):
+    """One-shot 1.133 s: flattened by the spatula (event hit - the same three frames as
+    Whacked, so a hit reads the same instant), bounced up into the air rolling over (flip),
+    lands belly-up (land) with a little bounce, kicks its legs four times, smaller each time,
+    then goes stiff with its legs up (still) and settles into the Dead loop's pose."""
+    act = ns.new_action(arm, "Death", 0, 34, loop=False)
+    _key_pose(arm, 0, {"Body": ((0, 0, 0), (0, 0, 0))}, ease="LINEAR")
+    _key_pose(arm, 1, _splat(P, 9.0, t=0.22), ease="LINEAR")         # accelerating into the hit
+    _key_pose(arm, 2, _splat(P, 9.0, t=0.62), ease="LINEAR")
+    _key_pose(arm, 3, _splat(P, 9.0), ease="QUAD", direction="EASE_OUT")
+    _key_pose(arm, 5, _splat(P, 6.0), ease="QUAD", direction="EASE_IN")
+    # the rebound: up it goes, rolling over, legs flung out, head thrown back, tail whipping
+    flung = {"LegFL": (-50.0, 45.0), "LegFR": (-50.0, 45.0), "LegBL": (45.0, 45.0), "LegBR": (45.0, 45.0)}
+    _key_pose(arm, 7, _back(P, roll=60.0, pitch=-8.0, legs=flung, head=(-22, 0, 12), tail=(28, 0, -24),
+                            lift=0.3, floor=False), ease="QUAD", direction="EASE_OUT")
+    over = {"LegFL": (-35.0, 35.0), "LegFR": (-35.0, 35.0), "LegBL": (30.0, 35.0), "LegBR": (30.0, 35.0)}
+    _key_pose(arm, 10, _back(P, roll=125.0, pitch=-6.0, legs=over, head=(-15, 0, -10), tail=(20, 0, 18),
+                             lift=0.38, floor=False), ease="QUAD", direction="EASE_IN")
+    # belly-up: lands, bounces once
+    sprawl = {"LegFL": (-30.0, 32.0), "LegFR": (-30.0, 32.0), "LegBL": (28.0, 32.0), "LegBR": (28.0, 32.0)}
+    _key_pose(arm, 13, _back(P, legs=sprawl), ease="QUAD", direction="EASE_OUT")
+    _key_pose(arm, 15, _back(P, legs=sprawl, lift=0.06), ease="QUAD", direction="EASE_IN")
+    _key_pose(arm, 17, _back(P, legs=sprawl), ease="SINE")
+    # four kicks, each smaller (front and back pairs opposite), the body rocking with them
+    for f, amp in ((19, 26.0), (21, -20.0), (23, 14.0), (25, -8.0)):
+        kick = {"LegFL": (-22.0 + amp, 26.0), "LegFR": (-22.0 - amp, 26.0),
+                "LegBL": (22.0 - amp, 26.0), "LegBR": (22.0 + amp, 26.0)}
+        _key_pose(arm, f, _back(P, roll=180.0 + amp * 0.12, legs=kick), ease="SINE")
+    _key_pose(arm, 28, _back(P, legs={b: (p * 0.4, sp - 6.0) for b, (p, sp) in DEAD_LEGS.items()}),
+              ease="QUAD", direction="EASE_OUT")                     # stiff
+    _key_pose(arm, 34, _back(P, legs=DEAD_LEGS), ease="SINE")       # = the Dead loop's pose
+    return act
+
+
+def clip_dead(arm, P):
+    """Loop 2.0 s: on its back with its legs up (Death's last pose); one faint twitch of the
+    tail. The game holds it here, then puffs it away."""
+    act = ns.new_action(arm, "Dead", 0, 60, loop=True)
+    base = _back(P, legs=DEAD_LEGS)
+    twitch = dict(base)
+    tp = base["Tail"]
+    twitch["Tail"] = (tp[0], tp[1], tp[2] + 9.0)
+    _key_pose(arm, 0, base, ease="LINEAR")
+    _key_pose(arm, 36, base, ease="SINE")
+    _key_pose(arm, 39, twitch, ease="SINE")
+    _key_pose(arm, 43, base, ease="LINEAR")
+    _key_pose(arm, 60, base, ease="LINEAR")
+    return act
+
+
 def clip_stunned(arm, P):
     """Loop 1.2 s: dizzy sway (body rolls and yaws) with the head circling; paws stay planted
     (legs re-angled every key), tail drifts."""
@@ -435,7 +519,8 @@ def clip_stunned(arm, P):
 def add_clips(arm):
     """Build the extra clips (after Idle / Scurry, which stay untouched)."""
     P = _rest_points(arm)
-    return [clip_nibble(arm, P), clip_squeak(arm, P), clip_flee(arm, P), clip_whacked(arm, P), clip_stunned(arm, P)]
+    return [clip_nibble(arm, P), clip_squeak(arm, P), clip_flee(arm, P), clip_whacked(arm, P), clip_stunned(arm, P),
+            clip_death(arm, P), clip_dead(arm, P)]
 
 
 def anim_meta():
@@ -460,7 +545,8 @@ def append_anim_meta(path, meta):
 STRIPS = {"Scurry": [0, 4, 9, 13], "Idle": [0, 12, 36, 48],
           "Nibble": [0, 2, 4, 8, 12, 16, 20], "Squeak": [0, 4, 8, 10, 13, 17, 20, 22, 25],
           "Flee": [0, 2, 4, 6, 8, 10, 12, 14, 16], "Whacked": [0, 3, 5, 10, 16, 22, 24, 25, 28, 31],
-          "Stunned": [0, 6, 12, 18, 24, 30]}
+          "Stunned": [0, 6, 12, 18, 24, 30],
+          "Death": [0, 3, 5, 7, 10, 13, 15, 19, 21, 25, 28, 34], "Dead": [0, 39]}
 
 
 def clip_report(arm, actions):
