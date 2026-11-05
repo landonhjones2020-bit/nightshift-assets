@@ -691,7 +691,7 @@
    43.05,
    24.355
   ],
-  "tris": 19729,
+  "tris": 19765,
   "meta": {
    "screens": {
     "Screen": [
@@ -880,8 +880,8 @@
      41.6,
      24.22
     ],
-    "hash": "68047c6ab3fdc6db",
-    "tris": 7161
+    "hash": "48977c326848309a",
+    "tris": 7353
    },
    {
     "name": "Metal",
@@ -902,8 +902,8 @@
      42.15,
      24.255
     ],
-    "hash": "e76dac9db011549c",
-    "tris": 3492
+    "hash": "8bba543eaf925b64",
+    "tris": 3376
    },
    {
     "name": "Glass",
@@ -995,7 +995,7 @@
    },
    {
     "name": "Shirt1",
-    "color": "#F4F1EA",
+    "color": "#C9CFD6",
     "material": "Fabric",
     "transparency": 0.0,
     "castShadow": true,
@@ -1017,7 +1017,7 @@
    },
    {
     "name": "Shirt2",
-    "color": "#2E9BFF",
+    "color": "#F4F1EA",
     "material": "Fabric",
     "transparency": 0.0,
     "castShadow": true,
@@ -1039,7 +1039,7 @@
    },
    {
     "name": "Shirt3",
-    "color": "#4CFF7A",
+    "color": "#C8E83A",
     "material": "Fabric",
     "transparency": 0.0,
     "castShadow": true,
@@ -1052,12 +1052,12 @@
      -5.398
     ],
     "size": [
-     2.671,
+     1.74,
      1.68,
      0.9
     ],
-    "hash": "d539ca4eb7827bba",
-    "tris": 180
+    "hash": "6cbe94cbcdaab08c",
+    "tris": 140
    },
    {
     "name": "Shirt4",
@@ -1083,7 +1083,7 @@
    },
    {
     "name": "Shirt5",
-    "color": "#9B5CFF",
+    "color": "#A9C8E8",
     "material": "Fabric",
     "transparency": 0.0,
     "castShadow": true,

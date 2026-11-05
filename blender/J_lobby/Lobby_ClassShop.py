@@ -5,12 +5,13 @@ likely be the strongest income driver"). A grand two-storey uniform outfitter in
 with gold trim, taller than every other building in the lobby:
 
   * Ground floor: two lit display windows with three full mannequins each, dressed as the six
-    classes (Config.Uniforms, left to right as seen from the front): Trainee (white shirt, red
-    paper cap), Line Cook (blue, white skull cap + neckerchief), Stock Runner (green, red cap),
-    Security Guard (navy, peaked cap + gold star), Night Manager (purple, gold tie + name badge),
-    Head Chef (white, tall toque, gold buttons). Each shirt is its own part (role shirt1..shirt6)
-    so the map can repaint it from the config. Round marble pedestals ring-lit in warm light.
-    Label screens over the windows (Tag1..Tag6).
+    classes (Config.Uniforms, left to right as seen from the front) to match their icons:
+    Trainee (grey shirt, orange name badge, red paper cap), Line Cook (white, red bandana), Stock
+    Runner (hi-vis vest with reflective stripes over a dark shirt, red cap), Security Guard (navy,
+    peaked cap, gold stars), Night Manager (light blue, red tie, gold name badge), Head Chef
+    (white, black buttons, tall toque). Each shirt (the vest for the Stock Runner) is its own part
+    (role shirt1..shirt6) so the map repaints it from the config. Round marble pedestals ring-lit
+    in warm light. Label screens over the windows (Tag1..Tag6).
   * Centre: recessed double glass doors under a theatre canopy whose fascia carries a gold
     "CLASSES" sign framed by marquee bulbs.
   * Upper floor: the big class screen (Screen) in a gold frame between two arched windows lit
@@ -74,8 +75,13 @@ GLASS_TINT = "#D3E8EF"
 MARBLE = "#EFE9DE"
 
 # Config.Uniforms looks (ids in mannequin order) — the map repaints shirts from the config too
-CLASSES = [("trainee", "#F4F1EA"), ("line_cook", "#2E9BFF"), ("stock_runner", "#4CFF7A"),
-           ("security_guard", "#1B2A4A"), ("night_manager", "#9B5CFF"), ("head_chef", "#F4F1EA")]
+CLASSES = [("trainee", "#C9CFD6"), ("line_cook", "#F4F1EA"), ("stock_runner", "#C8E83A"),
+           ("security_guard", "#1B2A4A"), ("night_manager", "#A9C8E8"), ("head_chef", "#F4F1EA")]
+UNDERSHIRT = "#3A3D42"      # the Stock Runner's sleeves under the hi-vis vest
+BANDANA = "#D9472F"
+TIE_RED = "#C8323A"
+BADGE_ORANGE = "#F39A2B"
+REFLECT = "#D9DEE3"
 
 
 def liner(x0, x1, z0, z1, y0, y1, bottom=True):
@@ -131,7 +137,11 @@ def mannequin(i, x, groups, shirts):
         sh = (x + s * 0.96, y, z0 + th - 0.18)
         el = (x + s * 1.12, y - 0.05, z0 + 0.55)
         hand = (x + s * 1.08, y - 0.18, z0 - 0.15)
-        shirts[i].append(C.rod(sh, el, 0.23, verts=6))
+        sleeve = C.rod(sh, el, 0.23, verts=6)
+        if i == 2:
+            add(UNDERSHIRT, sleeve)
+        else:
+            shirts[i].append(sleeve)
         add(SKIN, C.rod(el, hand, 0.17, verts=6))
         add(SKIN, ns.sphere(0.19, loc=hand, scale=(0.8, 0.8, 1.1), segs=6, rings=4))
     # neck + head
@@ -140,26 +150,30 @@ def mannequin(i, x, groups, shirts):
     add(SKIN, ns.sphere(0.46, loc=(x, y, hz), scale=(0.92, 0.92, 1.1), segs=10, rings=6))
     top = hz + 0.5
     # class accessories
-    if i == 0:      # Trainee: red paper (garrison) cap
+    if i == 0:      # Trainee: red paper (garrison) cap, orange TRAINEE name badge
         cap = C.prism([(-0.44, 0), (0.44, 0), (0.3, 0.34), (-0.3, 0.34)], "y", -0.27, 0.27)
         C.place([cap], (x, y, top - 0.14))
         add(C.BRAND, cap)
-    elif i == 1:    # Line Cook: white skull cap + neckerchief
-        add(C.PAPER, ns.sphere(0.48, loc=(x, y, hz + 0.12), scale=(0.98, 0.98, 0.72), segs=10, rings=5))
-        add(C.PAPER, C.prism([(-0.36, z0 + th - 0.02), (0.36, z0 + th - 0.02), (0.0, z0 + th - 0.5)], "y",
-                             y - 0.47, y - 0.36))
-    elif i == 2:    # Stock Runner: red ball cap
+        add(BADGE_ORANGE, ns.box((0.5, 0.06, 0.2), loc=(x - 0.4, y - 0.46, z0 + 1.2), bevel=0.02, segments=1))
+    elif i == 1:    # Line Cook: red bandana knotted at the collar
+        add(BANDANA, C.prism([(x - 0.42, z0 + th - 0.02), (x + 0.42, z0 + th - 0.02), (x, z0 + th - 0.58)], "y",
+                             y - 0.48, y - 0.36))
+        add(BANDANA, ns.sphere(0.12, loc=(x + 0.28, y - 0.44, z0 + th - 0.08), segs=6, rings=4))
+    elif i == 2:    # Stock Runner: hi-vis vest (the torso) with reflective stripes, red ball cap
         add(C.BRAND, ns.sphere(0.5, loc=(x, y, hz + 0.1), scale=(0.98, 0.98, 0.7), segs=10, rings=5))
         add(C.BRAND, ns.box((0.62, 0.5, 0.06), loc=(x, y - 0.68, hz + 0.08), bevel=0.02, segments=1))
+        for zz in (z0 + 0.45, z0 + 0.85):
+            add(REFLECT, ns.box((1.62, 0.92, 0.1), loc=(x, y, zz), bevel=0.0))
+        add(UNDERSHIRT, ns.box((0.34, 0.05, 0.42), loc=(x, y - 0.44, z0 + th - 0.18), bevel=0.0))
     elif i == 3:    # Security Guard: navy peaked cap with a gold badge, gold star on the chest
         add(C.NAVY_DEEP, ns.cyl(0.52, 0.3, loc=(x, y, top - 0.02), verts=12, bevel=0.03, segments=1, radius_top=0.6))
         add(C.CHARCOAL, ns.box((0.66, 0.42, 0.06), loc=(x, y - 0.6, top - 0.15), bevel=0.02, segments=1))
         add(C.GOLD, C.prism(C.star_pts(0.14, 0.06, x, top - 0.02), "y", y - 0.63, y - 0.55))
         add(C.GOLD, C.prism(C.star_pts(0.2, 0.09, x - 0.42, z0 + 1.15), "y", y - 0.5, y - 0.42))
     elif i == 4:    # Night Manager: gold tie + name badge
-        add(C.GOLD, C.prism([(x - 0.08, z0 + th - 0.08), (x + 0.08, z0 + th - 0.08), (x + 0.14, z0 + 0.55), (x, z0 + 0.4),
+        add(TIE_RED, C.prism([(x - 0.08, z0 + th - 0.08), (x + 0.08, z0 + th - 0.08), (x + 0.14, z0 + 0.55), (x, z0 + 0.4),
                              (x - 0.14, z0 + 0.55)], "y", y - 0.52, y - 0.42))
-        add(C.PAPER, ns.box((0.42, 0.06, 0.2), loc=(x + 0.42, y - 0.46, z0 + 1.2), bevel=0.02, segments=1))
+        add(C.GOLD, ns.box((0.42, 0.06, 0.2), loc=(x + 0.42, y - 0.46, z0 + 1.2), bevel=0.02, segments=1))
     elif i == 5:    # Head Chef: tall toque + gold buttons
         band_ = ns.cyl(0.47, 0.42, loc=(x, y, top + 0.02), verts=12, bevel=0.0)
         puff = [ns.sphere(0.36, loc=(x + dx, y + dy, top + 0.68), segs=8, rings=5)
@@ -170,7 +184,7 @@ def mannequin(i, x, groups, shirts):
             add(C.PAPER, p)
         for k in range(3):
             for s in (-1, 1):
-                add(C.GOLD, ns.sphere(0.07, loc=(x + s * 0.2, y - 0.45, z0 + 0.55 + 0.33 * k), segs=6, rings=3))
+                add(C.CHARCOAL, ns.sphere(0.07, loc=(x + s * 0.2, y - 0.45, z0 + 0.55 + 0.33 * k), segs=6, rings=3))
 
 
 # ------------------------------------------------------------------------------------------------
@@ -426,7 +440,8 @@ def build():
     C.part(white + groups.pop(C.PAPER, []), "White", C.PAPER, smooth_angle=40)
     for i, objs in enumerate(shirts):
         ns.tag(C.merge(objs, f"Shirt{i + 1}"), f"Shirt{i + 1}", CLASSES[i][1], "Fabric", recolor=f"shirt{i + 1}", smooth_angle=50)
-    names = {PANTS: "Pants", SKIN: "MannequinSkin", C.BRAND: "CapRed", C.NAVY_DEEP: "CapNavy", C.CHARCOAL: "Shoes"}
+    names = {PANTS: "Pants", SKIN: "MannequinSkin", C.BRAND: "CapRed", C.NAVY_DEEP: "CapNavy", C.CHARCOAL: "Shoes",
+             UNDERSHIRT: "Undershirt", BANDANA: "Bandana", TIE_RED: "Tie", BADGE_ORANGE: "BadgeOrange", REFLECT: "Reflective"}
     for col, objs in groups.items():
         C.part(objs, names.get(col, "Dress" + col.lstrip("#")), col, smooth_angle=45)
     C.add_parts(badges, "Badge", smooth_angle=40)
