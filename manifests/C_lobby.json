@@ -2932,6 +2932,149 @@
    }
   }
  },
+ "Lobby_StoreWallPlain": {
+  "group": "Lobby",
+  "size": [
+   8.0,
+   14.0,
+   1.94
+  ],
+  "tris": 1756,
+  "meta": {
+   "module": "hq_wall",
+   "grid": 8,
+   "size": [
+    8,
+    14,
+    1.5
+   ],
+   "exterior": "front (-Y / LookVector)",
+   "matches": "Lobby_StoreFrontBay",
+   "header_band_z": [
+    10.4,
+    11.4
+   ],
+   "roles": {
+    "brick": "Brick",
+    "header": "Header"
+   },
+   "collision": "none (map adds collision)",
+   "variant": "Lobby_StoreWall without the sconce (behind the leaderboards)"
+  },
+  "url": "https://raw.githubusercontent.com/landonhjones2020-bit/nightshift-assets/main/meshes/C_lobby/Lobby_StoreWallPlain.json",
+  "parts": [
+   {
+    "name": "Brick",
+    "color": "#8A3E30",
+    "material": "SmoothPlastic",
+    "transparency": 0.0,
+    "castShadow": true,
+    "canCollide": false,
+    "role": "brick",
+    "bone": null,
+    "offset": [
+     0.0,
+     7.025,
+     0.0
+    ],
+    "size": [
+     8.0,
+     12.85,
+     1.5
+    ],
+    "hash": "86f04f2f0bd29b70",
+    "tris": 24
+   },
+   {
+    "name": "SmoothPlastic",
+    "color": "#FFFFFF",
+    "material": "SmoothPlastic",
+    "transparency": 0.0,
+    "castShadow": true,
+    "canCollide": false,
+    "role": null,
+    "bone": null,
+    "offset": [
+     0.0,
+     7.315,
+     0.0
+    ],
+    "size": [
+     8.0,
+     13.37,
+     1.94
+    ],
+    "hash": "a077a54504e26855",
+    "tris": 1548
+   },
+   {
+    "name": "Plinth",
+    "color": "#8E8C86",
+    "material": "Concrete",
+    "transparency": 0.0,
+    "castShadow": true,
+    "canCollide": false,
+    "role": null,
+    "bone": null,
+    "offset": [
+     0.0,
+     0.3,
+     0.0
+    ],
+    "size": [
+     8.0,
+     0.6,
+     1.74
+    ],
+    "hash": "0b04b35d4b7bf0a5",
+    "tris": 36
+   },
+   {
+    "name": "Header",
+    "color": "#E8502A",
+    "material": "SmoothPlastic",
+    "transparency": 0.0,
+    "castShadow": true,
+    "canCollide": false,
+    "role": "header",
+    "bone": null,
+    "offset": [
+     0.0,
+     10.9,
+     0.0
+    ],
+    "size": [
+     8.0,
+     1.0,
+     1.62
+    ],
+    "hash": "ca5c1dfcde9c2480",
+    "tris": 28
+   },
+   {
+    "name": "Chrome",
+    "color": "#D3D8DC",
+    "material": "Metal",
+    "transparency": 0.0,
+    "castShadow": true,
+    "canCollide": false,
+    "role": null,
+    "bone": null,
+    "offset": [
+     0.0,
+     10.9,
+     -0.83
+    ],
+    "size": [
+     6.53,
+     0.69,
+     0.06
+    ],
+    "hash": "a00cb405445679e6",
+    "tris": 120
+   }
+  ]
+ },
  "Lobby_StringLights": {
   "group": "Lobby",
   "size": [

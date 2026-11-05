@@ -691,7 +691,7 @@
    43.05,
    24.355
   ],
-  "tris": 19765,
+  "tris": 14641,
   "meta": {
    "screens": {
     "Screen": [
@@ -789,14 +789,14 @@
     "night_manager",
     "head_chef"
    ],
-   "class_order_note": "Mannequin1..6 / Tag1..6 / roles shirt1..shirt6, left to right as seen from the front",
+   "class_order_note": "Stand1..6 / Tag1..6, left to right as seen from the front",
    "roles": {
     "screen": "Screen, Tag1..Tag6",
     "glass": "Glass (window panes, door leaves, transom)",
     "neon": "LetterNeon (cyan CLASS SHOP outlines)",
-    "lamp": "Bulbs (letters, sign frame, canopy), LampStrips, PedestalGlow, ArchGlow1/2, FloodLens",
-    "shirt1..shirt6": "the mannequins' shirts (Config.Uniforms look.shirt)"
+    "lamp": "Bulbs (letters, sign frame, canopy), LampStrips, PedestalGlow, ArchGlow1/2, FloodLens"
    },
+   "cast": "the class characters stand at Stand1..6 (Character_Class_<id>, Config.Uniforms order)",
    "light_hint": {
     "sign": {
      "type": "SpotLight",
@@ -880,8 +880,8 @@
      41.6,
      24.22
     ],
-    "hash": "48977c326848309a",
-    "tris": 7353
+    "hash": "5516ae6a70fe10ce",
+    "tris": 3841
    },
    {
     "name": "Metal",
@@ -902,8 +902,8 @@
      42.15,
      24.255
     ],
-    "hash": "8bba543eaf925b64",
-    "tris": 3376
+    "hash": "b99efc574daf4887",
+    "tris": 2804
    },
    {
     "name": "Glass",
@@ -992,138 +992,6 @@
     ],
     "hash": "5a52f56e4556a951",
     "tris": 168
-   },
-   {
-    "name": "Shirt1",
-    "color": "#C9CFD6",
-    "material": "Fabric",
-    "transparency": 0.0,
-    "castShadow": true,
-    "canCollide": false,
-    "role": "shirt1",
-    "bone": null,
-    "offset": [
-     19.0,
-     5.76,
-     -5.398
-    ],
-    "size": [
-     2.671,
-     1.68,
-     0.9
-    ],
-    "hash": "3a1e5a9efc3a2d5b",
-    "tris": 180
-   },
-   {
-    "name": "Shirt2",
-    "color": "#F4F1EA",
-    "material": "Fabric",
-    "transparency": 0.0,
-    "castShadow": true,
-    "canCollide": false,
-    "role": "shirt2",
-    "bone": null,
-    "offset": [
-     15.3,
-     5.76,
-     -5.398
-    ],
-    "size": [
-     2.671,
-     1.68,
-     0.9
-    ],
-    "hash": "59bc343cd60744df",
-    "tris": 180
-   },
-   {
-    "name": "Shirt3",
-    "color": "#C8E83A",
-    "material": "Fabric",
-    "transparency": 0.0,
-    "castShadow": true,
-    "canCollide": false,
-    "role": "shirt3",
-    "bone": null,
-    "offset": [
-     11.6,
-     5.76,
-     -5.398
-    ],
-    "size": [
-     1.74,
-     1.68,
-     0.9
-    ],
-    "hash": "6cbe94cbcdaab08c",
-    "tris": 140
-   },
-   {
-    "name": "Shirt4",
-    "color": "#1B2A4A",
-    "material": "Fabric",
-    "transparency": 0.0,
-    "castShadow": true,
-    "canCollide": false,
-    "role": "shirt4",
-    "bone": null,
-    "offset": [
-     -11.6,
-     5.76,
-     -5.398
-    ],
-    "size": [
-     2.671,
-     1.68,
-     0.9
-    ],
-    "hash": "3ad1de8566c2b3de",
-    "tris": 180
-   },
-   {
-    "name": "Shirt5",
-    "color": "#A9C8E8",
-    "material": "Fabric",
-    "transparency": 0.0,
-    "castShadow": true,
-    "canCollide": false,
-    "role": "shirt5",
-    "bone": null,
-    "offset": [
-     -15.3,
-     5.76,
-     -5.398
-    ],
-    "size": [
-     2.671,
-     1.68,
-     0.9
-    ],
-    "hash": "d508acc83b1050b3",
-    "tris": 180
-   },
-   {
-    "name": "Shirt6",
-    "color": "#F4F1EA",
-    "material": "Fabric",
-    "transparency": 0.0,
-    "castShadow": true,
-    "canCollide": false,
-    "role": "shirt6",
-    "bone": null,
-    "offset": [
-     -19.0,
-     5.76,
-     -5.398
-    ],
-    "size": [
-     2.671,
-     1.68,
-     0.9
-    ],
-    "hash": "41763c75825967f8",
-    "tris": 180
    },
    {
     "name": "Tag1",
@@ -1476,6 +1344,54 @@
      0.0,
      30.2,
      -9.498
+    ],
+    "yaw": 0.0
+   },
+   "Stand1": {
+    "p": [
+     19.0,
+     2.45,
+     -5.398
+    ],
+    "yaw": 0.0
+   },
+   "Stand2": {
+    "p": [
+     15.3,
+     2.45,
+     -5.398
+    ],
+    "yaw": 0.0
+   },
+   "Stand3": {
+    "p": [
+     11.6,
+     2.45,
+     -5.398
+    ],
+    "yaw": 0.0
+   },
+   "Stand4": {
+    "p": [
+     -11.6,
+     2.45,
+     -5.398
+    ],
+    "yaw": 0.0
+   },
+   "Stand5": {
+    "p": [
+     -15.3,
+     2.45,
+     -5.398
+    ],
+    "yaw": 0.0
+   },
+   "Stand6": {
+    "p": [
+     -19.0,
+     2.45,
+     -5.398
     ],
     "yaw": 0.0
    },

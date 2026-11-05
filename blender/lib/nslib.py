@@ -1149,8 +1149,9 @@ def run_main(build, asset: str, batch: str, group: str, **export_kw):
     reset()
     extra = build() or {}
     print(f"[{asset}] triangles: {tri_count()}")
-    prev = render_preview(asset, out_dir=os.path.join(REPO, "..", "previews", batch))
-    print(f"[{asset}] preview: {prev}")
+    if os.environ.get("NS_NORENDER") != "1":
+        prev = render_preview(asset, out_dir=os.path.join(REPO, "..", "previews", batch))
+        print(f"[{asset}] preview: {prev}")
     if os.environ.get("NS_EXPORT") == "1":
         kw = dict(export_kw)
         kw.update(extra.get("export", {}))

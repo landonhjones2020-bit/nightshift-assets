@@ -9,6 +9,9 @@ hangs on the exterior face (Bulb, Neon, role "lamp").
 Pivot = bottom-centre of the wall centre line; exterior = front (-Y). Ends land on the
 8-stud grid so walls and storefront bays butt seamlessly. can_collide = False (the map adds
 collision). Socket Light = bulb centre (attach a SpotLight facing down).
+
+build(sconce=False) is Lobby_StoreWallPlain (2026-11-04): the facade modules behind the
+lobby's leaderboards, whose sconces hung in front of the boards' screens.
 """
 import os
 import sys
@@ -23,7 +26,7 @@ HT = C.HQ_T / 2
 SC_Z = 8.5                    # sconce wall plate height
 
 
-def build():
+def build(sconce=True):
     hz0, hz1 = C.HQ_HEADER
     # brick stops under / resumes over the header band so their end faces never share a plane
     body = [ns.box((W, C.HQ_T, hz0 - C.HQ_PLINTH), loc=(0, 0, (C.HQ_PLINTH + hz0) / 2), bevel=0.0),
@@ -44,6 +47,9 @@ def build():
         for z in (hz0 + 0.22, hz1 - 0.22):
             bolts.append(ns.box((0.13, 0.06, 0.13), loc=(x, -HT - 0.08, z), bevel=0.0))
 
+    if not sconce:
+        C.part(bolts, "Chrome", C.CHROME, "Metal", smooth_angle=50)
+        return
     # gooseneck barn light
     fy = -HT - 0.02
     plate = ns.cyl(0.32, 0.08, verts=12, bevel=0.0)

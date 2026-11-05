@@ -4,14 +4,11 @@
 likely be the strongest income driver"). A grand two-storey uniform outfitter in navy and cream
 with gold trim, taller than every other building in the lobby:
 
-  * Ground floor: two lit display windows with three full mannequins each, dressed as the six
-    classes (Config.Uniforms, left to right as seen from the front) to match their icons:
-    Trainee (grey shirt, orange name badge, red paper cap), Line Cook (white, red bandana), Stock
-    Runner (hi-vis vest with reflective stripes over a dark shirt, red cap), Security Guard (navy,
-    peaked cap, gold stars), Night Manager (light blue, red tie, gold name badge), Head Chef
-    (white, black buttons, tall toque). Each shirt (the vest for the Stock Runner) is its own part
-    (role shirt1..shirt6) so the map repaints it from the config. Round marble pedestals ring-lit
-    in warm light. Label screens over the windows (Tag1..Tag6).
+  * Ground floor: two lit display windows with three round marble pedestals each, ring-lit in
+    warm light, for the six class characters (blender/D_characters/_classes.py, placed by the
+    map at Stand1..6, Config.Uniforms order left to right as seen from the front). Until
+    2026-11-04 the pedestals carried dressed mannequins (mannequins=True still builds them).
+    Label screens over the windows (Tag1..Tag6).
   * Centre: recessed double glass doors under a theatre canopy whose fascia carries a gold
     "CLASSES" sign framed by marquee bulbs.
   * Upper floor: the big class screen (Screen) in a gold frame between two arched windows lit
@@ -20,9 +17,10 @@ with gold trim, taller than every other building in the lobby:
     stroke (Broadway style), cyan neon outlines and a marquee frame; on top, a gold-ringed crest
     with a white chef's toque and two stars. Two flood lamps on the cornice.
 
-Front = -Y, pivot = bottom-centre. Sockets: Screen, Tag1..6 (screen face centres), Mannequin1..6
-(torso front centres), Pad (on the ground in front), Flood1/2 (lamp lenses), Sign (sign face
-centre). All screens face front.
+Front = -Y, pivot = bottom-centre. Sockets: Screen, Tag1..6 (screen face centres), Stand1..6
+(pedestal tops: a class character's feet), Mannequin1..6 (torso height over each pedestal),
+Pad (on the ground in front), Flood1/2 (lamp lenses), Sign (sign face centre). All screens
+face front.
 """
 import math
 import os
@@ -49,6 +47,7 @@ DOOR = (-5.0, 5.0, PLINTH, 10.2)
 DOOR_Y = -4.9                                # door leaves plane (recessed)
 FRAME = 0.32
 MAN_X = (-19.0, -15.3, -11.6, 11.6, 15.3, 19.0)
+MANNEQUINS = os.environ.get("NS_MANNEQUINS") == "1"   # the class cast replaced them (2026-11-04)
 M_Y = -5.2                                   # mannequin centre line (depth)
 DISPLAY_FLOOR = WIN_L[2]
 PED_R, PED_H = 1.2, 0.35
@@ -300,8 +299,9 @@ def build():
         ped = C.prism(C.circle_pts(PED_R, 14, x, M_Y), "z", DISPLAY_FLOOR, DISPLAY_FLOOR + PED_H)
         peds.append(ped)
         glow.append(C.band(PED_R + 0.03, 0.12, loc=(x, M_Y, DISPLAY_FLOOR + PED_H - 0.1), verts=14))
-    for i, x in enumerate(MAN_X):
-        mannequin(i, x, groups, shirts)
+    if MANNEQUINS:
+        for i, x in enumerate(MAN_X):
+            mannequin(i, x, groups, shirts)
 
     # ----- door: recess, two glass leaves with gold frames and push bars, transom -------------------------
     interior.append(liner(DOOR[0], DOOR[1], DOOR[2] + 0.02, DOOR[3], WY, DOOR_Y - 0.02, bottom=False))
@@ -439,7 +439,8 @@ def build():
     ns.tag(C.merge(lens, "FloodLens"), "FloodLens", "#FFF4D6", "Neon", recolor="lamp", cast_shadow=False, smooth_angle=60)
     C.part(white + groups.pop(C.PAPER, []), "White", C.PAPER, smooth_angle=40)
     for i, objs in enumerate(shirts):
-        ns.tag(C.merge(objs, f"Shirt{i + 1}"), f"Shirt{i + 1}", CLASSES[i][1], "Fabric", recolor=f"shirt{i + 1}", smooth_angle=50)
+        if objs:
+            ns.tag(C.merge(objs, f"Shirt{i + 1}"), f"Shirt{i + 1}", CLASSES[i][1], "Fabric", recolor=f"shirt{i + 1}", smooth_angle=50)
     names = {PANTS: "Pants", SKIN: "MannequinSkin", C.BRAND: "CapRed", C.NAVY_DEEP: "CapNavy", C.CHARCOAL: "Shoes",
              UNDERSHIRT: "Undershirt", BANDANA: "Bandana", TIE_RED: "Tie", BADGE_ORANGE: "BadgeOrange", REFLECT: "Reflective"}
     for col, objs in groups.items():
@@ -454,6 +455,7 @@ def sockets():
     for i, x in enumerate(MAN_X):
         s[f"Tag{i + 1}"] = ((x, FY - 0.12, TAG_Z), 0.0)
         s[f"Mannequin{i + 1}"] = ((x, M_Y - 0.45, DISPLAY_FLOOR + PED_H + 0.12 + 2.0 + 0.35 + 0.8), 0.0)
+        s[f"Stand{i + 1}"] = ((x, M_Y, DISPLAY_FLOOR + PED_H), 0.0)
     for k, sgn in enumerate((-1, 1)):
         x = sgn * 19.0
         s[f"Flood{k + 1}"] = ((x, FY + 0.95, CORNICE[1] + 1.45), 0.0)
@@ -464,11 +466,11 @@ META = {
     "screens": {"Screen": [SCR_W, SCR_H], **{f"Tag{i + 1}": [TAG_W, TAG_H] for i in range(6)}},
     "surfaces": [C.screen_meta("Screen", SCR_W, SCR_H)] + [C.screen_meta(f"Tag{i + 1}", TAG_W, TAG_H) for i in range(6)],
     "class_order": [c[0] for c in CLASSES],
-    "class_order_note": "Mannequin1..6 / Tag1..6 / roles shirt1..shirt6, left to right as seen from the front",
+    "class_order_note": "Stand1..6 / Tag1..6, left to right as seen from the front",
     "roles": {"screen": "Screen, Tag1..Tag6", "glass": "Glass (window panes, door leaves, transom)",
               "neon": "LetterNeon (cyan CLASS SHOP outlines)",
-              "lamp": "Bulbs (letters, sign frame, canopy), LampStrips, PedestalGlow, ArchGlow1/2, FloodLens",
-              "shirt1..shirt6": "the mannequins' shirts (Config.Uniforms look.shirt)"},
+              "lamp": "Bulbs (letters, sign frame, canopy), LampStrips, PedestalGlow, ArchGlow1/2, FloodLens"},
+    "cast": "the class characters stand at Stand1..6 (Character_Class_<id>, Config.Uniforms order)",
     "light_hint": {"sign": {"type": "SpotLight", "from": "Flood1 / Flood2", "at": "Sign", "color": "#FFE7B8", "range": 40,
                             "brightness": 3},
                    "windows": {"type": "PointLight", "per": "display window + door", "color": C.LAMP_WARM, "range": 12,
