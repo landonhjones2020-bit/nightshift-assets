@@ -3532,7 +3532,7 @@
    {
     "name": "Facade",
     "color": "#2F5D50",
-    "material": "CorrugatedSteel",
+    "material": "CorrugatedMetal",
     "transparency": 0.0,
     "castShadow": true,
     "canCollide": true,
@@ -3554,7 +3554,7 @@
    {
     "name": "Ribs",
     "color": "#3B7062",
-    "material": "CorrugatedSteel",
+    "material": "CorrugatedMetal",
     "transparency": 0.0,
     "castShadow": true,
     "canCollide": false,
