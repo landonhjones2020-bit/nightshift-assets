@@ -262,6 +262,66 @@
    }
   ]
  },
+ "Shop_ClueNote": {
+  "group": "Shop",
+  "size": [
+   1.1,
+   1.1,
+   0.152
+  ],
+  "tris": 394,
+  "meta": {
+   "mount": "wall: back face on the wall, pivot = centre of the back face, LookVector = out of the wall",
+   "check": "part Check (Role 'check') is hidden by the game until the note has been read"
+  },
+  "url": "https://raw.githubusercontent.com/landonhjones2020-bit/nightshift-assets/main/meshes/L_decor/Shop_ClueNote.json",
+  "parts": [
+   {
+    "name": "SmoothPlastic",
+    "color": "#FFFFFF",
+    "material": "SmoothPlastic",
+    "transparency": 0.0,
+    "castShadow": true,
+    "canCollide": false,
+    "role": null,
+    "bone": null,
+    "offset": [
+     0.0,
+     0.0,
+     -0.076
+    ],
+    "size": [
+     1.1,
+     1.1,
+     0.152
+    ],
+    "hash": "f2ecbbd0d366777e",
+    "tris": 390
+   },
+   {
+    "name": "Check",
+    "color": "#2E8B4E",
+    "material": "SmoothPlastic",
+    "transparency": 0.0,
+    "castShadow": true,
+    "canCollide": false,
+    "role": "check",
+    "bone": null,
+    "offset": [
+     -0.03,
+     -0.087,
+     -0.049
+    ],
+    "size": [
+     0.657,
+     0.562,
+     0.057
+    ],
+    "hash": "4561221f7330211d",
+    "tris": 4
+   }
+  ]
+ },
  "Shop_CoffeeMachine": {
   "group": "Shop",
   "size": [
