@@ -16,7 +16,8 @@ but finished) with an open front between two lit display windows:
     Label screens above them on the facade (Tag1..Tag3, 4.2 x 1.4). Windows are cream-lit recesses
     (LampStrips, role "lamp") behind glass panes (Glass, role "glass").
   * Roof sign: big APRONS letters (mustard, cyan neon outline tubes LetterNeon, role "neon") on a
-    steel raceway, over a navy "& UNIFORMS" panel with pink neon letters (PanelNeon, role "neon").
+    steel raceway, over a navy "& STYLE" panel with pink neon letters (PanelNeon, role "neon").
+    (2026-11-04: the panel read "& UNIFORMS" until uniforms moved to the CLASS SHOP next door.)
 
 Front = -Y, pivot = bottom-centre. Sockets: Mannequin1..3 (torso FRONT centre = the R15
 BodyFrontAttachment spot, facing front), Tag1..3 and Screen (screen face centres), Mirror (glass
@@ -370,7 +371,7 @@ def build():
     deep.append(pnl)
     chrome.append(C.ring_slab(C.rrect(px1 - px0 + 0.24, pz1 - pz0 + 0.24, 0.45, 2, 0, (pz0 + pz1) / 2),
                               C.rrect(px1 - px0 - 0.06, pz1 - pz0 - 0.06, 0.32, 2, 0, (pz0 + pz1) / 2), "y", FY - 0.42, FY - 0.2))
-    uw = C.Word("& UNIFORMS", 0.0, cap=1.1, spacing=1.12, base=(pz0 + pz1) / 2 - 0.55)
+    uw = C.Word("& STYLE", 0.0, cap=1.1, spacing=1.12, base=(pz0 + pz1) / 2 - 0.55)
     uw.res = 1
     ns.tag(uw.solid(FY - 0.45, 0.06, front_only=True, name="PanelNeon"), "PanelNeon", C.PINK, "Neon", recolor="neon",
            cast_shadow=False, smooth_angle=30)
@@ -425,7 +426,7 @@ META = {
                     "butcher stripes navy/cream", "chef white"],
     "apron_order_note": "left to right as seen from the front, on the rail in the open front",
     "roles": {"screen": "Screen, Tag1, Tag2, Tag3", "glass": "Glass (2 window panes)", "mirror": "MirrorGlass",
-              "neon": "LetterNeon (cyan APRONS outlines), PanelNeon (pink & UNIFORMS)", "lamp": "LampStrips"},
+              "neon": "LetterNeon (cyan APRONS outlines), PanelNeon (pink & STYLE)", "lamp": "LampStrips"},
     "light_hint": {"sign": {"type": "PointLight", "at": "3 studs in front of the letters", "color": C.CYAN,
                             "range": 24, "brightness": 1.2},
                    "windows": {"type": "PointLight", "per": "window + shop interior", "color": C.LAMP_WARM, "range": 10,
