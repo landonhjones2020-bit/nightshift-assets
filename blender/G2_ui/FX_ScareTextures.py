@@ -154,7 +154,7 @@ def frost(size=1024, seed=9) -> Image.Image:
     edge = 1 - np.maximum(np.abs(u), np.abs(v))
     rough = fbm(size, rng, ((6, 0.5), (14, 0.3), (40, 0.2)))
     d = edge + (rough - 0.5) * 0.22
-    mist = np.clip(1 - d / 0.42, 0, 1) ** 1.6                    # the frosted band
+    mist = np.clip(1 - d / 0.24, 0, 1) ** 2.2                    # frosted only near the edge
     # crystals: dendrites growing in from the edges
     cr = Image.new("L", (size, size), 0)
     dr = ImageDraw.Draw(cr)
@@ -173,18 +173,18 @@ def frost(size=1024, seed=9) -> Image.Image:
             x, y = nx, ny
             a += pr.uniform(-0.12, 0.12)
 
-    for _ in range(230):
+    for _ in range(300):
         side = pr.randrange(4)
         t = pr.uniform(0, size)
         x, y, a = {0: (t, 0, math.pi / 2), 1: (t, size, -math.pi / 2), 2: (0, t, 0), 3: (size, t, math.pi)}[side]
         a += pr.uniform(-0.6, 0.6)
-        branch(x, y, a, pr.uniform(0.08, 0.3) * size, pr.uniform(1.5, 3.2), 0)
+        branch(x, y, a, pr.uniform(0.06, 0.26) * size, pr.uniform(1.8, 3.6), 0)
     crystals = np.asarray(cr.filter(ImageFilter.GaussianBlur(0.6)), np.float32) / 255.0
-    crystals *= np.clip(1 - d / 0.55, 0, 1)
+    crystals *= np.clip(1 - d / 0.45, 0, 1) ** 0.8
     speck = (rng.random((size, size)) < 0.012).astype(np.float32) * np.clip(1 - d / 0.5, 0, 1)
-    a = np.clip(mist * 0.78 + crystals * 0.95 + speck * 0.8, 0, 1)
-    tint = np.clip(0.75 + crystals * 0.25, 0, 1)
-    rgb = np.dstack([215 + 40 * tint, 236 + 19 * tint, 255 * np.ones_like(tint)])
+    a = np.clip(mist * 0.7 + crystals * 1.0 + speck * 0.8, 0, 1)
+    # bright, faintly cyan ice (no grey haze over the middle of the screen)
+    rgb = np.dstack([np.full_like(a, 228.0), np.full_like(a, 246.0), np.full_like(a, 255.0)])
     out = np.dstack([np.clip(rgb, 0, 255), a * 255]).astype(np.uint8)
     return Image.fromarray(out, "RGBA")
 
