@@ -1313,6 +1313,2886 @@
    }
   ]
  },
+ "Character_Class_bouncer": {
+  "group": "Characters",
+  "size": [
+   3.947,
+   5.05,
+   1.301
+  ],
+  "tris": 8942,
+  "meta": {
+   "root": {
+    "center": [
+     0,
+     2.95,
+     0
+    ],
+    "size": [
+     2.0,
+     2.0,
+     1.0
+    ]
+   },
+   "walkSpeed": 9.0,
+   "animRig": "ClassCast",
+   "socketBones": {
+    "HatSocket": "Head",
+    "HairSocket": "Head",
+    "FaceSocket": "Head",
+    "TorsoSocket": "Torso"
+   },
+   "eyelids": "role eyelid parts export Transparency 1 (eyes open); set 0 for ~0.12 s to blink",
+   "displayClip": "Display_bouncer",
+   "class": "bouncer",
+   "title": "Bouncer",
+   "note": "Shop display cast: play AnimState Display_bouncer (props are held in that pose)"
+  },
+  "url": "https://raw.githubusercontent.com/landonhjones2020-bit/nightshift-assets/main/meshes/D_characters/Character_Class_bouncer.json",
+  "parts": [
+   {
+    "name": "Hips",
+    "color": "#1E1F22",
+    "material": "SmoothPlastic",
+    "transparency": 0.0,
+    "castShadow": true,
+    "canCollide": false,
+    "role": null,
+    "bone": "Hips",
+    "offset": [
+     0.0,
+     2.06,
+     0.007
+    ],
+    "size": [
+     1.27,
+     0.8,
+     0.885
+    ],
+    "hash": "6b13406e116a1268",
+    "tris": 280
+   },
+   {
+    "name": "Torso",
+    "color": "#FFFFFF",
+    "material": "SmoothPlastic",
+    "transparency": 0.0,
+    "castShadow": true,
+    "canCollide": false,
+    "role": null,
+    "bone": "Torso",
+    "offset": [
+     0.0,
+     2.909,
+     -0.053
+    ],
+    "size": [
+     1.66,
+     1.478,
+     1.028
+    ],
+    "hash": "40a13ecf844c79a7",
+    "tris": 572
+   },
+   {
+    "name": "Head",
+    "color": "#FFFFFF",
+    "material": "SmoothPlastic",
+    "transparency": 0.0,
+    "castShadow": true,
+    "canCollide": false,
+    "role": null,
+    "bone": "Head",
+    "offset": [
+     0.003,
+     4.23,
+     -0.091
+    ],
+    "size": [
+     1.429,
+     1.64,
+     1.301
+    ],
+    "hash": "cfd9f000390991b3",
+    "tris": 3142
+   },
+   {
+    "name": "EyeL",
+    "color": "#F7F4EE",
+    "material": "SmoothPlastic",
+    "transparency": 0.0,
+    "castShadow": true,
+    "canCollide": false,
+    "role": "eye",
+    "bone": "Head",
+    "offset": [
+     -0.225,
+     4.42,
+     -0.553
+    ],
+    "size": [
+     0.208,
+     0.27,
+     0.124
+    ],
+    "hash": "e307d66dd3abacb9",
+    "tris": 144
+   },
+   {
+    "name": "EyelidL",
+    "color": "#5C3A28",
+    "material": "SmoothPlastic",
+    "transparency": 1.0,
+    "castShadow": false,
+    "canCollide": false,
+    "role": "eyelid",
+    "bone": "Head",
+    "offset": [
+     -0.222,
+     4.42,
+     -0.576
+    ],
+    "size": [
+     0.233,
+     0.302,
+     0.111
+    ],
+    "hash": "e53db45a6474d4cb",
+    "tris": 112
+   },
+   {
+    "name": "EyeR",
+    "color": "#F7F4EE",
+    "material": "SmoothPlastic",
+    "transparency": 0.0,
+    "castShadow": true,
+    "canCollide": false,
+    "role": "eye",
+    "bone": "Head",
+    "offset": [
+     0.225,
+     4.42,
+     -0.555
+    ],
+    "size": [
+     0.208,
+     0.27,
+     0.124
+    ],
+    "hash": "11ebf7f98c0cd83a",
+    "tris": 144
+   },
+   {
+    "name": "EyelidR",
+    "color": "#5C3A28",
+    "material": "SmoothPlastic",
+    "transparency": 1.0,
+    "castShadow": false,
+    "canCollide": false,
+    "role": "eyelid",
+    "bone": "Head",
+    "offset": [
+     0.222,
+     4.42,
+     -0.577
+    ],
+    "size": [
+     0.233,
+     0.302,
+     0.111
+    ],
+    "hash": "87a25d0c277f6f88",
+    "tris": 112
+   },
+   {
+    "name": "ArmL",
+    "color": "#FFFFFF",
+    "material": "SmoothPlastic",
+    "transparency": 0.0,
+    "castShadow": true,
+    "canCollide": false,
+    "role": null,
+    "bone": "ArmL",
+    "offset": [
+     -0.931,
+     2.745,
+     0.0
+    ],
+    "size": [
+     0.575,
+     1.568,
+     0.516
+    ],
+    "hash": "5e70b9d97fd608a7",
+    "tris": 364
+   },
+   {
+    "name": "HandL",
+    "color": "#5C3A28",
+    "material": "SmoothPlastic",
+    "transparency": 0.0,
+    "castShadow": true,
+    "canCollide": false,
+    "role": null,
+    "bone": "HandL",
+    "offset": [
+     -1.043,
+     1.816,
+     -0.033
+    ],
+    "size": [
+     0.274,
+     0.566,
+     0.437
+    ],
+    "hash": "cb3ab71e8b754714",
+    "tris": 240
+   },
+   {
+    "name": "ArmR",
+    "color": "#FFFFFF",
+    "material": "SmoothPlastic",
+    "transparency": 0.0,
+    "castShadow": true,
+    "canCollide": false,
+    "role": null,
+    "bone": "ArmR",
+    "offset": [
+     0.931,
+     2.745,
+     0.0
+    ],
+    "size": [
+     0.575,
+     1.568,
+     0.516
+    ],
+    "hash": "a5576c49736ae1d2",
+    "tris": 364
+   },
+   {
+    "name": "HandR",
+    "color": "#5C3A28",
+    "material": "SmoothPlastic",
+    "transparency": 0.0,
+    "castShadow": true,
+    "canCollide": false,
+    "role": null,
+    "bone": "HandR",
+    "offset": [
+     1.043,
+     1.816,
+     -0.033
+    ],
+    "size": [
+     0.274,
+     0.566,
+     0.437
+    ],
+    "hash": "d3f68fbda770b0cf",
+    "tris": 240
+   },
+   {
+    "name": "LegL",
+    "color": "#FFFFFF",
+    "material": "SmoothPlastic",
+    "transparency": 0.0,
+    "castShadow": true,
+    "canCollide": false,
+    "role": null,
+    "bone": "LegL",
+    "offset": [
+     -0.34,
+     1.12,
+     -0.138
+    ],
+    "size": [
+     0.634,
+     2.24,
+     0.985
+    ],
+    "hash": "d358abe83f4bf5e2",
+    "tris": 576
+   },
+   {
+    "name": "LegR",
+    "color": "#FFFFFF",
+    "material": "SmoothPlastic",
+    "transparency": 0.0,
+    "castShadow": true,
+    "canCollide": false,
+    "role": null,
+    "bone": "LegR",
+    "offset": [
+     0.34,
+     1.12,
+     -0.138
+    ],
+    "size": [
+     0.634,
+     2.24,
+     0.985
+    ],
+    "hash": "3621bd4799b01044",
+    "tris": 576
+   },
+   {
+    "name": "Chain",
+    "color": "#D7DCE2",
+    "material": "Metal",
+    "transparency": 0.0,
+    "castShadow": true,
+    "canCollide": false,
+    "role": null,
+    "bone": "Torso",
+    "offset": [
+     0.0,
+     3.478,
+     -0.178
+    ],
+    "size": [
+     0.744,
+     0.159,
+     0.316
+    ],
+    "hash": "a695891f79c1cb11",
+    "tris": 1152
+   },
+   {
+    "name": "ShadesLens",
+    "color": "#15161C",
+    "material": "Glass",
+    "transparency": 0.1,
+    "castShadow": false,
+    "canCollide": false,
+    "role": null,
+    "bone": "Head",
+    "offset": [
+     0.0,
+     4.42,
+     -0.686
+    ],
+    "size": [
+     0.817,
+     0.194,
+     0.072
+    ],
+    "hash": "e04ff953caeee51f",
+    "tris": 120
+   },
+   {
+    "name": "Stanchion",
+    "color": "#E2B64A",
+    "material": "Metal",
+    "transparency": 0.0,
+    "castShadow": true,
+    "canCollide": false,
+    "role": null,
+    "bone": "Hips",
+    "offset": [
+     -1.25,
+     1.305,
+     -0.25
+    ],
+    "size": [
+     0.64,
+     2.61,
+     0.64
+    ],
+    "hash": "64230aaff80def2a",
+    "tris": 652
+   },
+   {
+    "name": "VelvetRope",
+    "color": "#8E1B2C",
+    "material": "Fabric",
+    "transparency": 0.0,
+    "castShadow": true,
+    "canCollide": false,
+    "role": null,
+    "bone": "Hips",
+    "offset": [
+     -2.026,
+     1.854,
+     -0.376
+    ],
+    "size": [
+     1.405,
+     0.718,
+     0.368
+    ],
+    "hash": "d23034bb673576dd",
+    "tris": 152
+   }
+  ],
+  "rig": {
+   "bones": [
+    {
+     "name": "Hips",
+     "parent": null,
+     "joint": [
+      0.0,
+      2.05,
+      0.0
+     ]
+    },
+    {
+     "name": "Torso",
+     "parent": "Hips",
+     "joint": [
+      0.0,
+      2.38,
+      0.0
+     ]
+    },
+    {
+     "name": "Head",
+     "parent": "Torso",
+     "joint": [
+      0.0,
+      3.62,
+      0.0
+     ]
+    },
+    {
+     "name": "ArmL",
+     "parent": "Torso",
+     "joint": [
+      -0.9,
+      3.32,
+      0.0
+     ]
+    },
+    {
+     "name": "HandL",
+     "parent": "ArmL",
+     "joint": [
+      -1.038,
+      2.007,
+      0.0
+     ]
+    },
+    {
+     "name": "ArmR",
+     "parent": "Torso",
+     "joint": [
+      0.9,
+      3.32,
+      0.0
+     ]
+    },
+    {
+     "name": "HandR",
+     "parent": "ArmR",
+     "joint": [
+      1.038,
+      2.007,
+      0.0
+     ]
+    },
+    {
+     "name": "LegL",
+     "parent": "Hips",
+     "joint": [
+      -0.34,
+      1.95,
+      0.0
+     ]
+    },
+    {
+     "name": "LegR",
+     "parent": "Hips",
+     "joint": [
+      0.34,
+      1.95,
+      0.0
+     ]
+    }
+   ]
+  },
+  "sockets": {
+   "FaceSocket": {
+    "p": [
+     0.0,
+     4.42,
+     -0.615
+    ],
+    "yaw": 0.0
+   },
+   "HairSocket": {
+    "p": [
+     0.0,
+     5.05,
+     -0.03
+    ],
+    "yaw": 0.0
+   },
+   "HatSocket": {
+    "p": [
+     0.0,
+     5.13,
+     -0.03
+    ],
+    "yaw": 0.0
+   },
+   "TorsoSocket": {
+    "p": [
+     0.0,
+     3.0,
+     -0.49
+    ],
+    "yaw": 0.0
+   }
+  }
+ },
+ "Character_Class_cashier": {
+  "group": "Characters",
+  "size": [
+   2.548,
+   5.112,
+   1.852
+  ],
+  "tris": 6450,
+  "meta": {
+   "root": {
+    "center": [
+     0,
+     2.95,
+     0
+    ],
+    "size": [
+     2.0,
+     2.0,
+     1.0
+    ]
+   },
+   "walkSpeed": 9.0,
+   "animRig": "ClassCast",
+   "socketBones": {
+    "HatSocket": "Head",
+    "HairSocket": "Head",
+    "FaceSocket": "Head",
+    "TorsoSocket": "Torso"
+   },
+   "eyelids": "role eyelid parts export Transparency 1 (eyes open); set 0 for ~0.12 s to blink",
+   "displayClip": "Display_cashier",
+   "class": "cashier",
+   "title": "Cashier",
+   "note": "Shop display cast: play AnimState Display_cashier (props are held in that pose)"
+  },
+  "url": "https://raw.githubusercontent.com/landonhjones2020-bit/nightshift-assets/main/meshes/D_characters/Character_Class_cashier.json",
+  "parts": [
+   {
+    "name": "Hips",
+    "color": "#2B2D33",
+    "material": "SmoothPlastic",
+    "transparency": 0.0,
+    "castShadow": true,
+    "canCollide": false,
+    "role": null,
+    "bone": "Hips",
+    "offset": [
+     0.0,
+     2.06,
+     0.007
+    ],
+    "size": [
+     1.27,
+     0.8,
+     0.885
+    ],
+    "hash": "6b13406e116a1268",
+    "tris": 280
+   },
+   {
+    "name": "Torso",
+    "color": "#FFFFFF",
+    "material": "SmoothPlastic",
+    "transparency": 0.0,
+    "castShadow": true,
+    "canCollide": false,
+    "role": null,
+    "bone": "Torso",
+    "offset": [
+     0.0,
+     2.909,
+     -0.067
+    ],
+    "size": [
+     1.66,
+     1.478,
+     1.056
+    ],
+    "hash": "6b30014e797689e2",
+    "tris": 716
+   },
+   {
+    "name": "Head",
+    "color": "#FFFFFF",
+    "material": "SmoothPlastic",
+    "transparency": 0.0,
+    "castShadow": true,
+    "canCollide": false,
+    "role": null,
+    "bone": "Head",
+    "offset": [
+     0.001,
+     4.261,
+     0.206
+    ],
+    "size": [
+     1.379,
+     1.702,
+     1.852
+    ],
+    "hash": "6943fe1dcdf3f1ee",
+    "tris": 2078
+   },
+   {
+    "name": "EyeL",
+    "color": "#F7F4EE",
+    "material": "SmoothPlastic",
+    "transparency": 0.0,
+    "castShadow": true,
+    "canCollide": false,
+    "role": "eye",
+    "bone": "Head",
+    "offset": [
+     -0.225,
+     4.42,
+     -0.553
+    ],
+    "size": [
+     0.208,
+     0.27,
+     0.124
+    ],
+    "hash": "e307d66dd3abacb9",
+    "tris": 144
+   },
+   {
+    "name": "EyelidL",
+    "color": "#A86B4A",
+    "material": "SmoothPlastic",
+    "transparency": 1.0,
+    "castShadow": false,
+    "canCollide": false,
+    "role": "eyelid",
+    "bone": "Head",
+    "offset": [
+     -0.222,
+     4.42,
+     -0.576
+    ],
+    "size": [
+     0.233,
+     0.302,
+     0.111
+    ],
+    "hash": "e53db45a6474d4cb",
+    "tris": 112
+   },
+   {
+    "name": "EyeR",
+    "color": "#F7F4EE",
+    "material": "SmoothPlastic",
+    "transparency": 0.0,
+    "castShadow": true,
+    "canCollide": false,
+    "role": "eye",
+    "bone": "Head",
+    "offset": [
+     0.225,
+     4.42,
+     -0.555
+    ],
+    "size": [
+     0.208,
+     0.27,
+     0.124
+    ],
+    "hash": "11ebf7f98c0cd83a",
+    "tris": 144
+   },
+   {
+    "name": "EyelidR",
+    "color": "#A86B4A",
+    "material": "SmoothPlastic",
+    "transparency": 1.0,
+    "castShadow": false,
+    "canCollide": false,
+    "role": "eyelid",
+    "bone": "Head",
+    "offset": [
+     0.222,
+     4.42,
+     -0.577
+    ],
+    "size": [
+     0.233,
+     0.302,
+     0.111
+    ],
+    "hash": "87a25d0c277f6f88",
+    "tris": 112
+   },
+   {
+    "name": "ArmL",
+    "color": "#FFFFFF",
+    "material": "SmoothPlastic",
+    "transparency": 0.0,
+    "castShadow": true,
+    "canCollide": false,
+    "role": null,
+    "bone": "ArmL",
+    "offset": [
+     -0.931,
+     2.745,
+     0.0
+    ],
+    "size": [
+     0.575,
+     1.568,
+     0.516
+    ],
+    "hash": "c0ab74b1994d9f0a",
+    "tris": 364
+   },
+   {
+    "name": "HandL",
+    "color": "#FFFFFF",
+    "material": "SmoothPlastic",
+    "transparency": 0.0,
+    "castShadow": true,
+    "canCollide": false,
+    "role": null,
+    "bone": "HandL",
+    "offset": [
+     -1.029,
+     1.714,
+     -0.008
+    ],
+    "size": [
+     0.303,
+     0.771,
+     0.487
+    ],
+    "hash": "2914a7aab269262e",
+    "tris": 388
+   },
+   {
+    "name": "ArmR",
+    "color": "#FFFFFF",
+    "material": "SmoothPlastic",
+    "transparency": 0.0,
+    "castShadow": true,
+    "canCollide": false,
+    "role": null,
+    "bone": "ArmR",
+    "offset": [
+     0.931,
+     2.745,
+     0.0
+    ],
+    "size": [
+     0.575,
+     1.568,
+     0.516
+    ],
+    "hash": "2bacd57c50dc5bb3",
+    "tris": 364
+   },
+   {
+    "name": "HandR",
+    "color": "#FFFFFF",
+    "material": "SmoothPlastic",
+    "transparency": 0.0,
+    "castShadow": true,
+    "canCollide": false,
+    "role": null,
+    "bone": "HandR",
+    "offset": [
+     1.043,
+     1.816,
+     -0.02
+    ],
+    "size": [
+     0.274,
+     0.566,
+     0.64
+    ],
+    "hash": "da819a89599bd904",
+    "tris": 280
+   },
+   {
+    "name": "LegL",
+    "color": "#FFFFFF",
+    "material": "SmoothPlastic",
+    "transparency": 0.0,
+    "castShadow": true,
+    "canCollide": false,
+    "role": null,
+    "bone": "LegL",
+    "offset": [
+     -0.34,
+     1.12,
+     -0.138
+    ],
+    "size": [
+     0.634,
+     2.24,
+     0.985
+    ],
+    "hash": "c7e191b4b24474ac",
+    "tris": 576
+   },
+   {
+    "name": "LegR",
+    "color": "#FFFFFF",
+    "material": "SmoothPlastic",
+    "transparency": 0.0,
+    "castShadow": true,
+    "canCollide": false,
+    "role": null,
+    "bone": "LegR",
+    "offset": [
+     0.34,
+     1.12,
+     -0.138
+    ],
+    "size": [
+     0.634,
+     2.24,
+     0.985
+    ],
+    "hash": "f679446e3e18cb71",
+    "tris": 576
+   },
+   {
+    "name": "Torso_Fabric",
+    "color": "#FFFFFF",
+    "material": "Fabric",
+    "transparency": 0.0,
+    "castShadow": true,
+    "canCollide": false,
+    "role": null,
+    "bone": "Torso",
+    "offset": [
+     0.0,
+     3.326,
+     -0.416
+    ],
+    "size": [
+     0.47,
+     0.661,
+     0.24
+    ],
+    "hash": "658ab39e1e964eeb",
+    "tris": 188
+   },
+   {
+    "name": "Badge",
+    "color": "#F6F3EC",
+    "material": "SmoothPlastic",
+    "transparency": 0.0,
+    "castShadow": true,
+    "canCollide": false,
+    "role": "badge",
+    "bone": "Torso",
+    "offset": [
+     -0.468,
+     3.118,
+     -0.521
+    ],
+    "size": [
+     0.315,
+     0.19,
+     0.164
+    ],
+    "hash": "b4105ac39d92a2f6",
+    "tris": 44
+   },
+   {
+    "name": "ArmL_Trim",
+    "color": "#F6F3EC",
+    "material": "Fabric",
+    "transparency": 0.0,
+    "castShadow": true,
+    "canCollide": false,
+    "role": null,
+    "bone": "ArmL",
+    "offset": [
+     -0.949,
+     2.858,
+     0.0
+    ],
+    "size": [
+     0.542,
+     0.106,
+     0.524
+    ],
+    "hash": "f1bf34ca7e16fb8b",
+    "tris": 32
+   },
+   {
+    "name": "ArmR_Trim",
+    "color": "#F6F3EC",
+    "material": "Fabric",
+    "transparency": 0.0,
+    "castShadow": true,
+    "canCollide": false,
+    "role": null,
+    "bone": "ArmR",
+    "offset": [
+     0.949,
+     2.858,
+     0.0
+    ],
+    "size": [
+     0.542,
+     0.106,
+     0.524
+    ],
+    "hash": "2f2c347f7112ca09",
+    "tris": 32
+   },
+   {
+    "name": "PencilTip",
+    "color": "#E3CDA0",
+    "material": "Wood",
+    "transparency": 0.0,
+    "castShadow": true,
+    "canCollide": false,
+    "role": null,
+    "bone": "HandR",
+    "offset": [
+     1.034,
+     1.759,
+     -0.39
+    ],
+    "size": [
+     0.07,
+     0.061,
+     0.1
+    ],
+    "hash": "985aae1d53446896",
+    "tris": 20
+   }
+  ],
+  "rig": {
+   "bones": [
+    {
+     "name": "Hips",
+     "parent": null,
+     "joint": [
+      0.0,
+      2.05,
+      0.0
+     ]
+    },
+    {
+     "name": "Torso",
+     "parent": "Hips",
+     "joint": [
+      0.0,
+      2.38,
+      0.0
+     ]
+    },
+    {
+     "name": "Head",
+     "parent": "Torso",
+     "joint": [
+      0.0,
+      3.62,
+      0.0
+     ]
+    },
+    {
+     "name": "ArmL",
+     "parent": "Torso",
+     "joint": [
+      -0.9,
+      3.32,
+      0.0
+     ]
+    },
+    {
+     "name": "HandL",
+     "parent": "ArmL",
+     "joint": [
+      -1.038,
+      2.007,
+      0.0
+     ]
+    },
+    {
+     "name": "ArmR",
+     "parent": "Torso",
+     "joint": [
+      0.9,
+      3.32,
+      0.0
+     ]
+    },
+    {
+     "name": "HandR",
+     "parent": "ArmR",
+     "joint": [
+      1.038,
+      2.007,
+      0.0
+     ]
+    },
+    {
+     "name": "LegL",
+     "parent": "Hips",
+     "joint": [
+      -0.34,
+      1.95,
+      0.0
+     ]
+    },
+    {
+     "name": "LegR",
+     "parent": "Hips",
+     "joint": [
+      0.34,
+      1.95,
+      0.0
+     ]
+    }
+   ]
+  },
+  "sockets": {
+   "FaceSocket": {
+    "p": [
+     0.0,
+     4.42,
+     -0.615
+    ],
+    "yaw": 0.0
+   },
+   "HairSocket": {
+    "p": [
+     0.0,
+     5.05,
+     -0.03
+    ],
+    "yaw": 0.0
+   },
+   "HatSocket": {
+    "p": [
+     0.0,
+     5.13,
+     -0.03
+    ],
+    "yaw": 0.0
+   },
+   "TorsoSocket": {
+    "p": [
+     0.0,
+     3.0,
+     -0.49
+    ],
+    "yaw": 0.0
+   }
+  }
+ },
+ "Character_Class_detective": {
+  "group": "Characters",
+  "size": [
+   2.651,
+   5.36,
+   2.041
+  ],
+  "tris": 7892,
+  "meta": {
+   "root": {
+    "center": [
+     0,
+     2.95,
+     0
+    ],
+    "size": [
+     2.0,
+     2.0,
+     1.0
+    ]
+   },
+   "walkSpeed": 9.0,
+   "animRig": "ClassCast",
+   "socketBones": {
+    "HatSocket": "Head",
+    "HairSocket": "Head",
+    "FaceSocket": "Head",
+    "TorsoSocket": "Torso"
+   },
+   "eyelids": "role eyelid parts export Transparency 1 (eyes open); set 0 for ~0.12 s to blink",
+   "displayClip": "Display_detective",
+   "class": "detective",
+   "title": "Detective",
+   "note": "Shop display cast: play AnimState Display_detective (props are held in that pose)"
+  },
+  "url": "https://raw.githubusercontent.com/landonhjones2020-bit/nightshift-assets/main/meshes/D_characters/Character_Class_detective.json",
+  "parts": [
+   {
+    "name": "Hips",
+    "color": "#FFFFFF",
+    "material": "SmoothPlastic",
+    "transparency": 0.0,
+    "castShadow": true,
+    "canCollide": false,
+    "role": null,
+    "bone": "Hips",
+    "offset": [
+     0.0,
+     2.06,
+     -0.047
+    ],
+    "size": [
+     1.27,
+     0.8,
+     0.995
+    ],
+    "hash": "aeb5b6007764d982",
+    "tris": 324
+   },
+   {
+    "name": "Torso",
+    "color": "#FFFFFF",
+    "material": "SmoothPlastic",
+    "transparency": 0.0,
+    "castShadow": true,
+    "canCollide": false,
+    "role": null,
+    "bone": "Torso",
+    "offset": [
+     0.0,
+     2.909,
+     -0.064
+    ],
+    "size": [
+     1.66,
+     1.478,
+     1.049
+    ],
+    "hash": "4eebd9806fbeadcb",
+    "tris": 752
+   },
+   {
+    "name": "Head",
+    "color": "#FFFFFF",
+    "material": "SmoothPlastic",
+    "transparency": 0.0,
+    "castShadow": true,
+    "canCollide": false,
+    "role": null,
+    "bone": "Head",
+    "offset": [
+     0.0,
+     4.277,
+     -0.045
+    ],
+    "size": [
+     1.377,
+     1.735,
+     1.35
+    ],
+    "hash": "02e9ee3595d3a859",
+    "tris": 2288
+   },
+   {
+    "name": "EyeL",
+    "color": "#F7F4EE",
+    "material": "SmoothPlastic",
+    "transparency": 0.0,
+    "castShadow": true,
+    "canCollide": false,
+    "role": "eye",
+    "bone": "Head",
+    "offset": [
+     -0.225,
+     4.42,
+     -0.553
+    ],
+    "size": [
+     0.208,
+     0.27,
+     0.124
+    ],
+    "hash": "e307d66dd3abacb9",
+    "tris": 144
+   },
+   {
+    "name": "EyelidL",
+    "color": "#C48A63",
+    "material": "SmoothPlastic",
+    "transparency": 1.0,
+    "castShadow": false,
+    "canCollide": false,
+    "role": "eyelid",
+    "bone": "Head",
+    "offset": [
+     -0.222,
+     4.42,
+     -0.576
+    ],
+    "size": [
+     0.233,
+     0.302,
+     0.111
+    ],
+    "hash": "e53db45a6474d4cb",
+    "tris": 112
+   },
+   {
+    "name": "EyeR",
+    "color": "#F7F4EE",
+    "material": "SmoothPlastic",
+    "transparency": 0.0,
+    "castShadow": true,
+    "canCollide": false,
+    "role": "eye",
+    "bone": "Head",
+    "offset": [
+     0.225,
+     4.42,
+     -0.555
+    ],
+    "size": [
+     0.208,
+     0.27,
+     0.124
+    ],
+    "hash": "11ebf7f98c0cd83a",
+    "tris": 144
+   },
+   {
+    "name": "EyelidR",
+    "color": "#C48A63",
+    "material": "SmoothPlastic",
+    "transparency": 1.0,
+    "castShadow": false,
+    "canCollide": false,
+    "role": "eyelid",
+    "bone": "Head",
+    "offset": [
+     0.222,
+     4.42,
+     -0.577
+    ],
+    "size": [
+     0.233,
+     0.302,
+     0.111
+    ],
+    "hash": "87a25d0c277f6f88",
+    "tris": 112
+   },
+   {
+    "name": "ArmL",
+    "color": "#8A6A44",
+    "material": "SmoothPlastic",
+    "transparency": 0.0,
+    "castShadow": true,
+    "canCollide": false,
+    "role": null,
+    "bone": "ArmL",
+    "offset": [
+     -0.958,
+     2.754,
+     0.0
+    ],
+    "size": [
+     0.616,
+     1.55,
+     0.504
+    ],
+    "hash": "d251e9d4087dce85",
+    "tris": 280
+   },
+   {
+    "name": "HandL",
+    "color": "#C48A63",
+    "material": "SmoothPlastic",
+    "transparency": 0.0,
+    "castShadow": true,
+    "canCollide": false,
+    "role": null,
+    "bone": "HandL",
+    "offset": [
+     -1.043,
+     1.816,
+     -0.033
+    ],
+    "size": [
+     0.274,
+     0.566,
+     0.437
+    ],
+    "hash": "cb3ab71e8b754714",
+    "tris": 240
+   },
+   {
+    "name": "ArmR",
+    "color": "#8A6A44",
+    "material": "SmoothPlastic",
+    "transparency": 0.0,
+    "castShadow": true,
+    "canCollide": false,
+    "role": null,
+    "bone": "ArmR",
+    "offset": [
+     0.958,
+     2.754,
+     0.0
+    ],
+    "size": [
+     0.616,
+     1.55,
+     0.504
+    ],
+    "hash": "ba7a29c860a16b33",
+    "tris": 280
+   },
+   {
+    "name": "HandR",
+    "color": "#C48A63",
+    "material": "SmoothPlastic",
+    "transparency": 0.0,
+    "castShadow": true,
+    "canCollide": false,
+    "role": null,
+    "bone": "HandR",
+    "offset": [
+     1.043,
+     1.816,
+     -0.033
+    ],
+    "size": [
+     0.274,
+     0.566,
+     0.437
+    ],
+    "hash": "d3f68fbda770b0cf",
+    "tris": 240
+   },
+   {
+    "name": "LegL",
+    "color": "#FFFFFF",
+    "material": "SmoothPlastic",
+    "transparency": 0.0,
+    "castShadow": true,
+    "canCollide": false,
+    "role": null,
+    "bone": "LegL",
+    "offset": [
+     -0.34,
+     1.12,
+     -0.138
+    ],
+    "size": [
+     0.634,
+     2.24,
+     0.985
+    ],
+    "hash": "a885c893844f2770",
+    "tris": 576
+   },
+   {
+    "name": "LegR",
+    "color": "#FFFFFF",
+    "material": "SmoothPlastic",
+    "transparency": 0.0,
+    "castShadow": true,
+    "canCollide": false,
+    "role": null,
+    "bone": "LegR",
+    "offset": [
+     0.34,
+     1.12,
+     -0.138
+    ],
+    "size": [
+     0.634,
+     2.24,
+     0.985
+    ],
+    "hash": "dcd6ceea47032ef5",
+    "tris": 576
+   },
+   {
+    "name": "Hips_Fabric",
+    "color": "#FFFFFF",
+    "material": "Fabric",
+    "transparency": 0.0,
+    "castShadow": true,
+    "canCollide": false,
+    "role": null,
+    "bone": "Hips",
+    "offset": [
+     0.0,
+     1.705,
+     -0.112
+    ],
+    "size": [
+     1.68,
+     1.31,
+     1.505
+    ],
+    "hash": "27e2aa9723900c02",
+    "tris": 280
+   },
+   {
+    "name": "Torso_Fabric",
+    "color": "#FFFFFF",
+    "material": "Fabric",
+    "transparency": 0.0,
+    "castShadow": true,
+    "canCollide": false,
+    "role": null,
+    "bone": "Torso",
+    "offset": [
+     0.0,
+     3.574,
+     -0.113
+    ],
+    "size": [
+     1.606,
+     0.399,
+     0.426
+    ],
+    "hash": "73b318e884ee6f59",
+    "tris": 152
+   },
+   {
+    "name": "Head_Fabric",
+    "color": "#FFFFFF",
+    "material": "Fabric",
+    "transparency": 0.0,
+    "castShadow": true,
+    "canCollide": false,
+    "role": null,
+    "bone": "Head",
+    "offset": [
+     0.0,
+     5.05,
+     -0.02
+    ],
+    "size": [
+     2.074,
+     0.62,
+     1.944
+    ],
+    "hash": "06ad679e5accc14a",
+    "tris": 732
+   },
+   {
+    "name": "MagHandle",
+    "color": "#3B2A1A",
+    "material": "Wood",
+    "transparency": 0.0,
+    "castShadow": true,
+    "canCollide": false,
+    "role": null,
+    "bone": "HandR",
+    "offset": [
+     1.034,
+     1.759,
+     -0.06
+    ],
+    "size": [
+     0.12,
+     0.12,
+     0.52
+    ],
+    "hash": "875d57334d5644ed",
+    "tris": 140
+   },
+   {
+    "name": "MagRing",
+    "color": "#E2B64A",
+    "material": "Metal",
+    "transparency": 0.0,
+    "castShadow": true,
+    "canCollide": false,
+    "role": null,
+    "bone": "HandR",
+    "offset": [
+     1.034,
+     1.759,
+     -0.662
+    ],
+    "size": [
+     0.614,
+     0.544,
+     0.685
+    ],
+    "hash": "efbc61f076bb3274",
+    "tris": 428
+   },
+   {
+    "name": "MagLens",
+    "color": "#CFEFFF",
+    "material": "Glass",
+    "transparency": 0.55,
+    "castShadow": false,
+    "canCollide": false,
+    "role": null,
+    "bone": "HandR",
+    "offset": [
+     1.034,
+     1.759,
+     -0.72
+    ],
+    "size": [
+     0.505,
+     0.44,
+     0.463
+    ],
+    "hash": "f88888d7d54e577e",
+    "tris": 92
+   }
+  ],
+  "rig": {
+   "bones": [
+    {
+     "name": "Hips",
+     "parent": null,
+     "joint": [
+      0.0,
+      2.05,
+      0.0
+     ]
+    },
+    {
+     "name": "Torso",
+     "parent": "Hips",
+     "joint": [
+      0.0,
+      2.38,
+      0.0
+     ]
+    },
+    {
+     "name": "Head",
+     "parent": "Torso",
+     "joint": [
+      0.0,
+      3.62,
+      0.0
+     ]
+    },
+    {
+     "name": "ArmL",
+     "parent": "Torso",
+     "joint": [
+      -0.9,
+      3.32,
+      0.0
+     ]
+    },
+    {
+     "name": "HandL",
+     "parent": "ArmL",
+     "joint": [
+      -1.038,
+      2.007,
+      0.0
+     ]
+    },
+    {
+     "name": "ArmR",
+     "parent": "Torso",
+     "joint": [
+      0.9,
+      3.32,
+      0.0
+     ]
+    },
+    {
+     "name": "HandR",
+     "parent": "ArmR",
+     "joint": [
+      1.038,
+      2.007,
+      0.0
+     ]
+    },
+    {
+     "name": "LegL",
+     "parent": "Hips",
+     "joint": [
+      -0.34,
+      1.95,
+      0.0
+     ]
+    },
+    {
+     "name": "LegR",
+     "parent": "Hips",
+     "joint": [
+      0.34,
+      1.95,
+      0.0
+     ]
+    }
+   ]
+  },
+  "sockets": {
+   "FaceSocket": {
+    "p": [
+     0.0,
+     4.42,
+     -0.615
+    ],
+    "yaw": 0.0
+   },
+   "HairSocket": {
+    "p": [
+     0.0,
+     5.05,
+     -0.03
+    ],
+    "yaw": 0.0
+   },
+   "HatSocket": {
+    "p": [
+     0.0,
+     5.13,
+     -0.03
+    ],
+    "yaw": 0.0
+   },
+   "TorsoSocket": {
+    "p": [
+     0.0,
+     3.0,
+     -0.49
+    ],
+    "yaw": 0.0
+   }
+  }
+ },
+ "Character_Class_exterminator": {
+  "group": "Characters",
+  "size": [
+   2.972,
+   5.25,
+   2.996
+  ],
+  "tris": 8510,
+  "meta": {
+   "root": {
+    "center": [
+     0,
+     2.95,
+     0
+    ],
+    "size": [
+     2.0,
+     2.0,
+     1.0
+    ]
+   },
+   "walkSpeed": 9.0,
+   "animRig": "ClassCast",
+   "socketBones": {
+    "HatSocket": "Head",
+    "HairSocket": "Head",
+    "FaceSocket": "Head",
+    "TorsoSocket": "Torso"
+   },
+   "eyelids": "role eyelid parts export Transparency 1 (eyes open); set 0 for ~0.12 s to blink",
+   "displayClip": "Display_exterminator",
+   "class": "exterminator",
+   "title": "Exterminator",
+   "note": "Shop display cast: play AnimState Display_exterminator (props are held in that pose)"
+  },
+  "url": "https://raw.githubusercontent.com/landonhjones2020-bit/nightshift-assets/main/meshes/D_characters/Character_Class_exterminator.json",
+  "parts": [
+   {
+    "name": "Hips",
+    "color": "#FFFFFF",
+    "material": "SmoothPlastic",
+    "transparency": 0.0,
+    "castShadow": true,
+    "canCollide": false,
+    "role": null,
+    "bone": "Hips",
+    "offset": [
+     0.045,
+     2.06,
+     0.0
+    ],
+    "size": [
+     1.43,
+     0.8,
+     0.93
+    ],
+    "hash": "b939e1008288d160",
+    "tris": 372
+   },
+   {
+    "name": "Torso",
+    "color": "#FFFFFF",
+    "material": "SmoothPlastic",
+    "transparency": 0.0,
+    "castShadow": true,
+    "canCollide": false,
+    "role": null,
+    "bone": "Torso",
+    "offset": [
+     0.0,
+     2.909,
+     -0.054
+    ],
+    "size": [
+     1.66,
+     1.478,
+     1.03
+    ],
+    "hash": "236582024e633ab6",
+    "tris": 636
+   },
+   {
+    "name": "Head",
+    "color": "#FFFFFF",
+    "material": "SmoothPlastic",
+    "transparency": 0.0,
+    "castShadow": true,
+    "canCollide": false,
+    "role": null,
+    "bone": "Head",
+    "offset": [
+     0.0,
+     4.281,
+     -0.045
+    ],
+    "size": [
+     1.377,
+     1.742,
+     1.35
+    ],
+    "hash": "5e76368de330c600",
+    "tris": 2676
+   },
+   {
+    "name": "EyeL",
+    "color": "#F7F4EE",
+    "material": "SmoothPlastic",
+    "transparency": 0.0,
+    "castShadow": true,
+    "canCollide": false,
+    "role": "eye",
+    "bone": "Head",
+    "offset": [
+     -0.225,
+     4.42,
+     -0.553
+    ],
+    "size": [
+     0.208,
+     0.27,
+     0.124
+    ],
+    "hash": "e307d66dd3abacb9",
+    "tris": 144
+   },
+   {
+    "name": "EyelidL",
+    "color": "#D9A07A",
+    "material": "SmoothPlastic",
+    "transparency": 1.0,
+    "castShadow": false,
+    "canCollide": false,
+    "role": "eyelid",
+    "bone": "Head",
+    "offset": [
+     -0.222,
+     4.42,
+     -0.576
+    ],
+    "size": [
+     0.233,
+     0.302,
+     0.111
+    ],
+    "hash": "e53db45a6474d4cb",
+    "tris": 112
+   },
+   {
+    "name": "EyeR",
+    "color": "#F7F4EE",
+    "material": "SmoothPlastic",
+    "transparency": 0.0,
+    "castShadow": true,
+    "canCollide": false,
+    "role": "eye",
+    "bone": "Head",
+    "offset": [
+     0.225,
+     4.42,
+     -0.555
+    ],
+    "size": [
+     0.208,
+     0.27,
+     0.124
+    ],
+    "hash": "11ebf7f98c0cd83a",
+    "tris": 144
+   },
+   {
+    "name": "EyelidR",
+    "color": "#D9A07A",
+    "material": "SmoothPlastic",
+    "transparency": 1.0,
+    "castShadow": false,
+    "canCollide": false,
+    "role": "eyelid",
+    "bone": "Head",
+    "offset": [
+     0.222,
+     4.42,
+     -0.577
+    ],
+    "size": [
+     0.233,
+     0.302,
+     0.111
+    ],
+    "hash": "87a25d0c277f6f88",
+    "tris": 112
+   },
+   {
+    "name": "ArmL",
+    "color": "#6F7F3A",
+    "material": "SmoothPlastic",
+    "transparency": 0.0,
+    "castShadow": true,
+    "canCollide": false,
+    "role": null,
+    "bone": "ArmL",
+    "offset": [
+     -0.958,
+     2.754,
+     0.0
+    ],
+    "size": [
+     0.616,
+     1.55,
+     0.504
+    ],
+    "hash": "d251e9d4087dce85",
+    "tris": 280
+   },
+   {
+    "name": "ArmR",
+    "color": "#6F7F3A",
+    "material": "SmoothPlastic",
+    "transparency": 0.0,
+    "castShadow": true,
+    "canCollide": false,
+    "role": null,
+    "bone": "ArmR",
+    "offset": [
+     0.958,
+     2.754,
+     0.0
+    ],
+    "size": [
+     0.616,
+     1.55,
+     0.504
+    ],
+    "hash": "ba7a29c860a16b33",
+    "tris": 280
+   },
+   {
+    "name": "LegL",
+    "color": "#FFFFFF",
+    "material": "SmoothPlastic",
+    "transparency": 0.0,
+    "castShadow": true,
+    "canCollide": false,
+    "role": null,
+    "bone": "LegL",
+    "offset": [
+     -0.34,
+     1.12,
+     -0.138
+    ],
+    "size": [
+     0.634,
+     2.24,
+     0.985
+    ],
+    "hash": "1122bab07ab42272",
+    "tris": 576
+   },
+   {
+    "name": "LegR",
+    "color": "#FFFFFF",
+    "material": "SmoothPlastic",
+    "transparency": 0.0,
+    "castShadow": true,
+    "canCollide": false,
+    "role": null,
+    "bone": "LegR",
+    "offset": [
+     0.34,
+     1.12,
+     -0.138
+    ],
+    "size": [
+     0.634,
+     2.24,
+     0.985
+    ],
+    "hash": "e71199865c090e44",
+    "tris": 576
+   },
+   {
+    "name": "Torso_Fabric",
+    "color": "#FFFFFF",
+    "material": "Fabric",
+    "transparency": 0.0,
+    "castShadow": true,
+    "canCollide": false,
+    "role": null,
+    "bone": "Torso",
+    "offset": [
+     -0.198,
+     3.277,
+     -0.417
+    ],
+    "size": [
+     0.866,
+     0.758,
+     0.241
+    ],
+    "hash": "251504cc973206e8",
+    "tris": 340
+   },
+   {
+    "name": "Zip",
+    "color": "#C9CED3",
+    "material": "Metal",
+    "transparency": 0.0,
+    "castShadow": true,
+    "canCollide": false,
+    "role": null,
+    "bone": "Torso",
+    "offset": [
+     0.0,
+     2.944,
+     -0.392
+    ],
+    "size": [
+     0.032,
+     1.375,
+     0.318
+    ],
+    "hash": "2bfbe6f2c57144e6",
+    "tris": 44
+   },
+   {
+    "name": "Buckle",
+    "color": "#C9CED3",
+    "material": "Metal",
+    "transparency": 0.0,
+    "castShadow": true,
+    "canCollide": false,
+    "role": null,
+    "bone": "Hips",
+    "offset": [
+     0.0,
+     2.19,
+     -0.475
+    ],
+    "size": [
+     0.2,
+     0.15,
+     0.04
+    ],
+    "hash": "58413bbbff3a3133",
+    "tris": 44
+   },
+   {
+    "name": "HandL",
+    "color": "#FFFFFF",
+    "material": "Fabric",
+    "transparency": 0.0,
+    "castShadow": true,
+    "canCollide": false,
+    "role": null,
+    "bone": "HandL",
+    "offset": [
+     -1.041,
+     1.816,
+     -0.033
+    ],
+    "size": [
+     0.312,
+     0.566,
+     0.437
+    ],
+    "hash": "87345d1186fbeb92",
+    "tris": 284
+   },
+   {
+    "name": "HandR",
+    "color": "#FFFFFF",
+    "material": "Fabric",
+    "transparency": 0.0,
+    "castShadow": true,
+    "canCollide": false,
+    "role": null,
+    "bone": "HandR",
+    "offset": [
+     1.041,
+     1.816,
+     -0.033
+    ],
+    "size": [
+     0.312,
+     0.566,
+     0.437
+    ],
+    "hash": "6f2609308137db91",
+    "tris": 284
+   },
+   {
+    "name": "Crown",
+    "color": "#3E4A22",
+    "material": "SmoothPlastic",
+    "transparency": 0.0,
+    "castShadow": true,
+    "canCollide": false,
+    "role": "hat",
+    "bone": "Head",
+    "offset": [
+     0.0,
+     4.82,
+     -0.637
+    ],
+    "size": [
+     1.444,
+     0.859,
+     1.313
+    ],
+    "hash": "f052d21aedc099e0",
+    "tris": 482
+   },
+   {
+    "name": "Mesh",
+    "color": "#2B2D31",
+    "material": "Fabric",
+    "transparency": 0.0,
+    "castShadow": true,
+    "canCollide": false,
+    "role": null,
+    "bone": "Head",
+    "offset": [
+     0.0,
+     4.771,
+     0.254
+    ],
+    "size": [
+     1.551,
+     0.875,
+     1.021
+    ],
+    "hash": "c802f284ac2035a1",
+    "tris": 600
+   },
+   {
+    "name": "WhackerBlade",
+    "color": "#C9CED3",
+    "material": "Metal",
+    "transparency": 0.0,
+    "castShadow": true,
+    "canCollide": false,
+    "role": null,
+    "bone": "HandR",
+    "offset": [
+     1.034,
+     1.759,
+     -0.78
+    ],
+    "size": [
+     0.12,
+     0.62,
+     2.66
+    ],
+    "hash": "6d2adff8b3184a62",
+    "tris": 196
+   },
+   {
+    "name": "HandR_SmoothPlastic",
+    "color": "#FFFFFF",
+    "material": "SmoothPlastic",
+    "transparency": 0.0,
+    "castShadow": true,
+    "canCollide": false,
+    "role": null,
+    "bone": "HandR",
+    "offset": [
+     1.034,
+     1.759,
+     -0.71
+    ],
+    "size": [
+     0.12,
+     0.36,
+     2.52
+    ],
+    "hash": "8fa343847a2147da",
+    "tris": 152
+   },
+   {
+    "name": "Trap",
+    "color": "#C8925A",
+    "material": "Wood",
+    "transparency": 0.0,
+    "castShadow": true,
+    "canCollide": false,
+    "role": null,
+    "bone": "HandL",
+    "offset": [
+     -1.042,
+     1.679,
+     -0.42
+    ],
+    "size": [
+     0.422,
+     0.119,
+     0.78
+    ],
+    "hash": "75185416dcdce1f8",
+    "tris": 44
+   },
+   {
+    "name": "TrapWire",
+    "color": "#C9CED3",
+    "material": "Metal",
+    "transparency": 0.0,
+    "castShadow": true,
+    "canCollide": false,
+    "role": null,
+    "bone": "HandL",
+    "offset": [
+     -1.037,
+     1.732,
+     -0.436
+    ],
+    "size": [
+     0.374,
+     0.074,
+     0.593
+    ],
+    "hash": "7323ae8622df1f66",
+    "tris": 88
+   },
+   {
+    "name": "TrapCheese",
+    "color": "#FFD23A",
+    "material": "SmoothPlastic",
+    "transparency": 0.0,
+    "castShadow": true,
+    "canCollide": false,
+    "role": null,
+    "bone": "HandL",
+    "offset": [
+     -1.03,
+     1.798,
+     -0.2
+    ],
+    "size": [
+     0.185,
+     0.116,
+     0.142
+    ],
+    "hash": "46ecd16be1dba7d6",
+    "tris": 44
+   }
+  ],
+  "rig": {
+   "bones": [
+    {
+     "name": "Hips",
+     "parent": null,
+     "joint": [
+      0.0,
+      2.05,
+      0.0
+     ]
+    },
+    {
+     "name": "Torso",
+     "parent": "Hips",
+     "joint": [
+      0.0,
+      2.38,
+      0.0
+     ]
+    },
+    {
+     "name": "Head",
+     "parent": "Torso",
+     "joint": [
+      0.0,
+      3.62,
+      0.0
+     ]
+    },
+    {
+     "name": "ArmL",
+     "parent": "Torso",
+     "joint": [
+      -0.9,
+      3.32,
+      0.0
+     ]
+    },
+    {
+     "name": "HandL",
+     "parent": "ArmL",
+     "joint": [
+      -1.038,
+      2.007,
+      0.0
+     ]
+    },
+    {
+     "name": "ArmR",
+     "parent": "Torso",
+     "joint": [
+      0.9,
+      3.32,
+      0.0
+     ]
+    },
+    {
+     "name": "HandR",
+     "parent": "ArmR",
+     "joint": [
+      1.038,
+      2.007,
+      0.0
+     ]
+    },
+    {
+     "name": "LegL",
+     "parent": "Hips",
+     "joint": [
+      -0.34,
+      1.95,
+      0.0
+     ]
+    },
+    {
+     "name": "LegR",
+     "parent": "Hips",
+     "joint": [
+      0.34,
+      1.95,
+      0.0
+     ]
+    }
+   ]
+  },
+  "sockets": {
+   "FaceSocket": {
+    "p": [
+     0.0,
+     4.42,
+     -0.615
+    ],
+    "yaw": 0.0
+   },
+   "HairSocket": {
+    "p": [
+     0.0,
+     5.05,
+     -0.03
+    ],
+    "yaw": 0.0
+   },
+   "HatSocket": {
+    "p": [
+     0.0,
+     5.13,
+     -0.03
+    ],
+    "yaw": 0.0
+   },
+   "TorsoSocket": {
+    "p": [
+     0.0,
+     3.0,
+     -0.49
+    ],
+    "yaw": 0.0
+   }
+  }
+ },
+ "Character_Class_food_critic": {
+  "group": "Characters",
+  "size": [
+   2.533,
+   5.145,
+   1.488
+  ],
+  "tris": 7784,
+  "meta": {
+   "root": {
+    "center": [
+     0,
+     2.95,
+     0
+    ],
+    "size": [
+     2.0,
+     2.0,
+     1.0
+    ]
+   },
+   "walkSpeed": 9.0,
+   "animRig": "ClassCast",
+   "socketBones": {
+    "HatSocket": "Head",
+    "HairSocket": "Head",
+    "FaceSocket": "Head",
+    "TorsoSocket": "Torso"
+   },
+   "eyelids": "role eyelid parts export Transparency 1 (eyes open); set 0 for ~0.12 s to blink",
+   "displayClip": "Display_food_critic",
+   "class": "food_critic",
+   "title": "Food Critic",
+   "note": "Shop display cast: play AnimState Display_food_critic (props are held in that pose)"
+  },
+  "url": "https://raw.githubusercontent.com/landonhjones2020-bit/nightshift-assets/main/meshes/D_characters/Character_Class_food_critic.json",
+  "parts": [
+   {
+    "name": "Hips",
+    "color": "#2E2A3A",
+    "material": "SmoothPlastic",
+    "transparency": 0.0,
+    "castShadow": true,
+    "canCollide": false,
+    "role": null,
+    "bone": "Hips",
+    "offset": [
+     0.0,
+     2.06,
+     0.007
+    ],
+    "size": [
+     1.27,
+     0.8,
+     0.885
+    ],
+    "hash": "6b13406e116a1268",
+    "tris": 280
+   },
+   {
+    "name": "Torso",
+    "color": "#FFFFFF",
+    "material": "SmoothPlastic",
+    "transparency": 0.0,
+    "castShadow": true,
+    "canCollide": false,
+    "role": null,
+    "bone": "Torso",
+    "offset": [
+     0.0,
+     2.909,
+     -0.076
+    ],
+    "size": [
+     1.66,
+     1.478,
+     1.074
+    ],
+    "hash": "013aaf3c800ca03c",
+    "tris": 712
+   },
+   {
+    "name": "Head",
+    "color": "#FFFFFF",
+    "material": "SmoothPlastic",
+    "transparency": 0.0,
+    "castShadow": true,
+    "canCollide": false,
+    "role": null,
+    "bone": "Head",
+    "offset": [
+     0.0,
+     4.277,
+     -0.045
+    ],
+    "size": [
+     1.377,
+     1.735,
+     1.35
+    ],
+    "hash": "6ecc010ac80c960d",
+    "tris": 2668
+   },
+   {
+    "name": "EyeL",
+    "color": "#F7F4EE",
+    "material": "SmoothPlastic",
+    "transparency": 0.0,
+    "castShadow": true,
+    "canCollide": false,
+    "role": "eye",
+    "bone": "Head",
+    "offset": [
+     -0.225,
+     4.42,
+     -0.553
+    ],
+    "size": [
+     0.208,
+     0.27,
+     0.124
+    ],
+    "hash": "e307d66dd3abacb9",
+    "tris": 144
+   },
+   {
+    "name": "EyelidL",
+    "color": "#F0C8A8",
+    "material": "SmoothPlastic",
+    "transparency": 1.0,
+    "castShadow": false,
+    "canCollide": false,
+    "role": "eyelid",
+    "bone": "Head",
+    "offset": [
+     -0.222,
+     4.42,
+     -0.576
+    ],
+    "size": [
+     0.233,
+     0.302,
+     0.111
+    ],
+    "hash": "e53db45a6474d4cb",
+    "tris": 112
+   },
+   {
+    "name": "EyeR",
+    "color": "#F7F4EE",
+    "material": "SmoothPlastic",
+    "transparency": 0.0,
+    "castShadow": true,
+    "canCollide": false,
+    "role": "eye",
+    "bone": "Head",
+    "offset": [
+     0.225,
+     4.42,
+     -0.555
+    ],
+    "size": [
+     0.208,
+     0.27,
+     0.124
+    ],
+    "hash": "11ebf7f98c0cd83a",
+    "tris": 144
+   },
+   {
+    "name": "EyelidR",
+    "color": "#F0C8A8",
+    "material": "SmoothPlastic",
+    "transparency": 1.0,
+    "castShadow": false,
+    "canCollide": false,
+    "role": "eyelid",
+    "bone": "Head",
+    "offset": [
+     0.222,
+     4.42,
+     -0.577
+    ],
+    "size": [
+     0.233,
+     0.302,
+     0.111
+    ],
+    "hash": "87a25d0c277f6f88",
+    "tris": 112
+   },
+   {
+    "name": "ArmL",
+    "color": "#5B3A8C",
+    "material": "SmoothPlastic",
+    "transparency": 0.0,
+    "castShadow": true,
+    "canCollide": false,
+    "role": null,
+    "bone": "ArmL",
+    "offset": [
+     -0.958,
+     2.754,
+     0.0
+    ],
+    "size": [
+     0.616,
+     1.55,
+     0.504
+    ],
+    "hash": "d251e9d4087dce85",
+    "tris": 280
+   },
+   {
+    "name": "HandL",
+    "color": "#FFFFFF",
+    "material": "SmoothPlastic",
+    "transparency": 0.0,
+    "castShadow": true,
+    "canCollide": false,
+    "role": null,
+    "bone": "HandL",
+    "offset": [
+     -1.037,
+     1.784,
+     -0.033
+    ],
+    "size": [
+     0.287,
+     0.631,
+     0.437
+    ],
+    "hash": "fd82441c545582b8",
+    "tris": 296
+   },
+   {
+    "name": "ArmR",
+    "color": "#5B3A8C",
+    "material": "SmoothPlastic",
+    "transparency": 0.0,
+    "castShadow": true,
+    "canCollide": false,
+    "role": null,
+    "bone": "ArmR",
+    "offset": [
+     0.958,
+     2.754,
+     0.0
+    ],
+    "size": [
+     0.616,
+     1.55,
+     0.504
+    ],
+    "hash": "ba7a29c860a16b33",
+    "tris": 280
+   },
+   {
+    "name": "HandR",
+    "color": "#FFFFFF",
+    "material": "SmoothPlastic",
+    "transparency": 0.0,
+    "castShadow": true,
+    "canCollide": false,
+    "role": null,
+    "bone": "HandR",
+    "offset": [
+     1.043,
+     1.816,
+     -0.328
+    ],
+    "size": [
+     0.274,
+     0.566,
+     1.025
+    ],
+    "hash": "5dec270a0030b6a0",
+    "tris": 328
+   },
+   {
+    "name": "LegL",
+    "color": "#FFFFFF",
+    "material": "SmoothPlastic",
+    "transparency": 0.0,
+    "castShadow": true,
+    "canCollide": false,
+    "role": null,
+    "bone": "LegL",
+    "offset": [
+     -0.34,
+     1.12,
+     -0.138
+    ],
+    "size": [
+     0.634,
+     2.24,
+     0.985
+    ],
+    "hash": "acc39985c2fdbd07",
+    "tris": 576
+   },
+   {
+    "name": "LegR",
+    "color": "#FFFFFF",
+    "material": "SmoothPlastic",
+    "transparency": 0.0,
+    "castShadow": true,
+    "canCollide": false,
+    "role": null,
+    "bone": "LegR",
+    "offset": [
+     0.34,
+     1.12,
+     -0.138
+    ],
+    "size": [
+     0.634,
+     2.24,
+     0.985
+    ],
+    "hash": "6ababb3e84350057",
+    "tris": 576
+   },
+   {
+    "name": "Torso_Fabric",
+    "color": "#FFFFFF",
+    "material": "Fabric",
+    "transparency": 0.0,
+    "castShadow": true,
+    "canCollide": false,
+    "role": null,
+    "bone": "Torso",
+    "offset": [
+     0.0,
+     3.081,
+     -0.423
+    ],
+    "size": [
+     1.031,
+     1.079,
+     0.333
+    ],
+    "hash": "31fcf81083994b3c",
+    "tris": 536
+   },
+   {
+    "name": "Buttons",
+    "color": "#E2B64A",
+    "material": "Metal",
+    "transparency": 0.0,
+    "castShadow": true,
+    "canCollide": false,
+    "role": null,
+    "bone": "Torso",
+    "offset": [
+     -0.2,
+     2.716,
+     -0.543
+    ],
+    "size": [
+     0.091,
+     0.331,
+     0.099
+    ],
+    "hash": "1e0b1a4ab5705b92",
+    "tris": 96
+   },
+   {
+    "name": "Head_Metal",
+    "color": "#FFFFFF",
+    "material": "Metal",
+    "transparency": 0.0,
+    "castShadow": true,
+    "canCollide": false,
+    "role": null,
+    "bone": "Head",
+    "offset": [
+     0.235,
+     4.083,
+     -0.531
+    ],
+    "size": [
+     0.301,
+     0.978,
+     0.362
+    ],
+    "hash": "5730b385e9159e8b",
+    "tris": 304
+   },
+   {
+    "name": "MonocleLens",
+    "color": "#DDF6FF",
+    "material": "Glass",
+    "transparency": 0.6,
+    "castShadow": false,
+    "canCollide": false,
+    "role": null,
+    "bone": "Head",
+    "offset": [
+     0.235,
+     4.42,
+     -0.672
+    ],
+    "size": [
+     0.239,
+     0.24,
+     0.043
+    ],
+    "hash": "500fca5697d9e30d",
+    "tris": 76
+   },
+   {
+    "name": "Fork",
+    "color": "#C9CED3",
+    "material": "Metal",
+    "transparency": 0.0,
+    "castShadow": true,
+    "canCollide": false,
+    "role": null,
+    "bone": "HandR",
+    "offset": [
+     1.034,
+     1.759,
+     -0.36
+    ],
+    "size": [
+     0.025,
+     0.112,
+     0.94
+    ],
+    "hash": "fdb2d48e853cf340",
+    "tris": 264
+   }
+  ],
+  "rig": {
+   "bones": [
+    {
+     "name": "Hips",
+     "parent": null,
+     "joint": [
+      0.0,
+      2.05,
+      0.0
+     ]
+    },
+    {
+     "name": "Torso",
+     "parent": "Hips",
+     "joint": [
+      0.0,
+      2.38,
+      0.0
+     ]
+    },
+    {
+     "name": "Head",
+     "parent": "Torso",
+     "joint": [
+      0.0,
+      3.62,
+      0.0
+     ]
+    },
+    {
+     "name": "ArmL",
+     "parent": "Torso",
+     "joint": [
+      -0.9,
+      3.32,
+      0.0
+     ]
+    },
+    {
+     "name": "HandL",
+     "parent": "ArmL",
+     "joint": [
+      -1.038,
+      2.007,
+      0.0
+     ]
+    },
+    {
+     "name": "ArmR",
+     "parent": "Torso",
+     "joint": [
+      0.9,
+      3.32,
+      0.0
+     ]
+    },
+    {
+     "name": "HandR",
+     "parent": "ArmR",
+     "joint": [
+      1.038,
+      2.007,
+      0.0
+     ]
+    },
+    {
+     "name": "LegL",
+     "parent": "Hips",
+     "joint": [
+      -0.34,
+      1.95,
+      0.0
+     ]
+    },
+    {
+     "name": "LegR",
+     "parent": "Hips",
+     "joint": [
+      0.34,
+      1.95,
+      0.0
+     ]
+    }
+   ]
+  },
+  "sockets": {
+   "FaceSocket": {
+    "p": [
+     0.0,
+     4.42,
+     -0.615
+    ],
+    "yaw": 0.0
+   },
+   "HairSocket": {
+    "p": [
+     0.0,
+     5.05,
+     -0.03
+    ],
+    "yaw": 0.0
+   },
+   "HatSocket": {
+    "p": [
+     0.0,
+     5.13,
+     -0.03
+    ],
+    "yaw": 0.0
+   },
+   "TorsoSocket": {
+    "p": [
+     0.0,
+     3.0,
+     -0.49
+    ],
+    "yaw": 0.0
+   }
+  }
+ },
  "Character_Class_head_chef": {
   "group": "Characters",
   "size": [
@@ -2255,6 +5135,560 @@
     ],
     "hash": "a62928e29f1d43dd",
     "tris": 124
+   }
+  ],
+  "rig": {
+   "bones": [
+    {
+     "name": "Hips",
+     "parent": null,
+     "joint": [
+      0.0,
+      2.05,
+      0.0
+     ]
+    },
+    {
+     "name": "Torso",
+     "parent": "Hips",
+     "joint": [
+      0.0,
+      2.38,
+      0.0
+     ]
+    },
+    {
+     "name": "Head",
+     "parent": "Torso",
+     "joint": [
+      0.0,
+      3.62,
+      0.0
+     ]
+    },
+    {
+     "name": "ArmL",
+     "parent": "Torso",
+     "joint": [
+      -0.9,
+      3.32,
+      0.0
+     ]
+    },
+    {
+     "name": "HandL",
+     "parent": "ArmL",
+     "joint": [
+      -1.038,
+      2.007,
+      0.0
+     ]
+    },
+    {
+     "name": "ArmR",
+     "parent": "Torso",
+     "joint": [
+      0.9,
+      3.32,
+      0.0
+     ]
+    },
+    {
+     "name": "HandR",
+     "parent": "ArmR",
+     "joint": [
+      1.038,
+      2.007,
+      0.0
+     ]
+    },
+    {
+     "name": "LegL",
+     "parent": "Hips",
+     "joint": [
+      -0.34,
+      1.95,
+      0.0
+     ]
+    },
+    {
+     "name": "LegR",
+     "parent": "Hips",
+     "joint": [
+      0.34,
+      1.95,
+      0.0
+     ]
+    }
+   ]
+  },
+  "sockets": {
+   "FaceSocket": {
+    "p": [
+     0.0,
+     4.42,
+     -0.615
+    ],
+    "yaw": 0.0
+   },
+   "HairSocket": {
+    "p": [
+     0.0,
+     5.05,
+     -0.03
+    ],
+    "yaw": 0.0
+   },
+   "HatSocket": {
+    "p": [
+     0.0,
+     5.13,
+     -0.03
+    ],
+    "yaw": 0.0
+   },
+   "TorsoSocket": {
+    "p": [
+     0.0,
+     3.0,
+     -0.49
+    ],
+    "yaw": 0.0
+   }
+  }
+ },
+ "Character_Class_mascot": {
+  "group": "Characters",
+  "size": [
+   2.566,
+   5.91,
+   2.234
+  ],
+  "tris": 8598,
+  "meta": {
+   "root": {
+    "center": [
+     0,
+     2.95,
+     0
+    ],
+    "size": [
+     2.0,
+     2.0,
+     1.0
+    ]
+   },
+   "walkSpeed": 9.0,
+   "animRig": "ClassCast",
+   "socketBones": {
+    "HatSocket": "Head",
+    "HairSocket": "Head",
+    "FaceSocket": "Head",
+    "TorsoSocket": "Torso"
+   },
+   "eyelids": "role eyelid parts export Transparency 1 (eyes open); set 0 for ~0.12 s to blink",
+   "displayClip": "Display_mascot",
+   "class": "mascot",
+   "title": "Mascot",
+   "note": "Shop display cast: play AnimState Display_mascot (props are held in that pose)"
+  },
+  "url": "https://raw.githubusercontent.com/landonhjones2020-bit/nightshift-assets/main/meshes/D_characters/Character_Class_mascot.json",
+  "parts": [
+   {
+    "name": "Hips",
+    "color": "#C8302E",
+    "material": "SmoothPlastic",
+    "transparency": 0.0,
+    "castShadow": true,
+    "canCollide": false,
+    "role": null,
+    "bone": "Hips",
+    "offset": [
+     0.0,
+     2.06,
+     0.007
+    ],
+    "size": [
+     1.27,
+     0.8,
+     0.885
+    ],
+    "hash": "6b13406e116a1268",
+    "tris": 280
+   },
+   {
+    "name": "Torso",
+    "color": "#FFFFFF",
+    "material": "SmoothPlastic",
+    "transparency": 0.0,
+    "castShadow": true,
+    "canCollide": false,
+    "role": null,
+    "bone": "Torso",
+    "offset": [
+     0.0,
+     2.909,
+     -0.059
+    ],
+    "size": [
+     1.66,
+     1.478,
+     1.04
+    ],
+    "hash": "e05cc964382ae432",
+    "tris": 736
+   },
+   {
+    "name": "Head",
+    "color": "#FFFFFF",
+    "material": "SmoothPlastic",
+    "transparency": 0.0,
+    "castShadow": true,
+    "canCollide": false,
+    "role": null,
+    "bone": "Head",
+    "offset": [
+     -0.029,
+     4.643,
+     0.033
+    ],
+    "size": [
+     1.579,
+     2.465,
+     1.506
+    ],
+    "hash": "29271f4b24fd0071",
+    "tris": 2824
+   },
+   {
+    "name": "EyeL",
+    "color": "#F7F4EE",
+    "material": "SmoothPlastic",
+    "transparency": 0.0,
+    "castShadow": true,
+    "canCollide": false,
+    "role": "eye",
+    "bone": "Head",
+    "offset": [
+     -0.225,
+     4.42,
+     -0.553
+    ],
+    "size": [
+     0.208,
+     0.27,
+     0.124
+    ],
+    "hash": "e307d66dd3abacb9",
+    "tris": 144
+   },
+   {
+    "name": "EyelidL",
+    "color": "#EBB894",
+    "material": "SmoothPlastic",
+    "transparency": 1.0,
+    "castShadow": false,
+    "canCollide": false,
+    "role": "eyelid",
+    "bone": "Head",
+    "offset": [
+     -0.222,
+     4.42,
+     -0.576
+    ],
+    "size": [
+     0.233,
+     0.302,
+     0.111
+    ],
+    "hash": "e53db45a6474d4cb",
+    "tris": 112
+   },
+   {
+    "name": "EyeR",
+    "color": "#F7F4EE",
+    "material": "SmoothPlastic",
+    "transparency": 0.0,
+    "castShadow": true,
+    "canCollide": false,
+    "role": "eye",
+    "bone": "Head",
+    "offset": [
+     0.225,
+     4.42,
+     -0.555
+    ],
+    "size": [
+     0.208,
+     0.27,
+     0.124
+    ],
+    "hash": "11ebf7f98c0cd83a",
+    "tris": 144
+   },
+   {
+    "name": "EyelidR",
+    "color": "#EBB894",
+    "material": "SmoothPlastic",
+    "transparency": 1.0,
+    "castShadow": false,
+    "canCollide": false,
+    "role": "eyelid",
+    "bone": "Head",
+    "offset": [
+     0.222,
+     4.42,
+     -0.577
+    ],
+    "size": [
+     0.233,
+     0.302,
+     0.111
+    ],
+    "hash": "87a25d0c277f6f88",
+    "tris": 112
+   },
+   {
+    "name": "ArmL",
+    "color": "#FFFFFF",
+    "material": "SmoothPlastic",
+    "transparency": 0.0,
+    "castShadow": true,
+    "canCollide": false,
+    "role": null,
+    "bone": "ArmL",
+    "offset": [
+     -0.931,
+     2.745,
+     0.0
+    ],
+    "size": [
+     0.575,
+     1.568,
+     0.516
+    ],
+    "hash": "899bcad3e11b36a4",
+    "tris": 364
+   },
+   {
+    "name": "HandL",
+    "color": "#EBB894",
+    "material": "SmoothPlastic",
+    "transparency": 0.0,
+    "castShadow": true,
+    "canCollide": false,
+    "role": null,
+    "bone": "HandL",
+    "offset": [
+     -1.043,
+     1.816,
+     -0.033
+    ],
+    "size": [
+     0.274,
+     0.566,
+     0.437
+    ],
+    "hash": "cb3ab71e8b754714",
+    "tris": 240
+   },
+   {
+    "name": "ArmR",
+    "color": "#FFFFFF",
+    "material": "SmoothPlastic",
+    "transparency": 0.0,
+    "castShadow": true,
+    "canCollide": false,
+    "role": null,
+    "bone": "ArmR",
+    "offset": [
+     0.931,
+     2.745,
+     0.0
+    ],
+    "size": [
+     0.575,
+     1.568,
+     0.516
+    ],
+    "hash": "8519e825a2b1c485",
+    "tris": 364
+   },
+   {
+    "name": "HandR",
+    "color": "#FFFFFF",
+    "material": "SmoothPlastic",
+    "transparency": 0.0,
+    "castShadow": true,
+    "canCollide": false,
+    "role": null,
+    "bone": "HandR",
+    "offset": [
+     1.073,
+     1.816,
+     -0.033
+    ],
+    "size": [
+     0.332,
+     0.566,
+     0.437
+    ],
+    "hash": "45302029fd7c9928",
+    "tris": 264
+   },
+   {
+    "name": "LegL",
+    "color": "#FFFFFF",
+    "material": "SmoothPlastic",
+    "transparency": 0.0,
+    "castShadow": true,
+    "canCollide": false,
+    "role": null,
+    "bone": "LegL",
+    "offset": [
+     -0.34,
+     1.12,
+     -0.138
+    ],
+    "size": [
+     0.634,
+     2.24,
+     0.985
+    ],
+    "hash": "d67f579faeb0ee16",
+    "tris": 576
+   },
+   {
+    "name": "LegR",
+    "color": "#FFFFFF",
+    "material": "SmoothPlastic",
+    "transparency": 0.0,
+    "castShadow": true,
+    "canCollide": false,
+    "role": null,
+    "bone": "LegR",
+    "offset": [
+     0.34,
+     1.12,
+     -0.138
+    ],
+    "size": [
+     0.634,
+     2.24,
+     0.985
+    ],
+    "hash": "27023844728f550a",
+    "tris": 576
+   },
+   {
+    "name": "JerseyCollar",
+    "color": "#C8302E",
+    "material": "Fabric",
+    "transparency": 0.0,
+    "castShadow": true,
+    "canCollide": false,
+    "role": null,
+    "bone": "Torso",
+    "offset": [
+     0.0,
+     3.615,
+     0.0
+    ],
+    "size": [
+     0.6,
+     0.13,
+     0.54
+    ],
+    "hash": "bba6323556e8711c",
+    "tris": 40
+   },
+   {
+    "name": "ArmL_Trim",
+    "color": "#C8302E",
+    "material": "Fabric",
+    "transparency": 0.0,
+    "castShadow": true,
+    "canCollide": false,
+    "role": null,
+    "bone": "ArmL",
+    "offset": [
+     -0.948,
+     2.863,
+     0.0
+    ],
+    "size": [
+     0.547,
+     0.117,
+     0.528
+    ],
+    "hash": "6ae2d18520e8b4e2",
+    "tris": 32
+   },
+   {
+    "name": "ArmR_Trim",
+    "color": "#C8302E",
+    "material": "Fabric",
+    "transparency": 0.0,
+    "castShadow": true,
+    "canCollide": false,
+    "role": null,
+    "bone": "ArmR",
+    "offset": [
+     0.948,
+     2.863,
+     0.0
+    ],
+    "size": [
+     0.547,
+     0.117,
+     0.528
+    ],
+    "hash": "56b5f1b3a9977105",
+    "tris": 32
+   },
+   {
+    "name": "Head_Fabric",
+    "color": "#FFFFFF",
+    "material": "Fabric",
+    "transparency": 0.0,
+    "castShadow": true,
+    "canCollide": false,
+    "role": null,
+    "bone": "Head",
+    "offset": [
+     0.0,
+     5.39,
+     -0.02
+    ],
+    "size": [
+     2.107,
+     1.04,
+     2.107
+    ],
+    "hash": "d0f09ce5cad99eb8",
+    "tris": 906
+   },
+   {
+    "name": "HandR_Fabric",
+    "color": "#FFFFFF",
+    "material": "Fabric",
+    "transparency": 0.0,
+    "castShadow": true,
+    "canCollide": false,
+    "role": null,
+    "bone": "HandR",
+    "offset": [
+     1.034,
+     1.717,
+     -0.43
+    ],
+    "size": [
+     0.48,
+     0.667,
+     1.54
+    ],
+    "hash": "dfbc0f8df11783b3",
+    "tris": 852
    }
   ],
   "rig": {

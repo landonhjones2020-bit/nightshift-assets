@@ -835,3 +835,7 @@ def run_class(cid):
         print(f"[{asset}] poses:", C.pose_tiles(out["arm"], [(out["act"], 0, -20, False), (out["act"], 0, 25, False),
                                                              (out["act"], 0, 90, False), (out["act"], 40, 0, False)], asset))
     return out
+
+
+# the six classes added on 2026-11-06 register themselves into ORDER / TITLES / POSES / PROPS / OUTFITS
+import _classes2  # noqa: E402,F401
