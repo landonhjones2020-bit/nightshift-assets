@@ -1943,6 +1943,114 @@
   "hash": "c226db2040742518",
   "url": "https://raw.githubusercontent.com/landonhjones2020-bit/nightshift-assets/main/icons/hud/Tag_Tangy.nsz"
  },
+ "UI_Badge": {
+  "group": "ui",
+  "size": [
+   96,
+   96
+  ],
+  "hash": "1797eade0731e96e",
+  "url": "https://raw.githubusercontent.com/landonhjones2020-bit/nightshift-assets/main/icons/ui/UI_Badge.nsz"
+ },
+ "UI_Bulb": {
+  "group": "ui",
+  "size": [
+   64,
+   64
+  ],
+  "hash": "272022582fd2847b",
+  "url": "https://raw.githubusercontent.com/landonhjones2020-bit/nightshift-assets/main/icons/ui/UI_Bulb.nsz"
+ },
+ "UI_Checker": {
+  "group": "ui",
+  "size": [
+   64,
+   32
+  ],
+  "hash": "60cddd4d3fe2c8d1",
+  "url": "https://raw.githubusercontent.com/landonhjones2020-bit/nightshift-assets/main/icons/ui/UI_Checker.nsz"
+ },
+ "UI_Close": {
+  "group": "ui",
+  "size": [
+   128,
+   128
+  ],
+  "hash": "2b4c9eba3255a5ee",
+  "url": "https://raw.githubusercontent.com/landonhjones2020-bit/nightshift-assets/main/icons/ui/UI_Close.nsz"
+ },
+ "UI_Enamel": {
+  "group": "ui",
+  "size": [
+   256,
+   128
+  ],
+  "hash": "19338eb1c408e058",
+  "url": "https://raw.githubusercontent.com/landonhjones2020-bit/nightshift-assets/main/icons/ui/UI_Enamel.nsz"
+ },
+ "UI_Gloss": {
+  "group": "ui",
+  "size": [
+   256,
+   64
+  ],
+  "hash": "4bd775ae8d2f61cf",
+  "url": "https://raw.githubusercontent.com/landonhjones2020-bit/nightshift-assets/main/icons/ui/UI_Gloss.nsz"
+ },
+ "UI_Grain": {
+  "group": "ui",
+  "size": [
+   256,
+   256
+  ],
+  "hash": "3fc538a454c93aca",
+  "url": "https://raw.githubusercontent.com/landonhjones2020-bit/nightshift-assets/main/icons/ui/UI_Grain.nsz"
+ },
+ "UI_Groove": {
+  "group": "ui",
+  "size": [
+   256,
+   64
+  ],
+  "hash": "b85be44271c35cc1",
+  "url": "https://raw.githubusercontent.com/landonhjones2020-bit/nightshift-assets/main/icons/ui/UI_Groove.nsz"
+ },
+ "UI_Header": {
+  "group": "ui",
+  "size": [
+   512,
+   128
+  ],
+  "hash": "7af38ad52a928794",
+  "url": "https://raw.githubusercontent.com/landonhjones2020-bit/nightshift-assets/main/icons/ui/UI_Header.nsz"
+ },
+ "UI_Paper": {
+  "group": "ui",
+  "size": [
+   256,
+   256
+  ],
+  "hash": "009fe6c2046a71ed",
+  "url": "https://raw.githubusercontent.com/landonhjones2020-bit/nightshift-assets/main/icons/ui/UI_Paper.nsz"
+ },
+ "UI_Tile": {
+  "group": "ui",
+  "size": [
+   256,
+   128
+  ],
+  "hash": "c771862252294c06",
+  "url": "https://raw.githubusercontent.com/landonhjones2020-bit/nightshift-assets/main/icons/ui/UI_Tile.nsz"
+ },
+ "UI_Torn": {
+  "group": "ui",
+  "size": [
+   128,
+   32
+  ],
+  "hash": "f25746a55ebb354e",
+  "url": "https://raw.githubusercontent.com/landonhjones2020-bit/nightshift-assets/main/icons/ui/UI_Torn.nsz"
+ },
  "Uniform_head_chef": {
   "group": "meta",
   "size": [
