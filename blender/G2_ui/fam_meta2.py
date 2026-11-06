@@ -78,7 +78,7 @@ def comfy_stools():
     G.xform(cushion, G.R(rz=24, rx=-6, about=(0.05, -0.05, 2.18)))
     G.T(cushion, "#FFE0B8", name="Cushion", smooth=70)
     zs = []
-    for i, (x, z, s) in enumerate(((0.75, 2.75, 0.32), (1.05, 3.08, 0.24))):
+    for i, (x, z, s) in enumerate(((0.62, 2.62, 0.46), (0.98, 2.98, 0.34))):
         o = G.text("z", s, 0.06, loc=(x, -0.3, z))
         zs.append(o)
     G.T(zs, G.CYAN, name="Zzz")
@@ -130,7 +130,7 @@ def glow_notes():
     G.T(curl, "#B8D23A", name="Curl")
     lines = [G.slab(G.rrect(w, 0.07, 0.035, cx=-0.08 + (w - 0.95) / 2, cz=z), 0.03, y=-0.035) for w, z in ((0.95, 0.38), (0.8, 0.16), (0.9, -0.06), (0.55, -0.28))]
     G.T(lines, "#5E7A12", name="Scrawl")
-    halo = G.glow_mat(G.sphere(1.05, loc=(0, 0.15, 0), scale=(1.0, 0.3, 1.0), segs=32, rings=16), "#E8FF5A", 1.6, 0.5, falloff=1.4)
+    halo = G.glow_mat(G.sphere(0.95, loc=(0, 0.2, 0), scale=(1.0, 0.3, 1.0), segs=32, rings=16), "#E8FF5A", 1.2, 0.22, falloff=2.2)
     halo["g2_noframe"] = True
     G.xform(G.tagged(), G.R(ry=-8) @ G.Tm(-0.25, 0, 0.35))
     # the glow-paint tin and its brush
@@ -305,12 +305,12 @@ def emergency_lights():
         G.T(joint, G.STEEL_D, "Metal", name="Joint", gloss=0.35)
         can = G.lathe([(0.0, 0.0), (0.2, 0.0), (0.3, 0.12), (0.34, 0.42), (0.36, 0.48), (0.0, 0.48)], verts=36)
         lens = G.cyl(0.3, 0.04, loc=(0, 0, 0.49), verts=36, bevel=0.0)
-        beam = G.lathe([(0.0, 0.5), (0.3, 0.5), (0.7, 1.4), (0.0, 1.4)], verts=36)
+        beam = G.lathe([(0.0, 0.5), (0.3, 0.5), (0.55, 1.05), (0.0, 1.05)], verts=36)
         parts = [can, lens, beam]
         G.xform(parts, G.Tm(x, 0.0, 1.0) @ G.R(rz=s * 32) @ G.R(rx=78, ry=s * 18))
         G.T(can, G.PAPER, name="Head")
         G.neon(lens, "#FFF1C4", 4.0, name="Lens")
-        G.glow_mat(beam, "#FFE9A8", 1.4, 0.22, falloff=0.6)
+        G.glow_mat(beam, "#FFE9A8", 1.2, 0.14, falloff=0.8)
         beam["g2_noframe"] = True
     G.xform(G.tagged(), G.R(rz=-4))
 
@@ -356,7 +356,7 @@ def backup_generator():
 def big_plate():
     plate = G.lathe([(0.0, 0.0), (0.9, 0.0), (1.05, 0.06), (1.5, 0.2), (1.62, 0.26), (1.6, 0.3), (1.45, 0.26), (1.0, 0.13), (0.0, 0.11)], verts=64)
     G.T(plate, G.PAPER, name="Plate", gloss=0.25)
-    rim = G.lathe([(1.36, 0.215), (1.4, 0.225), (1.48, 0.25), (1.44, 0.25)], verts=64)
+    rim = G.torus(1.4, 0.035, loc=(0, 0, 0.235), segs=72, rsegs=8, scale=(1.0, 1.0, 0.45))
     G.T(rim, "#2E7BD1", name="RimStripe")
     # a tall sandwich on it
     z = 0.12
@@ -507,10 +507,10 @@ def u_bouncer():
     for i in range(70):
         u = i / 69
         a = u * 2 * math.pi * 8
-        pts.append((0.3 + 0.04 * math.cos(a), -0.24 + 0.03 * math.sin(a), 0.62 - 0.85 * u))
+        pts.append((-0.42 + 0.04 * math.cos(a), -0.24 + 0.03 * math.sin(a), 0.62 - 0.5 * u))
     wire = G.tube(pts, 0.012, sides=6, res=1)
     G.T(wire, "#D9E6EE", name="Wire", gloss=0.15)
-    bud = G.sphere(0.07, loc=(0.32, -0.24, 0.68))
+    bud = G.sphere(0.07, loc=(-0.4, -0.24, 0.68))
     G.T(bud, "#1E1E22", name="Earpiece", gloss=0.3)
     arms = [G.puffy(G.stroke([(k * 0.84, 0.26), (k * 0.66, 0.02)], 0.06), 0.36, puff=0.3) for k in (1, -1)]
     G.T(arms, "#3A3A42", name="SleeveBand")
@@ -528,7 +528,7 @@ def u_mascot():
     for o, role in st:
         G.T(o, cols[role], name=f"Crest_{role}")
         objs.append(o)
-    G.xform(objs, G.Tm(0.0, -0.25, -0.05) @ G.S(0.62))
+    G.xform(objs, G.Tm(0.0, -0.25, -0.12) @ G.S(0.82))
     stripes = [G.puffy(G.stroke([(k * 0.98, 0.22), (k * 0.84, 0.02)], 0.06), 0.36, puff=0.3) for k in (1, -1)]
     G.T(stripes, G.RED, name="SleeveStripe")
     num = G.text("1", 0.24, 0.04, loc=(-0.44, -0.2, -0.62))

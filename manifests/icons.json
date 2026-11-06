@@ -17,6 +17,24 @@
   "hash": "048bf9f098e02a14",
   "url": "https://raw.githubusercontent.com/landonhjones2020-bit/nightshift-assets/main/icons/meta/Ability_ClosingTime.nsz"
  },
+ "Ability_HypeUp": {
+  "group": "meta",
+  "size": [
+   512,
+   512
+  ],
+  "hash": "6cd34f19879064fa",
+  "url": "https://raw.githubusercontent.com/landonhjones2020-bit/nightshift-assets/main/icons/meta/Ability_HypeUp.nsz"
+ },
+ "Ability_Shove": {
+  "group": "meta",
+  "size": [
+   512,
+   512
+  ],
+  "hash": "f2b75f4b62e7db5b",
+  "url": "https://raw.githubusercontent.com/landonhjones2020-bit/nightshift-assets/main/icons/meta/Ability_Shove.nsz"
+ },
  "Art_KeyArt": {
   "group": "art",
   "size": [
@@ -2051,6 +2069,51 @@
   "hash": "f25746a55ebb354e",
   "url": "https://raw.githubusercontent.com/landonhjones2020-bit/nightshift-assets/main/icons/ui/UI_Torn.nsz"
  },
+ "Uniform_bouncer": {
+  "group": "meta",
+  "size": [
+   512,
+   512
+  ],
+  "hash": "2eeae4423e505519",
+  "url": "https://raw.githubusercontent.com/landonhjones2020-bit/nightshift-assets/main/icons/meta/Uniform_bouncer.nsz"
+ },
+ "Uniform_cashier": {
+  "group": "meta",
+  "size": [
+   512,
+   512
+  ],
+  "hash": "0c6266aacb59dc7e",
+  "url": "https://raw.githubusercontent.com/landonhjones2020-bit/nightshift-assets/main/icons/meta/Uniform_cashier.nsz"
+ },
+ "Uniform_detective": {
+  "group": "meta",
+  "size": [
+   512,
+   512
+  ],
+  "hash": "d35060a91e8dff0b",
+  "url": "https://raw.githubusercontent.com/landonhjones2020-bit/nightshift-assets/main/icons/meta/Uniform_detective.nsz"
+ },
+ "Uniform_exterminator": {
+  "group": "meta",
+  "size": [
+   512,
+   512
+  ],
+  "hash": "a031ed556adc8ad2",
+  "url": "https://raw.githubusercontent.com/landonhjones2020-bit/nightshift-assets/main/icons/meta/Uniform_exterminator.nsz"
+ },
+ "Uniform_food_critic": {
+  "group": "meta",
+  "size": [
+   512,
+   512
+  ],
+  "hash": "a52ad72f45b3f226",
+  "url": "https://raw.githubusercontent.com/landonhjones2020-bit/nightshift-assets/main/icons/meta/Uniform_food_critic.nsz"
+ },
  "Uniform_head_chef": {
   "group": "meta",
   "size": [
@@ -2068,6 +2131,15 @@
   ],
   "hash": "7b962bff4efc02ed",
   "url": "https://raw.githubusercontent.com/landonhjones2020-bit/nightshift-assets/main/icons/meta/Uniform_line_cook.nsz"
+ },
+ "Uniform_mascot": {
+  "group": "meta",
+  "size": [
+   512,
+   512
+  ],
+  "hash": "eaae6da33a244018",
+  "url": "https://raw.githubusercontent.com/landonhjones2020-bit/nightshift-assets/main/icons/meta/Uniform_mascot.nsz"
  },
  "Uniform_night_manager": {
   "group": "meta",
@@ -2105,6 +2177,15 @@
   "hash": "f5f324f84b487c09",
   "url": "https://raw.githubusercontent.com/landonhjones2020-bit/nightshift-assets/main/icons/meta/Uniform_trainee.nsz"
  },
+ "Upgrade_backup_generator": {
+  "group": "meta",
+  "size": [
+   512,
+   512
+  ],
+  "hash": "8f65ab9775446662",
+  "url": "https://raw.githubusercontent.com/landonhjones2020-bit/nightshift-assets/main/icons/meta/Upgrade_backup_generator.nsz"
+ },
  "Upgrade_batteries": {
   "group": "meta",
   "size": [
@@ -2114,6 +2195,51 @@
   "hash": "e612e775ef23a0a3",
   "url": "https://raw.githubusercontent.com/landonhjones2020-bit/nightshift-assets/main/icons/meta/Upgrade_batteries.nsz"
  },
+ "Upgrade_big_plate": {
+  "group": "meta",
+  "size": [
+   512,
+   512
+  ],
+  "hash": "989e560512ecde10",
+  "url": "https://raw.githubusercontent.com/landonhjones2020-bit/nightshift-assets/main/icons/meta/Upgrade_big_plate.nsz"
+ },
+ "Upgrade_breaker_labels": {
+  "group": "meta",
+  "size": [
+   512,
+   512
+  ],
+  "hash": "0af9509255965134",
+  "url": "https://raw.githubusercontent.com/landonhjones2020-bit/nightshift-assets/main/icons/meta/Upgrade_breaker_labels.nsz"
+ },
+ "Upgrade_coffee_pot": {
+  "group": "meta",
+  "size": [
+   512,
+   512
+  ],
+  "hash": "ec6415c900c7c0f8",
+  "url": "https://raw.githubusercontent.com/landonhjones2020-bit/nightshift-assets/main/icons/meta/Upgrade_coffee_pot.nsz"
+ },
+ "Upgrade_comfy_stools": {
+  "group": "meta",
+  "size": [
+   512,
+   512
+  ],
+  "hash": "f1439f3e7a53bd66",
+  "url": "https://raw.githubusercontent.com/landonhjones2020-bit/nightshift-assets/main/icons/meta/Upgrade_comfy_stools.nsz"
+ },
+ "Upgrade_emergency_lights": {
+  "group": "meta",
+  "size": [
+   512,
+   512
+  ],
+  "hash": "cc379c3f20276e2e",
+  "url": "https://raw.githubusercontent.com/landonhjones2020-bit/nightshift-assets/main/icons/meta/Upgrade_emergency_lights.nsz"
+ },
  "Upgrade_fuse_box": {
   "group": "meta",
   "size": [
@@ -2122,6 +2248,24 @@
   ],
   "hash": "4d651964b728a91b",
   "url": "https://raw.githubusercontent.com/landonhjones2020-bit/nightshift-assets/main/icons/meta/Upgrade_fuse_box.nsz"
+ },
+ "Upgrade_glow_notes": {
+  "group": "meta",
+  "size": [
+   512,
+   512
+  ],
+  "hash": "33b6367ea1be03a9",
+  "url": "https://raw.githubusercontent.com/landonhjones2020-bit/nightshift-assets/main/icons/meta/Upgrade_glow_notes.nsz"
+ },
+ "Upgrade_id_scanner": {
+  "group": "meta",
+  "size": [
+   512,
+   512
+  ],
+  "hash": "853a674ef3ce35aa",
+  "url": "https://raw.githubusercontent.com/landonhjones2020-bit/nightshift-assets/main/icons/meta/Upgrade_id_scanner.nsz"
  },
  "Upgrade_lucky_napkin": {
   "group": "meta",
@@ -2140,6 +2284,24 @@
   ],
   "hash": "14e0aaa81c9845aa",
   "url": "https://raw.githubusercontent.com/landonhjones2020-bit/nightshift-assets/main/icons/meta/Upgrade_radio_tuner.nsz"
+ },
+ "Upgrade_rat_traps": {
+  "group": "meta",
+  "size": [
+   512,
+   512
+  ],
+  "hash": "eeae0a5b9e60dc6a",
+  "url": "https://raw.githubusercontent.com/landonhjones2020-bit/nightshift-assets/main/icons/meta/Upgrade_rat_traps.nsz"
+ },
+ "Upgrade_riddle_dictionary": {
+  "group": "meta",
+  "size": [
+   512,
+   512
+  ],
+  "hash": "e0a004b3741363f3",
+  "url": "https://raw.githubusercontent.com/landonhjones2020-bit/nightshift-assets/main/icons/meta/Upgrade_riddle_dictionary.nsz"
  },
  "Upgrade_second_station": {
   "group": "meta",
@@ -2167,6 +2329,15 @@
   ],
   "hash": "4e0396c21e13b137",
   "url": "https://raw.githubusercontent.com/landonhjones2020-bit/nightshift-assets/main/icons/meta/Upgrade_stock_shelf.nsz"
+ },
+ "Upgrade_tip_jar": {
+  "group": "meta",
+  "size": [
+   512,
+   512
+  ],
+  "hash": "fd6dd85d4a9661cc",
+  "url": "https://raw.githubusercontent.com/landonhjones2020-bit/nightshift-assets/main/icons/meta/Upgrade_tip_jar.nsz"
  },
  "Upgrade_toaster_turbo": {
   "group": "meta",
