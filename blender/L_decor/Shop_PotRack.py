@@ -48,16 +48,20 @@ def chain(p0, p1, n, name="Chain"):
 
 def pan(depth, radius, wall, handle_len, z_hang, x, y):
     """Pan hanging by its handle: built with its opening up (+Z), turned so the cooking side
-    faces -Y, handle pointing up to the hang point (x, y, z_hang). Returns (body, handle)."""
+    faces -Y, its handle running from the top of the rim up to the hang point (x, y, z_hang).
+    Returns (body, handle).
+    2026-11-05 (Landon: "pans ... have no handles"): ns.box only sets an object's location, and
+    this function used to overwrite that location with the pan's, so every handle sat flat
+    behind its own pan. The handle is now placed on its own, in world space."""
     r0 = radius * 0.8
+    zc = z_hang - handle_len - radius + 0.06          # pan centre (the handle meets the rim)
     body = ns.lathe([(0.0, 0.0), (r0, 0.0), (radius, depth), (radius - wall, depth + 0.01), (r0 - wall, wall),
                      (0.0, wall)], verts=10)
     body.rotation_euler = (math.radians(90), 0, 0)
+    body.location = (x, y + depth * 0.5, zc)
     ns.apply_all(body)
-    hnd = ns.box((0.1, 0.06, handle_len), loc=(0, -depth * 0.5, radius + handle_len / 2 - 0.04), bevel=0.0)
-    for o in (body, hnd):
-        o.location = (x, y + depth * 0.5, z_hang - handle_len - radius + 0.06)
-        ns.apply_all(o)
+    hnd = ns.box((0.1, 0.06, handle_len), loc=(x, y, zc + radius + handle_len / 2 - 0.04), bevel=0.0)
+    ns.apply_all(hnd)
     return body, hnd
 
 
@@ -100,12 +104,21 @@ def build():
     copper.append(b)
     chrome.append(h)
     hooks.append(s_hook(-0.25, -FY, FZ, 0.28))
-    # ladle: bowl + long handle
+    # ladle: a deep bowl hung with its inside to the front, like the pans, and a long handle from
+    # the top of its rim up to a ring on the S-hook (2026-11-05: the handle used to run straight
+    # down into the middle of an upturned dish, which read as a pole with a lid, not a ladle)
     lx = 0.75
-    bowl = ns.lathe([(0.0, 0.0), (0.19, 0.06), (0.25, 0.19), (0.23, 0.2), (0.0, 0.05)], verts=8,
-                    loc=(lx, -FY - 0.13, FZ - 2.22))
-    lh = C.rod((lx, -FY - 0.02, FZ - 0.2), (lx, -FY - 0.13, FZ - 2.04), 0.038, verts=6)
-    chrome += [bowl, lh]
+    br, bd, bw = 0.26, 0.2, 0.025                 # bowl radius, depth, wall
+    zb = FZ - 1.98                                # bowl centre
+    bowl = ns.lathe([(0.0, 0.0), (br * 0.72, 0.03), (br, bd * 0.62), (br + 0.006, bd), (br - bw, bd + 0.004),
+                     (br - bw, bd * 0.62), (br * 0.72 - bw, 0.03 + bw), (0.0, 0.03 + bw)], verts=8)
+    bowl.rotation_euler = (math.radians(90), 0, 0)
+    bowl.location = (lx, -FY + bd / 2, zb)
+    ns.apply_all(bowl)
+    ring_c = (lx, -FY - 0.01, FZ - 0.19)          # round the hook's lower curl (it passes through)
+    lh = C.rod((lx, -FY - bd / 2, zb + br - 0.02), (lx, -FY - 0.01, ring_c[2] - 0.05), 0.034, verts=6)
+    ring = ns.torus(0.05, 0.014, loc=ring_c, rot=(90, 0, 0), major_segs=8, minor_segs=3)
+    chrome += [bowl, lh, ring]
     hooks.append(s_hook(lx, -FY, FZ, 0.16))
     # slotted spatula: blade + slots + black handle
     sx_ = 1.6

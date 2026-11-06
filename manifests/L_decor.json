@@ -1148,10 +1148,10 @@
   "group": "Shop",
   "size": [
    4.704,
-   3.47,
-   1.95
+   3.496,
+   1.75
   ],
-  "tris": 1390,
+  "tris": 1486,
   "meta": {
    "pivot": "top of the chains (ceiling plates' top face): hang from y = ceiling",
    "drop": 3.5
@@ -1169,16 +1169,16 @@
     "bone": null,
     "offset": [
      0.0,
-     -1.735,
-     -0.142
+     -1.748,
+     -0.065
     ],
     "size": [
      4.704,
-     3.47,
-     1.835
+     3.496,
+     1.65
     ],
-    "hash": "eccf787f6fc26341",
-    "tris": 1248
+    "hash": "a7a330ecefda10e9",
+    "tris": 1344
    },
    {
     "name": "SmoothPlastic",
@@ -1191,15 +1191,15 @@
     "bone": null,
     "offset": [
      -1.222,
-     -2.225,
-     0.07
+     -2.18,
+     0.055
     ],
     "size": [
      1.045,
-     1.37,
-     1.64
+     1.46,
+     1.61
     ],
-    "hash": "54c9ba46864de021",
+    "hash": "2e56bd1153ab333a",
     "tris": 142
    }
   ]
