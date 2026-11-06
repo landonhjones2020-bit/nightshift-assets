@@ -3409,8 +3409,8 @@
     "tris": 600
    },
    {
-    "name": "WhackerBlade",
-    "color": "#C9CED3",
+    "name": "HandR_Metal",
+    "color": "#FFFFFF",
     "material": "Metal",
     "transparency": 0.0,
     "castShadow": true,
@@ -3427,12 +3427,12 @@
      0.62,
      2.66
     ],
-    "hash": "6d2adff8b3184a62",
-    "tris": 196
+    "hash": "f77f39ba958453a9",
+    "tris": 232
    },
    {
-    "name": "HandR_SmoothPlastic",
-    "color": "#FFFFFF",
+    "name": "WhackerGrip",
+    "color": "#2B2D31",
     "material": "SmoothPlastic",
     "transparency": 0.0,
     "castShadow": true,
@@ -3442,15 +3442,15 @@
     "offset": [
      1.034,
      1.759,
-     -0.71
+     0.325
     ],
     "size": [
      0.12,
-     0.36,
-     2.52
+     0.114,
+     0.45
     ],
-    "hash": "8fa343847a2147da",
-    "tris": 152
+    "hash": "1ed36e967bb6ae8b",
+    "tris": 116
    },
    {
     "name": "Trap",

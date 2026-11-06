@@ -177,7 +177,9 @@ def prop_spatula_trap(arm):
     slots = place([C.rbox((0.06, 0.04, 0.38), loc=(x, 0, 1.78), bevel=0.0, seg=1) for x in (-0.15, 0.0, 0.15)], P, A, N)
     C.part(handle + ferrule + blade, "WhackerBlade", CHROME, "Metal", arm=arm, bone="HandR", smooth=30)
     C.part(grip, "WhackerGrip", "#2B2D31", arm=arm, bone="HandR", smooth=50)
-    C.part(slots, "WhackerSlots", "#3A3D44", arm=arm, bone="HandR", smooth=30)
+    # (Metal like the blade: a lone SmoothPlastic grip keeps its own name - a merged
+    # "HandR_SmoothPlastic" would make the mesh asset name longer than Roblox's 50 characters)
+    C.part(slots, "WhackerSlots", "#3A3D44", "Metal", arm=arm, bone="HandR", smooth=30)
     # a wooden snap trap dangling flat from the left hand by its end
     P, A, L, N = hand_frame(arm, "L")
     fwd = Vector((0, -1, 0))
