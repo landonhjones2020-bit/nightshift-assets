@@ -9,10 +9,12 @@ an ink outline and a soft shadow, so it reads over the bright Lobby and the dark
 
 FX_MarkerArrow  256 x 320, pointing DOWN, colours baked in (not tinted).
                 Controllers.Tutorial shows it as the UI pointer (Guide.Layer.Pointer, turned
-                over under a target near the top of the screen) and under the paper tag over a
-                world target (WorldUI.GuideMarker.Arrow).
+                over under a target near the top of the screen). It also hung under the paper
+                tag over a world target until later the same night, when the tag became the
+                target's one mark (Landon: "the clock in has two things and is doing the same
+                thing").
 
-No Blender scene: numpy + PIL only. The NSZ payload and the manifests/icons.json entry are
+No Blender scene: PIL only. The NSZ payload and the manifests/icons.json entry are
 written exactly as nslib.export_icon writes them (nslib needs bpy; this doesn't).
 
     NS_EXPORT=1 python3 blender/G2_ui/FX_MarkerArrow.py
