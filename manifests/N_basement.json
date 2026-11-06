@@ -1435,6 +1435,66 @@
    }
   ]
  },
+ "Basement_StorageCagePanel": {
+  "group": "Shop",
+  "size": [
+   4.0,
+   10.0,
+   0.42
+  ],
+  "tris": 502,
+  "meta": {
+   "collide": "frame and grid",
+   "tile": "butts end to end with Basement_StorageCage (end posts at x = +-1.91)"
+  },
+  "url": "https://raw.githubusercontent.com/landonhjones2020-bit/nightshift-assets/main/meshes/N_basement/Basement_StorageCagePanel.json",
+  "parts": [
+   {
+    "name": "Metal",
+    "color": "#FFFFFF",
+    "material": "Metal",
+    "transparency": 0.0,
+    "castShadow": true,
+    "canCollide": true,
+    "role": null,
+    "bone": null,
+    "offset": [
+     0.0,
+     5.0,
+     0.0
+    ],
+    "size": [
+     4.0,
+     10.0,
+     0.42
+    ],
+    "hash": "dc564911137a253e",
+    "tris": 492
+   },
+   {
+    "name": "Rust",
+    "color": "#7A5A3A",
+    "material": "SmoothPlastic",
+    "transparency": 0.0,
+    "castShadow": true,
+    "canCollide": false,
+    "role": null,
+    "bone": null,
+    "offset": [
+     0.011,
+     0.277,
+     -0.098
+    ],
+    "size": [
+     3.933,
+     0.297,
+     0.0
+    ],
+    "hash": "6359fc691f71dd2b",
+    "tris": 10
+   }
+  ]
+ },
  "Basement_SupportColumn": {
   "group": "Shop",
   "size": [
