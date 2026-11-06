@@ -425,7 +425,7 @@ def folded_apron(col=G.BRAND, trim=G.MUSTARD):
     return [body, pocket] + folds + straps
 
 
-@shop("Product_DP_STARTER")
+@money("Product_DP_STARTER")
 def starter():
     W, D, H = 2.1, 1.5, 1.1
     box_ = G.box((W, D, H), loc=(0, 0, H / 2), bevel=0.0)
@@ -466,7 +466,7 @@ def starter():
     G.xform(G.tagged(), G.R(rz=8))
 
 
-@shop("Product_DP_BOOST_3")
+@money("Product_DP_BOOST_3")
 def boost3():
     p = coin(emboss="arrow")
     put(p, rx=78, rz=-22)
@@ -518,7 +518,7 @@ def vip():
     G.face_cam(family=FAM, reveal=16, tilt=6)
 
 
-@shop("Pass_GP_2X_COINS")
+@money("Pass_GP_2X_COINS")
 def two_x():
     a = coin()
     put(a, (0.6, 0.55, 0.45), rx=80, rz=-14)
