@@ -15,7 +15,7 @@ import traceback
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 import _common as G  # noqa: E402
 
-FAMILY_MODULES = ("fam_hud", "fam_crates", "fam_tags", "fam_shop", "fam_meta", "fam_portraits", "fam_keyart", "fam_fx")
+FAMILY_MODULES = ("fam_hud", "fam_crates", "fam_tags", "fam_shop", "fam_meta", "fam_meta2", "fam_portraits", "fam_keyart", "fam_fx")
 for _m in FAMILY_MODULES:
     __import__(_m)
 

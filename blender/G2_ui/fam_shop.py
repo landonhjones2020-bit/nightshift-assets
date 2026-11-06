@@ -1,9 +1,13 @@
 """fam_shop — currencies, Robux products and gamepasses (group "shop"), shown at 120-200 px on
 dark rarity-gradient shop cards.
 
-Family look: the "shop" camera (yaw -30, pitch 24), chunky toy-like props in the game palette:
-Coins are amber diner coins with an embossed "S", Tokens are pink arcade tokens with a notched
-edge and a star. Pack tiers grow the same pile idea from 3 pieces to a register drawer / jar.
+Family look: the "shop" camera (yaw -30, pitch 24), chunky toy-like props in the game palette.
+2026-11-06 (Landon: "create our own custom images for the coin and tokens rn they look very
+bland"; "for the gold token make it a little more complex and clean"): Coins are struck gold with
+a milled edge, beads and the STACKHOUSE stamp (a burger) in polished relief; Tokens are pink
+enamel hexagons with a chrome frame, studs and a faceted gem (currency_kit). Currency and pack
+icons render against the studio world so the metal reads. Pack tiers grow the same pile idea
+from 3 pieces to a register drawer / jar.
 """
 from __future__ import annotations
 
@@ -17,11 +21,22 @@ from _common import ns, Vector, Matrix
 
 FAM = "shop"
 
-COIN_R, COIN_T = 1.0, 0.22
-TOKEN_R, TOKEN_T = 1.0, 0.2
+import currency_kit as CK
+
+# 2026-11-06: the Coin and Token were redesigned (currency_kit: struck gold with the STACKHOUSE
+# stamp; a pink hexagon token with a chrome frame and a gem) - every pack below uses them.
+COIN_R, COIN_T = CK.COIN_R, CK.COIN_T
+TOKEN_R, TOKEN_T = CK.TOKEN_R, CK.TOKEN_T
 
 
 def shop(name, **opts):
+    return G.icon(name, "shop", FAM, **opts)
+
+
+def money(name, **opts):
+    """A currency / pack icon: polished metal needs the studio world to read as metal."""
+    opts.setdefault("env", "studio")
+    opts.setdefault("world", 1.0)
     return G.icon(name, "shop", FAM, **opts)
 
 
@@ -29,61 +44,18 @@ def shop(name, **opts):
 # currency pieces (built lying flat, centred at the origin, face up +Z)
 # ---------------------------------------------------------------------------------------------
 
-def coin(emboss="S", detail=True, scale=1.0):
-    R, T_ = COIN_R, COIN_T
-    prof = [(0.0, -T_ / 2), (R - 0.05, -T_ / 2), (R, -T_ / 2 + 0.05), (R, T_ / 2 - 0.05), (R - 0.05, T_ / 2),
-            (R - 0.16, T_ / 2), (R - 0.2, T_ / 2 - 0.035), (0.0, T_ / 2 - 0.035)]
-    if detail:
-        prof = prof[:-1] + [(R - 0.2, T_ / 2 - 0.035), (0.0, T_ / 2 - 0.035)]
-    body = G.lathe(prof, verts=48 if detail else 32)
-    G.T(body, G.AMBER, name="Coin", smooth=50)
-    parts = [body]
-    if detail:
-        # matching rim on the underside so a flipped coin also reads
-        groove = G.torus(R + 0.002, 0.018, segs=48, rsegs=6)
-        G.T(groove, G.AMBER_D, name="CoinGroove")
-        parts.append(groove)
-        if emboss:
-            if emboss == "arrow":
-                e = G.puffy(G.fillet([(0.0, 0.62), (0.48, 0.1), (0.2, 0.1), (0.2, -0.56), (-0.2, -0.56), (-0.2, 0.1), (-0.48, 0.1)], 0.05, 2),
-                            0.12, puff=0.35)
-                col = G.GREEN
-            else:
-                e = G.text(emboss, 1.15, 0.1)
-                col = "#FFE08A"
-            G.xform(e, G.Tm(0, 0, T_ / 2 - 0.035) @ G.R(rx=-90))
-            G.T(e, col, name="CoinMark")
-            parts.append(e)
-    if scale != 1.0:
-        G.xform(parts, G.S(scale))
-    return parts
+def coin(emboss="stamp", detail=True, scale=1.0):
+    return CK.coin(emboss=emboss, detail=detail, scale=scale)
 
 
 def token(detail=True, scale=1.0):
-    R = TOKEN_R
-    n = 14
-    pts = []
-    for i in range(n):
-        a0 = 2 * math.pi * i / n
-        w = 2 * math.pi / n
-        for f, r in ((0.0, R), (0.62, R), (0.7, R - 0.09), (0.92, R - 0.09)):
-            pts.append((r * math.cos(a0 + f * w), r * math.sin(a0 + f * w)))
-    body = G.slab_xy(G.fillet(pts, 0.02, 1), TOKEN_T, bevel=0.035, segs=2, z=-TOKEN_T / 2)
-    G.T(body, G.PINK, name="Token", smooth=40)
-    parts = [body]
-    if detail:
-        ring = G.torus(R - 0.28, 0.035, loc=(0, 0, TOKEN_T / 2), segs=40, rsegs=6, scale=(1, 1, 0.6))
-        G.T(ring, G.PINK_D, name="TokenRing")
-        st = G.puffy(G.fillet(G.star(5, 0.5, 0.22), 0.03, 2), 0.1, puff=0.35)
-        G.xform(st, G.Tm(0, 0, TOKEN_T / 2) @ G.R(rx=-90))
-        G.T(st, G.PINK_L, name="TokenStar")
-        parts += [ring, st]
-    if scale != 1.0:
-        G.xform(parts, G.S(scale))
-    return parts
+    return CK.token(detail=detail, scale=scale)
 
 
 def piece(kind, **kw):
+    # pieces drawn smaller than ~0.3 can't show beads, stamps or gems: build them plain (fast)
+    if kw.get("scale", 1.0) < 0.3:
+        kw["detail"] = False
     return coin(**kw) if kind == "coin" else token(**kw)
 
 
@@ -93,9 +65,14 @@ def put(parts, loc=(0, 0, 0), rx=0.0, ry=0.0, rz=0.0):
 
 
 def stand(kind, loc, face_yaw=-24.0, lean=0.0, scale=1.0):
-    """A piece standing on its edge, its face turned toward the camera."""
+    """A piece standing on its edge, its face turned toward the camera (a token on a flat side
+    of its hexagon)."""
     p = piece(kind, scale=scale)
-    r = (COIN_R if kind == "coin" else TOKEN_R) * scale
+    if kind == "coin":
+        r = COIN_R * scale
+    else:
+        put(p, rz=30)
+        r = CK.TOKEN_APOTHEM * scale
     put(p, (0, 0, 0), rx=90)        # face -> -Y
     G.xform(p, G.Tm(loc[0], loc[1], loc[2] + r) @ G.R(rz=face_yaw) @ G.R(rx=-lean))
     return p
@@ -133,16 +110,17 @@ def heap(kind, n, centre=(0, 0, 0), radius=1.6, height=0.9, seed=3, scale=0.7, t
 # currencies
 # ---------------------------------------------------------------------------------------------
 
-@shop("Currency_Coins")
+# turned 30 degrees off the camera so the milled edge / the token's side shows (2026-11-06)
+@money("Currency_Coins")
 def currency_coins():
     p = coin()
-    put(p, rx=72, rz=-26)
+    put(p, rx=66)
 
 
-@shop("Currency_Tokens")
+@money("Currency_Tokens")
 def currency_tokens():
     p = token()
-    put(p, rx=72, rz=-26)
+    put(p, rx=66)
 
 
 # ---------------------------------------------------------------------------------------------
@@ -294,9 +272,9 @@ def token_jar():
 
 
 for i, fn in enumerate((tier1, tier2, tier3, tier4, tier5, tier6), start=1):
-    shop(f"Product_DP_COINS_{i}")((lambda f: (lambda: f("coin")))(fn))
+    money(f"Product_DP_COINS_{i}")((lambda f: (lambda: f("coin")))(fn))
 for i, fn in enumerate((tier1, tier2, tier3, tier4, tier5), start=1):
-    shop(f"Product_DP_TOKENS_{i}")((lambda f: (lambda: f("token")))(fn))
+    money(f"Product_DP_TOKENS_{i}")((lambda f: (lambda: f("token")))(fn))
 
 
 # ---------------------------------------------------------------------------------------------

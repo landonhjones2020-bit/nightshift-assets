@@ -758,6 +758,48 @@ def _icon_materials():
             b.inputs["Specular IOR Level"].default_value = 0.25 if g is None else 0.5
 
 
+def set_world(kind="plain"):
+    """The world the icon reflects (the film is transparent, so it is only ever seen in
+    reflections). "plain": nslib's flat grey. "studio" (2026-11-06, the metal Coin and the
+    chrome Token): a soft studio sphere - dark floor, warm horizon, bright top - so polished
+    metal reads as metal instead of grey."""
+    sc = bpy.context.scene
+    if sc.world is None:
+        sc.world = bpy.data.worlds.new("World")
+    w = sc.world
+    w.use_nodes = True
+    nt = w.node_tree
+    for n in list(nt.nodes):
+        nt.nodes.remove(n)
+    out = nt.nodes.new("ShaderNodeOutputWorld")
+    bg = nt.nodes.new("ShaderNodeBackground")
+    bg.name = "Background"
+    nt.links.new(bg.outputs[0], out.inputs["Surface"])
+    if kind != "studio":
+        bg.inputs[0].default_value = (0.32, 0.33, 0.36, 1)
+        bg.inputs[1].default_value = 0.9
+        return
+    tc = nt.nodes.new("ShaderNodeTexCoord")
+    sep = nt.nodes.new("ShaderNodeSeparateXYZ")
+    mr = nt.nodes.new("ShaderNodeMapRange")
+    mr.inputs["From Min"].default_value = -1.0
+    mr.inputs["From Max"].default_value = 1.0
+    ramp = nt.nodes.new("ShaderNodeValToRGB")
+    els = ramp.color_ramp.elements
+    stops = [(0.0, (0.03, 0.028, 0.026)), (0.40, (0.12, 0.10, 0.085)), (0.52, (0.85, 0.74, 0.58)),
+             (0.62, (0.42, 0.40, 0.38)), (0.82, (1.0, 0.97, 0.92)), (1.0, (0.80, 0.84, 0.92))]
+    els[0].position, els[0].color = stops[0][0], (*stops[0][1], 1)
+    els[1].position, els[1].color = stops[-1][0], (*stops[-1][1], 1)
+    for pos, col in stops[1:-1]:
+        el = els.new(pos)
+        el.color = (*col, 1)
+    nt.links.new(tc.outputs["Generated"], sep.inputs[0])
+    nt.links.new(sep.outputs["Z"], mr.inputs["Value"])
+    nt.links.new(mr.outputs["Result"], ramp.inputs["Fac"])
+    nt.links.new(ramp.outputs["Color"], bg.inputs["Color"])
+    bg.inputs[1].default_value = 1.0
+
+
 def render_icon(name, draft=False, objects=None, offset=(0.0, 0.0), fam_over=None):
     """Render registered icon `name` (scene already built)."""
     e = REG[name]
@@ -771,7 +813,8 @@ def render_icon(name, draft=False, objects=None, offset=(0.0, 0.0), fam_over=Non
     samples = 12 if draft else f["samples"]
     ns._setup_render(res, samples, transparent=True)
     sc = bpy.context.scene
-    sc.world.node_tree.nodes.get("Background").inputs[1].default_value = 0.45
+    set_world(e["opts"].get("env", "plain"))
+    sc.world.node_tree.nodes.get("Background").inputs[1].default_value = e["opts"].get("world", 0.45)
     sc.cycles.use_denoising = True
     sc.render.image_settings.color_mode = "RGBA"
     sc.view_settings.exposure = f.get("exposure", 0.0)
