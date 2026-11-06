@@ -79,6 +79,151 @@
    }
   ]
  },
+ "Food_Crumbs": {
+  "group": "Food",
+  "size": [
+   3.488,
+   0.716,
+   0.672
+  ],
+  "tris": 240,
+  "meta": {},
+  "url": "https://raw.githubusercontent.com/landonhjones2020-bit/nightshift-assets/main/meshes/M_food/Food_Crumbs.json",
+  "parts": [
+   {
+    "name": "Crumb1",
+    "color": "#F1D49C",
+    "material": "SmoothPlastic",
+    "transparency": 0.0,
+    "castShadow": true,
+    "canCollide": false,
+    "role": null,
+    "bone": null,
+    "offset": [
+     1.309,
+     0.355,
+     0.0
+    ],
+    "size": [
+     0.869,
+     0.71,
+     0.672
+    ],
+    "hash": "1f89d7057c232488",
+    "tris": 59
+   },
+   {
+    "name": "Crust1",
+    "color": "#B5622A",
+    "material": "SmoothPlastic",
+    "transparency": 0.0,
+    "castShadow": true,
+    "canCollide": false,
+    "role": "toast",
+    "bone": null,
+    "offset": [
+     1.303,
+     0.464,
+     -0.004
+    ],
+    "size": [
+     0.856,
+     0.504,
+     0.642
+    ],
+    "hash": "20974cf8a0f579e1",
+    "tris": 21
+   },
+   {
+    "name": "Crumb2",
+    "color": "#F1D49C",
+    "material": "SmoothPlastic",
+    "transparency": 0.0,
+    "castShadow": true,
+    "canCollide": false,
+    "role": null,
+    "bone": null,
+    "offset": [
+     0.008,
+     0.275,
+     0.002
+    ],
+    "size": [
+     1.024,
+     0.549,
+     0.53
+    ],
+    "hash": "e3532c7d3649fbbb",
+    "tris": 50
+   },
+   {
+    "name": "Crust2",
+    "color": "#B5622A",
+    "material": "SmoothPlastic",
+    "transparency": 0.0,
+    "castShadow": true,
+    "canCollide": false,
+    "role": "toast",
+    "bone": null,
+    "offset": [
+     0.008,
+     0.341,
+     -0.047
+    ],
+    "size": [
+     1.024,
+     0.416,
+     0.459
+    ],
+    "hash": "8f2c04e30a8ab240",
+    "tris": 30
+   },
+   {
+    "name": "Crumb3",
+    "color": "#F1D49C",
+    "material": "SmoothPlastic",
+    "transparency": 0.0,
+    "castShadow": true,
+    "canCollide": false,
+    "role": null,
+    "bone": null,
+    "offset": [
+     -1.451,
+     0.299,
+     0.038
+    ],
+    "size": [
+     0.586,
+     0.598,
+     0.552
+    ],
+    "hash": "bc552d6b08ecee1b",
+    "tris": 59
+   },
+   {
+    "name": "Crust3",
+    "color": "#B5622A",
+    "material": "SmoothPlastic",
+    "transparency": 0.0,
+    "castShadow": true,
+    "canCollide": false,
+    "role": "toast",
+    "bone": null,
+    "offset": [
+     -1.451,
+     0.485,
+     0.035
+    ],
+    "size": [
+     0.586,
+     0.311,
+     0.515
+    ],
+    "hash": "6420b1fd16520c09",
+    "tris": 21
+   }
+  ]
+ },
  "Food_Jalapenos": {
   "group": "Food",
   "size": [
