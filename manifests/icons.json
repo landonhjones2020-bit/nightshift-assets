@@ -395,6 +395,15 @@
   "hash": "017167bf0d01f7b9",
   "url": "https://raw.githubusercontent.com/landonhjones2020-bit/nightshift-assets/main/icons/fx/FX_GuideMarker.nsz"
  },
+ "FX_MarkerArrow": {
+  "group": "fx",
+  "size": [
+   256,
+   320
+  ],
+  "hash": "1d73b3b334f60693",
+  "url": "https://raw.githubusercontent.com/landonhjones2020-bit/nightshift-assets/main/icons/fx/FX_MarkerArrow.nsz"
+ },
  "FX_ScareCracks": {
   "group": "fx",
   "size": [
